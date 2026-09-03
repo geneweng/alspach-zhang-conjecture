@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cayley Snarks Project</title>
+<meta name="description" content="A project to settle the Alspach–Zhang conjecture: prove that every cubic Cayley graph is 3-edge-colourable, or construct a Cayley snark.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f6f7f5; --bg-raised:#ffffff; --ink:#1c232b; --ink-2:#4b5760; --ink-3:#7a8790;
+  --rule:#d5dbd8; --rule-strong:#9aa6a1; --accent:#0e6b67; --accent-ink:#0b4d4a; --accent-soft:#e3efed;
+  --panel:#eef3f1; --code-bg:#eef1ef; --warn:#8a5a12; --warn-soft:#f6ecd8;
+  --serif:"Source Serif 4","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#151a1e; --bg-raised:#1c2227; --ink:#e6eaec; --ink-2:#b4bec4; --ink-3:#87939b;
+    --rule:#2e373d; --rule-strong:#55626a; --accent:#63c2ba; --accent-ink:#8fd6d0; --accent-soft:#1d2f2e;
+    --panel:#1b2327; --code-bg:#1f272c; --warn:#e0b366; --warn-soft:#2c2617; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151a1e; --bg-raised:#1c2227; --ink:#e6eaec; --ink-2:#b4bec4; --ink-3:#87939b;
+  --rule:#2e373d; --rule-strong:#55626a; --accent:#63c2ba; --accent-ink:#8fd6d0; --accent-soft:#1d2f2e;
+  --panel:#1b2327; --code-bg:#1f272c; --warn:#e0b366; --warn-soft:#2c2617; color-scheme:dark;
+}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.page{max-width:46rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 .8rem}
+h1{font-size:2.2rem;line-height:1.12;font-weight:700;margin:0 0 1rem;text-wrap:balance;letter-spacing:-.01em}
+.lede{font-size:1.15rem;color:var(--ink-2);margin:0 0 1.6rem;max-width:40rem}
+.conj{background:var(--bg-raised);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:1.1rem 1.4rem;margin:0 0 1.2rem}
+.conj .label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:.35rem}
+.conj p{margin:0;font-size:1.2rem;font-style:italic}
+.conj .equiv{font-style:normal;font-size:.95rem;color:var(--ink-2);margin-top:.6rem}
+.actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 2.5rem;font-family:var(--sans);font-size:.9rem}
+.btn{display:inline-block;padding:.5rem .95rem;border:1px solid var(--accent);border-radius:3px;color:var(--accent-ink);background:var(--accent-soft);font-weight:500}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+:root[data-theme="dark"] .btn.primary{color:#0f1517}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#0f1517}}
+.btn:hover{text-decoration:none;filter:brightness(1.05)}
+h2{font-size:1.45rem;font-weight:600;line-height:1.25;margin:2.6rem 0 .9rem;padding-top:1.2rem;border-top:1px solid var(--rule);text-wrap:balance}
+h3{font-size:1.1rem;font-weight:600;margin:1.6rem 0 .5rem}
+p{margin:0 0 1rem}
+ul,ol{padding-left:1.4rem;margin:0 0 1rem}
+li{margin:0 0 .4rem}
+code{font-family:var(--mono);font-size:.85em;background:var(--code-bg);padding:.05em .3em;border-radius:3px}
+.math{font-style:italic}
+.status{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--rule);background:var(--bg-raised);font-size:.95rem}
+.status .row{display:grid;grid-template-columns:minmax(0,1fr) 11rem;gap:1rem;padding:.65rem 1rem;border-bottom:1px solid var(--rule);align-items:baseline}
+.status .row:last-child{border-bottom:0}
+.status .who{font-family:var(--sans);font-size:.8rem;color:var(--ink-2);text-align:right}
+.pill{display:inline-block;font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.12em .5em;border-radius:2px;background:var(--accent-soft);color:var(--accent-ink);margin-right:.4rem;vertical-align:middle}
+.pill.open{background:var(--warn-soft);color:var(--warn)}
+.tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1rem 0 1.4rem}
+.track{background:var(--panel);padding:1rem 1.1rem;border-top:3px solid var(--accent)}
+.track.counter{border-top-color:var(--warn)}
+.track h3{margin:0 0 .5rem;font-family:var(--sans);font-size:.95rem;font-weight:600}
+.track ul{margin:0;padding-left:1.1rem;font-size:.93rem}
+.track li{margin:0 0 .3rem}
+.wanted{background:var(--bg-raised);border:1px solid var(--rule-strong);padding:1.1rem 1.4rem 1rem;margin:1rem 0 1.4rem}
+.wanted .label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--warn);display:block;margin-bottom:.5rem}
+.wanted ol{margin:0;padding-left:1.3rem}
+.wanted li{margin:0 0 .45rem}
+table{border-collapse:collapse;font-family:var(--sans);font-size:.85rem;font-variant-numeric:tabular-nums;width:100%}
+.tablewrap{overflow-x:auto;margin:1rem 0 1.2rem}
+th{text-align:left;font-weight:600;border-top:1.5px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);padding:.45rem .6rem}
+td{padding:.35rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:1.5px solid var(--rule-strong)}
+td.num,th.num{text-align:right}
+.res{list-style:none;padding:0;margin:0 0 1rem}
+.res li{display:grid;grid-template-columns:9rem 1fr;gap:.8rem;padding:.5rem 0;border-bottom:1px solid var(--rule);margin:0}
+.res li:last-child{border-bottom:0}
+.res .k{font-family:var(--sans);font-size:.85rem;font-weight:500;color:var(--ink-2)}
+.colophon{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.8rem;color:var(--ink-3)}
+@media (max-width:640px){body{font-size:16px}.page{padding:2rem 1rem 4rem}h1{font-size:1.75rem}.status .row{grid-template-columns:1fr}.status .who{text-align:left}.res li{grid-template-columns:1fr;gap:.15rem}}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<p class="eyebrow">Open problem · Algebraic graph theory</p>
+<h1>Are there Cayley snarks?</h1>
+<p class="lede">A working project to settle the Alspach–Zhang conjecture: either prove that every cubic Cayley graph is 3-edge-colourable, or construct one that is not.</p>
+<div class="conj">
+<span class="label">Conjecture (Alspach–Zhang, Louisville 1992)</span>
+<p>Every connected cubic Cayley graph is 3-edge-colourable.</p>
+<p class="equiv">Equivalently: every Cayley graph of valency at least 2 admits a nowhere-zero 4-flow. A cubic Cayley graph that is not 3-edge-colourable is called a <em>Cayley snark</em> (Nedela–Škoviera). None is known.</p>
+</div>
+<div class="actions">
+<a class="btn primary" href="survey.html">Read the survey</a>
+<a class="btn" href="survey.pdf">Survey as PDF</a>
+<a class="btn" href="https://github.com/geneweng/alspach-zhang-conjecture">Code &amp; data on GitHub</a>
+</div>
+</header>
+
+<h2>Why this problem</h2>
+<p>Tait showed in 1880 that the Four Colour Theorem is the statement that every bridgeless <em>planar</em> cubic graph is 3-edge-colourable. Drop planarity and it fails: the Petersen graph is the smallest counterexample, and the non-trivial ones are called snarks. Every known snark, and every known non-hamiltonian vertex-transitive graph, fails to be a Cayley graph. The conjecture says this is not a coincidence: the regular action of a group on the vertices forces a Tait colouring.</p>
+<p>The conjecture is implied by the folklore conjecture that every Cayley graph has a Hamilton cycle (cubic Cayley graphs have even order), and it implies the cycle double cover conjecture for cubic Cayley graphs. It is a natural, sharply posed test case for the general belief that symmetry excludes snarks.</p>
+
+<h2>What is known</h2>
+<p>Write <span class="math">X(G; a, x)</span> for the Cayley graph of <span class="math">G</span> with respect to <span class="math">{a, x, x<sup>−1</sup>}</span>, where <span class="math">a</span> is an involution and <span class="math">x</span> has odd order. Every other cubic Cayley graph is trivially colourable, so the conjecture is about these graphs only.</p>
+<div class="status">
+<div class="row"><div><span class="pill">Proved</span>Solvable groups.</div><div class="who">Alspach, Liu, Zhang 1996</div></div>
+<div class="row"><div><span class="pill">Proved</span>Any cubic graph with a solvable vertex-transitive automorphism group, except the Petersen graph.</div><div class="who">Potočnik 2004</div></div>
+<div class="row"><div><span class="pill">Proved</span>All cubic Cayley graphs on at most 1280 vertices (all are hamiltonian).</div><div class="who">Potočnik, Spiga, Verret 2013</div></div>
+<div class="row"><div><span class="pill">Proved</span>(2,<span class="math">s</span>,3)-Cayley graphs: <span class="math">ax</span> of order 3 (hamiltonian for odd <span class="math">s</span>).</div><div class="who">Glover, Kutnar, Malnič, Marušič 2007–2012</div></div>
+<div class="row"><div><span class="pill">Proved</span>Girth 4; girth 3 or 5 unless <span class="math">x</span> has order 3 or 5; any group with a normal subgroup containing <span class="math">a</span>.</div><div class="who">elementary, see survey §3</div></div>
+<div class="row"><div><span class="pill">Structure</span>A smallest Cayley snark lives on a non-abelian simple group, or on <span class="math">T</span>.2 with <span class="math">T</span> simple or <span class="math">S×S</span> and <span class="math">x ∈ T</span>.</div><div class="who">Nedela, Škoviera 2001</div></div>
+<div class="row"><div><span class="pill">Verified</span>All cubic Cayley graphs on 41 non-solvable groups up to order 51 888: PSL(2,<span class="math">q</span>) for <span class="math">q</span> ≤ 47, PGL(2,<span class="math">q</span>) for <span class="math">q</span> ≤ 31, A<sub>5</sub>–A<sub>8</sub>, S<sub>5</sub>–S<sub>7</sub>, M<sub>10</sub>, M<sub>11</sub>, PSL(3,3), PSL(3,3).2, PSU(3,3), G<sub>2</sub>(2), PΣL(2,16), PSL(2,25).2 (three types), A<sub>5</sub> ≀ Z<sub>2</sub>.</div><div class="who">this project, 2026</div></div>
+<div class="row"><div><span class="pill open">Open</span>Everything else: in particular PSL(2,<span class="math">q</span>) and A<sub><span class="math">n</span></sub> for all <span class="math">q, n</span>, and generators <span class="math">x</span> of order 3 or 5.</div><div class="who"></div></div>
+</div>
+
+<h2>What a counterexample must look like</h2>
+<div class="wanted">
+<span class="label">Wanted: a Cayley snark</span>
+<ol>
+<li>A group <span class="math">G = ⟨a, x⟩</span> with <span class="math">a² = 1</span> and <span class="math">x</span> of odd order; the graph is <span class="math">X(G; a, x)</span>. Three-involution generating sets and even-order <span class="math">x</span> never work.</li>
+<li>If it is a smallest one: <span class="math">G</span> is non-abelian simple, or <span class="math">G</span> has exactly one non-trivial proper normal subgroup <span class="math">T</span>, of index 2, with <span class="math">T</span> simple or <span class="math">T = S × S</span> (Nedela–Škoviera). Any other Cayley snark covers one of these.</li>
+<li>More than 12 200 vertices, and none of the 41 groups verified so far. The first unverified admissible groups are PSL(2,49), S<sub>8</sub>, PGL(2,37), PSL(3,4), PSU(3,4), PSL(2,53), M<sub>12</sub>, A<sub>9</sub>, …</li>
+<li>Girth 3 only if <span class="math">x</span> has order 3; girth 5 only if <span class="math">x</span> has order 5; never girth 4. In the order-3 case the graph is the truncation of a cubic graph with an arc-regular automorphism group.</li>
+<li>Its <span class="math">x</span>-cycles form an odd 2-factor; every other 2-factor must also contain an odd cycle. A Hamilton cycle would already colour it, so it is also a non-hamiltonian Cayley graph, which would refute the hamiltonicity folklore conjecture.</li>
+</ol>
+</div>
+
+<h2>The plan</h2>
+<p>We pursue both outcomes at once; the reformulations in the survey (§3) give each track a concrete first target.</p>
+<div class="tracks">
+<div class="track">
+<h3>Track A · Prove it</h3>
+<ul>
+<li>Generators of order 3: show that every cubic graph with an arc-regular automorphism group is 3-edge-colourable. Test first against Conder's census of cubic arc-transitive graphs up to 10 000 vertices.</li>
+<li>The index-2 case: bi-Cayley graphs <span class="math">B(T; x, α(x))</span> for simple <span class="math">T</span> and an outer involutory automorphism <span class="math">α</span>. Start with <span class="math">T = A<sub>n</sub></span>, <span class="math">α</span> a transposition.</li>
+<li>Look for an <span class="math">H</span>-invariant colouring for a subgroup <span class="math">H</span> of odd order: in every computed case one exists. A general construction of such an <span class="math">H</span> would prove the conjecture.</li>
+<li>Extend the Cayley-map methods of Glover–Kutnar–Malnič–Marušič from <span class="math">(ax)³ = 1</span> to <span class="math">(ax)<sup>t</sup> = 1</span> for small <span class="math">t</span>.</li>
+</ul>
+</div>
+<div class="track counter">
+<h3>Track B · Find a Cayley snark</h3>
+<ul>
+<li>Exhaustive search over the admissible groups in order of size, using the SAT-based checker in the repository (GAP for the groups, quotients by odd-order subgroups to keep instances small).</li>
+<li>Targeted families where the quotient trick is weakest: PSL(2,<span class="math">q</span>) with <span class="math">x</span> of order <span class="math">p</span> and few odd-order subgroups; S<sub><span class="math">n</span></sub> with <span class="math">a</span> a transposition.</li>
+<li>Bi-Cayley graphs of simple groups built directly, without the group of order 2|<span class="math">T</span>|, to reach larger <span class="math">T</span>.</li>
+<li>Measure oddness and resistance of near-misses: which cubic Cayley graphs need many Kempe swaps to colour?</li>
+</ul>
+</div>
+</div>
+
+<h2>Resources</h2>
+<ul class="res">
+<li><span class="k">Survey</span><span><a href="survey.html">Web version</a> · <a href="survey.pdf">PDF</a> · <a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/survey.tex">LaTeX source</a>. History, equivalent formulations, the three main theorems with a self-contained proof of the Nedela–Škoviera reduction, the hamiltonicity route, computational evidence, open problems.</span></li>
+<li><span class="k">Checker</span><span><a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/code/cayley_snark_check.py"><code>code/cayley_snark_check.py</code></a>: enumerates all generating pairs <span class="math">(a, x)</span> of a permutation group up to conjugacy and decides 3-edge-colourability through quotients by odd-order abelian subgroups and a SAT solver; every colouring is verified on the full graph.</span></li>
+<li><span class="k">Results</span><span><a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/code/results.json"><code>results.json</code></a> and <a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/code/results_extra.json"><code>results_extra.json</code></a>: one record per group with the number of pairs, the orders of <span class="math">x</span> that occur, and the quotient used.</span></li>
+<li><span class="k">Key papers</span><span>Alspach–Liu–Zhang, SIAM J. Discrete Math. 9 (1996); Nedela–Škoviera, Combinatorica 21 (2001); Potočnik, J. Combin. Theory Ser. B 91 (2004); Potočnik–Spiga–Verret, J. Symbolic Comput. 50 (2013); Glover–Kutnar–Malnič–Marušič, Proc. London Math. Soc. 104 (2012). Full references in the survey.</span></li>
+</ul>
+
+<h2>Contributing</h2>
+<p>Open an issue or a pull request on the <a href="https://github.com/geneweng/alspach-zhang-conjecture">repository</a>. Useful contributions include: a verified run of the checker on a new admissible group (attach <code>results.json</code>), a proof for a family of groups, a reference we have missed, or a correction to the survey. Computations should state the group, the number of generating pairs tested and the method used to find each colouring, so that they can be reproduced.</p>
+
+<p class="colophon">Project started September 2026. Survey and code prepared with the help of an AI assistant (Claude); all computational claims are reproducible from the repository.</p>
+</div>
+</body>
+</html>

@@ -5,12 +5,16 @@ Equivalently (Mader + Jaeger + Tutte): every Cayley graph of valency at least 2 
 nowhere-zero 4-flow. In the terminology of Nedela and Škoviera, there are no *Cayley snarks*.
 
 This repository contains a survey of the conjecture and a small computational verification.
+The project's aim is to settle the conjecture: prove it, or construct a Cayley snark.
+
+**Project page:** https://geneweng.github.io/alspach-zhang-conjecture/ (survey as a web page and PDF, status, plan).
 
 ## Contents
 
 | Path | What it is |
 |---|---|
 | `survey.tex`, `survey.pdf` | The survey (LaTeX source and compiled PDF). |
+| `docs/` | GitHub Pages site: project page (`index.html`), the survey as HTML and PDF. |
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
 | `code/cayley_snark_check.py` | Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a list of non-solvable permutation groups (PSL/PGL(2,q), alternating and symmetric groups, M10, M11, PSL(3,3), PΣL(2,16), the index-2 extensions of PSL(2,25), A5 ≀ Z2). |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2. |

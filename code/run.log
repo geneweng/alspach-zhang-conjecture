@@ -1,0 +1,370 @@
+A5           |G|=    60  involution classes=1  pairs (a,x) tested=    6  non-colourable=0  undecided=0  methods={'full SAT': 2, 'quotient by C3': 4}  [0.0s]
+S5           |G|=   120  involution classes=2  pairs (a,x) tested=    2  non-colourable=0  undecided=0  methods={'quotient by C3': 2}  [0.0s]
+PSL(2,7)     |G|=   168  involution classes=1  pairs (a,x) tested=    4  non-colourable=0  undecided=0  methods={'quotient by C3': 3, 'full SAT': 1}  [0.0s]
+PGL(2,7)     |G|=   336  involution classes=2  pairs (a,x) tested=    5  non-colourable=0  undecided=0  methods={'quotient by C7': 2, 'quotient by C3': 3}  [0.0s]
+A6           |G|=   360  involution classes=1  pairs (a,x) tested=    4  non-colourable=0  undecided=0  methods={'quotient by C3': 4}  [0.0s]
+PSL(2,8)     |G|=   504  involution classes=1  pairs (a,x) tested=   42  non-colourable=0  undecided=0  methods={'quotient by C9': 18, 'quotient by C7': 21, 'full SAT': 3}  [0.1s]
+PGL(2,9)     |G|=   720  involution classes=2  pairs (a,x) tested=   10  non-colourable=0  undecided=0  methods={'quotient by C3': 6, 'quotient by C5': 4}  [0.1s]
+S6           |G|=   720  involution classes=3  pairs (a,x) tested=    2  non-colourable=0  undecided=0  methods={'quotient by C3': 2}  [0.0s]
+M10          |G|=   720  involution classes=1  pairs (a,x) tested=    0  non-colourable=0  undecided=0  methods={}  [0.0s]
+PSL(2,11)    |G|=   660  involution classes=1  pairs (a,x) tested=   14  non-colourable=0  undecided=0  methods={'quotient by C11': 8, 'quotient by C5': 6}  [0.1s]
+PSL(2,13)    |G|=  1092  involution classes=1  pairs (a,x) tested=   45  non-colourable=0  undecided=0  methods={'quotient by C13': 31, 'quotient by C7': 14}  [0.2s]
+PGL(2,11)    |G|=  1320  involution classes=2  pairs (a,x) tested=   17  non-colourable=0  undecided=0  methods={'quotient by C11': 12, 'quotient by C5': 5}  [0.1s]
+PGL(2,13)    |G|=  2184  involution classes=2  pairs (a,x) tested=   26  non-colourable=0  undecided=0  methods={'quotient by C13': 20, 'quotient by C7': 6}  [0.3s]
+PSL(2,17)    |G|=  2448  involution classes=1  pairs (a,x) tested=   60  non-colourable=0  undecided=0  methods={'quotient by C17': 42, 'quotient by C9': 16, 'full SAT': 2}  [1.4s]
+A7           |G|=  2520  involution classes=1  pairs (a,x) tested=   11  non-colourable=0  undecided=0  methods={'quotient by C5': 9, 'quotient by C7': 2}  [0.2s]
+PSL(2,19)    |G|=  3420  involution classes=1  pairs (a,x) tested=   76  non-colourable=0  undecided=0  methods={'quotient by C19': 66, 'quotient by C9': 9, 'quotient by C5': 1}  [1.2s]
+PSL(2,16)    |G|=  4080  involution classes=1  pairs (a,x) tested=  204  non-colourable=0  undecided=0  methods={'quotient by C17': 84, 'quotient by C15': 112, 'quotient by C5': 8}  [3.7s]
+PGL(2,17)    |G|=  4896  involution classes=2  pairs (a,x) tested=   36  non-colourable=0  undecided=0  methods={'quotient by C17': 28, 'quotient by C9': 8}  [1.2s]
+S7           |G|=  5040  involution classes=3  pairs (a,x) tested=   19  non-colourable=0  undecided=0  methods={'quotient by C7': 6, 'quotient by C5': 13}  [1.2s]
+PSL(3,3)     |G|=  5616  involution classes=1  pairs (a,x) tested=   20  non-colourable=0  undecided=0  methods={'quotient by C3': 18, 'full SAT': 2}  [9.3s]
+PSL(2,23)    |G|=  6072  involution classes=1  pairs (a,x) tested=  107  non-colourable=0  undecided=0  methods={'quotient by C23': 95, 'quotient by C11': 12}  [3.3s]
+PGL(2,19)    |G|=  6840  involution classes=2  pairs (a,x) tested=   58  non-colourable=0  undecided=0  methods={'quotient by C19': 49, 'quotient by C9': 9}  [2.7s]
+A5wrZ2       |G|=  7200  involution classes=3  pairs (a,x) tested=    8  non-colourable=0  undecided=0  methods={'quotient by C5': 8}  [1.4s]
+PSL(2,25)    |G|=  7800  involution classes=1  pairs (a,x) tested=  134  non-colourable=0  undecided=0  methods={'quotient by C13': 18, 'quotient by C5': 116}  [30.9s]
+M11          |G|=  7920  involution classes=1  pairs (a,x) tested=   14  non-colourable=0  undecided=0  methods={'quotient by C11': 4, 'quotient by C5': 10}  [6.9s]
+PSigmaL(2,16) |G|=  8160  involution classes=2  pairs (a,x) tested=   20  non-colourable=0  undecided=0  methods={'quotient by C15': 16, 'quotient by C17': 4}  [2.1s]
+PSL(2,27)    |G|=  9828  involution classes=1  pairs (a,x) tested=  186  non-colourable=0  undecided=0  methods={'quotient by C7': 126, 'quotient by C13': 60}  [30.1s]
+PGL(2,23)    |G|= 12144  involution classes=2  pairs (a,x) tested=   72  non-colourable=0  undecided=0  methods={'quotient by C23': 61, 'quotient by C11': 11}  [7.5s]
+PSL(2,29)    |G|= 12180  involution classes=1  pairs (a,x) tested=  219  non-colourable=0  undecided=0  methods={'quotient by C29': 189, 'quotient by C15': 28, 'quotient by C7': 2}  [16.7s]
+PSL(2,31)    |G|= 14880  involution classes=1  pairs (a,x) tested=  160  non-colourable=0  undecided=0  methods={'quotient by C31': 144, 'quotient by C15': 15, 'quotient by C5': 1}  [17.8s]
+PGL(2,25)    |G|= 15600  involution classes=2  pairs (a,x) tested=   90  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 13': 12, 'quotient by abelian subgroup of order 25': 78}  [24.5s]
+PSigmaL(2,25) |G|= 15600  involution classes=3  pairs (a,x) tested=   30  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 25': 30}  [6.4s]
+PSL(2,25).2_3 |G|= 15600  involution classes=1  pairs (a,x) tested=    0  non-colourable=0  undecided=0  methods={}  [2.6s]
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    timer = threading.Timer(time_limit, lambda: s.interrupt())
+                                                ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    timer = threading.Timer(time_limit, lambda: s.interrupt())
+                                                ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    timer = threading.Timer(time_limit, lambda: s.interrupt())
+                                                ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    timer = threading.Timer(time_limit, lambda: s.interrupt())
+                                                ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    timer = threading.Timer(time_limit, lambda: s.interrupt())
+                                                ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    timer = threading.Timer(time_limit, lambda: s.interrupt())
+                                                ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    timer = threading.Timer(time_limit, lambda: s.interrupt())
+                                                ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+PGL(2,27)    |G|= 19656  involution classes=2  pairs (a,x) tested=  123  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 9': 72, 'quotient by abelian subgroup of order 13': 51}  [105.3s]
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+A8           |G|= 20160  involution classes=2  pairs (a,x) tested=   33  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 9': 19, 'quotient by abelian subgroup of order 15': 13, 'quotient by abelian subgroup of order 7': 1}  [113.5s]
+PGL(2,29)    |G|= 24360  involution classes=2  pairs (a,x) tested=  146  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 29': 132, 'quotient by abelian subgroup of order 15': 14}  [36.9s]
+PSL(2,37)    |G|= 25308  involution classes=1  pairs (a,x) tested=  378  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 37': 340, 'quotient by abelian subgroup of order 19': 38}  [78.9s]
+Exception in thread Thread-15:
+Traceback (most recent call last):
+A8           |G|= 20160  involution classes=2  pairs (a,x) tested=   33  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 9': 20, 'quotient by abelian subgroup of order 15': 13}  [247.3s]
+PGL(2,31)    |G|= 29760  involution classes=2  pairs (a,x) tested=  113  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 15': 15, 'quotient by abelian subgroup of order 31': 98}  [47.4s]
+PGL(2,29)    |G|= 24360  involution classes=2  pairs (a,x) tested=  146  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 29': 132, 'quotient by abelian subgroup of order 15': 14}  [45.7s]
+PSL(2,37)    |G|= 25308  involution classes=1  pairs (a,x) tested=  378  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 37': 340, 'quotient by abelian subgroup of order 19': 38}  [77.4s]
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+PGL(2,31)    |G|= 29760  involution classes=2  pairs (a,x) tested=  113  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 15': 15, 'quotient by abelian subgroup of order 31': 98}  [55.5s]
+PSL(2,32)    |G|= 32736  involution classes=1  pairs (a,x) tested=  930  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 31': 465, 'quotient by abelian subgroup of order 33': 450, 'quotient by abelian subgroup of order 11': 15}  [225.4s]
+PSL(2,41)    |G|= 34440  involution classes=1  pairs (a,x) tested=  380  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 41': 338, 'quotient by abelian subgroup of order 21': 40, 'quotient by abelian subgroup of order 7': 2}  [111.2s]
+PSL(2,43)    |G|= 39732  involution classes=1  pairs (a,x) tested=  490  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 43': 468, 'quotient by abelian subgroup of order 21': 21, 'quotient by abelian subgroup of order 11': 1}  [190.1s]
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-37:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-37:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-39:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+Exception in thread Thread-42:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1344, in run
+    self.function(*self.args, **self.kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check.py", line 296, in <lambda>
+    return _solve_in_child(n, edges, time_limit)
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pysat/solvers.py", line 2169, in interrupt
+    raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
+NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
+PSL(2,47)    |G|= 51888  involution classes=1  pairs (a,x) tested=  437  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 47': 413, 'quotient by abelian subgroup of order 23': 24}  [238.7s]

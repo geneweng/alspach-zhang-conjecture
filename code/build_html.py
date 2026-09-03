@@ -246,3 +246,16 @@ colophon = '''<p class="colophon">Prepared with the help of an AI assistant (Cla
 '''
 open(OUT, "w", encoding="utf-8").write(head + masthead + body + colophon)
 print("wrote", OUT, len(head + masthead + body + colophon), "bytes")
+
+# standalone version for GitHub Pages (docs/survey.html)
+DOCS = os.path.join(ROOT, "docs", "survey.html")
+os.makedirs(os.path.dirname(DOCS), exist_ok=True)
+standalone = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+              '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+              '<meta name="description" content="Survey of the Alspach-Zhang conjecture: every cubic Cayley graph is 3-edge-colourable.">\n'
+              + head + '<style>img{max-width:100%}</style>\n</head>\n<body>\n'
+              + '<p class="backlink"><a href="./">&larr; Project page</a></p>\n'
+              + masthead + body + colophon + '</body>\n</html>\n')
+standalone = standalone.replace('<p class="backlink">', '<p class="backlink" style="max-width:46rem;margin:1.2rem auto -2.5rem;padding:0 1.25rem;font-family:var(--sans);font-size:.85rem">')
+open(DOCS, "w", encoding="utf-8").write(standalone)
+print("wrote", DOCS)

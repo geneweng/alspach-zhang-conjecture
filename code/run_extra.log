@@ -1,0 +1,3 @@
+PSU(3,3)     |G|=  6048  involution classes=1  pairs (a,x) tested=    6  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 9': 6}  [0.7s]
+PSL(3,3).2   |G|= 11232  involution classes=2  pairs (a,x) tested=   31  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 13': 5, 'quotient by abelian subgroup of order 9': 26}  [6.7s]
+G2(2)        |G|= 12096  involution classes=2  pairs (a,x) tested=   21  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 9': 19, 'quotient by abelian subgroup of order 7': 2}  [15.2s]
