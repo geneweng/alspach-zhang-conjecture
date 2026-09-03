@@ -1,0 +1,502 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage[margin=2.6cm]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{question}[theorem]{Question}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{observation}[theorem]{Observation}
+
+\newcommand{\Cay}{\operatorname{Cay}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\PSL}{\operatorname{PSL}}
+\newcommand{\PGL}{\operatorname{PGL}}
+\newcommand{\PSigmaL}{\operatorname{P\Sigma L}}
+\newcommand{\GF}{\operatorname{GF}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\X}[3]{X(#1;#2,#3)}
+\newcommand{\Tr}{\operatorname{T}}
+
+\title{The Alspach--Zhang conjecture:\\ every cubic Cayley graph is $3$-edge-colourable\\[1ex]\large A survey}
+\author{}
+\date{September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In 1992 Brian Alspach and Cun-Quan Zhang conjectured that every Cayley graph of valency at least two admits a nowhere-zero $4$-flow.  By theorems of Mader and Jaeger this is equivalent to the statement that every connected cubic Cayley graph is $3$-edge-colourable, or, in the language introduced by Nedela and \v{S}koviera, that there are no \emph{Cayley snarks}.  The conjecture is implied by the folklore conjecture that every Cayley graph is hamiltonian, and it is known to hold for solvable groups (Alspach, Liu and Zhang), for all cubic graphs admitting a solvable vertex-transitive group of automorphisms other than the Petersen graph (Poto\v{c}nik), and for all cubic Cayley graphs on at most $1280$ vertices (Poto\v{c}nik, Spiga and Verret).  A minimal counterexample, if one exists, is a Cayley graph on a non-abelian simple group or on a group with a unique non-trivial proper normal subgroup, which has index two (Nedela and \v{S}koviera).  We survey these results, give short self-contained proofs of the elementary reductions, record several reformulations (in terms of arc-regular cubic graphs, of bi-Cayley graphs, and of small girth), and report a computer verification of the conjecture for all cubic Cayley graphs on a number of non-solvable groups of order up to about $40\,000$, including every non-abelian simple group of order at most $10\,000$ and all the smallest groups permitted by the Nedela--\v{S}koviera reduction.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+
+A \emph{Cayley graph} $\Cay(G,S)$ of a finite group $G$ with respect to a subset $S\subseteq G\setminus\{1\}$ with $S=S^{-1}$ has vertex set $G$, with $g$ adjacent to $gs$ for every $s\in S$.  Cayley graphs are the most symmetric graphs one can build from a group: $G$ itself acts regularly on the vertices by left multiplication.  Many of the classical ``hard'' cubic graphs of graph theory---the Petersen graph, the Coxeter graph, the snarks---are highly symmetric, yet none of them is a Cayley graph.  The conjecture surveyed here asserts that this is not an accident.
+
+\begin{conjecture}[Alspach--Zhang, 1992]\label{conj:AZ}
+Every connected cubic Cayley graph is $3$-edge-colourable.
+\end{conjecture}
+
+The conjecture was formulated by Alspach and Zhang at the Louisville workshop on Hamilton cycles in 1992, in the language of flows: \emph{every Cayley graph of valency at least two admits a nowhere-zero $4$-flow} (see \cite[\S1]{LiZhou16}, \cite[\S1]{ZhangZhou24}).  It first appeared in print in the paper of Alspach, Liu and Zhang \cite{ALZ96}, who proved it for solvable groups.  Since a connected vertex-transitive graph of valency $k$ is $k$-edge-connected (Mader \cite{Mader71}) and every $4$-edge-connected graph has a nowhere-zero $4$-flow (Jaeger \cite{Jaeger79}), the flow version reduces at once to the cubic case, where a nowhere-zero $4$-flow is the same thing as a $3$-edge-colouring (Tutte \cite{Tutte54}); see Proposition~\ref{prop:flow} below.  Nedela and \v{S}koviera \cite{NS01} coined the term \emph{Cayley snark} for a cubic Cayley graph that is not $3$-edge-colourable; Conjecture~\ref{conj:AZ} says that Cayley snarks do not exist.
+
+The conjecture sits between two much older problems.
+
+\begin{itemize}[leftmargin=2em]
+\item \emph{Snarks and the Four Colour Theorem.}  Tait observed in 1880 that the Four Colour Theorem is equivalent to the statement that every bridgeless planar cubic graph is $3$-edge-colourable.  Non-planar bridgeless cubic graphs need not be: the Petersen graph is the smallest example, and the non-trivial examples are called snarks.  A large part of the theory of snarks consists in showing that highly structured cubic graphs are not snarks; the Alspach--Zhang conjecture is the statement of this kind for the strongest possible symmetry assumption compatible with the Petersen graph not being an exception.
+\item \emph{Hamilton cycles in vertex-transitive graphs.}  Lov\'asz asked in 1969 whether every connected vertex-transitive graph has a Hamilton path, and a folklore conjecture asserts that every connected Cayley graph on at least three vertices has a Hamilton cycle \cite{CurranGallian96,KutnarMarusic09}.  A cubic Cayley graph has even order (Lemma~\ref{lem:structure}), so a Hamilton cycle in it is an even cycle whose edges can be coloured alternately, the remaining perfect matching receiving the third colour.  Thus \emph{Conjecture~\ref{conj:AZ} is a consequence of the hamiltonicity conjecture for cubic Cayley graphs}, and every hamiltonicity result for cubic Cayley graphs is a result about Conjecture~\ref{conj:AZ}.  Only four connected vertex-transitive graphs without a Hamilton cycle are known---the Petersen graph, the Coxeter graph, and their truncations---and none of them is a Cayley graph.
+\end{itemize}
+
+\subsection*{What is known}
+Table~\ref{tab:status} summarises the state of the conjecture.  The three main theorems are those of Alspach, Liu and Zhang (solvable groups), Nedela and \v{S}koviera (structure of a minimal counterexample) and Poto\v{c}nik (solvable vertex-transitive groups); the strongest computational evidence comes from the census of cubic vertex-transitive graphs of Poto\v{c}nik, Spiga and Verret.  We add to this a modest computation of our own (Section~\ref{sec:computation}) which pushes the verification beyond the range of the census for the groups singled out by the Nedela--\v{S}koviera reduction.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}p{0.55\textwidth}p{0.38\textwidth}@{}}
+\toprule
+Class of cubic Cayley graphs $\Cay(G,S)$ & Status / reference\\
+\midrule
+$S$ consists of three involutions & trivial (colour by generator), \S\ref{sec:easy}\\
+$S=\{a,x,x^{-1}\}$ with $\ord(x)$ even & trivial, \S\ref{sec:easy}\\
+$G$ abelian, dihedral, nilpotent, supersolvable, of odd-order-times-two, \dots & all solvable: \cite{ALZ96}\\
+$G$ solvable & Alspach--Liu--Zhang \cite{ALZ96}\\
+any cubic graph with a solvable vertex-transitive group of automorphisms, other than the Petersen graph & Poto\v{c}nik \cite{Potocnik04}\\
+$|G|\le 1280$ & census \cite{PSV13} (all are hamiltonian)\\
+$G=\langle a,x\rangle$ with $a^2=x^s=(ax)^3=1$ (``$(2,s,3)$-Cayley graphs'') & hamiltonian for $s$ odd \cite{GM07,GKMM12}; trivial for $s$ even\\
+$G$ has a normal subgroup containing $a$, or a normal subgroup avoiding $a$ and $x$ whose quotient graph is colourable & Lemmas~\ref{lem:cover}, \ref{lem:a-in-N}\\
+minimal counterexample & $G$ non-abelian simple, or $G$ has a unique non-trivial proper normal subgroup $T$, $|G:T|=2$, $T$ simple or $T\cong S\times S$ \cite{NS01}\\
+girth $4$; girth $3$ or $5$ unless $\ord(x)=3$ or $5$ & Proposition~\ref{prop:girth}\\
+selected non-solvable groups of order $\le 40\,000$ & Section~\ref{sec:computation}\\
+\bottomrule
+\end{tabular}
+\caption{Known cases of Conjecture~\ref{conj:AZ}.  Throughout, $a$ denotes an involution and $x$ an element of odd order $\ge 3$ generating $G$ together with $a$; by \S\ref{sec:easy} this is the only case that matters.}
+\label{tab:status}
+\end{table}
+
+\subsection*{Organisation}
+Section~\ref{sec:prelim} fixes terminology and recalls the classical facts about $3$-edge-colourings, flows, snarks and coverings that are used throughout.  Section~\ref{sec:easy} disposes of the trivial cases and reduces the conjecture to Cayley graphs $\Cay(G,\{a,x,x^{-1}\})$ with $a$ an involution and $x$ of odd order; it also contains several elementary reformulations that we have not seen stated explicitly in the literature (arc-regular cubic graphs, bi-Cayley graphs, small girth).  Section~\ref{sec:solvable} treats solvable groups and Poto\v{c}nik's generalisation to solvable vertex-transitive groups.  Section~\ref{sec:minimal} presents the Nedela--\v{S}koviera reduction with a self-contained proof.  Section~\ref{sec:hamilton} surveys the hamiltonicity route and the Cayley-map approach of Glover, Kutnar, Malni\v{c}, Maru\v{s}i\v{c} and Hujdurovi\'c.  Section~\ref{sec:computation} describes the computational evidence, including our own.  Section~\ref{sec:related} collects related problems on flows in Cayley graphs, and Section~\ref{sec:open} lists open questions.
+
+\section{Preliminaries}\label{sec:prelim}
+
+\subsection{Cayley graphs}
+Let $G$ be a finite group and $S\subseteq G\setminus\{1\}$ a subset closed under inversion.  The Cayley graph $\Cay(G,S)$ has vertex set $G$ and edge set $\{\{g,gs\}: g\in G,\ s\in S\}$.  It is a simple $|S|$-regular graph; it is connected if and only if $S$ generates $G$.  Every edge $\{g,gs\}$ carries the label $\{s,s^{-1}\}$, and left multiplication by any $h\in G$ is a label-preserving automorphism, so $G$ acts regularly on the vertices.  Conversely, a graph admitting a group of automorphisms acting regularly on its vertices is a Cayley graph on that group.  All graphs in this survey are finite; ``Cayley graph'' will always mean a connected one.
+
+\subsection{Cubic Cayley graphs}
+Let $\Cay(G,S)$ be cubic, so $|S|=3$.  Since $S=S^{-1}$ and $|S|$ is odd, $S$ contains an involution.  Either all three elements of $S$ are involutions, or $S=\{a,x,x^{-1}\}$ with $a^2=1$ and $\ord(x)\ge 3$.  We use the notation
+\[
+\X{G}{a}{x} := \Cay\bigl(G,\{a,x,x^{-1}\}\bigr),\qquad a^2=1,\ \ \ord(x)\ge 3,\ \ G=\langle a,x\rangle .
+\]
+In $\X{G}{a}{x}$ the $a$-edges form a perfect matching $M_a$, and the $x$-edges form a $2$-factor $F_x$ consisting of $|G|/\ord(x)$ cycles of length $\ord(x)$ (the left cosets of $\langle x\rangle$).
+
+\begin{lemma}\label{lem:structure}
+A connected cubic Cayley graph has even order and is either $\Cay(G,\{a,b,c\})$ with three involutions $a,b,c$, or $\X{G}{a}{x}$ as above.
+\end{lemma}
+\begin{proof}
+The generating set contains an involution, so $|G|$ is even; the dichotomy was explained above.
+\end{proof}
+
+\subsection{Tait colourings, even 2-factors and flows}
+A \emph{$3$-edge-colouring} (or Tait colouring) of a cubic graph $X$ is a colouring of the edges with three colours such that the three edges at each vertex receive distinct colours; equivalently, a partition of $E(X)$ into three perfect matchings.  The following reformulation is used constantly.
+
+\begin{lemma}\label{lem:even2factor}
+A cubic graph is $3$-edge-colourable if and only if it has a $2$-factor all of whose cycles are even.
+\end{lemma}
+\begin{proof}
+Two colour classes of a $3$-edge-colouring form a $2$-factor of even cycles; conversely, colour the cycles of an even $2$-factor alternately and give the complementary perfect matching the third colour.
+\end{proof}
+
+In particular a cubic graph with a Hamilton cycle is $3$-edge-colourable if and only if its order is even, and a bipartite cubic graph is $3$-edge-colourable (K\H{o}nig).
+
+A \emph{nowhere-zero $k$-flow} on a graph is an orientation together with an assignment of integers from $\{\pm1,\dots,\pm(k-1)\}$ to the edges satisfying Kirchhoff's law at every vertex.  Tutte \cite{Tutte54,Tutte66} showed that a cubic graph admits a nowhere-zero $4$-flow if and only if it is $3$-edge-colourable, and that a planar graph admits a nowhere-zero $4$-flow if and only if its dual is $4$-vertex-colourable; his $5$-flow conjecture (every bridgeless graph has a nowhere-zero $5$-flow) and $3$-flow conjecture (every $4$-edge-connected graph has a nowhere-zero $3$-flow) remain open.  Two theorems are needed to relate the flow form of the Alspach--Zhang conjecture to its colouring form.
+
+\begin{theorem}[Jaeger \cite{Jaeger79}]\label{thm:jaeger}
+Every $4$-edge-connected graph admits a nowhere-zero $4$-flow.
+\end{theorem}
+
+\begin{theorem}[Mader \cite{Mader71}]\label{thm:mader}
+A connected vertex-transitive graph of valency $k$ is $k$-edge-connected.
+\end{theorem}
+
+\begin{proposition}\label{prop:flow}
+The following statements are equivalent.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item Every connected Cayley graph of valency at least $2$ admits a nowhere-zero $4$-flow.
+\item Every connected cubic Cayley graph admits a nowhere-zero $4$-flow.
+\item Every connected cubic Cayley graph is $3$-edge-colourable \textup{(Conjecture~\ref{conj:AZ})}.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+A connected $2$-regular graph is a cycle and has a nowhere-zero $2$-flow.  A Cayley graph of valency $k\ge4$ is $k$-edge-connected by Theorem~\ref{thm:mader} and hence has a nowhere-zero $4$-flow by Theorem~\ref{thm:jaeger}.  So (ii)$\Rightarrow$(i), the converse is trivial, and (ii)$\Leftrightarrow$(iii) is Tutte's theorem.
+\end{proof}
+
+We also recall that a $3$-edge-colourable cubic graph has a cycle double cover (take the three $2$-factors formed by pairs of colour classes), so Conjecture~\ref{conj:AZ} implies the cycle double cover conjecture for cubic Cayley graphs.
+
+\subsection{Snarks and cyclic connectivity}
+A \emph{snark} is usually defined as a cyclically $4$-edge-connected cubic graph of girth at least $5$ which is not $3$-edge-colourable; the connectivity and girth conditions exclude examples obtained trivially from smaller ones.  Following \cite{NS01} we drop these conditions and call \emph{any} cubic Cayley graph that is not $3$-edge-colourable a \emph{Cayley snark}.  For vertex-transitive cubic graphs the distinction is small:
+
+\begin{theorem}[Nedela--\v{S}koviera \cite{NS95}]\label{thm:cyclic}
+The cyclic edge-connectivity of a connected cubic vertex-transitive graph equals its girth.
+\end{theorem}
+
+Thus a Cayley snark of girth at least $5$ would be a snark in the classical sense, and Jaeger's conjecture \cite{Jaeger85,JaegerSwart80} that there are no cyclically $7$-edge-connected snarks (still open; the analogous conjecture for girth was refuted by Kochol \cite{Kochol96}) would imply Conjecture~\ref{conj:AZ} for all cubic Cayley graphs of girth at least $7$.  We return to this in \S\ref{sec:girth}.
+
+\subsection{Coverings and quotients}\label{sec:cover}
+A surjective graph homomorphism $\pi\colon \tilde X\to X$ between (multi)graphs is a \emph{covering projection} if it maps the set of edges incident with each vertex $\tilde v$ bijectively onto the set of edges incident with $\pi(\tilde v)$.  If a group $N$ acts semiregularly on $\tilde X$ (every non-identity element acts without fixed vertices and without inverting edges) and the quotient $\tilde X/N$ has no loops or semi-edges, then $\tilde X\to\tilde X/N$ is a covering projection, called a \emph{regular $N$-covering}.
+
+\begin{lemma}\label{lem:lift}
+If $\pi\colon\tilde X\to X$ is a covering projection of cubic multigraphs and $X$ is $3$-edge-colourable, then so is $\tilde X$.
+\end{lemma}
+\begin{proof}
+Colour each edge $\tilde e$ of $\tilde X$ with the colour of $\pi(\tilde e)$.  At each vertex $\tilde v$ the three edges map bijectively onto the three (distinctly coloured) edges at $\pi(\tilde v)$.
+\end{proof}
+
+For Cayley graphs the relevant quotients come from normal subgroups.  Let $N\trianglelefteq G$ and write $\bar g=gN$.
+
+\begin{lemma}[quotient lemma]\label{lem:cover}
+Let $X=\X{G}{a}{x}$ with $\ord(x)$ odd and let $1\ne N\trianglelefteq G$ be a proper normal subgroup with $a\notin N$ and $x\notin N$.  Then $\bar G=G/N$ is generated by the involution $\bar a$ and the element $\bar x$ of odd order at least $3$, $\bar X=\X{\bar G}{\bar a}{\bar x}$ is a connected cubic Cayley graph on a group of order $|G|/|N|$, and $g\mapsto\bar g$ is a regular $N$-covering $X\to\bar X$.  Consequently, if $\bar X$ is $3$-edge-colourable then so is $X$.
+\end{lemma}
+\begin{proof}
+$\bar a\ne1$ since $a\notin N$, and $\ord(\bar x)$ divides the odd number $\ord(x)$ and is $>1$ since $x\notin N$; hence $\ord(\bar x)\ge3$, $\bar x\ne\bar x^{-1}$ and $\bar x\ne\bar a$.  So $\{\bar a,\bar x,\bar x^{-1}\}$ is an inverse-closed $3$-subset of $\bar G\setminus\{1\}$ generating $\bar G$.  The map $g\mapsto \bar g$ sends the three edges $\{g,ga\},\{g,gx\},\{g,gx^{-1}\}$ at $g$ to the three distinct edges $\{\bar g,\bar g\bar a\},\{\bar g,\bar g\bar x\},\{\bar g,\bar g\bar x^{-1}\}$ at $\bar g$, and $N$ acts semiregularly by left multiplication with quotient $\bar X$.  Apply Lemma~\ref{lem:lift}.
+\end{proof}
+
+When $N$ contains $a$ or $x$ the quotient degenerates (the $a$-edges become semi-edges, or the $x$-edges become loops).  These two cases behave very differently: the first is harmless (Lemma~\ref{lem:a-in-N}), the second is the heart of the problem (\S\ref{sec:bicayley}).
+
+\section{The easy cases and some reformulations}\label{sec:easy}
+
+\subsection{Trivial colourings}
+\begin{proposition}\label{prop:trivial}
+Let $X$ be a connected cubic Cayley graph.
+\begin{enumerate}[label=\textup{(\alph*)}]
+\item If $X=\Cay(G,\{a,b,c\})$ with $a,b,c$ involutions, then colouring each edge by its generator is a $3$-edge-colouring.
+\item If $X=\X{G}{a}{x}$ with $\ord(x)$ even, then $F_x$ is an even $2$-factor and $X$ is $3$-edge-colourable.
+\item If $G$ is abelian, then $X$ is $3$-edge-colourable.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(a) and (b) are immediate from Lemma~\ref{lem:even2factor}.  For (c), by (a) and (b) we may assume $X=\X{G}{a}{x}$ with $\ord(x)$ odd; as $G$ is abelian, $G=\langle x\rangle\times\langle a\rangle$ and $X$ is the prism $C_{\ord(x)}\square K_2$, whose $a$-edges together with the ``rungs'' form a Hamilton cycle of even length.
+\end{proof}
+
+\begin{corollary}\label{cor:reduction}
+Conjecture~\ref{conj:AZ} is equivalent to the following statement: for every finite group $G=\langle a,x\rangle$ generated by an involution $a$ and an element $x$ of odd order $s\ge3$, the graph $\X{G}{a}{x}$ is $3$-edge-colourable.
+\end{corollary}
+
+From now on we therefore assume that $X=\X{G}{a}{x}$ with $s=\ord(x)$ odd, $s\ge 3$.  Note that $X$ then contains the odd cycles of $F_x$, so $X$ is never bipartite, and a $3$-edge-colouring must use a $2$-factor different from the ``obvious'' one.  In terms of the group, $X$ is $3$-edge-colourable if and only if there is a subset $M\subseteq G$ (the vertices whose $a$-edge is \emph{not} used by the even $2$-factor) such that the $2$-factor consisting of the $a$-edges at $G\setminus M$ and suitable $x$-edges at $M$ has only even cycles; there seems to be no useful algebraic characterisation of this condition.
+
+\subsection{Normal subgroups containing the involution}
+\begin{lemma}\label{lem:a-in-N}
+Let $X=\X{G}{a}{x}$ with $\ord(x)$ odd.  If $G$ has a proper normal subgroup $N$ with $a\in N$ (equivalently, if there is a surjective homomorphism $\varphi\colon G\to\ZZ_m$, $m\ge3$, with $\varphi(a)=0$), then $X$ is $3$-edge-colourable.
+\end{lemma}
+\begin{proof}
+$G/N=\langle xN\rangle$ is cyclic of order $m\mid\ord(x)$, and $m\ge3$ because $N\ne G$; let $\varphi\colon G\to\ZZ_m$ be the quotient map, so $\varphi(a)=0$ and $\varphi(x)=1$.  Choose a proper vertex $3$-colouring $c\colon\ZZ_m\to\{1,2,3\}$ of the cycle $C_m$ (it exists for every $m\ge3$).  Colour the $x$-edge $\{g,gx\}$ with $c(\varphi(g))$ and the $a$-edge $\{g,ga\}$ with the colour in $\{1,2,3\}\setminus\{c(\varphi(g)-1),c(\varphi(g))\}$; the latter is well defined because $\varphi(ga)=\varphi(g)$.  At a vertex $g$ with $\varphi(g)=i$ the two $x$-edges $\{gx^{-1},g\}$ and $\{g,gx\}$ have the distinct colours $c(i-1)$ and $c(i)$, and the $a$-edge has the third colour.
+\end{proof}
+
+Note that $m$ is automatically odd.  The lemma says that the ``degenerate quotient'' in which the $a$-edges collapse to semi-edges is never an obstacle.
+
+\subsection{Small girth}\label{sec:girth}
+A cycle of length $\ell$ through the identity of $X=\X{G}{a}{x}$ corresponds to a cyclically reduced word of length $\ell$ in $a,x,x^{-1}$ (no factor $aa$, $xx^{-1}$ or $x^{-1}x$, also cyclically) representing $1$ in $G$.
+
+\begin{proposition}\label{prop:girth}
+Let $X=\X{G}{a}{x}$ with $s=\ord(x)$ odd, $s\ge3$, and $G$ not cyclic.
+\begin{enumerate}[label=\textup{(\alph*)}]
+\item $X$ has girth $3$ if and only if $s=3$.
+\item If $X$ has girth $4$, then $\langle x\rangle\trianglelefteq G$ and $G\cong D_{2s}$ is dihedral.
+\item If $X$ has girth $5$, then either $s=5$ or $\langle x\rangle\trianglelefteq G$, so that $G=\langle x\rangle\rtimes\langle a\rangle$ is metacyclic.
+\end{enumerate}
+In particular Conjecture~\ref{conj:AZ} holds for all cubic Cayley graphs of girth $4$, and for those of girth $3$ (resp.\ $5$) unless $s=3$ (resp.\ $s=5$).
+\end{proposition}
+\begin{proof}
+A cyclically reduced word in $a,x^{\pm1}$ of length $\ell\le5$ has one of the forms $x^{\pm\ell}$; $ax^{k}$ with $|k|=\ell-1$; or (for $\ell\in\{4,5\}$) $ax^{i}ax^{j}$ with $i,j\ne0$ and $|i|+|j|=\ell-2$.  A relation $x^{\pm\ell}=1$ with $\ell\le5$ and $s$ odd forces $s=\ell\in\{3,5\}$.  A relation $ax^{k}=1$ gives $a\in\langle x\rangle$ and $G$ cyclic, which is excluded.  A relation $ax^{i}ax^{j}=1$ gives $ax^{i}a=x^{-j}$ with $|i|,|j|\in\{1,2,3\}$ and $|i|+|j|\le3$; since $s$ is odd, $x^{i}$ and $x^{-j}$ generate $\langle x\rangle$ unless $s=3$ and $3\mid i$ or $3\mid j$, which would give girth $3$.  Hence $a$ normalises $\langle x\rangle$, $\langle x\rangle\trianglelefteq G$, and $G=\langle x\rangle\rtimes\langle a\rangle$.  For $\ell=4$ the only such relations are $(ax)^2=1$ (giving $D_{2s}$) and $axax^{-1}=1$ (giving $G$ abelian, hence cyclic).  The final assertion follows from Theorem~\ref{thm:ALZ} below, since metacyclic groups are solvable.
+\end{proof}
+
+Combined with Theorem~\ref{thm:cyclic}, this shows that in a proof of Conjecture~\ref{conj:AZ} by ``girth'' the cases requiring an idea are girth $3$ with $s=3$, girth $5$ with $s=5$, girth $6$, and girth at least $7$; a proof of Jaeger's conjecture on cyclically $7$-edge-connected snarks would settle the last case.  This parallels the observation of Aboomahigir and Nedela \cite{AboomahigirNedela19} that, modulo Thomassen's conjecture that cyclically $7$-connected cubic graphs other than the Coxeter graph are hamiltonian, the hamiltonicity of cubic Cayley graphs reduces to girth at most $6$.
+
+\subsection{Generators of order three: arc-regular cubic graphs}\label{sec:arcregular}
+The case $s=3$ has a pleasant reformulation.  Recall that the \emph{truncation} $\Tr(Y)$ of a cubic graph $Y$ is obtained by replacing every vertex by a triangle; its vertices are the arcs (ordered pairs of adjacent vertices) of $Y$, two arcs being adjacent if they have the same initial vertex or are inverse to each other.
+
+\begin{lemma}\label{lem:truncation}
+A cubic multigraph $Y$ is $3$-edge-colourable if and only if $\Tr(Y)$ is.
+\end{lemma}
+\begin{proof}
+In a $3$-edge-colouring of $\Tr(Y)$ the three edges of a triangle receive three distinct colours, hence so do the three edges leaving the triangle; restricting the colouring to the edges of $\Tr(Y)$ that come from edges of $Y$ gives a $3$-edge-colouring of $Y$.  Conversely, given a $3$-edge-colouring of $Y$, colour each triangle edge of $\Tr(Y)$ with the colour of the edge of $Y$ opposite to it in the triangle.
+\end{proof}
+
+A group $G\le\Aut(Y)$ is \emph{arc-regular} if it acts regularly (transitively with trivial stabilisers) on the arcs of $Y$.
+
+\begin{proposition}\label{prop:arcregular}
+Let $G=\langle a,y\rangle$ with $a^2=y^3=1$ and $|G|>6$.  Let $Y$ be the coset graph with vertex set $\{\langle y\rangle g: g\in G\}$ in which $\langle y\rangle g$ is adjacent to $\langle y\rangle a y^{i}g$ for $i=0,1,2$.  Then $Y$ is a connected simple cubic graph on $|G|/3$ vertices, $G$ acts on it by right multiplication as an arc-regular group of automorphisms, and $\X{G}{a}{y}\cong\Tr(Y)$.  Conversely, if $Y$ is a connected cubic graph with an arc-regular group $G$ of automorphisms, then $G=\langle a,y\rangle$ for an involution $a$ and an element $y$ of order $3$, and $\Tr(Y)\cong\X{G}{a}{y}$.
+\end{proposition}
+\begin{proof}
+Put $H=\langle y\rangle$.  The three neighbours $Ha$, $Hay$, $Hay^2$ of the vertex $H$ are distinct: $Ha=Hay^{i}$ would give $ay^{i}a^{-1}\in H$, so that $a$ normalises $H$ and $|G|\le 6$.  Right multiplication by $G$ preserves adjacency and is transitive on vertices; the stabiliser $H$ of the vertex $H$ permutes its three neighbours cyclically ($Hay^{i}\cdot y=Hay^{i+1}$), so $G$ is transitive on arcs, and $|G|=3\,|V(Y)|$ equals the number of arcs, so the action on arcs is regular.  Identify the arc $(Hg,Hag)$ with $g\in G$; arcs with the same initial vertex correspond to $g$ and $y^{\pm1}g$, and the inverse of the arc $g$ is the arc $ag$.  So $\Tr(Y)$ is the Cayley graph of $G$ with respect to $\{a,y,y^{-1}\}$ and \emph{left} multiplication, which is isomorphic to $\X{G}{a}{y}$ via $g\mapsto g^{-1}$.
+
+Conversely, if $G$ is arc-regular on $Y$, the stabiliser $G_v$ of a vertex $v$ acts regularly on the three arcs leaving $v$, so $G_v=\langle y\rangle\cong\ZZ_3$; some $a\in G$ maps the arc $(v,w)$ to $(w,v)$, and $a^2$ fixes $(v,w)$, so $a$ is an involution.  Connectedness of $Y$ gives $G=\langle G_v,a\rangle$, and identifying arcs with group elements as above gives $\Tr(Y)\cong\X{G}{a}{y}$.
+\end{proof}
+
+\begin{corollary}\label{cor:arcregular}
+Conjecture~\ref{conj:AZ} for generating pairs $(a,x)$ with $\ord(x)=3$ is equivalent to the statement that every connected cubic graph admitting an arc-regular group of automorphisms is $3$-edge-colourable.
+\end{corollary}
+
+The Petersen graph is arc-transitive with automorphism group $S_5$, but has no arc-regular subgroup ($S_5$ has no subgroup of order $30$), in accordance with the conjecture; the same applies to its truncation, which is a vertex-transitive cubic graph that is not $3$-edge-colourable but not a Cayley graph.  Cubic arc-transitive graphs have been classified into seventeen ``action types'' by Conder and Nedela \cite{ConderNedela09} according to which of the Djokovi\'c--Miller groups \cite{DjokovicMiller80} occur as subgroups of the automorphism group; the ones containing an arc-regular (``$1$-regular'') subgroup are exactly the graphs in Corollary~\ref{cor:arcregular}.  Since every finite non-abelian simple group, apart from the symplectic groups $\operatorname{PSp}(4,2^f)$, $\operatorname{PSp}(4,3^f)$ and finitely many others (among them $A_6$, $A_7$, $A_8$ and the sporadic groups $M_{11}$, $M_{22}$, $M_{23}$, $McL$), is generated by an involution and an element of order $3$ (Liebeck and Shalev \cite{LiebeckShalev96}, Woldar \cite{Woldar89}), the case $s=3$ alone already concerns a cubic Cayley graph on almost every simple group.
+
+\subsection{Normal subgroups of index two: bi-Cayley graphs}\label{sec:bicayley}
+Suppose that $X=\X{G}{a}{x}$ with $s=\ord(x)$ odd and that $T\trianglelefteq G$ has index $2$.  Then $x\in T$ (its image in $G/T\cong\ZZ_2$ has odd order) and $a\notin T$, so $G=T\rtimes\langle a\rangle$ and conjugation by $a$ induces an involutory automorphism $\alpha$ of $T$ with $T=\langle x,\alpha(x)\rangle$.  The vertex set of $X$ is $T\,\sqcup\,Ta$, the $x$-edges inside $T$ are the cycles of $x$, the $x$-edges inside $Ta$ are, after the identification $ta\leftrightarrow t$, the cycles of $\alpha(x)$ (because $ta\cdot x=t\,\alpha(x)\,a$), and the $a$-edges form the identity matching $t\leftrightarrow ta$.  Thus
+\begin{equation}\label{eq:bicayley}
+X\;\cong\; B(T;x,\alpha(x)),
+\end{equation}
+where, for a group $T$ and elements $u,v\in T$, the graph $B(T;u,v)$ has vertex set $T\times\{0,1\}$ and edges $(t,0)\sim(tu,0)$, $(t,1)\sim(tv,1)$ and $(t,0)\sim(t,1)$ for all $t\in T$.
+This is a \emph{bi-Cayley graph} of $T$, a natural generalisation of the generalised Petersen graphs $GP(n,k)=B(\ZZ_n;1,k)$.  Conversely, for any group $T$, any $x\in T$ of odd order and any involutory automorphism $\alpha$ of $T$ with $\langle x,\alpha(x)\rangle=T$, the graph $B(T;x,\alpha(x))$ is the cubic Cayley graph $\X{T\rtimes\langle\alpha\rangle}{\alpha}{x}$.
+
+The generalised Petersen graph $GP(n,k)$ is a Cayley graph if and only if $k^2\equiv1\pmod n$ (Nedela and \v{S}koviera \cite{NS95b}), which is exactly the condition that multiplication by $k$ be an involutory automorphism of $\ZZ_n$; and Castagna and Prins \cite{CastagnaPrins72} proved Watkins' conjecture that every generalised Petersen graph other than the Petersen graph itself is $3$-edge-colourable.  (The Petersen graph is $GP(5,2)$ with $2^2\equiv-1$, not $+1$, modulo $5$.)  So Conjecture~\ref{conj:AZ} holds for all generalised Petersen graphs, and the results of \S\ref{sec:minimal} show that the whole conjecture reduces to graphs of the form \eqref{eq:bicayley} with $T$ simple or $T\cong S\times S$, together with Cayley graphs on simple groups.
+
+\section{Solvable groups}\label{sec:solvable}
+
+\begin{theorem}[Alspach, Liu, Zhang \cite{ALZ96}]\label{thm:ALZ}
+Every connected cubic Cayley graph on a solvable group is $3$-edge-colourable.  Equivalently, every connected Cayley graph of valency at least $2$ on a solvable group admits a nowhere-zero $4$-flow.
+\end{theorem}
+
+The proof is an induction along a normal series.  With the lemmas of \S\S\ref{sec:prelim}--\ref{sec:easy} in hand it can be organised as follows.  Let $X=\X{G}{a}{x}$ with $G$ solvable and $\ord(x)$ odd, and let $N$ be a minimal normal subgroup of $G$; it is elementary abelian.  If $a\notin N$ and $x\notin N$, Lemma~\ref{lem:cover} reduces to the smaller solvable group $G/N$.  If $a\in N$, Lemma~\ref{lem:a-in-N} applies (note $N\ne G$ as $G$ is not abelian of prime order).  Otherwise $x\in N$, $N$ has index $2$ and $G=N\rtimes\langle a\rangle$ with $N$ an elementary abelian $p$-group ($p$ odd) generated by $x$ and $x^a$; thus $N\cong\ZZ_p$ or $\ZZ_p^2$, and $X$ is either the prism over $C_p$ (if $x^a=x^{\pm1}$), or the bi-Cayley graph $B(\ZZ_p^2;(1,0),(0,1))$; the prism is hamiltonian, and the second graph is $3$-edge-colourable as well (see \cite{ALZ96} for the details in the original formulation; we also confirmed this by computer for $p\le 13$).
+
+Theorem~\ref{thm:ALZ} covers, among others, all cubic Cayley graphs on abelian, nilpotent, supersolvable, dihedral and generalised dihedral groups, on $p$-groups, on groups of order $p^aq^b$ (Burnside) and on all groups of order less than $60$.
+
+\subsection{Solvable vertex-transitive groups}
+Poto\v{c}nik extended Theorem~\ref{thm:ALZ} from regular to transitive actions of solvable groups.
+
+\begin{theorem}[Poto\v{c}nik \cite{Potocnik04}]\label{thm:potocnik}
+Let $X$ be a connected cubic simple graph whose automorphism group contains a solvable subgroup acting transitively on the vertices.  If $X$ is not $3$-edge-colourable, then $X$ is the Petersen graph.
+\end{theorem}
+
+The Petersen graph is a genuine exception: the subgroup of $S_5$ of order $20$ (the affine group $\mathrm{AGL}(1,5)$) is solvable and acts transitively on its ten vertices.  Theorem~\ref{thm:potocnik} contains Theorem~\ref{thm:ALZ}, since a Cayley graph on a solvable group admits that group as a solvable regular, hence transitive, group of automorphisms, and the Petersen graph is not a Cayley graph.
+
+The strategy of the proof is again inductive, using the theory of elementary abelian regular covers developed by Malni\v{c}, Maru\v{s}i\v{c} and Poto\v{c}nik \cite{MMP04,MalnicPotocnik06}.  If $G\le\Aut(X)$ is solvable and vertex-transitive, a minimal normal subgroup $N$ of $G$ is elementary abelian; if $N$ acts semiregularly on $V(X)$ then $X$ is a regular $N$-cover of the quotient $X/N$, which admits the solvable vertex-transitive group $G/N$, and Lemma~\ref{lem:lift} applies provided $X/N$ is a cubic graph.  The remaining cases (non-semiregular $N$, quotients of smaller valency) are analysed directly, and the base of the induction involves the Petersen graph: as Malni\v{c} and Poto\v{c}nik put it, ``the fact that all elementary abelian covers of the Petersen graph are $3$-edge-colourable was used \dots\ in order to prove, by induction, that every connected cubic graph admitting a vertex-transitive solvable group of automorphisms (with the sole exception of the Petersen graph itself) is $3$-edge-colourable'' \cite[\S1]{MalnicPotocnik06}.
+
+Theorem~\ref{thm:potocnik} also yields the conjecture for many non-Cayley vertex-transitive cubic graphs, and for every cubic vertex-transitive graph whose order $n$ is such that all transitive permutation groups of degree $n$ are solvable.
+
+\section{The structure of a minimal counterexample}\label{sec:minimal}
+
+Nedela and \v{S}koviera proved that a smallest Cayley snark, if one exists, must come from a group that is ``almost as simple as possible''.  A group $G$ is \emph{almost simple} if $T\le G\le\Aut(T)$ for some non-abelian simple group $T$.
+
+\begin{theorem}[Nedela--\v{S}koviera \cite{NS01}]\label{thm:NS}
+Let $X=\X{G}{a}{x}$ be a Cayley snark of smallest possible order.  Then either
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item $G$ is a non-abelian simple group; or
+\item $G$ has exactly one non-trivial proper normal subgroup $T$; moreover $|G:T|=2$, $x\in T$, $a\notin T$, and $T$ is either a non-abelian simple group (so that $G$ is almost simple) or the direct product $S\times S$ of two isomorphic non-abelian simple groups, the involution $a$ interchanging the two factors (so that $G\cong S\wr\ZZ_2$).
+\end{enumerate}
+In particular every Cayley snark is a regular cover of a Cayley snark on a group of type \textup{(i)} or \textup{(ii)}.
+\end{theorem}
+
+The last sentence follows from the first by repeated application of Lemma~\ref{lem:cover} to a Cayley snark that is not minimal (the quotient by a normal subgroup avoiding $a$ and $x$ is again a Cayley snark, by Lemma~\ref{lem:cover}, or the normal subgroup contains $a$, which is impossible by Lemma~\ref{lem:a-in-N}, or it has index $2$).  The reader should consult \cite{NS01} for the original proof; the following short argument, based on the lemmas above and on Theorem~\ref{thm:ALZ}, recovers the statement.
+
+\begin{proof}[Proof of Theorem~\ref{thm:NS}]
+Let $X=\X{G}{a}{x}$ be a Cayley snark of smallest order; by Proposition~\ref{prop:trivial}, $s=\ord(x)$ is odd and $G$ is not abelian.  Let $1\ne N\trianglelefteq G$ be a proper normal subgroup.
+\begin{itemize}[leftmargin=2em]
+\item If $a\notin N$ and $x\notin N$, then by Lemma~\ref{lem:cover} $X$ covers the smaller cubic Cayley graph $\X{G/N}{\bar a}{\bar x}$, which is $3$-edge-colourable by minimality; hence so is $X$, a contradiction.
+\item If $a\in N$, then $X$ is $3$-edge-colourable by Lemma~\ref{lem:a-in-N}, a contradiction.
+\item Hence $x\in N$ and $a\notin N$.  Then $G/N=\langle aN\rangle$ has order $2$.
+\end{itemize}
+So every non-trivial proper normal subgroup of $G$ has index $2$ and contains $x$.  If $N_1\ne N_2$ were two of them, $N_1\cap N_2$ would be a normal subgroup of index $4$ containing $x\ne1$, contradicting what we just proved.  Hence $G$ has at most one non-trivial proper normal subgroup.
+
+If it has none, $G$ is simple, and non-abelian because $|G|$ is even and divisible by $s\ge3$.
+
+Otherwise let $T$ be the unique non-trivial proper normal subgroup.  It is a minimal normal subgroup, hence characteristically simple: $T\cong S^k$ for a simple group $S$.  If $S$ is abelian then $G=T\rtimes\langle a\rangle$ is solvable, contradicting Theorem~\ref{thm:ALZ}.  So $S$ is non-abelian simple, and the $k$ direct factors of $T$ are the minimal normal subgroups of $T$, which $a$ permutes by conjugation.  The product of the factors in one $\langle a\rangle$-orbit is normalised by $T$ and by $a$, hence normal in $G$, hence equal to $T$; so $a$ acts transitively on the $k$ factors and $k\le2$.  If $k=1$, $T$ is non-abelian simple and $G$ is almost simple.  If $k=2$, $a$ interchanges the two factors; after replacing the second factor's coordinates by their image under a suitable automorphism of $S$ we may assume that $a$ acts by $(u,v)\mapsto(v,u)$, i.e.\ $G\cong S\wr\ZZ_2$.
+\end{proof}
+
+\begin{remark}
+(1) In case (ii) the graph $X$ is the bi-Cayley graph $B(T;x,\alpha(x))$ of \eqref{eq:bicayley}, where $\alpha$ is the outer involutory automorphism of $T$ induced by $a$ (it is not inner: if $a$ induced an inner automorphism $\iota_t$, then $at^{-1}$ would be a central involution of $G$, generating a second normal subgroup).  Examples of admissible pairs $(G,T)$: $(S_n,A_n)$ with $a$ an odd permutation; $(\PGL(2,q),\PSL(2,q))$ for odd $q$; $(\PSigmaL(2,q^2),\PSL(2,q^2))$; $(M_{10},A_6)$; $(S\wr\ZZ_2,S\times S)$ with, for instance, $S=A_5$ and $x=\bigl((123),(12345)\bigr)$.
+
+(2) Groups of type (i) or (ii) are precisely the groups $G=\langle a,x\rangle$ whose \emph{socle} is a non-abelian minimal normal subgroup $T$ with $G/T$ of order at most $2$; this explains the title of \cite{NS01}.  Note that the theorem does not say that every Cayley snark lives on such a group, only that a \emph{smallest} one does; a Cayley snark on an arbitrary group covers one of these.
+
+(3) The argument shows more generally that Conjecture~\ref{conj:AZ} holds for every group $G$ that has a non-trivial normal subgroup $N$ with $a\in N$ or with $a,x\notin N$ and the conjecture known for $G/N$.  For instance, it holds for every group of the form $G=N\rtimes\ZZ_m$ with $m$ odd and $N$ containing $a$, and for all groups $G$ with a solvable non-trivial normal subgroup $N$ such that $G/N$ satisfies the conjecture (by induction, if $a,x\notin N$; by Lemma~\ref{lem:a-in-N} if $a\in N$; and if $x\in N$ then $|G:N|=2$ and $G$ is solvable).  In particular, the conjecture holds for all groups with a non-trivial solvable radical whose quotient by the radical satisfies it.
+\end{remark}
+
+\section{The hamiltonicity route and Cayley maps}\label{sec:hamilton}
+
+As noted in the introduction, a Hamilton cycle in a cubic Cayley graph yields a $3$-edge-colouring.  The literature on Hamilton cycles in Cayley graphs is vast (see the surveys \cite{CurranGallian96,KutnarMarusic09,PakRadoicic09}); we mention only the results that bear directly on cubic Cayley graphs on non-solvable groups, since for solvable groups Theorem~\ref{thm:ALZ} is already available.
+
+\subsection{$(2,s,3)$-Cayley graphs}
+Glover and Maru\v{s}i\v{c} \cite{GM07} initiated the study of cubic Cayley graphs $\X{G}{a}{x}$ on groups with a \emph{$(2,s,3)$-presentation}
+\[
+G=\langle a,x \mid a^2=x^s=(ax)^3=1,\dots\rangle ,
+\]
+i.e.\ generated by an involution $a$ and an element $x$ of order $s$ whose product has order $3$.  Such a graph has a natural embedding as a \emph{Cayley map} in an orientable surface whose faces are the $s$-gons bounded by the $x$-cycles and the hexagons bounded by the closed walks $(ax)^3$; a Hamilton cycle is sought as the boundary of a tree of faces (a ``tree of faces'' in the Cayley map), using classical results on cyclic stability of cubic graphs.
+
+\begin{theorem}[Glover--Maru\v{s}i\v{c} \cite{GM07}; Glover--Kutnar--Maru\v{s}i\v{c} \cite{GKM09}; Glover--Kutnar--Malni\v{c}--Maru\v{s}i\v{c} \cite{GKMM12}]\label{thm:2s3}
+Let $X=\X{G}{a}{x}$ where $G$ has a $(2,s,3)$-presentation.  Then $X$ has a Hamilton path, and it has a Hamilton cycle whenever $|G|\equiv2\pmod4$, whenever $s\equiv0\pmod4$, and whenever $s$ is odd.  The only open case is $|G|\equiv0\pmod4$ with $s\equiv2\pmod4$.
+\end{theorem}
+
+\begin{corollary}\label{cor:2s3}
+Every $(2,s,3)$-Cayley graph is $3$-edge-colourable.
+\end{corollary}
+\begin{proof}
+If $s$ is even, Proposition~\ref{prop:trivial}(b) applies; if $s$ is odd, Theorem~\ref{thm:2s3} provides a Hamilton cycle.
+\end{proof}
+
+Note that a $(2,s,3)$-generated group is the same thing as a $(2,3)$-generated group (put $y=ax$), but the Cayley graph $\X{G}{a}{x}$ of Corollary~\ref{cor:2s3} is different from the graph $\X{G}{a}{y}$ of \S\ref{sec:arcregular}: in the former the element of order $3$ is the \emph{product} of the two generators.  The two families overlap exactly when $s=3$.
+
+\subsection{Cayley maps and independent sets}
+Hujdurovi\'c, Kutnar and Maru\v{s}i\v{c} \cite{HKM13,HKM14} pursued the Cayley-map approach with Conjecture~\ref{conj:AZ} rather than hamiltonicity as the target.  In \cite{HKM13} they show that a connected bicirculant of prime valency admitting a suitable automorphism is \emph{near-bipartite} (its vertex set has an independent subset whose removal leaves a bipartite graph), and combine this with the theory of Cayley maps to obtain partial results on the non-existence of Cayley snarks; \cite{HKM14} develops this further, ``combining the theory of Cayley maps with the existence of certain kinds of independent sets of vertices in arc-transitive graphs'' to obtain ``new partial results suggesting promising future research directions'' for the conjecture.  The underlying idea is that, in $\X{G}{a}{x}$ with $s$ odd, the $x$-cycles are the vertices of an $s$-valent $G$-arc-transitive quotient graph (the coset graph of $\langle x\rangle$), and a suitable independent set in this quotient allows one to modify the odd $2$-factor $F_x$ into an even one.
+
+\subsection{Other hamiltonicity results}
+Kutnar, Maru\v{s}i\v{c}, Morris, Morris and \v{S}parl \cite{KMMMS12} proved that every connected Cayley graph whose order is $kp$ with $k\le 47$ ($p$ prime) and various other orders with few prime factors is hamiltonian; together with earlier work this covers all Cayley graphs of order less than $100$ and, for cubic graphs on non-solvable groups, e.g.\ the Cayley graphs of order $60$ on $A_5$ and of order $120$ on $S_5$ and $\mathrm{SL}(2,5)$.  All of these are, however, well inside the range of the census discussed next.
+
+\section{Computational evidence}\label{sec:computation}
+
+\subsection{The census of cubic vertex-transitive graphs}
+Poto\v{c}nik, Spiga and Verret \cite{PSV13} constructed all connected cubic vertex-transitive graphs on at most $1280$ vertices: there are $111\,360$ of them, of which $109\,926$ are Cayley graphs ($97\,687$ of these are graphical regular representations, i.e.\ their full automorphism group acts regularly).  They report:
+
+\begin{quote}
+``We tested all the graphs in the census for Hamilton cycles and found at least one such cycle for each graph apart from the four well-known exceptions (the Petersen graph, the Coxeter graph and their truncations).'' \cite[\S2]{PSV13}
+\end{quote}
+
+\begin{corollary}\label{cor:census}
+Every connected cubic Cayley graph on at most $1280$ vertices is $3$-edge-colourable.  More generally, every connected cubic vertex-transitive graph on at most $1280$ vertices other than the Petersen graph and its truncation is $3$-edge-colourable.
+\end{corollary}
+\begin{proof}
+A hamiltonian cubic graph of even order is $3$-edge-colourable.  The Coxeter graph has chromatic index $3$, hence so does its truncation by Lemma~\ref{lem:truncation}; the Petersen graph and its truncation are not $3$-edge-colourable, by Lemma~\ref{lem:truncation} again.  None of the four exceptions is a Cayley graph.
+\end{proof}
+
+\subsection{Beyond the census}
+Combining Corollary~\ref{cor:census} with Theorem~\ref{thm:NS} gives a concrete list of the smallest groups on which a Cayley snark could conceivably live: a smallest Cayley snark has more than $1280$ vertices, and its group is a non-abelian simple group of order $>1280$, or an almost simple group $T.2$ with $|T|>640$ and $T$ simple, or $S\wr\ZZ_2$ with $|S|>\sqrt{320}$, i.e.\ $|S|\ge60$.  In increasing order the first candidates are $\PGL(2,11)$ (order $1320$), $\PGL(2,13)$ ($2184$), $\PSL(2,17)$ ($2448$), $A_7$ ($2520$), $\PSL(2,19)$ ($3420$), $\PSL(2,16)$ ($4080$), $\PGL(2,17)$ ($4896$), $S_7$ ($5040$), $\PSL(3,3)$ ($5616$), $\operatorname{PSU}(3,3)$ ($6048$), $\PSL(2,23)$ ($6072$), $\PGL(2,19)$ ($6840$), $A_5\wr\ZZ_2$ ($7200$), $\PSL(2,25)$ ($7800$), $M_{11}$ ($7920$), $\PSigmaL(2,16)$ ($8160$), \dots
+
+We wrote a short program (\texttt{code/cayley\_snark\_check.py} and \texttt{code/extra\_groups.py} in the repository accompanying this survey) which, for a given permutation group $G$, enumerates all pairs $(a,x)$ with $a$ an involution, $x$ of odd order and $\langle a,x\rangle=G$, up to conjugation in $G$ and inversion of $x$, and decides whether $\X{G}{a}{x}$ is $3$-edge-colourable.  By Proposition~\ref{prop:trivial} this decides Conjecture~\ref{conj:AZ} for \emph{all} cubic Cayley graphs on $G$.  The decision procedure exploits Lemma~\ref{lem:lift} in the opposite direction to Lemma~\ref{lem:cover}: for an abelian subgroup $H\le G$ of odd order containing no element of order $\ord(x)$ (so that $H$ contains no conjugate of $a$ or of $x$), the quotient $H\backslash X$ of $X=\X{G}{a}{x}$ by the left action of $H$ is a loopless cubic multigraph on $|G|/|H|$ vertices covered by $X$, and a $3$-edge-colouring of the quotient---found by the SAT solver CaDiCaL through the even-$2$-factor formulation of Lemma~\ref{lem:even2factor}---lifts to an $H$-invariant $3$-edge-colouring of $X$.  The lifted colouring is verified independently on $X$.  The program tries the largest such subgroups first (for $\PGL(2,25)$, say, the Sylow $5$-subgroup of order $25$ reduces a graph on $15\,600$ vertices to one on $624$), and falls back to the full graph with a time limit if no quotient is colourable; in the runs reported here the fallback was never needed, every graph being coloured through a quotient.  The program checks the group orders against the known formulas and rejects the Petersen graph as a control.  The results are summarised in Table~\ref{tab:computation}.
+
+\begin{table}[ht]
+\centering
+\small
+\input{results_table.tex}
+\caption{Computer verification of Conjecture~\ref{conj:AZ}.  For each group the number of generating pairs $(a,x)$ with $a^2=1$, $\ord(x)$ odd, up to conjugation and inversion of $x$, is listed; every corresponding cubic Cayley graph was found to be $3$-edge-colourable.  Groups of order at most $1280$ are included as a consistency check against \cite{PSV13}.}
+\label{tab:computation}
+\end{table}
+
+\begin{theorem}\label{thm:computation}
+Conjecture~\ref{conj:AZ} holds for every cubic Cayley graph on each of the groups listed in Table~\ref{tab:computation}; in particular for every non-abelian simple group of order at most $10\,000$, for $\PSL(2,q)$ with $q\le 43$, for $\PGL(2,q)$ with $q\le31$, for $A_n$ with $n\le8$ and $S_n$ with $n\le7$, and for the groups $M_{10}$, $M_{11}$, $\PSL(3,3)$, $\PSL(3,3).2$, $\operatorname{PSU}(3,3)$, $G_2(2)=\operatorname{PSU}(3,3).2$, $\PSigmaL(2,16)$, the three index-two extensions of $\PSL(2,25)$ and $A_5\wr\ZZ_2$.
+\end{theorem}
+
+Two of the groups in the table, $M_{10}$ and $\PSL(2,25).2_3$, have all their involutions inside the socle and are therefore not generated by an involution and an element of odd order at all; the only cubic Cayley graphs on them are the trivially colourable ones of Proposition~\ref{prop:trivial}.  The non-abelian simple groups of order at most $10\,000$ are $A_5$, $\PSL(2,7)$, $A_6$, $\PSL(2,8)$, $\PSL(2,11)$, $\PSL(2,13)$, $\PSL(2,17)$, $A_7$, $\PSL(2,19)$, $\PSL(2,16)$, $\PSL(3,3)$, $\operatorname{PSU}(3,3)$, $\PSL(2,23)$, $\PSL(2,25)$, $M_{11}$ and $\PSL(2,27)$, all of which appear in the table.  The groups of type (ii) in Theorem~\ref{thm:NS} of order at most $12\,200$ are the groups $T.2$ for the simple groups $T$ of order at most $6\,100$ (namely $S_5$, $\PGL(2,7)$, $S_6$, $\PGL(2,9)$, $M_{10}$, $\PGL(2,11)$, $\PGL(2,13)$, $\PGL(2,17)$, $S_7$, $\PGL(2,19)$, $\PSigmaL(2,16)$, $\PSL(3,3).2$ and $G_2(2)$; the group $\PSL(2,8)$ has no extension of index two) together with $A_5\wr\ZZ_2$, and all of these appear in the table as well.  Combining Theorem~\ref{thm:NS} with Corollary~\ref{cor:census} and Table~\ref{tab:computation} therefore gives:
+
+\begin{corollary}\label{cor:bound}
+A Cayley snark of smallest order, if one exists, has more than $12\,200$ vertices.  Its group is a non-abelian simple group of order greater than $10\,000$ other than those in Table~\ref{tab:computation}, or a group $T.2$ or $S\wr\ZZ_2$ as in Theorem~\ref{thm:NS}\textup{(ii)} of order greater than $12\,200$ other than those in Table~\ref{tab:computation}.
+\end{corollary}
+
+We stress that these computations, like the census, are evidence rather than insight: the even $2$-factors found by the solver do not seem to follow any pattern that would suggest a general construction.
+
+\section{Related problems on flows in Cayley graphs}\label{sec:related}
+
+The flow formulation of Conjecture~\ref{conj:AZ} has stimulated work on the stronger $3$-flow property.  By Mader's theorem (Theorem~\ref{thm:mader}), Tutte's $3$-flow conjecture restricted to vertex-transitive graphs asserts that every vertex-transitive graph of valency at least $4$ admits a nowhere-zero $3$-flow.  This is known for Cayley graphs on abelian groups (Poto\v{c}nik, \v{S}koviera and \v{S}krekovski \cite{PSS05}), for Cayley graphs of valency at least $4$ on groups with a certain Sylow $2$-subgroup structure (N\'an\'asiov\'a and \v{S}koviera \cite{NanasiovaSkoviera09}), for graphs admitting a solvable arc-transitive group of automorphisms (Li and Zhou \cite{LiZhou16}), for Cayley graphs on supersolvable groups (Zhang and Zhou \cite{ZhangZhou24}), for nilpotently vertex-transitive graphs \cite{ZhangZhou22b}, for various dihedral and generalised dihedral and quaternion groups \cite{YangLi11,AhanjidehIranmanesh19}, and for Cayley graphs on solvable groups of twice square-free order \cite{AhanjidehKovacs26}.  The general case for solvable groups, which would be the $3$-flow analogue of Theorem~\ref{thm:ALZ}, is open.  These results do not bear on the cubic case (a cubic graph never has a nowhere-zero $3$-flow), but their proofs use the same quotient-and-lift technique of \S\ref{sec:cover}.
+
+\section{Open problems}\label{sec:open}
+
+\begin{enumerate}[leftmargin=2em]
+\item (Conjecture~\ref{conj:AZ} for simple groups.)  Is $\X{G}{a}{x}$ $3$-edge-colourable for every non-abelian simple group $G=\langle a,x\rangle$, $a^2=1$, $\ord(x)$ odd?  Even the case $G=\PSL(2,q)$ or $G=A_n$ for all $q$, $n$ is open, although Corollary~\ref{cor:2s3} covers those generating pairs with $\ord(ax)=3$.
+\item (The bi-Cayley case.)  For a non-abelian simple group $T$ with an outer involutory automorphism $\alpha$ and $x\in T$ of odd order with $\langle x,\alpha(x)\rangle=T$, is $B(T;x,\alpha(x))$ always $3$-edge-colourable?  The case $T=A_n$, $\alpha$ conjugation by a transposition, is already interesting.  Same question for $T=S\times S$ with $\alpha$ the swap.
+\item (Arc-regular cubic graphs.)  Is every connected cubic graph admitting an arc-regular group of automorphisms $3$-edge-colourable (Corollary~\ref{cor:arcregular})?  This could be tested against Conder's census of cubic arc-transitive graphs on up to $10\,000$ vertices \cite{Conder11}.
+\item (Vertex-transitive graphs.)  Are the Petersen graph and its truncation the only connected cubic vertex-transitive graphs that are not $3$-edge-colourable?  Corollary~\ref{cor:census} says yes up to $1280$ vertices, and Theorem~\ref{thm:potocnik} says yes for solvable vertex-transitive groups.
+\item (Girth.)  Does Conjecture~\ref{conj:AZ} hold for cubic Cayley graphs of girth $3$ and $5$ (equivalently, by Proposition~\ref{prop:girth}, for generators $x$ of order $3$ and $5$), and of girth $6$?  Does it hold for girth at least $7$, i.e.\ is there a cyclically $7$-edge-connected Cayley snark?
+\item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
+\item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for some abelian $H$ of odd order (Table~\ref{tab:computation}); is this always the case?
+\end{enumerate}
+
+\subsection*{Acknowledgements}
+This survey was prepared with the help of an AI assistant (Claude); the bibliographic details were checked against the cited sources where these were accessible, and the computations of Section~\ref{sec:computation} can be reproduced with the accompanying code.
+
+\begin{thebibliography}{99}
+
+\bibitem{AboomahigirNedela19} E.~Aboomahigir, R.~Nedela, Cubic Cayley graphs of girth at most six and their hamiltonicity, \emph{Acta Math. Univ. Comenian.} 88 (2019) 351--359.
+
+\bibitem{AhanjidehIranmanesh19} M.~Ahanjideh, A.~Iranmanesh, The validity of Tutte's 3-flow conjecture for some Cayley graphs, \emph{Ars Math. Contemp.} 16 (2019) 203--213.
+
+\bibitem{AhanjidehKovacs26} M.~Ahanjideh, I.~Kov\'acs, Nowhere-zero 3-flows in Cayley graphs on solvable groups of twice square-free order, arXiv:2603.24175 (2026).
+
+\bibitem{ALZ96} B.~Alspach, Y.-P.~Liu, C.-Q.~Zhang, Nowhere-zero 4-flows and Cayley graphs on solvable groups, \emph{SIAM J. Discrete Math.} 9 (1996) 151--154.
+
+\bibitem{CastagnaPrins72} F.~Castagna, G.~Prins, Every generalized Petersen graph has a Tait coloring, \emph{Pacific J. Math.} 40 (1972) 53--58.
+
+\bibitem{Conder11} M.~Conder, Trivalent (cubic) symmetric graphs on up to 10000 vertices, 2011, \url{https://www.math.auckland.ac.nz/~conder/symmcubic10000list.txt}.
+
+\bibitem{ConderNedela09} M.~Conder, R.~Nedela, A refined classification of symmetric cubic graphs, \emph{J. Algebra} 322 (2009) 722--740.
+
+\bibitem{CurranGallian96} S.~J.~Curran, J.~A.~Gallian, Hamiltonian cycles and paths in Cayley graphs and digraphs---a survey, \emph{Discrete Math.} 156 (1996) 1--18.
+
+\bibitem{DjokovicMiller80} D.~\v{Z}.~Djokovi\'c, G.~L.~Miller, Regular groups of automorphisms of cubic graphs, \emph{J. Combin. Theory Ser. B} 29 (1980) 195--230.
+
+\bibitem{GKM09} H.~Glover, K.~Kutnar, D.~Maru\v{s}i\v{c}, Hamiltonian cycles in cubic Cayley graphs: the $\langle 2,4k,3\rangle$ case, \emph{J. Algebraic Combin.} 30 (2009) 447--475.
+
+\bibitem{GKMM12} H.~Glover, K.~Kutnar, A.~Malni\v{c}, D.~Maru\v{s}i\v{c}, Hamilton cycles in (2,odd,3)-Cayley graphs, \emph{Proc. London Math. Soc.} (3) 104 (2012) 1171--1197.
+
+\bibitem{GM07} H.~Glover, D.~Maru\v{s}i\v{c}, Hamiltonicity of cubic Cayley graphs, \emph{J. Eur. Math. Soc.} 9 (2007) 775--787.
+
+\bibitem{HKM13} A.~Hujdurovi\'c, K.~Kutnar, D.~Maru\v{s}i\v{c}, On prime-valent symmetric bicirculants and Cayley snarks, in: \emph{Geometric Science of Information}, Lecture Notes in Comput. Sci. 8085, Springer, 2013, pp.~196--203.
+
+\bibitem{HKM14} A.~Hujdurovi\'c, K.~Kutnar, D.~Maru\v{s}i\v{c}, Cubic Cayley graphs and snarks, in: R.~Connelly, A.~Ivi\'c Weiss, W.~Whiteley (eds.), \emph{Rigidity and Symmetry}, Fields Inst. Commun. 70, Springer, New York, 2014, pp.~27--40.
+
+\bibitem{Jaeger79} F.~Jaeger, Flows and generalized coloring theorems in graphs, \emph{J. Combin. Theory Ser. B} 26 (1979) 205--216.
+
+\bibitem{Jaeger85} F.~Jaeger, A survey of the cycle double cover conjecture, in: \emph{Cycles in Graphs}, Ann. Discrete Math. 27 (1985) 1--12.
+
+\bibitem{JaegerSwart80} F.~Jaeger, T.~Swart, Problem session, in: \emph{Combinatorics 79}, Ann. Discrete Math. 9 (1980) 305.
+
+\bibitem{Kochol96} M.~Kochol, Snarks without small cycles, \emph{J. Combin. Theory Ser. B} 67 (1996) 34--47.
+
+\bibitem{KMMMS12} K.~Kutnar, D.~Maru\v{s}i\v{c}, D.~W.~Morris, J.~Morris, P.~\v{S}parl, Hamiltonian cycles in Cayley graphs whose order has few prime factors, \emph{Ars Math. Contemp.} 5 (2012) 27--71.
+
+\bibitem{KutnarMarusic09} K.~Kutnar, D.~Maru\v{s}i\v{c}, Hamilton cycles and paths in vertex-transitive graphs---current directions, \emph{Discrete Math.} 309 (2009) 5491--5500.
+
+\bibitem{LiZhou16} X.~Li, S.~Zhou, Nowhere-zero 3-flows in graphs admitting solvable arc-transitive groups of automorphisms, \emph{Ars Math. Contemp.} 10 (2016) 85--90.
+
+\bibitem{LiebeckShalev96} M.~W.~Liebeck, A.~Shalev, Classical groups, probabilistic methods and the $(2,3)$-generation problem, \emph{Ann. of Math.} 144 (1996) 77--125.
+
+\bibitem{Mader71} W.~Mader, Minimale $n$-fach kantenzusammenh\"angende Graphen, \emph{Math. Ann.} 191 (1971) 21--28.
+
+\bibitem{MMP04} A.~Malni\v{c}, D.~Maru\v{s}i\v{c}, P.~Poto\v{c}nik, On cubic graphs admitting an edge-transitive solvable group, \emph{J. Algebraic Combin.} 20 (2004) 99--113.
+
+\bibitem{MalnicPotocnik06} A.~Malni\v{c}, P.~Poto\v{c}nik, Invariant subspaces, duality, and covers of the Petersen graph, \emph{European J. Combin.} 27 (2006) 971--989.
+
+\bibitem{NanasiovaSkoviera09} M.~N\'an\'asiov\'a, M.~\v{S}koviera, Nowhere-zero flows in Cayley graphs and Sylow 2-subgroups, \emph{J. Algebraic Combin.} 30 (2009) 103--110.
+
+\bibitem{NS95} R.~Nedela, M.~\v{S}koviera, Atoms of cyclic connectivity in cubic graphs, \emph{Math. Slovaca} 45 (1995) 481--499.
+
+\bibitem{NS95b} R.~Nedela, M.~\v{S}koviera, Which generalized Petersen graphs are Cayley graphs?, \emph{J. Graph Theory} 19 (1995) 1--11.
+
+\bibitem{NS01} R.~Nedela, M.~\v{S}koviera, Cayley snarks and almost simple groups, \emph{Combinatorica} 21 (2001) 583--590.
+
+\bibitem{PakRadoicic09} I.~Pak, R.~Radoi\v{c}i\'c, Hamiltonian paths in Cayley graphs, \emph{Discrete Math.} 309 (2009) 5501--5508.
+
+\bibitem{Potocnik04} P.~Poto\v{c}nik, Edge-colourings of cubic graphs admitting a solvable vertex-transitive group of automorphisms, \emph{J. Combin. Theory Ser. B} 91 (2004) 289--300.
+
+\bibitem{PSS05} P.~Poto\v{c}nik, M.~\v{S}koviera, R.~\v{S}krekovski, Nowhere-zero 3-flows in abelian Cayley graphs, \emph{Discrete Math.} 297 (2005) 119--127.
+
+\bibitem{PSV13} P.~Poto\v{c}nik, P.~Spiga, G.~Verret, Cubic vertex-transitive graphs on up to 1280 vertices, \emph{J. Symbolic Comput.} 50 (2013) 465--477.
+
+\bibitem{Tutte54} W.~T.~Tutte, A contribution to the theory of chromatic polynomials, \emph{Canad. J. Math.} 6 (1954) 80--91.
+
+\bibitem{Tutte66} W.~T.~Tutte, On the algebraic theory of graph colorings, \emph{J. Combin. Theory} 1 (1966) 15--50.
+
+\bibitem{Woldar89} A.~J.~Woldar, On Hurwitz generation and genus actions of sporadic groups, \emph{Illinois J. Math.} 33 (1989) 416--437.
+
+\bibitem{YangLi11} F.~Yang, X.~Li, Nowhere-zero 3-flows in dihedral Cayley graphs, \emph{Inform. Process. Lett.} 111 (2011) 416--419.
+
+\bibitem{ZhangZhou22b} J.~Zhang, S.~Zhou, Nowhere-zero 3-flows in nilpotently vertex-transitive graphs, arXiv:2203.13575 (2022).
+
+\bibitem{ZhangZhou24} J.~Zhang, S.~Zhou, Nowhere-zero 3-flows in Cayley graphs on supersolvable groups, \emph{J. Combin. Theory Ser. A} 204 (2024) 105852; arXiv:2203.02971.
+
+\end{thebibliography}
+
+\end{document}

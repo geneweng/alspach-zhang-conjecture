@@ -1,0 +1,2517 @@
+[
+ {
+  "group": "A5",
+  "order": 60,
+  "involution_classes": 1,
+  "pairs_tested": 6,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "full SAT",
+   "quotient by C3"
+  ],
+  "orders_x": [
+   3,
+   5
+  ],
+  "pairs": [
+   [
+    3,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ },
+ {
+  "group": "S5",
+  "order": 120,
+  "involution_classes": 2,
+  "pairs_tested": 2,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C3"
+  ],
+  "orders_x": [
+   5
+  ],
+  "pairs": [
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    6
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,7)",
+  "order": 168,
+  "involution_classes": 1,
+  "pairs_tested": 4,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "full SAT",
+   "quotient by C3"
+  ],
+  "orders_x": [
+   3,
+   7
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    7
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,7)",
+  "order": 336,
+  "involution_classes": 2,
+  "pairs_tested": 5,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C3",
+   "quotient by C7"
+  ],
+  "orders_x": [
+   3,
+   7
+  ],
+  "pairs": [
+   [
+    3,
+    8
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    8
+   ]
+  ]
+ },
+ {
+  "group": "A6",
+  "order": 360,
+  "involution_classes": 1,
+  "pairs_tested": 4,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C3"
+  ],
+  "orders_x": [
+   5
+  ],
+  "pairs": [
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,8)",
+  "order": 504,
+  "involution_classes": 1,
+  "pairs_tested": 42,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "full SAT",
+   "quotient by C7",
+   "quotient by C9"
+  ],
+  "orders_x": [
+   3,
+   7,
+   9
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    7
+   ],
+   [
+    9,
+    9
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,9)",
+  "order": 720,
+  "involution_classes": 2,
+  "pairs_tested": 10,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C3",
+   "quotient by C5"
+  ],
+  "orders_x": [
+   3,
+   5
+  ],
+  "pairs": [
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    10
+   ]
+  ]
+ },
+ {
+  "group": "S6",
+  "order": 720,
+  "involution_classes": 3,
+  "pairs_tested": 2,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C3"
+  ],
+  "orders_x": [
+   5
+  ],
+  "pairs": [
+   [
+    5,
+    6
+   ]
+  ]
+ },
+ {
+  "group": "M10",
+  "order": 720,
+  "involution_classes": 1,
+  "pairs_tested": 0,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [],
+  "orders_x": [],
+  "pairs": []
+ },
+ {
+  "group": "PSL(2,11)",
+  "order": 660,
+  "involution_classes": 1,
+  "pairs_tested": 14,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C11",
+   "quotient by C5"
+  ],
+  "orders_x": [
+   3,
+   5,
+   11
+  ],
+  "pairs": [
+   [
+    3,
+    11
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    5
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    11
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,13)",
+  "order": 1092,
+  "involution_classes": 1,
+  "pairs_tested": 45,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C13",
+   "quotient by C7"
+  ],
+  "orders_x": [
+   3,
+   7,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    13,
+    3
+   ],
+   [
+    13,
+    6
+   ],
+   [
+    13,
+    7
+   ],
+   [
+    13,
+    13
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,11)",
+  "order": 1320,
+  "involution_classes": 2,
+  "pairs_tested": 17,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C11",
+   "quotient by C5"
+  ],
+  "orders_x": [
+   3,
+   5,
+   11
+  ],
+  "pairs": [
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    12
+   ],
+   [
+    11,
+    4
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    11,
+    12
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,13)",
+  "order": 2184,
+  "involution_classes": 2,
+  "pairs_tested": 26,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C13",
+   "quotient by C7"
+  ],
+  "orders_x": [
+   3,
+   7,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    12
+   ],
+   [
+    3,
+    14
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    7,
+    14
+   ],
+   [
+    13,
+    4
+   ],
+   [
+    13,
+    12
+   ],
+   [
+    13,
+    14
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,17)",
+  "order": 2448,
+  "involution_classes": 1,
+  "pairs_tested": 60,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "full SAT",
+   "quotient by C17",
+   "quotient by C9"
+  ],
+  "orders_x": [
+   3,
+   9,
+   17
+  ],
+  "pairs": [
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    17
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    9,
+    8
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    9,
+    17
+   ],
+   [
+    17,
+    3
+   ],
+   [
+    17,
+    4
+   ],
+   [
+    17,
+    8
+   ],
+   [
+    17,
+    9
+   ],
+   [
+    17,
+    17
+   ]
+  ]
+ },
+ {
+  "group": "A7",
+  "order": 2520,
+  "involution_classes": 1,
+  "pairs_tested": 11,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C5",
+   "quotient by C7"
+  ],
+  "orders_x": [
+   5,
+   7
+  ],
+  "pairs": [
+   [
+    5,
+    7
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,19)",
+  "order": 3420,
+  "involution_classes": 1,
+  "pairs_tested": 76,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C19",
+   "quotient by C5",
+   "quotient by C9"
+  ],
+  "orders_x": [
+   3,
+   5,
+   9,
+   19
+  ],
+  "pairs": [
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    19
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    19
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    5
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    19
+   ],
+   [
+    19,
+    3
+   ],
+   [
+    19,
+    5
+   ],
+   [
+    19,
+    9
+   ],
+   [
+    19,
+    10
+   ],
+   [
+    19,
+    19
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,16)",
+  "order": 4080,
+  "involution_classes": 1,
+  "pairs_tested": 204,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C15",
+   "quotient by C17",
+   "quotient by C5"
+  ],
+  "orders_x": [
+   3,
+   5,
+   15,
+   17
+  ],
+  "pairs": [
+   [
+    3,
+    15
+   ],
+   [
+    3,
+    17
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    5,
+    17
+   ],
+   [
+    15,
+    3
+   ],
+   [
+    15,
+    5
+   ],
+   [
+    15,
+    15
+   ],
+   [
+    15,
+    17
+   ],
+   [
+    17,
+    3
+   ],
+   [
+    17,
+    5
+   ],
+   [
+    17,
+    15
+   ],
+   [
+    17,
+    17
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,17)",
+  "order": 4896,
+  "involution_classes": 2,
+  "pairs_tested": 36,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C17",
+   "quotient by C9"
+  ],
+  "orders_x": [
+   3,
+   9,
+   17
+  ],
+  "pairs": [
+   [
+    3,
+    16
+   ],
+   [
+    3,
+    18
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    16
+   ],
+   [
+    9,
+    18
+   ],
+   [
+    17,
+    6
+   ],
+   [
+    17,
+    16
+   ],
+   [
+    17,
+    18
+   ]
+  ]
+ },
+ {
+  "group": "S7",
+  "order": 5040,
+  "involution_classes": 3,
+  "pairs_tested": 19,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C5",
+   "quotient by C7"
+  ],
+  "orders_x": [
+   3,
+   5,
+   7
+  ],
+  "pairs": [
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    12
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    12
+   ]
+  ]
+ },
+ {
+  "group": "PSL(3,3)",
+  "order": 5616,
+  "involution_classes": 1,
+  "pairs_tested": 20,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "full SAT",
+   "quotient by C3"
+  ],
+  "orders_x": [
+   3,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    13
+   ],
+   [
+    13,
+    3
+   ],
+   [
+    13,
+    4
+   ],
+   [
+    13,
+    6
+   ],
+   [
+    13,
+    8
+   ],
+   [
+    13,
+    13
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,23)",
+  "order": 6072,
+  "involution_classes": 1,
+  "pairs_tested": 107,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C11",
+   "quotient by C23"
+  ],
+  "orders_x": [
+   3,
+   11,
+   23
+  ],
+  "pairs": [
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    3,
+    23
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    4
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    23
+   ],
+   [
+    23,
+    3
+   ],
+   [
+    23,
+    4
+   ],
+   [
+    23,
+    6
+   ],
+   [
+    23,
+    11
+   ],
+   [
+    23,
+    12
+   ],
+   [
+    23,
+    23
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,19)",
+  "order": 6840,
+  "involution_classes": 2,
+  "pairs_tested": 58,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C19",
+   "quotient by C9"
+  ],
+  "orders_x": [
+   3,
+   5,
+   9,
+   19
+  ],
+  "pairs": [
+   [
+    3,
+    18
+   ],
+   [
+    3,
+    20
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    18
+   ],
+   [
+    5,
+    20
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    18
+   ],
+   [
+    9,
+    20
+   ],
+   [
+    19,
+    4
+   ],
+   [
+    19,
+    6
+   ],
+   [
+    19,
+    18
+   ],
+   [
+    19,
+    20
+   ]
+  ]
+ },
+ {
+  "group": "A5wrZ2",
+  "order": 7200,
+  "involution_classes": 3,
+  "pairs_tested": 8,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C5"
+  ],
+  "orders_x": [
+   15
+  ],
+  "pairs": [
+   [
+    15,
+    4
+   ],
+   [
+    15,
+    6
+   ],
+   [
+    15,
+    10
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,25)",
+  "order": 7800,
+  "involution_classes": 1,
+  "pairs_tested": 134,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C13",
+   "quotient by C5"
+  ],
+  "orders_x": [
+   3,
+   5,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    12
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    5,
+    12
+   ],
+   [
+    5,
+    13
+   ],
+   [
+    13,
+    3
+   ],
+   [
+    13,
+    4
+   ],
+   [
+    13,
+    5
+   ],
+   [
+    13,
+    6
+   ],
+   [
+    13,
+    12
+   ],
+   [
+    13,
+    13
+   ]
+  ]
+ },
+ {
+  "group": "M11",
+  "order": 7920,
+  "involution_classes": 1,
+  "pairs_tested": 14,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C11",
+   "quotient by C5"
+  ],
+  "orders_x": [
+   5,
+   11
+  ],
+  "pairs": [
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    11,
+    4
+   ],
+   [
+    11,
+    5
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    8
+   ],
+   [
+    11,
+    11
+   ]
+  ]
+ },
+ {
+  "group": "PSigmaL(2,16)",
+  "order": 8160,
+  "involution_classes": 2,
+  "pairs_tested": 20,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C15",
+   "quotient by C17"
+  ],
+  "orders_x": [
+   15,
+   17
+  ],
+  "pairs": [
+   [
+    15,
+    4
+   ],
+   [
+    15,
+    10
+   ],
+   [
+    17,
+    4
+   ],
+   [
+    17,
+    6
+   ],
+   [
+    17,
+    10
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,27)",
+  "order": 9828,
+  "involution_classes": 1,
+  "pairs_tested": 186,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C13",
+   "quotient by C7"
+  ],
+  "orders_x": [
+   3,
+   7,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    3,
+    14
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    7,
+    14
+   ],
+   [
+    13,
+    3
+   ],
+   [
+    13,
+    7
+   ],
+   [
+    13,
+    13
+   ],
+   [
+    13,
+    14
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,23)",
+  "order": 12144,
+  "involution_classes": 2,
+  "pairs_tested": 72,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C11",
+   "quotient by C23"
+  ],
+  "orders_x": [
+   3,
+   11,
+   23
+  ],
+  "pairs": [
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    22
+   ],
+   [
+    3,
+    24
+   ],
+   [
+    11,
+    8
+   ],
+   [
+    11,
+    22
+   ],
+   [
+    11,
+    24
+   ],
+   [
+    23,
+    8
+   ],
+   [
+    23,
+    22
+   ],
+   [
+    23,
+    24
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,29)",
+  "order": 12180,
+  "involution_classes": 1,
+  "pairs_tested": 219,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C15",
+   "quotient by C29",
+   "quotient by C7"
+  ],
+  "orders_x": [
+   3,
+   5,
+   7,
+   15,
+   29
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    14
+   ],
+   [
+    3,
+    15
+   ],
+   [
+    3,
+    29
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    14
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    5,
+    29
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    14
+   ],
+   [
+    7,
+    15
+   ],
+   [
+    7,
+    29
+   ],
+   [
+    15,
+    3
+   ],
+   [
+    15,
+    5
+   ],
+   [
+    15,
+    7
+   ],
+   [
+    15,
+    14
+   ],
+   [
+    15,
+    15
+   ],
+   [
+    15,
+    29
+   ],
+   [
+    29,
+    3
+   ],
+   [
+    29,
+    5
+   ],
+   [
+    29,
+    7
+   ],
+   [
+    29,
+    14
+   ],
+   [
+    29,
+    15
+   ],
+   [
+    29,
+    29
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,31)",
+  "order": 14880,
+  "involution_classes": 1,
+  "pairs_tested": 160,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by C15",
+   "quotient by C31",
+   "quotient by C5"
+  ],
+  "orders_x": [
+   3,
+   5,
+   15,
+   31
+  ],
+  "pairs": [
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    15
+   ],
+   [
+    3,
+    16
+   ],
+   [
+    3,
+    31
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    5,
+    16
+   ],
+   [
+    5,
+    31
+   ],
+   [
+    15,
+    3
+   ],
+   [
+    15,
+    4
+   ],
+   [
+    15,
+    5
+   ],
+   [
+    15,
+    8
+   ],
+   [
+    15,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    15,
+    31
+   ],
+   [
+    31,
+    3
+   ],
+   [
+    31,
+    4
+   ],
+   [
+    31,
+    5
+   ],
+   [
+    31,
+    8
+   ],
+   [
+    31,
+    15
+   ],
+   [
+    31,
+    16
+   ],
+   [
+    31,
+    31
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,25)",
+  "order": 15600,
+  "involution_classes": 2,
+  "pairs_tested": 90,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 13",
+   "quotient by abelian subgroup of order 25"
+  ],
+  "quotient_orders": [
+   13,
+   25
+  ],
+  "orders_x": [
+   3,
+   5,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    24
+   ],
+   [
+    3,
+    26
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    24
+   ],
+   [
+    5,
+    26
+   ],
+   [
+    13,
+    8
+   ],
+   [
+    13,
+    24
+   ],
+   [
+    13,
+    26
+   ]
+  ]
+ },
+ {
+  "group": "PSigmaL(2,25)",
+  "order": 15600,
+  "involution_classes": 3,
+  "pairs_tested": 30,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 25"
+  ],
+  "quotient_orders": [
+   25
+  ],
+  "orders_x": [
+   13
+  ],
+  "pairs": [
+   [
+    13,
+    4
+   ],
+   [
+    13,
+    6
+   ],
+   [
+    13,
+    10
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,25).2_3",
+  "order": 15600,
+  "involution_classes": 1,
+  "pairs_tested": 0,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [],
+  "quotient_orders": [],
+  "orders_x": [],
+  "pairs": []
+ },
+ {
+  "group": "PGL(2,27)",
+  "order": 19656,
+  "involution_classes": 2,
+  "pairs_tested": 123,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 13",
+   "quotient by abelian subgroup of order 9"
+  ],
+  "quotient_orders": [
+   9,
+   13
+  ],
+  "orders_x": [
+   3,
+   7,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    26
+   ],
+   [
+    3,
+    28
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    26
+   ],
+   [
+    7,
+    28
+   ],
+   [
+    13,
+    4
+   ],
+   [
+    13,
+    26
+   ],
+   [
+    13,
+    28
+   ]
+  ]
+ },
+ {
+  "group": "A8",
+  "order": 20160,
+  "involution_classes": 2,
+  "pairs_tested": 33,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 15",
+   "quotient by abelian subgroup of order 9"
+  ],
+  "quotient_orders": [
+   9,
+   15
+  ],
+  "orders_x": [
+   5,
+   7,
+   15
+  ],
+  "pairs": [
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    15
+   ],
+   [
+    15,
+    4
+   ],
+   [
+    15,
+    5
+   ],
+   [
+    15,
+    6
+   ],
+   [
+    15,
+    7
+   ],
+   [
+    15,
+    15
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,29)",
+  "order": 24360,
+  "involution_classes": 2,
+  "pairs_tested": 146,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 15",
+   "quotient by abelian subgroup of order 29"
+  ],
+  "quotient_orders": [
+   15,
+   29
+  ],
+  "orders_x": [
+   3,
+   5,
+   7,
+   15,
+   29
+  ],
+  "pairs": [
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    28
+   ],
+   [
+    3,
+    30
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    28
+   ],
+   [
+    5,
+    30
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    28
+   ],
+   [
+    7,
+    30
+   ],
+   [
+    15,
+    4
+   ],
+   [
+    15,
+    6
+   ],
+   [
+    15,
+    10
+   ],
+   [
+    15,
+    28
+   ],
+   [
+    15,
+    30
+   ],
+   [
+    29,
+    4
+   ],
+   [
+    29,
+    6
+   ],
+   [
+    29,
+    10
+   ],
+   [
+    29,
+    28
+   ],
+   [
+    29,
+    30
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,37)",
+  "order": 25308,
+  "involution_classes": 1,
+  "pairs_tested": 378,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 19",
+   "quotient by abelian subgroup of order 37"
+  ],
+  "quotient_orders": [
+   19,
+   37
+  ],
+  "orders_x": [
+   3,
+   9,
+   19,
+   37
+  ],
+  "pairs": [
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    18
+   ],
+   [
+    3,
+    19
+   ],
+   [
+    3,
+    37
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    9,
+    18
+   ],
+   [
+    9,
+    19
+   ],
+   [
+    9,
+    37
+   ],
+   [
+    19,
+    3
+   ],
+   [
+    19,
+    6
+   ],
+   [
+    19,
+    9
+   ],
+   [
+    19,
+    18
+   ],
+   [
+    19,
+    19
+   ],
+   [
+    19,
+    37
+   ],
+   [
+    37,
+    3
+   ],
+   [
+    37,
+    6
+   ],
+   [
+    37,
+    9
+   ],
+   [
+    37,
+    18
+   ],
+   [
+    37,
+    19
+   ],
+   [
+    37,
+    37
+   ]
+  ]
+ },
+ {
+  "group": "PGL(2,31)",
+  "order": 29760,
+  "involution_classes": 2,
+  "pairs_tested": 113,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 15",
+   "quotient by abelian subgroup of order 31"
+  ],
+  "quotient_orders": [
+   15,
+   31
+  ],
+  "orders_x": [
+   3,
+   5,
+   15,
+   31
+  ],
+  "pairs": [
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    30
+   ],
+   [
+    3,
+    32
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    30
+   ],
+   [
+    5,
+    32
+   ],
+   [
+    15,
+    6
+   ],
+   [
+    15,
+    10
+   ],
+   [
+    15,
+    30
+   ],
+   [
+    15,
+    32
+   ],
+   [
+    31,
+    6
+   ],
+   [
+    31,
+    10
+   ],
+   [
+    31,
+    30
+   ],
+   [
+    31,
+    32
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,32)",
+  "order": 32736,
+  "involution_classes": 1,
+  "pairs_tested": 930,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 11",
+   "quotient by abelian subgroup of order 31",
+   "quotient by abelian subgroup of order 33"
+  ],
+  "quotient_orders": [
+   11,
+   31,
+   33
+  ],
+  "orders_x": [
+   3,
+   11,
+   31,
+   33
+  ],
+  "pairs": [
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    31
+   ],
+   [
+    3,
+    33
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    11
+   ],
+   [
+    11,
+    31
+   ],
+   [
+    11,
+    33
+   ],
+   [
+    31,
+    3
+   ],
+   [
+    31,
+    11
+   ],
+   [
+    31,
+    31
+   ],
+   [
+    31,
+    33
+   ],
+   [
+    33,
+    3
+   ],
+   [
+    33,
+    11
+   ],
+   [
+    33,
+    31
+   ],
+   [
+    33,
+    33
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,41)",
+  "order": 34440,
+  "involution_classes": 1,
+  "pairs_tested": 380,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 21",
+   "quotient by abelian subgroup of order 41",
+   "quotient by abelian subgroup of order 7"
+  ],
+  "quotient_orders": [
+   7,
+   21,
+   41
+  ],
+  "orders_x": [
+   3,
+   5,
+   7,
+   21,
+   41
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    20
+   ],
+   [
+    3,
+    21
+   ],
+   [
+    3,
+    41
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    20
+   ],
+   [
+    5,
+    21
+   ],
+   [
+    5,
+    41
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    20
+   ],
+   [
+    7,
+    21
+   ],
+   [
+    7,
+    41
+   ],
+   [
+    21,
+    3
+   ],
+   [
+    21,
+    4
+   ],
+   [
+    21,
+    5
+   ],
+   [
+    21,
+    7
+   ],
+   [
+    21,
+    10
+   ],
+   [
+    21,
+    20
+   ],
+   [
+    21,
+    21
+   ],
+   [
+    21,
+    41
+   ],
+   [
+    41,
+    3
+   ],
+   [
+    41,
+    4
+   ],
+   [
+    41,
+    5
+   ],
+   [
+    41,
+    7
+   ],
+   [
+    41,
+    10
+   ],
+   [
+    41,
+    20
+   ],
+   [
+    41,
+    21
+   ],
+   [
+    41,
+    41
+   ]
+  ]
+ },
+ {
+  "group": "PSL(2,43)",
+  "order": 39732,
+  "involution_classes": 1,
+  "pairs_tested": 490,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 11",
+   "quotient by abelian subgroup of order 21",
+   "quotient by abelian subgroup of order 43"
+  ],
+  "quotient_orders": [
+   11,
+   21,
+   43
+  ],
+  "orders_x": [
+   3,
+   7,
+   11,
+   21,
+   43
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    21
+   ],
+   [
+    3,
+    22
+   ],
+   [
+    3,
+    43
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    7,
+    21
+   ],
+   [
+    7,
+    22
+   ],
+   [
+    7,
+    43
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    7
+   ],
+   [
+    11,
+    11
+   ],
+   [
+    11,
+    21
+   ],
+   [
+    11,
+    22
+   ],
+   [
+    11,
+    43
+   ],
+   [
+    21,
+    3
+   ],
+   [
+    21,
+    7
+   ],
+   [
+    21,
+    11
+   ],
+   [
+    21,
+    21
+   ],
+   [
+    21,
+    22
+   ],
+   [
+    21,
+    43
+   ],
+   [
+    43,
+    3
+   ],
+   [
+    43,
+    7
+   ],
+   [
+    43,
+    11
+   ],
+   [
+    43,
+    21
+   ],
+   [
+    43,
+    22
+   ],
+   [
+    43,
+    43
+   ]
+  ]
+ }
+]

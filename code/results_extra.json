@@ -1,0 +1,114 @@
+[
+ {
+  "group": "PSU(3,3)",
+  "order": 6048,
+  "involution_classes": 1,
+  "pairs_tested": 6,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 9"
+  ],
+  "orders_x": [
+   7
+  ],
+  "pairs": [
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    12
+   ]
+  ]
+ },
+ {
+  "group": "PSL(3,3).2",
+  "order": 11232,
+  "involution_classes": 2,
+  "pairs_tested": 31,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 13",
+   "quotient by abelian subgroup of order 9"
+  ],
+  "orders_x": [
+   3,
+   13
+  ],
+  "pairs": [
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    13,
+    4
+   ],
+   [
+    13,
+    6
+   ],
+   [
+    13,
+    8
+   ],
+   [
+    13,
+    12
+   ]
+  ]
+ },
+ {
+  "group": "G2(2)",
+  "order": 12096,
+  "involution_classes": 2,
+  "pairs_tested": 21,
+  "non_colourable": 0,
+  "undecided": 0,
+  "methods": [
+   "quotient by abelian subgroup of order 7",
+   "quotient by abelian subgroup of order 9"
+  ],
+  "orders_x": [
+   3,
+   7
+  ],
+  "pairs": [
+   [
+    3,
+    12
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    12
+   ]
+  ]
+ }
+]
