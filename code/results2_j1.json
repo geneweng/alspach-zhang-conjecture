@@ -1,0 +1,4025 @@
+[
+ {
+  "group": "J1",
+  "order": 175560,
+  "degree": 266,
+  "involution_classes": 1,
+  "pairs_tested": 544,
+  "non_colourable": 0,
+  "undecided": 0,
+  "orders_x": [
+   3,
+   5,
+   7,
+   11,
+   15,
+   19
+  ],
+  "pairs": [
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    15
+   ],
+   [
+    3,
+    19
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    5,
+    19
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    7,
+    15
+   ],
+   [
+    7,
+    19
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    5
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    7
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    11,
+    11
+   ],
+   [
+    11,
+    15
+   ],
+   [
+    11,
+    19
+   ],
+   [
+    15,
+    3
+   ],
+   [
+    15,
+    5
+   ],
+   [
+    15,
+    6
+   ],
+   [
+    15,
+    7
+   ],
+   [
+    15,
+    10
+   ],
+   [
+    15,
+    11
+   ],
+   [
+    15,
+    15
+   ],
+   [
+    15,
+    19
+   ],
+   [
+    19,
+    3
+   ],
+   [
+    19,
+    5
+   ],
+   [
+    19,
+    6
+   ],
+   [
+    19,
+    7
+   ],
+   [
+    19,
+    10
+   ],
+   [
+    19,
+    11
+   ],
+   [
+    19,
+    15
+   ],
+   [
+    19,
+    19
+   ]
+  ],
+  "methods": [
+   "quotient by C(inv) of order 120",
+   "quotient by C(x19) of order 19",
+   "quotient by N(Z11) of order 110",
+   "quotient by N(Z19) of order 114",
+   "quotient by stab(2pts) of order 55",
+   "quotient by stab(pt) of order 660"
+  ],
+  "max_quotient_vertices": 9240,
+  "subgroups_used": [
+   "quotient by C(inv) of order 120",
+   "quotient by C(x19) of order 19",
+   "quotient by N(Z11) of order 110",
+   "quotient by N(Z19) of order 114",
+   "quotient by stab(2pts) of order 55",
+   "quotient by stab(pt) of order 660"
+  ],
+  "seconds": 2543.1,
+  "details": [
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 7,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by C(inv) of order 120 (1463 vertices)",
+    "quotient_vertices": 1463
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 3,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 19,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by stab(pt) of order 660 (266 vertices)",
+    "quotient_vertices": 266
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(2pts) of order 55 (3192 vertices)",
+    "quotient_vertices": 3192
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(x19) of order 19 (9240 vertices)",
+    "quotient_vertices": 9240
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by C(x19) of order 19 (9240 vertices)",
+    "quotient_vertices": 9240
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(2pts) of order 55 (3192 vertices)",
+    "quotient_vertices": 3192
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(2pts) of order 55 (3192 vertices)",
+    "quotient_vertices": 3192
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(2pts) of order 55 (3192 vertices)",
+    "quotient_vertices": 3192
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by stab(2pts) of order 55 (3192 vertices)",
+    "quotient_vertices": 3192
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z11) of order 110 (1596 vertices)",
+    "quotient_vertices": 1596
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 11,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 5,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 10,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 15,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 7,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 19,
+    "ok": true,
+    "method": "quotient by N(Z19) of order 114 (1540 vertices)",
+    "quotient_vertices": 1540
+   }
+  ]
+ }
+]

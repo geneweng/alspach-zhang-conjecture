@@ -1,51 +1,87 @@
-\begin{tabular}{@{}lrrrrl@{}}
+\begin{tabular}{@{}lrrrrrl@{}}
 \toprule
-group $G$ & $|G|$ & inv.\ classes & pairs $(a,x)$ & orders of $x$ & result\\
+group $G$ & $|G|$ & inv.\ classes & pairs $(a,x)$ & orders of $x$ & $\max|\bar V|$ & result\\
 \midrule
-$A_5$ & 60 & 1 & 6 & 3, 5 & all colourable\\
-$S_5$ & 120 & 2 & 2 & 5 & all colourable\\
-$\mathrm{PSL}(2,7)$ & 168 & 1 & 4 & 3, 7 & all colourable\\
-$\mathrm{PGL}(2,7)$ & 336 & 2 & 5 & 3, 7 & all colourable\\
-$A_6$ & 360 & 1 & 4 & 5 & all colourable\\
-$\mathrm{PSL}(2,8)$ & 504 & 1 & 42 & 3, 7, 9 & all colourable\\
-$\mathrm{PSL}(2,11)$ & 660 & 1 & 14 & 3, 5, 11 & all colourable\\
-$M_{10}$ & 720 & 1 & 0 & -- & no such pairs\\
-$\mathrm{PGL}(2,9)$ & 720 & 2 & 10 & 3, 5 & all colourable\\
-$S_6$ & 720 & 3 & 2 & 5 & all colourable\\
-$\mathrm{PSL}(2,13)$ & 1092 & 1 & 45 & 3, 7, 13 & all colourable\\
-$\mathrm{PGL}(2,11)$ & 1320 & 2 & 17 & 3, 5, 11 & all colourable\\
-$\mathrm{PGL}(2,13)$ & 2184 & 2 & 26 & 3, 7, 13 & all colourable\\
-$\mathrm{PSL}(2,17)$ & 2448 & 1 & 60 & 3, 9, 17 & all colourable\\
-$A_7$ & 2520 & 1 & 11 & 5, 7 & all colourable\\
-$\mathrm{PSL}(2,19)$ & 3420 & 1 & 76 & 3, 5, 9, 19 & all colourable\\
-$\mathrm{PSL}(2,16)$ & 4080 & 1 & 204 & 3, 5, 15, 17 & all colourable\\
-$\mathrm{PGL}(2,17)$ & 4896 & 2 & 36 & 3, 9, 17 & all colourable\\
-$S_7$ & 5040 & 3 & 19 & 3, 5, 7 & all colourable\\
-$\mathrm{PSL}(3,3)$ & 5616 & 1 & 20 & 3, 13 & all colourable\\
-$\mathrm{PSU}(3,3)$ & 6048 & 1 & 6 & 7 & all colourable\\
-$\mathrm{PSL}(2,23)$ & 6072 & 1 & 107 & 3, 11, 23 & all colourable\\
-$\mathrm{PGL}(2,19)$ & 6840 & 2 & 58 & 3, 5, 9, 19 & all colourable\\
-$A_5\wr\mathbb{Z}_2$ & 7200 & 3 & 8 & 15 & all colourable\\
-$\mathrm{PSL}(2,25)$ & 7800 & 1 & 134 & 3, 5, 13 & all colourable\\
-$M_{11}$ & 7920 & 1 & 14 & 5, 11 & all colourable\\
-$\mathrm{P\Sigma L}(2,16)$ & 8160 & 2 & 20 & 15, 17 & all colourable\\
-$\mathrm{PSL}(2,27)$ & 9828 & 1 & 186 & 3, 7, 13 & all colourable\\
-$\mathrm{PSL}(3,3).2$ & 11232 & 2 & 31 & 3, 13 & all colourable\\
-$G_2(2)=\mathrm{PSU}(3,3).2$ & 12096 & 2 & 21 & 3, 7 & all colourable\\
-$\mathrm{PGL}(2,23)$ & 12144 & 2 & 72 & 3, 11, 23 & all colourable\\
-$\mathrm{PSL}(2,29)$ & 12180 & 1 & 219 & 3, 5, 7, 15, 29 & all colourable\\
-$\mathrm{PSL}(2,31)$ & 14880 & 1 & 160 & 3, 5, 15, 31 & all colourable\\
-$\mathrm{PGL}(2,25)$ & 15600 & 2 & 90 & 3, 5, 13 & all colourable\\
-$\mathrm{PSL}(2,25).2_3$ & 15600 & 1 & 0 & -- & no such pairs\\
-$\mathrm{P\Sigma L}(2,25)$ & 15600 & 3 & 30 & 13 & all colourable\\
-$\mathrm{PGL}(2,27)$ & 19656 & 2 & 123 & 3, 7, 13 & all colourable\\
-$A_8$ & 20160 & 2 & 33 & 5, 7, 15 & all colourable\\
-$\mathrm{PGL}(2,29)$ & 24360 & 2 & 146 & 3, 5, 7, 15, 29 & all colourable\\
-$\mathrm{PSL}(2,37)$ & 25308 & 1 & 378 & 3, 9, 19, 37 & all colourable\\
-$\mathrm{PGL}(2,31)$ & 29760 & 2 & 113 & 3, 5, 15, 31 & all colourable\\
-$\mathrm{PSL}(2,32)$ & 32736 & 1 & 930 & 3, 11, 31, 33 & all colourable\\
-$\mathrm{PSL}(2,41)$ & 34440 & 1 & 380 & 3, 5, 7, 21, 41 & all colourable\\
-$\mathrm{PSL}(2,43)$ & 39732 & 1 & 490 & 3, 7, 11, 21, 43 & all colourable\\
-$\mathrm{PSL}(2,47)$ & 51888 & 1 & 437 & 3, 23, 47 & all colourable\\
+$A_5$ & 60 & 1 & 6 & 3, 5 & 15 & all colourable\\
+$S_5$ & 120 & 2 & 2 & 5 & 5 & all colourable\\
+$\mathrm{PSL}(2,7)$ & 168 & 1 & 4 & 3, 7 & 21 & all colourable\\
+$\mathrm{PGL}(2,7)$ & 336 & 2 & 5 & 3, 7 & 42 & all colourable\\
+$A_6$ & 360 & 1 & 4 & 5 & 10 & all colourable\\
+$\mathrm{PSL}(2,8)$ & 504 & 1 & 42 & 3, 7, 9 & 63 & all colourable\\
+$\mathrm{PSL}(2,11)$ & 660 & 1 & 14 & 3, 5, 11 & 66 & all colourable\\
+$M_{10}$ & 720 & 1 & 0 & -- & -- & no such pairs\\
+$\mathrm{PGL}(2,9)$ & 720 & 2 & 10 & 3, 5 & 45 & all colourable\\
+$S_6$ & 720 & 3 & 2 & 5 & 10 & all colourable\\
+$\mathrm{PSL}(2,13)$ & 1092 & 1 & 45 & 3, 7, 13 & 84 & all colourable\\
+$\mathrm{PGL}(2,11)$ & 1320 & 2 & 17 & 3, 5, 11 & 120 & all colourable\\
+$\mathrm{PGL}(2,13)$ & 2184 & 2 & 26 & 3, 7, 13 & 168 & all colourable\\
+$\mathrm{PSL}(2,17)$ & 2448 & 1 & 60 & 3, 9, 17 & 153 & all colourable\\
+$A_7$ & 2520 & 1 & 11 & 5, 7 & 35 & all colourable\\
+$\mathrm{PSL}(2,19)$ & 3420 & 1 & 76 & 3, 5, 9, 19 & 180 & all colourable\\
+$\mathrm{PSL}(2,16)$ & 4080 & 1 & 204 & 3, 5, 15, 17 & 255 & all colourable\\
+$\mathrm{PGL}(2,17)$ & 4896 & 2 & 36 & 3, 9, 17 & 288 & all colourable\\
+$S_7$ & 5040 & 3 & 19 & 3, 5, 7 & 42 & all colourable\\
+$\mathrm{PSL}(3,3)$ & 5616 & 1 & 20 & 3, 13 & 78 & all colourable\\
+$\mathrm{PSU}(3,3)$ & 6048 & 1 & 6 & 7 & 28 & all colourable\\
+$\mathrm{PSL}(2,23)$ & 6072 & 1 & 107 & 3, 11, 23 & 276 & all colourable\\
+$\mathrm{PGL}(2,19)$ & 6840 & 2 & 58 & 3, 5, 9, 19 & 360 & all colourable\\
+$A_5\wr\mathbb{Z}_2$ & 7200 & 3 & 8 & 15 & 25 & all colourable\\
+$\mathrm{PSL}(2,25)$ & 7800 & 1 & 134 & 3, 5, 13 & 300 & all colourable\\
+$M_{11}$ & 7920 & 1 & 14 & 5, 11 & 55 & all colourable\\
+$\mathrm{P\Sigma L}(2,16)$ & 8160 & 2 & 20 & 15, 17 & 68 & all colourable\\
+$\mathrm{PSL}(2,27)$ & 9828 & 1 & 186 & 3, 7, 13 & 378 & all colourable\\
+$\mathrm{PSL}(3,3).2$ & 11232 & 2 & 31 & 3, 13 & 156 & all colourable\\
+$G_2(2)=\mathrm{PSU}(3,3).2$ & 12096 & 2 & 21 & 3, 7 & 378 & all colourable\\
+$\mathrm{PGL}(2,23)$ & 12144 & 2 & 72 & 3, 11, 23 & 528 & all colourable\\
+$\mathrm{PSL}(2,29)$ & 12180 & 1 & 219 & 3, 5, 7, 15, 29 & 435 & all colourable\\
+$\mathrm{PSL}(2,31)$ & 14880 & 1 & 160 & 3, 5, 15, 31 & 480 & all colourable\\
+$\mathrm{PGL}(2,25)$ & 15600 & 2 & 90 & 3, 5, 13 & 300 & all colourable\\
+$\mathrm{PSL}(2,25).2_3$ & 15600 & 1 & 0 & -- & -- & no such pairs\\
+$\mathrm{P\Sigma L}(2,25)$ & 15600 & 3 & 30 & 13 & 26 & all colourable\\
+$\mathrm{PGL}(2,27)$ & 19656 & 2 & 123 & 3, 7, 13 & 378 & all colourable\\
+$A_8$ & 20160 & 2 & 33 & 5, 7, 15 & 35 & all colourable\\
+$\mathrm{PSL}(3,4)$ & 20160 & 1 & 60 & 5, 7 & 105 & all colourable\\
+$\mathrm{PGL}(2,29)$ & 24360 & 2 & 146 & 3, 5, 7, 15, 29 & 840 & all colourable\\
+$\mathrm{PSL}(2,37)$ & 25308 & 1 & 378 & 3, 9, 19, 37 & 684 & all colourable\\
+$\mathrm{PSU}(4,2)=\mathrm{PSp}(4,3)$ & 25920 & 2 & 42 & 5, 9 & 120 & all colourable\\
+$Sz(8)$ & 29120 & 1 & 210 & 5, 7, 13 & 455 & all colourable\\
+$\mathrm{PGL}(2,31)$ & 29760 & 2 & 113 & 3, 5, 15, 31 & 960 & all colourable\\
+$\mathrm{PSL}(2,32)$ & 32736 & 1 & 930 & 3, 11, 31, 33 & 1023 & all colourable\\
+$\mathrm{PSL}(2,41)$ & 34440 & 1 & 380 & 3, 5, 7, 21, 41 & 861 & all colourable\\
+$\mathrm{PSL}(2,43)$ & 39732 & 1 & 490 & 3, 7, 11, 21, 43 & 924 & all colourable\\
+$\mathrm{PSL}(3,4).2$ (field) & 40320 & 2 & 11 & 5, 7 & 105 & all colourable\\
+$\mathrm{PSL}(3,4).2$ (graph) & 40320 & 2 & 68 & 3, 5, 7 & 315 & all colourable\\
+$\mathrm{PSL}(3,4).2$ (graph-field) & 40320 & 2 & 45 & 5, 7 & 105 & all colourable\\
+$S_8$ & 40320 & 4 & 47 & 5, 7, 15 & 35 & all colourable\\
+$\mathrm{PGL}(2,37)$ & 50616 & 2 & 242 & 3, 9, 19, 37 & 1368 & all colourable\\
+$\mathrm{PSU}(4,2).2=W(E_6)$ & 51840 & 4 & 52 & 5, 9 & 40 & all colourable\\
+$\mathrm{PSL}(2,47)$ & 51888 & 1 & 437 & 3, 23, 47 & 1128 & all colourable\\
+$\mathrm{PSL}(2,7)\wr\mathbb{Z}_2$ & 56448 & 3 & 6 & 21 & 42 & all colourable\\
+$\mathrm{PSL}(2,49)$ & 58800 & 1 & 480 & 3, 5, 7, 25 & 1200 & all colourable\\
+$\mathrm{PSU}(3,4)$ & 62400 & 1 & 64 & 3, 5, 13, 15 & 195 & all colourable\\
+$\mathrm{PGL}(2,41)$ & 68880 & 2 & 250 & 3, 5, 7, 21, 41 & 1680 & all colourable\\
+$\mathrm{PSL}(2,53)$ & 74412 & 1 & 780 & 3, 9, 13, 27, 53 & 1431 & all colourable\\
+$\mathrm{PGL}(2,43)$ & 79464 & 2 & 325 & 3, 7, 11, 21, 43 & 1848 & all colourable\\
+$M_{12}$ & 95040 & 2 & 66 & 3, 5, 11 & 396 & all colourable\\
+$\mathrm{PSL}(2,59)$ & 102660 & 1 & 926 & 3, 5, 15, 29, 59 & 1770 & all colourable\\
+$\mathrm{PGL}(2,47)$ & 103776 & 2 & 288 & 3, 23, 47 & 2208 & all colourable\\
+$\mathrm{PSL}(2,61)$ & 113460 & 1 & 1023 & 3, 5, 15, 31, 61 & 1860 & all colourable\\
+$\mathrm{PGL}(2,49)$ & 117600 & 2 & 324 & 3, 5, 7, 25 & 2400 & all colourable\\
+$\mathrm{PSL}(2,49).2_3$ & 117600 & 1 & 0 & -- & -- & no such pairs\\
+$\mathrm{P\Sigma L}(2,49)$ & 117600 & 3 & 80 & 5, 25 & 50 & all colourable\\
+$\mathrm{PSU}(3,4).2$ & 124800 & 2 & 200 & 3, 5, 13, 15 & 1248 & all colourable\\
+$\mathrm{PSU}(3,5)$ & 126000 & 1 & 51 & 5, 7 & 525 & all colourable\\
+$\mathrm{PGL}(2,53)$ & 148824 & 2 & 506 & 3, 9, 13, 27, 53 & 2808 & all colourable\\
+$\mathrm{PSL}(2,67)$ & 150348 & 1 & 1216 & 3, 11, 17, 33, 67 & 2244 & all colourable\\
+$J_1$ & 175560 & 1 & 544 & 3, 5, 7, 11, 15, 19 & 9240 & all colourable\\
+$\mathrm{PSL}(2,71)$ & 178920 & 1 & 1124 & 3, 5, 7, 9, 35, 71 & 2556 & all colourable\\
+$A_9$ & 181440 & 2 & 257 & 3, 5, 7, 9, 15 & 280 & all colourable\\
+$M_{12}.2$ & 190080 & 3 & 55 & 3, 5, 11 & 792 & all colourable\\
+$\mathrm{PSL}(2,73)$ & 194472 & 1 & 1248 & 3, 9, 37, 73 & 2664 & all colourable\\
+$\mathrm{PGL}(2,59)$ & 205320 & 2 & 623 & 3, 5, 15, 29, 59 & 3480 & all colourable\\
+$\mathrm{PGL}(2,61)$ & 226920 & 2 & 674 & 3, 5, 15, 31, 61 & 3720 & all colourable\\
+$\mathrm{PSL}(2,79)$ & 246480 & 1 & 1258 & 3, 5, 13, 39, 79 & 3120 & all colourable\\
+$\mathrm{PSU}(3,5).2$ & 252000 & 2 & 102 & 3, 5, 7 & 525 & all colourable\\
+$A_6\wr\mathbb{Z}_2$ & 259200 & 3 & 20 & 5, 15 & 90 & all colourable\\
 \bottomrule
 \end{tabular}

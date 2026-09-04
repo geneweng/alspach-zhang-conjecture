@@ -368,3 +368,70 @@ Traceback (most recent call last):
     raise NotImplementedError('Limited solve is currently unsupported by CaDiCaL.')
 NotImplementedError: Limited solve is currently unsupported by CaDiCaL.
 PSL(2,47)    |G|= 51888  involution classes=1  pairs (a,x) tested=  437  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 47': 413, 'quotient by abelian subgroup of order 23': 24}  [238.7s]
+PSL(2,49)    |G|= 58800  involution classes=1  pairs (a,x) tested=  480  non-colourable=0  undecided=0  methods={'quotient by abelian subgroup of order 49': 444, 'quotient by abelian subgroup of order 25': 36}  [397.8s]
+??? undecided pair on S8: ord(x)=15, ord(ax)=8: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=6: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=10: timeout
+??? undecided pair on S8: ord(x)=7, ord(ax)=10: timeout
+??? undecided pair on S8: ord(x)=5, ord(ax)=8: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=10: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=10: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=8: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=6: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=8: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=12: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=6: timeout
+??? undecided pair on S8: ord(x)=5, ord(ax)=8: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=6: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=12: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=8: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=12: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=8: timeout
+??? undecided pair on S8: ord(x)=15, ord(ax)=6: timeout
+S8           |G|= 40320  involution classes=4  pairs (a,x) tested=   47  non-colourable=0  undecided=19  methods={'timeout': 19, 'quotient by abelian subgroup of order 15': 24, 'quotient by abelian subgroup of order 9': 4}  [10709.0s]
+
+SUMMARY
+A5 60 1 6 0 0
+S5 120 2 2 0 0
+PSL(2,7) 168 1 4 0 0
+PGL(2,7) 336 2 5 0 0
+A6 360 1 4 0 0
+PSL(2,8) 504 1 42 0 0
+PGL(2,9) 720 2 10 0 0
+S6 720 3 2 0 0
+M10 720 1 0 0 0
+PSL(2,11) 660 1 14 0 0
+PSL(2,13) 1092 1 45 0 0
+PGL(2,11) 1320 2 17 0 0
+PGL(2,13) 2184 2 26 0 0
+PSL(2,17) 2448 1 60 0 0
+A7 2520 1 11 0 0
+PSL(2,19) 3420 1 76 0 0
+PSL(2,16) 4080 1 204 0 0
+PGL(2,17) 4896 2 36 0 0
+S7 5040 3 19 0 0
+PSL(3,3) 5616 1 20 0 0
+PSL(2,23) 6072 1 107 0 0
+PGL(2,19) 6840 2 58 0 0
+A5wrZ2 7200 3 8 0 0
+PSL(2,25) 7800 1 134 0 0
+M11 7920 1 14 0 0
+PSigmaL(2,16) 8160 2 20 0 0
+PSL(2,27) 9828 1 186 0 0
+PGL(2,23) 12144 2 72 0 0
+PSL(2,29) 12180 1 219 0 0
+PSL(2,31) 14880 1 160 0 0
+PGL(2,25) 15600 2 90 0 0
+PSigmaL(2,25) 15600 3 30 0 0
+PSL(2,25).2_3 15600 1 0 0 0
+PGL(2,27) 19656 2 123 0 0
+A8 20160 2 33 0 0
+PGL(2,29) 24360 2 146 0 0
+PSL(2,37) 25308 1 378 0 0
+PGL(2,31) 29760 2 113 0 0
+PSL(2,32) 32736 1 930 0 0
+PSL(2,41) 34440 1 380 0 0
+PSL(2,43) 39732 1 490 0 0
+PSL(2,47) 51888 1 437 0 0
+PSL(2,49) 58800 1 480 0 0
+S8 40320 4 47 0 19

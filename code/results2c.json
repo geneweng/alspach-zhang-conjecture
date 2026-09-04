@@ -1,0 +1,4848 @@
+[
+ {
+  "group": "PGL(2,61)",
+  "order": 226920,
+  "degree": 62,
+  "involution_classes": 2,
+  "pairs_tested": 674,
+  "non_colourable": 0,
+  "undecided": 0,
+  "orders_x": [
+   3,
+   5,
+   15,
+   31,
+   61
+  ],
+  "pairs": [
+   [
+    3,
+    12
+   ],
+   [
+    3,
+    20
+   ],
+   [
+    3,
+    60
+   ],
+   [
+    3,
+    62
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    12
+   ],
+   [
+    5,
+    20
+   ],
+   [
+    5,
+    60
+   ],
+   [
+    5,
+    62
+   ],
+   [
+    15,
+    4
+   ],
+   [
+    15,
+    12
+   ],
+   [
+    15,
+    20
+   ],
+   [
+    15,
+    60
+   ],
+   [
+    15,
+    62
+   ],
+   [
+    31,
+    4
+   ],
+   [
+    31,
+    12
+   ],
+   [
+    31,
+    20
+   ],
+   [
+    31,
+    60
+   ],
+   [
+    31,
+    62
+   ],
+   [
+    61,
+    4
+   ],
+   [
+    61,
+    12
+   ],
+   [
+    61,
+    20
+   ],
+   [
+    61,
+    60
+   ],
+   [
+    61,
+    62
+   ]
+  ],
+  "methods": [
+   "quotient by C(x61) of order 61",
+   "quotient by N(Z31) of order 124",
+   "quotient by N(Z61) of order 3660"
+  ],
+  "max_quotient_vertices": 3720,
+  "subgroups_used": [
+   "quotient by C(x61) of order 61",
+   "quotient by N(Z31) of order 124",
+   "quotient by N(Z61) of order 3660"
+  ],
+  "seconds": 1545.3,
+  "details": [
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by C(x61) of order 61 (3720 vertices)",
+    "quotient_vertices": 3720
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 61,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 5,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 15,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z31) of order 124 (1830 vertices)",
+    "quotient_vertices": 1830
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 12,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 62,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 60,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   },
+   {
+    "ord_x": 31,
+    "ord_ax": 20,
+    "ok": true,
+    "method": "quotient by N(Z61) of order 3660 (62 vertices)",
+    "quotient_vertices": 62
+   }
+  ]
+ }
+]

@@ -16,11 +16,13 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `survey.tex`, `survey.pdf` | The survey (LaTeX source and compiled PDF). |
 | `docs/` | GitHub Pages site: project page (`index.html`), the survey as HTML and PDF. |
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
-| `code/cayley_snark_check.py` | Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a list of non-solvable permutation groups (PSL/PGL(2,q), alternating and symmetric groups, M10, M11, PSL(3,3), PΣL(2,16), the index-2 extensions of PSL(2,25), A5 ≀ Z2). |
-| `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2. |
-| `code/make_table.py` | Builds `results_table.tex` from `code/results.json` and `code/results_extra.json`. |
-| `code/results.json`, `code/results_extra.json` | Raw results (one record per group). |
-| `code/run.log`, `code/run_extra.log` | Logs of the runs reported in the survey. |
+| `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
+| `code/cayley_snark_check.py` | First checker (quotients by odd-order abelian subgroups only); also provides the group constructors (finite fields, PSL/PGL(2,q), A_n, S_n, M10, M11, PSL(3,3), A5 ≀ Z2) used by the current one. |
+| `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
+| `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
+| `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
+| `code/results2.json`, `code/results.json`, `code/results_extra.json` | Raw results (one record per group; `results2.json` is the current run and includes a per-pair record of the subgroup used). |
+| `code/run2.log`, `code/run.log`, `code/run_extra.log` | Logs of the runs reported in the survey. |
 
 ## What the survey covers
 
@@ -40,19 +42,20 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 ```
 cd code
 python3 -m pip install python-sat
-python3 cayley_snark_check.py 60000      # groups of order up to 60000, writes results.json
+RESULTS=results2.json python3 cayley_snark_check2.py 270000   # all catalogue groups of order <= 270000
+python3 cayley_snark_check2.py 270000 J1 A9                    # or just the named groups
 python3 extra_groups.py                  # PSU(3,3), PSL(3,3).2, G2(2), writes results_extra.json
-python3 make_table.py results.json results_extra.json
-cd .. && pdflatex survey && pdflatex survey
+python3 make_table.py results2.json results.json results_extra.json
+cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```
 
 For each group `G` the program enumerates all pairs `(a, x)` with `a` an involution, `x` of odd
 order and `<a, x> = G`, up to conjugation and inversion of `x` (the other cubic Cayley graphs on
 `G` are trivially 3-edge-colourable). For each pair it takes the quotient of the Cayley graph by
-the left action of an abelian subgroup `H` of odd order containing no element of order `ord(x)`
-(largest such `H` first); the quotient is a cubic multigraph covered by the Cayley graph, so a
-3-edge-colouring of the quotient (found by CaDiCaL through python-sat, using the "perfect matching
-whose complement is bipartite" formulation) lifts to the Cayley graph, and the lifted colouring is
-verified independently. If no quotient is colourable the full graph is passed to the SAT solver
-with a time limit; that fallback was never needed in the reported runs. Group orders are checked
-against the known formulas and the Petersen graph serves as a negative control.
+the left action of a subgroup `H` containing no conjugate of `x` (point and set stabilisers,
+centralisers, normalisers, odd-order abelian subgroups, ... — largest first). The quotient is a
+cubic pregraph (semi-edges where `H` contains conjugates of `a`) covered by the Cayley graph, so a
+3-edge-colouring of the quotient (found by CaDiCaL through python-sat) lifts to the Cayley graph;
+the lifted colouring is verified independently on the full graph. If no quotient is colourable the
+full graph is passed to the SAT solver with a time limit; this fallback was never needed. Group
+orders are checked against the known values and the Petersen graph serves as a negative control.
