@@ -30,6 +30,8 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 2. The trivial cases, and the reduction to `Cay(G, {a, x, x⁻¹})` with `a` an involution and `x` of odd order.
 3. Elementary reformulations: normal subgroups containing `a` (always colourable), small girth,
    generators of order 3 ⇔ arc-regular cubic graphs, index-2 normal subgroups ⇔ bi-Cayley graphs.
+   The index-2 case is proved when `x` has order 3; for general odd order it is reduced to finding
+   a consecutive 2-factor in a cyclically ordered bipartite coset-incidence graph.
 4. Solvable groups (Alspach–Liu–Zhang 1996) and solvable vertex-transitive groups (Potočnik 2004).
 5. The structure of a minimal counterexample (Nedela–Škoviera 2001), with a self-contained proof.
 6. The hamiltonicity route: (2,s,3)-Cayley graphs (Glover, Kutnar, Malnič, Marušič) and Cayley maps.
@@ -41,9 +43,10 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 **Done.** 85 non-solvable groups verified (25 954 generating pairs, all 3-edge-colourable): every group
 admissible for a smallest Cayley snark of order below 352 440, i.e. a smallest Cayley snark has more than
-352 439 vertices. The survey has a new Section 4 (quotients by arbitrary subgroups with semi-edges, parity
-lemma, Z_3 reformulation, Hamiltonian quotients, the Petersen-minus-a-vertex obstruction). No proof, no
-counterexample.
+352 439 vertices. The survey has a new Section 4 (quotients by arbitrary subgroups with semi-edges, a
+cyclewise transition criterion, a Z_3 reformulation, and the Petersen-minus-a-vertex obstruction), proves
+the index-2 case for generators of order 3, and gives a consecutive-2-factor criterion for the remaining
+index-2 cases. No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
 
