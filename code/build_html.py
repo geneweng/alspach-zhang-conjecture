@@ -22,6 +22,44 @@ body = subprocess.run(
 
 tex = open(TEX, encoding="utf-8").read()
 
+# ---------------------------------------------------------------- equations
+# Pandoc wraps LaTeX equation environments in \[...\], which leaves invalid
+# nested display delimiters and prints \eqref targets as raw label names.
+equation_labels = re.findall(
+    r"\\begin\{equation\}\s*\\label\{([^}]*)\}", tex, flags=re.S
+)
+equation_num = {label: i + 1 for i, label in enumerate(equation_labels)}
+
+def equation_repl(m):
+    label, content = m.group(1), m.group(2).strip()
+    number = equation_num[label]
+    return (
+        f'<span id="{label}" class="math display">'
+        f'\\[{content}\\tag{{{number}}}\\]</span>'
+    )
+
+body = re.sub(
+    r'<span class="math display">\\\[\\begin\{equation\}\s*'
+    r'\\label\{([^}]*)\}\s*(.*?)\\end\{equation\}\\\]</span>',
+    equation_repl,
+    body,
+    flags=re.S,
+)
+
+def eqref_repl(m):
+    label = m.group(1)
+    number = equation_num.get(label)
+    if number is None:
+        return m.group(0)
+    return f'<a href="#{label}" class="ref">({number})</a>'
+
+body = re.sub(
+    r'<a href="#([^"]*)" data-reference-type="eqref" '
+    r'data-reference="[^"]*">.*?</a>',
+    eqref_repl,
+    body,
+)
+
 # ---------------------------------------------------------------- citations
 bibkeys = re.findall(r"\\bibitem\{([^}]*)\}", tex)
 bibnum = {k: i + 1 for i, k in enumerate(bibkeys)}
@@ -241,7 +279,7 @@ body = re.sub(r'(<table>.*?</table>)', r'<div class="tablewrap">\1</div>', body,
 # right-align numeric columns in tables: mark cells that are pure numbers
 body = re.sub(r'<td>(\d[\d,]*)</td>', r'<td class="right">\1</td>', body)
 
-colophon = '''<p class="colophon">Prepared with the help of an AI assistant (Claude). Bibliographic details were checked against the cited sources where accessible; the computations are reproducible from the repository code.</p>
+colophon = '''<p class="colophon">Prepared with the help of AI assistants (Claude and OpenAI Codex). Bibliographic details were checked against the cited sources where accessible; the computations are reproducible from the repository code.</p>
 </div>
 '''
 open(OUT, "w", encoding="utf-8").write(head + masthead + body + colophon)

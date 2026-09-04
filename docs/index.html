@@ -105,7 +105,7 @@ td.num,th.num{text-align:right}
 
 <h2>Why this problem</h2>
 <p>Tait showed in 1880 that the Four Colour Theorem is the statement that every bridgeless <em>planar</em> cubic graph is 3-edge-colourable. Drop planarity and it fails: the Petersen graph is the smallest counterexample, and the non-trivial ones are called snarks. Every known snark, and every known non-hamiltonian vertex-transitive graph, fails to be a Cayley graph. The conjecture says this is not a coincidence: the regular action of a group on the vertices forces a Tait colouring.</p>
-<p>The conjecture is implied by the folklore conjecture that every Cayley graph has a Hamilton cycle (cubic Cayley graphs have even order), and it implies the cycle double cover conjecture for cubic Cayley graphs. It is a natural, sharply posed test case for the general belief that symmetry excludes snarks.</p>
+<p>The conjecture is implied by the folklore conjecture that every Cayley graph has a Hamilton cycle (cubic Cayley graphs have even order). Before the cycle double cover theorem was proved in 2026, it also implied that formerly open statement for cubic Cayley graphs. The new proof supplies a useful eight-point palette reformulation of this problem, but does not by itself force a Tait colouring. It remains a natural, sharply posed test case for the general belief that symmetry excludes snarks.</p>
 
 <h2>What is known</h2>
 <p>Write <span class="math">X(G; a, x)</span> for the Cayley graph of <span class="math">G</span> with respect to <span class="math">{a, x, x<sup>−1</sup>}</span>, where <span class="math">a</span> is an involution and <span class="math">x</span> has odd order. Every other cubic Cayley graph is trivially colourable, so the conjecture is about these graphs only.</p>
@@ -146,6 +146,7 @@ td.num,th.num{text-align:right}
 <li>Look for an <span class="math">H</span>-invariant colouring for a large subgroup <span class="math">H</span> avoiding the conjugacy class of <span class="math">x</span> (the quotient is a pregraph with semi-edges; survey §4). In every computed case one exists for a subgroup of index at most 9240, often a point stabiliser or an involution centraliser. A general construction would prove the conjecture; the parity obstruction of §4 shows the largest admissible subgroup is not always the right one.</li>
 <li>Use the reformulation of §4: a colouring is an <span class="math">a</span>-invariant function <span class="math">G → Z<sub>3</sub></span> whose restriction to every <span class="math">x</span>-cycle is "admissible" (a simple local rule on where the value changes). For <span class="math">x</span> of order 5 this means: constant on three consecutive vertices, the other two colours on the remaining two.</li>
 <li>Extend the Cayley-map methods of Glover–Kutnar–Malnič–Marušič from <span class="math">(ax)³ = 1</span> to <span class="math">(ax)<sup>t</sup> = 1</span> for small <span class="math">t</span>.</li>
+<li>Exploit the 2026 cycle-double-cover construction: its two-point edge labels define a graph on the eight elements of F<sub>2</sub><sup>3</sup>. If this palette graph can be made 4-colourable (for example, if its complement has a perfect matching), its colouring pulls back to a Tait colouring. The missing step is to force that condition from Cayley structure without starting from a rank-two flow, which would already encode the answer.</li>
 </ul>
 </div>
 <div class="track counter">
@@ -163,6 +164,7 @@ td.num,th.num{text-align:right}
 <ul class="res">
 <li><span class="k">Survey</span><span><a href="survey.html">Web version</a> · <a href="survey.pdf">PDF</a> · <a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/survey.tex">LaTeX source</a>. History, equivalent formulations, the three main theorems with a self-contained proof of the Nedela–Škoviera reduction, the hamiltonicity route, computational evidence, open problems.</span></li>
 <li><span class="k">Checker</span><span><a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/code/cayley_snark_check2.py"><code>code/cayley_snark_check2.py</code></a>: enumerates all generating pairs <span class="math">(a, x)</span> of a permutation group up to conjugacy and decides 3-edge-colourability through quotient pregraphs by subgroups avoiding the class of <span class="math">x</span> and a SAT solver; every colouring is verified on the full graph. Groups come from explicit matrix constructions or from the ATLAS of Finite Group Representations.</span></li>
+<li><span class="k">CDC palette</span><span><a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/code/cdc_palette_experiment.py"><code>code/cdc_palette_experiment.py</code></a>: constructs the affine compatibility system from the 2026 cycle-double-cover proof and computes exact chromatic numbers of its eight-vertex palette graphs, using K<sub>4</sub>, Petersen, and a cubic Cayley graph on S<sub>5</sub> as controls.</span></li>
 <li><span class="k">Results</span><span><a href="https://github.com/geneweng/alspach-zhang-conjecture/blob/main/code/results2.json"><code>results2.json</code></a> (and the older <code>results.json</code>, <code>results_extra.json</code>): one record per group with the number of pairs, the orders of <span class="math">x</span> that occur, and for every pair the subgroup and quotient size used.</span></li>
 <li><span class="k">Key papers</span><span>Alspach–Liu–Zhang, SIAM J. Discrete Math. 9 (1996); Nedela–Škoviera, Combinatorica 21 (2001); Potočnik, J. Combin. Theory Ser. B 91 (2004); Potočnik–Spiga–Verret, J. Symbolic Comput. 50 (2013); Glover–Kutnar–Malnič–Marušič, Proc. London Math. Soc. 104 (2012). Full references in the survey.</span></li>
 </ul>
@@ -170,7 +172,7 @@ td.num,th.num{text-align:right}
 <h2>Contributing</h2>
 <p>Open an issue or a pull request on the <a href="https://github.com/geneweng/alspach-zhang-conjecture">repository</a>. Useful contributions include: a verified run of the checker on a new admissible group (attach <code>results.json</code>), a proof for a family of groups, a reference we have missed, or a correction to the survey. Computations should state the group, the number of generating pairs tested and the method used to find each colouring, so that they can be reproduced.</p>
 
-<p class="colophon">Project started September 2026. Survey and code prepared with the help of an AI assistant (Claude); all computational claims are reproducible from the repository.</p>
+<p class="colophon">Project started September 2026. Survey and code prepared with the help of AI assistants (Claude and OpenAI Codex); all computational claims are reproducible from the repository.</p>
 </div>
 </body>
 </html>

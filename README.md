@@ -18,6 +18,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
 | `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
 | `code/cayley_snark_check.py` | First checker (quotients by odd-order abelian subgroups only); also provides the group constructors (finite fields, PSL/PGL(2,q), A_n, S_n, M10, M11, PSL(3,3), A5 ≀ Z2) used by the current one. |
+| `code/cdc_palette_experiment.py` | Reproduces the eight-point palette analysis of the 2026 cycle-double-cover proof: exact affine-system enumeration for K4, Petersen, and a cubic Cayley graph on S5, with exact palette chromatic numbers. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -37,7 +38,8 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 6. The hamiltonicity route: (2,s,3)-Cayley graphs (Glover, Kutnar, Malnič, Marušič) and Cayley maps.
 7. Computational evidence: the census of cubic vertex-transitive graphs up to 1280 vertices
    (Potočnik–Spiga–Verret) and the new computations in `code/`.
-8. Related flow problems and open questions.
+8. The 2026 cycle-double-cover proof, an exact eight-point palette reformulation, and its present obstruction.
+9. Related flow problems and open questions.
 
 ## Status and next steps (4 September 2026)
 
@@ -46,7 +48,10 @@ admissible for a smallest Cayley snark of order below 352 440, i.e. a smallest C
 352 439 vertices. The survey has a new Section 4 (quotients by arbitrary subgroups with semi-edges, a
 cyclewise transition criterion, a Z_3 reformulation, and the Petersen-minus-a-vertex obstruction), proves
 the index-2 case for generators of order 3, and gives a consecutive-2-factor criterion for the remaining
-index-2 cases. No complete proof and no counterexample.
+index-2 cases. It also analyses the 2026 proof of the cycle double cover theorem: a 4-colourable graph on
+its eight flow labels would pull back to a Tait colouring, but random full-rank flows produce dense palette
+graphs and a fully Cayley-invariant characteristic-two flow is impossible. No complete proof and no
+counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
 
@@ -64,9 +69,10 @@ the next admissible groups are S9 (362 880, in the catalogue), PGL(2,71), PGL(2,
 ATLAS generators are in `code/atlas/`), PGL(2,79), PSL(2,103), PSL(2,107), PSL(2,109), PSL(2,113), PSL(2,121), PSL(2,125);
 groups above about 400 000 elements need more memory per worker (use `WORKERS=6`).
 
-**Theory.** Open directions recorded in the survey (Section 9): the involution-class quotient, the
-Z_3 reformulation for ord(x) = 5, and adaptive choice of the quotient subgroup (the natural point
-quotient can be the Petersen snark even when the Cayley graph is colourable).
+**Theory.** Open directions recorded in the survey (Sections 9–10): the involution-class quotient, the
+Z_3 reformulation for ord(x) = 5, adaptive choice of the quotient subgroup (the natural point
+quotient can be the Petersen snark even when the Cayley graph is colourable), and forcing a
+4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.
 
 ## Reproducing the computation
 
@@ -76,6 +82,7 @@ python3 -m pip install python-sat
 RESULTS=results2.json python3 cayley_snark_check2.py 270000   # all catalogue groups of order <= 270000
 python3 cayley_snark_check2.py 270000 J1 A9                    # or just the named groups
 python3 extra_groups.py                  # PSU(3,3), PSL(3,3).2, G2(2), writes results_extra.json
+python3 cdc_palette_experiment.py         # exact eight-point palette diagnostic
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```
