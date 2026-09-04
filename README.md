@@ -39,9 +39,9 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (4 September 2026)
 
-**Done.** 83 non-solvable groups verified (23 266 generating pairs, all 3-edge-colourable): every group
-admissible for a smallest Cayley snark of order below 285 852, i.e. a smallest Cayley snark has more than
-285 851 vertices. The survey has a new Section 4 (quotients by arbitrary subgroups with semi-edges, parity
+**Done.** 84 non-solvable groups verified (25 146 generating pairs, all 3-edge-colourable): every group
+admissible for a smallest Cayley snark of order below 300 696, i.e. a smallest Cayley snark has more than
+300 695 vertices. The survey has a new Section 4 (quotients by arbitrary subgroups with semi-edges, parity
 lemma, Z_3 reformulation, Hamiltonian quotients, the Petersen-minus-a-vertex obstruction). No proof, no
 counterexample.
 
@@ -49,7 +49,6 @@ counterexample.
 
 ```
 cd code
-WORKERS=11 VERBOSE=1 RESULTS=results2g.json python3 cayley_snark_check2.py 400000 "PSL(2,83)"   # order 285 852 -> bound 300 695
 WORKERS=11 VERBOSE=1 RESULTS=results2g.json python3 cayley_snark_check2.py 400000 "PGL(2,67)"   # order 300 696 -> bound 352 439
 WORKERS=11 VERBOSE=1 RESULTS=results2g.json python3 cayley_snark_check2.py 400000 "PSL(2,89)"   # order 352 440 -> bound 362 879 (S9 next)
 python3 summarize_results.py          # prints the new bound and the next unverified admissible groups
