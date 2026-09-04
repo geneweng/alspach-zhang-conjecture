@@ -6,7 +6,7 @@ S wr Z_2 with T, S non-abelian simple) is enumerated from the known orders of th
 simple groups up to 300 000."""
 import json, sys, os
 
-files = sys.argv[1:] or ["results2f.json", "results2e.json", "results2d.json", "results2c.json", "results2.json", "results2b.json", "results2_j1.json", "results.json", "results_extra.json"]
+files = sys.argv[1:] or ["results2g.json", "results2f.json", "results2e.json", "results2d.json", "results2c.json", "results2.json", "results2b.json", "results2_j1.json", "results.json", "results_extra.json"]
 rows = {}
 for f in files:
     if os.path.exists(f):
@@ -26,7 +26,7 @@ SIMPLE = [("A5", 60), ("PSL(2,7)", 168), ("A6", 360), ("PSL(2,8)", 504), ("PSL(2
           ("PSL(2,53)", 74412), ("M12", 95040), ("PSL(2,59)", 102660), ("PSL(2,61)", 113460),
           ("PSU(3,5)", 126000), ("PSL(2,67)", 150348), ("J1", 175560), ("PSL(2,71)", 178920),
           ("A9", 181440), ("PSL(2,73)", 194472), ("PSL(2,79)", 246480), ("PSL(2,64)", 262080),
-          ("PSL(2,81)", 265680), ("PSL(2,83)", 285852)]
+          ("PSL(2,81)", 265680), ("PSL(2,83)", 285852), ("PSL(2,89)", 352440), ("PSL(2,97)", 456288)]
 # index-2 extensions T.2 (all classes of such extensions; groups with no involution outside
 # the socle, e.g. M10, PSL(2,25).2_3, still have to be listed since they are admissible a priori)
 EXT2 = [("S5", 120), ("PGL(2,7)", 336), ("S6", 720), ("PGL(2,9)", 720), ("M10", 720),

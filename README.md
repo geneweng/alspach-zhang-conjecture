@@ -37,6 +37,36 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
    (Potočnik–Spiga–Verret) and the new computations in `code/`.
 8. Related flow problems and open questions.
 
+## Status and next steps (4 September 2026)
+
+**Done.** 83 non-solvable groups verified (23 266 generating pairs, all 3-edge-colourable): every group
+admissible for a smallest Cayley snark of order below 285 852, i.e. a smallest Cayley snark has more than
+285 851 vertices. The survey has a new Section 4 (quotients by arbitrary subgroups with semi-edges, parity
+lemma, Z_3 reformulation, Hamiltonian quotients, the Petersen-minus-a-vertex obstruction). No proof, no
+counterexample.
+
+**Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
+
+```
+cd code
+WORKERS=11 VERBOSE=1 RESULTS=results2g.json python3 cayley_snark_check2.py 400000 "PSL(2,83)"   # order 285 852 -> bound 300 695
+WORKERS=11 VERBOSE=1 RESULTS=results2g.json python3 cayley_snark_check2.py 400000 "PGL(2,67)"   # order 300 696 -> bound 352 439
+WORKERS=11 VERBOSE=1 RESULTS=results2g.json python3 cayley_snark_check2.py 400000 "PSL(2,89)"   # order 352 440 -> bound 362 879 (S9 next)
+python3 summarize_results.py          # prints the new bound and the next unverified admissible groups
+python3 make_table.py results2g.json results2f.json results2e.json results2d.json results2c.json results2.json results2b.json results2_j1.json results.json results_extra.json
+```
+
+Then update the literal numbers in `survey.tex` (abstract, Table 1 row, Section 7.2 text, Theorem 7.x, Corollary 7.x)
+and in `docs/index.html` (the "Verified" row, "What a counterexample must look like" item 3, Track B), rebuild
+(`pdflatex survey` twice, `python3 code/build_html.py`, `cp survey.pdf docs/`), commit and push. After PSL(2,89)
+the next admissible groups are S9 (362 880, in the catalogue), PGL(2,71), PGL(2,73), PSL(2,97), PSL(2,101), M22 (443 520;
+ATLAS generators are in `code/atlas/`), PGL(2,79), PSL(2,103), PSL(2,107), PSL(2,109), PSL(2,113), PSL(2,121), PSL(2,125);
+groups above about 400 000 elements need more memory per worker (use `WORKERS=6`).
+
+**Theory.** Open directions recorded in the survey (Section 9): the involution-class quotient, the
+Z_3 reformulation for ord(x) = 5, and adaptive choice of the quotient subgroup (the natural point
+quotient can be the Petersen snark even when the Cayley graph is colourable).
+
 ## Reproducing the computation
 
 ```
