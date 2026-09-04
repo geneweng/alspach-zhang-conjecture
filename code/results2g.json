@@ -13344,5 +13344,5785 @@
     "quotient_vertices": 3403
    }
   ]
+ },
+ {
+  "group": "PGL(2,67)",
+  "order": 300696,
+  "degree": 68,
+  "involution_classes": 2,
+  "pairs_tested": 808,
+  "non_colourable": 0,
+  "undecided": 0,
+  "orders_x": [
+   3,
+   11,
+   17,
+   33,
+   67
+  ],
+  "pairs": [
+   [
+    3,
+    22
+   ],
+   [
+    3,
+    66
+   ],
+   [
+    3,
+    68
+   ],
+   [
+    11,
+    4
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    22
+   ],
+   [
+    11,
+    66
+   ],
+   [
+    11,
+    68
+   ],
+   [
+    17,
+    4
+   ],
+   [
+    17,
+    6
+   ],
+   [
+    17,
+    22
+   ],
+   [
+    17,
+    66
+   ],
+   [
+    17,
+    68
+   ],
+   [
+    33,
+    4
+   ],
+   [
+    33,
+    6
+   ],
+   [
+    33,
+    22
+   ],
+   [
+    33,
+    66
+   ],
+   [
+    33,
+    68
+   ],
+   [
+    67,
+    4
+   ],
+   [
+    67,
+    6
+   ],
+   [
+    67,
+    22
+   ],
+   [
+    67,
+    66
+   ],
+   [
+    67,
+    68
+   ]
+  ],
+  "methods": [
+   "quotient by C(x67) of order 67",
+   "quotient by N(Z17) of order 136",
+   "quotient by N(Z67) of order 4422"
+  ],
+  "max_quotient_vertices": 4488,
+  "subgroups_used": [
+   "quotient by C(x67) of order 67",
+   "quotient by N(Z17) of order 136",
+   "quotient by N(Z67) of order 4422"
+  ],
+  "seconds": 1084.0,
+  "details": [
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 67,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 3,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by C(x67) of order 67 (4488 vertices)",
+    "quotient_vertices": 4488
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 11,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 33,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z17) of order 136 (2211 vertices)",
+    "quotient_vertices": 2211
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 4,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 66,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 6,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 22,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   },
+   {
+    "ord_x": 17,
+    "ord_ax": 68,
+    "ok": true,
+    "method": "quotient by N(Z67) of order 4422 (68 vertices)",
+    "quotient_vertices": 68
+   }
+  ]
  }
 ]
