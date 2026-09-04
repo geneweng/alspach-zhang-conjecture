@@ -6,7 +6,7 @@ S wr Z_2 with T, S non-abelian simple) is enumerated from the known orders of th
 simple groups up to 300 000."""
 import json, sys, os
 
-files = sys.argv[1:] or ["results2e.json", "results2d.json", "results2c.json", "results2.json", "results2b.json", "results2_j1.json", "results.json", "results_extra.json"]
+files = sys.argv[1:] or ["results2f.json", "results2e.json", "results2d.json", "results2c.json", "results2.json", "results2b.json", "results2_j1.json", "results.json", "results_extra.json"]
 rows = {}
 for f in files:
     if os.path.exists(f):

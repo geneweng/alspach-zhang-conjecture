@@ -76,6 +76,7 @@ def direct_with_frob(q, e, expected):
 
 # GF(4) is needed for PSL(3,4)
 C.GF.IRRED[4] = (2, [1, 1, 1])          # x^2 + x + 1
+C.GF.IRRED[81] = (3, [2, 1, 0, 0, 1])   # x^4 + x + 2 (irreducible over GF(3), checked below)
 
 def psl3(q, expected, field_aut=None, graph_aut=False):
     """PSL(3,q) (q = 4 here) acting on the points (and, if graph_aut, also
@@ -809,6 +810,7 @@ GROUPS = [
     ("PSU(3,5).2", lambda: psu3(5, 252000, field_aut=5), 50, 2, 252000),
     ("A6wrZ2", lambda: wreath_Z2(C.alternating(6), 259200), 6, 2, 259200),
     ("PSL(2,64)", L2(64), 65, 1, 262080),
+    ("PSL(2,81)", L2(81), 82, 1, 265680),
     ("S9", S(9), 9, 2, 362880),
 ]
 
