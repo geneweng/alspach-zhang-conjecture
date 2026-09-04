@@ -1,0 +1,137 @@
+== A5: order 60 built in 0.0s
+  [A5] |G|=60 degree=5 odd classes=3 involution classes=1 subgroup candidates=13 (largest 12)  setup 0.0s
+  [A5] generating pairs (a,x) up to conjugacy and inversion: 6  (0.0s)
+A5             |G|=     60  inv.classes=1  pairs=    6  non-colourable=0  undecided=0  largest quotient solved=15  [0.1s]
+== S5: order 120 built in 0.0s
+  [S5] |G|=120 degree=5 odd classes=2 involution classes=2 subgroup candidates=13 (largest 24)  setup 0.0s
+  [S5] generating pairs (a,x) up to conjugacy and inversion: 2  (0.0s)
+S5             |G|=    120  inv.classes=2  pairs=    2  non-colourable=0  undecided=0  largest quotient solved=5  [0.0s]
+== PSL(2,7): order 168 built in 0.0s
+  [PSL(2,7)] |G|=168 degree=8 odd classes=3 involution classes=1 subgroup candidates=17 (largest 21)  setup 0.0s
+  [PSL(2,7)] generating pairs (a,x) up to conjugacy and inversion: 4  (0.0s)
+PSL(2,7)       |G|=    168  inv.classes=1  pairs=    4  non-colourable=0  undecided=0  largest quotient solved=21  [0.0s]
+== PGL(2,7): order 336 built in 0.0s
+  [PGL(2,7)] |G|=336 degree=8 odd classes=2 involution classes=2 subgroup candidates=19 (largest 42)  setup 0.0s
+  [PGL(2,7)] generating pairs (a,x) up to conjugacy and inversion: 5  (0.0s)
+PGL(2,7)       |G|=    336  inv.classes=2  pairs=    5  non-colourable=0  undecided=0  largest quotient solved=42  [0.0s]
+== A6: order 360 built in 0.0s
+  [A6] |G|=360 degree=6 odd classes=4 involution classes=1 subgroup candidates=24 (largest 60)  setup 0.0s
+  [A6] generating pairs (a,x) up to conjugacy and inversion: 4  (0.0s)
+A6             |G|=    360  inv.classes=1  pairs=    4  non-colourable=0  undecided=0  largest quotient solved=10  [0.0s]
+== PSL(2,8): order 504 built in 0.0s
+  [PSL(2,8)] |G|=504 degree=9 odd classes=7 involution classes=1 subgroup candidates=27 (largest 56)  setup 0.0s
+  [PSL(2,8)] generating pairs (a,x) up to conjugacy and inversion: 42  (0.1s)
+PSL(2,8)       |G|=    504  inv.classes=1  pairs=   42  non-colourable=0  undecided=0  largest quotient solved=63  [0.2s]
+== PSL(2,11): order 660 built in 0.0s
+  [PSL(2,11)] |G|=660 degree=12 odd classes=5 involution classes=1 subgroup candidates=28 (largest 55)  setup 0.1s
+  [PSL(2,11)] generating pairs (a,x) up to conjugacy and inversion: 14  (0.1s)
+PSL(2,11)      |G|=    660  inv.classes=1  pairs=   14  non-colourable=0  undecided=0  largest quotient solved=66  [0.1s]
+== S6: order 720 built in 0.0s
+  [S6] |G|=720 degree=6 odd classes=3 involution classes=3 subgroup candidates=24 (largest 120)  setup 0.0s
+  [S6] generating pairs (a,x) up to conjugacy and inversion: 2  (0.0s)
+S6             |G|=    720  inv.classes=3  pairs=    2  non-colourable=0  undecided=0  largest quotient solved=10  [0.1s]
+== PGL(2,9): order 720 built in 0.0s
+  [PGL(2,9)] |G|=720 degree=10 odd classes=3 involution classes=2 subgroup candidates=28 (largest 72)  setup 0.0s
+  [PGL(2,9)] generating pairs (a,x) up to conjugacy and inversion: 10  (0.0s)
+PGL(2,9)       |G|=    720  inv.classes=2  pairs=   10  non-colourable=0  undecided=0  largest quotient solved=45  [0.1s]
+== M10: order 720 built in 0.0s
+  [M10] |G|=720 degree=10 odd classes=2 involution classes=1 subgroup candidates=24 (largest 72)  setup 0.0s
+  [M10] generating pairs (a,x) up to conjugacy and inversion: 0  (0.0s)
+M10            |G|=    720  inv.classes=1  pairs=    0  non-colourable=0  undecided=0  largest quotient solved=0  [0.0s]
+== PSL(2,13): order 1092 built in 0.0s
+  [PSL(2,13)] |G|=1092 degree=14 odd classes=6 involution classes=1 subgroup candidates=35 (largest 78)  setup 0.1s
+  [PSL(2,13)] generating pairs (a,x) up to conjugacy and inversion: 45  (0.1s)
+PSL(2,13)      |G|=   1092  inv.classes=1  pairs=   45  non-colourable=0  undecided=0  largest quotient solved=84  [0.2s]
+== PGL(2,11): order 1320 built in 0.0s
+  [PGL(2,11)] |G|=1320 degree=12 odd classes=4 involution classes=2 subgroup candidates=33 (largest 110)  setup 0.1s
+  [PGL(2,11)] generating pairs (a,x) up to conjugacy and inversion: 17  (0.1s)
+PGL(2,11)      |G|=   1320  inv.classes=2  pairs=   17  non-colourable=0  undecided=0  largest quotient solved=120  [0.2s]
+== A7: order 2520 built in 0.0s
+  [A7] |G|=2520 degree=7 odd classes=5 involution classes=1 subgroup candidates=27 (largest 360)  setup 0.2s
+  [A7] generating pairs (a,x) up to conjugacy and inversion: 11  (0.2s)
+A7             |G|=   2520  inv.classes=1  pairs=   11  non-colourable=0  undecided=0  largest quotient solved=35  [0.2s]
+== S7: order 5040 built in 0.0s
+  [S7] |G|=5040 degree=7 odd classes=4 involution classes=3 subgroup candidates=30 (largest 720)  setup 0.3s
+  [S7] generating pairs (a,x) up to conjugacy and inversion: 19  (0.3s)
+S7             |G|=   5040  inv.classes=3  pairs=   19  non-colourable=0  undecided=0  largest quotient solved=42  [0.4s]
+== PSL(3,3): order 5616 built in 0.0s
+  [PSL(3,3)] |G|=5616 degree=13 odd classes=6 involution classes=1 subgroup candidates=36 (largest 432)  setup 0.5s
+  [PSL(3,3)] generating pairs (a,x) up to conjugacy and inversion: 20  (0.6s)
+PSL(3,3)       |G|=   5616  inv.classes=1  pairs=   20  non-colourable=0  undecided=0  largest quotient solved=78  [0.7s]
+== A5wrZ2: order 7200 built in 0.0s
+  [A5wrZ2] |G|=7200 degree=10 odd classes=9 involution classes=3 subgroup candidates=57 (largest 3600)  setup 0.9s
+  [A5wrZ2] generating pairs (a,x) up to conjugacy and inversion: 8  (0.9s)
+A5wrZ2         |G|=   7200  inv.classes=3  pairs=    8  non-colourable=0  undecided=0  largest quotient solved=25  [1.0s]
+== M11: order 7920 built in 0.0s
+  [M11] |G|=7920 degree=11 odd classes=4 involution classes=1 subgroup candidates=27 (largest 720)  setup 0.5s
+  [M11] generating pairs (a,x) up to conjugacy and inversion: 14  (0.6s)
+M11            |G|=   7920  inv.classes=1  pairs=   14  non-colourable=0  undecided=0  largest quotient solved=55  [0.7s]
+== A8: order 20160 built in 0.0s
+  [A8] |G|=20160 degree=8 odd classes=7 involution classes=2 subgroup candidates=40 (largest 2520)  setup 1.9s
+  [A8] generating pairs (a,x) up to conjugacy and inversion: 33  (2.2s)
+A8             |G|=  20160  inv.classes=2  pairs=   33  non-colourable=0  undecided=0  largest quotient solved=35  [2.7s]
+== PSL(3,4): order 20160 built in 0.2s
+  [PSL(3,4)] |G|=20160 degree=21 odd classes=5 involution classes=1 subgroup candidates=34 (largest 960)  setup 2.4s
+  [PSL(3,4)] generating pairs (a,x) up to conjugacy and inversion: 60  (2.6s)
+PSL(3,4)       |G|=  20160  inv.classes=1  pairs=   60  non-colourable=0  undecided=0  largest quotient solved=105  [4.0s]
+== PSU(4,2): order 25920 built in 0.5s
+  [PSU(4,2)] |G|=25920 degree=40 odd classes=7 involution classes=2 subgroup candidates=46 (largest 648)  setup 6.9s
+  [PSU(4,2)] generating pairs (a,x) up to conjugacy and inversion: 42  (7.5s)
+PSU(4,2)       |G|=  25920  inv.classes=2  pairs=   42  non-colourable=0  undecided=0  largest quotient solved=120  [9.5s]
+== Sz(8): order 29120 built in 0.2s
+  [Sz(8)] |G|=29120 degree=65 odd classes=7 involution classes=1 subgroup candidates=26 (largest 448)  setup 10.7s
+  [Sz(8)] generating pairs (a,x) up to conjugacy and inversion: 210  (11.5s)
+Sz(8)          |G|=  29120  inv.classes=1  pairs=  210  non-colourable=0  undecided=0  largest quotient solved=455  [35.7s]
+== S8: order 40320 built in 0.1s
+  [S8] |G|=40320 degree=8 odd classes=5 involution classes=4 subgroup candidates=40 (largest 5040)  setup 3.9s
+  [S8] generating pairs (a,x) up to conjugacy and inversion: 47  (4.4s)
+S8             |G|=  40320  inv.classes=4  pairs=   47  non-colourable=0  undecided=0  largest quotient solved=35  [5.8s]
+== PSL(3,4).2_gf: order 40320 built in 0.6s
+  [PSL(3,4).2_gf] |G|=40320 degree=42 odd classes=3 involution classes=2 subgroup candidates=36 (largest 960)  setup 7.3s
+  [PSL(3,4).2_gf] generating pairs (a,x) up to conjugacy and inversion: 45  (7.7s)
+PSL(3,4).2_gf  |G|=  40320  inv.classes=2  pairs=   45  non-colourable=0  undecided=0  largest quotient solved=105  [11.2s]
+== PSL(3,4).2_f: order 40320 built in 0.4s
+  [PSL(3,4).2_f] |G|=40320 degree=21 odd classes=4 involution classes=2 subgroup candidates=37 (largest 1920)  setup 4.9s
+  [PSL(3,4).2_f] generating pairs (a,x) up to conjugacy and inversion: 11  (5.1s)
+PSL(3,4).2_f   |G|=  40320  inv.classes=2  pairs=   11  non-colourable=0  undecided=0  largest quotient solved=105  [5.6s]
+== PSL(3,4).2_g: order 40320 built in 0.6s
+  [PSL(3,4).2_g] |G|=40320 degree=42 odd classes=4 involution classes=2 subgroup candidates=40 (largest 960)  setup 8.5s
+  [PSL(3,4).2_g] generating pairs (a,x) up to conjugacy and inversion: 68  (8.9s)
+PSL(3,4).2_g   |G|=  40320  inv.classes=2  pairs=   68  non-colourable=0  undecided=0  largest quotient solved=315  [13.7s]
+== PGL(2,37): order 50616 built in 0.4s
+  [PGL(2,37)] |G|=50616 degree=38 odd classes=14 involution classes=2 subgroup candidates=67 (largest 1332)  setup 22.5s
+  [PGL(2,37)] generating pairs (a,x) up to conjugacy and inversion: 242  (23.3s)
+PGL(2,37)      |G|=  50616  inv.classes=2  pairs=  242  non-colourable=0  undecided=0  largest quotient solved=1368  [53.9s]
+== PSU(4,2).2: order 51840 built in 1.4s
+  [PSU(4,2).2] |G|=51840 degree=40 odd classes=5 involution classes=4 subgroup candidates=51 (largest 1440)  setup 14.4s
+  [PSU(4,2).2] generating pairs (a,x) up to conjugacy and inversion: 52  (15.5s)
+PSU(4,2).2     |G|=  51840  inv.classes=4  pairs=   52  non-colourable=0  undecided=0  largest quotient solved=40  [20.9s]
+== PSL(2,7)wrZ2: order 56448 built in 0.5s
+  [PSL(2,7)wrZ2] |G|=56448 degree=16 odd classes=9 involution classes=3 subgroup candidates=56 (largest 3528)  setup 11.2s
+  [PSL(2,7)wrZ2] generating pairs (a,x) up to conjugacy and inversion: 6  (11.4s)
+PSL(2,7)wrZ2   |G|=  56448  inv.classes=3  pairs=    6  non-colourable=0  undecided=0  largest quotient solved=42  [11.9s]
+== PSU(3,4): order 62400 built in 1.1s
+  [PSU(3,4)] |G|=62400 degree=65 odd classes=15 involution classes=1 subgroup candidates=54 (largest 960)  setup 45.9s
+  [PSU(3,4)] generating pairs (a,x) up to conjugacy and inversion: 64  (47.1s)
+PSU(3,4)       |G|=  62400  inv.classes=1  pairs=   64  non-colourable=0  undecided=0  largest quotient solved=195  [64.1s]
+== PGL(2,41): order 68880 built in 0.6s
+  [PGL(2,41)] |G|=68880 degree=42 odd classes=13 involution classes=2 subgroup candidates=70 (largest 1640)  setup 36.4s
+  [PGL(2,41)] generating pairs (a,x) up to conjugacy and inversion: 250  (37.5s)
+PGL(2,41)      |G|=  68880  inv.classes=2  pairs=  250  non-colourable=0  undecided=0  largest quotient solved=1680  [75.6s]
+== PSL(2,53): order 74412 built in 0.9s
+  [PSL(2,53)] |G|=74412 degree=54 odd classes=21 involution classes=1 subgroup candidates=83 (largest 1378)  setup 68.7s
+  [PSL(2,53)] generating pairs (a,x) up to conjugacy and inversion: 780  (74.9s)
+PSL(2,53)      |G|=  74412  inv.classes=1  pairs=  780  non-colourable=0  undecided=0  largest quotient solved=1431  [233.7s]
+== PGL(2,43): order 79464 built in 0.8s
+  [PGL(2,43)] |G|=79464 degree=44 odd classes=16 involution classes=2 subgroup candidates=78 (largest 1806)  setup 52.0s
+  [PGL(2,43)] generating pairs (a,x) up to conjugacy and inversion: 325  (53.9s)
+PGL(2,43)      |G|=  79464  inv.classes=2  pairs=  325  non-colourable=0  undecided=0  largest quotient solved=1848  [123.2s]
+== M12: order 95040 built in 0.3s
+  [M12] |G|=95040 degree=12 odd classes=5 involution classes=2 subgroup candidates=45 (largest 7920)  setup 10.3s
+  [M12] generating pairs (a,x) up to conjugacy and inversion: 66  (12.4s)
+M12            |G|=  95040  inv.classes=2  pairs=   66  non-colourable=0  undecided=0  largest quotient solved=396  [18.5s]
+Traceback (most recent call last):
+  File "/Users/gweng/cc_projects/alspach-zhang-conjecture/code/cayley_snark_check2.py", line 777, in <module>
+    G = ctor()
+           ~^^
+AssertionError: ('PGL(2,47)', 103776, 97776)
