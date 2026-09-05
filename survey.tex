@@ -653,7 +653,11 @@ for unique $L\in\operatorname{GL}(2,2)$ and $c\in A$.  Let an $x$-edge have flow
 For each of the twelve choices with $L$ of order two, requiring that no $x$-edge pair belong to $\mathcal M_{L,c}$ amounts to adding ordinary affine linear equations to the compatibility system~\eqref{eq:cdc-system}.
 \end{proposition}
 \begin{proof}
-The affine group on $A$ has order $4\cdot6=24$ and induces all $24$ permutations of its four points, proving the first statement.  The equality of the upper endpoints of the two displayed pairs gives \eqref{eq:matching-collision}.  If $L$ has order two, $N=I+L$ has rank one.  When $y_e+c\notin\operatorname{im}N$, collision is impossible.  Otherwise $Nz_e=y_e+c$ describes one affine line in $A$, and avoiding it means that $z_e$ belongs to the other affine line, a single affine linear equation.
+The affine group on $A$ has order $4\cdot6=24$ and induces all $24$ permutations of its four points, proving the first statement.  The equality of the upper endpoints of the two displayed pairs gives \eqref{eq:matching-collision}.  If $L$ has order two, $N=I+L$ has rank one and $K:=\ker N=\operatorname{im}N$.  Let $\rho\colon A\to\mathbb F_2$ be the nonzero functional with kernel $K$, and let $\lambda\colon K\to\mathbb F_2$ be its nonzero functional.  Then $\lambda(Nz)=\rho(z)$.  When $y_e+c\notin K$, collision is impossible.  Otherwise \eqref{eq:matching-collision} is equivalent to
+\[
+ \rho(z_e)=\lambda(y_e+c),
+\]
+so avoiding collision is the single affine equation $\rho(z_e)=1+\lambda(y_e+c)$.
 
 It remains only to see that this really is linear in the paper's variables.  At an endpoint $v$, write $t_v+g_{v,e}=(b,w)\in\mathbb F_2\oplus A$.  Since the other endpoint of the pair is obtained by adding $(1,y_e)$, its layer-zero endpoint has lower coordinate
 \[
@@ -661,6 +665,39 @@ It remains only to see that this really is linear in the paper's variables.  At 
 \]
 an affine linear function of $t_v$.  Thus each required non-collision equation can be appended directly to \eqref{eq:cdc-system}.
 \end{proof}
+
+Proposition~\ref{prop:cdc-rigidity} turns consistency of this augmented system into a smaller, exact target.  Let $U_f$ be the homogeneous solution space of the original compatibility system and let $T<U_f$ be its three-dimensional subspace of global translations.
+
+\begin{proposition}[transvection syndrome criterion]\label{prop:transvection-syndrome}
+Fix $f$, the local data, and a transvection matching $\mathcal M_{L,c}$.  Let $D$ be the set of $x$-edges for which $y_e+c\in\operatorname{im}(I+L)$; these are exactly the edges on which collision is possible.  Write the corresponding non-collision equations as
+\[
+ A\mathbf z=b\quad\text{in }\mathbb F_2^D,
+\]
+where $\mathbf z=(t,\epsilon)$ denotes the variables of the compatibility system, and fix any solution $\mathbf z_0$ of that original system.  Then the augmented system is consistent if and only if
+\begin{equation}\label{eq:syndrome-criterion}
+ [b+A\mathbf z_0]\in
+ \operatorname{im}\left(
+  \overline A:\mathcal K_f\cong U_f/T
+  \longrightarrow \mathbb F_2^D/A(T)
+ \right).
+\end{equation}
+In particular,
+\[
+ \dim\operatorname{im}\overline A
+ =\operatorname{rank}(A|_{U_f})-\operatorname{rank}(A|_T)
+ \le \dim\mathcal K_f.
+\]
+Failure is certified by a linear functional on $\mathbb F_2^D$ which annihilates $A(U_f)$ but is nonzero on $b+A\mathbf z_0$.
+\end{proposition}
+\begin{proof}
+Every solution of the original system is $\mathbf z_0+u$ with $u\in U_f$.  It satisfies the extra equations exactly when
+\[
+ Au=b+A\mathbf z_0.
+\]
+Thus consistency is equivalent to $b+A\mathbf z_0\in A(U_f)$.  Quotienting the target by $A(T)$ and using $U_f/T\cong\mathcal K_f$ from Proposition~\ref{prop:cdc-rigidity} gives \eqref{eq:syndrome-criterion} and the rank formula.  The final statement is the standard dual characterisation of membership in a linear subspace.
+\end{proof}
+
+The last sentence identifies precisely how the paper's duality methodology would have to be strengthened: its original argument rules out inconsistency certificates for the compatibility equations, whereas one must now rule out certificates carrying an additional functional supported on the dangerous edges.  Merely counting variables cannot do this, since the target syndrome may lie outside the usually much smaller image of $\overline A$.
 
 This splits the Hall strategy into four parallel matchings ($L=I$), twelve transvection matchings (the linear case of Proposition~\ref{prop:linearised-matching}), and eight matchings for which $L$ has order three.  In the last case $I+L$ is invertible, so \eqref{eq:matching-collision} forbids one point rather than one affine line and the condition is no longer linear.  The parallel case can be understood completely, and shows precisely where the cycle-double-cover argument adds no leverage.
 
@@ -686,7 +723,9 @@ Thus the four parallel targets are merely direct Tait-flow criteria in different
 
 We made a small diagnostic computation, reproducible with \nolinkurl{code/cdc_palette_experiment.py}.  On $K_4$, five distinct full-rank flows gave $40$ labelled outputs, all with palette chromatic number $4$.  For three distinct full-rank flows on the Petersen graph, one choice of local orders per flow led to affine solution spaces of dimensions $3,3,4$; all $32$ resulting palettes had chromatic number $5$, as they must if Proposition~\ref{prop:palette} is to pass this negative control.  For the colourable graph $\Cay(S_5,\{(0\,1),(0\,1\,2\,3\,4),(0\,4\,3\,2\,1)\})$, twenty distinct full-rank flows gave $600$ affine solutions (counted as labelled outputs): $240$ had palette chromatic number $7$ and $360$ had palette chromatic number $8$, with none $4$-colourable.  A direct SAT search does find a rank-three flow with a tetrahedral palette on this graph, as Proposition~\ref{prop:full-rank-palette} predicts, but that search simply solves an equivalent form of the Tait-colouring problem.  A second SAT search finds a generator-separated rank-three flow and an output certified by a transvection matching, while forcing all four lower-coordinate differences to occur on $x$-edges; hence none of the four parallel matchings can certify that output.  This confirms that the linearised target is strictly more flexible than Proposition~\ref{prop:parallel-matching}, although the search again uses the desired colouring condition rather than proving it.  The experiment shows that merely taking an arbitrary $8$-flow and solving the paper's linear system need not reveal the desired colouring, even for a small Cayley graph.  The new method therefore supplies sharp reformulations and a potentially useful family of augmented linear systems, but not at present a proof of the Alspach--Zhang conjecture.
 
-For that separated transvection witness the compatibility system has nullity $8$.  Proposition~\ref{prop:cdc-rigidity} therefore identifies five genuine degrees of freedom in $\mathcal K_f$ beyond global translation.  This is enough for the particular matching found by SAT, but the outstanding proof problem is to control the restriction of this code to the collision equations without first knowing a Tait colouring.
+For that separated transvection witness the compatibility system has nullity $8$, so $\dim\mathcal K_f=5$.  Of its $120$ $x$-edges, $40$ are dangerous for the displayed matching.  The restriction map $A|_{U_f}$ has rank $5$, its global-translation part has rank $1$, and hence the induced map $\overline A$ in Proposition~\ref{prop:transvection-syndrome} has rank $4$.  Thus the forty collision equations reduce, after compatibility and translation are taken into account, to a four-dimensional effective syndrome which the witness hits.  The outstanding proof problem is to force that hit without first knowing a Tait colouring.
+
+As a check against selection bias, the script also constructs twelve distinct quotient $\mathbb F_2^2$-flows, chooses lifts and local data independently of any colouring target, and tests all twelve transvection matchings after solving the original compatibility system.  The resulting weighted cut-code dimensions were $0$ once, $1$ eight times, and $2$ three times; none of the $144$ augmented systems was consistent.  This small sample is not evidence against the conjecture---the graph is colourable and the preceding witness succeeds---but it shows that the successful dimension-five flow is special and that an arbitrary application of the cycle-double-cover solver is unlikely to find it.
 
 \section{Open problems}\label{sec:open}
 
@@ -699,7 +738,7 @@ For that separated transvection witness the compatibility system has nullity $8$
 \item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
 \item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for a subgroup $H$ of index at most $9\,240$ (Table~\ref{tab:computation}), often a point stabiliser or an involution centraliser; is there always an $H$-invariant colouring with $H$ of bounded index (say $|G:H|\le c\,|G|^{1/2}$), or with $H$ from a specific family such as the centraliser of an involution?
 \item (Cycle-double-cover palette.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  This is already open when $x$ has prime order at least $5$, where the required generator-separated flow always exists.  Propositions~\ref{prop:full-rank-palette} and~\ref{prop:parallel-matching} explain why full rank and the four parallel matchings do not by themselves advance the conjecture.
-\item (Weighted cut code.)  Can the generator-separated flow be chosen so that $\mathcal K_f$ from \eqref{eq:weighted-cut-code} has enough controlled restriction to satisfy one transvection matching's collision equations?  Proposition~\ref{prop:cdc-rigidity} shows that this is exactly the effective freedom available after the flow and local triangles have been fixed.
+\item (Weighted cut code.)  Can the generator-separated flow be chosen so that the syndrome criterion \eqref{eq:syndrome-criterion} holds for one transvection matching?  Propositions~\ref{prop:cdc-rigidity} and~\ref{prop:transvection-syndrome} show that the map from $\mathcal K_f$ to the dangerous-edge equations is exactly the effective freedom available after the flow and local triangles have been fixed.
 \end{enumerate}
 
 \subsection*{Acknowledgements}

@@ -18,7 +18,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
 | `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
 | `code/cayley_snark_check.py` | First checker (quotients by odd-order abelian subgroups only); also provides the group constructors (finite fields, PSL/PGL(2,q), A_n, S_n, M10, M11, PSL(3,3), A5 ≀ Z2) used by the current one. |
-| `code/cdc_palette_experiment.py` | Reproduces the eight-point palette analysis of the 2026 cycle-double-cover proof: exact affine-system enumeration for K4, Petersen, and a cubic Cayley graph on S5, with exact palette chromatic numbers, a direct SAT check of the full-rank tetrahedral reformulation, a separated transvection-matching witness beyond all parallel matching certificates, and the dimension of the weighted cut code controlling compatibility-system freedom. |
+| `code/cdc_palette_experiment.py` | Reproduces the eight-point palette analysis of the 2026 cycle-double-cover proof: exact affine-system enumeration for K4, Petersen, and a cubic Cayley graph on S5, with exact palette chromatic numbers, a direct SAT check of the full-rank tetrahedral reformulation, a separated transvection-matching witness beyond all parallel matching certificates, weighted-cut-code and restriction ranks, and an unbiased sample of generator-separated flows. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -54,7 +54,8 @@ graphs and a fully Cayley-invariant characteristic-two flow is impossible. Full 
 exact reformulation of Tait colourability. A generator-separated flow reduces the missing step to a
 four-by-four Hall condition; twelve of its twenty-four matching cases can be imposed by augmenting the
 paper's affine system with further linear equations. For a fixed flow, all solution freedom beyond global
-translation is exactly a weighted cut code; the successful S5 transvection witness has code dimension five.
+translation is exactly a weighted cut code. The successful S5 transvection witness has code dimension five,
+and its 40 dangerous-edge equations reduce to a rank-four syndrome after global translations are removed.
 No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
@@ -77,8 +78,8 @@ groups above about 400 000 elements need more memory per worker (use `WORKERS=6`
 Z_3 reformulation for ord(x) = 5, adaptive choice of the quotient subgroup (the natural point
 quotient can be the Petersen snark even when the Cayley graph is colourable), and forcing a
 4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.
-The sharp CDC subproblem is now to choose a generator-separated flow whose weighted cut code meets one
-of the twelve transvection collision systems.
+The sharp CDC subproblem is now to choose a generator-separated flow whose weighted cut code hits the
+syndrome of one of the twelve transvection collision systems.
 
 ## Reproducing the computation
 

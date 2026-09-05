@@ -15,7 +15,9 @@ test.  Finally it starts the latter test from a rank-two (colour-aligned) flow
 to check the elementary positive direction, and directly searches for the
 full-rank tetrahedral palette whose existence is equivalent to that direction.
 It also finds a generator-separated palette certified by a transvection
-matching while ruling out all four parallel matching certificates.
+matching while ruling out all four parallel matching certificates, and
+measures the induced restriction map from the weighted cut code to the
+dangerous transvection equations.
 
 Run from the repository root with:
 
@@ -23,7 +25,7 @@ Run from the repository root with:
 """
 
 import random
-from itertools import combinations
+from itertools import combinations, product
 
 from pysat.solvers import Cadical153
 
@@ -125,8 +127,22 @@ def solve_affine(rows, nvars):
     return particular, basis
 
 
-def cdc_kernel_dimensions(n, edges, flow):
-    """Return (weighted-cut-code dimension, CDC homogeneous nullity)."""
+def binary_rank(values):
+    """Return the GF(2)-rank of integers regarded as binary vectors."""
+    pivots = {}
+    for value in values:
+        while value:
+            bit = value.bit_length() - 1
+            if bit in pivots:
+                value ^= pivots[bit]
+            else:
+                pivots[bit] = value
+                break
+    return len(pivots)
+
+
+def cdc_homogeneous_basis(n, edges, flow):
+    """Return a basis of the homogeneous CDC compatibility system."""
     nvars = 3 * n + len(edges)
     rows = []
     for ei, (u, v) in enumerate(edges):
@@ -138,7 +154,74 @@ def cdc_kernel_dimensions(n, edges, flow):
 
     particular, basis = solve_affine(rows, nvars)
     assert particular == 0 and len(basis) >= 3
+    return basis
+
+
+def cdc_kernel_dimensions(n, edges, flow):
+    """Return (weighted-cut-code dimension, CDC homogeneous nullity)."""
+    basis = cdc_homogeneous_basis(n, edges, flow)
     return len(basis) - 3, len(basis)
+
+
+def transvection_equations(n, edges, edge_kinds, flow, local_g, matching):
+    """Return the affine noncollision equations for one transvection."""
+    equations = []
+    for ei, ((u, _), kind) in enumerate(zip(edges, edge_kinds)):
+        if kind != "x":
+            continue
+        allowed = []
+        for translation in range(8):
+            p = translation ^ local_g[u][ei]
+            pair = tuple(sorted((p, p ^ flow[ei])))
+            if pair not in matching:
+                allowed.append(translation)
+        if len(allowed) == 8:
+            continue
+        assert len(allowed) == 4
+        equation = [
+            (mask, rhs)
+            for mask in range(1, 8) for rhs in range(2)
+            if all((((mask & t).bit_count() & 1) == rhs) == (t in allowed)
+                   for t in range(8))
+        ]
+        assert len(equation) == 1
+        mask, rhs = equation[0]
+        equations.append((mask << (3 * u), rhs))
+    return equations
+
+
+def transvection_restriction_dimensions(
+    n, edges, edge_kinds, flow, local_g, matching
+):
+    """Measure how the CDC kernel changes the dangerous matching equations."""
+    equations = transvection_equations(
+        n, edges, edge_kinds, flow, local_g, matching
+    )
+    extra_coefficients = [coefficient for coefficient, _ in equations]
+
+    def restricted_images(vectors):
+        return [
+            sum(
+                (((coefficient & vector).bit_count() & 1) << row)
+                for row, coefficient in enumerate(extra_coefficients)
+            )
+            for vector in vectors
+        ]
+
+    kernel = cdc_homogeneous_basis(n, edges, flow)
+    translations = [
+        sum(1 << (3 * v + bit) for v in range(n))
+        for bit in range(3)
+    ]
+    kernel_rank = binary_rank(restricted_images(kernel))
+    translation_rank = binary_rank(restricted_images(translations))
+    assert translation_rank <= kernel_rank
+    return (
+        len(extra_coefficients),
+        kernel_rank,
+        translation_rank,
+        kernel_rank - translation_rank,
+    )
 
 
 def cdc_system(n, edges, flow, inc, rng):
@@ -529,6 +612,14 @@ def find_separated_transvection_palette(name, n, edges, edge_kinds):
         for es in inc
     )
     weighted_cut_dim, cdc_nullity = cdc_kernel_dimensions(n, edges, flow)
+    (
+        dangerous_x_edges,
+        restriction_rank,
+        translation_rank,
+        cut_restriction_rank,
+    ) = transvection_restriction_dimensions(
+        n, edges, edge_kinds, flow, local_g, matching
+    )
 
     print(
         name,
@@ -537,6 +628,10 @@ def find_separated_transvection_palette(name, n, edges, edge_kinds):
         "clauses", len(clauses),
         "weighted_cut_dim", weighted_cut_dim,
         "cdc_nullity", cdc_nullity,
+        "dangerous_x_edges", dangerous_x_edges,
+        "restriction_rank", restriction_rank,
+        "translation_rank", translation_rank,
+        "cut_restriction_rank", cut_restriction_rank,
         "palette_edges", len(set(pairs)),
         "x_lower_differences", sorted(x_differences),
         flush=True,
@@ -670,6 +765,227 @@ def cayley_graph(gens, return_edge_kinds=False):
     return len(group), edges
 
 
+def random_generator_separated_flow(
+    n, edges, edge_kinds, rng, forbidden_quotient_flows=()
+):
+    """Construct Proposition 9.5's flow from a random quotient 4-flow."""
+    parent = list(range(n))
+
+    def find(v):
+        while parent[v] != v:
+            parent[v] = parent[parent[v]]
+            v = parent[v]
+        return v
+
+    def union(u, v):
+        u, v = find(u), find(v)
+        if u != v:
+            parent[v] = u
+
+    for (u, v), kind in zip(edges, edge_kinds):
+        if kind == "x":
+            union(u, v)
+    roots = sorted({find(v) for v in range(n)})
+    component = {root: i for i, root in enumerate(roots)}
+    vertex_component = [component[find(v)] for v in range(n)]
+
+    a_edges = [ei for ei, kind in enumerate(edge_kinds) if kind == "a"]
+    a_position = {ei: pos for pos, ei in enumerate(a_edges)}
+    quotient_inc = [[] for _ in roots]
+    for ei in a_edges:
+        u, v = edges[ei]
+        cu, cv = vertex_component[u], vertex_component[v]
+        assert cu != cv
+        quotient_inc[cu].append(ei)
+        quotient_inc[cv].append(ei)
+
+    def quotient_var(ei, bit):
+        return 2 * a_position[ei] + bit + 1
+
+    clauses = []
+    for ei in a_edges:
+        clauses.append([quotient_var(ei, 0), quotient_var(ei, 1)])
+    for incident in quotient_inc:
+        for bit in range(2):
+            variables = [quotient_var(ei, bit) for ei in incident]
+            for assignment in product(range(2), repeat=len(variables)):
+                if sum(assignment) & 1:
+                    clauses.append([
+                        -var if value else var
+                        for var, value in zip(variables, assignment)
+                    ])
+    for old_flow in forbidden_quotient_flows:
+        clauses.append([
+            -quotient_var(ei, bit)
+            if (old_flow[pos] >> bit) & 1 else quotient_var(ei, bit)
+            for pos, ei in enumerate(a_edges) for bit in range(2)
+        ])
+
+    with Cadical153(bootstrap_with=clauses) as solver:
+        solver.set_phases([
+            var if rng.randrange(2) else -var
+            for var in range(1, 2 * len(a_edges) + 1)
+        ])
+        assert solver.solve()
+        model = {literal for literal in solver.get_model() if literal > 0}
+    quotient_flow = {
+        ei: sum(
+            (1 << bit) for bit in range(2)
+            if quotient_var(ei, bit) in model
+        )
+        for ei in a_edges
+    }
+    assert all(quotient_flow[ei] for ei in a_edges)
+    assert all(
+        not (sum((quotient_flow[ei] >> bit) & 1 for ei in incident) & 1)
+        for incident in quotient_inc for bit in range(2)
+    )
+    quotient_signature = tuple(quotient_flow[ei] for ei in a_edges)
+
+    x_edges = [ei for ei, kind in enumerate(edge_kinds) if kind == "x"]
+    x_position = {ei: pos for pos, ei in enumerate(x_edges)}
+    inc = [[] for _ in range(n)]
+    for ei, (u, v) in enumerate(edges):
+        inc[u].append(ei)
+        inc[v].append(ei)
+
+    nvars = 2 * len(x_edges)
+    rows = []
+    for incident in inc:
+        a_edge = next(ei for ei in incident if edge_kinds[ei] == "a")
+        cycle_edges = [ei for ei in incident if edge_kinds[ei] == "x"]
+        for bit in range(2):
+            row = sum(
+                1 << (2 * x_position[ei] + bit) for ei in cycle_edges
+            )
+            if (quotient_flow[a_edge] >> bit) & 1:
+                row |= 1 << nvars
+            rows.append(row)
+    particular, basis = solve_affine(rows, nvars)
+    assert particular is not None
+    lift = particular
+    for vector in basis:
+        if rng.randrange(2):
+            lift ^= vector
+
+    flow = []
+    for ei, kind in enumerate(edge_kinds):
+        if kind == "a":
+            flow.append(quotient_flow[ei] << 1)
+        else:
+            lower = sum(
+                ((lift >> (2 * x_position[ei] + bit)) & 1) << bit
+                for bit in range(2)
+            )
+            flow.append(1 | (lower << 1))
+    assert gf2_rank(flow) == 3
+    assert all(flow[es[0]] ^ flow[es[1]] ^ flow[es[2]] == 0 for es in inc)
+    return flow, inc, quotient_signature
+
+
+def all_transvection_matchings():
+    """Return the twelve affine matchings whose linear part has order two."""
+    linear_maps = []
+    for image_one in range(1, 4):
+        for image_two in range(1, 4):
+            if image_one == image_two:
+                continue
+            linear = tuple(
+                (image_one if z & 1 else 0) ^ (image_two if z & 2 else 0)
+                for z in range(4)
+            )
+            if linear != tuple(range(4)) and all(
+                linear[linear[z]] == z for z in range(4)
+            ):
+                linear_maps.append(linear)
+    assert len(linear_maps) == 3
+    return [
+        (
+            linear,
+            offset,
+            {
+                tuple(sorted((2 * z, 1 + 2 * (linear[z] ^ offset))))
+                for z in range(4)
+            },
+        )
+        for linear in linear_maps for offset in range(4)
+    ]
+
+
+def solve_transvection_target(
+    n, edges, edge_kinds, flow, local_g, particular, basis, matching
+):
+    """Solve one transvection syndrome on the CDC affine solution space."""
+    equations = transvection_equations(
+        n, edges, edge_kinds, flow, local_g, matching
+    )
+    reduced_rows = []
+    for coefficient, rhs in equations:
+        row = sum(
+            (((coefficient & vector).bit_count() & 1) << i)
+            for i, vector in enumerate(basis)
+        )
+        residual = rhs ^ ((coefficient & particular).bit_count() & 1)
+        if residual:
+            row |= 1 << len(basis)
+        reduced_rows.append(row)
+    choice, _ = solve_affine(reduced_rows, len(basis))
+    if choice is None:
+        return None, len(equations)
+    solution = particular
+    for i, vector in enumerate(basis):
+        if (choice >> i) & 1:
+            solution ^= vector
+    return solution, len(equations)
+
+
+def examine_random_separated_flows(name, n, edges, edge_kinds, trials=12):
+    """Try the paper's method without encoding a desired Tait colouring."""
+    rng = random.Random(20260905)
+    matchings = all_transvection_matchings()
+    total_hits = 0
+    flows_with_hit = 0
+    quotient_flows = []
+    for trial in range(trials):
+        flow, inc, quotient_signature = random_generator_separated_flow(
+            n, edges, edge_kinds, rng, quotient_flows
+        )
+        quotient_flows.append(quotient_signature)
+        local_g, particular, basis = cdc_system(n, edges, flow, inc, rng)
+        hits = 0
+        dangerous_counts = []
+        for _, _, matching in matchings:
+            solution, dangerous = solve_transvection_target(
+                n, edges, edge_kinds, flow, local_g,
+                particular, basis, matching
+            )
+            dangerous_counts.append(dangerous)
+            if solution is None:
+                continue
+            adj = palette(n, edges, flow, local_g, solution)
+            assert all(not ((adj[p] >> q) & 1) for p, q in matching)
+            assert chromatic_number(adj)[0] <= 4
+            hits += 1
+        total_hits += hits
+        flows_with_hit += bool(hits)
+        print(
+            name,
+            "SEPARATED-RANDOM", trial,
+            "weighted_cut_dim", len(basis) - 3,
+            "transvection_hits", hits,
+            "dangerous_range", (min(dangerous_counts), max(dangerous_counts)),
+            flush=True,
+        )
+    print(
+        name,
+        "SEPARATED-RANDOM-DONE",
+        "flows_with_hit", flows_with_hit,
+        "trials", trials,
+        "matching_hits", total_hits,
+        flush=True,
+    )
+
+
 def main():
     n, edges = complete_four()
     assert examine("K4", n, edges, trials=5) == 4
@@ -688,6 +1004,9 @@ def main():
         "Cay(S5; transposition, 5-cycle)", n, edges
     )
     find_separated_transvection_palette(
+        "Cay(S5; transposition, 5-cycle)", n, edges, edge_kinds
+    )
+    examine_random_separated_flows(
         "Cay(S5; transposition, 5-cycle)", n, edges, edge_kinds
     )
     check_color_aligned_flow("Cay(S5; transposition, 5-cycle)", n, edges)
