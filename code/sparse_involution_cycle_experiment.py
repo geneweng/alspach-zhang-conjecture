@@ -25,6 +25,8 @@ The script also checks the first seven-transposition boundary N=15.  After
 normalizing its unique fixed point, 68,219 types remain modulo reflection.
 The two-set quotient colours 68,144; exact Schreier recursion shows that all
 75 failures generate proper subgroups, so none is relevant to S_15.
+The next boundary N=17 is checked by ``septuple_n17_experiment.py``, which
+imports the quotient and direct-verification routines from this module.
 
 Every positive SAT witness is checked directly as a pregraph edge-colouring.
 The exceptional group orders are computed by an exact implementation of
