@@ -1113,7 +1113,79 @@ where $\chi$ ranges over labelled Tait colourings of $X$, then Proposition~\ref{
 \[
  Z_k(Q)=[t^{|G|/10}]E_k(t).
 \]
-Thus the target is not merely the usual edge-colouring count: it is its lowest possible $a$-edge coefficient.  The $\Omega$ polynomial of Ellis-Monaghan, Kauffman and Moffatt \cite{EllisMonaghanKauffmanMoffatt18} does count edge colourings of arbitrary ribbon graphs, while the embedded Penrose polynomial at $3$ has that interpretation only in the plane.  Formula~\eqref{eq:signed-loop-sum} identifies the additional coefficient and sign filter that a polynomial proof would have to control.  The orbit formula is the promising new point at which dart-regularity can enter; the local transition identity alone cannot prove non-vanishing, since the Petersen control has five quotient matchings and $Z_k=0$.
+Thus the target is not merely the usual edge-colouring count: it is its lowest possible $a$-edge coefficient.  The $\Omega$ polynomial of Ellis-Monaghan, Kauffman and Moffatt \cite{EllisMonaghanKauffmanMoffatt18} does count edge colourings of arbitrary ribbon graphs, while the embedded Penrose polynomial at $3$ has that interpretation for cubic plane graphs but not for all higher-genus embeddings.  Formula~\eqref{eq:signed-loop-sum} identifies the additional coefficient and sign filter that a polynomial proof would have to control.  The local transition identity alone cannot prove non-vanishing, since the Petersen control has five quotient matchings and $Z_k=0$.  The regular action does, however, control the cancellation modulo a power of two.
+
+\begin{proposition}[an unsigned-count congruence]\label{prop:loop-congruence}
+Let $X$ be a cubic Cayley graph on $G$, let $h=|G|_2$ be the largest power of two dividing $|G|$, and let $\mathcal B$ be any $G$-invariant family of perfect matchings of $X$.  Define
+\[
+ U_{\mathcal B}=\sum_{M\in\mathcal B}2^{c(X-M)},\qquad
+ T_{\mathcal B}=\sum_{\substack{M\in\mathcal B\\X-M\text{ has only even circuits}}}
+                    2^{c(X-M)}.
+\]
+Then $T_{\mathcal B}$ counts the labelled Tait colourings whose fixed colour-$k$ matching belongs to $\mathcal B$, and
+\begin{equation}\label{eq:loop-congruence}
+ U_{\mathcal B}\equiv T_{\mathcal B}\pmod{\mu(G)},\qquad
+ \mu(G)=
+ \begin{cases}
+  2h,&h=2,\\
+  4h,&h\ge4.
+ \end{cases}
+\end{equation}
+In particular, a nonzero residue of $U_{\mathcal B}$ modulo $\mu(G)$ proves that $\mathcal B$ contains a matching with even complement.  If $r$ is its least nonnegative residue, then $T_{\mathcal B}\ge r$.
+\end{proposition}
+\begin{proof}
+Consider states $(M,B)$ where $M\in\mathcal B$ and $B$ is the union of the vertex sets of any subset of the circuits of $X-M$.  Give the state sign $(-1)^{|B|}$.  There are $2^{c(X-M)}$ states over each $M$, and their signed sum is
+\[
+ \prod_{C\in\mathcal C(X-M)}(1+(-1)^{|C|}).
+\]
+It is zero if a circuit is odd and $2^{c(X-M)}$ otherwise.  Thus, writing $N_-$ for the number of negative states,
+\[
+ U_{\mathcal B}-T_{\mathcal B}=2N_-.
+\]
+The usual alternating two-colouring of each even complementary circuit gives the asserted Tait-colouring interpretation.
+
+The group $G$ acts on these states by left translation.  A negative state has a stabiliser of odd order: if its stabiliser contained an involution $t$, then $tB=B$; but $t$ acts freely on vertices, so it partitions $B$ into pairs, contradicting odd $|B|$.  Every orbit of negative states therefore has size divisible by $h$, giving the congruence modulo $2h$.
+
+If $h\ge4$, adjoin the commuting involution $\kappa$ sending $(M,B)$ to $(M,V(X)\setminus B)$.  Since $|V(X)|=|G|$ is even, $\kappa$ preserves the sign.  A negative state again has a stabiliser of odd order under $G\times\langle\kappa\rangle$.  An involution in this stabiliser could not be $(1,\kappa)$, which fixes no subset, or $(t,1)$, which was excluded above.  The remaining possibility $(t,\kappa)$ would imply
+\[
+ tB=V(X)\setminus B,\qquad |B|=|G|/2.
+\]
+The last number is even when $4\mid |G|$, another contradiction.  Hence every negative orbit under the enlarged group has size divisible by $2h$.  It follows that $4h$ divides $2N_-$, proving \eqref{eq:loop-congruence}.  The final assertions use $T_{\mathcal B}\ge0$.
+\end{proof}
+
+This argument uses only that every involution acts without fixed vertices; it also applies to a cubic graph with an even-order automorphism group whose vertex stabilisers all have odd order.  In that setting $h$ divides the number of vertices, so the same complement argument applies.  In particular, it applies to the cubic arc-regular quotient of the order-three case, whose vertex stabilisers have order three.  Neither planarity nor the order-five local rule is required for the congruence itself.
+
+\begin{corollary}[a circuit-count and stabiliser certificate]\label{cor:loop-stabiliser}
+Let $M$ be a perfect matching of a cubic Cayley graph on $G$, and write $2^r=|\operatorname{Stab}_G(M)|_2$.  Its complement is even if
+\[
+ c(X-M)\le
+ \begin{cases}
+ r,&|G|_2=2,\\
+ r+1,&|G|_2\ge4.
+ \end{cases}
+\]
+Within any fixed invariant matching class, an invariant subfamily with nonzero unsigned residue exists if and only if some matching satisfies this bound.
+\end{corollary}
+\begin{proof}
+For the orbit $\mathcal O=GM$, the unsigned count is
+\[
+ U_{\mathcal O}=|G:\operatorname{Stab}_G(M)|\,2^{c(X-M)}.
+\]
+Its power of two is $|G|_2\,2^{c(X-M)-r}$, so it is nonzero modulo $\mu(G)$ exactly under the displayed bound.  Proposition~\ref{prop:loop-congruence} then supplies an even-complement member of the orbit; all its members have the same complementary circuit lengths.  Finally every invariant family is a disjoint union of matching orbits, so a nonzero residue for a family requires a nonzero residue for at least one orbit.
+\end{proof}
+
+For the order-five minimum face $\mathcal F$, put
+\[
+ U(Q)=\sum_{P\in\mathcal P(Q)}2^{c(H_P)}.
+\]
+The quotient/lift correspondence gives $U(Q)\equiv Z_k(Q)\pmod{\mu(G)}$.  Thus an unsigned circuit count, requiring no individual sign tests, can certify colourability through its residue.  More generally, if
+\[
+ U_X(t)=\sum_{M\text{ a perfect matching of }X}
+             2^{c(X-M)}t^{|M\cap E_a|},
+\]
+then $U_X(t)\equiv E_k(t)\pmod{\mu(G)}$ coefficientwise: matchings with any prescribed number of $a$-edges form an invariant family.  This gives a precise modular substitute for the missing colouring coefficient.
+
+The moduli in Proposition~\ref{prop:loop-congruence} cannot be doubled uniformly over all invariant families.  On $S_3$ with $a=(0\,1)$ and $x=(0\,1\,2)$, take $\mathcal B=\{M_a\}$.  Its complement is two triangles, so $U_{\mathcal B}-T_{\mathcal B}=4=\mu(S_3)$.  On $A_4$ with $a=(0\,1)(2\,3)$ and $x=(0\,1\,2)$ the same family gives four triangles and difference $16=\mu(A_4)$.  These examples concern a restricted family, not the colourability of the graphs.  Freeness of involutions is essential: for the order-twenty transitive action on the Petersen graph and its five pentagon-face matchings, $U=20$ and $T=0$, so even congruence modulo $2|G|_2=8$ fails.
 
 The signs can be eliminated by recording where their unique local contributions occur.
 \begin{lemma}[the defect-incidence multigraph]\label{lem:defect-incidence}
@@ -1366,11 +1438,30 @@ The dual criterion also has an exact barrier in this test set.  In the four pair
 
 On the two $A_5$ cases, the same two enumerators give $125$ members of $\mathcal F$ each: $115$ colour directly and ten colour after one flip.  On $C_5\wr C_2$ there are $120$, of which sixty colour directly and sixty after one flip; on the order-eighty affine example there are $705$, all colouring directly.  The component-by-component lift is checked for all $15750$ unordered pairs with repetition in the two $A_5$ spaces, and the local lift formula for all $285$ ordered pairs of unmatched positions on cycles of lengths $3,5,7,9,11$.  The implementation \nolinkurl{code/parity_interlacement.py} checks Equation~\eqref{eq:parity-nullity} against direct factor traversal on all $1075$ small-face matchings.  The face-potential construction of Corollary~\ref{cor:dual-three-colour} is also checked directly: the dual is $3$-colourable in the first $A_5$ and the wreath-product cases, but not in the second $A_5$ and affine cases; the more general local four-colour condition succeeds in all four, and the induced Tait colouring is verified on $X$.
 
-The same exhaustive data verify Proposition~\ref{prop:signed-loop-sum} in three independent forms: solving each affine circuit system, multiplying its signed-loop factors, and grouping its nonnegative contributions into $G$-orbits.  In the order just used, the exact values of $Z_k(Q)$ are
+The same exhaustive data verify Proposition~\ref{prop:signed-loop-sum} in three forms: solving each affine circuit system, multiplying its signed-loop factors, and grouping its nonnegative contributions into $G$-orbits.  In the order just used, the exact values of $Z_k(Q)$ are
 \[
  540,\quad 540,\quad 440,\quad 8320.
 \]
 An optional larger run exhausts all $26305$ quotient perfect matchings in each of the two displayed $S_5$ maps and obtains $Z_k(Q)=115960$ in both.  These positive values are evidence for the minimum-face strengthening, not a non-vanishing proof: both $A_5$ and the wreath-product spaces contain obstructed matching orbits, and the orbit expansion has no presently known term that must survive for every regular map.
+
+The separate checker \nolinkurl{code/loop_congruence_experiment.py} evaluates the unsigned count by traversing the complementary components upstairs.  It then enumerates every negative state $(M,B)$ and its $G\times C_2$ orbit, checks the stabiliser restrictions in the proof of Proposition~\ref{prop:loop-congruence}, and compares the signed vertex-subset expansion with the affine quotient-colouring count.  The complete results are:
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Map & $U(Q)$ & $Z_k(Q)$ & $\mu(G)$ & $U(Q)\bmod\mu(G)$\\
+\midrule
+$A_5$, either case & $860$ & $540$ & $16$ & $12$\\
+$S_5$, either case & $191480$ & $115960$ & $32$ & $24$\\
+$C_5\wr C_2$ & $880$ & $440$ & $4$ & $0$\\
+$\mathbb F_{16}^{+}\rtimes C_5$ & $8320$ & $8320$ & $64$ & $0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Each $A_5$ case has $160$ negative states, in four enlarged-group orbits of size forty.  Each $S_5$ case has $37760$, in sixteen orbits of size eighty and $152$ of size $240$; all these stabilisers have odd order.  The script also verifies both sharpness examples and the nonfree Petersen control from the proposition.
+
+The nonzero residues certify the minimum-face colourings in the $A_5$ and $S_5$ tests using only unsigned component counts.  In these particular tests the residue already comes entirely from Hamiltonian complements: all states with at least two complementary circuits contribute zero in aggregate modulo $\mu(G)$.  The two zero residues show that this particular modular test does not detect every colourable face.  There is still a useful refinement because any invariant subfamily is allowed.  In the affine order-eighty example, each of the six matching orbits with two complementary circuits has forty members; restricting to one such orbit gives $U_{\mathcal B}=160\equiv32\pmod{64}$ and hence an even complement, although none of its matchings has a Hamiltonian complement.
+
+The script exhausts the matching orbits and verifies Corollary~\ref{cor:loop-stabiliser} on each.  Each $A_5$ case has six certifying orbits, all Hamiltonian.  Each $S_5$ case has $92$, $55$ and eight certifying orbits with respectively one, two and three complementary circuits, so the certificate also works without Hamiltonian complements in these non-solvable examples.  The affine example has six, eight and six with respectively two, three and four circuits.  The wreath-product face has no certifying orbit at all; consequently \emph{every} invariant subfamily of that face has zero unsigned residue, although sixty of its matchings have even complements.  This rules out a universal nonzero-residue assertion for all order-five faces, not merely for the full-family count.  A proof along this route must establish the circuit-count/stabiliser bound in the remaining non-solvable cases, or obtain information beyond this congruence.  Neither step has been established.
 
 Minimising the total circuit count alone is insufficient: on the wreath-product example its minimum within $\mathcal F$ is two, attained by ten even factors and ten factors with two odd circuits.  There is no Hamiltonian complement anywhere in that face.  Nevertheless, lexicographically minimising first the number of circuits and then oddness gives zero oddness in all four complete small spaces and all twelve exact invariant $\PSL(2,11)$ spaces.  The positive-drift certificate below shows that a useful repair may increase the total circuit count, so this observation needs a global minimisation argument rather than the presently tested descent.
 
@@ -1406,7 +1497,7 @@ These rational values are verified by exhaustive finite enumeration in the face 
 \item (Cycle-double-cover palette and quotient switches.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  When $s=5$, it suffices instead to choose a quotient flow whose affine switch system in Proposition~\ref{prop:quotient-switch} is consistent: this already constructs a colouring without the lifts.  Equivalently, in the regular-map formulation, can symmetry or duality select a homology class $h$ and a face potential $z$ satisfying Proposition~\ref{prop:homology-flow}?  The chromatic-number-five duals on $\PSL(2,11)$ show that the zero class is not enough.  The local repeated-value filter is necessary but not sufficient.  Can the Cayley action rule out a global inconsistency certificate for a suitable choice of quotient flow?  Arbitrarily choosing an admissible quotient flow would merely assume the desired colouring, so the choice must have an independent existence proof.
 \item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  The affine layer assignments are exactly the characteristic vectors in Proposition~\ref{prop:affine-layer}, and lift changes preserving $B_c$ preserve this whole affine set.  For $s=5$, its intersection with the affine switch system gives an additional necessary condition for a transvection palette.  Making $B_c$ have small rank alone is insufficient; the quotient flow of the dimension-six experiment is locally obstructed for every choice of lifts.  After avoiding these obstructions, can the remaining lift freedom control the full syndrome?
 \item (Colour support and signed circuits.)  For $s=5$, can the Cayley action be used to choose a support $P$ satisfying Proposition~\ref{prop:colour-support} with every circuit of $H_P$ sign-even?  Proposition~\ref{prop:starting-support} guarantees a locally valid start.  The universal single-circuit descent rule is false, even on $\PSL(2,11)$, by Proposition~\ref{prop:block-barriers}; restricting to minimal valid blocks also fails.  Does every obstructed locally valid matching admit a translate and a proper implication-closed union of difference circuits whose simultaneous flip reduces the odd-circuit count?  Lemma~\ref{lem:mixture-implications} characterises local validity exactly, but does not force this global parity improvement.  Such a theorem would prove the order-five case by descent.  Alternatively, can neutral or temporarily non-local-valid intermediate moves be controlled?  Example~\ref{ex:symmetry-barrier} also excludes monotone growth of the matching stabiliser as a requirement at every step.
-\item (The quotient-matching face.)  Does the smaller, nonempty class $\mathcal F$ of Proposition~\ref{prop:quotient-matching-face} always contain an even-complement matching?  All circuit exchanges against translates remain in this class, so no local-validity implications are needed.  Can the Cayley action force equality in the parity-refined nullity bound \eqref{eq:parity-nullity}, perhaps after neutral exchanges?  Equivalently, can the orbit expansion \eqref{eq:signed-loop-orbits} or a character-theoretic evaluation of its three-state tensor prove $Z_k(Q)>0$?  A single decreasing flip suffices in the documented finite tests, but Example~\ref{ex:face-drift} excludes two natural uniform negative-drift arguments.  Forcing a single complementary circuit is too strong within this face, as the wreath-product and affine examples show.
+\item (The quotient-matching face.)  Does the smaller, nonempty class $\mathcal F$ of Proposition~\ref{prop:quotient-matching-face} always contain an even-complement matching?  All circuit exchanges against translates remain in this class, so no local-validity implications are needed.  Can the Cayley action force equality in the parity-refined nullity bound \eqref{eq:parity-nullity}, perhaps after neutral exchanges?  Equivalently, can the orbit expansion \eqref{eq:signed-loop-orbits} or a character-theoretic evaluation of its three-state tensor prove $Z_k(Q)>0$?  A concrete sufficient target from Corollary~\ref{cor:loop-stabiliser} is a matching with at most $1+\log_2|\operatorname{Stab}_G(M)|_2$ complementary circuits when $4\mid |G|$; no parity test is needed for this certificate.  Its existence in general is not established.  A single decreasing flip suffices in the documented finite tests, but Example~\ref{ex:face-drift} excludes two natural uniform negative-drift arguments.  Forcing a single complementary circuit is too strong within this face, as the wreath-product and affine examples show.
 \end{enumerate}
 
 \subsection*{Acknowledgements}

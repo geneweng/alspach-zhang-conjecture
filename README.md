@@ -26,6 +26,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/involution_repair_experiment.py` | Checks the involution-exchange lemma, verifies paired-circuit descent on all obstructed A5 supports, and certifies an explicit matching whose every decreasing flip loses stabiliser symmetry. |
 | `code/translated_block_repair.py` | Two explicit PSL(2,11) counterexamples to restricted repair rules, an independent all-translates stall certificate, the exact implication criterion for valid simultaneous flips, and successive closed-set repairs on larger samples. |
 | `code/quotient_face_experiment.py` | Checks the minimum-a-edge matching face and quotient/lift exchanges, independently exhausts restricted invariant matching spaces, tests lexicographic minima and unrestricted PSL(2,11) descent samples, rules out a two-consecutive-matching shortcut on A5, and certifies positive mean oddness drift for two natural random repair rules. |
+| `code/loop_congruence_experiment.py` | Checks the unsigned/Tait count congruence, exhausts negative circuit-subset orbits, verifies sharp moduli and the nonfree Petersen control, and tests nonzero residues on complete small faces and invariant subfamilies. |
 | `code/parity_interlacement.py` | Computes oddness both as the number of odd-degree vertices in the defect-incidence multigraph and as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
@@ -50,6 +51,22 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 9. Related flow problems and open questions.
 
 ## Status and next steps (5 September 2026)
+
+**Latest result: a congruence using the regular action.** For any invariant family of
+perfect matchings, let U sum 2 to the number of complementary circuits, ignoring their
+parities, and let T count the corresponding labelled Tait colourings. The survey proves
+U = T modulo 4|G|_2 when 4 divides |G| (modulo 4 when |G|_2 = 2).
+When 4 divides |G|, negative terms in the circuit-subset expansion have odd-order stabilisers
+under translation and complementation, which forces the divisibility. A nonzero unsigned residue therefore
+certifies a colouring. Exact checks on both A5 and S5 faces give residues 12 modulo 16
+and 24 modulo 32. The full order-80 affine face has zero residue, but each of its six
+40-matching orbits with two complementary circuits gives 160 = 32 modulo 64 and hence
+a certificate with no Hamiltonian complement. Equivalently, if the largest power of two
+dividing a matching's stabiliser order is 2^r, at most r+1 complementary circuits certify
+a colouring when 4 divides |G|. Each S5 case has 63 certifying non-Hamiltonian matching
+orbits. The order-50 wreath-product face has no certifying orbit, so even selecting an
+invariant subfamily cannot make this test work there. Existence of a matching satisfying
+the bound in the remaining non-solvable cases is unproved; the original conjecture remains open.
 
 **Latest direction: an exchange-closed minimum-cost face.** Restrict to matchings selecting
 exactly one a-edge at each x-cycle. Whenever the contracted graph has a perfect matching
@@ -152,9 +169,9 @@ signed smoothed loops, and a loop contributes 2 or 0 according as its sign is ev
 A Fourier expansion makes this a fixed three-state local vertex model and grouping states
 gives an exact G-orbit formula. The values on the two A5 maps, the order-50 wreath product,
 and the order-80 affine map are respectively 540, 540, 440 and 8320; optional exhaustive
-S5 runs give 115960 on each of two maps. This identifies a concrete coefficient for a
-transition-polynomial/character-theoretic attack, but no symmetry-based non-vanishing theorem
-is known, and the Petersen control has value zero.
+S5 runs give 115960 on each of two maps. The new congruence compares this coefficient with
+the unsigned count modulo a power of two. It supplies a sufficient non-vanishing test,
+but a universal nonzero-residue theorem is missing, and the Petersen control has value zero.
 No Hamiltonian complement exists in the face for the latter two graphs, so simply minimising
 the number of complementary circuits is not an adequate general substitute for controlling parity.
 No complete proof and no Cayley snark.
@@ -183,8 +200,11 @@ For ord(x) = 5, the most direct current target is to choose a quotient colour su
 circuits all have even parity. A quotient perfect matching supplies a start in the nonempty,
 exchange-closed minimum-a-edge face. The new target is to force zero defect in the two-sheeted
 interlacement-nullity formula while staying in that face. Equivalently, prove non-vanishing of
-the signed-loop state sum's lowest a-edge coefficient using the regular G-action; ordinary
-Penrose/transition identities only package the count and do not provide this missing theorem.
+the signed-loop state sum's lowest a-edge coefficient using the regular G-action. The
+unsigned-count congruence now gives a sufficient arithmetic criterion: choose an invariant
+family whose unsigned residue is nonzero. This is impossible within the order-50 face;
+existence in the remaining non-solvable cases is an open sufficient target.
+Ordinary Penrose/transition identities do not supply it.
 Uniform averaging does not guarantee
 negative oddness drift, and forcing a Hamiltonian complement is too strong within this class.
 For more general supports, odd-sign circuits come in pairs. A single translated alternating-cycle flip works on every obstructed
@@ -214,6 +234,7 @@ python3 layer_potential_experiment.py     # quotient form, direct checks, and li
 python3 transvection_switch_experiment.py # affine layers and direct order-five switches
 python3 colour_support_experiment.py      # exact signed-cycle support criterion
 python3 quotient_face_experiment.py --s5-state-sum # signed-loop sum and optional exhaustive S5 values
+python3 loop_congruence_experiment.py --s5 # unsigned residues and every negative-state orbit
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend
