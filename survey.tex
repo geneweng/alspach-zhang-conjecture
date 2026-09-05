@@ -597,6 +597,29 @@ with $r_v\in\mathbb F_2^2$ and $\delta_e\in\mathbb F_2$.  It has $2n+m$ scalar v
 Index four affinely independent points $q_z\in\mathbb F_2^3$ by $z\in\mathbb F_2^2$.  For $e=uv$, the four indices split into two pairs $\{z,z+h(e)\}$.  Let $P_e$ be the pair of corresponding $q$'s which does not contain $q_{r_u}$.  The equation says $r_v\in\{r_u,r_u+h(e)\}$, so the same pair avoids $q_{r_v}$ and $P_e$ is well-defined.  At $v$ the three incident values of $h$ are the three nonzero elements of $\mathbb F_2^2$; hence the three $P_e$ are precisely the edges of the triangle on the three points other than $q_{r_v}$.  These local triangles have exactly the form used in the cycle-double-cover construction, and their agreement across edges gives a solution of its compatibility system.  Put $f(e)=p_e+q_e$ when $P_e=\{p_e,q_e\}$.  The triangle condition makes $f$ a nowhere-zero $\mathbb F_2^3$-flow.  Since $r$ is nonconstant, at least two different local triangles occur; their union is connected and uses all four affinely independent points, so their edge differences span $\mathbb F_2^3$.  Thus $f$ has rank three.
 \end{proof}
 
+For a fixed starting flow, the freedom in the paper's affine system has a simple intrinsic description.  Define the \emph{weighted cut code}
+\begin{equation}\label{eq:weighted-cut-code}
+ \mathcal K_f=\left\{\delta\in\mathbb F_2^{E(X)}:
+ \sum_{e\in C}\delta_e f(e)=0\text{ for every cycle }C\text{ of }X\right\}.
+\end{equation}
+
+\begin{proposition}[compatibility-space rigidity]\label{prop:cdc-rigidity}
+Fix a nowhere-zero $\mathbb F_2^3$-flow $f$ on a connected loopless cubic graph and fix the local data $g_{v,e}$ in the cycle-double-cover construction.  The nullity of the homogeneous compatibility system associated with \eqref{eq:cdc-system} is
+\[
+ 3+\dim\mathcal K_f.
+\]
+Modulo a common translation of every palette point by an element of $\mathbb F_2^3$, its solution space is therefore parameterised by $\mathcal K_f$.  In particular, if $\mathcal K_f=0$, all outputs for these fixed local data have isomorphic palette graphs.
+\end{proposition}
+\begin{proof}
+Subtract two solutions of \eqref{eq:cdc-system}.  Writing their differences as $s_v\in\mathbb F_2^3$ and $\delta_e\in\mathbb F_2$ gives
+\begin{equation}\label{eq:cdc-homogeneous}
+ s_u+s_v=\delta_e f(e)\qquad(e=uv).
+\end{equation}
+The right-hand side is the coboundary of a vertex labelling $s$ if and only if its sum around every cycle is zero, which is exactly the condition $\delta\in\mathcal K_f$.  Indeed, necessity follows by summing \eqref{eq:cdc-homogeneous} around a cycle; conversely, fix $s$ at one vertex and define it by path sums, which are path-independent by the cycle condition.  For each $\delta\in\mathcal K_f$ the resulting $s$ is unique up to one common element of $\mathbb F_2^3$, accounting for the other three dimensions.  Such a common translation translates every palette pair and hence preserves the palette graph up to isomorphism.
+\end{proof}
+
+Thus a fixed flow with $\mathcal K_f=0$ offers no effective affine choice at all: one must change the flow or the local triangles.  More generally, any extra matching equations can only be met through the evaluation of the weighted cut code (together with the irrelevant global translations).  A large code is not sufficient, but the proposition isolates exactly where the cycle-double-cover construction can supply non-circular flexibility.
+
 There is nevertheless a more structured way in which the Cayley generators can enter the construction.  Let $Q$ be the multigraph obtained from $X=\X{G}{a}{x}$ by contracting every $x$-cycle to a vertex; its edges are the $a$-edges of $X$.  Thus $Q$ is a connected, vertex-transitive, $s$-regular loopless multigraph, where $s=\ord(x)$.
 
 \begin{proposition}[generator-separated $8$-flow]\label{prop:separated-eight-flow}
@@ -663,6 +686,8 @@ Thus the four parallel targets are merely direct Tait-flow criteria in different
 
 We made a small diagnostic computation, reproducible with \nolinkurl{code/cdc_palette_experiment.py}.  On $K_4$, five distinct full-rank flows gave $40$ labelled outputs, all with palette chromatic number $4$.  For three distinct full-rank flows on the Petersen graph, one choice of local orders per flow led to affine solution spaces of dimensions $3,3,4$; all $32$ resulting palettes had chromatic number $5$, as they must if Proposition~\ref{prop:palette} is to pass this negative control.  For the colourable graph $\Cay(S_5,\{(0\,1),(0\,1\,2\,3\,4),(0\,4\,3\,2\,1)\})$, twenty distinct full-rank flows gave $600$ affine solutions (counted as labelled outputs): $240$ had palette chromatic number $7$ and $360$ had palette chromatic number $8$, with none $4$-colourable.  A direct SAT search does find a rank-three flow with a tetrahedral palette on this graph, as Proposition~\ref{prop:full-rank-palette} predicts, but that search simply solves an equivalent form of the Tait-colouring problem.  A second SAT search finds a generator-separated rank-three flow and an output certified by a transvection matching, while forcing all four lower-coordinate differences to occur on $x$-edges; hence none of the four parallel matchings can certify that output.  This confirms that the linearised target is strictly more flexible than Proposition~\ref{prop:parallel-matching}, although the search again uses the desired colouring condition rather than proving it.  The experiment shows that merely taking an arbitrary $8$-flow and solving the paper's linear system need not reveal the desired colouring, even for a small Cayley graph.  The new method therefore supplies sharp reformulations and a potentially useful family of augmented linear systems, but not at present a proof of the Alspach--Zhang conjecture.
 
+For that separated transvection witness the compatibility system has nullity $8$.  Proposition~\ref{prop:cdc-rigidity} therefore identifies five genuine degrees of freedom in $\mathcal K_f$ beyond global translation.  This is enough for the particular matching found by SAT, but the outstanding proof problem is to control the restriction of this code to the collision equations without first knowing a Tait colouring.
+
 \section{Open problems}\label{sec:open}
 
 \begin{enumerate}[leftmargin=2em]
@@ -674,6 +699,7 @@ We made a small diagnostic computation, reproducible with \nolinkurl{code/cdc_pa
 \item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
 \item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for a subgroup $H$ of index at most $9\,240$ (Table~\ref{tab:computation}), often a point stabiliser or an involution centraliser; is there always an $H$-invariant colouring with $H$ of bounded index (say $|G:H|\le c\,|G|^{1/2}$), or with $H$ from a specific family such as the centraliser of an involution?
 \item (Cycle-double-cover palette.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  This is already open when $x$ has prime order at least $5$, where the required generator-separated flow always exists.  Propositions~\ref{prop:full-rank-palette} and~\ref{prop:parallel-matching} explain why full rank and the four parallel matchings do not by themselves advance the conjecture.
+\item (Weighted cut code.)  Can the generator-separated flow be chosen so that $\mathcal K_f$ from \eqref{eq:weighted-cut-code} has enough controlled restriction to satisfy one transvection matching's collision equations?  Proposition~\ref{prop:cdc-rigidity} shows that this is exactly the effective freedom available after the flow and local triangles have been fixed.
 \end{enumerate}
 
 \subsection*{Acknowledgements}

@@ -125,6 +125,22 @@ def solve_affine(rows, nvars):
     return particular, basis
 
 
+def cdc_kernel_dimensions(n, edges, flow):
+    """Return (weighted-cut-code dimension, CDC homogeneous nullity)."""
+    nvars = 3 * n + len(edges)
+    rows = []
+    for ei, (u, v) in enumerate(edges):
+        for bit in range(3):
+            row = (1 << (3 * u + bit)) | (1 << (3 * v + bit))
+            if (flow[ei] >> bit) & 1:
+                row |= 1 << (3 * n + ei)
+            rows.append(row)
+
+    particular, basis = solve_affine(rows, nvars)
+    assert particular == 0 and len(basis) >= 3
+    return len(basis) - 3, len(basis)
+
+
 def cdc_system(n, edges, flow, inc, rng):
     """Build and solve equation (4) of the OpenAI CDC proof."""
     m = len(edges)
@@ -476,6 +492,30 @@ def find_separated_transvection_palette(name, n, edges, edge_kinds):
     }
     assert x_differences == set(range(4))
 
+    # Verify explicitly that these local triangles are an output of the
+    # paper's affine compatibility system, not merely a parity assignment.
+    local_g = [{} for _ in range(n)]
+    translations = []
+    for v, es in enumerate(inc):
+        local_g[v][es[0]] = 0
+        local_g[v][es[1]] = flow[es[0]]
+        local_g[v][es[2]] = 0
+        translation = next(
+            t for t in range(8)
+            if all(
+                {t ^ local_g[v][ei], t ^ local_g[v][ei] ^ flow[ei]}
+                == set(pairs[ei])
+                for ei in es
+            )
+        )
+        translations.append(translation)
+    for ei, (u, v) in enumerate(edges):
+        discrepancy = (
+            translations[u] ^ translations[v]
+            ^ local_g[u][ei] ^ local_g[v][ei]
+        )
+        assert discrepancy in (0, flow[ei])
+
     inverse_matching = [matching_map.index(z) for z in range(4)]
 
     def matching_color(point):
@@ -488,12 +528,15 @@ def find_separated_transvection_palette(name, n, edges, edge_kinds):
         tait_flow[es[0]] ^ tait_flow[es[1]] ^ tait_flow[es[2]] == 0
         for es in inc
     )
+    weighted_cut_dim, cdc_nullity = cdc_kernel_dimensions(n, edges, flow)
 
     print(
         name,
         "SEPARATED-TRANSVECTION-SAT",
         "flow_rank", gf2_rank(flow),
         "clauses", len(clauses),
+        "weighted_cut_dim", weighted_cut_dim,
+        "cdc_nullity", cdc_nullity,
         "palette_edges", len(set(pairs)),
         "x_lower_differences", sorted(x_differences),
         flush=True,
