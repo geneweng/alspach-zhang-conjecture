@@ -18,7 +18,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
 | `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
 | `code/cayley_snark_check.py` | First checker (quotients by odd-order abelian subgroups only); also provides the group constructors (finite fields, PSL/PGL(2,q), A_n, S_n, M10, M11, PSL(3,3), A5 ≀ Z2) used by the current one. |
-| `code/cdc_palette_experiment.py` | Reproduces the eight-point palette analysis of the 2026 cycle-double-cover proof: exact affine-system enumeration for K4, Petersen, and a cubic Cayley graph on S5, with exact palette chromatic numbers and a direct SAT check of the full-rank tetrahedral reformulation. |
+| `code/cdc_palette_experiment.py` | Reproduces the eight-point palette analysis of the 2026 cycle-double-cover proof: exact affine-system enumeration for K4, Petersen, and a cubic Cayley graph on S5, with exact palette chromatic numbers, a direct SAT check of the full-rank tetrahedral reformulation, and a separated transvection-matching witness beyond all parallel matching certificates. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -51,8 +51,9 @@ the index-2 case for generators of order 3, and gives a consecutive-2-factor cri
 index-2 cases. It also analyses the 2026 proof of the cycle double cover theorem: a 4-colourable graph on
 its eight flow labels would pull back to a Tait colouring, but random full-rank flows produce dense palette
 graphs and a fully Cayley-invariant characteristic-two flow is impossible. Full rank alone is still an
-exact reformulation of Tait colourability; a generator-separated flow instead reduces the missing step
-to a four-by-four Hall condition. No complete proof and no counterexample.
+exact reformulation of Tait colourability. A generator-separated flow reduces the missing step to a
+four-by-four Hall condition; twelve of its twenty-four matching cases can be imposed by augmenting the
+paper's affine system with further linear equations. No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
 

@@ -14,6 +14,8 @@ control, and Cay(S_5,{(01),(01234),(04321)}) as a nontrivial colourable Cayley
 test.  Finally it starts the latter test from a rank-two (colour-aligned) flow
 to check the elementary positive direction, and directly searches for the
 full-rank tetrahedral palette whose existence is equivalent to that direction.
+It also finds a generator-separated palette certified by a transvection
+matching while ruling out all four parallel matching certificates.
 
 Run from the repository root with:
 
@@ -21,6 +23,7 @@ Run from the repository root with:
 """
 
 import random
+from itertools import combinations
 
 from pysat.solvers import Cadical153
 
@@ -348,6 +351,155 @@ def find_tetrahedral_palette(name, n, edges):
     )
 
 
+def find_separated_transvection_palette(name, n, edges, edge_kinds):
+    """Find a separated palette certified by a nonparallel matching.
+
+    Bit zero is the layer coordinate and the other two bits identify a point
+    in F_2^2.  The chosen cross-layer matching is induced by the transvection
+    (0,1,2,3) -> (0,1,3,2).  We additionally force all four lower-coordinate
+    differences to occur on x-edges, which rules out every parallel matching.
+    """
+    inc = [[] for _ in range(n)]
+    for ei, (u, v) in enumerate(edges):
+        inc[u].append(ei)
+        inc[v].append(ei)
+    assert all(len(es) == 3 for es in inc)
+    assert len(edge_kinds) == len(edges)
+
+    palette_pairs = tuple(combinations(range(8), 2))
+    pair_index = {pair: i for i, pair in enumerate(palette_pairs)}
+    matching_map = (0, 1, 3, 2)
+    matching = {
+        tuple(sorted((2 * z, 1 + 2 * matching_map[z])))
+        for z in range(4)
+    }
+
+    # A local triangle has two points in one layer and one in the other.
+    # Record its within-layer edge first and its ordered cross edges second.
+    states = []
+    for majority_layer in range(2):
+        majority = [p for p in range(8) if (p & 1) == majority_layer]
+        minority = [p for p in range(8) if (p & 1) != majority_layer]
+        for p, q in combinations(majority, 2):
+            for r in minority:
+                pairs = [
+                    tuple(sorted(pair))
+                    for pair in ((p, q), (p, r), (q, r))
+                ]
+                if any(pair in matching for pair in pairs):
+                    continue
+                cross = pairs[1:]
+                states.append(tuple(pair_index[pair] for pair in pairs))
+                states.append((
+                    pair_index[pairs[0]], pair_index[cross[1]],
+                    pair_index[cross[0]],
+                ))
+    assert len(states) == 48 and len(set(states)) == 48
+
+    m = len(edges)
+
+    def edge_var(ei, label):
+        return 28 * ei + label + 1
+
+    state_offset = 28 * m
+
+    def state_var(v, state):
+        return state_offset + 48 * v + state + 1
+
+    allowed_labels = {"a": [], "x": []}
+    for label, (p, q) in enumerate(palette_pairs):
+        same_layer = (p & 1) == (q & 1)
+        if same_layer:
+            allowed_labels["a"].append(label)
+        elif (p, q) not in matching:
+            allowed_labels["x"].append(label)
+    assert all(len(labels) == 12 for labels in allowed_labels.values())
+
+    clauses = []
+    for ei, kind in enumerate(edge_kinds):
+        choices = [edge_var(ei, label) for label in allowed_labels[kind]]
+        clauses.append(choices)
+        clauses.extend(
+            [-choices[i], -choices[j]]
+            for i in range(12) for j in range(i + 1, 12)
+        )
+
+    for v in range(n):
+        a_edge = next(e for e in inc[v] if edge_kinds[e] == "a")
+        x_edges = [e for e in inc[v] if edge_kinds[e] == "x"]
+        clauses.append([state_var(v, state) for state in range(48)])
+        for state, labels in enumerate(states):
+            assignment = zip((a_edge, x_edges[0], x_edges[1]), labels)
+            for ei, label in assignment:
+                clauses.append([-state_var(v, state), edge_var(ei, label)])
+
+    # No parallel cross-layer matching can certify the resulting palette.
+    for lower_difference in range(4):
+        clauses.append([
+            edge_var(ei, label)
+            for ei, kind in enumerate(edge_kinds) if kind == "x"
+            for label in allowed_labels["x"]
+            if ((palette_pairs[label][0] ^ palette_pairs[label][1]) >> 1)
+            == lower_difference
+        ])
+
+    with Cadical153(bootstrap_with=clauses) as solver:
+        assert solver.solve()
+        model = {literal for literal in solver.get_model() if literal > 0}
+
+    labels = [
+        next(
+            label for label in allowed_labels[kind]
+            if edge_var(ei, label) in model
+        )
+        for ei, kind in enumerate(edge_kinds)
+    ]
+    pairs = [palette_pairs[label] for label in labels]
+    flow = [p ^ q for p, q in pairs]
+    for v in range(n):
+        local_pairs = [pairs[ei] for ei in inc[v]]
+        local_points = {p for pair in local_pairs for p in pair}
+        assert len(local_points) == 3
+        assert all(
+            sum(point in pair for pair in local_pairs) == 2
+            for point in local_points
+        )
+        assert flow[inc[v][0]] ^ flow[inc[v][1]] ^ flow[inc[v][2]] == 0
+    assert gf2_rank(flow) == 3
+    assert all(pair not in matching for pair in pairs)
+    assert all(
+        (flow[ei] & 1) == (kind == "x")
+        for ei, kind in enumerate(edge_kinds)
+    )
+    x_differences = {
+        (flow[ei] >> 1) for ei, kind in enumerate(edge_kinds) if kind == "x"
+    }
+    assert x_differences == set(range(4))
+
+    inverse_matching = [matching_map.index(z) for z in range(4)]
+
+    def matching_color(point):
+        lower = point >> 1
+        return lower if not (point & 1) else inverse_matching[lower]
+
+    tait_flow = [matching_color(p) ^ matching_color(q) for p, q in pairs]
+    assert all(tait_flow)
+    assert all(
+        tait_flow[es[0]] ^ tait_flow[es[1]] ^ tait_flow[es[2]] == 0
+        for es in inc
+    )
+
+    print(
+        name,
+        "SEPARATED-TRANSVECTION-SAT",
+        "flow_rank", gf2_rank(flow),
+        "clauses", len(clauses),
+        "palette_edges", len(set(pairs)),
+        "x_lower_differences", sorted(x_differences),
+        flush=True,
+    )
+
+
 def affine_solutions(particular, basis):
     """Enumerate an affine GF(2)-space once each, using Gray-code updates."""
     solution = particular
@@ -454,20 +606,24 @@ def cycle_perm(n, points):
     return tuple(p)
 
 
-def cayley_graph(gens):
+def cayley_graph(gens, return_edge_kinds=False):
     group = list(closure(gens))
     index = {g: i for i, g in enumerate(group)}
     seen = set()
     edges = []
+    edge_kinds = []
     for g in group:
         u = index[g]
-        for generator in gens:
+        for kind, generator in enumerate(gens):
             v = index[mul(g, generator)]
             edge = (min(u, v), max(u, v))
             if edge not in seen:
                 seen.add(edge)
                 edges.append(edge)
+                edge_kinds.append("a" if kind == 0 else "x")
     assert len(edges) * 2 == 3 * len(group)
+    if return_edge_kinds:
+        return len(group), edges, edge_kinds
     return len(group), edges
 
 
@@ -480,13 +636,16 @@ def main():
 
     a = cycle_perm(5, [0, 1])
     x = cycle_perm(5, [0, 1, 2, 3, 4])
-    n, edges = cayley_graph([a, x])
+    n, edges, edge_kinds = cayley_graph([a, x], return_edge_kinds=True)
     assert n == 120
     assert examine(
         "Cay(S5; transposition, 5-cycle)", n, edges, trials=20
     ) > 4
     find_tetrahedral_palette(
         "Cay(S5; transposition, 5-cycle)", n, edges
+    )
+    find_separated_transvection_palette(
+        "Cay(S5; transposition, 5-cycle)", n, edges, edge_kinds
     )
     check_color_aligned_flow("Cay(S5; transposition, 5-cycle)", n, edges)
 
