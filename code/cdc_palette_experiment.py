@@ -127,8 +127,8 @@ def solve_affine(rows, nvars):
     return particular, basis
 
 
-def binary_rank(values):
-    """Return the GF(2)-rank of integers regarded as binary vectors."""
+def binary_basis(values):
+    """Return a GF(2)-basis of integers regarded as binary vectors."""
     pivots = {}
     for value in values:
         while value:
@@ -138,7 +138,12 @@ def binary_rank(values):
             else:
                 pivots[bit] = value
                 break
-    return len(pivots)
+    return list(pivots.values())
+
+
+def binary_rank(values):
+    """Return the GF(2)-rank of integers regarded as binary vectors."""
+    return len(binary_basis(values))
 
 
 def cdc_homogeneous_basis(n, edges, flow):
@@ -161,6 +166,130 @@ def cdc_kernel_dimensions(n, edges, flow):
     """Return (weighted-cut-code dimension, CDC homogeneous nullity)."""
     basis = cdc_homogeneous_basis(n, edges, flow)
     return len(basis) - 3, len(basis)
+
+
+def quotient_weighted_cut_dimension(n, edges, edge_kinds, flow):
+    """Dimension of the quotient-flow code embedded in the full CDC code."""
+    parent = list(range(n))
+
+    def find(v):
+        while parent[v] != v:
+            parent[v] = parent[parent[v]]
+            v = parent[v]
+        return v
+
+    def union(u, v):
+        u, v = find(u), find(v)
+        if u != v:
+            parent[v] = u
+
+    for (u, v), kind in zip(edges, edge_kinds):
+        if kind == "x":
+            union(u, v)
+    roots = sorted({find(v) for v in range(n)})
+    component = {root: i for i, root in enumerate(roots)}
+    vertex_component = [component[find(v)] for v in range(n)]
+    a_edges = [ei for ei, kind in enumerate(edge_kinds) if kind == "a"]
+
+    nvars = 2 * len(roots) + len(a_edges)
+    rows = []
+    for position, ei in enumerate(a_edges):
+        u, v = edges[ei]
+        cu, cv = vertex_component[u], vertex_component[v]
+        assert cu != cv and not (flow[ei] & 1) and flow[ei]
+        lower = flow[ei] >> 1
+        for bit in range(2):
+            row = (1 << (2 * cu + bit)) | (1 << (2 * cv + bit))
+            if (lower >> bit) & 1:
+                row |= 1 << (2 * len(roots) + position)
+            rows.append(row)
+    particular, basis = solve_affine(rows, nvars)
+    assert particular == 0 and len(basis) >= 2
+    return len(basis) - 2
+
+
+def consecutive_monochromatic_cycle_rank(n, edges, edge_kinds, flow):
+    """Cycle rank of equal-colour consecutive transitions in the quotient."""
+    inc = [[] for _ in range(n)]
+    for ei, (u, v) in enumerate(edges):
+        inc[u].append((v, ei))
+        inc[v].append((u, ei))
+    x_inc = [
+        [(u, ei) for u, ei in incident if edge_kinds[ei] == "x"]
+        for incident in inc
+    ]
+    a_at_vertex = [
+        next(ei for _, ei in incident if edge_kinds[ei] == "a")
+        for incident in inc
+    ]
+
+    transitions = []
+    unseen = set(range(n))
+    while unseen:
+        start = next(iter(unseen))
+        order = []
+        previous = None
+        current = start
+        while current not in order:
+            order.append(current)
+            unseen.discard(current)
+            choices = [u for u, _ in x_inc[current] if u != previous]
+            following = choices[0]
+            previous, current = current, following
+        assert current == start
+        for i, v in enumerate(order):
+            e = a_at_vertex[v]
+            following_e = a_at_vertex[order[(i + 1) % len(order)]]
+            if (flow[e] >> 1) == (flow[following_e] >> 1):
+                transitions.append((e, following_e))
+
+    parent = {e: e for transition in transitions for e in transition}
+
+    def find(e):
+        while parent[e] != e:
+            parent[e] = parent[parent[e]]
+            e = parent[e]
+        return e
+
+    for e, d in transitions:
+        e, d = find(e), find(d)
+        if e != d:
+            parent[d] = e
+    components = len({find(e) for e in parent})
+    return len(transitions) - len(parent) + components
+
+
+def layer_potential_basis(n, edges, edge_kinds, flow):
+    """Return binary vertex masks representing the layer-potential space."""
+    all_vertices = (1 << n) - 1
+    images = []
+    for vector in cdc_homogeneous_basis(n, edges, flow):
+        layer = sum(
+            ((vector >> (3 * v)) & 1) << v for v in range(n)
+        )
+        if layer & 1:
+            layer ^= all_vertices
+        assert all(
+            (((layer >> u) ^ (layer >> v)) & 1) == 0
+            for (u, v), kind in zip(edges, edge_kinds)
+            if kind == "a"
+        )
+        images.append(layer)
+    return binary_basis(images)
+
+
+def layer_potential_profile(n, edges, edge_kinds, flow):
+    """Return the dimension and support-weight histogram of layer potentials."""
+    basis = layer_potential_basis(n, edges, edge_kinds, flow)
+    weights = []
+    for mask in range(1, 1 << len(basis)):
+        layer = 0
+        for i, vector in enumerate(basis):
+            if (mask >> i) & 1:
+                layer ^= vector
+        weights.append(layer.bit_count())
+    histogram = {weight: weights.count(weight) for weight in sorted(set(weights))}
+    return len(basis), histogram
 
 
 def transvection_equations(n, edges, edge_kinds, flow, local_g, matching):
@@ -612,6 +741,18 @@ def find_separated_transvection_palette(name, n, edges, edge_kinds):
         for es in inc
     )
     weighted_cut_dim, cdc_nullity = cdc_kernel_dimensions(n, edges, flow)
+    quotient_cut_dim = quotient_weighted_cut_dimension(
+        n, edges, edge_kinds, flow
+    )
+    layer_potential_dim = weighted_cut_dim - quotient_cut_dim
+    assert layer_potential_dim >= 0
+    profile_dim, layer_weight_histogram = layer_potential_profile(
+        n, edges, edge_kinds, flow
+    )
+    assert profile_dim == layer_potential_dim
+    transition_cycle_rank = consecutive_monochromatic_cycle_rank(
+        n, edges, edge_kinds, flow
+    )
     (
         dangerous_x_edges,
         restriction_rank,
@@ -627,6 +768,10 @@ def find_separated_transvection_palette(name, n, edges, edge_kinds):
         "flow_rank", gf2_rank(flow),
         "clauses", len(clauses),
         "weighted_cut_dim", weighted_cut_dim,
+        "quotient_cut_dim", quotient_cut_dim,
+        "layer_potential_dim", layer_potential_dim,
+        "layer_weight_hist", layer_weight_histogram,
+        "transition_cycle_rank", transition_cycle_rank,
         "cdc_nullity", cdc_nullity,
         "dangerous_x_edges", dangerous_x_edges,
         "restriction_rank", restriction_rank,
@@ -636,6 +781,7 @@ def find_separated_transvection_palette(name, n, edges, edge_kinds):
         "x_lower_differences", sorted(x_differences),
         flush=True,
     )
+    return flow, local_g, matching
 
 
 def affine_solutions(particular, basis):
@@ -744,7 +890,7 @@ def cycle_perm(n, points):
     return tuple(p)
 
 
-def cayley_graph(gens, return_edge_kinds=False):
+def cayley_graph(gens, return_edge_kinds=False, return_group=False):
     group = list(closure(gens))
     index = {g: i for i, g in enumerate(group)}
     seen = set()
@@ -760,8 +906,12 @@ def cayley_graph(gens, return_edge_kinds=False):
                 edges.append(edge)
                 edge_kinds.append("a" if kind == 0 else "x")
     assert len(edges) * 2 == 3 * len(group)
+    if return_edge_kinds and return_group:
+        return len(group), edges, edge_kinds, group
     if return_edge_kinds:
         return len(group), edges, edge_kinds
+    if return_group:
+        return len(group), edges, group
     return len(group), edges
 
 
@@ -952,6 +1102,12 @@ def examine_random_separated_flows(name, n, edges, edge_kinds, trials=12):
         )
         quotient_flows.append(quotient_signature)
         local_g, particular, basis = cdc_system(n, edges, flow, inc, rng)
+        quotient_cut_dim = quotient_weighted_cut_dimension(
+            n, edges, edge_kinds, flow
+        )
+        transition_cycle_rank = consecutive_monochromatic_cycle_rank(
+            n, edges, edge_kinds, flow
+        )
         hits = 0
         dangerous_counts = []
         for _, _, matching in matchings:
@@ -972,6 +1128,9 @@ def examine_random_separated_flows(name, n, edges, edge_kinds, trials=12):
             name,
             "SEPARATED-RANDOM", trial,
             "weighted_cut_dim", len(basis) - 3,
+            "quotient_cut_dim", quotient_cut_dim,
+            "layer_potential_dim", len(basis) - 3 - quotient_cut_dim,
+            "transition_cycle_rank", transition_cycle_rank,
             "transvection_hits", hits,
             "dangerous_range", (min(dangerous_counts), max(dangerous_counts)),
             flush=True,

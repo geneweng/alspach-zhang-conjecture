@@ -56,6 +56,8 @@ four-by-four Hall condition; twelve of its twenty-four matching cases can be imp
 paper's affine system with further linear equations. For a fixed flow, all solution freedom beyond global
 translation is exactly a weighted cut code. The successful S5 transvection witness has code dimension five,
 and its 40 dangerous-edge equations reduce to a rank-four syndrome after global translations are removed.
+Its smallest layer potential comes from a consecutive monochromatic 4-cycle in the contracted graph; the
+survey proves that every such quotient cycle can be converted into a nonzero code direction by choosing the lifts.
 No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
@@ -78,8 +80,8 @@ groups above about 400 000 elements need more memory per worker (use `WORKERS=6`
 Z_3 reformulation for ord(x) = 5, adaptive choice of the quotient subgroup (the natural point
 quotient can be the Petersen snark even when the Cayley graph is colourable), and forcing a
 4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.
-The sharp CDC subproblem is now to choose a generator-separated flow whose weighted cut code hits the
-syndrome of one of the twelve transvection collision systems.
+The sharp CDC subproblem is now to construct enough consecutive monochromatic cycles for a quotient flow,
+choose the resulting layer potentials, and hit the syndrome of one of the twelve transvection systems.
 
 ## Reproducing the computation
 

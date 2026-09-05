@@ -638,6 +638,54 @@ It remains to check rank.  If the three nonzero elements of $\mathbb F_2^2$ occu
 
 The hypothesis of Proposition~\ref{prop:separated-eight-flow} is automatic when $s\ge5$ and $Q$ is simple: Mader's theorem makes $Q$ $s$-edge-connected, and Jaeger's theorem and Tutte's group-flow theorem give the required $\mathbb F_2^2$-flow.  Writing $H=\langle x\rangle$, the neighbours of the vertex $H$ are the cosets $haH$ with $h\in H$, so two coincide exactly when their quotient lies in $H\cap aHa$.  Thus $Q$ is simple exactly when $H\cap aHa=1$.  In particular this holds when $s$ is prime and $G$ is non-solvable, since otherwise $aHa=H$, so $a$ normalises $H$ and $G=\langle a,x\rangle$ is solvable.
 
+The weighted cut code of a generator-separated flow has a useful decomposition.  Define $\mathcal K_\phi$ for the quotient flow by the analogue of \eqref{eq:weighted-cut-code} on $Q$.  Write $f(e)=(0,p_e)$ on an $a$-edge and $f(e)=(1,y_e)$ on an $x$-edge.  Let $\mathcal R_f$ be the vector space, modulo constant functions, of binary functions $r\colon V(X)\to\mathbb F_2$ which are constant across every $a$-edge and for which there is a function $w\colon V(X)\to\mathbb F_2^2$ satisfying
+\begin{equation}\label{eq:layer-potential-a}
+ w_u+w_v\in\{0,p_e\}\qquad(e=uv\text{ an }a\text{-edge}),
+\end{equation}
+\begin{equation}\label{eq:layer-potential-x}
+ w_u+w_v=(r_u+r_v)y_e\qquad(e=uv\text{ an }x\text{-edge}).
+\end{equation}
+We call its elements \emph{extendable layer potentials}.
+
+\begin{proposition}[layer-potential exact sequence]\label{prop:layer-potential}
+For the generator-separated flow $f$ constructed from $\phi$, there is a short exact sequence
+\[
+ 0\longrightarrow\mathcal K_\phi\longrightarrow\mathcal K_f
+ \longrightarrow\mathcal R_f\longrightarrow0.
+\]
+Consequently $\dim\mathcal K_f=\dim\mathcal K_\phi+\dim\mathcal R_f$.
+\end{proposition}
+\begin{proof}
+For $\delta\in\mathcal K_f$, Proposition~\ref{prop:cdc-rigidity} gives a vertex potential $s_v=(r_v,w_v)$, unique up to a constant, with $s_u+s_v=\delta_e f(e)$.  On an $a$-edge, comparison of first coordinates gives $r_u=r_v$, while the lower coordinates give \eqref{eq:layer-potential-a}.  On an $x$-edge the first coordinate gives $\delta_e=r_u+r_v$, and the lower coordinates then give \eqref{eq:layer-potential-x}.  Thus projection onto $r$ defines a map to $\mathcal R_f$.  Conversely, given $(r,w)$ satisfying \eqref{eq:layer-potential-a} and \eqref{eq:layer-potential-x}, set $\delta_e=r_u+r_v$ on an $x$-edge and set $\delta_e$ on an $a$-edge according as $w_u+w_v$ is $0$ or $p_e$.  Then $s_u+s_v=\delta_e f(e)$ on every edge, so $\delta\in\mathcal K_f$.  The map is therefore onto.
+
+Its kernel consists of the classes for which $r$ is constant.  After subtracting a global constant, take $r=0$.  The first-coordinate equation on every $x$-edge then gives $\delta_e=0$, and \eqref{eq:layer-potential-x} says that $w$ is constant around each $x$-cycle.  It thus descends to a potential on $Q$; on an $a$-edge its difference is $0$ or $p_e$, exactly the condition defining $\mathcal K_\phi$.  Conversely, every element of $\mathcal K_\phi$ extends in this way by taking $r=0$ and $w$ constant on each contracted cycle.
+\end{proof}
+
+There is a necessary condition on the first-coordinate projection which no longer mentions $w$.  Regard an $a$-invariant function $r$ as an edge indicator on $Q$, assigning to an $a$-edge its common value at the two endpoints.  If $r\in\mathcal R_f$, then at every vertex $C$ of $Q$,
+\begin{equation}\label{eq:quotient-subflow}
+ \sum_{e\ni C}r_e\phi(e)=0.
+\end{equation}
+Indeed, sum \eqref{eq:layer-potential-x} around the corresponding $x$-cycle.  If its successive $a$-edge values are $p_i=y_{i-1}+y_i$, the right-hand side becomes
+\[
+ \sum_i(r_i+r_{i+1})y_i=\sum_i r_i(y_{i-1}+y_i)=\sum_i r_i p_i.
+\]
+Thus the selected labelled edges must themselves form an $\mathbb F_2^2$-flow, although this condition alone need not make $r$ extendable for a fixed choice of lifts.
+
+It does give a concrete way to manufacture layer potentials.  Recall that the cyclic order of the $a$-edges incident with a vertex of $Q$ is inherited from the corresponding $x$-cycle.
+
+\begin{proposition}[consecutive monochromatic cycle]\label{prop:mono-cycle}
+Suppose the quotient flow $\phi$ has a cycle $R$ whose edges all receive the same value, and at every vertex of $R$ its two incident edges are consecutive in the inherited cyclic order.  The lifts in Proposition~\ref{prop:separated-eight-flow} can be chosen so that $\mathcal R_f$ contains a nonzero element supported on the endpoints of the $a$-edges in $R$.  More generally, $k$ vertex-disjoint cycles of this kind give a choice of lifts for which $\dim\mathcal R_f\ge k$.
+\end{proposition}
+\begin{proof}
+Let $r_v=1$ when the $a$-edge at $v$ belongs to $R$, and put $r_v=0$ otherwise.  At a quotient vertex on $R$, let the two selected consecutive positions be $i,i+1$ and let their common flow value be $p$.  The lift equations give
+\[
+ y_{i-1}+y_i=p=y_i+y_{i+1},
+\]
+so the two $x$-edges at the boundary of the selected pair have equal lower values: $y_{i-1}=y_{i+1}$.  Translating all the $y$-values around this $x$-cycle by their common value makes both boundary values zero without changing $\phi$.  Make this choice independently at every vertex of $R$, and take $w=0$ everywhere.  Equation~\eqref{eq:layer-potential-a} is then automatic.  On an $x$-edge where $r$ changes, its lower value was made zero, while on every other $x$-edge $r$ is constant; hence \eqref{eq:layer-potential-x} also holds.  The resulting $r$ is nonconstant because $R$ uses only two of the at least three incident edges at its vertices.
+
+For vertex-disjoint cycles the lift translations occur on disjoint $x$-cycles and can be made simultaneously.  Their edge indicators, and hence their layer potentials, are linearly independent.
+\end{proof}
+
 This separates the palette into two four-point layers.  In any output $P$, an $a$-edge is a pair within one layer and an $x$-edge is a pair crossing the layers.  Let $B_x(P)$ be the bipartite graph on the two layers formed by the palette pairs belonging to $x$-edges.  If the bipartite complement of $B_x(P)$ has a perfect matching, colour the two endpoints of each matched pair alike.  All within-layer pairs and all unmatched crossing pairs are then properly coloured, so Proposition~\ref{prop:palette} gives a Tait colouring.  The paper's method has therefore reduced this structured case to a four-by-four Hall problem.  What it does not yet supply is a choice of $\phi$, of the lifts $y_i$, and of the compatibility-system solution which forces Hall's condition.
 
 The twenty-four possible matchings admit a useful exact classification.  Put $A=\mathbb F_2^2$, so that the layers are $\{0\}\times A$ and $\{1\}\times A$.
@@ -724,9 +772,9 @@ Thus the four parallel targets are merely direct Tait-flow criteria in different
 
 We made a small diagnostic computation, reproducible with \nolinkurl{code/cdc_palette_experiment.py}.  On $K_4$, five distinct full-rank flows gave $40$ labelled outputs, all with palette chromatic number $4$.  For three distinct full-rank flows on the Petersen graph, one choice of local orders per flow led to affine solution spaces of dimensions $3,3,4$; all $32$ resulting palettes had chromatic number $5$, as they must if Proposition~\ref{prop:palette} is to pass this negative control.  For the colourable graph $\Cay(S_5,\{(0\,1),(0\,1\,2\,3\,4),(0\,4\,3\,2\,1)\})$, twenty distinct full-rank flows gave $600$ affine solutions (counted as labelled outputs): $240$ had palette chromatic number $7$ and $360$ had palette chromatic number $8$, with none $4$-colourable.  A direct SAT search does find a rank-three flow with a tetrahedral palette on this graph, as Proposition~\ref{prop:full-rank-palette} predicts, but that search simply solves an equivalent form of the Tait-colouring problem.  A second SAT search finds a generator-separated rank-three flow and an output certified by a transvection matching, while forcing all four lower-coordinate differences to occur on $x$-edges; hence none of the four parallel matchings can certify that output.  This confirms that the linearised target is strictly more flexible than Proposition~\ref{prop:parallel-matching}, although the search again uses the desired colouring condition rather than proving it.  The experiment shows that merely taking an arbitrary $8$-flow and solving the paper's linear system need not reveal the desired colouring, even for a small Cayley graph.  The new method therefore supplies sharp reformulations and a potentially useful family of augmented linear systems, but not at present a proof of the Alspach--Zhang conjecture.
 
-For that separated transvection witness the compatibility system has nullity $8$, so $\dim\mathcal K_f=5$.  Of its $120$ $x$-edges, $40$ are dangerous for the displayed matching.  The restriction map $A|_{U_f}$ has rank $5$, its global-translation part has rank $1$, and hence the induced map $\overline A$ in Proposition~\ref{prop:transvection-syndrome} has rank $4$.  Thus the forty collision equations reduce, after compatibility and translation are taken into account, to a four-dimensional effective syndrome which the witness hits.  The outstanding proof problem is to force that hit without first knowing a Tait colouring.
+For that separated transvection witness the compatibility system has nullity $8$, so $\dim\mathcal K_f=5$.  Its quotient code $\mathcal K_\phi$ is zero, and hence all five dimensions are extendable layer potentials in $\mathcal R_f$.  The unique layer potential of minimum support has weight $8$ upstairs: its four selected $a$-edges form a monochromatic $4$-cycle in $Q$, consecutive at every vertex, exactly as in Proposition~\ref{prop:mono-cycle}.  Of the graph's $120$ $x$-edges, $40$ are dangerous for the displayed matching.  The restriction map $A|_{U_f}$ has rank $5$, its global-translation part has rank $1$, and hence the induced map $\overline A$ in Proposition~\ref{prop:transvection-syndrome} has rank $4$.  Thus the forty collision equations reduce, after compatibility and translation are taken into account, to a four-dimensional effective syndrome which the witness hits.  The outstanding proof problem is to force that hit without first knowing a Tait colouring.
 
-As a check against selection bias, the script also constructs twelve distinct quotient $\mathbb F_2^2$-flows, chooses lifts and local data independently of any colouring target, and tests all twelve transvection matchings after solving the original compatibility system.  The resulting weighted cut-code dimensions were $0$ once, $1$ eight times, and $2$ three times; none of the $144$ augmented systems was consistent.  This small sample is not evidence against the conjecture---the graph is colourable and the preceding witness succeeds---but it shows that the successful dimension-five flow is special and that an arbitrary application of the cycle-double-cover solver is unlikely to find it.
+As a check against selection bias, the script also constructs twelve distinct quotient $\mathbb F_2^2$-flows, chooses lifts and local data independently of any colouring target, and tests all twelve transvection matchings after solving the original compatibility system.  The resulting weighted cut-code dimensions were $0$ once, $1$ eight times, and $2$ three times; their quotient codes were all zero, so every nonzero direction again came from $\mathcal R_f$.  None of the $144$ augmented systems was consistent.  This small sample is not evidence against the conjecture---the graph is colourable and the preceding witness succeeds---but it shows that the successful dimension-five layer-potential space is special and that an arbitrary application of the cycle-double-cover solver is unlikely to find it.
 
 \section{Open problems}\label{sec:open}
 
@@ -739,7 +787,7 @@ As a check against selection bias, the script also constructs twelve distinct qu
 \item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
 \item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for a subgroup $H$ of index at most $9\,240$ (Table~\ref{tab:computation}), often a point stabiliser or an involution centraliser; is there always an $H$-invariant colouring with $H$ of bounded index (say $|G:H|\le c\,|G|^{1/2}$), or with $H$ from a specific family such as the centraliser of an involution?
 \item (Cycle-double-cover palette.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  This is already open when $x$ has prime order at least $5$, where the required generator-separated flow always exists.  Propositions~\ref{prop:full-rank-palette} and~\ref{prop:parallel-matching} explain why full rank and the four parallel matchings do not by themselves advance the conjecture.
-\item (Weighted cut code.)  Can the generator-separated flow be chosen so that the syndrome criterion \eqref{eq:syndrome-criterion} holds for one transvection matching?  Propositions~\ref{prop:cdc-rigidity} and~\ref{prop:transvection-syndrome} show that the map from $\mathcal K_f$ to the dangerous-edge equations is exactly the effective freedom available after the flow and local triangles have been fixed.
+\item (Weighted cut code.)  Can the quotient flow be chosen with enough vertex-disjoint consecutive monochromatic cycles to make Proposition~\ref{prop:mono-cycle} useful, and can the resulting lifts be positioned so that the syndrome criterion \eqref{eq:syndrome-criterion} holds for one transvection matching?  More generally, can the extendable layer-potential space $\mathcal R_f$ in Proposition~\ref{prop:layer-potential} be controlled directly?  Propositions~\ref{prop:cdc-rigidity} and~\ref{prop:transvection-syndrome} show that the map from $\mathcal K_f$ to the dangerous-edge equations is exactly the effective freedom available after the flow and local triangles have been fixed.
 \end{enumerate}
 
 \subsection*{Acknowledgements}
