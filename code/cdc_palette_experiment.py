@@ -17,7 +17,8 @@ full-rank tetrahedral palette whose existence is equivalent to that direction.
 It also finds a generator-separated palette certified by a transvection
 matching while ruling out all four parallel matching certificates, and
 measures the induced restriction map from the weighted cut code to the
-dangerous transvection equations.
+dangerous transvection equations.  It also exhaustively verifies the local
+order-five interlacement obstruction for lift-flexible layer potentials.
 
 Run from the repository root with:
 
@@ -25,7 +26,7 @@ Run from the repository root with:
 """
 
 import random
-from itertools import combinations, product
+from itertools import combinations, permutations, product
 
 from pysat.solvers import Cadical153
 
@@ -257,6 +258,104 @@ def consecutive_monochromatic_cycle_rank(n, edges, edge_kinds, flow):
             parent[d] = e
     components = len({find(e) for e in parent})
     return len(transitions) - len(parent) + components
+
+
+def alternating_form(p, q):
+    """The nondegenerate alternating form on the two lower coordinates."""
+    return ((p & 1) & ((q >> 1) & 1)) ^ (((p >> 1) & 1) & (q & 1))
+
+
+def local_interlacement(values, layer_mask, dependency_mask):
+    """Return omega_C(r, lambda) from the lift-flexible obstruction."""
+    result = 0
+    for i, p_i in enumerate(values):
+        if not ((dependency_mask >> i) & 1):
+            continue
+        r_i = (layer_mask >> i) & 1
+        for j in range(i):
+            r_j = (layer_mask >> j) & 1
+            result ^= (r_j ^ r_i) & alternating_form(p_i, values[j])
+    return result
+
+
+def xor_selected(values, mask):
+    """Xor the entries whose positions occur in a binary mask."""
+    result = 0
+    for i, value in enumerate(values):
+        if (mask >> i) & 1:
+            result ^= value
+    return result
+
+
+def check_order_five_interlacement():
+    """Exhaust the 480 local cases in the order-five proposition."""
+    checked = 0
+    all_positions = set(range(5))
+    for values in product((1, 2, 3), repeat=5):
+        if xor_selected(values, 0b11111):
+            continue
+        multiplicities = {value: values.count(value) for value in (1, 2, 3)}
+        assert sorted(multiplicities.values()) == [1, 1, 3]
+        repeated = next(
+            value for value, count in multiplicities.items() if count == 3
+        )
+        repeated_positions = {
+            i for i, value in enumerate(values) if value == repeated
+        }
+        triple_is_consecutive = any(
+            repeated_positions == {i, (i + 1) % 5, (i + 2) % 5}
+            for i in range(5)
+        )
+
+        for layer_mask in range(32):
+            if xor_selected(values, layer_mask):
+                continue
+            support = {i for i in range(5) if (layer_mask >> i) & 1}
+            if len(support) in (0, 5):
+                exceptional = False
+            else:
+                assert len(support) in (2, 3)
+                pair = support if len(support) == 2 else all_positions - support
+                assert all(values[i] == repeated for i in pair)
+                pair_is_consecutive = any(
+                    pair == {i, (i + 1) % 5} for i in range(5)
+                )
+                exceptional = not triple_is_consecutive and not pair_is_consecutive
+
+            has_obstruction = False
+            for dependency_mask in range(32):
+                if xor_selected(values, dependency_mask):
+                    continue
+                if xor_selected(values, dependency_mask & layer_mask):
+                    continue
+                has_obstruction |= bool(local_interlacement(
+                    values, layer_mask, dependency_mask
+                ))
+            assert has_obstruction == exceptional
+            checked += 1
+    assert checked == 480
+    print("ORDER-FIVE-INTERLACEMENT", "local_cases", checked, flush=True)
+
+
+def check_local_triangle_gauge():
+    """All orders of a fixed local flow give translates of one triangle."""
+    checked = 0
+    for p in range(1, 8):
+        for q in range(1, 8):
+            if p == q:
+                continue
+            flow = (p, q, p ^ q)
+            original = ({0, p}, {p, p ^ q}, {0, p ^ q})
+            for a, b, c in permutations(range(3)):
+                offsets = {a: 0, b: flow[a], c: 0}
+                pairs = [{offsets[e], offsets[e] ^ flow[e]} for e in range(3)]
+                shifts = [d for d in range(8) if all(
+                    {s ^ d for s in original[e]} == pairs[e] for e in range(3)
+                )]
+                assert len(shifts) == 1
+                checked += 1
+    assert checked == 252
+    print('LOCAL-TRIANGLE-GAUGE', 'cases', checked, flush=True)
 
 
 def layer_potential_basis(n, edges, edge_kinds, flow):
@@ -1146,6 +1245,9 @@ def examine_random_separated_flows(name, n, edges, edge_kinds, trials=12):
 
 
 def main():
+    check_order_five_interlacement()
+    check_local_triangle_gauge()
+
     n, edges = complete_four()
     assert examine("K4", n, edges, trials=5) == 4
 

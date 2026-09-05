@@ -58,6 +58,12 @@ translation is exactly a weighted cut code. The successful S5 transvection witne
 and its 40 dangerous-edge equations reduce to a rank-four syndrome after global translations are removed.
 Its smallest layer potential comes from a consecutive monochromatic 4-cycle in the contracted graph; the
 survey proves that every such quotient cycle can be converted into a nonzero code direction by choosing the lifts.
+More generally, it gives an exact interlacement-parity obstruction to extending any quotient subflow and
+classifies all 480 local configurations when the odd generator has order five.
+The layer-potential space is the kernel of an explicit symmetric quotient form, modulo constants.
+Searching this matrix family produces six directions on S5, but none of the twelve transvection targets
+succeeds for the resulting flow: dimension alone is insufficient. Local triangle orders are only changes
+of coordinates and cannot alter feasibility.
 No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
@@ -80,8 +86,9 @@ groups above about 400 000 elements need more memory per worker (use `WORKERS=6`
 Z_3 reformulation for ord(x) = 5, adaptive choice of the quotient subgroup (the natural point
 quotient can be the Petersen snark even when the Cayley graph is colourable), and forcing a
 4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.
-The sharp CDC subproblem is now to construct enough consecutive monochromatic cycles for a quotient flow,
-choose the resulting layer potentials, and hit the syndrome of one of the twelve transvection systems.
+The sharp CDC subproblem is now to choose lifts whose symmetric quotient form has a kernel that hits
+the syndrome of one of the twelve transvection systems. For ord(x) = 5, one bit per quotient vertex
+changes this form; the other bit preserves it and remains available for the colouring equations.
 
 ## Reproducing the computation
 
@@ -92,6 +99,7 @@ RESULTS=results2.json python3 cayley_snark_check2.py 270000   # all catalogue gr
 python3 cayley_snark_check2.py 270000 J1 A9                    # or just the named groups
 python3 extra_groups.py                  # PSU(3,3), PSL(3,3).2, G2(2), writes results_extra.json
 python3 cdc_palette_experiment.py         # exact eight-point palette diagnostic
+python3 layer_potential_experiment.py     # quotient form, direct checks, and lift search
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```

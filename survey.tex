@@ -44,7 +44,7 @@
 \maketitle
 
 \begin{abstract}
-In 1992 Brian Alspach and Cun-Quan Zhang conjectured that every Cayley graph of valency at least two admits a nowhere-zero $4$-flow.  By theorems of Mader and Jaeger this is equivalent to the statement that every connected cubic Cayley graph is $3$-edge-colourable, or, in the language introduced by Nedela and \v{S}koviera, that there are no \emph{Cayley snarks}.  The conjecture is implied by the folklore conjecture that every Cayley graph is hamiltonian, and it is known to hold for solvable groups (Alspach, Liu and Zhang), for all cubic graphs admitting a solvable vertex-transitive group of automorphisms other than the Petersen graph (Poto\v{c}nik), and for all cubic Cayley graphs on at most $1280$ vertices (Poto\v{c}nik, Spiga and Verret).  A minimal counterexample, if one exists, is a Cayley graph on a non-abelian simple group or on a group with a unique non-trivial proper normal subgroup, which has index two (Nedela and \v{S}koviera).  We survey these results, give short self-contained proofs of the elementary reductions, record several reformulations (in terms of arc-regular cubic graphs, of bi-Cayley graphs, and of small girth), prove a quotient lemma for arbitrary subgroups (with semi-edges), describe the $3$-edge-colourings of $\Cay(G,\{a,x,x^{-1}\})$ as $a$-invariant functions $G\to\mathbb{Z}_3$ with a local admissibility condition along the $x$-cycles, and prove that the index-two case is always colourable when $\ord(x)=3$.  We also analyse the new $\mathbb F_2^3$ construction in the 2026 proof of the cycle double cover theorem, extracting an exact eight-vertex palette reformulation, constructing generator-separated rank-three flows, and reducing the potentially non-circular part of the method to twelve explicit augmented affine systems.  Finally, we report a computer verification of the conjecture for all cubic Cayley graphs on 85 non-solvable groups of order up to $300\,696$, including every group permitted by the Nedela--\v{S}koviera reduction of order less than $352\,440$; consequently a smallest Cayley snark, if one exists, has more than $352\,439$ vertices.
+In 1992 Brian Alspach and Cun-Quan Zhang conjectured that every Cayley graph of valency at least two admits a nowhere-zero $4$-flow.  By theorems of Mader and Jaeger this is equivalent to the statement that every connected cubic Cayley graph is $3$-edge-colourable, or, in the language introduced by Nedela and \v{S}koviera, that there are no \emph{Cayley snarks}.  The conjecture is implied by the folklore conjecture that every Cayley graph is hamiltonian, and it is known to hold for solvable groups (Alspach, Liu and Zhang), for all cubic graphs admitting a solvable vertex-transitive group of automorphisms other than the Petersen graph (Poto\v{c}nik), and for all cubic Cayley graphs on at most $1280$ vertices (Poto\v{c}nik, Spiga and Verret).  A minimal counterexample, if one exists, is a Cayley graph on a non-abelian simple group or on a group with a unique non-trivial proper normal subgroup, which has index two (Nedela and \v{S}koviera).  We survey these results, give short self-contained proofs of the elementary reductions, record several reformulations (in terms of arc-regular cubic graphs, of bi-Cayley graphs, and of small girth), prove a quotient lemma for arbitrary subgroups (with semi-edges), describe the $3$-edge-colourings of $\Cay(G,\{a,x,x^{-1}\})$ as $a$-invariant functions $G\to\mathbb{Z}_3$ with a local admissibility condition along the $x$-cycles, and prove that the index-two case is always colourable when $\ord(x)=3$.  We also analyse the new $\mathbb F_2^3$ construction in the 2026 proof of the cycle double cover theorem, extracting an exact eight-vertex palette reformulation, constructing generator-separated rank-three flows, and reducing the potentially non-circular part of the method to twelve explicit augmented affine systems and an exact interlacement obstruction for their layer potentials.  Finally, we report a computer verification of the conjecture for all cubic Cayley graphs on 85 non-solvable groups of order up to $300\,696$, including every group permitted by the Nedela--\v{S}koviera reduction of order less than $352\,440$; consequently a smallest Cayley snark, if one exists, has more than $352\,439$ vertices.
 \end{abstract}
 
 \tableofcontents
@@ -619,7 +619,13 @@ Subtract two solutions of \eqref{eq:cdc-system}.  Writing their differences as $
 The right-hand side is the coboundary of a vertex labelling $s$ if and only if its sum around every cycle is zero, which is exactly the condition $\delta\in\mathcal K_f$.  Indeed, necessity follows by summing \eqref{eq:cdc-homogeneous} around a cycle; conversely, fix $s$ at one vertex and define it by path sums, which are path-independent by the cycle condition.  For each $\delta\in\mathcal K_f$ the resulting $s$ is unique up to one common element of $\mathbb F_2^3$, accounting for the other three dimensions.  Such a common translation translates every palette pair and hence preserves the palette graph up to isomorphism.
 \end{proof}
 
-Thus a fixed flow with $\mathcal K_f=0$ offers no effective affine choice at all: one must change the flow or the local triangles.  More generally, any extra matching equations can only be met through the evaluation of the weighted cut code (together with the irrelevant global translations).  A large code is not sufficient, but the proposition isolates exactly where the cycle-double-cover construction can supply non-circular flexibility.
+The choices of local edge orders do not create additional outputs.  At $v$, let $W_v$ be the plane spanned by its three nonzero flow values.  Every local triangle has three vertices in $W_v$, so is $W_v$ with one point omitted; translations of $W_v$ act transitively on these four triangles and preserve their edge differences.  Thus for two choices of offsets there are $d_v\in W_v$ and incidence bits $\eta_{v,e}$ with
+\[
+ g'_{v,e}=g_{v,e}+d_v+\eta_{v,e}f(e).
+\]
+The change of variables $t'_v=t_v+d_v$, $\epsilon'_e=\epsilon_e+\eta_{u,e}+\eta_{v,e}$ takes one compatibility system to the other and preserves every pair $P_e$.  In particular, the set of attainable palettes for a fixed flow, and the feasibility of any fixed matching target, are independent of the local orders.
+
+Thus a fixed flow with $\mathcal K_f=0$ offers no effective affine choice beyond global translation: to change its palette up to isomorphism, one must change the flow.  Any extra matching equations can only be met through the evaluation of the weighted cut code together with global translations.  A large code is not sufficient, but the proposition isolates exactly where the cycle-double-cover construction can supply non-circular flexibility.
 
 There is nevertheless a more structured way in which the Cayley generators can enter the construction.  Let $Q$ be the multigraph obtained from $X=\X{G}{a}{x}$ by contracting every $x$-cycle to a vertex; its edges are the $a$-edges of $X$.  Thus $Q$ is a connected, vertex-transitive, $s$-regular loopless multigraph, where $s=\ord(x)$.
 
@@ -671,7 +677,143 @@ Indeed, sum \eqref{eq:layer-potential-x} around the corresponding $x$-cycle.  If
 \]
 Thus the selected labelled edges must themselves form an $\mathbb F_2^2$-flow, although this condition alone need not make $r$ extendable for a fixed choice of lifts.
 
-It does give a concrete way to manufacture layer potentials.  Recall that the cyclic order of the $a$-edges incident with a vertex of $Q$ is inherited from the corresponding $x$-cycle.
+There is an exact obstruction to making it extendable by changing the lifts.  Let $[p,q]$ denote the nondegenerate alternating form on $A=\mathbb F_2^2$; thus $[p,q]=0$ for nonzero $p,q$ exactly when $p=q$.  Fix an edge indicator $r\in\mathbb F_2^{E(Q)}$ satisfying \eqref{eq:quotient-subflow}, and define
+\[
+ \mathcal D_r=\left\{\lambda\in\mathbb F_2^{E(Q)}:
+ \sum_{e\ni C}\lambda_ep_e=0=\sum_{e\ni C}\lambda_er_ep_e
+ \text{ for every }C\in V(Q)\right\}.
+\]
+Thus both $\lambda$ and its coordinatewise product $\lambda r$ are subflows of $\phi$.  At $C$, choose a starting point in the inherited cyclic order and write the incident data as $p_0,\ldots,p_{s-1}$, $r_0,\ldots,r_{s-1}$, and $\lambda_0,\ldots,\lambda_{s-1}$.  Put
+\begin{equation}\label{eq:interlacement}
+ \omega_C(r,\lambda)=
+ \sum_{0\le j<i<s}\lambda_i(r_j+r_i)[p_i,p_j]\in\mathbb F_2.
+\end{equation}
+For $\lambda\in\mathcal D_r$ this value is independent of the chosen starting point, as also follows from the proof below.
+
+\begin{proposition}[lift-flexible obstruction]\label{prop:lift-obstruction}
+There is a choice of the lifts $y_i$ in Proposition~\ref{prop:separated-eight-flow} for which $r$ is an extendable layer potential if and only if
+\begin{equation}\label{eq:lift-obstruction}
+ \sum_{C\in V(Q)}\omega_C(r,\lambda)=0
+ \qquad\text{for every }\lambda\in\mathcal D_r.
+\end{equation}
+The constant indicator $\boldsymbol1$ belongs to $\mathcal D_r$ and $\omega_C(r,\boldsymbol1)=0$.  Hence, if $r$ is nonconstant and $\mathcal D_r=\langle\boldsymbol1,r\rangle$, the criterion reduces to the single parity
+\[
+ q(r):=\sum_C\omega_C(r,r)=0.
+\]
+\end{proposition}
+\begin{proof}
+At a quotient vertex $C$, choose $y_i$ with $y_{i-1}+y_i=p_i$.  Since \eqref{eq:quotient-subflow} holds, one may also choose $z_i$ cyclically so that
+\[
+ z_i+z_{i+1}=r_i p_i.
+\]
+Then $h_i=z_i+r_i y_{i-1}$ satisfies
+\[
+ h_i+h_{i+1}=(r_i+r_{i+1})y_i,
+\]
+so it is a particular solution of the $x$-edge equations \eqref{eq:layer-potential-x}.  Translating all the $y_i$ by $c_C\in A$ and choosing the arbitrary translation of $h$ gives every possible solution in the form
+\[
+ w_i=h_i+d_C+r_i c_C,
+ \qquad c_C,d_C\in A.
+\]
+
+Let a quotient edge $e$ join position $i$ at $C$ to position $j$ at $D$.  Since the kernel of the functional $[p_e,\mathord\cdot]$ is $\langle p_e\rangle$, the $a$-edge condition \eqref{eq:layer-potential-a} is the single affine equation
+\[
+ [p_e,d_C+r_ec_C+d_D+r_ec_D]
+   =[p_e,h_{C,i}+h_{D,j}].
+\]
+A set of these equations, indicated by $\lambda\in\mathbb F_2^{E(Q)}$, has zero left-hand side exactly when, at every $C$, the coefficients of both $d_C$ and $c_C$ vanish.  Nondegeneracy of the alternating form says that these two conditions are precisely
+\[
+ \sum_{e\ni C}\lambda_ep_e=0,
+ \qquad
+ \sum_{e\ni C}\lambda_er_ep_e=0;
+\]
+that is, $\lambda\in\mathcal D_r$.  Linear-system duality therefore says that the equations are soluble exactly when every such dependency annihilates their right-hand sides.
+
+To identify that right-hand side, take $y_{i-1}=\sum_{j<i}p_j$ and $z_i=\sum_{j<i}r_jp_j$.  Then
+\[
+ h_i=\sum_{j<i}(r_j+r_i)p_j,
+ \qquad
+ [p_i,h_i]=\sum_{j<i}(r_j+r_i)[p_i,p_j].
+\]
+Summing over the two ends of every edge gives exactly \eqref{eq:lift-obstruction}.  This derivation also proves independence from all auxiliary choices.  Finally,
+\[
+ \sum_i[p_i,h_i]
+ =\sum_i[y_{i-1}+y_i,h_i]
+ =\sum_i[y_i,h_i+h_{i+1}]=0,
+\]
+so $\omega_C(r,\boldsymbol1)=0$.  The last assertion follows because $0,\boldsymbol1,r,\boldsymbol1+r$ are then all the dependencies and $\omega_C$ is linear in its second argument.
+\end{proof}
+
+In fact the preceding equations admit a smaller matrix formulation.  Let $\mathcal S_\phi$ be the space of all binary indicators satisfying \eqref{eq:quotient-subflow}.  Choose a starting point at each quotient vertex, take the reference lifts $y_{i-1}=\sum_{j<i}p_j$, and describe any other lifts by translations $c=(c_C)_{C\in V(Q)}$.  On $\mathcal S_\phi$ define
+\begin{equation}\label{eq:quotient-form}
+ B_c(r,t)=\sum_C\omega_C(r,t)
+   +\sum_C\left[\sum_{e\ni C}r_et_ep_e,\ c_C\right].
+\end{equation}
+
+\begin{proposition}[quotient bilinear form]\label{prop:quotient-form}
+The form $B_c$ is symmetric, and $\boldsymbol1$ belongs to its radical.  For the flow $f_c$ with these lifts,
+\[
+ \mathcal R_{f_c}\cong\operatorname{rad}(B_c)/\langle\boldsymbol1\rangle,
+ \qquad
+ \dim\mathcal K_{f_c}=\dim\mathcal K_\phi+
+ \dim\mathcal S_\phi-\operatorname{rank} B_c-1.
+\]
+The diagonal $B_c(r,r)=q(r)$ is independent of $c$ and is linear on $\mathcal S_\phi$.  Consequently every extendable layer potential lies in $\ker q$.
+\end{proposition}
+\begin{proof}
+For $r,t\in\mathcal S_\phi$, expansion of \eqref{eq:interlacement} gives
+\[
+ \omega_C(r,t)+\omega_C(t,r)
+ =\left[\sum_i r_i p_i,\sum_i t_i p_i\right]=0.
+\]
+The correction term in \eqref{eq:quotient-form} is symmetric as well.  For fixed $c$, the proof of Proposition~\ref{prop:lift-obstruction} leaves only the $d_C$ as unknowns.  Its dependencies are therefore all $t\in\mathcal S_\phi$, and their right-hand sides are $B_c(r,t)$.  Hence $r$ extends exactly when $B_c(r,t)=0$ for all $t$, which is the radical condition.  The constant indicator extends with $w=0$; quotienting by it and using Proposition~\ref{prop:layer-potential} proves the dimension formula.  Finally, the correction term on the diagonal vanishes because $r_e^2=r_e$ and $r\in\mathcal S_\phi$.  Symmetry in characteristic two implies $q(r+t)=q(r)+q(t)$.
+\end{proof}
+
+Thus several prescribed indicators extend for the same lifts precisely when their span lies in the radical of one member of the affine family $B_c$.  For a prescribed span this is a linear system in the $2|V(Q)|$ coordinates of $c$; finding a large span amounts to making $B_c$ have small rank.  The rank measures available directions, while the transvection syndrome still tests whether those directions solve the colouring equations.
+
+The same argument gives a simultaneous form which is useful when one wants a high-dimensional space $\mathcal R_f$.  Let $r^1,\ldots,r^k$ satisfy \eqref{eq:quotient-subflow}.  Using one fixed starting point at each quotient vertex, one choice of the lifts makes all of them extendable if and only if
+\[
+ \sum_{\ell=1}^k\sum_C\omega_C(r^\ell,\lambda^\ell)=0
+\]
+for every tuple $(\lambda^1,\ldots,\lambda^k)$ such that each $\lambda^\ell$ is a subflow of $\phi$ and $\sum_\ell\lambda^\ell r^\ell$ is also a subflow.  Under these conditions the displayed total is independent of the starting points.  Indeed, in the proof above the lift translations $c_C$ are shared by the $k$ systems while each layer potential has its own translations $d_C^\ell$; vanishing of their coefficients gives exactly the stated conditions.  Once a basis extends for the same lifts, so does its span.
+
+There is also a useful interpretation of the smallest dependency space.  Call a nonzero member of $\mathcal S_\phi$ a \emph{circuit} if it contains no proper nonempty member of $\mathcal S_\phi$.  For nonconstant $r\in\mathcal S_\phi$,
+\[
+ \mathcal D_r=\langle\boldsymbol1,r\rangle
+\]
+exactly when both $r$ and its complement $\boldsymbol1+r$ are circuits.  One direction follows because any proper subflow contained in either part belongs to $\mathcal D_r$.  Conversely, if $\lambda\in\mathcal D_r$, the four intersections determined by $r$ and $\lambda$ all lie in $\mathcal S_\phi$; circuit minimality forces $\lambda$ to be one of $0,\boldsymbol1,r,\boldsymbol1+r$.  Thus a complementary pair of circuits with $q(r)=0$ is another concrete sufficient target for a nonzero layer potential.
+
+When $s=5$, the local obstruction has a particularly small description.  The three nonzero values of $A$ occur with multiplicities $3,1,1$ at every quotient vertex.  Call the value occurring three times the \emph{repeated value}.
+
+\begin{proposition}[order-five interlacement]\label{prop:order-five-interlacement}
+Suppose $s=5$, and let $r$ satisfy \eqref{eq:quotient-subflow}.  At a quotient vertex where $r$ is nonconstant, either its support or its complement consists of two positions carrying the repeated value.  The local term $\omega_C(r,\lambda)$ vanishes for every locally admissible $\lambda$ unless both
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item the three positions carrying the repeated value are not cyclically consecutive, and
+\item the distinguished pair given by $r$ is not consecutive.
+\end{enumerate}
+Consequently, if this exceptional pattern occurs at no vertex of $Q$, lifts can be chosen for which $r$ is an extendable layer potential.
+\end{proposition}
+\begin{proof}
+The first assertion follows by listing the subsets of a multiset with values $a,a,a,b,c$, where $c=a+b$, whose sum is zero: apart from the empty and full subsets, they are the three pairs of $a$-positions and their complements.  Up to a cyclic shift, reversal, and an automorphism of $A$, there are two cyclic orders,
+\[
+ (a,a,a,b,c)\qquad\text{and}\qquad(a,a,b,a,c).
+\]
+Both the local admissibility conditions and \eqref{eq:interlacement} are unchanged when $r$ is replaced by its complement, so it is enough to consider the three two-element supports.  Substitution in \eqref{eq:interlacement}, subject to
+\[
+ \sum_i\lambda_i p_i=0=\sum_i\lambda_i r_i p_i,
+\]
+shows that every term vanishes in the first order.  In the second order it also vanishes when the distinguished pair is the consecutive pair in positions $0,1$; for either of the other two pairs, taking $\lambda$ to be its indicator gives value one.  This is exactly (i)--(ii).  If the exceptional pattern is absent everywhere, every term in \eqref{eq:lift-obstruction} vanishes, and Proposition~\ref{prop:lift-obstruction} applies.
+\end{proof}
+
+The finite local calculation in this proof has $480$ cases before symmetry reduction and is checked exhaustively by \nolinkurl{code/cdc_palette_experiment.py}.
+
+For $s=5$ the matrix family itself also simplifies.  At $C$, write $a_C$ for the repeated value.  There are fixed alternating forms $T_C$ on $\mathcal S_\phi$, each of rank at most two, such that
+\[
+ B_c=B_0+\sum_C[a_C,c_C]T_C.
+\]
+Indeed, the space of local subflows has dimension three, with basis the constant indicator and two different pairs of $a_C$-positions.  The local correction form vanishes on the constant indicator and has value $[a_C,c_C]$ on those two pairs, whose intersection is a single $a_C$-position.  It therefore descends to an alternating form on a two-dimensional space, proving the assertion.  In particular only one bit of each $c_C$ affects the layer-potential space; adding $a_C$ to $c_C$ preserves $B_c$.  The remaining bit still changes the starting flow and may affect the transvection equations.
+
+For arbitrary odd $s$, there is also a direct construction of layer potentials.  Recall that the cyclic order of the $a$-edges incident with a vertex of $Q$ is inherited from the corresponding $x$-cycle.
 
 \begin{proposition}[consecutive monochromatic cycle]\label{prop:mono-cycle}
 Suppose the quotient flow $\phi$ has a cycle $R$ whose edges all receive the same value, and at every vertex of $R$ its two incident edges are consecutive in the inherited cyclic order.  The lifts in Proposition~\ref{prop:separated-eight-flow} can be chosen so that $\mathcal R_f$ contains a nonzero element supported on the endpoints of the $a$-edges in $R$.  More generally, $k$ vertex-disjoint cycles of this kind give a choice of lifts for which $\dim\mathcal R_f\ge k$.
@@ -686,7 +828,9 @@ so the two $x$-edges at the boundary of the selected pair have equal lower value
 For vertex-disjoint cycles the lift translations occur on disjoint $x$-cycles and can be made simultaneously.  Their edge indicators, and hence their layer potentials, are linearly independent.
 \end{proof}
 
-This separates the palette into two four-point layers.  In any output $P$, an $a$-edge is a pair within one layer and an $x$-edge is a pair crossing the layers.  Let $B_x(P)$ be the bipartite graph on the two layers formed by the palette pairs belonging to $x$-edges.  If the bipartite complement of $B_x(P)$ has a perfect matching, colour the two endpoints of each matched pair alike.  All within-layer pairs and all unmatched crossing pairs are then properly coloured, so Proposition~\ref{prop:palette} gives a Tait colouring.  The paper's method has therefore reduced this structured case to a four-by-four Hall problem.  What it does not yet supply is a choice of $\phi$, of the lifts $y_i$, and of the compatibility-system solution which forces Hall's condition.
+For $s=5$, Proposition~\ref{prop:order-five-interlacement} strengthens the one-cycle part of Proposition~\ref{prop:mono-cycle}: it is enough that, at every vertex of the monochromatic cycle, either its two edges are consecutive or all three incident edges carrying their common value are consecutive.  The latter alternative permits the cycle to use the two ends of that three-edge block.
+
+The generator-separated flow separates the palette into two four-point layers.  In any output $P$, an $a$-edge is a pair within one layer and an $x$-edge is a pair crossing the layers.  Let $B_x(P)$ be the bipartite graph on the two layers formed by the palette pairs belonging to $x$-edges.  If the bipartite complement of $B_x(P)$ has a perfect matching, colour the two endpoints of each matched pair alike.  All within-layer pairs and all unmatched crossing pairs are then properly coloured, so Proposition~\ref{prop:palette} gives a Tait colouring.  The paper's method has therefore reduced this structured case to a four-by-four Hall problem.  What it does not yet supply is a choice of $\phi$, of the lifts $y_i$, and of the compatibility-system solution which forces Hall's condition.
 
 The twenty-four possible matchings admit a useful exact classification.  Put $A=\mathbb F_2^2$, so that the layers are $\{0\}\times A$ and $\{1\}\times A$.
 
@@ -746,7 +890,7 @@ Every solution of the original system is $\mathbf z_0+u$ with $u\in U_f$.  It sa
 Thus consistency is equivalent to $b+A\mathbf z_0\in A(U_f)$.  Quotienting the target by $A(T)$ and using $U_f/T\cong\mathcal K_f$ from Proposition~\ref{prop:cdc-rigidity} gives \eqref{eq:syndrome-criterion} and the rank formula.  The final statement is the standard dual characterisation of membership in a linear subspace.
 \end{proof}
 
-The explicit equation in the proof of Proposition~\ref{prop:linearised-matching} shows also that $A$ depends on $f$ and the chosen matching but not on the local data $g_{v,e}$; changing the local triangles changes the syndrome $b+A\mathbf z_0$, not the available image.  Thus flow selection and local-triangle selection have distinct roles.  The last sentence of Proposition~\ref{prop:transvection-syndrome} identifies precisely how the paper's duality methodology would have to be strengthened: its original argument rules out inconsistency certificates for the compatibility equations, whereas one must now rule out certificates carrying an additional functional supported on the dangerous edges.  Merely counting variables cannot do this, since the target syndrome may lie outside the usually much smaller image of $\overline A$.
+The explicit equation in the proof of Proposition~\ref{prop:linearised-matching} shows also that $A$ depends on $f$ and the chosen matching but not on the local data $g_{v,e}$.  The local change of variables described after Proposition~\ref{prop:cdc-rigidity} preserves every palette pair, so changing local orders cannot alter feasibility: apparent changes of the syndrome are coordinate changes, not a new choice for satisfying the target.  The last sentence of Proposition~\ref{prop:transvection-syndrome} identifies precisely how the paper's duality methodology would have to be strengthened: its original argument rules out inconsistency certificates for the compatibility equations, whereas one must now rule out certificates carrying an additional functional supported on the dangerous edges.  Merely counting variables cannot do this, since the target syndrome may lie outside the usually much smaller image of $\overline A$.
 
 This splits the Hall strategy into four parallel matchings ($L=I$), twelve transvection matchings (the linear case of Proposition~\ref{prop:linearised-matching}), and eight matchings for which $L$ has order three.  In the last case $I+L$ is invertible, so \eqref{eq:matching-collision} forbids one point rather than one affine line and the condition is no longer linear.  The parallel case can be understood completely, and shows precisely where the cycle-double-cover argument adds no leverage.
 
@@ -776,6 +920,8 @@ For that separated transvection witness the compatibility system has nullity $8$
 
 As a check against selection bias, the script also constructs twelve distinct quotient $\mathbb F_2^2$-flows, chooses lifts and local data independently of any colouring target, and tests all twelve transvection matchings after solving the original compatibility system.  The resulting weighted cut-code dimensions were $0$ once, $1$ eight times, and $2$ three times; their quotient codes were all zero, so every nonzero direction again came from $\mathcal R_f$.  None of the $144$ augmented systems was consistent.  This small sample is not evidence against the conjecture---the graph is colourable and the preceding witness succeeds---but it shows that the successful dimension-five layer-potential space is special and that an arbitrary application of the cycle-double-cover solver is unlikely to find it.
 
+A separate experiment, \nolinkurl{code/layer_potential_experiment.py}, checks Proposition~\ref{prop:quotient-form} against the original vertex equations on the Petersen graph and on this $S_5$ Cayley graph, including cases with several simultaneous layer potentials.  It then fixes a quotient flow sampled without any colouring constraint and searches its lifts using only the rank of $B_c$.  The subflow space has dimension $14$, and the search finds a $14\times14$ matrix of rank $7$.  Its radical has dimension $7$, so $\dim\mathcal R_{f_c}=6$; the quotient cut code is zero, giving $\dim\mathcal K_{f_c}=6$.  Nevertheless all twelve transvection systems fail for this flow.  Thus even a larger space than that of the successful dimension-five witness need not solve the colouring equations.  This is a finite search result, not a claim that rank $7$ is minimal for the matrix family.  The local-order invariance proved after Proposition~\ref{prop:cdc-rigidity} is also checked exhaustively on all $252$ ordered local-flow configurations by the palette script.
+
 \section{Open problems}\label{sec:open}
 
 \begin{enumerate}[leftmargin=2em]
@@ -787,7 +933,7 @@ As a check against selection bias, the script also constructs twelve distinct qu
 \item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
 \item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for a subgroup $H$ of index at most $9\,240$ (Table~\ref{tab:computation}), often a point stabiliser or an involution centraliser; is there always an $H$-invariant colouring with $H$ of bounded index (say $|G:H|\le c\,|G|^{1/2}$), or with $H$ from a specific family such as the centraliser of an involution?
 \item (Cycle-double-cover palette.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  This is already open when $x$ has prime order at least $5$, where the required generator-separated flow always exists.  Propositions~\ref{prop:full-rank-palette} and~\ref{prop:parallel-matching} explain why full rank and the four parallel matchings do not by themselves advance the conjecture.
-\item (Weighted cut code.)  Can the quotient flow be chosen with enough vertex-disjoint consecutive monochromatic cycles to make Proposition~\ref{prop:mono-cycle} useful, and can the resulting lifts be positioned so that the syndrome criterion \eqref{eq:syndrome-criterion} holds for one transvection matching?  More generally, can the extendable layer-potential space $\mathcal R_f$ in Proposition~\ref{prop:layer-potential} be controlled directly?  Propositions~\ref{prop:cdc-rigidity} and~\ref{prop:transvection-syndrome} show that the map from $\mathcal K_f$ to the dangerous-edge equations is exactly the effective freedom available after the flow and local triangles have been fixed.
+\item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  Making $B_c$ have small rank alone is insufficient, as the dimension-six experiment shows.  The consecutive monochromatic cycles of Proposition~\ref{prop:mono-cycle} and the order-five criterion of Proposition~\ref{prop:order-five-interlacement} give concrete sufficient patterns for individual directions; the simultaneous obstruction above describes when they share a choice of lifts.  For $s=5$, can the lift bits that preserve $B_c$ be used to control the syndrome?
 \end{enumerate}
 
 \subsection*{Acknowledgements}
