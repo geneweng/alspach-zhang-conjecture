@@ -21,6 +21,11 @@ nonconsecutive fixed points except all 513 types at N=11 and 46 types at
 N=13.  Two-set quotients colour all of these except the N=11 reflection,
 which generates the dihedral group of order 22.
 
+The script also checks the first seven-transposition boundary N=15.  After
+normalizing its unique fixed point, 68,219 types remain modulo reflection.
+The two-set quotient colours 68,144; exact Schreier recursion shows that all
+75 failures generate proper subgroups, so none is relevant to S_15.
+
 Every positive SAT witness is checked directly as a pregraph edge-colouring.
 The exceptional group orders are computed by an exact implementation of
 Schreier's lemma, not by enumerating the symmetric groups.
@@ -155,6 +160,20 @@ def orbit_representatives(n, r, independent_fixed_only=False):
                fixed_points_are_independent(n, matching)
                for matching in representatives)
     return representatives
+
+
+def one_fixed_point_representatives(n):
+    """Near-perfect matchings modulo the dihedral group, fixing point 0.
+
+    Rotation first takes the unique fixed point to 0.  The residual dihedral
+    stabilizer of 0 consists of the identity and i -> -i.
+    """
+    representatives = set()
+    for matching in perfect_matchings(tuple(range(1, n))):
+        reflected = tuple(sorted(tuple(sorted(((-u) % n, (-v) % n)))
+                                 for u, v in matching))
+        representatives.add(min(matching, reflected))
+    return sorted(representatives)
 
 
 def subset_pregraph(n, matching, k):
@@ -317,6 +336,29 @@ def check():
               'point_colourable', len(representatives) - len(point_failed),
               'rescued_by_two-set', len(point_failed) - len(twoset_failed),
               'failed_group_orders', failed_orders)
+
+    representatives = one_fixed_point_representatives(15)
+    assert len(representatives) == 68219
+    twoset_failed = []
+    for matching in representatives:
+        vertices, items = subset_pregraph(15, matching, 2)
+        assert vertices == 105 and len(items) == 161
+        assert sum(v is None for _, v in items) == 7
+        if colour_pregraph(vertices, items) is None:
+            twoset_failed.append(matching)
+    assert len(twoset_failed) == 75
+    failed_orders = {}
+    for matching in twoset_failed:
+        order = group_order([matching_permutation(15, matching), cycle(15)])
+        failed_orders[order] = failed_orders.get(order, 0) + 1
+    assert failed_orders == {
+        30: 1, 360: 2, 750: 2, 2430: 4, 3000: 5,
+        29160: 10, 38880: 21, 466560: 30,
+    }
+    print('SEPTUPLE-TRANSPOSITION', 'N', 15,
+          'dihedral_orbits', len(representatives),
+          'two-set_colourable', len(representatives) - len(twoset_failed),
+          'failed_group_orders', failed_orders)
 
     # Sanity controls for the exact group-order routine.
     for n in range(3, 9):

@@ -30,7 +30,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/transposition_quotient_experiment.py` | Checks the infinite transposition–odd-cycle construction on two-subset quotients, enumerates all invariant minimum-face matchings through S12, verifies cycle monodromies, and independently checks all 21 lifts on S6. |
 | `code/two_cycle_monodromy_experiment.py` | Checks the canonical circuit-free quotient matching for transpositions joining two coprime odd cycles, and exhausts small quotient matching spaces including genuine bad-word controls. |
 | `code/odd_transposition_monodromy_experiment.py` | Checks the explicit one-cycle chord construction for every nonadjacent coprime chord, including the exceptional distances 2 and 3. |
-| `code/sparse_involution_cycle_experiment.py` | Exhaustively certifies the odd full-cycle/sparse-involution theorem: point- and two-set-stabilizer quotients for involutions with three or five transpositions, with exact Schreier checks of the proper-group exceptions. |
+| `code/sparse_involution_cycle_experiment.py` | Exhaustively certifies the odd full-cycle/sparse-involution theorem: point- and two-set-stabilizer quotients for involutions with three or five transpositions and for seven transpositions on fifteen points, with exact Schreier checks of the proper-group exceptions. |
 | `code/parity_interlacement.py` | Computes oddness both as the number of odd-degree vertices in the defect-incidence multigraph and as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
@@ -59,7 +59,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 **Latest result: full odd cycles paired with sparse involutions.** Let N be odd,
 let x be an N-cycle in S_N, and let a be a product of r disjoint transpositions,
 with <a,x> = S_N. The survey proves that Cay(S_N,{a,x,x^-1}) is 3-edge-colourable
-whenever N >= 4r+1, and for every possible N when r <= 5. The large range follows
+whenever N >= 4r+1, for every possible N when r <= 5, and also for (r,N)=(7,15). The large range follows
 because a then has two consecutive fixed points. Exact, directly verified quotient
 certificates handle the remaining cases r=3 and r=5. They use point stabilizers where
 possible and switch to two-set stabilizers for the parity-blocked and Petersen-like
@@ -71,6 +71,9 @@ For r=3 the checker verifies 11, 85 and 350 dihedral orbit types in degrees 7, 9
 and 11. For r=5 it verifies the nonconsecutive-fixed-point types in degrees
 11,13,15,17,19: respectively 513, 5832, 12152, 5832 and 513 types. Of these,
 46 degree-13 types and 512 degree-11 types require the two-set quotient.
+For (r,N)=(7,15), the two-set quotient colours 68144 of 68219 dihedral types;
+exact Schreier recursion shows that all 75 failures generate proper subgroups, of
+order at most 466560, rather than S15.
 
 **Previous result: the transposition case for every symmetric group.** If N >= 3,
 a is a transposition, x in S_N has odd order, and <a,x> = S_N, the survey now proves
@@ -104,7 +107,7 @@ enumerator. That earlier theorem covers one generating pair per symmetric group 
 degree, whereas the new result above covers every pair whose involution is a
 transposition; no claim of priority over the Hamiltonicity literature is made.
 The Alspach–Zhang conjecture remains open. The next symmetric-group target is a full
-odd cycle paired with seven or more transpositions; the broader target is to control
+odd cycle with seven transpositions in degrees 17 through 27; the broader target is to control
 odd quotient-circuit words for other almost simple groups.
 
 **Previous result: a congruence using the regular action.** For any invariant family of
@@ -298,7 +301,7 @@ python3 loop_congruence_experiment.py --psl11-centralizers # 240 certificates in
 python3 transposition_quotient_experiment.py --max-s 11 # quotient monodromies and independent S6 lifts
 python3 two_cycle_monodromy_experiment.py --max-degree 10 # all small matchings and canonical constructions
 python3 odd_transposition_monodromy_experiment.py --max-N 51 # every coprime one-cycle chord through S51
-python3 sparse_involution_cycle_experiment.py # full cycles with three or five transpositions
+python3 sparse_involution_cycle_experiment.py # sparse involutions paired with full odd cycles
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend
