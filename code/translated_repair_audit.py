@@ -9,6 +9,9 @@ Complete two-enumerator A5 check:
 Sampling imposes only a perfect matching and no all-a pentagon. A reported
 stall exhausts every translate and every individual difference circuit;
 finding a decreasing move is only a positive finite test, not a theorem.
+The universal locally valid single-circuit rule is false: see the explicit
+PSL(2,11) certificate in translated_block_repair.py. These earlier finite
+checks are retained as reproducible positive tests.
 """
 
 import argparse

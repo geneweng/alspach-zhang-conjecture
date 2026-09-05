@@ -24,6 +24,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/colour_support_experiment.py` | Exact signed-cycle test for a prescribed quotient colour support: all 243 local words, a comparison with restricted switches on S5, translated alternating-cycle repairs, independent quotient-matching starts, and all 32 Petersen supports. |
 | `code/translated_repair_audit.py` | Strict descent audit with independently checked flip certificates, complete SAT/backtracking agreement on all 10 500 order-five A5 supports, subgroup-invariant and successive-repair tests on larger groups, stabiliser divisibility checks, and a transitive non-Cayley stall control. |
 | `code/involution_repair_experiment.py` | Checks the involution-exchange lemma, verifies paired-circuit descent on all obstructed A5 supports, and certifies an explicit matching whose every decreasing flip loses stabiliser symmetry. |
+| `code/translated_block_repair.py` | Two explicit PSL(2,11) counterexamples to restricted repair rules, an independent all-translates stall certificate, the exact implication criterion for valid simultaneous flips, and successive closed-set repairs on larger samples. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -47,6 +48,16 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 9. Related flow problems and open questions.
 
 ## Status and next steps (5 September 2026)
+
+**Latest finding: the universal single-circuit repair rule is false.** On a 660-vertex
+PSL(2,11) Cayley graph, an explicit locally valid matching has four odd complementary cycles,
+but all 168 distinct single-circuit flips create an all-a pentagon. An independent graph
+reconstruction and traversal verify the obstruction. Flipping two circuits together colours
+the graph, so this is **not a counterexample to Alspach–Zhang**.
+A second matching rules out requiring an inclusion-minimal valid block to improve:
+two individually valid, non-improving flips jointly give a colouring.
+The survey proves that valid simultaneous flips are exactly implication-closed sets of
+difference circuits. Existence of a parity-improving closed set remains unproved.
 
 **Done.** 85 non-solvable groups verified (25 954 generating pairs, all 3-edge-colourable): every group
 admissible for a smallest Cayley snark of order below 352 440, i.e. a smallest Cayley snark has more than
@@ -80,8 +91,8 @@ one alternating-cycle flip against a group translate of the forced matching. Mor
 valid starting support always exists in the non-solvable order-five case: take a perfect matching of the
 quotient, whose existence follows from edge connectivity and Tutte's theorem. Of twelve sampled quotient
 matchings on S5, nine colour directly and the other three are repaired by one translated flip.
-An exhaustive check of all 32 Petersen supports fails, as expected. A general decreasing repair move
-has not been proved; the finite repair successes do not establish the conjecture.
+An exhaustive check of all 32 Petersen supports fails, as expected. These finite single-flip
+successes cannot be extrapolated: the PSL(2,11) certificate above refutes the universal rule.
 The repair rule is now verified on every locally valid support for both order-five A5 cases:
 two independent enumerators agree on all 10 500 supports, and every one of the 4090 obstructed states
 has a decreasing flip. Thus any such A5 start colours in at most two flips. Successive repairs also
@@ -99,7 +110,10 @@ For every involution outside its stabiliser, the union with its translate has no
 perfect matching. This is a barrier to stronger symmetry strategies, not a stalled descent.
 Solvable-group stress tests also pass: all 1480 locally valid supports on C5 wreath C2
 are enumerated, and a 30 000-matching sample is checked on the 80-element affine group.
-No complete proof and no counterexample.
+The more flexible closed-set repair reaches colourings from all 561 obstructed starts among
+6144 sampled centralizer-invariant matchings on twelve specified PSL(2,11) generating pairs,
+using at most nine decreasing steps. These are bounded samples, not an exhaustive theorem.
+No complete proof and no Cayley snark.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
 
@@ -123,12 +137,15 @@ quotient can be the Petersen snark even when the Cayley graph is colourable), an
 4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.
 For ord(x) = 5, the most direct current target is to choose a quotient colour support whose signed
 circuits all have even parity. A quotient perfect matching guarantees a locally valid start. Odd-sign
-circuits come in pairs; flipping an alternating cycle between the forced matching and a group translate
-is now verified to give a decreasing move on every obstructed locally valid A5 support, but no general decreasing
-move has been proved. The new stabiliser-divisibility lemma provides a constraint that genuinely uses
+circuits come in pairs. A single translated alternating-cycle flip works on every obstructed
+locally valid A5 support, but the universal rule fails on PSL(2,11). The current repair target
+allows an implication-closed union of difference circuits. Local validity is characterised
+exactly; proving that some closed union decreases the odd-circuit count remains open.
+Even restricting to inclusion-minimal valid blocks fails, so interactions between distinct
+valid flips matter. The stabiliser-divisibility lemma provides a constraint that genuinely uses
 regularity; it fails for the transitive, nonregular Petersen action. This is the even-2-factor
-obstruction in quotient coordinates, not a proof by itself. The involution-exchange lemma suggests
-restricting attention to paired difference circuits, but increased local agreement must not be
+obstruction in quotient coordinates, not a proof by itself. The involution-exchange lemma describes
+paired difference circuits, but they cannot suffice universally. Increased local agreement must not be
 confused with growth of the full stabiliser: the explicit A5 example forces symmetry loss at
 every first decreasing flip. Within the CDC approach, the remaining
 problem is to hit a transvection syndrome after first avoiding the new quotient-level obstructions;
@@ -153,6 +170,8 @@ python3 translated_repair_audit.py --samples 30000 --groups F80
 python3 translated_repair_audit.py --samples 2000 --groups W50 --independent --descend
 python3 involution_repair_experiment.py --exhaustive-a5
 python3 involution_repair_experiment.py --groups S5 A6 S6 --samples 512
+python3 translated_block_repair.py        # exact local check and both PSL(2,11) barriers
+python3 translated_block_repair.py --stress-psl11 512 --descend
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```

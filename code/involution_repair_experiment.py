@@ -7,6 +7,8 @@ python3 code/involution_repair_experiment.py --groups S5 A6 S6 --samples 512
 The first command independently enumerates all locally valid A5 supports.
 Only the explicit 60-vertex barrier and the completed enumerations are
 exhaustive results. No general decreasing-move theorem is assumed.
+The universal single-circuit rule, including this paired restriction, is
+refuted by the PSL(2,11) certificate in translated_block_repair.py.
 """
 
 import argparse
