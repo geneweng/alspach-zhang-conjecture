@@ -12,7 +12,8 @@ the exact chromatic number of each resulting eight-vertex palette graph.  It
 uses K_4 as a full-rank positive control, the Petersen graph as a negative
 control, and Cay(S_5,{(01),(01234),(04321)}) as a nontrivial colourable Cayley
 test.  Finally it starts the latter test from a rank-two (colour-aligned) flow
-to check the elementary positive direction.
+to check the elementary positive direction, and directly searches for the
+full-rank tetrahedral palette whose existence is equivalent to that direction.
 
 Run from the repository root with:
 
@@ -248,6 +249,105 @@ def gf2_rank(values):
     return rank
 
 
+def find_tetrahedral_palette(name, n, edges):
+    """Find a full-rank palette supported on an affine tetrahedron.
+
+    Each graph edge receives one of the six edges of a tetrahedron.  At each
+    cubic vertex the three labels must form one of its four triangular faces.
+    Requiring two different face types forces the induced F_2^3-flow to have
+    rank three.  This is a SAT formulation of a Tait colouring, not a new way
+    to find one; it is included to make the survey's diagnostic reproducible.
+    """
+    inc = [[] for _ in range(n)]
+    for ei, (u, v) in enumerate(edges):
+        inc[u].append(ei)
+        inc[v].append(ei)
+    assert all(len(es) == 3 for es in inc)
+
+    tetrahedron = (0, 1, 2, 4)
+    pair_indices = tuple(
+        (i, j) for i in range(4) for j in range(i + 1, 4)
+    )
+    m = len(edges)
+
+    def edge_var(ei, label):
+        return 6 * ei + label + 1
+
+    def face_var(v, omitted):
+        return 6 * m + 4 * v + omitted + 1
+
+    clauses = []
+    for ei in range(m):
+        choices = [edge_var(ei, label) for label in range(6)]
+        clauses.append(choices)
+        clauses.extend(
+            [-choices[i], -choices[j]]
+            for i in range(6) for j in range(i + 1, 6)
+        )
+
+    for v in range(n):
+        faces = [face_var(v, omitted) for omitted in range(4)]
+        clauses.append(faces)
+        clauses.extend(
+            [-faces[i], -faces[j]]
+            for i in range(4) for j in range(i + 1, 4)
+        )
+        for label in range(6):
+            for i in range(3):
+                for j in range(i + 1, 3):
+                    clauses.append([
+                        -edge_var(inc[v][i], label),
+                        -edge_var(inc[v][j], label),
+                    ])
+        for omitted in range(4):
+            for label, pair in enumerate(pair_indices):
+                if omitted in pair:
+                    for ei in inc[v]:
+                        clauses.append([
+                            -face_var(v, omitted), -edge_var(ei, label)
+                        ])
+
+    # Break the tetrahedral symmetry and force at least two local face types.
+    clauses.append([face_var(0, 0)])
+    clauses.append([
+        face_var(v, omitted)
+        for v in range(n) for omitted in range(1, 4)
+    ])
+
+    with Cadical153(bootstrap_with=clauses) as solver:
+        assert solver.solve()
+        model = {literal for literal in solver.get_model() if literal > 0}
+
+    labels = [
+        next(label for label in range(6) if edge_var(ei, label) in model)
+        for ei in range(m)
+    ]
+    faces = [
+        next(omitted for omitted in range(4) if face_var(v, omitted) in model)
+        for v in range(n)
+    ]
+    flow = [
+        tetrahedron[pair_indices[label][0]]
+        ^ tetrahedron[pair_indices[label][1]]
+        for label in labels
+    ]
+    assert all(flow[es[0]] ^ flow[es[1]] ^ flow[es[2]] == 0 for es in inc)
+    assert len(set(faces)) >= 2
+    assert gf2_rank(flow) == 3
+
+    label_counts = [labels.count(label) for label in range(6)]
+    face_counts = [faces.count(omitted) for omitted in range(4)]
+    print(
+        name,
+        "TETRAHEDRAL-SAT",
+        "flow_rank", gf2_rank(flow),
+        "clauses", len(clauses),
+        "face_counts", face_counts,
+        "label_counts", label_counts,
+        flush=True,
+    )
+
+
 def affine_solutions(particular, basis):
     """Enumerate an affine GF(2)-space once each, using Gray-code updates."""
     solution = particular
@@ -385,6 +485,9 @@ def main():
     assert examine(
         "Cay(S5; transposition, 5-cycle)", n, edges, trials=20
     ) > 4
+    find_tetrahedral_palette(
+        "Cay(S5; transposition, 5-cycle)", n, edges
+    )
     check_color_aligned_flow("Cay(S5; transposition, 5-cycle)", n, edges)
 
 
