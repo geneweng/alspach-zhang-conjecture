@@ -27,6 +27,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/translated_block_repair.py` | Two explicit PSL(2,11) counterexamples to restricted repair rules, an independent all-translates stall certificate, the exact implication criterion for valid simultaneous flips, and successive closed-set repairs on larger samples. |
 | `code/quotient_face_experiment.py` | Checks the minimum-a-edge matching face and quotient/lift exchanges, independently exhausts restricted invariant matching spaces, tests lexicographic minima and unrestricted PSL(2,11) descent samples, rules out a two-consecutive-matching shortcut on A5, and certifies positive mean oddness drift for two natural random repair rules. |
 | `code/loop_congruence_experiment.py` | Checks the unsigned/Tait count congruence, exhausts negative circuit-subset orbits, verifies sharp moduli and the nonfree Petersen control, and tests nonzero residues on complete small faces and invariant subfamilies. |
+| `code/transposition_quotient_experiment.py` | Checks the infinite transposition–odd-cycle construction on two-subset quotients, enumerates all invariant minimum-face matchings through S12, verifies cycle monodromies, and independently checks all 21 lifts on S6. |
 | `code/parity_interlacement.py` | Computes oddness both as the number of odd-degree vertices in the defect-incidence multigraph and as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
@@ -52,7 +53,23 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (5 September 2026)
 
-**Latest result: a congruence using the regular action.** For any invariant family of
+**Latest result: a uniform monodromy construction.** For every odd s >= 5, take
+G = S_(s+1), x an s-cycle, and a the transposition joining its fixed point to a point
+of the cycle. The survey proves that every C_G(a)-invariant matching in the
+minimum-a-edge face has an even complement. This class is nonempty and has exactly
+(s-2)^((s-1)/2) + (s-1)(s-2)^((s-3)/2) members. The proof controls the quotient cycle
+words: possible odd quotient pentagons have monodromy of even order s-1, so they lift
+to even cycles. Some of these matchings admit no colouring with all colours invariant
+under C_G(a), so this goes beyond colouring the subgroup quotient directly.
+
+The independent quotient checker exhausts 21, 275, 5145 and 124659 matchings for
+s = 5, 7, 9 and 11, and checks all 21 S6 lifts directly against a separate exact-cover
+enumerator. The theorem covers one generating pair per symmetric group of even degree,
+not arbitrary generators; no claim of priority over the Hamiltonicity literature is made.
+The Alspach–Zhang conjecture remains open. The next target is to control the orders of
+odd quotient-circuit words for more general generating pairs.
+
+**Previous result: a congruence using the regular action.** For any invariant family of
 perfect matchings, let U sum 2 to the number of complementary circuits, ignoring their
 parities, and let T count the corresponding labelled Tait colourings. The survey proves
 U = T modulo 4|G|_2 when 4 divides |G| (modulo 4 when |G|_2 = 2).
@@ -67,6 +84,10 @@ a colouring when 4 divides |G|. Each S5 case has 63 certifying non-Hamiltonian m
 orbits. The order-50 wreath-product face has no certifying orbit, so even selecting an
 invariant subfamily cannot make this test work there. Existence of a matching satisfying
 the bound in the remaining non-solvable cases is unproved; the original conjecture remains open.
+The extended PSL(2,11) check finds 240 certificates among 4336 centraliser-invariant
+matchings, including 224 non-Hamiltonian ones. In contrast, all 21 such S6 matchings
+have at least 16 complementary circuits and fail the bound of five; the monodromy
+construction proves their evenness instead.
 
 **Latest direction: an exchange-closed minimum-cost face.** Restrict to matchings selecting
 exactly one a-edge at each x-cycle. Whenever the contracted graph has a perfect matching
@@ -235,6 +256,8 @@ python3 transvection_switch_experiment.py # affine layers and direct order-five 
 python3 colour_support_experiment.py      # exact signed-cycle support criterion
 python3 quotient_face_experiment.py --s5-state-sum # signed-loop sum and optional exhaustive S5 values
 python3 loop_congruence_experiment.py --s5 # unsigned residues and every negative-state orbit
+python3 loop_congruence_experiment.py --psl11-centralizers # 240 certificates in 12 invariant classes
+python3 transposition_quotient_experiment.py --max-s 11 # quotient monodromies and independent S6 lifts
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend

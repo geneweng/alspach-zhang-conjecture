@@ -3,6 +3,7 @@
 
 python3 code/loop_congruence_experiment.py
 python3 code/loop_congruence_experiment.py --s5
+python3 code/loop_congruence_experiment.py --psl11-centralizers
 
 The unsigned count uses only numbers of complementary components. A separate
 vertex-set expansion enumerates negative states and their G x C_2 orbits,
@@ -258,9 +259,48 @@ def check_nonfree_control():
     print('LOOP-CONGRUENCE-NONFREE-PETERSEN', result, flush=True)
 
 
+def check_psl11_centralizers():
+    """Exhaust the twelve documented centralizer-fixed faces, not the full faces."""
+    from cayley_snark_check import inv, order, psl2
+
+    group = psl2(11)
+    x = min(h for h in group if order(h) == 5)
+    cx = [h for h in group if mul(h, x) == mul(x, h)]
+    unseen, representatives = {h for h in group if order(h) == 2}, []
+    while unseen:
+        a = min(unseen)
+        unseen -= {mul(mul(inv(h), a), h) for h in cx}
+        if len(closure([a, x])) == 660:
+            representatives.append(a)
+    assert len(representatives) == 6
+    total = Counter()
+    for i, a in enumerate(representatives):
+        subgroup = [h for h in group if mul(h, a) == mul(a, h)]
+        assert len(subgroup) == 12
+        for power, y in ((1, x), (2, mul(x, x))):
+            face = QuotientFace(RepairGraph([a, y], 660))
+            counts = Counter()
+            for matching in independent_matchings(face, subgroup):
+                lengths = [c.bit_count() for c in factor_vertex_sets(face.graph, matching)]
+                counts['matchings'] += 1
+                if len(lengths) <= 3:
+                    assert all(length % 2 == 0 for length in lengths)
+                    assert all(translate(matching, face.graph.actions[face.graph.index[h]])
+                               == matching for h in subgroup)
+                    counts['certified'] += 1
+                    counts['nonhamiltonian_certified'] += len(lengths) > 1
+            assert counts['matchings'] == (268, 372, 444, 444, 372, 268)[i]
+            assert counts['certified'] == (4, 16, 40, 40, 16, 4)[i]
+            total.update(counts)
+            print('LOOP-CONGRUENCE-PSL11-CENTRALIZER', i, power, dict(counts), flush=True)
+    assert total == {'matchings': 4336, 'certified': 240, 'nonhamiltonian_certified': 224}
+    print('LOOP-CONGRUENCE-PSL11-SUMMARY', dict(total), flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--s5', action='store_true')
+    parser.add_argument('--psl11-centralizers', action='store_true')
     args = parser.parse_args()
     check_sharpness()
     check_nonfree_control()
@@ -268,6 +308,8 @@ def main():
     if args.s5:
         names += ['S5', 'S5_alt']
     check_faces(names)
+    if args.psl11_centralizers:
+        check_psl11_centralizers()
 
 
 if __name__ == '__main__':
