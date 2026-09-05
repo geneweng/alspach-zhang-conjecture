@@ -404,6 +404,56 @@ of these matchings have a pentagon in their quotient complement.  Indeed, choose
 
 Proposition~\ref{prop:transposition-monodromy} concerns one specified generating pair on each $S_{s+1}$, not all cubic Cayley graphs on symmetric groups or all involution--odd-order generating pairs.  Its stronger assertion is the evenness of every matching in the displayed invariant minimum-face family.  The unresolved general task is to choose a subgroup and a matching for which all odd quotient-circuit words have even order; for this family the two-subset quotient restricts those words to the explicit ones above.
 
+The same two-subset quotient admits a simpler construction when the transposition joins two nontrivial cycles.  Here only one carefully chosen matching is asserted to work.
+\begin{proposition}[two coprime odd cycles]\label{prop:two-cycle-transposition}
+Let $m,n\ge3$ be odd and coprime.  On the disjoint union
+\[
+ U=\{u_i:i\in\ZZ_m\},\qquad V=\{v_j:j\in\ZZ_n\},
+\]
+put
+\[
+ x=(u_0\,u_1\,\cdots\,u_{m-1})(v_0\,v_1\,\cdots\,v_{n-1}),
+ \qquad a=(u_0\,v_0).
+\]
+Then $\langle a,x\rangle=S_{m+n}$ and $\X{S_{m+n}}{a}{x}$ has a $C_{S_{m+n}}(a)$-invariant perfect matching with even complement.
+\end{proposition}
+\begin{proof}
+The conjugates of $a$ by powers of $x$ are the transpositions $(u_i\,v_j)$ for all $(i,j)$, by the Chinese remainder theorem.  Their transposition graph is connected, so they generate $S_{m+n}$.
+
+Put $H=C_{S_{m+n}}(a)$ and $Y=H\backslash X$.  Again the quotient vertices are the two-subsets.  No conjugate of $x$ belongs to $H$: an odd-order permutation stabilising $\{u_0,v_0\}$ fixes its two points, whereas $x$ has no fixed point.  The $x$-orbits on the quotient vertices are the central orbit
+\[
+ A_t=\{u_{t\bmod m},v_{t\bmod n}\}\quad(t\in\ZZ_{mn})
+\]
+and the leaf orbits
+\[
+ P_{d,i}=\{u_i,u_{i+d}\}\quad
+ (1\le d\le(m-1)/2),\qquad
+ Q_{e,j}=\{v_j,v_{j+e}\}\quad
+ (1\le e\le(n-1)/2).
+\]
+They have odd lengths $mn,m,n$, respectively.  Every ordinary $a$-edge joins $A$ to a leaf.  On $P_d$ its two ends occur at positions $i=0,-d$; on $Q_e$ they occur at $j=0,-e$.  Every other $a$-dart on a leaf is a semi-edge.
+
+Select the ordinary $a$-edge from $P_{1,0}$ to $A_p$, where $p\equiv1\pmod m$ and $p\equiv0\pmod n$.  On every $P_d$ with $d\ge2$, select the semi-edge at $P_{d,1}$, and on every $Q_e$, select the semi-edge at $Q_{e,1}$.  Thus every $x$-orbit is incident with exactly one selected $a$-dart: the first ordinary edge covers both $P_1$ and $A$, and each remaining leaf supplies its own semi-edge.  On each odd $x$-orbit, match the vertices left over by that dart along the unique alternating matching of the remaining even path.  The result is a perfect matching $\bar M$ of $Y$, which lifts to an $H$-invariant perfect matching $M$ of $X$.
+
+It remains to inspect $Y-\bar M$.  On an odd cycle whose selected $a$-dart is at position one, the retained $x$-edges consist of the two-edge path through positions $0,1,2$ and isolated edges.  On $P_d$ with $d\ge2$, the two ordinary attachment positions $0,-d$ therefore lie in distinct components.  The same holds on every $Q_e$: for $e=1$ the edge joining $-1$ to $0$ belongs to the matching, and for $e\ge2$ the preceding observation applies.  On $P_1$ one of the two ordinary $a$-edges was itself selected, so only one attachment remains in the complement.
+
+Consequently no component can pass through a leaf from one central attachment to the other.  Every component entering a leaf ends instead at a semi-edge; a component contained in $A$ also ends at semi-edges unless it enters a leaf.  Hence $Y-\bar M$ has no circuit components at all: it is a union of paths capped by semi-edges.  Lemma~\ref{lem:matching-monodromy} says that every component of $X-M$ is even.
+\end{proof}
+
+\begin{corollary}[the transposition case in even degree]\label{cor:even-symmetric-transposition}
+Let $N\ge4$ be even, let $a$ be a transposition and let $x\in S_N$ have odd order.  If $\langle a,x\rangle=S_N$, then $\X{S_N}{a}{x}$ is $3$-edge-colourable.
+\end{corollary}
+\begin{proof}
+All cycles of $x$ have odd length.  Since $a$ meets at most two of them, transitivity forces $x$ to have exactly two cycles, of odd lengths $m,n$, with the two points of $a$ in different cycles.  If $d=\gcd(m,n)>1$, the sets
+\[
+ \{u_i:i\equiv r\pmod d\}\cup\{v_j:j\equiv r\pmod d\},
+ \qquad r\in\ZZ_d,
+\]
+form a nontrivial block system preserved by $a$ and cyclically permuted by $x$, contrary to $\langle a,x\rangle=S_N$.  Thus $m,n$ are coprime.  If both exceed one, apply Proposition~\ref{prop:two-cycle-transposition}.  If one equals one, Proposition~\ref{prop:index2-three} handles the other length three (using the normal subgroup $A_4\trianglelefteq S_4$), and Proposition~\ref{prop:transposition-monodromy} handles every larger odd length.
+\end{proof}
+
+The restriction to a chosen matching in Proposition~\ref{prop:two-cycle-transposition} is real.  For $(m,n)=(3,5)$, the quotient has $111$ matchings obtained by selecting one $a$-dart per $x$-orbit.  Eight have a complementary quotient circuit of length nine and monodromy order five, so their lifts have odd circuits; the construction in the proof avoids them.  Thus the monodromy method has changed the missing step from eliminating every odd word to selecting a matching which avoids the bad words.
+
 \subsection{The colourings as functions $G\to\ZZ_3$}\label{sec:Z3}
 Let $X=\X{G}{a}{x}$ with $s=\ord(x)$ odd, and identify the three colours with the elements of $\ZZ_3$, so that the three colours at a vertex sum to $0$.  Given a $3$-edge-colouring $\kappa$ of $X$, let $t(g)\in\ZZ_3$ be the colour of the $a$-edge at $g$, i.e.\ the colour missing from the two $x$-edges at $g$.  Then $t(ga)=t(g)$, and $\kappa$ is determined by $t$: on the $x$-cycle through $g$, the colour of the edge $\{gx^{i},gx^{i+1}\}$ is $-\bigl(t(gx^{i})+\kappa(\{gx^{i-1},gx^i\})\bigr)$, and the following lemma shows that $t$ determines $\kappa$ on the cycle without any initial choice.  We say that a function $t\colon\ZZ_s\to\ZZ_3$ is \emph{admissible} if it is the sequence of colours of the pendant edges in some proper $3$-edge-colouring of the cycle $C_s$ (with a pendant edge attached at each vertex), equivalently the sequence of colours missing at the vertices of $C_s$.
 
@@ -1539,6 +1589,8 @@ $11$ & $124659$ & $26244$\\
 \end{center}
 Every odd quotient circuit is a pentagon with monodromy of order $s-1$, and therefore lifts to even circuits.  At $s=5$, one matching has two such quotient pentagons; for $s\ge7$ there is at most one.  The script multiplies the actual traversal words and checks their permutation orders.  For $S_6$, it also lifts all $21$ matchings to the full $720$-vertex graph, checks their complementary circuits and colourings, and compares the entire matching set with the independent exact-cover enumeration.  Thus the finite tests verify the construction at larger parameters and independently upstairs at $s=5$; the assertion for all odd $s\ge5$ rests on the displayed proof, not on extrapolation from the enumeration.
 
+The companion \nolinkurl{code/two_cycle_monodromy_experiment.py} implements Proposition~\ref{prop:two-cycle-transposition}.  It verifies directly that the canonical quotient complement has no circuit for all $33$ coprime odd pairs through total degree thirty.  It also exhausts every one-dart-per-orbit quotient matching through degree ten.  For $(m,n)=(3,5)$ it finds $103$ good and eight bad matchings, the latter having a quotient $9$-cycle of monodromy order five; for $(3,7)$ the corresponding counts are $1775$ and $250$.  These bad cases independently check that the monodromy parity test is detecting a genuine selection issue.  The universal even-degree conclusion is proved above rather than inferred from these finite tests.
+
 Minimising the total circuit count alone is insufficient: on the wreath-product example its minimum within $\mathcal F$ is two, attained by ten even factors and ten factors with two odd circuits.  There is no Hamiltonian complement anywhere in that face.  Nevertheless, lexicographically minimising first the number of circuits and then oddness gives zero oddness in all four complete small spaces and all twelve exact invariant $\PSL(2,11)$ spaces.  The positive-drift certificate below shows that a useful repair may increase the total circuit count, so this observation needs a global minimisation argument rather than the presently tested descent.
 
 Even within this safe face, a uniform averaging argument fails.
@@ -1570,7 +1622,7 @@ These rational values are verified by exhaustive finite enumeration in the face 
 \item (Girth.)  Does Conjecture~\ref{conj:AZ} hold for cubic Cayley graphs of girth $3$ and $5$ (equivalently, by Proposition~\ref{prop:girth}, for generators $x$ of order $3$ and $5$), and of girth $6$?  In the girth-three case Corollary~\ref{cor:three-simple} reduces the problem to non-abelian simple groups.  Does the conjecture hold for girth at least $7$, i.e.\ is there a cyclically $7$-edge-connected Cayley snark?
 \item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
 \item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for a subgroup $H$ of index at most $9\,240$ (Table~\ref{tab:computation}), often a point stabiliser or an involution centraliser; is there always an $H$-invariant colouring with $H$ of bounded index (say $|G:H|\le c\,|G|^{1/2}$), or with $H$ from a specific family such as the centraliser of an involution?
-\item (Matching monodromy.)  Can one construct a proper subgroup $H$ avoiding the conjugacy class of $x$ and a matching in $H\backslash X$ for which every odd complementary quotient circuit has an even-order traversal word, as in Lemma~\ref{lem:matching-monodromy}?  Proposition~\ref{prop:transposition-monodromy} controls all possible words for one infinite symmetric-group family, including matchings whose complementary colours cannot descend.  Extending this control to a broader family of involutions and odd-order generators is a concrete alternative to bounding the total number of lifted circuits.  The existence of an arbitrary matching does not control these word orders.
+\item (Matching monodromy.)  Can one construct a proper subgroup $H$ avoiding the conjugacy class of $x$ and a matching in $H\backslash X$ for which every odd complementary quotient circuit has an even-order traversal word, as in Lemma~\ref{lem:matching-monodromy}?  Propositions~\ref{prop:transposition-monodromy} and \ref{prop:two-cycle-transposition} settle all even-degree symmetric-group generating pairs with $a$ a transposition, including matchings whose complementary colours cannot descend.  Can the two-subset construction handle the remaining odd-degree transposition pairs, where $x$ is one odd cycle and the endpoints of $a$ can have arbitrary coprime cyclic distance?  Beyond transpositions, the existence of an arbitrary matching does not control the circuit-word orders.
 \item (Cycle-double-cover palette and quotient switches.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  When $s=5$, it suffices instead to choose a quotient flow whose affine switch system in Proposition~\ref{prop:quotient-switch} is consistent: this already constructs a colouring without the lifts.  Equivalently, in the regular-map formulation, can symmetry or duality select a homology class $h$ and a face potential $z$ satisfying Proposition~\ref{prop:homology-flow}?  The chromatic-number-five duals on $\PSL(2,11)$ show that the zero class is not enough.  The local repeated-value filter is necessary but not sufficient.  Can the Cayley action rule out a global inconsistency certificate for a suitable choice of quotient flow?  Arbitrarily choosing an admissible quotient flow would merely assume the desired colouring, so the choice must have an independent existence proof.
 \item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  The affine layer assignments are exactly the characteristic vectors in Proposition~\ref{prop:affine-layer}, and lift changes preserving $B_c$ preserve this whole affine set.  For $s=5$, its intersection with the affine switch system gives an additional necessary condition for a transvection palette.  Making $B_c$ have small rank alone is insufficient; the quotient flow of the dimension-six experiment is locally obstructed for every choice of lifts.  After avoiding these obstructions, can the remaining lift freedom control the full syndrome?
 \item (Colour support and signed circuits.)  For $s=5$, can the Cayley action be used to choose a support $P$ satisfying Proposition~\ref{prop:colour-support} with every circuit of $H_P$ sign-even?  Proposition~\ref{prop:starting-support} guarantees a locally valid start.  The universal single-circuit descent rule is false, even on $\PSL(2,11)$, by Proposition~\ref{prop:block-barriers}; restricting to minimal valid blocks also fails.  Does every obstructed locally valid matching admit a translate and a proper implication-closed union of difference circuits whose simultaneous flip reduces the odd-circuit count?  Lemma~\ref{lem:mixture-implications} characterises local validity exactly, but does not force this global parity improvement.  Such a theorem would prove the order-five case by descent.  Alternatively, can neutral or temporarily non-local-valid intermediate moves be controlled?  Example~\ref{ex:symmetry-barrier} also excludes monotone growth of the matching stabiliser as a requirement at every step.
