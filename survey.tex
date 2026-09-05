@@ -771,6 +771,35 @@ The correction term in \eqref{eq:quotient-form} is symmetric as well.  For fixed
 
 Thus several prescribed indicators extend for the same lifts precisely when their span lies in the radical of one member of the affine family $B_c$.  For a prescribed span this is a linear system in the $2|V(Q)|$ coordinates of $c$; finding a large span amounts to making $B_c$ have small rank.  The rank measures available directions, while the transvection syndrome still tests whether those directions solve the colouring equations.
 
+The same matrix describes the affine, rather than homogeneous, first-coordinate assignments of the actual palette.  Let $r_e$ now denote the layer containing the palette pair of an $a$-edge $e$; this is well-defined at both endpoints.  Use the local order consisting of the $a$-edge, the incoming $x$-edge, and the outgoing $x$-edge at every vertex of an oriented $x$-cycle.  The associated offsets are $0,(0,p_i),0$.
+
+\begin{proposition}[affine layer equation]\label{prop:affine-layer}
+For a fixed generator-separated flow $f_c$, the attainable $a$-edge layer assignments are exactly
+\begin{equation}\label{eq:characteristic-layer}
+ \mathcal A_c=\{r\in\mathcal S_\phi:
+ B_c(r,t)=B_c(t,t)\text{ for all }t\in\mathcal S_\phi\}.
+\end{equation}
+This is a nonempty affine translate of $\operatorname{rad} B_c$.  In particular, changing the lifts while preserving $B_c$ also preserves the entire set of attainable layer assignments, not just its homogeneous directions.
+\end{proposition}
+\begin{proof}
+Write the vertex translation at position $i$ on an $x$-cycle as $(r_i,w_i)$.  The first coordinates of the compatibility system make $r$ constant across $a$-edges.  On the outgoing $x$-edge they give $\epsilon_i=r_i+r_{i+1}$, so the lower-coordinate equation is
+\[
+ w_i+w_{i+1}=(r_i+r_{i+1})y_i+p_{i+1}.
+\]
+Summing around the cycle shows $r\in\mathcal S_\phi$.  If $h_i$ is the particular homogeneous potential used in Proposition~\ref{prop:lift-obstruction}, every solution on this cycle is $w_i=y_i+h_i+d_C$.  Thus the remaining $a$-edge equations have dependencies $t\in\mathcal S_\phi$ and are consistent exactly when
+\[
+ B_c(r,t)=\kappa(t),\qquad
+ \kappa(t)=\sum_C\sum_i t_i[p_i,y_i].
+\]
+The functional $\kappa$ is independent of the lift translations.  Taking the reference partial sums for $y$ gives
+\[
+ q(t)+\kappa(t)
+ =\sum_C\sum_{j<i}t_i t_j[p_i,p_j]
+ =\sum_C\sum_i t_i=0.
+\]
+For the middle equality, the multiplicities of the three nonzero values among the selected edges at $C$ have the same parity, since their sum is zero.  Both the sum over pairs of different values and the number of selected edges therefore have that parity.  The last equality counts each selected quotient edge twice.  Consequently $\kappa(t)=q(t)=B_c(t,t)$, proving \eqref{eq:characteristic-layer} and its sufficiency.  The diagonal of a symmetric form vanishes on its radical, so belongs to the image of the form as a linear map to the dual space; hence the displayed affine system is always consistent.
+\end{proof}
+
 The same argument gives a simultaneous form which is useful when one wants a high-dimensional space $\mathcal R_f$.  Let $r^1,\ldots,r^k$ satisfy \eqref{eq:quotient-subflow}.  Using one fixed starting point at each quotient vertex, one choice of the lifts makes all of them extendable if and only if
 \[
  \sum_{\ell=1}^k\sum_C\omega_C(r^\ell,\lambda^\ell)=0
@@ -912,7 +941,80 @@ All solutions of $y_{i-1}+y_i=p_i$ around the cycle are obtained by translating 
 For $s=5$, the flow equation makes the multiplicities of the three nonzero elements of $A$ all odd, hence they are $3,1,1$.  Write the repeated value as $r$ and the other two as $u,v$, so $r=u+v$.  If the three $r$'s are consecutive, a direct partial-sum calculation omits one element of $A$.  Otherwise the two exceptional entries separate the three $r$'s into nonempty blocks; up to reversal and cyclic shift the word is $u,r,v,r,r$, whose partial sums visit $u,v,0,r$, all of $A$.
 \end{proof}
 
-Thus the four parallel targets are merely direct Tait-flow criteria in different coordinates.  The twelve transvection targets are the part of the paper's methodology that remains potentially useful: they ask whether the duality proof of consistency for \eqref{eq:cdc-system} can survive a particular family of extra linear equations.
+Thus the four parallel targets are direct Tait-flow criteria in different coordinates.  The transvection targets can also be tested against a simpler necessary condition on the quotient labels.  Call a cyclic word of nonzero values in $A$ \emph{admissible} if it sums to zero and its cyclic partial sums omit an element of $A$, as in Proposition~\ref{prop:parallel-matching}.
+
+\begin{proposition}[quotient switches for transvection targets]\label{prop:quotient-switch}
+Fix a transvection $L\in\operatorname{GL}(2,2)$, and for $r\in\mathcal S_\phi$ define the switched quotient flow
+\[
+ \psi_r(e)=L^{r_e}p_e.
+\]
+If a palette for $f_c$ is certified by a matching $\mathcal M_{L,d}$, its $a$-edge layer assignment $r$ belongs to $\mathcal A_c$, and every cyclic word of incident $\psi_r$-values is admissible.  Conversely, finding any $r\in\mathcal S_\phi$ with all these words admissible gives a Tait colouring of $X$ directly, without needing a palette or the original lifts $c$.
+
+When $s=5$, the set of such switches $r$ is an affine subspace of $\mathcal S_\phi$, possibly empty, and can be found by solving a binary linear system on $E(Q)$.
+\end{proposition}
+\begin{proof}
+Colour a palette point $(0,z)$ by $z$ and $(1,z)$ by $L(z+d)$.  These are the four colours identified by the matching, because $L^2=I$.  The extracted Tait flow on an $a$-edge in layer $r_e$ has value $L^{r_e}p_e$.  Its nonzero $x$-edge values around a cycle have consecutive differences $\psi_r(e)$, so their partial sums omit a value.  The assertion $r\in\mathcal A_c$ is Proposition~\ref{prop:affine-layer}.
+
+For the converse, $\psi_r$ is indeed a quotient flow: writing $N=I+L$, its sum at a quotient vertex is
+\[
+ \sum_{e\ni C}\psi_r(e)
+ =\sum_{e\ni C}p_e+N\sum_{e\ni C}r_ep_e=0.
+\]
+Assign $\psi_r(e)$ to each $a$-edge and take cyclic partial sums on each $x$-cycle, translated by an omitted value.  Every resulting $x$-edge value is nonzero and the vertex flow equations hold.  This is a nowhere-zero $\mathbb F_2^2$-flow, hence a Tait colouring.  This converse asserts a colouring, not necessarily a palette for the prescribed $f_c$.
+
+For $s=5$, write the repeated value as $a$ and the other two as $b,c=a+b$.  The local subflow condition has eight solutions.  Up to cyclic order reversal, starting point, and relabelling of $A$, the table below gives the extra condition for the switched word to be admissible; positions are indexed from $0$ to $4$.  Its columns specify the nonzero value fixed by $L$.
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Original cyclic word & fixes $a$ & fixes $b$ & fixes $c$\\
+\midrule
+$(a,a,a,b,c)$ & no extra condition & $r_0+r_1=0$ & $r_1+r_2=0$\\
+$(a,a,b,a,c)$ & impossible & $r_1+r_3=1$ & $r_0+r_3=1$\\
+\bottomrule
+\end{tabular}
+\end{center}
+To check the table, the eight local subflows are the empty and full sets, the three pairs of repeated-value positions, and their complements.  Switch the indicated labels in each case and apply the consecutive-triple criterion of Proposition~\ref{prop:parallel-matching}.  Thus each vertex contributes either no extra equation, a contradiction, or one affine equation.  Together with the local subflow equations these form the asserted global linear system.
+\end{proof}
+
+In particular, if the value fixed by $L$ is repeated at a quotient vertex in three nonconsecutive positions, no choice of lifts can produce a palette certified by any $\mathcal M_{L,d}$.  If each of the three values has such a vertex, all twelve transvection targets are excluded for that quotient flow.  This obstruction precedes the choice of the form $B_c$ and is unchanged by every lift modification.
+
+For a fixed $B_c$, the affine switch system may also be intersected with \eqref{eq:characteristic-layer}; if this intersection is empty, every lift giving that form is excluded.  For constructing a Tait colouring, however, the switch system alone suffices.  The remaining existence problem is to choose $\phi$ so that it is consistent for at least one transvection.  Merely removing the impossible local pattern does not guarantee global consistency.
+
+There is a further simplification if one no longer requires the changes of quotient labels to come from a subflow in $\mathcal S_\phi$.  A transvection fixes one nonzero value $k$, so it preserves the set of quotient edges with that value.  Instead of keeping the rest of $\phi$, prescribe only this \emph{colour support} $P\subseteq E(Q)$.  For $s=5$, the remaining two labels can be recovered by an exact signed-cycle test.
+
+\begin{proposition}[fixed-colour support criterion]\label{prop:colour-support}
+Suppose $s=5$.  A set $P\subseteq E(Q)$ can be exactly the set of $a$-edges receiving a specified Tait colour $k$ if and only if the following conditions hold.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item At every quotient vertex, $P$ occupies either one position or three cyclically consecutive positions.
+\item The signed $2$-regular multigraph $H_P$ described below has even sign sum on every circuit.
+\end{enumerate}
+The vertices of $H_P$ are the edges of $Q$ outside $P$.  At a quotient vertex with three positions in $P$, join the other two edges by a sign-$1$ edge.  At a vertex with one position in $P$, index its cyclic order as $e_0,e_1,e_2,e_3,e_4$ with $e_0\in P$; join $e_2$ to $e_3$ with sign $0$ and $e_1$ to $e_4$ with sign $1$.
+
+When both conditions hold, there are exactly $2^{c(H_P)}$ labelled Tait colourings with the prescribed support.  The number of circuits with odd sign sum is always even.  In particular, a connected $H_P$ is sufficient.
+\end{proposition}
+\begin{proof}
+Write the two colours other than $k$ as $b$ and $b+k$, and encode their choices by bits $u_e$ on $E(Q)\setminus P$.  In an admissible five-letter word every colour appears once or three times, and the repeated colour occupies consecutive positions; this proves the necessity of \textup{(i)}.  If $k$ occurs three times consecutively, the other two labels must differ, giving the sign-$1$ equation.  If only $e_0$ has value $k$, admissibility is equivalent to
+\[
+ u_{e_2}+u_{e_3}=0,\qquad u_{e_1}+u_{e_4}=1.
+\]
+Indeed, the three equal labels must occupy either positions $1,2,3$ or positions $2,3,4$.  These are exactly the two relations defining $H_P$ at this vertex.
+
+Each quotient edge outside $P$ participates in one relation at each endpoint, so $H_P$ is $2$-regular.  Propagating the bits around a circuit is consistent exactly when the sum of its signs is zero, and then there are two choices on that circuit.  Every locally admissible quotient word has a unique extension to nonzero $x$-edge values: of its four possible partial-sum translations, exactly one avoids zero.  This proves sufficiency and the count.
+
+There is exactly one sign-$1$ relation per quotient vertex.  Since $|V(Q)|=|G|/5$ is even, the total sign sum is zero.  Thus the number of odd-sign circuits is even, and a single circuit must have even sign sum.
+\end{proof}
+
+This criterion is the ordinary even-$2$-factor obstruction expressed in quotient coordinates, not an independent existence theorem.  Once $P$ satisfies \textup{(i)}, the perfect matching of colour $k$ is forced: on each $x$-cycle match the vertices not incident with a selected $a$-edge along the remaining even path or edge.  The circuits of $H_P$ record the components of its complementary $2$-factor, and their sign sums record the parities of those components.  In particular the connected case is a Hamilton-cycle criterion.  The benefit over the CDC-restricted switches is that no unnecessary layer-subflow constraint remains.  The unresolved task is to choose $P$ so that all these circuit parities vanish; the Cayley action does not force this for every locally valid $P$.
+
+The starting support, however, can be obtained without assuming any colouring condition.
+\begin{proposition}[a locally valid starting support]\label{prop:starting-support}
+If $G$ is non-solvable and $s=5$, the quotient $Q$ has a perfect matching.  Any such matching, used as $P$, satisfies condition \textup{(i)} of Proposition~\ref{prop:colour-support}.
+\end{proposition}
+\begin{proof}
+As observed after Proposition~\ref{prop:separated-eight-flow}, $Q$ is simple, $5$-regular and $5$-edge-connected.  It has even order.  For a nonempty vertex set $U$, each odd component of $Q-U$ sends at least five edges to $U$, while at most $5|U|$ such edges are available.  Thus the number of odd components is at most $|U|$.  For $U=\varnothing$ it is zero, since $Q$ is connected and even.  Tutte's $1$-factor theorem \cite{Tutte47} supplies a perfect matching.  Its support has exactly one position at each quotient vertex, as required.
+\end{proof}
+
+Here is a concrete use of the group action that remains to be justified in general.  Let $M(P)$ be the forced matching upstairs and let $g\in G$.  The symmetric difference $M(P)\mathbin\triangle gM(P)$ is a union of even alternating circuits.  Flipping any one circuit $D$ gives another perfect matching $M'=M(P)\mathbin\triangle D$.  Its $a$-edge support $P'$ is locally valid provided it does not select all five positions at any quotient vertex; matching the remaining vertices of a pentagon forces precisely the one-position or consecutive-three-position patterns.  Therefore it would suffice to prove that, whenever $H_P$ has an odd-sign circuit, some translate and some alternating circuit give a locally valid $P'$ with strictly fewer odd-sign circuits.  Starting with Proposition~\ref{prop:starting-support}, strict descent would terminate at a colouring.  This repair statement is \emph{not proved}; the experiment below only checks several small instances.
 
 We made a small diagnostic computation, reproducible with \nolinkurl{code/cdc_palette_experiment.py}.  On $K_4$, five distinct full-rank flows gave $40$ labelled outputs, all with palette chromatic number $4$.  For three distinct full-rank flows on the Petersen graph, one choice of local orders per flow led to affine solution spaces of dimensions $3,3,4$; all $32$ resulting palettes had chromatic number $5$, as they must if Proposition~\ref{prop:palette} is to pass this negative control.  For the colourable graph $\Cay(S_5,\{(0\,1),(0\,1\,2\,3\,4),(0\,4\,3\,2\,1)\})$, twenty distinct full-rank flows gave $600$ affine solutions (counted as labelled outputs): $240$ had palette chromatic number $7$ and $360$ had palette chromatic number $8$, with none $4$-colourable.  A direct SAT search does find a rank-three flow with a tetrahedral palette on this graph, as Proposition~\ref{prop:full-rank-palette} predicts, but that search simply solves an equivalent form of the Tait-colouring problem.  A second SAT search finds a generator-separated rank-three flow and an output certified by a transvection matching, while forcing all four lower-coordinate differences to occur on $x$-edges; hence none of the four parallel matchings can certify that output.  This confirms that the linearised target is strictly more flexible than Proposition~\ref{prop:parallel-matching}, although the search again uses the desired colouring condition rather than proving it.  The experiment shows that merely taking an arbitrary $8$-flow and solving the paper's linear system need not reveal the desired colouring, even for a small Cayley graph.  The new method therefore supplies sharp reformulations and a potentially useful family of augmented linear systems, but not at present a proof of the Alspach--Zhang conjecture.
 
@@ -921,6 +1023,14 @@ For that separated transvection witness the compatibility system has nullity $8$
 As a check against selection bias, the script also constructs twelve distinct quotient $\mathbb F_2^2$-flows, chooses lifts and local data independently of any colouring target, and tests all twelve transvection matchings after solving the original compatibility system.  The resulting weighted cut-code dimensions were $0$ once, $1$ eight times, and $2$ three times; their quotient codes were all zero, so every nonzero direction again came from $\mathcal R_f$.  None of the $144$ augmented systems was consistent.  This small sample is not evidence against the conjecture---the graph is colourable and the preceding witness succeeds---but it shows that the successful dimension-five layer-potential space is special and that an arbitrary application of the cycle-double-cover solver is unlikely to find it.
 
 A separate experiment, \nolinkurl{code/layer_potential_experiment.py}, checks Proposition~\ref{prop:quotient-form} against the original vertex equations on the Petersen graph and on this $S_5$ Cayley graph, including cases with several simultaneous layer potentials.  It then fixes a quotient flow sampled without any colouring constraint and searches its lifts using only the rank of $B_c$.  The subflow space has dimension $14$, and the search finds a $14\times14$ matrix of rank $7$.  Its radical has dimension $7$, so $\dim\mathcal R_{f_c}=6$; the quotient cut code is zero, giving $\dim\mathcal K_{f_c}=6$.  Nevertheless all twelve transvection systems fail for this flow.  Thus even a larger space than that of the successful dimension-five witness need not solve the colouring equations.  This is a finite search result, not a claim that rank $7$ is minimal for the matrix family.  The local-order invariance proved after Proposition~\ref{prop:cdc-rigidity} is also checked exhaustively on all $252$ ordered local-flow configurations by the palette script.
+
+The experiment \nolinkurl{code/transvection_switch_experiment.py} gives a stronger explanation of that failure.  The same quotient flow has respectively $6,4,4$ vertices where values $1,2,3$ are repeated in nonconsecutive positions.  Proposition~\ref{prop:quotient-switch} therefore excludes all twelve transvection targets for \emph{every} one of its $2^{48}$ lift choices, not just the rank-seven choice found by the search.  The script also checks the affine layer equation against the full compatibility system on this flow, the successful separated witness, and the Petersen graph, and verifies all $180$ order-five word/transvection cases in the displayed switch table.
+
+To test the new construction without assuming the colouring constraint, a SAT sampler chooses twelve distinct quotient flows subject only to the flow equations and the absence of the impossible local pattern for the transvection fixing $1$.  There are $50$ allowed local words out of the $60$ nonzero zero-sum words of length five.  The sampler does not encode the switches or any Tait colouring.  Exactly one of these twelve flows has a consistent switch system; its solution space has dimension one, and the resulting Tait colouring is constructed and verified directly at all $120$ vertices.  The other eleven show that the local filter alone does not suffice.  As a negative control, twelve filtered quotient flows on the Petersen graph have inconsistent switch systems for all three transvections.  These are diagnostic samples, not an exhaustive classification or a probability estimate.  The useful reduction is an affine test for a \emph{fixed} quotient flow; choosing a flow that is guaranteed to pass remains unproved.
+
+Finally, \nolinkurl{code/colour_support_experiment.py} applies Proposition~\ref{prop:colour-support} to the same twelve flows, keeping only their colour-$1$ supports.  Eight tests now succeed, and all eight resulting colourings are checked directly; seven were excluded by the extra subflow requirement in the restricted switch system.  The four failures each have two odd-sign circuits, giving explicit inconsistency certificates even though the input graph is Cayley.  The twelve flows have eight distinct supports, five successful and three unsuccessful, so the counts over flows compare the two tests on the same inputs rather than estimate a success rate over supports.  Each of the three unsuccessful supports is repaired by one alternating-circuit flip against a left translate of its forced matching; the flipped circuits have lengths $38,42,26$, respectively.  The repaired colourings are independently verified.
+
+The same script then samples twelve distinct perfect matchings of $Q$, without a quotient-flow or colouring constraint, implementing the guaranteed starting choice of Proposition~\ref{prop:starting-support}.  Nine supports give a colouring directly.  The remaining three each have two odd-sign circuits and are repaired by one translated alternating-circuit flip, of lengths $24,42,60$.  These computations test the proposed move but do not establish its availability beyond the displayed inputs.  As independent checks, the script compares the signed circuits with the actual complementary $2$-factor upstairs, verifies the local relations on all $3^5=243$ words, and checks all $32$ supports of the Petersen quotient: just five are locally valid, and each has two sign-odd circuits of length two.  Thus the negative control is exhaustive at the support level.
 
 \section{Open problems}\label{sec:open}
 
@@ -932,8 +1042,9 @@ A separate experiment, \nolinkurl{code/layer_potential_experiment.py}, checks Pr
 \item (Girth.)  Does Conjecture~\ref{conj:AZ} hold for cubic Cayley graphs of girth $3$ and $5$ (equivalently, by Proposition~\ref{prop:girth}, for generators $x$ of order $3$ and $5$), and of girth $6$?  In the girth-three case Corollary~\ref{cor:three-simple} reduces the problem to non-abelian simple groups.  Does the conjecture hold for girth at least $7$, i.e.\ is there a cyclically $7$-edge-connected Cayley snark?
 \item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
 \item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for a subgroup $H$ of index at most $9\,240$ (Table~\ref{tab:computation}), often a point stabiliser or an involution centraliser; is there always an $H$-invariant colouring with $H$ of bounded index (say $|G:H|\le c\,|G|^{1/2}$), or with $H$ from a specific family such as the centraliser of an involution?
-\item (Cycle-double-cover palette.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  This is already open when $x$ has prime order at least $5$, where the required generator-separated flow always exists.  Propositions~\ref{prop:full-rank-palette} and~\ref{prop:parallel-matching} explain why full rank and the four parallel matchings do not by themselves advance the conjecture.
-\item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  Making $B_c$ have small rank alone is insufficient, as the dimension-six experiment shows.  The consecutive monochromatic cycles of Proposition~\ref{prop:mono-cycle} and the order-five criterion of Proposition~\ref{prop:order-five-interlacement} give concrete sufficient patterns for individual directions; the simultaneous obstruction above describes when they share a choice of lifts.  For $s=5$, can the lift bits that preserve $B_c$ be used to control the syndrome?
+\item (Cycle-double-cover palette and quotient switches.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  When $s=5$, it suffices instead to choose a quotient flow whose affine switch system in Proposition~\ref{prop:quotient-switch} is consistent: this already constructs a colouring without the lifts.  The local repeated-value filter is necessary but not sufficient.  Can the Cayley action rule out a global inconsistency certificate for a suitable choice of quotient flow?  Arbitrarily choosing an admissible quotient flow would merely assume the desired colouring, so the choice must have an independent existence proof.
+\item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  The affine layer assignments are exactly the characteristic vectors in Proposition~\ref{prop:affine-layer}, and lift changes preserving $B_c$ preserve this whole affine set.  For $s=5$, its intersection with the affine switch system gives an additional necessary condition for a transvection palette.  Making $B_c$ have small rank alone is insufficient; the quotient flow of the dimension-six experiment is locally obstructed for every choice of lifts.  After avoiding these obstructions, can the remaining lift freedom control the full syndrome?
+\item (Colour support and signed circuits.)  For $s=5$, can the Cayley action be used to choose a support $P$ satisfying Proposition~\ref{prop:colour-support} with every circuit of $H_P$ sign-even?  Proposition~\ref{prop:starting-support} guarantees a locally valid starting support.  Can one always reduce the number of odd-sign circuits by flipping a component of $M(P)\mathbin\triangle gM(P)$ for a suitable $g\in G$, while preserving local validity?  This would prove the order-five case by descent.  The small $S_5$ repair tests succeed, but no general decreasing move has been proved; local validity alone is insufficient even on that Cayley graph.
 \end{enumerate}
 
 \subsection*{Acknowledgements}
@@ -1026,6 +1137,8 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 \bibitem{PSV13} P.~Poto\v{c}nik, P.~Spiga, G.~Verret, Cubic vertex-transitive graphs on up to 1280 vertices, \emph{J. Symbolic Comput.} 50 (2013) 465--477.
 
 \bibitem{SawadaWilliams20} J.~Sawada, A.~Williams, Solving the sigma-tau problem, \emph{ACM Trans. Algorithms} 16 (2020) Art.~11.
+
+\bibitem{Tutte47} W.~T.~Tutte, The factorization of linear graphs, \emph{J. London Math. Soc.} 22 (1947) 107--111, \url{https://doi.org/10.1112/jlms/s1-22.2.107}.
 
 \bibitem{Tutte54} W.~T.~Tutte, A contribution to the theory of chromatic polynomials, \emph{Canad. J. Math.} 6 (1954) 80--91.
 

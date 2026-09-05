@@ -19,6 +19,9 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
 | `code/cayley_snark_check.py` | First checker (quotients by odd-order abelian subgroups only); also provides the group constructors (finite fields, PSL/PGL(2,q), A_n, S_n, M10, M11, PSL(3,3), A5 ≀ Z2) used by the current one. |
 | `code/cdc_palette_experiment.py` | Reproduces the eight-point palette analysis of the 2026 cycle-double-cover proof: exact affine-system enumeration for K4, Petersen, and a cubic Cayley graph on S5, with exact palette chromatic numbers, a direct SAT check of the full-rank tetrahedral reformulation, a separated transvection-matching witness beyond all parallel matching certificates, weighted-cut-code and restriction ranks, and an unbiased sample of generator-separated flows. |
+| `code/layer_potential_experiment.py` | Tests the symmetric quotient bilinear form against the original CDC equations and searches its lift family for a large layer-potential space. |
+| `code/transvection_switch_experiment.py` | Checks the affine palette-layer equation, the order-five quotient-switch table, an all-lifts obstruction, and a direct colouring construction from filtered quotient flows. |
+| `code/colour_support_experiment.py` | Exact signed-cycle test for a prescribed quotient colour support: all 243 local words, a comparison with restricted switches on S5, translated alternating-cycle repairs, independent quotient-matching starts, and all 32 Petersen supports. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -41,7 +44,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 8. The 2026 cycle-double-cover proof, an exact eight-point palette reformulation, and its present obstruction.
 9. Related flow problems and open questions.
 
-## Status and next steps (4 September 2026)
+## Status and next steps (5 September 2026)
 
 **Done.** 85 non-solvable groups verified (25 954 generating pairs, all 3-edge-colourable): every group
 admissible for a smallest Cayley snark of order below 352 440, i.e. a smallest Cayley snark has more than
@@ -64,6 +67,19 @@ The layer-potential space is the kernel of an explicit symmetric quotient form, 
 Searching this matrix family produces six directions on S5, but none of the twelve transvection targets
 succeeds for the resulting flow: dimension alone is insufficient. Local triangle orders are only changes
 of coordinates and cannot alter feasibility.
+The attainable palette layers are the characteristic vectors of the same symmetric form.
+For order five, transvection switches give a direct affine colouring test on the quotient.
+A local repeated-value obstruction excludes all 2^48 lifts of the previously unsuccessful S5 quotient flow.
+Retaining only one colour's quotient-edge support gives a broader test: a disjoint union of signed cycles
+must have even sign sum on each component. On twelve locally filtered S5 quotient flows, the restricted
+switch test succeeds once and the support test eight times; all constructed colourings are verified.
+The twelve flows have eight distinct supports. All three failing distinct supports can be repaired by
+one alternating-cycle flip against a group translate of the forced matching. More importantly, a locally
+valid starting support always exists in the non-solvable order-five case: take a perfect matching of the
+quotient, whose existence follows from edge connectivity and Tutte's theorem. Of twelve sampled quotient
+matchings on S5, nine colour directly and the other three are repaired by one translated flip.
+An exhaustive check of all 32 Petersen supports fails, as expected. A general decreasing repair move
+has not been proved; the finite repair successes do not establish the conjecture.
 No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
@@ -86,9 +102,13 @@ groups above about 400 000 elements need more memory per worker (use `WORKERS=6`
 Z_3 reformulation for ord(x) = 5, adaptive choice of the quotient subgroup (the natural point
 quotient can be the Petersen snark even when the Cayley graph is colourable), and forcing a
 4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.
-The sharp CDC subproblem is now to choose lifts whose symmetric quotient form has a kernel that hits
-the syndrome of one of the twelve transvection systems. For ord(x) = 5, one bit per quotient vertex
-changes this form; the other bit preserves it and remains available for the colouring equations.
+For ord(x) = 5, the most direct current target is to choose a quotient colour support whose signed
+circuits all have even parity. A quotient perfect matching guarantees a locally valid start. Odd-sign
+circuits come in pairs; flipping an alternating cycle between the forced matching and a group translate
+repairs the tested failures, but no general decreasing move has been proved. This is the even-2-factor
+obstruction in quotient coordinates, not a proof by itself. Within the CDC approach, the remaining
+problem is to hit a transvection syndrome after first avoiding the new quotient-level obstructions;
+lift changes preserving the symmetric form preserve the entire affine set of layer assignments.
 
 ## Reproducing the computation
 
@@ -100,6 +120,8 @@ python3 cayley_snark_check2.py 270000 J1 A9                    # or just the nam
 python3 extra_groups.py                  # PSU(3,3), PSL(3,3).2, G2(2), writes results_extra.json
 python3 cdc_palette_experiment.py         # exact eight-point palette diagnostic
 python3 layer_potential_experiment.py     # quotient form, direct checks, and lift search
+python3 transvection_switch_experiment.py # affine layers and direct order-five switches
+python3 colour_support_experiment.py      # exact signed-cycle support criterion
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```
