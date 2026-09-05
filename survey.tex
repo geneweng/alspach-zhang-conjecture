@@ -1014,6 +1014,50 @@ If $G$ is non-solvable and $s=5$, the quotient $Q$ has a perfect matching.  Any 
 As observed after Proposition~\ref{prop:separated-eight-flow}, $Q$ is simple, $5$-regular and $5$-edge-connected.  It has even order.  For a nonempty vertex set $U$, each odd component of $Q-U$ sends at least five edges to $U$, while at most $5|U|$ such edges are available.  Thus the number of odd components is at most $|U|$.  For $U=\varnothing$ it is zero, since $Q$ is connected and even.  Tutte's $1$-factor theorem \cite{Tutte47} supplies a perfect matching.  Its support has exactly one position at each quotient vertex, as required.
 \end{proof}
 
+These starts belong to a substantially smaller exchange-closed class.  This observation applies to any odd order of $x$, provided the quotient has a perfect matching.
+\begin{proposition}[the quotient-matching face]\label{prop:quotient-matching-face}
+Let $s=\ord(x)$ be odd, let $q=|G|/s$, and suppose $Q$ has a perfect matching.  Let $\mathcal F$ consist of perfect matchings of $X$ selecting exactly one $a$-edge at each $x$-cycle.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item The minimum number of $a$-edges in a perfect matching of $X$ is $q/2$, and $\mathcal F$ is exactly the set attaining this minimum.  Projection to the selected $a$-edges gives a bijection with the perfect matchings of $Q$.
+\item If $M,N\in\mathcal F$, every perfect matching contained in $M\cup N$ belongs to $\mathcal F$.  In particular every circuit flip against every group translate stays in $\mathcal F$.
+\item The circuits of $M\mathbin\triangle N$ project bijectively onto those of $P\mathbin\triangle P'$, where $P,P'$ are the projected quotient matchings.  Each quotient circuit lifts by inserting the unique even path between its two incident positions at every visited $x$-cycle.
+\end{enumerate}
+Moreover, projection and lifting give inverse linear maps between the perfect-matching polytope of $Q$ and the minimum-$a$-edge face of the perfect-matching polytope of $X$.
+\end{proposition}
+\begin{proof}
+An $a$-edge cannot join two vertices of the same $x$-cycle, since that would put the involution $a$ in the odd-order subgroup $\langle x\rangle$.  Every perfect matching uses an odd positive number of $a$-edges at each odd cycle.  Counting their endpoints gives the lower bound $q/2$, with equality exactly when each cycle has one selected position.  A quotient perfect matching attains the bound: deleting its selected vertex from each $x$-cycle leaves an even path with a unique perfect matching.
+
+At a fixed $x$-cycle, $M\cup N$ offers at most two $a$-edges.  Any perfect matching in this union must use an odd number of them, hence exactly one.  This proves \textup{(ii)}.  If the selected positions for $M,N$ agree, their internal matchings agree; otherwise the internal symmetric difference is one even alternating path between the two positions.  It has no additional circuit, since an alternating circuit cannot lie in a single odd cycle.  Consequently the quotient difference circuits are expanded one by one, proving \textup{(iii)}.
+
+For linearity, index an $x$-cycle by $v_0,\ldots,v_{s-1}$, with $b_i$ its incident $a$-edge and $d_i=v_iv_{i+1}$.  If $y$ is the characteristic vector of a quotient matching and $z$ that of its lift, then, over the real numbers,
+\[
+ z_{b_i}=y_{b_i},\qquad
+ z_{d_i}=\sum_{j=1}^{(s-1)/2}y_{b_{i-(2j-1)}},
+\]
+with indices modulo $s$.  Exactly one $y_{b_i}$ equals one.  These formulas give the forced internal matching and extend linearly to convex hulls.  Taking a perfect-matching polytope to mean the convex hull of matching vectors, its minimum-cost face is the convex hull of the minimisers in \textup{(i)}, giving the final assertion.
+\end{proof}
+
+Thus the local-invalidity barrier disappears completely within $\mathcal F$; the implication graph of Lemma~\ref{lem:mixture-implications} has no arcs there.  The two counterexamples in Proposition~\ref{prop:block-barriers} lie outside this face.  It would suffice for the order-five case to prove that some $M\in\mathcal F$ has no odd complementary circuits, without requiring improvement from every locally valid matching.  This is a stronger existence claim than Tait colourability alone, and remains unproved.
+
+There is also a parity-sensitive way to use circuit-partition linear algebra.  Traldi's extended Cohn--Lempel equality \cite[Theorem~4]{Traldi09} says that a circuit partition $T$ of a $4$-regular graph $R$ has $c(T)=\nu(A_T)+c(R)$, where $\nu$ is binary nullity.  Choose one Euler circuit per component, form its interlacement matrix, delete rows and columns at transitions following that Euler circuit, and retain the other rows and columns, putting a diagonal one precisely at orientation-inconsistent transitions.  This defines $A_T$ even when $R$ has parallel edges.
+\begin{proposition}[a parity-refined nullity formula]\label{prop:parity-nullity}
+Let $s=5$ and let $P$ be a perfect matching of $Q$.  Put $R=Q-P$ and, at every vertex with cyclic order $e_0,e_1,e_2,e_3,e_4$ and $e_0\in P$, prescribe transitions
+\[
+ T:\quad (e_1,e_4),\ (e_2,e_3).
+\]
+Give the half-edge at position $e_1$ weight one and the other three half-edges weight zero.  Give each edge $uv$ of $R$ voltage equal to the sum of its two half-edge weights in $\mathbb F_2$.  Let $\widetilde R$ be the two-sheeted voltage cover, with the same transitions $\widetilde T$ at each lifted vertex.  The number $o(P)$ of odd circuits in $X-M(P)$ is
+\begin{equation}\label{eq:parity-nullity}
+ o(P)=2\bigl(\nu(A_T)+c(R)\bigr)
+       -\bigl(\nu(A_{\widetilde T})+c(\widetilde R)\bigr).
+\end{equation}
+In particular an even complementary $2$-factor is equivalent to equality between the second parenthesis and twice the first.
+\end{proposition}
+\begin{proof}
+The transitions of $T$ are exactly the circuits of $H_P$ in Proposition~\ref{prop:colour-support}.  Along a circuit, the sum of edge voltages is the sum of all its traversed half-edge weights.  The transition $(e_1,e_4)$ contributes one and $(e_2,e_3)$ contributes zero, so this voltage sum equals its sign sum.  A sign-even circuit lifts to two circuits and a sign-odd circuit to one.  Hence $c(\widetilde T)=2c(T)-o(P)$.  Applying the extended Cohn--Lempel equality downstairs and upstairs proves the formula.
+\end{proof}
+
+The two nullities track parity, not just the total circuit count.  Nevertheless $R$, its voltage cover and their forced transitions all depend on $P$: arbitrary principal-submatrix choices need not correspond to allowable quotient matchings.  Equation~\eqref{eq:parity-nullity} therefore gives an exact algebraic target, not an existence proof or a monotonicity theorem.
+
 One tempting use of the group action is a translated single-circuit repair.  Let $M(P)$ be the forced matching upstairs and let $g\in G$.  The symmetric difference $M(P)\mathbin\triangle gM(P)$ is a union of even alternating circuits.  Flipping any one circuit $D$ gives another perfect matching $M'=M(P)\mathbin\triangle D$.  Its $a$-edge support $P'$ is locally valid provided it does not select all five positions at any quotient vertex; matching the remaining vertices of a pentagon forces precisely the one-position or consecutive-three-position patterns.  If every obstructed support had such a locally valid flip with fewer odd-sign circuits, Proposition~\ref{prop:starting-support} would give a proof by descent.  However, this universal single-circuit statement is \emph{false}: Proposition~\ref{prop:block-barriers} gives a locally valid support on $\PSL(2,11)$ for which every single-circuit flip is invalid.  The complete $A_5$ checks below remain correct but cannot be extrapolated to a universal rule.  Simultaneous flips lead to the more flexible criterion of Lemma~\ref{lem:mixture-implications}.
 
 A strict improvement necessarily uses a proper component of the symmetric difference: if $M(P)\mathbin\triangle gM(P)$ has just one circuit, flipping it gives $gM(P)$ itself and leaves the number of odd complementary circuits unchanged.  Finding a translate with several difference circuits is therefore necessary, but not sufficient.  A partial flip can both join and split complementary circuits, so simply showing that it meets two odd circuits does not prove a decrease.
@@ -1189,6 +1233,29 @@ As a local check on the general criterion, all $100$ ordered pairs of pentagon m
 
 The same script tests successive closed-set repairs on twelve specified order-five generating pairs of $\PSL(2,11)$, sampling $512$ distinct locally valid matchings invariant under $C_G(a)$ for each pair, with seed $509$ and no colouring constraint.  Among the $6144$ starts, $5583$ already have even complements; all $561$ obstructed starts reach colourings in at most nine strictly decreasing steps.  The algorithm first tries sink blocks and, when those do not improve, enumerates larger closed sets.  The second certificate above was found by the one sink-block failure in this run; a larger closed set repairs it.  None of the twelve sampling runs exhausts its matching space.  These successes do not prove that an improving closed set exists in general, and the implication criterion controls local validity rather than global oddness.
 
+The smaller face of Proposition~\ref{prop:quotient-matching-face} gives a different test.  The new script \nolinkurl{code/quotient_face_experiment.py} compares SAT enumeration with an independent exact-cover enumeration on quotient vertices; for invariant matchings the latter uses whole subgroup edge orbits.  On each of the same twelve specified $\PSL(2,11)$ pairs it exhausts the $C_G(a)$-invariant members of $\mathcal F$.  Their sizes are $268,372,444,444,372,268$, each occurring for both $x$ and $x^2$: $4336$ starts in total.  Of these $3906$ colour directly, and all $430$ obstructed starts colour by single-circuit descent in at most three moves ($214$ in one, $185$ in two and $31$ in three).  Intermediate matchings stay in $\mathcal F$ but need not retain centralizer invariance.  This is exhaustive only in the specified invariant classes, not on all quotient matchings or all groups.
+
+On the two $A_5$ cases, the same two enumerators give $125$ members of $\mathcal F$ each: $115$ colour directly and ten colour after one flip.  On $C_5\wr C_2$ there are $120$, of which sixty colour directly and sixty after one flip; on the order-eighty affine example there are $705$, all colouring directly.  The component-by-component lift is checked for all $15750$ unordered pairs with repetition in the two $A_5$ spaces, and the local lift formula for all $285$ ordered pairs of unmatched positions on cycles of lengths $3,5,7,9,11$.  The implementation \nolinkurl{code/parity_interlacement.py} checks Equation~\eqref{eq:parity-nullity} against direct factor traversal on all $1075$ small-face matchings.  Minimising the total circuit count alone is insufficient: on the wreath-product example its minimum within $\mathcal F$ is two, attained by ten even factors and ten factors with two odd circuits.  There is no Hamiltonian complement anywhere in that face.
+
+Even within this safe face, a uniform averaging argument fails.
+\begin{example}[positive mean drift in the quotient-matching face]\label{ex:face-drift}
+Use the $660$-vertex graph and canonical edge ordering of Proposition~\ref{prop:block-barriers}.  Number its $330$ $a$-edges from zero in lexicographic endpoint order.  Select those indexed by the set bits of the integer whose hexadecimal expansion is the concatenation of the following two strings:
+\[
+\begin{gathered}
+\texttt{3844401993410402c00010004800424501022008a}\\
+\texttt{15c9048880001002480003053203206140084082}.
+\end{gathered}
+\]
+This support is a quotient perfect matching.  Its forced matching $M$ has trivial matching stabiliser and complementary lengths $15,27,618$, hence $o(M)=2$.  Choose $g$ uniformly from all $660$ group elements.  Consider either of two moves: choose a difference circuit uniformly and flip it (do nothing if there is none), or choose a subset of the difference circuits uniformly and flip their union.  Every outcome lies in $\mathcal F$, but the respective expected changes in odd-circuit count are
+\[
+ \mathbb E[o(M')-o(M)]=\frac{197}{2475}>0,
+ \qquad
+ \mathbb E[o(M')-o(M)]=\frac{677}{21120}>0.
+\]
+
+These rational values are verified by exhaustive finite enumeration in the face script.  Across all ordered pairs $(g,D)$ there are $1518$ single flips, counted with multiplicity: $215$ give zero odd circuits, $1021$ give two, $272$ give four and ten give six.  For the first expectation each translate's subtotal is divided by its own number of difference circuits before averaging over $g$; simply averaging the displayed multiplicities is a different distribution.  For the second expectation all $4349$ pairs $(g,S)$ are enumerated, where $S$ ranges over component subsets (at most seven components for any $g$), again weighting each translate uniformly.  A separate vertex-set traversal checks perfect matchings and complementary lengths, and quotient/lift difference components are compared independently.  An explicit single flip to a colouring is also verified; this witness increases the total circuit count from three to five while removing the two odd circuits.  Thus this example refutes these two negative-drift claims, not restricted descent or colourability.
+\end{example}
+
 \section{Open problems}\label{sec:open}
 
 \begin{enumerate}[leftmargin=2em]
@@ -1202,6 +1269,7 @@ The same script tests successive closed-set repairs on twelve specified order-fi
 \item (Cycle-double-cover palette and quotient switches.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  When $s=5$, it suffices instead to choose a quotient flow whose affine switch system in Proposition~\ref{prop:quotient-switch} is consistent: this already constructs a colouring without the lifts.  The local repeated-value filter is necessary but not sufficient.  Can the Cayley action rule out a global inconsistency certificate for a suitable choice of quotient flow?  Arbitrarily choosing an admissible quotient flow would merely assume the desired colouring, so the choice must have an independent existence proof.
 \item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  The affine layer assignments are exactly the characteristic vectors in Proposition~\ref{prop:affine-layer}, and lift changes preserving $B_c$ preserve this whole affine set.  For $s=5$, its intersection with the affine switch system gives an additional necessary condition for a transvection palette.  Making $B_c$ have small rank alone is insufficient; the quotient flow of the dimension-six experiment is locally obstructed for every choice of lifts.  After avoiding these obstructions, can the remaining lift freedom control the full syndrome?
 \item (Colour support and signed circuits.)  For $s=5$, can the Cayley action be used to choose a support $P$ satisfying Proposition~\ref{prop:colour-support} with every circuit of $H_P$ sign-even?  Proposition~\ref{prop:starting-support} guarantees a locally valid start.  The universal single-circuit descent rule is false, even on $\PSL(2,11)$, by Proposition~\ref{prop:block-barriers}; restricting to minimal valid blocks also fails.  Does every obstructed locally valid matching admit a translate and a proper implication-closed union of difference circuits whose simultaneous flip reduces the odd-circuit count?  Lemma~\ref{lem:mixture-implications} characterises local validity exactly, but does not force this global parity improvement.  Such a theorem would prove the order-five case by descent.  Alternatively, can neutral or temporarily non-local-valid intermediate moves be controlled?  Example~\ref{ex:symmetry-barrier} also excludes monotone growth of the matching stabiliser as a requirement at every step.
+\item (The quotient-matching face.)  Does the smaller, nonempty class $\mathcal F$ of Proposition~\ref{prop:quotient-matching-face} always contain an even-complement matching?  All circuit exchanges against translates remain in this class, so no local-validity implications are needed.  Can the Cayley action force equality in the parity-refined nullity bound \eqref{eq:parity-nullity}, perhaps after neutral exchanges?  A single decreasing flip suffices in the documented finite tests, but Example~\ref{ex:face-drift} excludes two natural uniform negative-drift arguments.  Forcing a single complementary circuit is too strong within this face, as the wreath-product and affine examples show.
 \end{enumerate}
 
 \subsection*{Acknowledgements}
@@ -1294,6 +1362,8 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 \bibitem{PSV13} P.~Poto\v{c}nik, P.~Spiga, G.~Verret, Cubic vertex-transitive graphs on up to 1280 vertices, \emph{J. Symbolic Comput.} 50 (2013) 465--477.
 
 \bibitem{SawadaWilliams20} J.~Sawada, A.~Williams, Solving the sigma-tau problem, \emph{ACM Trans. Algorithms} 16 (2020) Art.~11.
+
+\bibitem{Traldi09} L.~Traldi, Binary nullity, Euler circuits and interlace polynomials, arXiv:0903.4405v2 (2009), \url{https://arxiv.org/abs/0903.4405}.
 
 \bibitem{Tutte47} W.~T.~Tutte, The factorization of linear graphs, \emph{J. London Math. Soc.} 22 (1947) 107--111, \url{https://doi.org/10.1112/jlms/s1-22.2.107}.
 

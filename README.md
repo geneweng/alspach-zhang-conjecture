@@ -25,6 +25,8 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/translated_repair_audit.py` | Strict descent audit with independently checked flip certificates, complete SAT/backtracking agreement on all 10 500 order-five A5 supports, subgroup-invariant and successive-repair tests on larger groups, stabiliser divisibility checks, and a transitive non-Cayley stall control. |
 | `code/involution_repair_experiment.py` | Checks the involution-exchange lemma, verifies paired-circuit descent on all obstructed A5 supports, and certifies an explicit matching whose every decreasing flip loses stabiliser symmetry. |
 | `code/translated_block_repair.py` | Two explicit PSL(2,11) counterexamples to restricted repair rules, an independent all-translates stall certificate, the exact implication criterion for valid simultaneous flips, and successive closed-set repairs on larger samples. |
+| `code/quotient_face_experiment.py` | Checks the minimum-a-edge matching face and quotient/lift exchanges, independently exhausts restricted invariant matching spaces, and certifies positive mean oddness drift for two natural random repair rules. |
+| `code/parity_interlacement.py` | Computes oddness as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -49,7 +51,19 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (5 September 2026)
 
-**Latest finding: the universal single-circuit repair rule is false.** On a 660-vertex
+**Latest direction: an exchange-closed minimum-cost face.** Restrict to matchings selecting
+exactly one a-edge at each x-cycle. Whenever the contracted graph has a perfect matching
+(proved here in the non-solvable order-five case), this class is nonempty. The survey now proves
+that it is the minimum-a-edge face of the perfect-matching polytope, linearly equivalent to the
+quotient's matching polytope. All translated circuit flips stay in this face and correspond
+exactly to quotient circuit exchanges. Thus no local-validity obstruction occurs there.
+A two-sheeted construction and Traldi's extended Cohn–Lempel equality give an exact
+parity-refined binary-nullity formula, independently checked against direct cycle counts.
+The missing step is to force an even complement somewhere in this face; the formula alone
+does not do so. An explicit restricted PSL(2,11) matching also refutes uniform negative drift
+for both random single flips and random subsets of difference circuits, although it repairs.
+
+**Earlier obstruction: the universal single-circuit repair rule is false.** On a 660-vertex
 PSL(2,11) Cayley graph, an explicit locally valid matching has four odd complementary cycles,
 but all 168 distinct single-circuit flips create an all-a pentagon. An independent graph
 reconstruction and traversal verify the obstruction. Flipping two circuits together colours
@@ -113,6 +127,13 @@ are enumerated, and a 30 000-matching sample is checked on the 80-element affine
 The more flexible closed-set repair reaches colourings from all 561 obstructed starts among
 6144 sampled centralizer-invariant matchings on twelve specified PSL(2,11) generating pairs,
 using at most nine decreasing steps. These are bounded samples, not an exhaustive theorem.
+Inside the smaller minimum-a-edge face, two independent enumerators exhaust all 4336
+centralizer-invariant matchings on those twelve pairs: 3906 colour directly and all 430
+obstructed starts colour in at most three single flips. Intermediate states may lose symmetry
+but remain in the face. The face has 125 matchings in each A5 case, 120 on the wreath-product
+example and 705 on the affine example; all 1075 are checked against the parity-nullity formula.
+No Hamiltonian complement exists in the face for the latter two graphs, so simply minimising
+the number of complementary circuits is not an adequate general substitute for controlling parity.
 No complete proof and no Cayley snark.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
@@ -136,8 +157,11 @@ Z_3 reformulation for ord(x) = 5, adaptive choice of the quotient subgroup (the 
 quotient can be the Petersen snark even when the Cayley graph is colourable), and forcing a
 4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.
 For ord(x) = 5, the most direct current target is to choose a quotient colour support whose signed
-circuits all have even parity. A quotient perfect matching guarantees a locally valid start. Odd-sign
-circuits come in pairs. A single translated alternating-cycle flip works on every obstructed
+circuits all have even parity. A quotient perfect matching supplies a start in the nonempty,
+exchange-closed minimum-a-edge face. The new target is to force zero defect in the two-sheeted
+interlacement-nullity formula while staying in that face. Uniform averaging does not guarantee
+negative oddness drift, and forcing a Hamiltonian complement is too strong within this class.
+For more general supports, odd-sign circuits come in pairs. A single translated alternating-cycle flip works on every obstructed
 locally valid A5 support, but the universal rule fails on PSL(2,11). The current repair target
 allows an implication-closed union of difference circuits. Local validity is characterised
 exactly; proving that some closed union decreases the odd-circuit count remains open.
@@ -172,6 +196,8 @@ python3 involution_repair_experiment.py --exhaustive-a5
 python3 involution_repair_experiment.py --groups S5 A6 S6 --samples 512
 python3 translated_block_repair.py        # exact local check and both PSL(2,11) barriers
 python3 translated_block_repair.py --stress-psl11 512 --descend
+python3 quotient_face_experiment.py        # closure, two enumerators, parity matrices, drift barrier
+python3 quotient_face_experiment.py --psl11-centralizers
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```
