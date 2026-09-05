@@ -29,6 +29,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/loop_congruence_experiment.py` | Checks the unsigned/Tait count congruence, exhausts negative circuit-subset orbits, verifies sharp moduli and the nonfree Petersen control, and tests nonzero residues on complete small faces and invariant subfamilies. |
 | `code/transposition_quotient_experiment.py` | Checks the infinite transposition–odd-cycle construction on two-subset quotients, enumerates all invariant minimum-face matchings through S12, verifies cycle monodromies, and independently checks all 21 lifts on S6. |
 | `code/two_cycle_monodromy_experiment.py` | Checks the canonical circuit-free quotient matching for transpositions joining two coprime odd cycles, and exhausts small quotient matching spaces including genuine bad-word controls. |
+| `code/odd_transposition_monodromy_experiment.py` | Checks the explicit one-cycle chord construction for every nonadjacent coprime chord, including the exceptional distances 2 and 3. |
 | `code/parity_interlacement.py` | Computes oddness both as the number of odd-degree vertices in the defect-incidence multigraph and as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
@@ -54,19 +55,22 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (5 September 2026)
 
-**Latest result: the transposition case for even-degree symmetric groups.** If N >= 4 is even,
+**Latest result: the transposition case for every symmetric group.** If N >= 3,
 a is a transposition, x in S_N has odd order, and <a,x> = S_N, the survey now proves
-that Cay(S_N,{a,x,x^-1}) is 3-edge-colourable. Necessarily x has two coprime odd
-cycles. In the quotient by C_G(a), the vertices are two-subsets and the contracted
-x-orbit graph is a star. An explicit matching makes every complementary quotient
-component a path capped by semi-edges, so every lifted circuit is even. This covers
-all such generating pairs, not just one pair per group. The odd-degree transposition
-case remains open when the endpoints have arbitrary coprime cyclic distance.
+that Cay(S_N,{a,x,x^-1}) is 3-edge-colourable. In even degree, x necessarily has two
+coprime odd cycles; in odd degree it is one N-cycle and the endpoints of a have coprime
+cyclic distance. Both cases use the quotient by C_G(a), whose vertices are two-subsets.
+Explicit matchings make the complementary quotient a union of paths capped by semi-edges,
+apart from one harmless even quotient circuit in the smallest exceptional case.
 
-The checker verifies the canonical construction for all 33 coprime pairs through total
-degree 30. Complete small enumerations also expose the selection issue: for cycle lengths
-(3,5), 8 of 111 invariant quotient matchings have a bad 9-cycle of odd monodromy order 5,
-while the explicit construction avoids all quotient circuits.
+The two-cycle checker verifies all 33 coprime pairs through total degree 30. The one-cycle
+checker verifies all 246 nonadjacent coprime chord cases through degree 51 (270 including
+the adjacent cases covered by the Hamiltonicity theorem); every constructed quotient
+is circuit-free except (N,k)=(5,2), where its only circuit has even length two. Complete
+full lifts independently check the three exceptional S5 and S7 matchings. Small
+two-cycle enumerations also expose the selection issue: for cycle lengths (3,5),
+8 of 111 invariant quotient matchings have a bad 9-cycle of odd monodromy order 5, while
+the explicit construction avoids all quotient circuits.
 
 **Previous result: a uniform monodromy construction.** For every odd s >= 5, take
 G = S_(s+1), x an s-cycle, and a the transposition joining its fixed point to a point
@@ -80,11 +84,11 @@ under C_G(a), so this goes beyond colouring the subgroup quotient directly.
 The independent quotient checker exhausts 21, 275, 5145 and 124659 matchings for
 s = 5, 7, 9 and 11, and checks all 21 S6 lifts directly against a separate exact-cover
 enumerator. That earlier theorem covers one generating pair per symmetric group of even
-degree, whereas the new result above covers every even-degree pair whose involution is a
+degree, whereas the new result above covers every pair whose involution is a
 transposition; no claim of priority over the Hamiltonicity literature is made.
 The Alspach–Zhang conjecture remains open. The next target is to control the orders of
-odd quotient-circuit words for the remaining odd-degree transposition pairs and then
-for more general generating pairs.
+odd quotient-circuit words for involutions with several transpositions and for other
+almost simple groups.
 
 **Previous result: a congruence using the regular action.** For any invariant family of
 perfect matchings, let U sum 2 to the number of complementary circuits, ignoring their
@@ -276,6 +280,7 @@ python3 loop_congruence_experiment.py --s5 # unsigned residues and every negativ
 python3 loop_congruence_experiment.py --psl11-centralizers # 240 certificates in 12 invariant classes
 python3 transposition_quotient_experiment.py --max-s 11 # quotient monodromies and independent S6 lifts
 python3 two_cycle_monodromy_experiment.py --max-degree 10 # all small matchings and canonical constructions
+python3 odd_transposition_monodromy_experiment.py --max-N 51 # every coprime one-cycle chord through S51
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend
