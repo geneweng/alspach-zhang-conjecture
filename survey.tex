@@ -602,6 +602,7 @@ For a fixed starting flow, the freedom in the paper's affine system has a simple
  \mathcal K_f=\left\{\delta\in\mathbb F_2^{E(X)}:
  \sum_{e\in C}\delta_e f(e)=0\text{ for every cycle }C\text{ of }X\right\}.
 \end{equation}
+Equivalently, for each of the three coordinates $f_j$ of $f$, the edge set with indicator $\delta_e f_j(e)$ must be a cut.  This follows from the orthogonality of the binary cycle and cut spaces, and explains the terminology.
 
 \begin{proposition}[compatibility-space rigidity]\label{prop:cdc-rigidity}
 Fix a nowhere-zero $\mathbb F_2^3$-flow $f$ on a connected loopless cubic graph and fix the local data $g_{v,e}$ in the cycle-double-cover construction.  The nullity of the homogeneous compatibility system associated with \eqref{eq:cdc-system} is
@@ -697,7 +698,7 @@ Every solution of the original system is $\mathbf z_0+u$ with $u\in U_f$.  It sa
 Thus consistency is equivalent to $b+A\mathbf z_0\in A(U_f)$.  Quotienting the target by $A(T)$ and using $U_f/T\cong\mathcal K_f$ from Proposition~\ref{prop:cdc-rigidity} gives \eqref{eq:syndrome-criterion} and the rank formula.  The final statement is the standard dual characterisation of membership in a linear subspace.
 \end{proof}
 
-The last sentence identifies precisely how the paper's duality methodology would have to be strengthened: its original argument rules out inconsistency certificates for the compatibility equations, whereas one must now rule out certificates carrying an additional functional supported on the dangerous edges.  Merely counting variables cannot do this, since the target syndrome may lie outside the usually much smaller image of $\overline A$.
+The explicit equation in the proof of Proposition~\ref{prop:linearised-matching} shows also that $A$ depends on $f$ and the chosen matching but not on the local data $g_{v,e}$; changing the local triangles changes the syndrome $b+A\mathbf z_0$, not the available image.  Thus flow selection and local-triangle selection have distinct roles.  The last sentence of Proposition~\ref{prop:transvection-syndrome} identifies precisely how the paper's duality methodology would have to be strengthened: its original argument rules out inconsistency certificates for the compatibility equations, whereas one must now rule out certificates carrying an additional functional supported on the dangerous edges.  Merely counting variables cannot do this, since the target syndrome may lie outside the usually much smaller image of $\overline A$.
 
 This splits the Hall strategy into four parallel matchings ($L=I$), twelve transvection matchings (the linear case of Proposition~\ref{prop:linearised-matching}), and eight matchings for which $L$ has order three.  In the last case $I+L$ is invertible, so \eqref{eq:matching-collision} forbids one point rather than one affine line and the condition is no longer linear.  The parallel case can be understood completely, and shows precisely where the cycle-double-cover argument adds no leverage.
 
