@@ -25,8 +25,8 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/translated_repair_audit.py` | Strict descent audit with independently checked flip certificates, complete SAT/backtracking agreement on all 10 500 order-five A5 supports, subgroup-invariant and successive-repair tests on larger groups, stabiliser divisibility checks, and a transitive non-Cayley stall control. |
 | `code/involution_repair_experiment.py` | Checks the involution-exchange lemma, verifies paired-circuit descent on all obstructed A5 supports, and certifies an explicit matching whose every decreasing flip loses stabiliser symmetry. |
 | `code/translated_block_repair.py` | Two explicit PSL(2,11) counterexamples to restricted repair rules, an independent all-translates stall certificate, the exact implication criterion for valid simultaneous flips, and successive closed-set repairs on larger samples. |
-| `code/quotient_face_experiment.py` | Checks the minimum-a-edge matching face and quotient/lift exchanges, independently exhausts restricted invariant matching spaces, and certifies positive mean oddness drift for two natural random repair rules. |
-| `code/parity_interlacement.py` | Computes oddness as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
+| `code/quotient_face_experiment.py` | Checks the minimum-a-edge matching face and quotient/lift exchanges, independently exhausts restricted invariant matching spaces, tests lexicographic minima and unrestricted PSL(2,11) descent samples, rules out a two-consecutive-matching shortcut on A5, and certifies positive mean oddness drift for two natural random repair rules. |
+| `code/parity_interlacement.py` | Computes oddness both as the number of odd-degree vertices in the defect-incidence multigraph and as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -132,6 +132,20 @@ centralizer-invariant matchings on those twelve pairs: 3906 colour directly and 
 obstructed starts colour in at most three single flips. Intermediate states may lose symmetry
 but remain in the face. The face has 125 matchings in each A5 case, 120 on the wreath-product
 example and 705 on the affine example; all 1075 are checked against the parity-nullity formula.
+On 6144 additional unrestricted PSL(2,11) face samples, all 3563 obstructed starts have an
+immediate strict single-circuit repair. Every minimum-circuit factor is even in each of the
+twelve exact invariant spaces, although the wreath-product face shows that minimum circuit
+count does not force evenness in general. The quotient is naturally an orientably regular map,
+and the exact flow target is a nowhere-zero F2^2 flow whose multiplicity-three value is
+consecutive at every pentavalent vertex; the face target additionally fixes one singleton value
+globally. Requiring both singleton values globally would reduce the problem to two consecutive
+disjoint quotient perfect matchings, but exact enumeration shows that this stronger shortcut
+already fails on A5. A proper three-colouring of the dual map is sufficient, and a local
+four-colouring version succeeds on all four completely enumerated small examples. This
+face-potential route is not universal: in four PSL(2,11) cases with ord(ax)=11, the 60-vertex
+11-valent dual has chromatic number five, checked by a SAT refutation for four colours and a
+verified five-colouring. Every quotient flow is instead a face-boundary flow plus a class in
+the first homology of the regular map; those four genus-70 examples force a nonzero class.
 No Hamiltonian complement exists in the face for the latter two graphs, so simply minimising
 the number of complementary circuits is not an adequate general substitute for controlling parity.
 No complete proof and no Cayley snark.
@@ -198,6 +212,7 @@ python3 translated_block_repair.py        # exact local check and both PSL(2,11)
 python3 translated_block_repair.py --stress-psl11 512 --descend
 python3 quotient_face_experiment.py        # closure, two enumerators, parity matrices, drift barrier
 python3 quotient_face_experiment.py --psl11-centralizers
+python3 quotient_face_experiment.py --psl11-unrestricted 512
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```

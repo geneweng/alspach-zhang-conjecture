@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Parity-refined circuit counts using a two-sheeted quotient and Traldi's
-extended Cohn--Lempel equality (arXiv:0903.4405, Theorem 4).
+"""Parity-refined circuit counts from a defect multigraph and from Traldi's
+extended Cohn--Lempel equality (arXiv:0903.4405, Theorem 4), applied to a
+two-sheeted quotient.
 
 The input is a perfect matching of the pentagon quotient. No existence of a
 colourable support is inferred from the two nullity computations.
@@ -17,6 +18,49 @@ def binary_nullity(rows):
                 break
             row ^= basis[p]
     return len(rows) - len(basis)
+
+
+def defect_degrees(face, support):
+    """Degrees in the defect-incidence multigraph K_P.
+
+    Its vertices are the forced transition circuits.  Each selected quotient
+    edge joins the circuits carrying the sign-one relation at its endpoints.
+    Thus its odd-degree vertices are precisely the odd-sign circuits.
+    """
+    assert face.is_matching(support)
+    active = [e for e in range(face.m) if not support & (1 << e)]
+    adjacency = {e: [] for e in active}
+    marked, relation = {}, 0
+    for v, cyclic in enumerate(face.graph.orders):
+        p = next(i for i, e in enumerate(cyclic) if support & (1 << e))
+        for offsets, sign in [((1, 4), 1), ((2, 3), 0)]:
+            e, f = [cyclic[(p + j) % 5] for j in offsets]
+            adjacency[e].append((f, relation))
+            adjacency[f].append((e, relation))
+            if sign:
+                marked[v] = relation
+            relation += 1
+    assert all(len(incident) == 2 for incident in adjacency.values())
+    unseen, circuit_of = set(active), {}
+    circuits = 0
+    while unseen:
+        start = current = min(unseen)
+        previous = None
+        while True:
+            unseen.remove(current)
+            following, identifier = next(entry for entry in adjacency[current]
+                                         if entry[1] != previous)
+            circuit_of[identifier] = circuits
+            current, previous = following, identifier
+            if current == start:
+                break
+        circuits += 1
+    degrees = [0] * circuits
+    for e in range(face.m):
+        if support & (1 << e):
+            for v in face.edges[e]:
+                degrees[circuit_of[marked[v]]] += 1
+    return sorted(degrees)
 
 
 def circuit_nullity(n, edges, transitions):

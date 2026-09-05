@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""The one-a-edge matching face: exact exchanges and an averaging barrier.
+"""The one-a-edge matching face, regular-map duals, and repair barriers.
 
 No colouring condition is used to enumerate starts. The default run checks
-local odd-cycle lifts, complete small matching spaces, and a fixed PSL(2,11)
-certificate with positive mean oddness drift under two natural random moves.
+local odd-cycle lifts, dual face colourings, defect-incidence degrees, complete
+small matching spaces, and a fixed PSL(2,11) certificate with positive mean
+oddness drift under two natural random moves.
 
 python3 code/quotient_face_experiment.py
 python3 code/quotient_face_experiment.py --psl11-centralizers
+python3 code/quotient_face_experiment.py --psl11-unrestricted 512
 """
 
 import argparse
@@ -14,11 +16,15 @@ import json
 import random
 from collections import Counter
 from fractions import Fraction
+from itertools import combinations
 from types import SimpleNamespace
+
+from pysat.solvers import Cadical153
 
 from cayley_snark_check import closure, inv, mul, order, psl2
 from colour_support_experiment import matching_for_support
-from parity_interlacement import parity_profile
+from parity_interlacement import defect_degrees, parity_profile
+from transvection_switch_experiment import partial_sums
 from translated_block_repair import GENERATORS, independent_factor_lengths
 from translated_repair_audit import RepairGraph, bits, cases, sample_matchings
 
@@ -163,6 +169,79 @@ def check_local_lifts():
     print('LOCAL-ODD-CYCLE-LIFTS', tested, flush=True)
 
 
+def dual_face_colouring(graph, generators, colours, avoid_all_four=False):
+    """Colour faces of the regular quotient map and verify the induced flow."""
+    a, x = generators
+    subgroup = closure([mul(a, x)])
+    unseen, face_of, faces = set(graph.group), {}, []
+    while unseen:
+        g = min(unseen)
+        face = {mul(g, h) for h in subgroup}
+        identifier = len(faces)
+        faces.append(face)
+        for h in face:
+            face_of[h] = identifier
+        unseen -= face
+    dual_edges = {tuple(sorted((face_of[g], face_of[mul(g, a)])))
+                  for g in graph.group}
+    assert all(u != v for u, v in dual_edges)
+    clauses = []
+    for v in range(len(faces)):
+        variables = [colours * v + c + 1 for c in range(colours)]
+        clauses.append(variables)
+        clauses.extend([-p, -q] for p, q in combinations(variables, 2))
+    for u, v in dual_edges:
+        clauses.extend([-(colours * u + c + 1), -(colours * v + c + 1)]
+                       for c in range(colours))
+    if avoid_all_four:
+        assert colours == 4
+        base = colours * len(faces)
+        for vertex, cycle in enumerate(graph.cycles):
+            omitted = [base + 4 * vertex + c + 1 for c in range(4)]
+            clauses.append(omitted)
+            for c, selector in enumerate(omitted):
+                clauses.extend([-selector, -(4 * face_of[graph.group[v]] + c + 1)]
+                               for v in cycle)
+    clauses.append([1])  # break the global colour-permutation symmetry
+    with Cadical153(bootstrap_with=clauses) as solver:
+        if not solver.solve():
+            return None, len(faces), len(dual_edges)
+        positive = set(v for v in solver.get_model() if v > 0)
+    face_colours = [next(c for c in range(colours)
+                         if colours * v + c + 1 in positive)
+                    for v in range(len(faces))]
+    if not (colours == 3 or (colours == 4 and avoid_all_four)):
+        return face_colours, len(faces), len(dual_edges)
+    # Embed three colours in F_2^2.  Translating every face colour does not
+    # change edge differences; the same verification applies to a locally
+    # constrained four-colouring.
+    values = []
+    for edge in graph.a_edges:
+        u = graph.edges[edge][0]
+        g = graph.group[u]
+        value = face_colours[face_of[g]] ^ face_colours[face_of[mul(g, a)]]
+        assert value in (1, 2, 3)
+        values.append(value)
+    colouring = [0] * len(graph.edges)
+    for edge, value in zip(graph.a_edges, values):
+        colouring[edge] = value
+    for order_edges, x_edges in zip(graph.orders, graph.cycle_edges):
+        word = [values[e] for e in order_edges]
+        total = 0
+        for value in word:
+            total ^= value
+        assert total == 0
+        missing = set(range(4)) - partial_sums(word)
+        assert len(missing) == 1
+        current = missing.pop()
+        for value, edge in zip(word, x_edges):
+            current ^= value
+            colouring[edge] = current
+    assert all(set(colouring[e] for e in incident) == {1, 2, 3}
+               for incident in graph.inc)
+    return face_colours, len(faces), len(dual_edges)
+
+
 def check_descent(face, starts):
     graph, counts, paths = face.graph, Counter(), Counter()
     for matching in starts:
@@ -191,9 +270,20 @@ def check_descent(face, starts):
 
 def check_small():
     pair_count = 0
+    dual_three_expected = {'A5': True, 'A5_alt': False, 'W50': True, 'F80': False}
     for name, expected in [('A5', 125), ('A5_alt', 125), ('W50', 120), ('F80', 705)]:
         generators, n = cases()[name]
         face = QuotientFace(RepairGraph(generators, n))
+        dual_three, dual_vertices, dual_edges = dual_face_colouring(
+            face.graph, generators, 3)
+        dual_local_four, vertices_again, edges_again = dual_face_colouring(
+            face.graph, generators, 4, True)
+        assert (dual_three is not None) == dual_three_expected[name]
+        assert dual_local_four is not None
+        assert (dual_vertices, dual_edges) == (vertices_again, edges_again)
+        print('REGULAR-MAP-DUAL', name, 'vertices', dual_vertices, 'edges', dual_edges,
+              'three_colourable', dual_three is not None,
+              'local_four_colourable', True, flush=True)
         independent = list(independent_matchings(face))
         status = {}
         sat = list(sample_matchings(face.graph, expected + 1, random.Random(509),
@@ -213,12 +303,41 @@ def check_small():
             profile = parity_profile(face, face.project(matching))
             assert profile['odd_circuits'] == odd
             assert profile['nullity'] + profile['components'] == len(lengths)
+            degrees = defect_degrees(face, face.project(matching))
+            assert len(degrees) == len(lengths)
+            assert sum(degree % 2 for degree in degrees) == odd
             factor_counts[len(lengths), odd] += 1
+        minimum = min(circuits for circuits, _ in factor_counts)
+        minimum_oddness = {odd: number for (circuits, odd), number in factor_counts.items()
+                           if circuits == minimum}
         counts, paths = check_descent(face, independent)
         print('FACE-EXHAUSTIVE', name, dict(counts), 'paths', dict(sorted(paths.items())),
               'independent_set_agreement', True, flush=True)
         print('PARITY-INTERLACEMENT', name, 'checked', len(independent),
-              'factor_counts', dict(sorted(factor_counts.items())), flush=True)
+              'factor_counts', dict(sorted(factor_counts.items())),
+              'defect_degree_formula', True, flush=True)
+        print('LEXICOGRAPHIC-MINIMUM', name, 'circuits', minimum,
+              'oddness_counts', dict(sorted(minimum_oddness.items())), flush=True)
+        if name == 'A5':
+            # A stronger shortcut would colour two disjoint quotient perfect
+            # matchings differently and the other three incident edges alike.
+            # It requires their two selected darts to be consecutive at every
+            # quotient vertex.  Exact enumeration shows that this need not exist.
+            supports = [face.project(matching) for matching in independent]
+            consecutive_pairs = []
+            for first in supports:
+                for second in supports:
+                    if first & second:
+                        continue
+                    positions = [[i for i, e in enumerate(order)
+                                  if (first | second) & (1 << e)]
+                                 for order in face.graph.orders]
+                    if all(len(pair) == 2 and (pair[0] - pair[1]) % 5 in (1, 4)
+                           for pair in positions):
+                        consecutive_pairs.append((first, second))
+            assert not consecutive_pairs
+            print('CONSECUTIVE-QUOTIENT-MATCHINGS', name, 'ordered_pairs', 0,
+                  'checked', len(supports) ** 2, flush=True)
     assert pair_count == 15750
     print('PAIRWISE-EXCHANGE-CHECK', pair_count, flush=True)
     # The pentagon quotient of the Petersen graph has two vertices and five
@@ -311,6 +430,16 @@ def check_psl11_centralizers():
     for i, a in enumerate(representatives):
         for power, y in [(1, x), (2, mul(x, x))]:
             face = QuotientFace(RepairGraph([a, y], 660))
+            dual_four, dual_vertices, dual_edges = dual_face_colouring(
+                face.graph, [a, y], 4)
+            expected_four = order(mul(a, y)) != 11
+            assert (dual_four is not None) == expected_four
+            dual_five = None
+            if dual_four is None:
+                dual_five, vertices_again, edges_again = dual_face_colouring(
+                    face.graph, [a, y], 5)
+                assert dual_five is not None
+                assert (dual_vertices, dual_edges) == (vertices_again, edges_again)
             subgroup = [h for h in group if mul(h, a) == mul(a, h)]
             status = {}
             sat = list(sample_matchings(face.graph, 513, random.Random(509), True,
@@ -319,9 +448,20 @@ def check_psl11_centralizers():
             assert status['exhausted']
             assert len(independent) == len(set(independent)) == len(sat)
             assert set(independent) == set(sat)
+            profiles = [(len(face.graph.factor_lengths(matching)),
+                         sum(n % 2 for n in face.graph.factor_lengths(matching)))
+                        for matching in sat]
+            minimum = min(circuits for circuits, _ in profiles)
+            minimum_oddness = Counter(odd for circuits, odd in profiles
+                                      if circuits == minimum)
+            assert set(minimum_oddness) == {0}
             counts, paths = check_descent(face, sat)
             print('CENTRALIZER-FACE', i, power, 'a', a, 'x', y, dict(counts),
-                  'paths', dict(sorted(paths.items())), 'independent_set_agreement', True,
+                  'paths', dict(sorted(paths.items())), 'minimum_circuits', minimum,
+                  'oddness_at_minimum', dict(minimum_oddness),
+                  'dual_vertices', dual_vertices,
+                  'dual_chromatic_barrier', 5 if dual_five is not None else 'at_most_4',
+                  'independent_set_agreement', True,
                   flush=True)
             totals.update(counts)
             total_paths.update(paths)
@@ -331,15 +471,55 @@ def check_psl11_centralizers():
           dict(sorted(total_paths.items())), flush=True)
 
 
+def check_psl11_unrestricted(samples):
+    """Sample arbitrary quotient matchings and test one-step strict descent."""
+    group = psl2(11)
+    x = min(h for h in group if order(h) == 5)
+    cx = [h for h in group if mul(h, x) == mul(x, h)]
+    unseen, representatives = {h for h in group if order(h) == 2}, []
+    while unseen:
+        a = min(unseen)
+        unseen -= {mul(mul(inv(h), a), h) for h in cx}
+        if len(closure([a, x])) == 660:
+            representatives.append(a)
+    assert len(representatives) == 6
+    totals = Counter()
+    for i, a in enumerate(representatives):
+        for power, y in [(1, x), (2, mul(x, x))]:
+            face = QuotientFace(RepairGraph([a, y], 660))
+            starts = list(sample_matchings(face.graph, samples, random.Random(1847), True))
+            counts = Counter(starts=len(starts))
+            for matching in starts:
+                odd = sum(n % 2 for n in face.graph.factor_lengths(matching))
+                if not odd:
+                    counts['even'] += 1
+                    continue
+                counts['obstructed'] += 1
+                witness, _ = face.graph.audit(matching)
+                assert witness is not None and witness['new_oddness'] < odd
+                counts['decreases'] += 1
+            assert counts['obstructed'] == counts['decreases']
+            totals.update(counts)
+            print('UNRESTRICTED-FACE', i, power, dict(counts), flush=True)
+    assert totals['starts'] == 12 * samples
+    if samples == 512:
+        assert totals['obstructed'] == totals['decreases'] == 3563
+        assert totals['even'] == 2581
+    print('UNRESTRICTED-FACE-SUMMARY', dict(totals), 'no_stall', True, flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--psl11-centralizers', action='store_true')
+    parser.add_argument('--psl11-unrestricted', type=int, metavar='SAMPLES', default=0)
     args = parser.parse_args()
     check_local_lifts()
     check_small()
     check_averaging_barrier()
     if args.psl11_centralizers:
         check_psl11_centralizers()
+    if args.psl11_unrestricted:
+        check_psl11_unrestricted(args.psl11_unrestricted)
 
 
 if __name__ == '__main__':
