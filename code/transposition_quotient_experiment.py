@@ -16,10 +16,11 @@ from cdc_palette_experiment import cycle_perm
 
 
 class PairQuotient:
-    def __init__(self, s):
+    def __init__(self, s, a=None):
         assert s >= 3 and s % 2 == 1
         self.s = s
-        self.a = cycle_perm(s + 1, [0, s])
+        self.a = cycle_perm(s + 1, [0, s]) if a is None else tuple(a)
+        assert sorted(self.a) == list(range(s + 1)) and order(self.a) == 2
         self.x = cycle_perm(s + 1, list(range(s)))
         self.identity = tuple(range(s + 1))
         self.vertices = list(combinations(range(s + 1), 2))
@@ -53,6 +54,7 @@ class PairQuotient:
 
     def matchings(self):
         """Choose one a-dart per x-cycle, then its forced internal matching."""
+        assert self.a == cycle_perm(self.s + 1, [0, self.s])
         for central in range(self.s):
             central_v = self.cycles[0][central]
             selected_a = self.a_at[central_v]
@@ -81,7 +83,8 @@ class PairQuotient:
             if kind == 0:
                 covered = 1 << self.cycle_of[u]
                 if v is not None:
-                    assert self.cycle_of[v] != self.cycle_of[u]
+                    if self.cycle_of[v] == self.cycle_of[u]:
+                        continue  # two selected positions on one cycle are forbidden
                     covered |= 1 << self.cycle_of[v]
                 rows.append((covered, e))
 
@@ -94,6 +97,19 @@ class PairQuotient:
                 if covered & first and covered & todo == covered:
                     yield from visit(todo ^ covered, support | (1 << e))
         yield from visit((1 << len(self.cycles)) - 1, 0)
+
+    def lift_support(self, support):
+        """Force the internal matching from an exact-cover a-edge support."""
+        matching = {e for e in range(len(self.edges)) if support & (1 << e)}
+        assert all(self.kinds[e] == 0 for e in matching)
+        for cycle in self.cycles:
+            positions = [p for p, v in enumerate(cycle) if self.a_at[v] in matching]
+            assert len(positions) == 1
+            p = positions[0]
+            matching.update(self.x_at[cycle[(p + d) % self.s]]
+                            for d in range(1, self.s, 2))
+        assert all(len(matching.intersection(es)) == 1 for es in self.inc)
+        return matching
 
     def complement(self, matching):
         """Traverse quotient components and multiply each closed walk's word."""
