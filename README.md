@@ -146,6 +146,15 @@ face-potential route is not universal: in four PSL(2,11) cases with ord(ax)=11, 
 11-valent dual has chromatic number five, checked by a SAT refutation for four colours and a
 verified five-colouring. Every quotient flow is instead a face-boundary flow plus a class in
 the first homology of the regular map; those four genus-70 examples force a nonzero class.
+The fixed-colour minimum-face count is now an explicit signed-loop state sum: a quotient
+perfect matching selects one gap at every pentavalent vertex, the other four darts form
+signed smoothed loops, and a loop contributes 2 or 0 according as its sign is even or odd.
+A Fourier expansion makes this a fixed three-state local vertex model and grouping states
+gives an exact G-orbit formula. The values on the two A5 maps, the order-50 wreath product,
+and the order-80 affine map are respectively 540, 540, 440 and 8320; optional exhaustive
+S5 runs give 115960 on each of two maps. This identifies a concrete coefficient for a
+transition-polynomial/character-theoretic attack, but no symmetry-based non-vanishing theorem
+is known, and the Petersen control has value zero.
 No Hamiltonian complement exists in the face for the latter two graphs, so simply minimising
 the number of complementary circuits is not an adequate general substitute for controlling parity.
 No complete proof and no Cayley snark.
@@ -173,7 +182,10 @@ quotient can be the Petersen snark even when the Cayley graph is colourable), an
 For ord(x) = 5, the most direct current target is to choose a quotient colour support whose signed
 circuits all have even parity. A quotient perfect matching supplies a start in the nonempty,
 exchange-closed minimum-a-edge face. The new target is to force zero defect in the two-sheeted
-interlacement-nullity formula while staying in that face. Uniform averaging does not guarantee
+interlacement-nullity formula while staying in that face. Equivalently, prove non-vanishing of
+the signed-loop state sum's lowest a-edge coefficient using the regular G-action; ordinary
+Penrose/transition identities only package the count and do not provide this missing theorem.
+Uniform averaging does not guarantee
 negative oddness drift, and forcing a Hamiltonian complement is too strong within this class.
 For more general supports, odd-sign circuits come in pairs. A single translated alternating-cycle flip works on every obstructed
 locally valid A5 support, but the universal rule fails on PSL(2,11). The current repair target
@@ -201,6 +213,7 @@ python3 cdc_palette_experiment.py         # exact eight-point palette diagnostic
 python3 layer_potential_experiment.py     # quotient form, direct checks, and lift search
 python3 transvection_switch_experiment.py # affine layers and direct order-five switches
 python3 colour_support_experiment.py      # exact signed-cycle support criterion
+python3 quotient_face_experiment.py --s5-state-sum # signed-loop sum and optional exhaustive S5 values
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend

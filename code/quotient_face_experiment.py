@@ -7,6 +7,7 @@ small matching spaces, and a fixed PSL(2,11) certificate with positive mean
 oddness drift under two natural random moves.
 
 python3 code/quotient_face_experiment.py
+python3 code/quotient_face_experiment.py --s5-state-sum
 python3 code/quotient_face_experiment.py --psl11-centralizers
 python3 code/quotient_face_experiment.py --psl11-unrestricted 512
 """
@@ -22,7 +23,7 @@ from types import SimpleNamespace
 from pysat.solvers import Cadical153
 
 from cayley_snark_check import closure, inv, mul, order, psl2
-from colour_support_experiment import matching_for_support
+from colour_support_experiment import matching_for_support, support_system
 from parity_interlacement import defect_degrees, parity_profile
 from transvection_switch_experiment import partial_sums
 from translated_block_repair import GENERATORS, independent_factor_lengths
@@ -268,9 +269,48 @@ def check_descent(face, starts):
     return counts, paths
 
 
+def signed_loop_state_sum(face, matchings):
+    """Evaluate the fixed-colour signed loop sum in two exact ways.
+
+    For a quotient matching P, the affine colour system contributes 2^c
+    when all c signed circuits are even and zero otherwise.  Fourier
+    expansion gives the same contribution as the product over circuits of
+    1+(-1)^sign.  The second pass groups the first expansion into G-orbits.
+    """
+    supports = {face.project(matching) for matching in matchings}
+    total = 0
+    for support in supports:
+        solution, dimension, cycles = support_system(
+            face.graph, set(bits(support)))
+        fourier = 1
+        for _, sign in cycles:
+            fourier *= 1 + (-1 if sign else 1)
+        affine = 0 if solution is None else 1 << dimension
+        assert fourier == affine
+        total += affine
+
+    unseen, orbit_total, orbit_count = set(supports), 0, 0
+    while unseen:
+        support = min(unseen)
+        orbit = {
+            sum(1 << face.actions[g][e] for e in bits(support))
+            for g in range(len(face.actions))
+        }
+        assert orbit <= supports
+        unseen -= orbit
+        profile = parity_profile(face, support)
+        circuits = profile['nullity'] + profile['components']
+        if profile['odd_circuits'] == 0:
+            orbit_total += len(orbit) * (1 << circuits)
+        orbit_count += 1
+    assert orbit_total == total
+    return total, orbit_count
+
+
 def check_small():
     pair_count = 0
     dual_three_expected = {'A5': True, 'A5_alt': False, 'W50': True, 'F80': False}
+    state_sum_expected = {'A5': 540, 'A5_alt': 540, 'W50': 440, 'F80': 8320}
     for name, expected in [('A5', 125), ('A5_alt', 125), ('W50', 120), ('F80', 705)]:
         generators, n = cases()[name]
         face = QuotientFace(RepairGraph(generators, n))
@@ -318,6 +358,10 @@ def check_small():
               'defect_degree_formula', True, flush=True)
         print('LEXICOGRAPHIC-MINIMUM', name, 'circuits', minimum,
               'oddness_counts', dict(sorted(minimum_oddness.items())), flush=True)
+        state_sum, state_orbits = signed_loop_state_sum(face, independent)
+        assert state_sum == state_sum_expected[name]
+        print('SIGNED-LOOP-STATE-SUM', name, 'value', state_sum,
+              'matching_orbits', state_orbits, flush=True)
         if name == 'A5':
             # A stronger shortcut would colour two disjoint quotient perfect
             # matchings differently and the other three incident edges alike.
@@ -350,6 +394,19 @@ def check_small():
         assert profile['odd_circuits'] == 2
         assert profile['nullity'] + profile['components'] == 2
     print('PARITY-INTERLACEMENT-PETERSEN', 'five_starts', 'two_odd_circuits_each', flush=True)
+
+
+def check_s5_state_sums():
+    """Optional exhaustive 26,305-matching checks for two S_5 maps."""
+    for name in ('S5', 'S5_alt'):
+        generators, n = cases()[name]
+        face = QuotientFace(RepairGraph(generators, n))
+        matchings = list(independent_matchings(face))
+        assert len(matchings) == 26305
+        value, orbits = signed_loop_state_sum(face, matchings)
+        assert value == 115960
+        print('SIGNED-LOOP-STATE-SUM', name, 'value', value,
+              'matchings', len(matchings), 'matching_orbits', orbits, flush=True)
 
 
 def check_averaging_barrier():
@@ -510,12 +567,15 @@ def check_psl11_unrestricted(samples):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--s5-state-sum', action='store_true')
     parser.add_argument('--psl11-centralizers', action='store_true')
     parser.add_argument('--psl11-unrestricted', type=int, metavar='SAMPLES', default=0)
     args = parser.parse_args()
     check_local_lifts()
     check_small()
     check_averaging_barrier()
+    if args.s5_state_sum:
+        check_s5_state_sums()
     if args.psl11_centralizers:
         check_psl11_centralizers()
     if args.psl11_unrestricted:

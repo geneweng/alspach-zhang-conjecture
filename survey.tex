@@ -1069,6 +1069,52 @@ Each quotient edge outside $P$ participates in one relation at each endpoint, so
 There is exactly one sign-$1$ relation per quotient vertex.  Since $|V(Q)|=|G|/5$ is even, the total sign sum is zero.  Thus the number of odd-sign circuits is even, and a single circuit must have even sign sum.
 \end{proof}
 
+The support criterion has a useful counting form.  It is important here to retain the signs: an unsigned circuit-partition polynomial records the number of circuits but loses exactly the obstruction that remains.
+\begin{proposition}[the signed-loop state sum]\label{prop:signed-loop-sum}
+Fix one Tait colour $k$, let $\mathcal P(Q)$ be the set of perfect matchings of $Q$, and for $P\in\mathcal P(Q)$ let $\epsilon_P(C)\in\mathbb F_2$ be the sign sum of a circuit $C$ of $H_P$.  The number $Z_k(Q)$ of labelled Tait colourings in which the colour-$k$ matching belongs to the minimum-$a$-edge face is
+\begin{equation}\label{eq:signed-loop-sum}
+ \begin{split}
+ Z_k(Q)
+ &=\sum_{P\in\mathcal P(Q)}
+       \prod_{C\in\mathcal C(H_P)}
+       \bigl(1+(-1)^{\epsilon_P(C)}\bigr)\\
+ &=\sum_{\substack{P\in\mathcal P(Q)\\
+                    \epsilon_P(C)=0\ \text{for every }C}}
+       2^{c(H_P)}.
+ \end{split}
+\end{equation}
+Equivalently, this is a fixed local three-state partition function on the embedded graph $Q$.  Give every quotient edge one of the states $\{\ast,0,1\}$.  At every vertex require a unique $\ast$-edge, rotate the incident order so that it is
+$e_0=\ast,e_1,e_2,e_3,e_4$, and require
+\[
+ e_1=e_4,\qquad e_2=e_3.
+\]
+Give this local state weight $(-1)^{e_1}$.  Then $Z_k(Q)$ is the sum of the products of the local weights over all admissible edge-state assignments.
+
+The regular action gives the exact orbit expansion
+\begin{equation}\label{eq:signed-loop-orbits}
+ Z_k(Q)=
+ \sum_{\substack{[P]\in\mathcal P(Q)/G\\
+                   \epsilon_P(C)=0\ \text{for every }C}}
+ |G:\operatorname{Stab}_G(P)|\,2^{c(H_P)}.
+\end{equation}
+In particular, $Z_k(Q)>0$ is equivalent to the stronger, minimum-face version of the desired Tait-colouring statement.
+\end{proposition}
+\begin{proof}
+For a fixed $P$, Proposition~\ref{prop:colour-support} gives zero colourings if some circuit is sign-odd and $2^{c(H_P)}$ otherwise.  Each factor in the first line of \eqref{eq:signed-loop-sum} is respectively zero or two, proving both displayed lines.
+
+For the local formulation, expand the product by choosing an arbitrary subset of the circuits of $H_P$.  Label a non-$P$ edge of $Q$ by one exactly when its corresponding vertex of $H_P$ lies on a chosen circuit.  At a quotient vertex the two ends of each local relation lie on the same circuit, giving $e_1=e_4$ and $e_2=e_3$.  The first relation is the unique sign-one relation, so the product of the local weights is $(-1)$ to the total sign sum of the chosen circuits.  Conversely, the equalities propagate a $0$ or $1$ constantly around every circuit of $H_P$, and the unique $\ast$-edges form $P$.  This is a bijection between the terms of the expanded product and the admissible three-state assignments.  Finally $G$ preserves the rotations, circuit counts and circuit signs, so grouping the second sum into orbits proves \eqref{eq:signed-loop-orbits}.
+\end{proof}
+
+There is also a direct edge-colouring-polynomial interpretation.  If
+\[
+ E_k(t)=\sum_{\chi}t^{|\{e:e\text{ is an $a$-edge and }\chi(e)=k\}|},
+\]
+where $\chi$ ranges over labelled Tait colourings of $X$, then Proposition~\ref{prop:quotient-matching-face} gives
+\[
+ Z_k(Q)=[t^{|G|/10}]E_k(t).
+\]
+Thus the target is not merely the usual edge-colouring count: it is its lowest possible $a$-edge coefficient.  The $\Omega$ polynomial of Ellis-Monaghan, Kauffman and Moffatt \cite{EllisMonaghanKauffmanMoffatt18} does count edge colourings of arbitrary ribbon graphs, while the embedded Penrose polynomial at $3$ has that interpretation only in the plane.  Formula~\eqref{eq:signed-loop-sum} identifies the additional coefficient and sign filter that a polynomial proof would have to control.  The orbit formula is the promising new point at which dart-regularity can enter; the local transition identity alone cannot prove non-vanishing, since the Petersen control has five quotient matchings and $Z_k=0$.
+
 The signs can be eliminated by recording where their unique local contributions occur.
 \begin{lemma}[the defect-incidence multigraph]\label{lem:defect-incidence}
 Let $P$ satisfy condition \textup{(i)} of Proposition~\ref{prop:colour-support}.  Form a multigraph $K_P$ whose vertices are the circuits of $H_P$.  At each quotient vertex, mark the unique local relation of sign one.  For every edge $uv\in P$, join in $K_P$ the circuit containing the marked relation at $u$ to the circuit containing the marked relation at $v$; loops are allowed and count twice toward degree.  Then
@@ -1320,6 +1366,12 @@ The dual criterion also has an exact barrier in this test set.  In the four pair
 
 On the two $A_5$ cases, the same two enumerators give $125$ members of $\mathcal F$ each: $115$ colour directly and ten colour after one flip.  On $C_5\wr C_2$ there are $120$, of which sixty colour directly and sixty after one flip; on the order-eighty affine example there are $705$, all colouring directly.  The component-by-component lift is checked for all $15750$ unordered pairs with repetition in the two $A_5$ spaces, and the local lift formula for all $285$ ordered pairs of unmatched positions on cycles of lengths $3,5,7,9,11$.  The implementation \nolinkurl{code/parity_interlacement.py} checks Equation~\eqref{eq:parity-nullity} against direct factor traversal on all $1075$ small-face matchings.  The face-potential construction of Corollary~\ref{cor:dual-three-colour} is also checked directly: the dual is $3$-colourable in the first $A_5$ and the wreath-product cases, but not in the second $A_5$ and affine cases; the more general local four-colour condition succeeds in all four, and the induced Tait colouring is verified on $X$.
 
+The same exhaustive data verify Proposition~\ref{prop:signed-loop-sum} in three independent forms: solving each affine circuit system, multiplying its signed-loop factors, and grouping its nonnegative contributions into $G$-orbits.  In the order just used, the exact values of $Z_k(Q)$ are
+\[
+ 540,\quad 540,\quad 440,\quad 8320.
+\]
+An optional larger run exhausts all $26305$ quotient perfect matchings in each of the two displayed $S_5$ maps and obtains $Z_k(Q)=115960$ in both.  These positive values are evidence for the minimum-face strengthening, not a non-vanishing proof: both $A_5$ and the wreath-product spaces contain obstructed matching orbits, and the orbit expansion has no presently known term that must survive for every regular map.
+
 Minimising the total circuit count alone is insufficient: on the wreath-product example its minimum within $\mathcal F$ is two, attained by ten even factors and ten factors with two odd circuits.  There is no Hamiltonian complement anywhere in that face.  Nevertheless, lexicographically minimising first the number of circuits and then oddness gives zero oddness in all four complete small spaces and all twelve exact invariant $\PSL(2,11)$ spaces.  The positive-drift certificate below shows that a useful repair may increase the total circuit count, so this observation needs a global minimisation argument rather than the presently tested descent.
 
 Even within this safe face, a uniform averaging argument fails.
@@ -1354,7 +1406,7 @@ These rational values are verified by exhaustive finite enumeration in the face 
 \item (Cycle-double-cover palette and quotient switches.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  When $s=5$, it suffices instead to choose a quotient flow whose affine switch system in Proposition~\ref{prop:quotient-switch} is consistent: this already constructs a colouring without the lifts.  Equivalently, in the regular-map formulation, can symmetry or duality select a homology class $h$ and a face potential $z$ satisfying Proposition~\ref{prop:homology-flow}?  The chromatic-number-five duals on $\PSL(2,11)$ show that the zero class is not enough.  The local repeated-value filter is necessary but not sufficient.  Can the Cayley action rule out a global inconsistency certificate for a suitable choice of quotient flow?  Arbitrarily choosing an admissible quotient flow would merely assume the desired colouring, so the choice must have an independent existence proof.
 \item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  The affine layer assignments are exactly the characteristic vectors in Proposition~\ref{prop:affine-layer}, and lift changes preserving $B_c$ preserve this whole affine set.  For $s=5$, its intersection with the affine switch system gives an additional necessary condition for a transvection palette.  Making $B_c$ have small rank alone is insufficient; the quotient flow of the dimension-six experiment is locally obstructed for every choice of lifts.  After avoiding these obstructions, can the remaining lift freedom control the full syndrome?
 \item (Colour support and signed circuits.)  For $s=5$, can the Cayley action be used to choose a support $P$ satisfying Proposition~\ref{prop:colour-support} with every circuit of $H_P$ sign-even?  Proposition~\ref{prop:starting-support} guarantees a locally valid start.  The universal single-circuit descent rule is false, even on $\PSL(2,11)$, by Proposition~\ref{prop:block-barriers}; restricting to minimal valid blocks also fails.  Does every obstructed locally valid matching admit a translate and a proper implication-closed union of difference circuits whose simultaneous flip reduces the odd-circuit count?  Lemma~\ref{lem:mixture-implications} characterises local validity exactly, but does not force this global parity improvement.  Such a theorem would prove the order-five case by descent.  Alternatively, can neutral or temporarily non-local-valid intermediate moves be controlled?  Example~\ref{ex:symmetry-barrier} also excludes monotone growth of the matching stabiliser as a requirement at every step.
-\item (The quotient-matching face.)  Does the smaller, nonempty class $\mathcal F$ of Proposition~\ref{prop:quotient-matching-face} always contain an even-complement matching?  All circuit exchanges against translates remain in this class, so no local-validity implications are needed.  Can the Cayley action force equality in the parity-refined nullity bound \eqref{eq:parity-nullity}, perhaps after neutral exchanges?  A single decreasing flip suffices in the documented finite tests, but Example~\ref{ex:face-drift} excludes two natural uniform negative-drift arguments.  Forcing a single complementary circuit is too strong within this face, as the wreath-product and affine examples show.
+\item (The quotient-matching face.)  Does the smaller, nonempty class $\mathcal F$ of Proposition~\ref{prop:quotient-matching-face} always contain an even-complement matching?  All circuit exchanges against translates remain in this class, so no local-validity implications are needed.  Can the Cayley action force equality in the parity-refined nullity bound \eqref{eq:parity-nullity}, perhaps after neutral exchanges?  Equivalently, can the orbit expansion \eqref{eq:signed-loop-orbits} or a character-theoretic evaluation of its three-state tensor prove $Z_k(Q)>0$?  A single decreasing flip suffices in the documented finite tests, but Example~\ref{ex:face-drift} excludes two natural uniform negative-drift arguments.  Forcing a single complementary circuit is too strong within this face, as the wreath-product and affine examples show.
 \end{enumerate}
 
 \subsection*{Acknowledgements}
@@ -1386,7 +1438,9 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 
 \bibitem{DjokovicMiller80} D.~\v{Z}.~Djokovi\'c, G.~L.~Miller, Regular groups of automorphisms of cubic graphs, \emph{J. Combin. Theory Ser. B} 29 (1980) 195--230.
 
-\bibitem{EllisMonaghanMoffatt13} J.~A.~Ellis-Monaghan, I.~Moffatt, A Penrose polynomial for embedded graphs, \emph{European J. Combin.} 34 (2013) 424--445.
+\bibitem{EllisMonaghanMoffatt13} J.~A.~Ellis-Monaghan, I.~Moffatt, A Penrose polynomial for embedded graphs, \emph{European J. Combin.} 34 (2013) 424--445; \url{https://arxiv.org/abs/1106.5279}.
+
+\bibitem{EllisMonaghanKauffmanMoffatt18} J.~A.~Ellis-Monaghan, L.~H.~Kauffman, I.~Moffatt, Edge colourings and topological graph polynomials, \emph{Australas. J. Combin.} 72 (2018) 290--305; \url{https://arxiv.org/abs/1807.07500}.
 
 \bibitem{GKM09} H.~Glover, K.~Kutnar, D.~Maru\v{s}i\v{c}, Hamiltonian cycles in cubic Cayley graphs: the $\langle 2,4k,3\rangle$ case, \emph{J. Algebraic Combin.} 30 (2009) 447--475.
 
