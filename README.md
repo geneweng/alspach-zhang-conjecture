@@ -22,6 +22,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/layer_potential_experiment.py` | Tests the symmetric quotient bilinear form against the original CDC equations and searches its lift family for a large layer-potential space. |
 | `code/transvection_switch_experiment.py` | Checks the affine palette-layer equation, the order-five quotient-switch table, an all-lifts obstruction, and a direct colouring construction from filtered quotient flows. |
 | `code/colour_support_experiment.py` | Exact signed-cycle test for a prescribed quotient colour support: all 243 local words, a comparison with restricted switches on S5, translated alternating-cycle repairs, independent quotient-matching starts, and all 32 Petersen supports. |
+| `code/translated_repair_audit.py` | Strict descent audit with independently checked flip certificates, complete SAT/backtracking agreement on all 10 500 order-five A5 supports, subgroup-invariant and successive-repair tests on larger groups, stabiliser divisibility checks, and a transitive non-Cayley stall control. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -80,6 +81,12 @@ quotient, whose existence follows from edge connectivity and Tutte's theorem. Of
 matchings on S5, nine colour directly and the other three are repaired by one translated flip.
 An exhaustive check of all 32 Petersen supports fails, as expected. A general decreasing repair move
 has not been proved; the finite repair successes do not establish the conjecture.
+The repair rule is now verified on every locally valid support for both order-five A5 cases:
+two independent enumerators agree on all 10 500 supports, and every one of the 4090 obstructed states
+has a decreasing flip. Thus any such A5 start colours in at most two flips. Successive repairs also
+pass the documented A6 and S6 tests. A structural lemma uses the free Cayley action: if a subgroup H
+preserves a matching, its complementary odd-circuit count is divisible by the largest power of two
+dividing |H|. This restricts possible obstructions but does not yet force the count to vanish.
 No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
@@ -105,7 +112,9 @@ quotient can be the Petersen snark even when the Cayley graph is colourable), an
 For ord(x) = 5, the most direct current target is to choose a quotient colour support whose signed
 circuits all have even parity. A quotient perfect matching guarantees a locally valid start. Odd-sign
 circuits come in pairs; flipping an alternating cycle between the forced matching and a group translate
-repairs the tested failures, but no general decreasing move has been proved. This is the even-2-factor
+is now verified to give a decreasing move on every obstructed locally valid A5 support, but no general decreasing
+move has been proved. The new stabiliser-divisibility lemma provides a constraint that genuinely uses
+regularity; it fails for the transitive, nonregular Petersen action. This is the even-2-factor
 obstruction in quotient coordinates, not a proof by itself. Within the CDC approach, the remaining
 problem is to hit a transvection syndrome after first avoiding the new quotient-level obstructions;
 lift changes preserving the symmetric form preserve the entire affine set of layer assignments.
@@ -122,6 +131,9 @@ python3 cdc_palette_experiment.py         # exact eight-point palette diagnostic
 python3 layer_potential_experiment.py     # quotient form, direct checks, and lift search
 python3 transvection_switch_experiment.py # affine layers and direct order-five switches
 python3 colour_support_experiment.py      # exact signed-cycle support criterion
+python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
+python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
+python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```
