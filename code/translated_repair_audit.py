@@ -328,6 +328,9 @@ def check_petersen_stalls():
 def cases():
     x5 = cycle_perm(5, list(range(5)))
     x6 = cycle_perm(6, list(range(5)))
+    # Multiplication by z in F_16 = F_2[z]/(z^4 + z + 1).
+    z = tuple((i << 1) ^ (19 if i & 8 else 0) for i in range(16))
+    z3 = mul(mul(z, z), z)
     return {
         'A5': ([mul(cycle_perm(5, [0, 1]), cycle_perm(5, [2, 3])), x5], 60),
         'A5_alt': ([mul(cycle_perm(5, [0, 2]), cycle_perm(5, [1, 3])), x5], 60),
@@ -335,6 +338,9 @@ def cases():
         'S5_alt': ([cycle_perm(5, [0, 2]), x5], 120),
         'A6': ([mul(cycle_perm(6, [0, 5]), cycle_perm(6, [1, 2])), x6], 360),
         'S6': ([cycle_perm(6, [0, 5]), x6], 720),
+        'F80': ([tuple(i ^ 1 for i in range(16)), z3], 80),
+        'W50': ([tuple(range(5, 10)) + tuple(range(5)),
+                 cycle_perm(10, list(range(5)))], 50),
     }
 
 
@@ -346,7 +352,7 @@ def main():
     parser.add_argument('--invariant', choices=[
         'none', 'point', 'pair', 'a', 'three', 'blocks', 'centralizer'], default='none')
     parser.add_argument('--independent', action='store_true',
-                        help='compare complete A5 enumeration with non-SAT backtracking')
+                        help='compare complete A5/A5_alt/W50 enumeration with non-SAT backtracking')
     parser.add_argument('--descend', action='store_true',
                         help='follow decreasing moves all the way to an even 2-factor or a stall')
     args = parser.parse_args()
@@ -383,7 +389,7 @@ def main():
         status = {}
         enumerated = set() if args.independent else None
         if args.independent:
-            assert name in ('A5', 'A5_alt') and args.mode == 'local' and args.invariant == 'none'
+            assert name in ('A5', 'A5_alt', 'W50') and args.mode == 'local' and args.invariant == 'none'
         for trial, matching in enumerate(sample_matchings(
                 graph, args.samples, random.Random(509), args.mode == 'quotient', invariant, status)):
             lengths = graph.factor_lengths(matching)
@@ -428,7 +434,8 @@ def main():
             assert len(independent) == len(set(independent))
             assert set(independent) == enumerated
             expected = {'A5': {0: 3475, 2: 2330, 4: 70},
-                        'A5_alt': {0: 2935, 2: 1590, 4: 100}}
+                        'A5_alt': {0: 2935, 2: 1590, 4: 100},
+                        'W50': {0: 1170, 2: 310}}
             assert dict(odd_counts) == expected[name]
             symmetry_counts = Counter()
             for matching in independent:

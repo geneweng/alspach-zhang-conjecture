@@ -23,6 +23,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/transvection_switch_experiment.py` | Checks the affine palette-layer equation, the order-five quotient-switch table, an all-lifts obstruction, and a direct colouring construction from filtered quotient flows. |
 | `code/colour_support_experiment.py` | Exact signed-cycle test for a prescribed quotient colour support: all 243 local words, a comparison with restricted switches on S5, translated alternating-cycle repairs, independent quotient-matching starts, and all 32 Petersen supports. |
 | `code/translated_repair_audit.py` | Strict descent audit with independently checked flip certificates, complete SAT/backtracking agreement on all 10 500 order-five A5 supports, subgroup-invariant and successive-repair tests on larger groups, stabiliser divisibility checks, and a transitive non-Cayley stall control. |
+| `code/involution_repair_experiment.py` | Checks the involution-exchange lemma, verifies paired-circuit descent on all obstructed A5 supports, and certifies an explicit matching whose every decreasing flip loses stabiliser symmetry. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
 | `code/make_table.py` | Builds `results_table.tex` from the JSON result files. |
@@ -87,6 +88,17 @@ has a decreasing flip. Thus any such A5 start colours in at most two flips. Succ
 pass the documented A6 and S6 tests. A structural lemma uses the free Cayley action: if a subgroup H
 preserves a matching, its complementary odd-circuit count is divisible by the largest power of two
 dividing |H|. This restricts possible obstructions but does not yet force the count to vanish.
+An involution-exchange lemma now identifies exactly when a matching and its translate can be
+combined into an invariant matching: no difference circuit may be fixed by the involution;
+any such fixed circuit has length 2 modulo 4. Flipping a paired circuit increases agreement
+with that translate. All 4090 obstructed A5 supports admit a decreasing flip of this restricted
+kind, as do the obstructed states in new 512-matching samples on S5, A6 and S6.
+An explicit A5 example rules out monotone stabiliser growth as a universal repair strategy:
+every valid decreasing single flip changes four odd cycles to two and stabiliser order 12 to 3.
+For every involution outside its stabiliser, the union with its translate has no invariant
+perfect matching. This is a barrier to stronger symmetry strategies, not a stalled descent.
+Solvable-group stress tests also pass: all 1480 locally valid supports on C5 wreath C2
+are enumerated, and a 30 000-matching sample is checked on the 80-element affine group.
 No complete proof and no counterexample.
 
 **Next computational steps**, in order of the bound they give (each is about an hour on 12 cores):
@@ -115,7 +127,10 @@ circuits come in pairs; flipping an alternating cycle between the forced matchin
 is now verified to give a decreasing move on every obstructed locally valid A5 support, but no general decreasing
 move has been proved. The new stabiliser-divisibility lemma provides a constraint that genuinely uses
 regularity; it fails for the transitive, nonregular Petersen action. This is the even-2-factor
-obstruction in quotient coordinates, not a proof by itself. Within the CDC approach, the remaining
+obstruction in quotient coordinates, not a proof by itself. The involution-exchange lemma suggests
+restricting attention to paired difference circuits, but increased local agreement must not be
+confused with growth of the full stabiliser: the explicit A5 example forces symmetry loss at
+every first decreasing flip. Within the CDC approach, the remaining
 problem is to hit a transvection syndrome after first avoiding the new quotient-level obstructions;
 lift changes preserving the symmetric form preserve the entire affine set of layer assignments.
 
@@ -134,6 +149,10 @@ python3 colour_support_experiment.py      # exact signed-cycle support criterion
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend
+python3 translated_repair_audit.py --samples 30000 --groups F80
+python3 translated_repair_audit.py --samples 2000 --groups W50 --independent --descend
+python3 involution_repair_experiment.py --exhaustive-a5
+python3 involution_repair_experiment.py --groups S5 A6 S6 --samples 512
 python3 make_table.py results2.json results.json results_extra.json
 cd .. && pdflatex survey && pdflatex survey && python3 code/build_html.py
 ```
