@@ -32,6 +32,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/odd_transposition_monodromy_experiment.py` | Checks the explicit one-cycle chord construction for every nonadjacent coprime chord, including the exceptional distances 2 and 3. |
 | `code/sparse_involution_cycle_experiment.py`, `code/septuple_n17_experiment.py`, `code/septuple_later_experiment.py` | Exhaustively certify the odd full-cycle/sparse-involution theorem through seven transpositions. The later checker uses witnessed binary endpoint patterns to cover 37,749,456 quotient types in degrees 19 through 27, with exact point- and two-set fallbacks. |
 | `code/nonuple_n19_monodromy_experiment.py` | Exhausts all 34,459,425 labelled nine-transposition involutions in degree 19. Adaptive point-quotient matchings and exact circuit monodromies certify every case. |
+| `code/three_semiedge_path_experiment.py` | Exhausts the conjectural single alternating-path sign certificate for every three-semi-edge diagram through order 13, pair by pair, and provides a seeded large-order stress mode. |
 | `code/parity_interlacement.py` | Computes oddness both as the number of odd-degree vertices in the defect-incidence multigraph and as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
@@ -57,11 +58,17 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (5 September 2026)
 
-**Latest result: the first nine-transposition boundary.** Let N be odd,
+**Latest result: every full-cycle generating pair in S23.** Let N be odd,
 let x be an N-cycle in S_N, and let a be a product of r disjoint transpositions,
 with <a,x> = S_N. The survey proves that Cay(S_N,{a,x,x^-1}) is 3-edge-colourable
-whenever N >= 4r+1, for every possible N when r <= 7, and also for (r,N)=(9,19).
-The large range follows
+whenever N >= 4r+1, for every possible N when r <= 7, for (r,N)=(9,19),
+and for every r when N=23. In degree 23, quotienting by the even point
+stabilizer A22 gives an ordinary cycle permutation graph on 46 vertices. The
+exhaustive Goedgebeur--Renders--Van Overberghe census contains no permutation
+snark of that order, so the quotient colouring lifts. This also settles the
+previously untouched eleven-transposition case.
+
+The large sparse range follows
 because a then has two consecutive fixed points. Exact, directly verified quotient
 certificates handle the remaining cases r=3 and r=5. They use point stabilizers where
 possible and switch to two-set stabilizers for the parity-blocked and Petersen-like
@@ -327,6 +334,8 @@ python3 sparse_involution_cycle_experiment.py # sparse involutions paired with f
 python3 septuple_n17_experiment.py --workers 4 # exhaustive degree-17 boundary certificate
 python3 septuple_later_experiment.py --workers 4 # all remaining seven-transposition boundaries
 python3 nonuple_n19_monodromy_experiment.py --workers 4 # all 17!! degree-19 chord matchings
+python3 three_semiedge_path_experiment.py # exact conjectural path test through degree 13
+python3 three_semiedge_path_experiment.py --max-exact 3 --random-n 21 --samples 20000
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend
