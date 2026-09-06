@@ -31,6 +31,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/two_cycle_monodromy_experiment.py` | Checks the canonical circuit-free quotient matching for transpositions joining two coprime odd cycles, and exhausts small quotient matching spaces including genuine bad-word controls. |
 | `code/odd_transposition_monodromy_experiment.py` | Checks the explicit one-cycle chord construction for every nonadjacent coprime chord, including the exceptional distances 2 and 3. |
 | `code/sparse_involution_cycle_experiment.py`, `code/septuple_n17_experiment.py`, `code/septuple_later_experiment.py` | Exhaustively certify the odd full-cycle/sparse-involution theorem through seven transpositions. The later checker uses witnessed binary endpoint patterns to cover 37,749,456 quotient types in degrees 19 through 27, with exact point- and two-set fallbacks. |
+| `code/nonuple_n19_monodromy_experiment.py` | Exhausts all 34,459,425 labelled nine-transposition involutions in degree 19. Adaptive point-quotient matchings and exact circuit monodromies certify every case. |
 | `code/parity_interlacement.py` | Computes oddness both as the number of odd-degree vertices in the defect-incidence multigraph and as a difference of two binary interlacement nullities, using a two-sheeted cover of the four-regular quotient minus a matching. |
 | `code/extra_groups.py` | The same check for PSU(3,3), G2(2) = PSU(3,3).2 and PSL(3,3).2 (first-checker method). |
 | `code/atlas/` | Permutation generators (MeatAxe text format) for Sz(8), M12, M12.2, J1, J2, M22, PSL(3,5), PSL(3,7), copied from the ATLAS of Finite Group Representations (brauer.maths.qmul.ac.uk/Atlas). |
@@ -56,10 +57,11 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (5 September 2026)
 
-**Latest result: full odd cycles paired with sparse involutions.** Let N be odd,
+**Latest result: the first nine-transposition boundary.** Let N be odd,
 let x be an N-cycle in S_N, and let a be a product of r disjoint transpositions,
 with <a,x> = S_N. The survey proves that Cay(S_N,{a,x,x^-1}) is 3-edge-colourable
-whenever N >= 4r+1, and for every possible N when r <= 7. The large range follows
+whenever N >= 4r+1, for every possible N when r <= 7, and also for (r,N)=(9,19).
+The large range follows
 because a then has two consecutive fixed points. Exact, directly verified quotient
 certificates handle the remaining cases r=3 and r=5. They use point stabilizers where
 possible and switch to two-set stabilizers for the parity-blocked and Petersen-like
@@ -85,6 +87,15 @@ except 40 types in degree 19, and all 40 two-set quotients colour. A witnessed
 two-colour endpoint-pattern construction alone handles every type in degrees
 23,25,27, all but two in degree 21, and all but 452 in degree 19; independently
 verified full point and two-set SAT checks handle those small residual sets.
+
+For (r,N)=(9,19), the unique semi-edge makes an invariant point-quotient colouring
+parity-impossible, but an invariant perfect matching still lifts. The monodromy checker
+exhausts all 17!! = 34,459,425 labelled chord matchings. Its canonical quotient matching
+certifies 29,914,533 cases; an adaptive matching exchange certifies the other 4,544,892.
+Of the total, 24,521,143 are settled just because every odd quotient circuit has an odd
+number of involution edges, while 9,938,282 require computing an even monodromy order.
+There are no failures, and at most 35 quotient matchings are tried in any case. This
+settles degree 19 without using the generation hypothesis.
 
 **Previous result: the transposition case for every symmetric group.** If N >= 3,
 a is a transposition, x in S_N has odd order, and <a,x> = S_N, the survey now proves
@@ -118,7 +129,7 @@ enumerator. That earlier theorem covers one generating pair per symmetric group 
 degree, whereas the new result above covers every pair whose involution is a
 transposition; no claim of priority over the Hamiltonicity literature is made.
 The Alspach–Zhang conjecture remains open. The next symmetric-group target is a full
-odd cycle with nine transpositions in degrees 19 through 35; the broader target is to control
+odd cycle with nine transpositions in degrees 21 through 35; the broader target is to control
 odd quotient-circuit words for other almost simple groups.
 
 **Previous result: a congruence using the regular action.** For any invariant family of
@@ -315,6 +326,7 @@ python3 odd_transposition_monodromy_experiment.py --max-N 51 # every coprime one
 python3 sparse_involution_cycle_experiment.py # sparse involutions paired with full odd cycles
 python3 septuple_n17_experiment.py --workers 4 # exhaustive degree-17 boundary certificate
 python3 septuple_later_experiment.py --workers 4 # all remaining seven-transposition boundaries
+python3 nonuple_n19_monodromy_experiment.py --workers 4 # all 17!! degree-19 chord matchings
 python3 translated_repair_audit.py --samples 100000 --groups A5 A5_alt --independent
 python3 translated_repair_audit.py --samples 1024 --groups A6 S6 --invariant three --descend
 python3 translated_repair_audit.py --samples 2000 --groups A6 --invariant centralizer --descend
