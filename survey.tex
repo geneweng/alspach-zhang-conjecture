@@ -45,6 +45,8 @@
 
 \begin{abstract}
 In 1992 Brian Alspach and Cun-Quan Zhang conjectured that every Cayley graph of valency at least two admits a nowhere-zero $4$-flow.  By theorems of Mader and Jaeger this is equivalent to the statement that every connected cubic Cayley graph is $3$-edge-colourable, or, in the language introduced by Nedela and \v{S}koviera, that there are no \emph{Cayley snarks}.  The conjecture is implied by the folklore conjecture that every Cayley graph is hamiltonian, and it is known to hold for solvable groups (Alspach, Liu and Zhang), for all cubic graphs admitting a solvable vertex-transitive group of automorphisms other than the Petersen graph (Poto\v{c}nik), and for all cubic Cayley graphs on at most $1280$ vertices (Poto\v{c}nik, Spiga and Verret).  A minimal counterexample, if one exists, is a Cayley graph on a non-abelian simple group or on a group with a unique non-trivial proper normal subgroup, which has index two (Nedela and \v{S}koviera).  We survey these results, give short self-contained proofs of the elementary reductions, record several reformulations (in terms of arc-regular cubic graphs, of bi-Cayley graphs, and of small girth), and prove a quotient lemma for arbitrary subgroups (with semi-edges).  Its matching-monodromy refinement, together with a known Hamiltonicity result in one boundary case, proves the conjecture whenever $G=S_N$ and the involutory generator is a transposition; point- and two-set-stabiliser arguments with finite certificates also prove it when $N$ is odd, $x$ is an $N$-cycle and the involution is a product of at most seven transpositions, or more generally has $r$ transpositions with $N\ge4r+1$.  A matching-monodromy calculation additionally settles the first nine-transposition boundary $(r,N)=(9,19)$, and an alternating-group quotient together with the exhaustive cycle-permutation-graph census settles every full-cycle generating pair in $S_{23}$.  We also describe the $3$-edge-colourings of $\Cay(G,\{a,x,x^{-1}\})$ as $a$-invariant functions $G\to\mathbb{Z}_3$ with a local admissibility condition along the $x$-cycles, and prove that the index-two case is always colourable when $\ord(x)=3$.  We analyse the new $\mathbb F_2^3$ construction in the 2026 proof of the cycle double cover theorem, extracting an exact eight-vertex palette reformulation, constructing generator-separated rank-three flows, and reducing the potentially non-circular part of the method to twelve explicit augmented affine systems and an exact interlacement obstruction for their layer potentials.  For generators of order five we further identify the quotient as an orientably regular map and decompose the exact constrained $4$-flow target into face potentials and surface homology.  Finally, we report a computer verification of the conjecture for all cubic Cayley graphs on 85 non-solvable groups of order up to $300\,696$, including every group permitted by the Nedela--\v{S}koviera reduction of order less than $352\,440$; consequently a smallest Cayley snark, if one exists, has more than $352\,439$ vertices.
+
+For $q=2^m\ge4$, we additionally construct colourings on $\PSL(2,q)$ for at least $13/16-O(q^{-1/2})$ of the generating translations $a(z)=z+c$ for every fixed full-cycle generator $x(z)=1/(z+t)$, uniformly in $t$.  This follows from an exact trace criterion for a paired two-chord exchange and a Kloosterman-sum count.  The full conjecture remains open.
 \end{abstract}
 
 \tableofcontents
@@ -444,7 +446,898 @@ Starting over a vertex $Hg$, a traversal of $C$ takes $g$ to $gw_C$, where $gw_C
 For a capped path, choose a semi-edge and one of its lifts $e$.  An involution of $H$ interchanges the endpoints of $e$.  Since $M$ is $H$-invariant, this involution preserves the complementary circuit through $e$ and acts on it without fixed vertices.  An odd circuit has no fixed-point-free involutory automorphism, so that circuit is even.  Every component over the capped path contains a lift of that semi-edge.  The final assertion follows from the circuit formula.
 \end{proof}
 
-Here is a family in which the monodromy orders can be controlled explicitly, without a bound on the number of lifted circuits.
+\begin{corollary}[$2$-subgroup identity obstruction]\label{cor:sylow-identity}
+Let $P\le G$ be a $2$-subgroup and let $\bar M$ be a perfect matching of $Y=P\backslash\X{G}{a}{x}$.  Write $B(\bar M)$ for the number of odd circuit components of $Y-\bar M$ whose traversal word is the identity.  The lifted complement has exactly $|P|B(\bar M)$ odd circuits.  In particular it is even if and only if $B(\bar M)=0$.
+\end{corollary}
+\begin{proof}
+The subgroup $P$ contains no conjugate of the nonidentity odd-order element $x$.  A circuit word based at $Pg$ is conjugate into $P$, so its order is a power of two.  By Lemma~\ref{lem:matching-monodromy}, an odd quotient circuit has odd lifts precisely when its word is the identity, in which case it has exactly $|P|$ such lifts.  All other components have even lifts.
+\end{proof}
+
+This replaces the unavailable sign homomorphism on a nonabelian simple group by a specific word obstruction.  It does not supply the matching.  The program \path{code/sylow_monodromy_review.py} tests a Sylow $2$-subgroup containing $a$ on all $358$ generating-pair orbits under inner conjugation and $x$-inversion for $\PSL(2,q)$, $q=5,7,8,9,11,13,17,19,23$.  Every orbit has a successful matching, checked by a full lift.  Two order-three cases at $q=17$ have noncolourable quotients but successful matching monodromy.  These are tests of the mechanism on already verified groups, not a new counterexample-size bound.
+
+There is also a non-circular counting target.  For a nonempty matching class $\mathcal F_P$, chosen without reference to a colouring, put $Z=|\mathcal F_P|$.  For each odd identity-word circuit $C$ in $Y$, let $Z_C$ count the members whose complements contain $C$.  Then
+\[
+ \mathbb E_{\bar M\in\mathcal F_P}B(\bar M)
+       =\frac{\sum_C Z_C}{Z},\qquad
+ \sum_C Z_C<Z\ \Longrightarrow\ \exists\bar M\in\mathcal F_P:\ B(\bar M)=0.
+\]
+Uniform averaging over \emph{all} quotient matchings is too strong: order-three examples in $A_5$ and $\PSL(2,7)$ have expectations $5/4$ and $7/4$, respectively.  Instead, consider matchings selecting exactly one $a$-dart on each quotient $x$-cycle.  Such a cycle has length $\ord(x)$ because $P$ is a $2$-group.  Contract the cycles, retain $a$-edges and semi-edges, and disallow ordinary loops.  Perfect pregraph matchings of this contraction correspond bijectively to the proposed class: after selecting its unique $a$-dart, the remaining even path in each $x$-cycle has a unique matching.  When nonempty, this class minimises the number of vertices matched by $a$-items.  Nonemptiness in every proposed quotient is itself unproved.
+
+The exact-cover counter in \texttt{code/sylow\_minimum\_face\_experiment.py} exhausts this class in the following tests.  Orbits and Sylow subgroups are chosen as above; the last column is the largest exact expectation among the listed representatives.
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+$q$ & allowed $\ord(x)$ & pair orbits & $\max\mathbb E B$\\
+\midrule
+5 & all odd & 6 & $0$\\
+7 & all odd & 4 & $2/17$\\
+8 & all odd & 42 & $3/47$\\
+9 & all odd & 4 & $8/97$\\
+11 & $3$ & 1 & $491/17720$\\
+17 & $3$ & 8 & $254/13539$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For example, the $q=11$ class has $53\,160$ matchings and bad-circuit histogram $\{0:51\,690,1:1467,2:3\}$.  All displayed expectations are strictly below one, but some matchings are bad.  Independent full traversals check Corollary~\ref{cor:sylow-identity} on every matching for $q=5,7,8,9$, and on positive and negative witnesses in each larger case.  An order-three run at $q=13$ reaches the preset $500\,000$ counting-state limit on all six representatives; it proves neither failure nor success of the estimate there.  A uniform bound, rather than additional positive instances, remains the counting problem.
+
+\begin{proposition}[Borel reversal in characteristic two]\label{prop:borel-reversal}
+Let $q=2^m\ge4$, $G=\PSL(2,q)$, and let
+\[
+ a(z)=z+c,\qquad x(z)=\frac{1}{z+t},\qquad c,t\in\mathbb F_q^*,
+\]
+where $x$ acts as a $(q+1)$-cycle on the projective line.  Let $H=G_\infty$ and index the vertices of $H\backslash X$ by $z_i=x^i(\infty)$, $i\in\ZZ_{q+1}$.  Choose the semi-edge at $i=0$ and the cycle edges
+\[
+ (1,2),(3,4),\ldots,(q-1,q)
+\]
+as a matching $\bar M_0$.  Its complement has a unique odd circuit, the circuit $C_0$ through $0$.  The traversal word of $C_0$ based at $\infty$ is a translation $w(z)=z+\beta$.  Consequently the lifted complement is even if and only if $\beta\ne0$.
+\end{proposition}
+\begin{proof}
+The sole fixed point of $a$ is $\infty$.  Every other vertex of the complement has one cycle edge and one $a$-chord.  Thus circuits avoiding $0$ alternate these types and are even.  On $C_0$, the vertex $0$ has two cycle edges; hence there is one more cycle edge than chord, and the circuit is odd.
+
+Put $r(z)=z+t$.  Direct calculation gives $rar=a$ and $rxr=x^{-1}$.  Also $r(\infty)=\infty$, so $r$ acts on cycle indices by $i\mapsto-i$.  It preserves $\bar M_0$, fixes $C_0$ setwise, and reverses its traversal starting at $0$.  Therefore
+\[
+ rwr=w^{-1}.
+\]
+Since $w$ fixes $\infty$, write $w(z)=\lambda z+\beta$ with $\lambda\ne0$.  Conjugation by the translation $r$ preserves the slope $\lambda$, whereas inversion replaces it by $\lambda^{-1}$.  Thus $\lambda^2=1$, which in characteristic two forces $\lambda=1$.  A nonidentity translation has order two; the identity has order one.  The subgroup $H$ contains no conjugate of $x$, since a full projective-line cycle has no fixed point.  Lemma~\ref{lem:matching-monodromy} gives the conclusion.
+\end{proof}
+
+The displayed coordinates impose no extra restriction on a pair in characteristic two with $\ord(x)=q+1$.  First put the unique fixed point of $a$ at $\infty$, so $a$ is a nonzero translation.  Write a determinant-one matrix for $x$ as $\left(\begin{smallmatrix}u&v\\b&d\end{smallmatrix}\right)$, with $b\ne0$.  Conjugating by $z\mapsto bz+u$ puts $x$ into the form $1/(z+u+d)$ and keeps $a$ a nonzero translation.  The trace $u+d$ is nonzero because $x$ has odd order greater than one.
+
+The nonvanishing conclusion cannot be added to Proposition~\ref{prop:borel-reversal} without changing the matching.  The exact matrix-word test in \texttt{code/borel\_reversal\_experiment.py} examines every displayed parameter pair with full-cycle $x$ for $q=4,8,16,32,64$.  The canonical matching succeeds on all $6,21,120,310$ pairs in the first four fields, respectively, and on $1500$ of $1512$ pairs at $q=64$.  These are parameter counts, including nongenerating pairs, not orbit counts.  In each of the twelve failures, $C_0$ has length $49$ and word equal to the identity.  In $\mathbb F_{64}=\mathbb F_2[\theta]/(\theta^6+\theta+1)$, the pair
+\[
+ t=1+\theta+\theta^2,\qquad c=\theta+\theta^3+\theta^4
+\]
+is one such failure; a separate group-closure calculation verifies that it generates all $262\,080$ elements of $\PSL(2,64)$.
+
+All twelve failures admit a more structured repair than unrestricted matching search: select an $a$-chord together with its reflected chord under $i\mapsto-i$, and complete by cycle edges whenever the remaining paths have even order.  Each failure has six such candidate matchings, of which five or six have even lifted complements.  For the displayed pair, choosing chords $(17,32)$ and $(33,48)$ gives quotient circuits of lengths $57$ and $8$; the odd one's word is $z\mapsto z+(1+\theta+\theta^2+\theta^3+\theta^4+\theta^5)$, a nonidentity translation.  The stored matrices are independently checked by composing the induced projective permutations.  The file \texttt{code/borel\_reversal\_results.json} retains the failed words and repaired matchings.  This suggests a linear-size reflected-chord candidate family, but neither its universal success nor the full simple-group case is proved.
+
+\begin{lemma}[generation for full projective cycles]\label{lem:borel-generation}
+In the coordinates of Proposition~\ref{prop:borel-reversal}, the pair $a,x$ generates $\PSL(2,q)$ if and only if $c\ne t$.
+\end{lemma}
+\begin{proof}
+For even $q$, the maximal-subgroup classification gives point stabilisers, the two torus normalisers, and proper subfield groups; see \cite[Theorem~7.17]{DGLP08}.  An element of order $q+1$ belongs to neither a point stabiliser nor the split torus normaliser.  In a proper subfield group over $\mathbb F_{q_0}$ every element has order at most $q_0+1<q+1$.  Thus a proper subgroup containing $x$ lies in its dihedral normaliser $\langle x,r\rangle$ of order $2(q+1)$.  On the odd projective cycle this normaliser has exactly one reflection fixing $\infty$, namely $r(z)=z+t$.  Since $a$ fixes $\infty$, it belongs to that normaliser precisely when $a=r$, or $c=t$.
+\end{proof}
+
+\begin{corollary}[two characteristic-two parameter families]\label{cor:borel-pentagon}
+For every $q=2^m\ge4$ and every full-cycle $x(z)=1/(z+t)$, the Cayley graphs on $\PSL(2,q)$ obtained with $a(z)=z+1$ or $a(z)=z+t+1$ are connected and $3$-edge-colourable.
+\end{corollary}
+\begin{proof}
+Put $h=q/2$.  The middle points of the indexed cycle are $z_h=t+1$ and $z_{h+1}=1$: they are the unique fixed points of $rx$ and $rx^{-1}$, respectively.  Both displayed choices of $a$ join the reflection-pair of index $1$ to the reflection-pair of index $h$.  In the canonical complement, the circuit through $\infty$ is the pentagon
+\[
+ \infty,\ 0,\ c,\ c+t,\ t,\ \infty.
+\]
+Its labels are $x,a,x^{-1},a,x^{-1}$ when $c=1$, and $x,a,x,a,x^{-1}$ when $c=t+1$.  Multiplying the corresponding matrices gives $w(z)=z+t+1$ in both cases.  The parameter $t$ is not $1$, since trace $1$ would make $x$ have order three.  Thus this word has order two, and every other complementary circuit is even by Proposition~\ref{prop:borel-reversal}.  The colouring follows from Lemma~\ref{lem:matching-monodromy}; connectedness follows from Lemma~\ref{lem:borel-generation}.
+\end{proof}
+Such $t$ exist for every $q$: take $t=\lambda+\lambda^{-1}$ for an element $\lambda$ of order $q+1$ in $\mathbb F_{q^2}^*$.  These are thin parameter families, not all generating pairs on the indicated simple groups.  The case $c=t+1$ has $\ord(ax)=3$ and overlaps Theorem~\ref{thm:2s3}; no priority claim over the Hamiltonicity literature is intended.
+
+\begin{proposition}[folded matching and scalar gain]\label{prop:borel-gain}
+Keep the full-cycle coordinates, assume $c\ne t$, and put $h=q/2$ and $\Delta=c(c+t)$.  Identify indices $i$ and $-i$ under $r$.  On the nonzero index pairs this gives a graph $F$ on $1,\ldots,h$, consisting of the path in that order and a perfect matching of $a$-chords; parallel path and chord edges remain distinct.  Perfect matchings $N$ of $F$ correspond bijectively to reversal-invariant perfect matchings of the point quotient.
+
+Adjoin a vertex $0$ joined to $1$ and a semi-edge at $h$.  The complement of $N$ has a unique path $P_N$ from $0$ to that semi-edge.  Put
+\[
+ k_i=z_i^2+t z_i+1,\qquad
+ \gamma(N)=\prod_{\substack{i\to j\text{ an }a\text{-chord}\\\text{traversed along }P_N}}
+                \frac{k_i}{k_j}.
+\]
+The labels $k_i$ are distinct and nonzero, $k_1=1$, $k_h=t$, and chord partners satisfy $k_j=k_i+\Delta$.  The word of the odd point-quotient circuit through $\infty$ is
+\[
+                    w(z)=z+t\bigl(1+\gamma(N)\bigr).
+\]
+If every endpoint of every chord selected by $N$ lies on $P_N$, all other point-quotient circuits are even.  Under this additional condition the matching colours the Cayley graph if and only if $\gamma(N)\ne1$.
+\end{proposition}
+\begin{proof}
+The reversal fixes no $a$-chord when $c\ne t$.  Its only fixed ordinary edge is the middle cycle edge $(h,h+1)$.  Every matching contains the sole semi-edge at $0$ and has $h$ ordinary edges.  Since $h$ is even and all other ordinary edge orbits have size two, a reversal-invariant matching cannot select the middle edge.  Its remaining edge orbits are exactly the edges of a perfect matching of $F$.  This also proves the converse and the assertion about the complementary path.  The path lifts to a circuit formed by its two reflected halves and the middle edge, hence of odd length.
+
+There is an exact half-word formula.  Let $V=\left(\begin{smallmatrix}p&b\\d&e\end{smallmatrix}\right)$ be the matrix of the first half of this circuit, from $\infty$ to one endpoint of the middle edge, and let $S$ be that edge's label, $x$ or $x^{-1}$.  Write $R=\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)$.  Using ordinary function composition for matrices, the full word is
+\[
+ W=R V^{-1}R S V.
+\]
+If $u=V(\infty)$, then $u=t+1$ or $1$, and direct calculation gives
+\[
+ RS=I+\begin{pmatrix}u&u^2\\1&u\end{pmatrix},\qquad
+ V^{-1}RSV=\begin{pmatrix}1&d^{-2}\\0&1\end{pmatrix}.
+\]
+Here $d\ne0$ because $u$ is finite.  Consequently the translation parameter is $\beta=t+d^{-2}$.
+
+For its scalar version, define $D_0=0$, $D_1=1$, and $D_{i+1}=tD_i+D_{i-1}$.  The matrix of $x^i$ is
+\[
+ \begin{pmatrix}D_{i-1}&D_i\\D_i&D_{i+1}\end{pmatrix}.
+\]
+For $1\le i\le h$, its determinant and its image of $\infty$ give
+\[
+                  D_i^{-2}=z_i^2+t z_i+1=k_i.
+\]
+The quadratic expression takes the same value exactly at the two points $z,z+t$, proving distinctness on the folded vertices; it never vanishes because $x$ has no fixed point.  Translation by $c$ changes it by $\Delta$.  Also $z_1=0$ and $z_h=t+1$, giving $k_1=1$ and $k_h=t$.
+
+Along a cycle edge from folded index $i$ to $j$, the lower-left entry of the partial traversal matrix changes by the factor $D_j/D_i$, regardless of which reflected half contains the current point.  Along an $a$-chord it is unchanged.  Starting with the edge $0\to1$ therefore gives
+\[
+ d=D_h\prod_{i\to j\text{ a chord on }P_N}\frac{D_i}{D_j},
+ \qquad d^{-2}=t\gamma(N).
+\]
+Substitute this into the half-word formula.  Finally, if every selected chord endpoint lies on $P_N$, every vertex outside the lifted distinguished circuit has exactly one complementary cycle edge and one complementary $a$-edge.  Those other circuits alternate the two types and are even.  Apply Lemma~\ref{lem:matching-monodromy}.
+\end{proof}
+
+The folded labels form the affine hyperplane
+\[
+ \{k_i:1\le i\le h\}
+   =\{k\in\mathbb F_q:\operatorname{Tr}_{\mathbb F_q/\mathbb F_2}(k/t^2)=1\}.
+\]
+Indeed the image of $y\mapsto y^2+y$ has trace zero, while the nonsplit condition gives $\operatorname{Tr}(1/t^2)=1$.  Replacing $c$ by $c+t$ preserves $\Delta$, the folded graph and every scalar gain, although it can change other lifted circuit obstructions.
+
+\begin{lemma}[short spanning exchanges]\label{lem:borel-spanning}
+In the setting of Proposition~\ref{prop:borel-gain}, suppose that $P_N$ spans $F$ and traverses exactly one or two $a$-chords.  Then the lifted complement consists of circuits of length $2(q+1)$ and gives a $3$-edge-colouring.  Either of the following configurations supplies such a matching:
+\begin{enumerate}
+\item an $a$-chord parallel to a path edge $(i,i+1)$;
+\item two $a$-chords $(i,j)$ and $(i+1,j+1)$ with $i+1<j<h$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+Since $P_N$ spans $F$, the point-quotient complement is a single circuit of length $q+1$.  For one traversed chord its gain is $k/(k+\Delta)\ne1$.  For two distinct traversed chords with source labels $k,\ell$, unit gain would give
+\[
+ k\ell=(k+\Delta)(\ell+\Delta),\qquad k+\ell=\Delta.
+\]
+But then $k,\ell$ are partners on the same chord, contradicting distinctness.  Proposition~\ref{prop:borel-gain} therefore gives a nonidentity translation word, of order two, and the claimed lifted lengths.
+
+Start with the matching of all $a$-chords.  In the first configuration replace the indicated chord by its parallel path edge.  The complementary path follows $1,\ldots,h$, using the chord in place of that path edge.  In the second configuration replace the two indicated chords by the path edges $(i,i+1)$ and $(j,j+1)$.  The complementary path visits
+\[
+ 1,\ldots,i,\ j,j-1,\ldots,i+1,\ j+1,j+2,\ldots,h.
+\]
+It spans $F$ and uses exactly the two indicated chords.  Both replacements are perfect matchings.
+\end{proof}
+
+\begin{proposition}[a positive-density trace-test family]\label{prop:borel-trace}
+Let $q=2^m\ge4$, let $x(z)=1/(z+t)$ have order $q+1$, and let $a(z)=z+c$ with $c\notin\{0,t\}$.  Write $\operatorname{Tr}$ for the absolute field trace.  If
+\[
+ \operatorname{Tr}(1/c)=0\quad\hbox{or}\quad
+ \operatorname{Tr}\bigl(1/(c+t)\bigr)=0,
+\]
+then $\X{\PSL(2,q)}{a}{x}$ has a perfect matching whose complementary circuits all have length $2(q+1)$.  In particular it is connected and $3$-edge-colourable.
+
+For each such $t$, the number $N_t$ of translations satisfying this sufficient test is exactly
+\[
+ N_t=\frac{3q-5-K(t^{-2})}{4},\qquad
+ K(b)=\sum_{u\in\mathbb F_q^*}(-1)^{\operatorname{Tr}(u+b/u)}.
+\]
+Consequently
+\[
+ N_t\ge q/2,\qquad
+ \left|N_t-\frac{3q-5}{4}\right|\le\frac{\sqrt q}{2}.
+\]
+Thus this construction covers a proportion $3/4+O(q^{-1/2})$ of the $q-2$ generating translations for each full-cycle $t$, uniformly in $t$.
+\end{proposition}
+\begin{proof}
+Put $r(z)=z+t$.  A chord is parallel to a path edge in the folded graph exactly when some projective point $z$ satisfies $xz=az$ or $xz=arz$.  Indeed a folded path edge has a lift $\{z,xz\}$, and its endpoint orbits are joined by a chord precisely in these two cases.  The endpoints cannot collapse to one folded vertex, since $a$ has no fixed nonzero folded vertex when $c\notin\{0,t\}$.  The equations are equivalent to a fixed point of $ax$ or $arx$, respectively.  These matrices have determinant one and nonzero traces $c+t$ and $c$.  A determinant-one matrix with nonzero trace $v$ has a projective fixed point over $\mathbb F_q$ exactly when
+\[
+ \lambda^2+v\lambda+1=0
+\]
+has a root there, equivalently when $\operatorname{Tr}(v^{-2})=\operatorname{Tr}(v^{-1})=0$.  The first configuration of Lemma~\ref{lem:borel-spanning} proves the colouring assertion; Lemma~\ref{lem:borel-generation} proves connectedness.
+
+For the count, let $\psi(u)=(-1)^{\operatorname{Tr}(u)}$.  The nonsplit full-cycle condition gives $\operatorname{Tr}(1/t)=1$.  Hence
+\[
+ \sum_{c\ne0,t}\psi(1/c)=\sum_{c\ne0,t}\psi(1/(c+t))=0.
+\]
+On substituting $s=c/(c+t)$, and then $u=s/t$, the mixed character sum becomes
+\[
+ \sum_{c\ne0,t}\psi\bigl(1/c+1/(c+t)\bigr)
+ =\sum_{s\ne0,1}\psi\bigl((s+s^{-1})/t\bigr)
+ =K(t^{-2})-1.
+\]
+Expanding the indicator that both traces are one gives $(q-3+K(t^{-2}))/4$ excluded parameters and the stated formula for $N_t$.  The standard binary Kloosterman bound $|K(b)|\le2\sqrt q$ follows from the elliptic-curve interpretation and Hasse's bound; see \cite[Lemma~2.1 and Section~6.3]{AhmadiGranger12}.  That paper includes an extra $1$ in its definition of the sum; $K$ here does not.
+
+For the elementary lower bound, the set $A=\{c\in\mathbb F_q^*: \operatorname{Tr}(1/c)=0\}$ has odd size $q/2-1$ and does not contain $t$.  The sufficient-test set is $A\cup(A+t)$.  Translation by $t$ has no fixed points, so an odd set cannot be invariant under it.  Thus $|A\cup(A+t)|\ge |A|+1=q/2$.
+\end{proof}
+
+This is a uniform sufficient family, not a density estimate for all cubic Cayley graphs or a priority claim over existing constructions.  It uses the opposite starting matching from the canonical repair search: all folded chords rather than all alternate path edges.  The remaining parameters satisfy the simultaneous conditions $\operatorname{Tr}(1/c)=\operatorname{Tr}(1/(c+t))=1$.  A crossing-square exchange can cover further parameters, but is not guaranteed even in this residual set.
+
+\begin{proposition}[a quartic obstruction for three-chord exchanges]\label{prop:borel-three-quartic}
+Keep the full-cycle coordinates and suppose $c\notin\{0,t,1,t+1\}$.  Start with the folded matching of all $a$-chords and exchange along a simple alternating circuit with three chords and three path edges.  Suppose the complementary path of the resulting matching $N$ spans $F$.  Define
+\[
+ E_t(\Delta)=\Delta^4+t^3\Delta^2+t^4\Delta+1+t^3+t^4+t^5,
+ \qquad \Delta=c(c+t).
+\]
+If $E_t(\Delta)\ne0$, then $\gamma(N)\ne1$ and the matching colours the Cayley graph.  Thus, apart from the two already-colourable pentagon families, for each fixed $t$ there are at most eight translations for which a spanning three-chord exchange can have unit gain.  This does not assert existence of such an exchange.
+\end{proposition}
+\begin{proof}
+Orient the short alternating circuit $C$.  Its three chords are exactly the chords traversed by the spanning complementary path.  Lift its traversal starting at a finite projective point $z$.  It ends at $z$ or $z+t$; after correcting by $R^\eta$, $\eta\in\{0,1\}$, its word has matrix
+\[
+ W=R^\eta X^{\epsilon_3}A X^{\epsilon_2}A X^{\epsilon_1}A
+   =\begin{pmatrix}p&b\\\ell&d\end{pmatrix},\qquad
+ \epsilon_i\in\{1,-1\},\qquad W(z)=z.
+\]
+Put $Q(z)=z^2+tz+1$ and $\delta=\ell z+d\ne0$.  The telescoping in Proposition~\ref{prop:borel-gain}, now around a closed folded circuit, gives
+\[
+ \gamma_C=\prod_{i\to j\text{ a chord on }C}k_i/k_j=\delta^{-2}.
+\]
+This is also the derivative of $W$ at $z$.  Since $W$ has determinant one and fixes $z$, its eigenvalues are $\delta,\delta^{-1}$.  Write $u=c+t$.  Direct multiplication of the sixteen possible words gives
+\[
+ \operatorname{tr}W\in
+ \{u(u+1)^2,\ u(c+1)^2,\ c(u+1)^2,\ c(c+1)^2\},
+\]
+all nonzero under the hypotheses.  If the path traverses all three chords in the same orientation as $C$, or all in the reverse orientation, its gain is $\gamma_C$ or $\gamma_C^{-1}$ and cannot be one.
+
+Otherwise reverse $C$ if necessary so that exactly one chord has the opposite orientation on the path, and start $C$ with that chord.  Its gain is
+\[
+ \rho=\frac{Q(z)}{Q(z)+\Delta},\qquad
+ \gamma(N)=\gamma_C\rho^{-2}.
+\]
+If $\gamma(N)=1$, injectivity of squaring gives $\delta\rho=1$.  Thus $z$ is a common zero of
+\[
+ F(Z)=\ell Z^2+(p+d)Z+b,\qquad
+ G(Z)=(\ell Z+d+1)(Z^2+tZ+1)+\Delta.
+\]
+For an explicit elimination, put $\tau=p+d$ and
+\[
+ \begin{split}
+ J&=\ell t+p+1,\\
+ \alpha&=\ell\bigl(\ell+t(d+1)+b\bigr)+\tau J,\\
+ \beta&=\ell(d+1+\Delta)+bJ.
+ \end{split}
+\]
+The polynomial identity
+\[
+ \ell G(Z)+(\ell Z+J)F(Z)=\alpha Z+\beta
+\]
+implies the necessary condition
+\[
+ \mathcal R=\ell\beta^2+\tau\alpha\beta+b\alpha^2=0.
+\]
+No division by $\ell$ or $\alpha$ is used.  Put
+\[
+ H_0=(\Delta+1)^2+t^2(u+1),\qquad
+ H_1=(\Delta+1)^2+t^2(c+1).
+\]
+The sixteen word substitutions give the following exact polynomial table:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+sign pattern & $\mathcal R/(c^2u)$, $\eta=0$ & $\mathcal R/(cu^2)$, $\eta=1$\\
+\midrule
+$\epsilon_1=\epsilon_2=\epsilon_3$ & $(u+1)^6$ & $(c+1)^2(u+1)^4$\\
+$\epsilon_1=\epsilon_3\ne\epsilon_2$ & $(c+1)^4(u+1)^2$ & $(c+1)^6$\\
+$\epsilon_1\ne\epsilon_3$ & $(\Delta+1)H_0$ & $(\Delta+1)H_1$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Here $\Delta\ne1$, since $\operatorname{Tr}(\Delta/t^2)=0$ whereas $\operatorname{Tr}(1/t^2)=1$.  The hypotheses exclude all other displayed linear factors.  Therefore unit path gain forces $H_0H_1=0$.  Direct expansion gives
+\[
+ H_0H_1=\Delta^4+t^3\Delta^2+t^4\Delta+1+t^3+t^4+t^5=E_t(\Delta).
+\]
+This proves nonvanishing outside the stated quartic.  Its leading coefficient in $\Delta$ is one, so it has at most four roots for each $t$.  Each equation $c(c+t)=\Delta$ has at most two solutions, proving the bound of eight.  The colouring assertion follows from Proposition~\ref{prop:borel-gain} because the path spans $F$.
+\end{proof}
+
+The exception cannot simply be deleted.  Over $\mathbb F_{16}$ modulo $\theta^4+\theta+1$, take binary coordinates $t=8$, $c=4$, so $\Delta=5$ and $E_t(\Delta)=0$.  Starting with all folded chords, exchange along the alternating circuit whose selected path edges are $(1,2),(3,4),(6,7)$.  The complementary path spans all eight folded vertices but has gain $1$, and its point-quotient circuit has length $17$ and identity word.  Another three-chord exchange, selecting path edges $(2,3),(4,5),(7,8)$, has non-unit gain.  There is also a genuine non-pentagon unit-gain example at $q=1024$, $t=95$, $c=533$, $\Delta=910$, with selected path-edge starting indices $101,321,402$; it again lies on $E_t(\Delta)=0$.  These are unsuccessful matchings of colourable graphs, not counterexamples to the conjecture.
+
+The exact polynomial identities, including the sixteen word substitutions and $H_0H_1=E_t$, are independently checked in \path{code/borel_exchange_algebra.py}.  The audit \path{code/borel_alternating_exchange.py} tests the three-chord criterion and short-circuit derivative formula through $q=1024$, retaining its scope and matrix/permutation controls in \path{code/borel_exchange_results.json}.  Its cycle enumerator is independently compared with exhaustive perfect matchings in the smallest fields.  Of the $118$ stored canonical failures left by the parallel and crossing-square constructions, $72$ have a successful single alternating-circuit exchange with three chords, and the other $46$ first succeed with five chords under the spanning requirement.  All these witnesses have spanning complements and are checked by full projective permutations.  The latter cases include $q=128$, $t=15$, $c=35$, where no single alternating-circuit exchange using at most four chords is successful with a spanning complement; a non-spanning square does work.  Thus the quartic theorem controls nonidentity for most parameters \emph{if a spanning three-chord exchange exists}; it does not solve the separate existence problem.  The success of exchanges with at most five chords on the stored failures is finite evidence only.
+
+\paragraph{The five-chord spanning bound fails.}
+The larger audit \path{code/borel_exchange_stress.py} completely checks the double-inverse-trace-one class at $q=2048$, modulo Frobenius and $c\leftrightarrow c+t$: $15\,869$ folded representatives cover $349\,118$ normalized parameters.  Only ten representatives, covering $220$ parameters, have canonical gain one, and all ten have certified spanning exchanges with at most five chords.  Together with Proposition~\ref{prop:borel-trace}, this verifies all $1\,395\,372$ normalized generating parameters with $\ord(x)=2049$.  It does not verify other generator orders or change the global smallest-counterexample bound.
+
+The subsequent $q=4096$ run stops at a counterexample to the \emph{spanning-exchange} bound.  In
+\[
+ \mathbb F_{4096}=\mathbb F_2[\theta]/(\theta^{12}+\theta^3+1),
+ \qquad t=681,\quad c=1207,\quad\Delta=2854
+\]
+(binary polynomial coordinates), $x$ has order $4097$, $c\ne t$, and both inverse traces are one.  The canonical quotient circuits have lengths $1929,1012,1140,8,8$, with identity word on the odd circuit.  There are exactly one three-chord, three four-chord and two five-chord simple alternating circuits in the folded graph, and no one- or two-chord ones.  None of these six exchanges has a spanning complementary path.  A six-chord exchange with selected path-edge starting indices
+\[
+                    358,725,1060,1073,1624,2041
+\]
+does span; it has $\gamma=2930$ and quotient word $U(2333)$ on a circuit of length $4097$, yielding even circuits of length $8194$ upstairs.
+
+The independent certificate \path{code/borel_exchange_certificate.py} enumerates finite fixed points of every word $R^\eta X^{\epsilon_r}A\cdots X^{\epsilon_1}A$ for $r\le6$.  Its simple folded cycles agree exactly with the graph search, each appearing $4r$ times.  It separately checks reconnection of the cut path, full quotient circuits, and their matrices against projective permutations.  The JSON certificate records all eight cycles through size six.  The $q=4096$ field search is partial, not a verification of every parameter.
+
+This example does \emph{not} disprove bounded short repairs without the spanning requirement.  The four-chord exchange with starting indices $38,252,1168,1382$ has a distinguished path on $1834$ folded vertices; its point-quotient circuits have lengths $3669,428$, with odd-circuit word $U(1199)$.  It already colours the same Cayley graph.  The following elementary cover test expresses the weaker requirement.
+
+\begin{lemma}[allowing non-spanning folded complements]\label{lem:borel-offroot}
+Let $N$ be a folded perfect matching.  Give each path edge sheet label zero, and give a chord $\{i,j\}$ label $\sigma_{ij}\in\mathbb F_2$ according as $a(z_i)=z_j$ or $a(z_i)=z_{-j}$.  For every circuit $C$ of $F-N$ off the distinguished path put $s(C)=\sum_{e\in C}\sigma_e$.  If $\gamma(N)\ne1$ and each such $C$ has even length or $s(C)=1$, then the lifted matching has an even complement.
+\end{lemma}
+\begin{proof}
+Reversal commutes with $a$, so a chord's sheet label is independent of its orientation.  Away from the distinguished path the point quotient is an ordinary two-sheeted cover of $F-N$.  A circuit of length $\ell$ lifts to two circuits of length $\ell$ if $s(C)=0$, and one circuit of length $2\ell$ otherwise.  The stated condition therefore makes all these point circuits even.  Proposition~\ref{prop:borel-gain} makes the remaining odd circuit's word $U(t(1+\gamma(N)))\ne I$, of order two.  Apply Lemma~\ref{lem:matching-monodromy}.
+\end{proof}
+
+\begin{lemma}[an exact affine certificate for every folded complement]\label{lem:borel-affine}
+Put $w_i=t+z_i=D_{i+1}/D_i$.  Give a directed chord $i\to j$ the affine map
+\[
+ y\longmapsto\alpha_{ij}y+\nu_{ij},\qquad
+ \alpha_{ij}=\frac{k_j}{k_i},\qquad
+ \nu_{ij}=w_j+\alpha_{ij}w_i,
+\]
+and give every directed path edge the identity map.  For an oriented off-path circuit $C$, compose these maps in traversal order to obtain $y\mapsto\alpha_Cy+\nu_C$.  A folded perfect matching $N$ lifts to a matching with an even complement if and only if $\gamma(N)\ne1$ and, for each off-path circuit $C$, at least one of the following holds:
+\[
+ |C|\text{ is even},\qquad s(C)=1,\qquad
+                    \alpha_C=1\text{ and }\nu_C\ne0.
+\]
+Replacing $c$ by $c+t$ preserves the affine maps and toggles $s(C)$ precisely when $C$ uses an odd number of chords.
+\end{lemma}
+\begin{proof}
+Use the frame $M_i=X^i$ over $z_i$.  The sheet-corrected chord map is
+$R^{\sigma_{ij}}A=U(z_i+z_j)$, independently of which of $c,c+t$ is used.  Direct multiplication gives
+\[
+ M_j^{-1}U(z_i+z_j)M_i
+ =\begin{pmatrix}
+ D_i/D_j & D_{j+1}/D_i+D_{i+1}/D_j\\
+ 0 & D_j/D_i
+ \end{pmatrix}.
+\]
+Its projective action is the displayed affine map since $k_i=D_i^{-2}$.  A path edge $i\to i\pm1$ has corrected map $X^{\pm1}$, so its frame voltage is identity.  If $s(C)=0$, sheet corrections cancel around the circuit: both point-circuit words are conjugate to the upper-triangular product, or to its inverse.  An affine map with $\alpha\ne1$ is conjugate to multiplication by $\alpha$, of odd order; with $\alpha=1$ it is identity when $\nu=0$ and an involution otherwise.  For an odd circuit this proves the stated necessity and sufficiency.  The even-length and nonzero-sheet cases, and the distinguished circuit, are handled exactly as in Lemma~\ref{lem:borel-offroot}.  The final assertion follows from the unchanged corrected translations and the toggling of each individual chord's sheet label.
+\end{proof}
+
+For any simple circuit using one or two chords, $\alpha_C\ne1$.  For two chords, a unit product would imply $uv=(u+\Delta)(v+\Delta)$, hence $v=u+\Delta$, identifying the two supposedly distinct chord pairs.  The one-chord case is immediate.  Consequently, after a single exchange using at most three chords, the sufficient test of Lemma~\ref{lem:borel-offroot} is also necessary: the distinguished path uses at least one exchanged chord, leaving at most two chords on all the off-path circuits.  This removes a possible ambiguity between an odd point circuit and an odd circuit upstairs.
+
+For larger changes the affine test is strictly stronger.  Over $\mathbb F_{64}$ modulo $\theta^6+\theta+1$, take $t=2,c=6$.  Select the folded chords $\{19,24\},\{27,30\}$ and the path edges with starting indices $1,3,5,7,9,11,13,15,17,20,22,25,28,31$.  The distinguished path has gain $30$ and word $U(62)$ on a point circuit of length $23$.  There is also a folded $21$-circuit with nine chords, sheet sum zero, and affine data $(\alpha_C,\nu_C)=(1,48)$.  Its two point-circuit words are
+\[
+ \begin{pmatrix}34&48\\5&34\end{pmatrix},\qquad
+ \begin{pmatrix}51&15\\35&51\end{pmatrix}.
+\]
+Both are nonidentity involutions.  Thus the point profile $23,21,21$ lifts to even circuits of lengths $46$ and $42$, although the sufficient test of Lemma~\ref{lem:borel-offroot} rejects the matching.  Full projective-permutation checks certify all three words.  This is a stronger matching certificate, not a new parameter family; the canonical matching also colours this particular graph.
+
+\begin{proposition}[the residual square and its paired repair]\label{prop:borel-square}
+Keep the full-cycle coordinates, put $\Delta=c(c+t)$, and suppose
+$\operatorname{Tr}(1/c)=\operatorname{Tr}(1/(c+t))=1$.
+The folded graph has a simple alternating circuit with two chords if and only if
+\[
+                         \operatorname{Tr}(1/\Delta)=0.
+\]
+When it exists, this circuit is unique.  Its exchange from the all-chord matching colours at least one of the two Cayley graphs with translations $c$ and $c+t$.
+
+More precisely, write its two path edges as $(i,i+1),(j,j+1)$ with $i+1<j$.  If the chords cross, the exchange spans and colours both graphs.  Otherwise the chords are $(i,j+1),(i+1,j)$: the distinguished path has gain $k_i/k_{j+1}\ne1$, and the sole off-path folded circuit has length $\ell=j-i$.  For either translation its lifted matching has an even complement exactly when $\ell$ is even or the inner chord has sheet label one.
+\end{proposition}
+\begin{proof}
+The residual trace conditions exclude parallel path/chord edges.  A folded alternating square, lifted from either point above any of its four vertices and traversed chord first, gives eight fixed-point occurrences among
+\[
+ W=R^\eta X^{\epsilon_2}A X^{\epsilon_1}A,
+ \qquad \epsilon_1,\epsilon_2\in\{1,-1\},\quad\eta\in\{0,1\}.
+\]
+Direct multiplication gives the table
+\begin{center}
+\begin{tabular}{c|cc|c}
+ & $\operatorname{tr}W$, $\eta=0$ & $\operatorname{tr}W$, $\eta=1$ & lower-left entry\\
+\hline
+$\epsilon_1=\epsilon_2$ & $(c+t)^2$ & $\Delta$ & $c+t$\\
+$\epsilon_1\ne\epsilon_2$ & $c^2$ & $\Delta$ & $c$
+\end{tabular}
+\end{center}
+The unreflected words have no projective fixed point by the inverse-trace criterion.  Each reflected word has two finite fixed points when $\operatorname{Tr}(1/\Delta)=0$, and none otherwise; its lower-left entry is nonzero.  Thus at most one simple folded square can exist, and none can exist when that trace is one.
+
+For existence when the trace is zero, put $u=c+t$ and choose a fixed point $z$ of
+\[
+ R(XA)^2=
+ \begin{pmatrix}1+tu&u+t(1+u^2)\\u&1+u^2\end{pmatrix}.
+\]
+The walk $z,az,xaz,axaz,xaxaz=rz$ avoids $\infty$: its only possible intermediate pole is $z=u$, but the displayed matrix sends $u$ to $t\ne u$.  Its fold is a closed four-step alternating walk.  Chords cannot be loops, since $c\notin\{0,t\}$.  The only folded loop arising from an $x$-edge is at $h$.  If one path step were such a loop, the matching property of the chords would force the other path step to be a loop at a different vertex.  If a nonconsecutive folded vertex repeated, the walk would instead repeat a parallel path/chord pair.  Both are impossible.  The folded walk is therefore the required simple square.
+
+There are only the crossing and nested configurations in the statement.  The crossing case is Lemma~\ref{lem:borel-spanning}.  In the nested case the distinguished path jumps along the outer chord and the inner interval closes along the inner chord.  Lemma~\ref{lem:borel-offroot} proves sufficiency of the stated parity condition.  If $\ell$ is odd and its sheet sum is zero, either odd point circuit has a word conjugate to $X^{\pm(\ell-1)}A$.  Its trace is $(c+t)D_{\ell-1}\ne0$, so it has odd order and its lift stays odd.  Finally, replacing $c$ by $c+t$ leaves the folded graph and path gain unchanged but toggles every chord's sheet label.  Thus even $\ell$ works for both translations, and odd $\ell$ works for exactly one.
+\end{proof}
+
+\begin{corollary}[an improved positive-density family]\label{cor:borel-thirteen-sixteenths}
+For each full-cycle $t$, put $b=t^{-1}$ and use the unshifted binary Kloosterman sum of Proposition~\ref{prop:borel-trace}.  Define
+\[
+ K_0=K(b^2),\qquad K_1=K(b^3+b^4),\qquad K_2=K(b^2+b^4).
+\]
+The number $R_t$ of generating translations satisfying both inverse-trace-one conditions and $\operatorname{Tr}(1/\Delta)=0$ is exactly
+\[
+                    R_t=\frac{q-3+2K_0+2K_1+K_2}{8}.
+\]
+The original trace test and the residual-square construction together colour at least
+\[
+ L_t=\frac{13q-23-2K_0+2K_1+K_2}{16}
+       \ \ge\ \frac{13q-23-10\sqrt q}{16}
+\]
+of the $q-2$ generating translations.  In particular, the guaranteed proportion is at least $13/16-O(q^{-1/2})$, uniformly in $t$.  This concerns the full-projective-cycle family, not the percentage of the full conjecture resolved.
+\end{corollary}
+\begin{proof}
+Write $\psi(v)=(-1)^{\operatorname{Tr}(v)}$ and
+\[
+ S(A,B)=\sum_{c\ne0,t}\psi\left(\frac A c+\frac B{c+t}\right).
+\]
+For $A,B\ne0$, the substitution $s=c/(c+t)$ followed by $v=bBs$ gives
+\[
+                   S(A,B)=\psi(b(A+B))K(b^2AB)-1.
+\]
+Also $S(1,0)=S(0,1)=0$, since $\operatorname{Tr}(b)=1$.
+The identity $\Delta^{-1}=b(c^{-1}+(c+t)^{-1})$ gives
+\begin{align*}
+8R_t={}&q-2+S(1,1)+S(b,b)\\
+       &-S(1+b,b)-S(b,1+b)+S(1+b,1+b).
+\end{align*}
+Here $b\ne0,1$, since $t=1$ would give $x$ order three.  Frobenius invariance gives $K(v^2)=K(v)$, so the five $S$-values in order are $K_0-1$, $K_0-1$, $-K_1-1$, $-K_1-1$, and $K_2-1$.  This proves the formula for $R_t$.
+
+These translations form $R_t/2$ pairs $\{c,c+t\}$, disjoint from the original trace-test family.  Proposition~\ref{prop:borel-square} supplies at least one colouring per pair.  Adding $R_t/2$ to $N_t=(3q-5-K_0)/4$ gives $L_t$.  All three Kloosterman arguments are nonzero, so the same Hasse bound as in Proposition~\ref{prop:borel-trace}, $|K_i|\le2\sqrt q$, proves the displayed inequality.
+\end{proof}
+
+The assertion cannot be strengthened to say that the unique square always works for the specified translation.  In $\mathbb F_{32}$ modulo $\theta^5+\theta^2+1$, take binary polynomial coordinates $t=7,c=29$.  The square has cut starts $7,14$; its inner folded circuit has odd length seven and sheet sum zero, so its two point lifts are odd.  The partner $c+t=26$ has sheet sum one and works.  More seriously, over $\mathbb F_{2048}$ modulo $\theta^{11}+\theta^2+1$, take $t=278,c=1567$.  Both the canonical matching and the unique square fail.  The latter has cut starts $926,1015$, distinguished gain $854$, and point circuits of lengths $1871,89,89$; the two $89$-circuits have word matrix $\left(\begin{smallmatrix}1104&108\\590&109\end{smallmatrix}\right)$ of nonzero trace.  The partner $c+t=1801$ works with this square.  The original graph is still coloured by the previously certified five-chord spanning exchange with cuts $63,213,273,432,1019$, of gain $1375$.  These controls refute only overstrong repair rules.
+
+The audit \path{code/borel_square_exchange.py} verifies the eight short-word identities symbolically and constructs every predicted square directly from a quadratic fixed point.  Through $q=4096$, its $837\,116$ full-cycle parameter representatives cover $9\,786\,998$ normalized generating parameters.  Unlike the spanning-only audit, it tests both $c$ and $c+t$ because their off-path circuits may lift differently.  It checks the exact character-sum counts at every full-cycle trace representative, makes $1619$ independent graph-search and full projective-word checks, and makes $363$ additional no-square graph checks.  The graph comparisons are exhaustive through $q=128$ modulo the stated symmetries, and sampled at larger fields.  All $13\,100$ unsuccessful square parameters in the representative set are also checked for canonical gain; exactly the displayed $q=2048$ representative fails both tests.  This does not test canonical gain on the no-square class.
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+$q$ & full-cycle parameters & additional square successes & combined successes\\
+\midrule
+1024 & $408\,800$ & $45\,140$ & $351\,780$\\
+2048 & $1\,395\,372$ & $151\,877$ & $1\,198\,131$\\
+4096 & $7\,860\,480$ & $859\,896$ & $6\,756\,216$\\
+\bottomrule
+\end{tabular}
+\end{center}
+These are Frobenius-weighted parameter counts for the two specified constructions, not counts of graph isomorphism classes.  The new $q=4096$ square audit is complete for this test, whereas the earlier general short-exchange scan remains partial.  Neither settles every full-cycle parameter at $q=4096$, other odd generator orders, or the full conjecture.  The certified square criterion sharpens the remaining class to parameters with no square, or with a nested odd off-path circuit whose sheet sum is zero; the latter cannot simply be discarded by appealing to the canonical matching.
+
+As a separate full-graph control, the square audit constructs both $32\,736$-vertex Cayley graphs for $q=32,t=7,c=26,29$, without using quotient-word orders to traverse their complements.  For $c=26$, it finds $496$ circuits of length $38$ and $32$ of length $434$, and checks all three incident edge colours at every vertex.  For $c=29$, the same folded square instead yields $496$ circuits of length $38$ and $64$ odd circuits of length $217$.  Thus the positive and negative sheet-parity controls are also verified upstairs directly.
+
+\begin{proposition}[an exact count of three-chord exchanges]\label{prop:borel-three-count}
+Let $q\ge8$, keep the full-cycle coordinates, and suppose
+$c\notin\{0,t,1,t+1\}$ and $\operatorname{Tr}(1/c)=\operatorname{Tr}(1/(c+t))=1$.
+Put $u=c+t$, $\Delta=cu$, and
+\[
+ \tau_1=u(c+1)^2,\qquad \tau_2=c(u+1)^2,\qquad
+ J_t(\Delta)=\Delta^3+\Delta+t^3.
+\]
+Then the number of simple alternating circuits with exactly three chords is
+\[
+ n_3(t,c)=2-\operatorname{Tr}(1/\tau_1)-\operatorname{Tr}(1/\tau_2)
+                  -\mathbf1_{J_t(\Delta)=0}.
+\]
+In particular there are at most two.  This counts existence, not successful colourings or spanning complements.
+\end{proposition}
+\begin{proof}
+The sixteen words $R^\eta X^{\epsilon_3}AX^{\epsilon_2}AX^{\epsilon_1}A$ have traces
+\[
+\begin{array}{c|cc}
+ &\text{trace}&\text{multiplicity}\\\hline
+\eta=0&u(u+1)^2&2\\
+       &u(c+1)^2&6\\
+\eta=1&c(u+1)^2&6\\
+       &c(c+1)^2&2
+\end{array}
+\]
+by the exact identities in Proposition~\ref{prop:borel-three-quartic}.  All are nonzero.  The partial fraction identity
+\[
+ \frac1{v(v+1)^2}=\frac1v+\frac1{v+1}+\frac1{(v+1)^2}
+\]
+shows that the first and last types have inverse trace one, so they have no projective fixed points.  The remaining types have two fixed points exactly when their inverse trace is zero.  There are therefore
+$12(2-\operatorname{Tr}(1/\tau_1)-\operatorname{Tr}(1/\tau_2))$ fixed-point occurrences.  Each genuine alternating six-cycle contributes twelve: three choices of a chord-first starting position in either orientation, and two choices of initial sheet.
+
+It remains to account for closed walks which do not give simple six-cycles.  For this purpose temporarily restore the folded vertices $0,1,\ldots,h$, the $a$-loop at $0$, and the $x$-loop at $h$.  There are no parallel path/chord edges.  A repeated vertex in a cyclically alternating six-walk cannot have cyclic separation two, since that would give such a parallel pair.  Separation one gives a loop.  Separation three gives an $a,x,a$ subwalk; the two $a$-edges must coincide, so its $x$-step is the loop at $h$.  Thus every nonsimple walk uses a loop.  If it visits $0$, the three-step subwalk $1,0,0,1$ forces the other three steps to be $1,h,h,1$.  This requires the chord $\{1,h\}$, equivalently $\Delta=t+1$, whose only translations are the excluded $c=1,t+1$.
+
+The remaining possibility consists of the $x$-loop at $h$, the chord $\{h,j\}$ traversed twice, and the triangle on $j-1,j,j+1$.  Here $j$ is uniquely determined, $k_j=t+\Delta$, and $1<j<h$; the latter follows from $\Delta\ne0,t+1$.  The triangle exists exactly when
+\[
+ \Delta=k_{j-1}+k_{j+1}
+       =\frac{t^2 k_j}{(k_j+1)^2}.
+\]
+The second equality follows from $Q(z)=z^2+tz+1$, $Q(xz)=Q(z)/(z+t)^2$, and $Q(x^{-1}z)=Q(z)/z^2$.  Clearing the nonzero denominator gives $J_t(\Delta)=0$.  This one loop--bridge--triangle configuration contributes exactly twelve further occurrences, by its three chord-first positions, two orientations and two sheets.  Subtracting them proves the formula.
+\end{proof}
+
+The correction is essential.  In $\mathbb F_{128}$ modulo $\theta^7+\theta+1$, $t=13,c=16$ gives $\Delta=85$ and $J_t(\Delta)=0$.  The uncorrected trace count predicts one six-cycle, but all twelve fixed-point walks use the middle loop and a triangle; there is no three-chord exchange.  For $t=13,c=118$, $\Delta=120$, the correction instead reduces two predicted cycles to one.
+
+Nor does existence give a paired repair as it did for squares.  In the same field take $t=8,c=84$ and exchange the three path edges with starting indices $18,33,46$.  The distinguished gain is $124\ne1$, but the off-path folded circuits have lengths $15,13$ and sheet sums $0,1$, respectively.  The partner $c+t=92$ has the same gain and the same circuits, with sheet sums $1,0$.  Each translation therefore leaves two odd point circuits, and their one-chord monodromies have odd order by Lemma~\ref{lem:borel-affine}.  The respective point profiles are $73,15,15,26$ and $73,30,13,13$.  Both exchanges fail; neither graph is asserted to be uncolourable.
+
+\begin{corollary}[a positive-density obstruction to exchanges of at most three chords]\label{cor:borel-short-obstruction}
+For each full-cycle $t$ with $q\ge8$, let $M_t$ count the translations $c\notin\{0,t,1,t+1\}$ for which all five quantities
+\[
+ \operatorname{Tr}(1/c),\quad\operatorname{Tr}(1/(c+t)),\quad
+ \operatorname{Tr}(1/\Delta),\quad\operatorname{Tr}(1/\tau_1),\quad
+ \operatorname{Tr}(1/\tau_2)
+\]
+are one.  None of these parameters has an alternating circuit with one, two or three chords.  Moreover,
+\[
+ \bigl|32M_t-(q-3)\bigr|\le114\sqrt q+36,
+ \qquad M_t\ge\frac{q-39-114\sqrt q}{32}.
+\]
+In particular, $M_t>0$ for every full-cycle $t$ whenever $q\ge16384$, and this subfamily has asymptotic proportion $1/32+O(q^{-1/2})$ among the generating translations, uniformly in $t$.  If $B_t$ counts all non-pentagon generating translations with no such short circuit, then $B_t=M_t+e_t$ with $0\le e_t\le6$.
+\end{corollary}
+\begin{proof}
+The first three traces exclude one- and two-chord circuits by Propositions~\ref{prop:borel-trace} and~\ref{prop:borel-square}.  The last two make every three-chord word in the preceding proof nonsplit, excluding all six-cycles directly.  Proposition~\ref{prop:borel-three-count} also shows that any further member of $B_t$ must satisfy $J_t(\Delta)=0$.  There are at most three such $\Delta$ and two translations per $\Delta$.
+
+To count $M_t$ without assuming independence of the trace conditions, put
+\[
+ b=t^{-1},\qquad \rho=(t+1)^{-2},\qquad
+ \kappa=\rho+(t+1)^{-1/2}.
+\]
+Modulo terms of the form $g^2+g$, the five rational functions inside the traces have simple-pole representatives
+\[
+ \frac1c,\quad\frac1{c+t},\quad b\left(\frac1c+\frac1{c+t}\right),\quad
+ \frac\rho{c+t}+\frac\kappa{c+1},\quad
+ \frac\rho c+\frac\kappa{c+t+1}.
+\]
+For example, use $1/[d^2(d+v)]=v^{-2}(1/d+1/(d+v))+v^{-1}/d^2$ and $\operatorname{Tr}(a/d^2)=\operatorname{Tr}(a^{1/2}/d)$.  Here $b\notin\{0,1\}$ and $\kappa\ne0$: otherwise $(t+1)^3=1$, forcing $t=0$ or $t^2+t+1=0$; the latter implies $X^5=I$, contrary to $\ord(X)=q+1\ge9$.
+
+For a nonzero $\epsilon\in\mathbb F_2^5$, the sum of the selected representatives has residues at $0,t,1,t+1$ equal to
+\[
+ (\epsilon_1+b\epsilon_3+\rho\epsilon_5,\quad
+  \epsilon_2+b\epsilon_3+\rho\epsilon_4,\quad
+  \kappa\epsilon_4,\quad\kappa\epsilon_5).
+\]
+At least one is nonzero.  If exactly $k$ are nonzero, the smooth projective Artin--Schreier curve $y^2+y=f_\epsilon(c)$ is geometrically irreducible and has genus $k-1$ by the simple-pole genus formula \cite[Lemma~2.6]{PriesZhu12}.  Geometric irreducibility follows because a nonzero simple pole cannot occur in $g^2+g$.  Write $\psi(v)=(-1)^{\operatorname{Tr}(v)}$ and sum over $\Omega=\mathbb F_q\setminus\{0,t,1,t+1\}$.  The curve has one rational point over each pole and two over infinity.  Thus the Hasse--Weil bound \cite[Introduction]{KreschWetherellZieve02}, with the at most $4-k$ additionally deleted finite values, gives
+\[
+ \left|\sum_{c\in\Omega}\psi(f_\epsilon(c))+1\right|
+                  \le 2(k-1)\sqrt q+4-k.
+\]
+An upper bound on $k$ for each residue vector is
+$\mathbf1_{\epsilon_1\vee\epsilon_3\vee\epsilon_5}
+ +\mathbf1_{\epsilon_2\vee\epsilon_3\vee\epsilon_4}
+ +\epsilon_4+\epsilon_5$.
+Among the $31$ nonzero vectors these upper bounds are $1,2,3,4$ with multiplicities $2,9,12,8$.  The right-hand side of the last inequality increases with $k$, so summing the bounds gives $114\sqrt q+36$.  Expanding the five trace-one indicators and using $\sum_{\epsilon\ne0}(-1)^{|\epsilon|}=-1$ gives the centre $q-3$ and the stated estimate.  The remaining assertions follow immediately.
+\end{proof}
+
+This is a limitation of the short-exchange construction, not a positive-density family of snarks.  In fact, absence of these cycles prevents \emph{any} change of at most three chords from the all-chord matching, since a symmetric difference is a disjoint union of simple alternating circuits.  It says nothing about the canonical matching, larger exchanges, rotations, or matchings obtained from a different starting point.
+
+The reproducible audit \path{code/borel_three_exchange.py} checks the trace identities and the loop correction algebraically.  Through $q=4096$, its $836\,492$ parameter representatives cover $9\,780\,236$ normalized parameters after excluding the two pentagon translations.  It checks all $31$ character-sum bounds at each of $311$ full-cycle trace representatives.  The six-cycle graph comparisons are exhaustive through $q=512$ modulo Frobenius and the folded $c\leftrightarrow c+t$ pairing, and sampled by trace/degeneracy signature thereafter: $3905$ graph checks and $52$ independent fixed-point-word checks in total.  Separately, all $1130$ folded perfect matchings on the $96$ generating parameter representatives through $q=32$ are checked against frame matrices and $2098$ full projective-permutation component words.  All residual three-chord exchanges through $q=128$ receive another $252$ matching and $452$ permutation-component audits, with both translations tested.  The paired obstruction and the odd-point unipotent rescue are also checked by full projective permutations.  Results and their exact scopes are retained in \path{code/borel_three_results.json}.
+
+At $q=4096$, the complete trace count gives $244\,488$ normalized non-pentagon parameters with no exchange of at most three chords.  This does not alter the earlier partial status of the general colouring scan.  A further single-trace control at $q=16384$, modulo $\theta^{14}+\theta^5+1$, takes $t=3$ and gives $M_t=486$, independently confirming positivity at the first field size covered by the explicit uniform lower bound.  The full conjecture, and the full-cycle all-parameters family, remain open.  The next target should therefore allow longer or disconnected matching changes and control \emph{all} complementary circuits, as in Lemma~\ref{lem:borel-affine}, rather than seek a universal three-chord repair.
+
+\begin{lemma}[a closed folded graph and global recolouring]\label{lem:borel-kempe}
+Add a distinguished edge $e_*=(1,h)$ to $F$, retaining edge identities if parallel edges occur, and write $\widehat F=F+e_*$.  This cubic graph has the proper edge-colouring
+\[
+ \begin{array}{c|l}
+ 0&\text{all folded $a$-chords},\\
+ 1&\text{path edges with odd starting index},\\
+ 2&\text{path edges with even starting index, together with $e_*$}.
+ \end{array}
+\]
+For any proper three-edge-colouring of $\widehat F$, either colour class $N$ avoiding $e_*$ is a perfect matching of $F$ with every off-path circuit even.  Its Cayley lift colours if and only if $\gamma(N)\ne1$.  Conversely, every folded perfect matching with even off-path circuits arises this way from some three-edge-colouring of $\widehat F$.
+\end{lemma}
+\begin{proof}
+At each vertex the three displayed classes supply one edge each.  Deleting a colour class from any proper three-edge-colouring leaves alternating even circuits.  Removing $e_*$ opens precisely one of them into the root path; every other component stays even.  The root-word formula and Lemma~\ref{lem:borel-affine} give the assertion about the lift.  Conversely, if all off-path circuits of $F-N$ are even, its root path has an even number of vertices since $h$ is even.  Adding $e_*$ closes this path into another even circuit, and alternating two colours on these circuits completes the third colour class $N$.
+\end{proof}
+
+A \emph{Kempe change} swaps two colours along a whole connected component of their two-colour subgraph.  On $\widehat F$ with three colours this component is always an even circuit, of unrestricted length.  The lemma therefore gives a global search space in which no additional off-path monodromy test is needed.  This is a sufficient restriction of the full affine criterion: it does not include the odd-folded-circuit unipotent rescue exhibited above.
+
+Two readily enumerable subfamilies come from the displayed colouring.  For either pair $(0,1)$ or $(0,2)$, swap any subset of the two-colour circuits not containing $e_*$ and take colour class $0$.  These are independent-subset families, with no bound on the number of exchanged chords; all selected path edges have the same starting-index parity.  On the $102$ stored representative canonical failures through $q=1024$, these two families repair $100$, or $926$ of the $942$ Frobenius-weighted failures.  They also repair the two specified larger obstructions: at $(q,t,c)=(2048,278,1567)$ the root gain is $1399$ and the only off-path folded circuit has length $12$; at $(4096,681,1207)$ the gain is $2166$ and the off-path lengths are $888,32$.  These are new certificates for already-colourable graphs, not increased exhaustive coverage or a density theorem.
+
+\begin{example}[a rigid three-colour class and a class-changing repair]\label{ex:borel-kempe-rigid}
+In $\mathbb F_{256}=\mathbb F_2[\theta]/(\theta^8+\theta^4+\theta^3+\theta+1)$, take binary polynomial coordinates
+\[
+                    t=15,\qquad c=151,\qquad c+t=152.
+\]
+Here $x$ has order $257$ and $\widehat F$ is simple, with $128$ vertices and $192$ edges.  Each of the three two-colour subgraphs in the displayed natural colouring is a single Hamiltonian circuit.  Consequently every three-colour Kempe change merely permutes two colour names.  The entire reachable class has exactly six labelled colourings and only two matchings avoiding $e_*$.  They are the all-chord and canonical matchings, both with $\gamma=1$; each has one point-quotient circuit of length $257$ and identity word.  Thus \emph{no sequence of three-colour Kempe changes from this start}, however long, gives a colouring certificate from Lemma~\ref{lem:borel-kempe}.
+
+Nevertheless, select folded chord $\{3,122\}$ and path-edge starting indices
+\[
+                  1,\quad 4,6,\ldots,120,\quad 123,125,127.
+\]
+This matching has a spanning root path, gain $28$ and word $U(187)$ on its point circuit of length $257$.  Its lifted complementary circuits have length $514$, so it colours both translations.  Its difference from the canonical matching is a single $120$-edge circuit containing $1,60,59$ edges of natural colours $0,1,2$ respectively: this is a three-colour matching change, not a Kempe change.  Completing its complement to an alternating colouring yields a different Kempe class of $\widehat F$.  Relative to the all-chord matching, its difference instead has two alternating circuits with $38$ and $25$ chords.
+\end{example}
+
+The field and circuit assertions in this example are finite exact certificates, retained in \path{code/borel_kempe_results.json}.  The checker verifies closure of all six labelled states under \emph{every} three-colour Kempe move, not merely a bounded walk.  Both failed matchings and the successful repair receive matrix-word and full projective-permutation audits.  Thus the obstruction concerns an entire unbounded recolouring class, not the conjecture itself.
+
+Allowing a temporary fourth edge colour removes this particular reachability obstruction.  McDonald--Mohar--Scheide prove that all four-edge-colourings of a simple subcubic graph are Kempe equivalent~\cite[Theorem~3]{McDonaldMoharScheide12}.  This applies to $\widehat F$ in the non-pentagon residual class, where it is simple.  The theorem connects existing colourings; it does \emph{not} supply one with non-unit root gain.
+
+The audit implements their vertex-deletion method for the nonregular graph $F$~\cite[Lemma~7]{McDonaldMoharScheide12}, with a separately checked extension over $e_*$.  For Example~\ref{ex:borel-kempe-rigid}, it constructs $121$ changes on $F$, extending to $122$ changes on $\widehat F$.  The latter sequence uses at most $28$ edges of the temporary colour and returns to the specified repaired three-colouring.  An independent replay checks connectedness and maximality of each switched two-colour component and properness after every move.  The target was supplied in advance: this is a verified escape, not a target-discovery algorithm or a gain-preserving descent theorem.  The extension routine is allowed to fail on other inputs; the general cubic connectivity theorem is not inferred from this implementation.
+
+Small controls check all $850$ folded matchings with even off-path circuits among the $96$ generating parameter representatives through $q=32$, using independent matrix/permutation certificates.  On the simple folded graphs among them, $168$ four-colour sequences with $1292$ changes are additionally replayed.  The two independent-subset searches stop at the first success, or exhaust both families upon failure.  These scopes and the complete rigid-class/escape records are reproduced by \path{code/borel_kempe_exchange.py}.
+
+The resulting proof target is precise but still unproved: using the projective ordering, force a return to a three-colouring of $\widehat F$ with some eligible root gain different from one.  It cannot be enough to take more three-colour Kempe steps from an arbitrary start.  Four-colour connectivity removes that restriction, but by itself supplies no arithmetic nonvanishing.  The $13/16$ asymptotic lower bound and the smallest-counterexample bound are unchanged.
+
+\begin{lemma}[one temporary edge cannot change Kempe class]\label{lem:one-buffer}
+Let $G$ be a loopless cubic graph.  A sequence of proper four-edge-colourings, starting and ending with palette $\{0,1,2\}$ and using colour $3$ on at most one edge at every intermediate step, cannot connect different three-colour Kempe classes.
+\end{lemma}
+\begin{proof}
+The order $n$ of $G$ is even.  If precisely one edge $uv$ has colour $3$, the number of vertices missing any specified ordinary colour $i$ is $n-2|E_i|$, which is even.  Only $u,v$ miss ordinary colours, so they miss the same colour $a$.  Replacing colour $3$ on $uv$ by $a$ gives a unique three-colouring, called its completion.
+
+Every allowed move induces either equality or one ordinary Kempe change on completions.  An ordinary two-colour circuit is unchanged by completion.  The only ordinary two-colour path has endpoints $u,v$; inserting $uv$ closes it into the circuit swapped between the completions.  Introducing or removing the temporary colour on a single edge leaves the completion fixed.  A swap involving colour $3$ and an ordinary colour present at both endpoints would create two temporary edges and is forbidden, except when these two edges are parallel, in which case the completions differ on their two-edge circuit.  These exhaust the possibilities.  Projecting the whole sequence to completions proves the claim.
+\end{proof}
+
+\begin{proposition}[a target-free seven-change return rule]\label{prop:two-buffer}
+In a properly three-edge-coloured loopless cubic graph, let $uv$ have colour $1$ and let its incident colour-$0$ edges be $uw,vz$, with $u,v,w,z$ distinct.  Perform the following four Kempe changes: recolour $uw$ and $vz$ with temporary colour $3$, one at a time; recolour $uv$ from $1$ to $0$; and swap colours $0,2$ on the unique alternating path from $w$ to $z$.
+
+The resulting $(1,2)$-subgraph has two paths with endpoint set $\{u,v,w,z\}$.  Swapping either one of these paths and then recolouring $uw,vz$ back to ordinary colours succeeds exactly when their endpoint pairing is not $\{u,w\},\{v,z\}$.  Whenever it succeeds, the full sequence has seven Kempe changes, never uses more than two temporary-colour edges, and needs no prescribed target colouring.
+\end{proposition}
+\begin{proof}
+Each of the first three changes is on a maximal one-edge two-colour component.  At that point $w,z$ miss colour $0$ and $u,v$ miss colour $1$.  Thus the $(0,2)$-subgraph has exactly one path, joining $w,z$; swapping it leaves $u,v$ missing colour $1$ and $w,z$ missing colour $2$.  All other vertices have degree two in the $(1,2)$-subgraph, so it has exactly two paths on these four endpoints, as well as possible circuits.
+
+Swapping a path exchanges the missing colours at its endpoints and nowhere else.  If the swapped path starts at $u$, the possibilities are
+\[
+\begin{array}{c|c|c}
+\text{endpoint pairs}&\text{new colour of }uw&\text{new colour of }vz\\
+\hline
+\{u,w\},\{v,z\}&\multicolumn{2}{c}{\text{neither edge can be restored}}\\
+\{u,v\},\{w,z\}&2&2\\
+\{u,z\},\{v,w\}&2&1
+\end{array}
+\]
+Swapping the other path interchanges colours $1,2$ in the successful rows and still fails in the first row.  In a successful row each remaining change is again a maximal one-edge Kempe change, since the restoring colour is absent at both endpoints.  The numbers of temporary-colour edges after the seven steps are $1,2,2,2,2,1,0$.
+\end{proof}
+
+Neither a return nor a different labelled colouring implies a non-unit root gain.  The rule must still test the two eligible matchings in Lemma~\ref{lem:borel-kempe}.  It uses a bounded number of \emph{recolouring operations}, not a bounded number of chords: either alternating path can have length proportional to $q$.
+
+For Example~\ref{ex:borel-kempe-rigid}, take pivot $uv=\{1,2\}$ and temporary chords $\{1,41\},\{2,65\}$.  The fourth change uses a $(0,2)$-path of length $69$.  The two $(1,2)$-paths have lengths $17,39$ and endpoint pairs $\{1,2\},\{41,65\}$.  Swapping the first and restoring both chords to colour $2$ gives eligible root gains $255,31$.  The first matching has root word $U(125)$ and point-circuit lengths $117,54,16,54,16$; its odd circuit doubles upstairs and the others are already even.  Thus seven changes find a successful colouring without supplying the earlier target.  Two temporary edges are necessary by Lemma~\ref{lem:one-buffer} and sufficient by this certificate; no claim of minimality of the \emph{number of changes} is made.  The entire at-most-one-temporary-edge class here has $6(192+1)=1158$ states; all $5778$ allowed moves are independently checked to stay in it.
+
+There are genuine unsuccessful choices.  On the same rigid example, pivot $\{2,3\}$ has the blocked pairing, while both returns at $\{3,4\}$ merely permute the natural colours and have both gains one.  Exhausting all $128$ natural path/closing-edge pivots gives $14$ blocked pivots, $66$ with only these trivial returns, and $48$ with successful returns.  The two branches give $96$ successful returns counted with pivot/branch multiplicity.  At $q=128,t=15,c=55$, the first pivot is blocked and only the second branch of the second pivot succeeds, so testing a fixed first pivot or just one path choice is insufficient even on stored canonical failures.
+
+The target-free audit \path{code/borel_two_buffer.py} takes temporary colour-$0$ chords and tries every natural path edge, including $e_*$, as pivot.  It repairs all $102$ stored representative canonical failures through $q=1024$, hence all $942$ weighted failures, using at most the first three pivots on these inputs.  It also repairs all $20$ stored larger cases at $q=2048,4096$.  These are finite certificates, not a uniform three-pivot or seven-change theorem.  Small controls through $q=32$ check $3636$ pivot/temporary-colour choices on $96$ parameter representatives, including $2970$ returning choices and $446$ blocked pairings (the other $220$ have parallel seed edges).  The returns receive $11\,880$ eligible-matching matrix/permutation audits.  Another $1914$ one-buffer states and $12\,568$ moves check the completion lemma.  Results and the complete seven-change certificates are stored in \path{code/borel_two_buffer_results.json}.
+
+A larger control exhausts all $4095$ folded translation pairs for \emph{one} full-cycle trace, $q=8192,t=13$, modulo $\theta^{13}+\theta^4+\theta^3+\theta+1$.  The sole canonical-failure pair is $c=2468,2473$.  The first pivot repairs it, with one eligible gain $4513$ and root word $U(6778)$; both translations receive independent word/permutation checks.  This covers the $8190$ generating translations for this fixed trace, not all full-cycle traces or all odd generator orders at $q=8192$.
+
+Arithmetic is still essential.  For an abstract reordered-label control over $\mathbb F_{32}$ modulo $\theta^5+\theta^2+1$, take $t=6,c=3,\Delta=15$ and order the labels as
+\[
+       (1,25,27,9,22,30,4,3,11,12,14,20,28,19,17,6).
+\]
+This is the correct affine-hyperplane label set with the correct endpoints, but \emph{not} its projective ordering.  Its canonical gain is one.  The second return at pivot $\{1,2\}$ genuinely changes the colouring even modulo global colour permutations, yet both eligible root gains are still one.  The abstract certificate has no claimed Cayley lift; it shows why the new combinatorial return theorem cannot by itself supply arithmetic nonvanishing.
+
+The local-seed existence question remains: for every remaining projectively ordered canonical failure, does some pivot admit a seven-change return with at least one non-unit eligible gain?  The following collective formulation separates the required nonvanishing from the choice of an individual successful pivot.
+
+\begin{lemma}[collective nonvanishing from a root-path lattice]\label{lem:borel-root-lattice}
+Orient the $m=q/4$ folded chords, put $g_j=k_u/k_v$ for the chord oriented $u\to v$, and let $\mathcal N$ be any family of perfect matchings of $F$ with even off-path circuits.  For $N\in\mathcal N$, let $r_N\in\{-1,0,1\}^m$ record the signed chord incidences of its root path, oriented from $1$ to $h$, and set
+\[
+             L=\sum_{N\in\mathcal N}\ZZ r_N\ \subseteq\ \ZZ^m.
+\]
+If $d e_j\in L$ for some coordinate $j$ and some positive integer $d$ coprime to $q-1$, then at least one matching in $\mathcal N$ colours its Cayley lift.  In particular, $2^s e_j\in L$ suffices for any $s\ge0$.  Another sufficient condition is that $L$ have finite index coprime to $q-1$.
+\end{lemma}
+\begin{proof}
+The root-gain formula gives
+\[
+              \gamma(N)=\prod_{j=1}^m g_j^{(r_N)_j}.
+\]
+Every $g_j$ is non-unit: the two endpoints have distinct nonzero labels, differing by $\Delta\ne0$.  If all root gains were one, an integer relation $\sum_N a_N r_N=d e_j$ would imply
+\[
+                   1=\prod_N\gamma(N)^{a_N}=g_j^d.
+\]
+But $g_j^{q-1}=1$, and Bezout's identity would give $g_j=1$, a contradiction.  Thus some root gain is non-unit; even off-path circuits and Lemma~\ref{lem:borel-kempe} give the colouring.  If the index is $D<\infty$, the finite group $\ZZ^m/L$ has order $D$, so $D e_j\in L$ for every $j$.  Apply the first assertion with $d=D$.
+\end{proof}
+
+Equivalently, simultaneous unit gains mean that the character $\ZZ^m\to\mathbb F_q^\times$, $v\mapsto\prod_j g_j^{v_j}$, factors through $\ZZ^m/L$.  This is an elementary integer-lattice criterion, not a theorem that the required lattice inclusion always holds.  It uses signed integer rows, not the binary cycle space; rational full rank alone also does not suffice when the index shares an odd prime factor with $q-1$.
+
+Take $\mathcal N$ to consist of the two natural eligible matchings and both eligible matchings from both branches of every returning natural path/closing-edge pivot in Proposition~\ref{prop:two-buffer}, always using the natural colour-$0$ chords as temporary edges.  Repeated rows and rows differing only by sign can be removed without changing $L$.  For a canonical failure, both natural root gains are one, so the lemma forces a successful seven-change return whenever its lattice condition holds.
+
+Here are seven exact controls.  The row count discards zero rows and identifies opposite rows; the index is the index in $\ZZ^{q/4}$.
+\[
+\begin{array}{c|r|r|r|r|r}
+q&t&c&\text{rows}&\operatorname{rank}L&[\ZZ^{q/4}:L]\\\hline
+64&7&26&27&16&2\\
+128&8&20&52&32&4\\
+128&15&35&63&32&2\\
+256&15&151&124&64&4\\
+256&25&13&82&64&4\\
+512&47&10&151&128&4\\
+512&53&66&217&128&4
+\end{array}
+\]
+In each case $2\ZZ^{q/4}\subseteq L$.  The case $q=256,t=25,c=13$ illustrates the collective feature: every nonzero row has at least five nonzero coordinates, yet integer combinations isolate a doubled coordinate.  No individual one- or two-chord root path is available in this specified family.  In fact two returned root rows already differ by the unit coordinate of chord $\{17,18\}$, oriented in increasing order: use the second branch at pivot $\{1,2\}$, excluding colour $2$, and the first branch at pivot $\{16,17\}$, excluding colour $0$.  Their gains are $137$ and $39$, with ratio $k_{17}/k_{18}\ne1$.  This example has a parallel path/chord pair and is already covered by the earlier trace theorem; the identity illustrates the certificate, not new parameter coverage.  In contrast, both displayed $q=512$ cases have all three inverse traces of $c,c+t,\Delta$ equal to one.  Their doubled-coordinate relations are verified directly, and neither has a coordinate-isolating relation of the form $\pm r_N\pm r_{N'}=d e_j$ with $d\in\{1,2\}$, allowing the zero row.  Thus the general lattice criterion genuinely goes beyond this simplest two-row certificate even in the residual class.
+
+The stronger uniform guesses already fail on genuine canonical failures at $q=1024$, modulo $\theta^{10}+\theta^3+1$.  For $t=49,c=80$, the lattice has rank $255<256$, but contains $2e_j$ for exactly three coordinates.  For $t=49,c=910$, it has full rank and index $6$, sharing the prime $3$ with $q-1=1023$, but contains $2e_j$ for $253$ coordinates.  For $t=62,c=836$, its index shares the prime $11$ with $1023$, but five doubled coordinates still belong to it.  These three examples are outside the double-inverse-trace-one residual class and are already covered by the trace theorem: they disprove the stronger guesses for \emph{all canonical failures}, not their restriction to the remaining class.  The weaker one-coordinate condition succeeds in all three.
+
+The complete stored-case lattice audit covers $51$ distinct folded diagrams: $1,4,6,11,29$ at $q=64,128,256,512,1024$, respectively.  Pairing $c,c+t$ and restoring Frobenius weights gives the earlier $102$ direct and $942$ weighted canonical failures.  Every one of these $51$ lattices contains at least one doubled coordinate.  Among the ten diagrams with both inverse traces equal to one, every lattice contains $2\ZZ^{q/4}$ and its index is a power of two.  This is finite evidence, not a uniform inclusion theorem or an increase in exhaustive colouring coverage.
+
+There is also a genuine warning against replacing collective nonvanishing by ``any non-natural colouring works''.  At $q=128,t=8,c=20$, modulo $\theta^7+\theta+1$, the checker records a proper colouring of the actual projectively ordered $\widehat F$ which is not a global permutation of the natural colouring, but whose two eligible root gains are both one.  Their point-circuit profiles are $65,48,16$ and $129$, with identity root words.  The partner $c=28$ has profiles $65,24,24,8,8$ and $129$, again with identity root words.  All four receive matrix and full projective-permutation audits.  This colouring is \emph{not} asserted to be a direct seven-change return, so it does not refute the more restricted local-seed target.
+
+The code \path{code/borel_gain_lattice.py} and its result file retain the root rows, replayable pivot/branch sources, exact integer relations, and independent direct checks of those relations.  The small reordered $q=16$ control from the earlier folded discussion instead has only the nonzero row $(1,1,-1,1)$ up to sign, with unit gain.  Its rank-one lattice contains no nonzero coordinate multiple, so the combinatorial criterion is not automatic for an arbitrary ordering of the correct label set.
+
+This initially suggested a uniform doubled-coordinate inclusion for the remaining projectively ordered canonical failures.  The following larger control disproves that proposed inclusion even though the seven-change rule itself still finds colourings.  First, an arithmetic property of the complete chord-gain set gives a weaker useful rank test.
+
+\begin{lemma}[generation by chord gains and a one-prime test]\label{lem:borel-gain-generation}
+The $q/4$ folded chord gains $g_j$, in any orientations, generate $\mathbb F_q^\times$.  Let $R$ have the signed root rows of any family as in Lemma~\ref{lem:borel-root-lattice}.  If $R$ has column rank $q/4$ modulo \emph{one} prime $p\mid q-1$, then some candidate root gain is not a $p$th power, and its matching colours the Cayley lift.
+
+If the integer row lattice has finite index $D$, the subgroup $H$ generated by the candidate root gains satisfies
+\[
+                    [\mathbb F_q^\times:H]\mid\gcd(D,q-1).
+\]
+Consequently $(q-1)\nmid D$ suffices for a successful candidate; coprimality of $D$ and $q-1$ is not necessary.
+\end{lemma}
+\begin{proof}
+The map $k\mapsto k/(k+\Delta)$ is injective on the $q/2$ folded labels, and replacing $k$ by $k+\Delta$ inverts the ratio.  Thus the two orientations of the chords give $q/2$ distinct non-unit gains.  Together with one, they cannot lie in a proper subgroup of $\mathbb F_q^\times$: since $q-1$ is odd, such a subgroup has order at most $(q-1)/3$.  This proves generation.
+
+Choose a generator $\zeta$ of $\mathbb F_q^\times$ and write $g_j=\zeta^{\ell_j}$.  For every $p\mid q-1$, the vector $\ell$ is nonzero modulo $p$, since otherwise every chord gain would lie in the proper subgroup of $p$th powers.  Full column rank therefore gives $R\ell\ne0$ modulo $p$.  Its coordinates are the candidate root logarithms, proving the first test.  Finally, the gain map induces a surjection
+\[
+               \ZZ^{q/4}/L\ \longrightarrow\ \mathbb F_q^\times/H.
+\]
+When $D$ is finite, the target order divides both $D$ and $q-1$.  If $H$ were trivial, $q-1$ would divide $D$, proving the last assertion.
+\end{proof}
+
+\begin{example}[failure of the fixed-family lattice target]\label{ex:borel-rank-obstruction}
+Over $\mathbb F_{2048}$ modulo $\theta^{11}+\theta^2+1$, take
+\[
+                 t=343,\qquad c=1766,\qquad c+t=1969.
+\]
+Here $x$ has order $2049$, the canonical root gain is one, and all three inverse traces of $c,c+t,\Delta$ are one.  Thus this lies in the residual class with no parallel path/chord pair or alternating square.
+
+The $1024$ natural path/closing-edge pivots give $956$ returning pivots and $68$ blocked pairings.  Their $3826$ eligible paths, including the two natural paths, yield just $425$ distinct nonzero signed rows up to sign, on $512$ chord coordinates.  The resulting matrix $R$ has rank $425$ modulo $23$ and modulo $89$, the prime factors of $2047$.
+
+Moreover, the audit supplies three vectors $v^{(i)}\in\mathbb F_{23}^{512}$ with $Rv^{(i)}=0$, such that every coordinate is nonzero in at least one of them.  All $1275$ row/vector dot products are independently checked.  These witnesses rule out \emph{every nonzero coordinate multiple} in the integer row lattice, not merely doubled coordinates.
+\end{example}
+\begin{proof}[Justification of the last assertion]
+There are exactly $425$ rows, independent modulo $23$, so their rational rank is $425$.  For any coordinate $j$, one of the kernel vectors has nonzero $j$th entry.  Appending $e_j$ therefore raises the rank modulo $23$ to $426$, hence also raises the rational rank.  Thus $e_j$ is not in the rational row span, and no nonzero integer multiple of it can belong to $L$.
+\end{proof}
+
+This disproves the proposed uniform coordinate-isolation target for the fixed seven-change family, including its restriction to canonical failures with all three inverse traces one.  It does \emph{not} disprove Lemma~\ref{lem:borel-root-lattice}, the seven-change colouring-existence target, or the Cayley conjecture.  The actual candidate root gains in this example generate all of $\mathbb F_{2048}^\times$, so many candidates still succeed; their existence cannot be certified by isolating a chord coordinate in this particular row lattice.
+
+The obstruction is sensitive to the starting colouring.  From the natural colouring, first swap colours $0,1$ on the component containing the path edge $\{1,2\}$; this component has $290$ edges.  Apply the seven-change rule to the resulting colouring, using its current colour-$0$ edges as temporary seeds and every edge not of colour $0$ as pivot.  Its $666$ distinct nonzero root rows have full rank $512$ modulo $23$.  A retained $512$-row minor has determinant $10$ modulo $23$, independently checked by ordinary scalar elimination.  Lemma~\ref{lem:borel-gain-generation} now forces a successful candidate.  This is a rank-restoring prefix, not a minimal colouring route: the original seven-change family already succeeds, and even the prefix alone gives gain $1733$, root word $U(633)$, and point profile $2037,6,6$ at both translations.
+
+The reproducible audit \path{code/borel_gain_rank.py} retains the complete signed rows and kernel witnesses for Example~\ref{ex:borel-rank-obstruction}, the prefix and nonsingular-minor source seeds, and independent matrix/permutation certificates for a successful prefixed return at both translations.  Among the ten stored $q=2048$ residual cases, nine pass the natural-family rank test modulo $23$; the displayed example is the sole failure.  All ten stored $q=4096$ cases pass modulo $3$.  These are specified stored-case tests, not an all-parameter rank audit at either field size.  The implementation's packed modular arithmetic is checked against scalar arithmetic in $1920$ operations and $64$ small rank comparisons, with additional checks on saved small root matrices.
+
+There is a stronger obstruction to short-coordinate arguments for this same restricted family.  The follow-up checker \path{code/borel_gain_closure.py} supplies eight vectors in $\ker_{\mathbb F_{23}}R$ whose $512$ column signatures are all nonzero and pairwise distinct as projective points.  All $3400$ row/vector dot products are checked directly.  It follows that the rational row span of $R$ contains no nonzero vector supported on at most two coordinates.  Indeed, a hypothetical such vector can be scaled to a primitive integer vector $w$.  Its reduction modulo $23$ is nonzero, and the projective-signature condition gives a kernel vector with nonzero dot product with $w$.  Appending $w$ raises the modular rank to $426$, whereas membership in the rational row span would keep rational rank $425$, a contradiction.  A stored row has support three, so the minimum nonzero support is exactly three, both over $\mathbb F_{23}$ and over $\mathbb Q$.
+
+This obstruction does not prevent a successful root path with only three chords.  Numbering the oriented chords from one in the stored order, the first return branch at path pivot $\{6,7\}$, excluding colour $0$, has row
+\[
+                 e_6-e_7+e_{142},\qquad
+                 g_6g_7^{-1}g_{142}=178\ne1.
+\]
+The seven changes, proper intermediate colourings, and both partner lifts receive independent audits.  Three counts the chords on this root path, not the size of the recolouring paths or of a spanning matching exchange.
+
+More importantly, the temporary colour need not be the natural chord colour.  For each ordinary colour $a$, use every pivot not of colour $a$ and both return branches of Proposition~\ref{prop:two-buffer}, taking the incident colour-$a$ edges as temporary seeds.  This is obtained by permuting colour names before the same proved rule.  The union over all three choices removes the three recorded natural-family rank deficiencies:
+\[
+\begin{array}{r|r|r|r|r|r}
+q&t&c&\text{union rows}&p&\text{rank modulo }p\\\hline
+1024&49&80&831&3&256\\
+1024&287&683&780&3&256\\
+2048&343&1766&1403&23&512
+\end{array}
+\]
+Each full-rank minor is checked independently by scalar elimination.  At $q=2048$, allowing just the natural colours $0,1$ as temporary seeds already yields $1097$ rows of rank $512$ modulo $23$.  Thus an ordinary prefix is \emph{not needed} to remove this rank obstruction once these additional seeds are allowed.  Example~\ref{ex:borel-rank-obstruction} remains a counterexample to its explicitly restricted family, not to the enlarged family.  No uniform full-rank theorem for the latter is inferred.
+
+A search must also retain colouring states whose own root rows add no rank.  In the same $q=2048$ example, the two root rows after each of the nine ordinary Kempe changes of the natural colouring lie in $W=\operatorname{rowspan}_{\mathbb F_{23}}R$.  The checker retains and directly verifies all eighteen expressions in the original rows.  Nevertheless the $290$-edge prefix discussed above, though rank-neutral relative to $W$, permits a subsequent colour-$0$ seven-change batch of full rank.  This warns against discarding a state solely because its current rows lie in the accumulated span.  It is not a rank plateau for the enlarged all-temporary-colour family, which already has full rank at the natural start.
+
+To separate reachability from rank, \path{code/borel_kempe_closure.py} exhausts the state graph generated by ordinary Kempe changes and all temporary-colour choices of the seven-change rule, identifying only global colour permutations.  An independent edge-domain backtracking enumeration gives all proper three-colourings for comparison.  For every generating translation and every Frobenius-representative full-cycle parameter through $q=32$, the combined moves reach all these states:
+\[
+\begin{array}{r|r|r|r|r}
+q&\text{parameters}&\text{colourings}&\text{ordinary alone misses states}
+ &\text{all-state rank test fails}\\\hline
+4&2&2&0&0\\
+8&6&10&0&2\\
+16&28&86&6&24\\
+32&60&472&42&48
+\end{array}
+\]
+The last two columns count parameters; the last means rank is deficient at every prime dividing $q-1$, even after using every three-colouring.  Counts retain both translations $c,c+t$ and sum colouring states across parameters, not isomorphism types.  Every one of the $570$ states has a non-unit eligible gain, checked with $1140$ matrix/permutation lift audits.  None of these small parameters is a canonical failure, so this is limited evidence for the unresolved residual class.  The reordered-label $q=16$ control has just one three-colouring up to colour names, with both gains one.  Thus even complete reachability cannot supply the arithmetic conclusion for an arbitrary label ordering; it is not a Cayley counterexample.
+
+The revised direction retains colouring states and their root rows under successive ordinary and unrestricted seven-change moves.  Reachability and nonvanishing are separate missing theorems: neither a growing accumulated span nor connectivity of a recolouring space forces the actual gain character to be nontrivial on the available rows.  Full rank at one prime remains sufficient, but the small all-state tests show it is not necessary.  A uniform argument must force a successful gain for the projective ordering, rather than merely repeat finite rank successes or assume every non-natural colouring works.  No uniform move bound, strict rank-growth theorem, or proof of the full-cycle family is asserted.  The full conjecture, the $13/16$ asymptotic guarantee, and the global smallest-counterexample bound are unchanged.
+
+The next arithmetic formulation uses both pieces of projective structure: the recurrence for the ordered labels, and the fact that every chord has the same additive label difference.  Keeping just one of these pieces is insufficient.
+
+\begin{lemma}[a joint polynomial test]\label{lem:borel-polynomial-test}
+Put $n=q+1$, $h=q/2$, and define $D_0(T)=0$, $D_1(T)=1$, $D_{i+1}(T)=TD_i(T)+D_{i-1}(T)$.  Let
+\[
+ \Psi_n(T)=\prod_{\substack{\operatorname{ord}(\lambda)=n\\
+                         \text{one per pair }\{\lambda,\lambda^{-1}\}}}
+                   (T+\lambda+\lambda^{-1})\in\mathbb F_2[T].
+\]
+Fix an arbitrary chord perfect matching $M$ on the ordered vertices $1,\ldots,h$, and a reference chord $\{a,b\}$.  For each chord $\{i,j\}\in M$, set
+\[
+ C_{ij}=(D_i+D_j)D_aD_b+(D_a+D_b)D_iD_j,
+ \qquad J_M=\gcd\bigl(\Psi_n,\{C_{ij}:\{i,j\}\in M\}\bigr).
+\]
+Then the roots of $J_M$ are exactly the full-cycle traces $t$ for which $M$ is the chord matching of an actual folded diagram.  Each such trace gives exactly two generating translations $c,c+t$.  Thus this fixed ordered matching is realised by exactly $2\deg J_M$ normalized pairs $(t,c)$.
+
+Let $\mathcal N$ be any combinatorially specified family of perfect matchings of the path-plus-chords graph with even off-path circuits.  For its oriented root paths, put
+\[
+ A_N(T)=\prod_{i\to j\text{ a chord on }P_N}D_i(T),\qquad
+ B_N(T)=\prod_{i\to j\text{ a chord on }P_N}D_j(T),\qquad
+ p_N=A_N+B_N.
+\]
+The roots of
+\[
+             K_{M,\mathcal N}=\gcd\bigl(J_M,\{p_N:N\in\mathcal N\}\bigr)
+\]
+are exactly the realisable full-cycle traces at which all these root gains are one.  Consequently $K_{M,\mathcal N}=1$ certifies a successful matching for every parameter realising $M$.  The stronger condition $\gcd(\Psi_n,\{p_N\})=1$ suffices without using the translation equations.
+\end{lemma}
+\begin{proof}
+The roots of $\Psi_n$ lie in $\mathbb F_q$ and are precisely the traces of the full-order nonsplit matrices: Frobenius sends $\lambda$ to $\lambda^{-1}$ because $n=q+1$.  They are distinct, and the polynomial has binary coefficients because its root set is stable under squaring.  For such a trace, $D_1(t),\ldots,D_h(t)$ are nonzero and $k_i=D_i(t)^{-2}$ are the distinct folded labels.
+
+Since squaring is injective, the chord differences $k_i+k_j$ are equal exactly when the quantities
+\[
+                    \frac{D_i(t)+D_j(t)}{D_i(t)D_j(t)}
+\]
+are equal.  Clearing the nonzero denominators gives precisely $C_{ij}(t)=0$.  If these equations hold, their common squared value $\Delta$ is nonzero.  The labels belong to $\{k:\operatorname{Tr}(k/t^2)=1\}$, so $\operatorname{Tr}(\Delta/t^2)=0$.  Hence $c^2+tc+\Delta=0$ has exactly two roots in $\mathbb F_q$, neither $0$ nor $t$.  Translation by this $\Delta$ pairs the labels exactly as $M$, reconstructing the actual folded diagram.  Conversely every actual diagram satisfies these equations.  Squarefreeness of $\Psi_n$ gives the root count.
+
+The gain formula becomes $\gamma(N)=(B_N(t)/A_N(t))^2$.  All factors are nonzero, so $\gamma(N)=1$ is equivalent to $p_N(t)=0$.  Taking the joint gcd proves the last assertions; even off-path circuits give the Cayley colouring whenever a root gain is non-unit.
+\end{proof}
+
+This is an exact elimination criterion, not a theorem that the joint gcd is always one.  It has reproducible polynomial certificates: a gcd of one is witnessed by a Bezout identity.  The trace polynomial can be constructed independently from
+\[
+                  \sqrt{D_n(T)}=\prod_{\substack{d\mid n\\d>1}}\Psi_d(T)
+                  \qquad(n\text{ odd}).
+\]
+Indeed $D_n(\lambda+\lambda^{-1})=(\lambda^n+\lambda^{-n})/(\lambda+\lambda^{-1})$; its roots correspond to the nonidentity $n$th roots of unity, paired by inversion, each with multiplicity two.  Monicity and degree give the identity.
+
+For the three-chord path in Example~\ref{ex:borel-rank-obstruction}, the oriented chords are $6\to573$, $162\to7$, and $161\to850$.  Thus
+\[
+       p_N=D_6D_{162}D_{161}+D_{573}D_7D_{850},\qquad
+                       \gcd(\Psi_{2049},p_N)=1.
+\]
+The second equality is certified by polynomial multiplication of a retained Bezout identity, independently checked with coefficient arrays.  Here $\deg\Psi_{2049}=682$, and $\deg p_N=1427$.  This one row therefore has non-unit gain at every full-cycle trace on this \emph{fixed ordered diagram}, despite its restricted family having rational rank only $425$ on $512$ chord coordinates.  Only eleven of those traces realise this diagram, forming the Frobenius orbit of $343$; they give the twenty-two already-covered parameter pairs.  This does not add colouring coverage.  Five smaller stored controls also admit a one-row polynomial certificate, without a claim that one row always suffices.
+
+The common-translation equations supply a uniform exclusion, not just finite-field certificates.
+\begin{corollary}[a forbidden anchored chord pattern]\label{cor:borel-forbidden-anchor}
+The three folded chords
+\[
+                         \{1,3\},\quad\{2,7\},\quad\{4,6\}
+\]
+cannot occur together in the projective ordering.  More generally, over any characteristic-two field with $D_1(t),\ldots,D_7(t)$ nonzero, the corresponding three differences $D_i(t)^{-2}+D_j(t)^{-2}$ cannot all be equal.
+\end{corollary}
+\begin{proof}
+Use $\{1,3\}$ as the reference chord.  The two exact translation polynomials are
+\[
+ \begin{split}
+  P(T)&=T^9+T^8+T^7+T^4+T^2+T+1,\\
+  Q(T)&=T^{10}+T^7+T^6+T.
+ \end{split}
+\]
+Direct multiplication in $\mathbb F_2[T]$ gives
+\[
+       (T^6+T+1)P+(T^5+T^4+T^3+T^2)Q=1.
+\]
+Thus $P,Q$ have no common root in any extension field, whereas equality of the three differences would force both to vanish.  The indices are anchored at the start of the recurrence; no arbitrary shift of this pattern is asserted.
+\end{proof}
+
+There is a complementary negative control.  At $q=16,t=8$, modulo $\theta^4+\theta+1$, retain the genuine projective labels
+\[
+                   (1,10,3,15,13,4,6,8),
+\]
+but impose the arbitrary chord pairs $\{1,3\},\{2,7\},\{4,6\},\{5,8\}$.  The closed graph has just one three-colouring up to global names, with both root gains one.  Its nonzero root row is $(1,1,-1,1)$; its unit-gain polynomial modulo $\Psi_{17}$ is $T^4+T^3+T^2+T+1$, which vanishes at this $t$.  The chord-label differences are $2,12,11,5$, not a common translation, and the corollary proves this anchored pattern is never realisable.  Thus the recurrence alone is insufficient, just as the earlier reordered-label example showed that a common translation alone is insufficient.  Neither control is a Cayley counterexample.
+
+The checker \path{code/borel_gain_polynomial.py} retains the trace factors, gain and translation Bezout certificates, independent parameter reconstructions, and matrix/permutation audits of the selected lifts.  It independently constructs the trace polynomials by both methods above.  Exhausting arbitrary pairings at the full-cycle Frobenius representatives gives zero recurrence-only failures among three diagrams at $q=8$, and four among $210$ diagrams at $q=16$; all four are eliminated by the translation equations.  The next proof target is to show that every realisable obstruction to the chosen move family forces incompatible recurrence/translation equations, perhaps through forbidden patterns.  One forbidden pattern does not establish that such patterns are unavoidable.  Neither the full-cycle family nor the full conjecture is proved, and the density and global bounds are unchanged.
+
+\begin{proposition}[spanning-path existence by classical parity]\label{prop:borel-rotations}
+In the double-inverse-trace-one class, the folded graph has a positive even number of Hamiltonian paths from $1$ to $h$.  Its natural path $1,\ldots,h$ can be paired with a distinct such path by endpoint rotations.  This statement imposes no bound on exchange size and no non-unit-gain conclusion.
+\end{proposition}
+\begin{proof}
+By Proposition~\ref{prop:borel-trace}, $F$ is simple, with degrees two at $1,h$ and three elsewhere.  This is a direct application of Thomason's Hamiltonian-path parity theorem, in the form of Cameron--Edmonds~\cite[Theorem~$0'$]{CameronEdmonds99}; the rotation proof is short.  Form a graph on all Hamiltonian paths starting at $1$.  For $P=(v_0,\ldots,v_{h-1})$ and a neighbour $v_i$ of its last vertex other than $v_{h-2}$, join $P$ to
+\[
+       (v_0,\ldots,v_i,v_{h-1},v_{h-2},\ldots,v_{i+1}).
+\]
+The move is reversible, including when $i=0$.  This rotation graph has degree $\deg_F(v_{h-1})-1$, hence degree one exactly at paths ending at $h$, and degree two otherwise.  Each component containing a degree-one vertex is a finite path with another degree-one endpoint.  Its endpoints give the asserted pairing.
+\end{proof}
+
+This is an application of classical parity, not a new Hamiltonian-path theorem.  In the displayed $q=4096$ example, following the unique non-backtracking rotation walk from the natural path with anchor $1$ reaches another spanning path after $1147$ rotations, of gain $460$.  Its matching differs from the all-chord matching on a circuit with $569$ chords.  Anchoring at $h$ instead takes $1379$ rotations and gives gain $1022$ when oriented from $1$ to $h$; the difference has three circuits with $499,85,38$ chords.  Thus this method naturally permits long and disconnected exchanges.  No polynomial running-time bound is asserted.
+
+Nonidentity is not automatic: at $q=128$, $t=15$, $c=2$, the anchor-$1$ mate has gain one after $54$ rotations.  This pair already has non-unit canonical gain $103$, so it refutes unconditional success of that mate, not a rule restricted to canonical failures.  The audit \path{code/borel_rotation_experiment.py} checks pairing and the exact gain update on all $62$ spanning paths in the $11$ small residual representative diagrams through $q=32$.  It also certifies both anchored walks on $24$ specified larger/control cases; all $42$ mates of the $21$ canonical failures in that set have non-unit gain.  These are finite controls, not a uniform gain theorem.  To track the arithmetic, for a rotation at $u$ write the old tail as $u,w,Q,v$ and let $g(i,j)$ be $1$ on a path edge and $k_i/k_j$ on a chord.  With $\rho$ the gain from $w$ to $v$,
+\[
+              \frac{\gamma(P')}{\gamma(P)}
+                  =\frac{g(u,v)}{g(u,w)\rho^2}.
+\]
+One possible next target is non-unit gain for some rotation-generated spanning path in the residual canonical-failure class; another is the weaker off-path condition of Lemma~\ref{lem:borel-offroot}.  Neither is proved uniformly.  Raising the failed five-chord spanning bound to six is not justified by this one example.
+
+The reflected-two-chord family now has a simpler description: select just one folded chord $(i,j)$ with $i<j$, $i$ odd and $j$ even, and complete the remaining path segments uniquely.  An unproved sufficient target is that whenever the canonical gain is $1$, some such chord has both endpoints on $P_N$ and $\gamma(N)\ne1$.  To settle the full-cycle family, it would now suffice to prove this just for parameters left by Proposition~\ref{prop:borel-trace} and Lemma~\ref{lem:borel-spanning}.  If $A_N$ is the set of source labels of the chords traversed by $P_N$, one can equivalently put
+\[
+ f_N(T)=\prod_{k\in A_N}(T+k),\qquad
+ \gamma(N)=\frac{f_N(0)}{f_N(\Delta)}.
+\]
+Thus the algebraic target is $f_N(0)\ne f_N(\Delta)$ for at least one suitable path, using the projective ordering encoded by the recurrence for $D_i$.
+
+The program \path{code/borel_reflected_family.py} tests every $c$ for one representative of each Frobenius orbit of full-cycle traces $t$.  Field automorphisms preserve the indexed diagrams and word orders, so the weighted counts below cover all normalized parameters.  Every canonical failure has a successful repair with both selected folded endpoints on the distinguished path.
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$q$ & representatives & parameters covered & canonical failures & least such repairs\\
+\midrule
+64 & 252 & 1512 & 12 & 4\\
+128 & 762 & 5334 & 56 & 3\\
+256 & 4080 & $32\,640$ & 96 & 7\\
+512 & 9198 & $82\,782$ & 198 & 13\\
+1024 & $40\,920$ & $409\,200$ & 580 & 24\\
+\bottomrule
+\end{tabular}
+\end{center}
+These $55\,212$ representative tests cover $531\,468$ parameter pairs and repair all $942$ canonical failures.  They do not verify all odd orders on any of the larger groups and do not change the smallest-counterexample bound.  Irreducibility and field multiplication are checked independently; failed canonical words and one positive repair per failure are also checked by composing the full projective permutations.
+
+Both restrictions in the sufficient target matter.  First, containment of the selected endpoints does not force nonidentity: in $\mathbb F_{1024}=\mathbb F_2[\theta]/(\theta^{10}+\theta^3+1)$, binary polynomial coordinates $t=62$, $c=836$, and folded chord $(33,236)$ give an identity-word distinguished circuit of length $873$, even though both endpoints lie on its path and all other circuits are even.  An exact two-level Schreier calculation verifies generation of all $1\,073\,740\,800$ group elements.  This pair has many different successful repairs, so it refutes only the stronger automatic-nonidentity rule.  Four such unsuccessful root-contained candidates occur in the $q=1024$ audit.
+
+Second, an arbitrary ordering of the affine-hyperplane labels cannot replace the projective ordering.  Over $\mathbb F_{16}=\mathbb F_2[\theta]/(\theta^4+\theta+1)$, take binary coordinates $t=2$, $c=6$, $\Delta=11$ and reorder the labels as
+\[
+                  (1,14,6,10,13,9,5,2).
+\]
+The canonical gain is $1$, but the sole one-chord candidate is $(1,4)$, whose path visits $(1,2,7,6,8)$ and misses endpoint $4$.  In fact this abstract graph has only three perfect matchings: the canonical matching, that one-chord matching, and the matching of all chords.  The last has a spanning path but gain $1$.  Thus \emph{no} matching in this abstract example is both root-contained and of non-unit gain; allowing more selected chords does not remove this obstruction.  This is not a Cayley graph counterexample.  The independent program \path{code/borel_folded_experiment.py} retains the earlier controls and exhausts all $1130$ folded matchings at the representative parameters for $q=4,8,16,32$, checking the scalar formula against matrix words.
+
+The separate audit \path{code/borel_spanning_exchange.py} checks the trace criterion, exact character-sum count and every short spanning-exchange gain through $q=1024$, with independent matrix and projective-permutation checks as recorded in \path{code/borel_spanning_results.json}.  Among the previously recorded $942$ canonical failures, the trace-test construction handles $768$ and crossing-square exchanges handle a further $56$, leaving $118$ outside these two proved sufficient configurations.  For example, over $\mathbb F_{128}$ modulo $\theta^7+\theta+1$, binary coordinates $t=15$, $c=35$ give a canonical identity word but neither short spanning exchange; a root-contained repair from the older family still works.  These residual examples do not contradict the conjecture, but rule out claiming that the two new configurations settle every canonical failure.  A proof for all $q$ must still establish a suitable matching for the remaining parameters; the positive-density theorem does not provide that existence statement or a proof of the full conjecture.
+
+Here is an infinite symmetric-group family in which all the necessary monodromy orders can be controlled explicitly, without a bound on the number of lifted circuits.
 \begin{proposition}[the transposition--odd-cycle family]\label{prop:transposition-monodromy}
 Let $s\ge5$ be odd, let $G=S_{s+1}$ on $\{\infty\}\cup\ZZ_s$, and put
 \[
@@ -1779,6 +2672,7 @@ These rational values are verified by exhaustive finite enumeration in the face 
 \item (Girth.)  Does Conjecture~\ref{conj:AZ} hold for cubic Cayley graphs of girth $3$ and $5$ (equivalently, by Proposition~\ref{prop:girth}, for generators $x$ of order $3$ and $5$), and of girth $6$?  In the girth-three case Corollary~\ref{cor:three-simple} reduces the problem to non-abelian simple groups.  Does the conjecture hold for girth at least $7$, i.e.\ is there a cyclically $7$-edge-connected Cayley snark?
 \item (Hamiltonicity.)  Is every $(2,s,3)$-Cayley graph with $|G|\equiv0\pmod 4$ and $s\equiv2\pmod4$ hamiltonian?  (This is the remaining case of Theorem~\ref{thm:2s3}; it does not affect Conjecture~\ref{conj:AZ}.)
 \item (Structure.)  Is there an algebraic characterisation of the even $2$-factors of $\X{G}{a}{x}$, for instance in terms of a subgroup $H$ of odd order such that the colouring is $H$-invariant?  Our computations show that in all cases tried an $H$-invariant colouring exists for a subgroup $H$ of index at most $9\,240$ (Table~\ref{tab:computation}), often a point stabiliser or an involution centraliser; is there always an $H$-invariant colouring with $H$ of bounded index (say $|G:H|\le c\,|G|^{1/2}$), or with $H$ from a specific family such as the centraliser of an involution?
+\item (Identity avoidance in simple groups.)  For $\PSL(2,q)$, does some Sylow $2$-subgroup containing $a$ admit a matching with $B=0$ as in Corollary~\ref{cor:sylow-identity}?  Can one prove nonemptiness and $\sum_C Z_C<Z$ for the specified minimum-cost class on an infinite family?  For $q$ even and $\ord(x)=q+1$, Proposition~\ref{prop:borel-trace} now gives a uniform positive-density construction, leaving the parameters $\operatorname{Tr}(1/c)=\operatorname{Tr}(1/(c+t))=1$.  Corollary~\ref{cor:borel-pentagon} also settles $c=1,t+1$, and Lemma~\ref{lem:borel-spanning} handles crossing-square configurations.  Proposition~\ref{prop:borel-three-quartic} restricts unit gain for spanning three-chord exchanges to at most eight further translations per $t$, but some residual parameters have no successful exchange of that size.  Can one prove existence of a suitable spanning alternating-circuit exchange, allowing a larger size if necessary?  Alternatively, on the remaining parameters with canonical gain $1$, can one always find a one-chord folded matching whose selected endpoints lie on its distinguished path and whose gain is not $1$?  For the stored canonical failures through $q=1024$, both constructions succeed (five chords suffice for the first).  Neither root containment alone nor arbitrary reorderings of the field labels suffice.  The missing statement is uniform existence, not another extrapolation from finite tests.
 \item (Matching monodromy.)  Can one construct a proper subgroup $H$ avoiding the conjugacy class of $x$ and a matching in $H\backslash X$ for which every odd complementary quotient circuit has an even-order traversal word, as in Lemma~\ref{lem:matching-monodromy}?  Theorem~\ref{thm:symmetric-transposition} settles every symmetric-group generating pair with $a$ a transposition, including matchings whose complementary colours cannot descend, and the finite calculation in Proposition~\ref{prop:sparse-involution-cycle} settles the nine-transposition boundary $N=19$ using adaptive matchings in the point quotient.  Can either construction be made uniform for involutions with several transpositions, or can an analogous small coset action be found for other almost simple groups?  The existence of an arbitrary matching alone does not control the circuit-word orders.
 \item (Cycle-double-cover palette and quotient switches.)  For the generator-separated flow of Proposition~\ref{prop:separated-eight-flow}, can one choose the quotient flow, its lifts around the $x$-cycles, and one of the twelve transvection matchings so that the augmented linear system in Proposition~\ref{prop:linearised-matching} is consistent?  Can the duality argument in the cycle-double-cover proof be extended to these extra equations?  When $s=5$, it suffices instead to choose a quotient flow whose affine switch system in Proposition~\ref{prop:quotient-switch} is consistent: this already constructs a colouring without the lifts.  Equivalently, in the regular-map formulation, can symmetry or duality select a homology class $h$ and a face potential $z$ satisfying Proposition~\ref{prop:homology-flow}?  The chromatic-number-five duals on $\PSL(2,11)$ show that the zero class is not enough.  The local repeated-value filter is necessary but not sufficient.  Can the Cayley action rule out a global inconsistency certificate for a suitable choice of quotient flow?  Arbitrarily choosing an admissible quotient flow would merely assume the desired colouring, so the choice must have an independent existence proof.
 \item (Weighted cut code.)  Can one choose a member of the symmetric matrix family $B_c$ in Proposition~\ref{prop:quotient-form} whose radical supplies directions solving the transvection syndrome \eqref{eq:syndrome-criterion}?  The affine layer assignments are exactly the characteristic vectors in Proposition~\ref{prop:affine-layer}, and lift changes preserving $B_c$ preserve this whole affine set.  For $s=5$, its intersection with the affine switch system gives an additional necessary condition for a transvection palette.  Making $B_c$ have small rank alone is insufficient; the quotient flow of the dimension-six experiment is locally obstructed for every choice of lifts.  After avoiding these obstructions, can the remaining lift freedom control the full syndrome?
@@ -1797,7 +2691,11 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 
 \bibitem{AhanjidehKovacs26} M.~Ahanjideh, I.~Kov\'acs, Nowhere-zero 3-flows in Cayley graphs on solvable groups of twice square-free order, arXiv:2603.24175 (2026).
 
+\bibitem{AhmadiGranger12} O.~Ahmadi, R.~Granger, An efficient deterministic test for Kloosterman sum zeros, arXiv:1104.3882v2 (2012), \url{https://arxiv.org/abs/1104.3882}.
+
 \bibitem{ALZ96} B.~Alspach, Y.-P.~Liu, C.-Q.~Zhang, Nowhere-zero 4-flows and Cayley graphs on solvable groups, \emph{SIAM J. Discrete Math.} 9 (1996) 151--154.
+
+\bibitem{CameronEdmonds99} K.~Cameron, J.~Edmonds, Some graphic uses of an even number of odd nodes, \emph{Ann. Inst. Fourier} 49 (1999) 815--827, \url{https://www.numdam.org/item/10.5802/aif.1694.pdf}.
 
 \bibitem{CastagnaPrins72} F.~Castagna, G.~Prins, Every generalized Petersen graph has a Tait coloring, \emph{Pacific J. Math.} 40 (1972) 53--58.
 
@@ -1818,6 +2716,8 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 \bibitem{EllisMonaghanMoffatt13} J.~A.~Ellis-Monaghan, I.~Moffatt, A Penrose polynomial for embedded graphs, \emph{European J. Combin.} 34 (2013) 424--445; \url{https://arxiv.org/abs/1106.5279}.
 
 \bibitem{EllisMonaghanKauffmanMoffatt18} J.~A.~Ellis-Monaghan, L.~H.~Kauffman, I.~Moffatt, Edge colourings and topological graph polynomials, \emph{Australas. J. Combin.} 72 (2018) 290--305; \url{https://arxiv.org/abs/1807.07500}.
+
+\bibitem{DGLP08} A.~Devillers, M.~Giudici, C.~H.~Li, C.~E.~Praeger, Primitive decompositions of Johnson graphs, \emph{J. Combin. Theory Ser. A} 115 (2008) 925--966.  \href{https://doi.org/10.1016/j.jcta.2007.11.005}{doi:10.1016/j.jcta.2007.11.005}; \href{https://arxiv.org/abs/0712.1622}{arXiv:0712.1622}.
 
 \bibitem{GKM09} H.~Glover, K.~Kutnar, D.~Maru\v{s}i\v{c}, Hamiltonian cycles in cubic Cayley graphs: the $\langle 2,4k,3\rangle$ case, \emph{J. Algebraic Combin.} 30 (2009) 447--475.
 
@@ -1843,6 +2743,8 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 
 \bibitem{KratochvilPoljak92} J.~Kratochv\'il, S.~Poljak, Compatible $2$-factors, \emph{Discrete Appl. Math.} 36 (1992) 253--266.
 
+\bibitem{KreschWetherellZieve02} A.~Kresch, J.~L.~Wetherell, M.~E.~Zieve, Curves of every genus with many points, I: Abelian and toric families, \emph{J. Algebra} 250 (2002) 353--370, \url{https://websites.umich.edu/~zieve/papers/kwz.pdf}.
+
 \bibitem{KMMMS12} K.~Kutnar, D.~Maru\v{s}i\v{c}, D.~W.~Morris, J.~Morris, P.~\v{S}parl, Hamiltonian cycles in Cayley graphs whose order has few prime factors, \emph{Ars Math. Contemp.} 5 (2012) 27--71.
 
 \bibitem{MorrisWilk20} D.~W.~Morris, K.~Wilk, Cayley graphs of order $kp$ are hamiltonian for $k<48$, \emph{Art Discrete Appl. Math.} 3 (2020) \#P2.02; arXiv:1805.00149.
@@ -1858,6 +2760,8 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 \bibitem{MMP04} A.~Malni\v{c}, D.~Maru\v{s}i\v{c}, P.~Poto\v{c}nik, On cubic graphs admitting an edge-transitive solvable group, \emph{J. Algebraic Combin.} 20 (2004) 99--113.
 
 \bibitem{MalnicPotocnik06} A.~Malni\v{c}, P.~Poto\v{c}nik, Invariant subspaces, duality, and covers of the Petersen graph, \emph{European J. Combin.} 27 (2006) 971--989.
+
+\bibitem{McDonaldMoharScheide12} J.~McDonald, B.~Mohar, D.~Scheide, Kempe equivalence of edge-colourings in subcubic and subquartic graphs, \emph{J. Graph Theory} 70 (2012) 226--239, \href{https://doi.org/10.1002/jgt.20613}{doi:10.1002/jgt.20613}; \url{https://arxiv.org/abs/1005.2248}.
 
 \bibitem{NanasiovaSkoviera09} M.~N\'an\'asiov\'a, M.~\v{S}koviera, Nowhere-zero flows in Cayley graphs and Sylow 2-subgroups, \emph{J. Algebraic Combin.} 30 (2009) 103--110.
 
@@ -1880,6 +2784,8 @@ This survey was prepared with the help of AI assistants (Claude and OpenAI Codex
 \bibitem{PSS05} P.~Poto\v{c}nik, M.~\v{S}koviera, R.~\v{S}krekovski, Nowhere-zero 3-flows in abelian Cayley graphs, \emph{Discrete Math.} 297 (2005) 119--127.
 
 \bibitem{PSV13} P.~Poto\v{c}nik, P.~Spiga, G.~Verret, Cubic vertex-transitive graphs on up to 1280 vertices, \emph{J. Symbolic Comput.} 50 (2013) 465--477.
+
+\bibitem{PriesZhu12} R.~Pries, H.~J.~Zhu, The $p$-rank stratification of Artin--Schreier curves, \emph{Ann. Inst. Fourier} 62 (2012) 707--726, \url{https://www.numdam.org/item/10.5802/aif.2692.pdf}.
 
 \bibitem{SawadaWilliams20} J.~Sawada, A.~Williams, Solving the sigma-tau problem, \emph{ACM Trans. Algorithms} 16 (2020) Art.~11.
 

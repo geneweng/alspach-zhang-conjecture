@@ -14,6 +14,26 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | Path | What it is |
 |---|---|
 | `survey.tex`, `survey.pdf` | The survey (LaTeX source and compiled PDF). |
+| `RESEARCH_REVIEW.md` | Candid progress audit, revised proof targets, and the 6 September Sylow-counting/Borel-reversal follow-up. |
+| `code/sylow_monodromy_review.py` | Tests the Sylow-2 identity-word obstruction on 358 PSL(2,q) pair orbits, with independent full lifts and quotient-colouring controls. |
+| `code/sylow_minimum_face_experiment.py` | Exact minimum-cost matching counts and unbiased uniform sampling; 286,863 matchings exhausted across 65 pair orbits. The two `sylow_minimum_face_*.json` files retain the exact results. |
+| `code/borel_reversal_experiment.py`, `code/borel_reversal_results.json` | Checks the characteristic-two reversal lemma, records twelve canonical identity-word failures in PSL(2,64), and certifies their reflected-two-chord repairs. |
+| `code/borel_reflected_family.py`, `code/borel_reflected_results.json`, `code/borel_reflected_1024.json` | Exhausts normalized full-cycle parameters through q=1024 using Frobenius orbits; all 942 canonical failures have root-contained two-chord repairs. Includes exact matrix Schreier generation checks. |
+| `code/borel_folded_experiment.py`, `code/borel_folded_results.json` | Independently checks the folded matching/scalar-gain formula, the pentagon parameter families, and genuine and reordered-label counterexamples to stronger shortcuts. |
+| `code/borel_spanning_exchange.py`, `code/borel_spanning_results.json` | Audits the proved positive-density trace-test family and crossing-square exchanges through q=1024; includes exact Kloosterman counts and residual-case certificates. |
+| `code/borel_alternating_exchange.py`, `code/borel_exchange_algebra.py`, `code/borel_exchange_results.json` | Proves the three-chord quartic obstruction by exact polynomial identities, audits it through q=1024, and certifies exchanges with at most five chords for all 118 stored residual failures. |
+| `code/borel_exchange_stress.py`, `code/borel_exchange_stress_results.json` | Linear-space field arithmetic and cut-path checking; completes the residual q=2048 audit and finds a counterexample to the five-chord spanning-exchange bound in a partial q=4096 scan. |
+| `code/borel_exchange_certificate.py`, `code/borel_exchange_certificate.json` | Independently exhausts short cycles by fixed-point words at q=4096, certifies the spanning-bound obstruction, and verifies four-chord non-spanning and six-chord spanning colourings. |
+| `code/borel_rotation_experiment.py`, `code/borel_rotation_results.json` | Audits the classical endpoint-rotation pairing, its gain update, genuine unit-gain mates, and longer/disconnected successful exchanges. |
+| `code/borel_square_exchange.py`, `code/borel_square_results.json` | Proves and audits the unique residual-square criterion, paired non-spanning repairs, and an improved asymptotic 13/16 lower bound on full-cycle parameter coverage. Includes a complete test of the criterion through q=4096 and a genuine square-plus-canonical failure. |
+| `code/borel_three_exchange.py`, `code/borel_three_results.json` | Exact three-chord existence count, a proved asymptotic 1/32 subfamily with no exchanges of up to three chords, and an exact affine certificate for every folded complement. Complete trace counts through q=4096, independently scoped graph/word audits, and a q=16384 positivity control. |
+| `code/borel_kempe_exchange.py`, `code/borel_kempe_results.json` | Global folded recolouring with automatic even off-path circuits; an exactly closed, unsuccessful three-colour Kempe class at q=256; and a replayable 122-step fourth-colour escape. Includes small exhaustive controls and repairs of 926/942 stored weighted canonical failures by two unrestricted-length circuit families. |
+| `code/borel_two_buffer.py`, `code/borel_two_buffer_results.json` | A target-free seven-change rule with an exact endpoint-pairing return criterion. Two temporary-colour edges are necessary and sufficient to escape the rigid q=256 class. Repairs all 942 stored weighted failures through q=1024 and 20 larger controls; includes a complete single-trace q=8192 audit and an abstract reordered-label obstruction to automatic nonvanishing. |
+| `code/borel_gain_lattice.py`, `code/borel_gain_lattice_results.json` | A proved collective nonvanishing criterion using signed root-path integer relations. All 51 stored folded canonical-failure diagrams through q=1024 contain a doubled coordinate in their root lattice. Includes exact relations, failures of stronger rank/index guesses, and an actual non-natural q=128 colouring with both root gains one. |
+| `code/borel_gain_rank.py`, `code/borel_gain_rank_results.json` | Proves that chord gains generate the full multiplicative group, yielding a one-prime rank criterion. Certifies a q=2048 residual counterexample to the fixed-family coordinate-isolation target, and restores full rank after an ordinary Kempe prefix. Tests the 20 stored larger cases; retains kernel vectors, a nonsingular minor, and lift audits. |
+| `code/borel_gain_closure.py`, `code/borel_gain_closure_results.json` | Removes three recorded rank deficiencies by allowing every temporary ordinary colour. Certifies minimum support three in the restricted q=2048 rational root span, an explicit three-chord successful root path, and rank-neutral ordinary neighbours. |
+| `code/borel_kempe_closure.py`, `code/borel_kempe_closure_results.json` | Exhaustive recolouring closures on 96 normalized parameters through q=32, independently compared with all 570 three-colourings up to global colour names. Includes 1140 matrix/permutation lift checks and an abstract reordered-label negative control. No general connectivity or rank-completion claim. |
+| `code/borel_gain_polynomial.py`, `code/borel_gain_polynomial_results.json` | Exact joint polynomial test for projective realizability and unit root gains; independent trace-polynomial constructions and Bezout audits. A single three-chord row certifies the fixed q=2048 diagram without full rank. Proves a forbidden anchored chord pattern over every characteristic-two field, and shows why the recurrence alone is insufficient. |
 | `docs/` | GitHub Pages site: project page (`index.html`), the survey as HTML and PDF. |
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
 | `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
@@ -56,9 +76,213 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 8. The 2026 cycle-double-cover proof, an exact eight-point palette reformulation, and its present obstruction.
 9. Related flow problems and open questions.
 
-## Status and next steps (5 September 2026)
+## Status and next steps (6 September 2026)
 
-**Latest result: every full-cycle generating pair in S23.** Let N be odd,
+**Latest result: a joint arithmetic criterion and a forbidden chord pattern.**
+The recurrence D_(i+1)=t D_i+D_(i-1) converts unit root gain into a
+polynomial equation. Requiring every chord to have the same additive
+label difference supplies a second set of equations. A proved joint-gcd
+criterion exactly identifies realizable parameters where all candidate
+gains are one; a Bezout identity equal to one excludes them.
+
+This gives a uniform exclusion: the anchored chords {1,3}, {2,7}, {4,6}
+cannot coexist in the projective ordering, over any characteristic-two
+field. It also gives a one-row certificate for the fixed q=2048 diagram,
+where the earlier root lattice could not isolate any coordinate.
+Six stored diagrams pass the new polynomial test, with independent checks.
+
+A new q=16 negative control keeps the true projective recurrence but
+drops the common-translation condition; every three-colouring then has
+both root gains one. Together with the earlier reordered-label control,
+this shows why both arithmetic conditions are needed. The next missing
+step is a uniform argument excluding all realizable gain-one obstructions,
+not just the displayed forbidden pattern. No colouring coverage or bound
+has increased; the full conjecture remains open.
+
+**Previous result: remove the temporary-colour restriction, and keep reachability separate from gain.**
+Allowing every choice of temporary ordinary colour in the seven-change
+rule removes all three recorded rank deficiencies at
+(q,t,c)=(1024,49,80), (1024,287,683), and (2048,343,1766).
+The enlarged families have full rank at one prime dividing q-1, with
+independently checked minors. The q=2048 example therefore needs no
+ordinary prefix to restore rank once these additional seeds are allowed.
+This corrects the scope of the previous obstruction, not its validity.
+
+For the restricted q=2048 family, eight kernel witnesses prove that
+its rational root span contains no nonzero vector supported on one or
+two coordinates. Its minimum support is exactly three; a returned
+three-chord root path has gain 178 and independently verified lifts.
+
+A separate exhaustive search through q=32 reaches all 570 three-colourings
+on 96 normalized parameters using ordinary and seven-change moves.
+Ordinary moves alone miss colourings on 48 parameters. However, full rank
+fails on 74 parameters even using every three-colouring, despite successful
+gains. Thus full rank is sufficient, not necessary. None of these small
+parameters is a canonical failure. General reachability and arithmetic
+nonvanishing remain unproved; the full conjecture and all bounds are unchanged.
+
+**Previous result: the fixed-family lattice target fails; successive recolourings help.**
+At q=2048,t=343,c=1766, the seven-change family has only 425 independent
+root rows for 512 chord coordinates. Three checked kernel vectors prove
+that its lattice contains **no nonzero coordinate multiple at all**.
+This is a genuine residual canonical failure with no alternating square,
+so the uniform coordinate-isolation target proposed below is false.
+The graph still colours, including by the original seven-change rule.
+
+A new lemma proves that the chord gains generate the full multiplicative
+group. Consequently full root-row rank modulo just **one** prime divisor
+of q-1 suffices. This test passes nine of ten stored q=2048 residual cases
+and all ten stored q=4096 cases. For the exceptional case, one ordinary
+Kempe prefix gives a new family with full rank 512 modulo 23, verified by
+an independent determinant calculation. This is not a minimal colouring
+route: even that prefix alone already gives a successful matching.
+
+The next direction permits successive recolourings and accumulates their
+root rows. Proving that this process must supply a certificate remains
+open; no uniform eight-change bound is proposed. The full conjecture and
+the global/asymptotic bounds are unchanged.
+
+**Previous result: a collective nonvanishing criterion.** Record the signed
+chords of each candidate root path as an integer vector. If an integer
+combination of these vectors equals twice one coordinate, at least one
+candidate has non-unit gain: otherwise a nontrivial chord gain would have
+square one in an odd-order group. This is a proved conditional lemma.
+
+Every one of the 51 stored folded canonical-failure diagrams through q=1024
+passes this test, covering the same 942 weighted failures as before.
+Exact relations and independent checks are retained in the new checker.
+Full rank and a power-of-two index fail on some already-colourable cases;
+the weaker one-coordinate condition survives. All ten stored diagrams in
+the double-inverse-trace-one residual class satisfy the stronger inclusion
+of twice the entire coordinate lattice.
+
+The proposed uniform fixed-family inclusion is disproved by the larger
+control above; the conditional lemma remains valid. A genuine q=128 colouring
+also disproves the shortcut that any non-natural colouring must have a
+non-unit root gain; it is not a counterexample to the seven-change rule.
+The full conjecture, the 13/16 asymptotic guarantee, and the global
+counterexample bound are unchanged. See the [research follow-up](RESEARCH_REVIEW.md).
+
+**Previous result: a target-free seven-change construction.** A deterministic
+rule temporarily recolours two chords, performs three two-colour switches,
+then restores the chords. Its return to three colours has a proved exact
+four-endpoint pairing criterion. It does not require a successful target
+colouring in advance. The switched paths can be long; seven changes does
+not mean seven chords.
+
+For the rigid q=256 example, seven changes find a successful return, with
+eligible root gains 255 and 31. Two temporary-colour edges are sufficient
+and necessary: an elementary completion argument proves that allowing only
+one cannot change the three-colour Kempe class. The rule repairs all 942
+stored weighted canonical failures through q=1024 and all 20 stored larger
+controls. A complete single-trace audit at q=8192, t=13 also succeeds for
+all 8190 generating translations; this is not an all-traces q=8192 audit.
+
+What remains unproved is that some pivot always returns with non-unit gain.
+The return theorem alone is insufficient, and a reordered-label control
+rules out automatic nonvanishing without the projective ordering. The
+proved density and global counterexample bound are unchanged.
+See the [research follow-up](RESEARCH_REVIEW.md).
+
+**Previous result: a uniform limitation of very short exchanges.** An exact
+trace formula now counts three-chord alternating circuits, including a
+necessary correction for degenerate walks. A character-sum proof gives an
+asymptotic 1/32 subfamily with no alternating exchange of one, two or three
+chords from the all-chord matching, uniformly for every full-cycle t.
+The explicit bound guarantees such parameters for every q>=16384.
+These are not uncolourable graphs: the result excludes only that restricted
+matching construction, not canonical matchings, longer exchanges or rotations.
+
+An exact affine-voltage criterion now checks all complementary circuits of
+any folded matching. A q=64 witness shows it is strictly stronger than the
+earlier parity test: three odd quotient circuits all become even upstairs.
+It also certifies a q=128 exchange that fails for both
+translations c,c+t despite non-unit root gain. Thus the paired-square repair
+does not extend automatically to three chords. The new trace count is
+audited through q=4096, with exhaustive graph comparisons through q=512 and
+sampled comparisons thereafter. The revised priority is a global matching
+or rotation argument that controls every circuit, not a universal
+three-chord rule. See the [research follow-up](RESEARCH_REVIEW.md).
+
+**Best proved colouring density: asymptotic coverage at least 13/16.** In the
+residual class `Tr(1/c)=Tr(1/(c+t))=1`, a unique two-chord alternating
+exchange exists exactly when `Tr(1/[c(c+t)])=0`. It colours at least one
+of the two translations c,c+t, sometimes by allowing an extra even
+circuit. Combined with the original trace test, a character-sum argument
+guarantees at least `(13q-23-10*sqrt(q))/16` successful translations for
+each full-cycle t. Dividing by q-2 gives the asymptotic 13/16 lower bound,
+uniformly in t. This is not a percentage of the full conjecture resolved.
+
+The new criterion is audited through q=4096, covering 9,786,998 normalized
+parameters across all tested fields. The two specified constructions
+colour 8,411,445 of those parameters. A q=2048 control shows why the paired
+qualification is essential: the canonical matching and unique square both
+fail for one translation, while the square works for its partner. That
+graph has a previously certified five-chord repair. The full conjecture
+and the all-parameters infinite family remain open.
+
+**Previous obstruction: the five-chord spanning-exchange bound is false.** At q=4096,
+t=681, c=1207 (modulo theta^12+theta^3+1), every single alternating-cycle
+exchange with at most five chords is non-spanning. Two independent
+enumerations certify this. A six-chord exchange spans and colours; a
+four-chord exchange also colours, with one harmless extra even quotient
+circuit. This refutes the spanning bound, not short repairs in general or
+the original conjecture. The survey now gives an off-path sheet-parity
+criterion and applies classical Hamiltonian-path parity to construct a
+different spanning path by rotations. Forcing non-unit gain remains open.
+
+The earlier general residual scan is complete at q=2048: combined with the trace theorem,
+it certifies all 1,395,372 normalized generating parameters with x of full
+order 2049. Its q=4096 scan is partial; the newer square-only criterion
+audit is complete there but does not certify every parameter. Neither covers other odd generator
+orders or changes the global smallest-counterexample bound.
+
+**New proved positive-density family on simple groups.** For every q=2^m >= 4,
+full-cycle x(z)=1/(z+t), and a(z)=z+c with c not 0 or t, the Cayley graph
+on PSL(2,q) colours if `Tr(1/c)=0` or `Tr(1/(c+t))=0` (absolute field trace).
+An explicit matching leaves only circuits of length 2(q+1) upstairs.
+For each full-cycle t this covers at least q/2 of the q-2 generating
+translations, and a proportion tending uniformly to 3/4 as q grows.
+The exact count is `(3q-5-K(t^-2))/4`, with the unshifted binary Kloosterman
+sum K. This is a proved sufficient family, not a percentage of the full
+conjecture resolved. The earlier pentagon families c=1 and c=t+1 also remain
+valid; the latter overlaps the known order-three-product theorem.
+
+**Current priority: a uniform simple-group construction.** The
+[research review](RESEARCH_REVIEW.md) redirects the main effort from larger
+finite symmetric-group enumerations to Sylow-2 matching monodromy. The survey
+proves that a lifted matching has exactly `|P| B` odd circuits, where `B`
+counts odd quotient circuits with identity word. Exact minimum-cost tests
+give `E B < 1` on all 65 representatives tested (286,863 matchings), including
+every order-three representative in PSL(2,11) and PSL(2,17). A counting-state
+limit leaves the corresponding PSL(2,13) tests unresolved.
+
+The reversal construction now folds to a path-plus-chords graph on q/2
+vertices. A proved scalar-product formula determines its distinguished
+circuit word. Selecting one folded chord gives a sufficient repair when
+both endpoints lie on the distinguished path and its gain is not 1.
+All 942 canonical failures among 531,468 normalized parameters through
+q=1024 have such a repair. Neither condition can be discarded: some
+root-contained repairs still have identity words at q=1024, and an
+abstract reordered-label control has no root-contained non-unit-gain
+matching even when every perfect matching is allowed.
+Starting instead from all folded chords gives the new trace-test theorem
+and an additional crossing-square construction. Together these handle
+824 of the 942 stored canonical failures by proved short exchanges.
+The remaining 118 now also have certified spanning exchanges along a single
+alternating circuit: 72 need three chords and 46 first succeed with five.
+A new proved quartic criterion controls three-chord nonvanishing: apart
+from the already-colourable pentagon families, at most eight translations
+per t can admit a spanning three-chord exchange with unit gain. Genuine
+exceptions occur at q=16 and q=1024. This theorem is conditional on a
+spanning exchange existing; some residual cases have no successful one
+with a spanning complement using four or fewer chords. The later q=4096 obstruction above rules out
+the uniform five-chord spanning bound. The next targets allow longer
+rotation-generated paths or non-spanning complements with even lifted
+off-path circuits.
+The full conjecture and the all-parameters simple-group family remain open.
+
+**Previous family result: every full-cycle generating pair in S23.** Let N be odd,
 let x be an N-cycle in S_N, and let a be a product of r disjoint transpositions,
 with <a,x> = S_N. The survey proves that Cay(S_N,{a,x,x^-1}) is 3-edge-colourable
 whenever N >= 4r+1, for every possible N when r <= 7, for (r,N)=(9,19),
@@ -159,7 +383,7 @@ matchings, including 224 non-Hamiltonian ones. In contrast, all 21 such S6 match
 have at least 16 complementary circuits and fail the bound of five; the monodromy
 construction proves their evenness instead.
 
-**Latest direction: an exchange-closed minimum-cost face.** Restrict to matchings selecting
+**Earlier direction: an exchange-closed minimum-cost face.** Restrict to matchings selecting
 exactly one a-edge at each x-cycle. Whenever the contracted graph has a perfect matching
 (proved here in the non-solvable order-five case), this class is nonempty. The survey now proves
 that it is the minimum-a-edge face of the perfect-matching polytope, linearly equivalent to the
@@ -283,7 +507,12 @@ the next admissible groups are S9 (362 880, in the catalogue), PGL(2,71), PGL(2,
 ATLAS generators are in `code/atlas/`), PGL(2,79), PSL(2,103), PSL(2,107), PSL(2,109), PSL(2,113), PSL(2,121), PSL(2,125);
 groups above about 400 000 elements need more memory per worker (use `WORKERS=6`).
 
-**Theory.** Open directions recorded in the survey (Sections 9–10): the involution-class quotient, the
+**Theory.** The primary targets are now the reflected-two-chord construction
+in characteristic two and the Sylow minimum-cost first-moment inequality;
+see [the follow-up](RESEARCH_REVIEW.md#follow-up-implementing-the-recommendation-6-september)
+for precise scope, barriers and reproduction commands. The three-semiedge
+induction is a secondary family target. Earlier open directions recorded in
+the survey (Sections 9–10) include the involution-class quotient, the
 Z_3 reformulation for ord(x) = 5, adaptive choice of the quotient subgroup (the natural point
 quotient can be the Petersen snark even when the Cayley graph is colourable), and forcing a
 4-colourable eight-point palette in the cycle-double-cover construction without assuming a rank-two flow.

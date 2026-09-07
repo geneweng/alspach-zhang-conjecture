@@ -1,0 +1,2033 @@
+[
+  {
+    "q": 4,
+    "counts": {
+      "canonical_good": 6
+    },
+    "failures": []
+  },
+  {
+    "q": 8,
+    "counts": {
+      "canonical_good": 21
+    },
+    "failures": []
+  },
+  {
+    "q": 16,
+    "counts": {
+      "canonical_good": 120
+    },
+    "failures": []
+  },
+  {
+    "q": 32,
+    "counts": {
+      "canonical_good": 310
+    },
+    "failures": []
+  },
+  {
+    "q": 64,
+    "counts": {
+      "canonical_good": 1500,
+      "canonical_identity_failure": 12,
+      "adaptive_repaired": 12
+    },
+    "failures": [
+      {
+        "q": 64,
+        "t": 7,
+        "c": 26,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaXaXaxaXaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaXax"
+        },
+        "repaired": {
+          "attempts": 62,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            79,
+            90
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                63,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxxaxaxaXaXaXaxaXaxaXaxxxaXaxaXaxaXaXaXaxaxaxxaxaXax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                61,
+                18,
+                32,
+                42
+              ],
+              "labels": "xaxaXaXa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 6,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              70
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  18,
+                  0,
+                  1
+                ],
+                "labels": "xxaXaxaxaxaXaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  8,
+                  29,
+                  10,
+                  18
+                ],
+                "labels": "xaXaxaXaXXaxaxaxaXaxaXaxaxxaXaXaXa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  59,
+                  45,
+                  10,
+                  44
+                ],
+                "labels": "xaXaxa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  39,
+                  47,
+                  15,
+                  48
+                ],
+                "labels": "xaXaXa"
+              },
+              {
+                "length": 4,
+                "word_matrix": [
+                  15,
+                  48,
+                  26,
+                  4
+                ],
+                "labels": "xaXa"
+              }
+            ]
+          }
+        },
+        "independently_checked_generated_order": 262080
+      },
+      {
+        "q": 64,
+        "t": 7,
+        "c": 29,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxax"
+        },
+        "repaired": {
+          "attempts": 59,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            80,
+            87
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                63,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXXaxaXaXaxaXaXaXaXaXaXXXaXaXaXaXaXaxaXaXaxaXXaxaxax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                61,
+                18,
+                32,
+                42
+              ],
+              "labels": "xaXaXaxa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 5,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              96
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  18,
+                  0,
+                  1
+                ],
+                "labels": "xxaxaxaXaxaxaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  8,
+                  29,
+                  10,
+                  18
+                ],
+                "labels": "xaxaxaxaXXaXaxaXaXaXaXaXaxxaxaXaxa"
+              },
+              {
+                "length": 12,
+                "word_matrix": [
+                  4,
+                  11,
+                  16,
+                  29
+                ],
+                "labels": "xaxaxaXaXaXa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  29,
+                  17,
+                  1,
+                  7
+                ],
+                "labels": "xa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  29,
+                  17,
+                  1,
+                  7
+                ],
+                "labels": "xa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 10,
+        "c": 21,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxax"
+        },
+        "repaired": {
+          "attempts": 59,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            80,
+            87
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                56,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXXaxaXaXaxaXaXaXaXaXaXXXaXaXaXaXaXaxaXaXaxaXXaxaxax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                49,
+                13,
+                36,
+                63
+              ],
+              "labels": "xaXaXaxa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 5,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              96
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  13,
+                  0,
+                  1
+                ],
+                "labels": "xxaxaxaXaxaxaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  18,
+                  21,
+                  27,
+                  13
+                ],
+                "labels": "xaxaxaxaXXaXaxaXaXaXaXaXaxxaxaXaxa"
+              },
+              {
+                "length": 12,
+                "word_matrix": [
+                  2,
+                  26,
+                  4,
+                  21
+                ],
+                "labels": "xaxaxaXaXaXa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  21,
+                  5,
+                  1,
+                  10
+                ],
+                "labels": "xa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  21,
+                  5,
+                  1,
+                  10
+                ],
+                "labels": "xa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 10,
+        "c": 31,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaXaXaxaXaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaXax"
+        },
+        "repaired": {
+          "attempts": 62,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            79,
+            90
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                56,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxxaxaxaXaXaXaxaXaxaXaxxxaXaxaXaxaXaXaXaxaxaxxaxaXax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                49,
+                13,
+                36,
+                63
+              ],
+              "labels": "xaxaXaXa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 6,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              70
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  13,
+                  0,
+                  1
+                ],
+                "labels": "xxaXaxaxaxaXaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  18,
+                  21,
+                  27,
+                  13
+                ],
+                "labels": "xaXaxaXaXXaxaxaxaXaxaXaxaxxaXaXaXa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  58,
+                  53,
+                  27,
+                  52
+                ],
+                "labels": "xaXaxa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  46,
+                  60,
+                  24,
+                  32
+                ],
+                "labels": "xaXaXa"
+              },
+              {
+                "length": 4,
+                "word_matrix": [
+                  24,
+                  32,
+                  31,
+                  2
+                ],
+                "labels": "xaXa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 21,
+        "c": 11,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaXaXaxaXaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaXax"
+        },
+        "repaired": {
+          "attempts": 62,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            79,
+            90
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                42,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxxaxaxaXaXaXaxaXaxaXaxxxaXaxaXaxaXaXaXaxaxaxxaxaXax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                46,
+                8,
+                48,
+                55
+              ],
+              "labels": "xaxaXaXa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 6,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              70
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  8,
+                  0,
+                  1
+                ],
+                "labels": "xxaXaxaxaxaXaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  3,
+                  30,
+                  7,
+                  8
+                ],
+                "labels": "xaXaxaXaXXaxaxaxaXaxaXaxaxxaXaXaXa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  58,
+                  34,
+                  7,
+                  35
+                ],
+                "labels": "xaXaxa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  37,
+                  38,
+                  22,
+                  60
+                ],
+                "labels": "xaXaXa"
+              },
+              {
+                "length": 4,
+                "word_matrix": [
+                  22,
+                  60,
+                  11,
+                  16
+                ],
+                "labels": "xaXa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 21,
+        "c": 30,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxax"
+        },
+        "repaired": {
+          "attempts": 59,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            80,
+            87
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                42,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXXaxaXaXaxaXaXaXaXaXaXXXaXaXaXaXaXaxaXaXaxaXXaxaxax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                46,
+                8,
+                48,
+                55
+              ],
+              "labels": "xaXaXaxa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 5,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              96
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  8,
+                  0,
+                  1
+                ],
+                "labels": "xxaxaxaXaxaxaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  3,
+                  30,
+                  7,
+                  8
+                ],
+                "labels": "xaxaxaxaXXaXaxaXaXaXaXaXaxxaxaXaxa"
+              },
+              {
+                "length": 12,
+                "word_matrix": [
+                  16,
+                  6,
+                  12,
+                  30
+                ],
+                "labels": "xaxaxaXaXaXa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  30,
+                  13,
+                  1,
+                  21
+                ],
+                "labels": "xa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  30,
+                  13,
+                  1,
+                  21
+                ],
+                "labels": "xa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 27,
+        "c": 7,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxax"
+        },
+        "repaired": {
+          "attempts": 59,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            80,
+            87
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                50,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXXaxaXaXaxaXaXaXaXaXaXXXaXaXaXaXaXaxaXaXaxaXXaxaxax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                33,
+                17,
+                38,
+                56
+              ],
+              "labels": "xaXaXaxa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 5,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              96
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  17,
+                  0,
+                  1
+                ],
+                "labels": "xxaxaxaXaxaxaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  13,
+                  7,
+                  30,
+                  17
+                ],
+                "labels": "xaxaxaxaXXaXaxaXaXaXaXaXaxxaxaXaxa"
+              },
+              {
+                "length": 12,
+                "word_matrix": [
+                  9,
+                  31,
+                  2,
+                  7
+                ],
+                "labels": "xaxaxaXaXaXa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  7,
+                  3,
+                  1,
+                  27
+                ],
+                "labels": "xa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  7,
+                  3,
+                  1,
+                  27
+                ],
+                "labels": "xa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 27,
+        "c": 28,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaXaXaxaXaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaXax"
+        },
+        "repaired": {
+          "attempts": 62,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            79,
+            90
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                50,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxxaxaxaXaXaXaxaXaxaXaxxxaXaxaXaxaXaXaXaxaxaxxaxaXax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                33,
+                17,
+                38,
+                56
+              ],
+              "labels": "xaxaXaXa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 6,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              70
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  17,
+                  0,
+                  1
+                ],
+                "labels": "xxaXaxaxaxaXaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  13,
+                  7,
+                  30,
+                  17
+                ],
+                "labels": "xaXaxaXaXXaxaxaxaXaxaXaxaxxaXaXaXa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  59,
+                  35,
+                  30,
+                  34
+                ],
+                "labels": "xaXaxa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  61,
+                  48,
+                  22,
+                  36
+                ],
+                "labels": "xaXaXa"
+              },
+              {
+                "length": 4,
+                "word_matrix": [
+                  22,
+                  36,
+                  28,
+                  9
+                ],
+                "labels": "xaXa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 29,
+        "c": 6,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaXaXaxaXaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaXax"
+        },
+        "repaired": {
+          "attempts": 62,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            79,
+            90
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                55,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxxaxaxaXaXaXaxaXaxaXaxxxaXaxaXaxaXaXaXaxaxaxxaxaXax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                39,
+                3,
+                60,
+                41
+              ],
+              "labels": "xaxaXaXa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 6,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              70
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  3,
+                  0,
+                  1
+                ],
+                "labels": "xxaXaxaxaxaXaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  5,
+                  27,
+                  21,
+                  3
+                ],
+                "labels": "xaXaxaXaXXaxaxaxaXaxaXaxaxxaXaXaXa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  59,
+                  52,
+                  21,
+                  53
+                ],
+                "labels": "xaXaxa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  33,
+                  36,
+                  24,
+                  47
+                ],
+                "labels": "xaXaXa"
+              },
+              {
+                "length": 4,
+                "word_matrix": [
+                  24,
+                  47,
+                  6,
+                  12
+                ],
+                "labels": "xaXa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 29,
+        "c": 27,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxax"
+        },
+        "repaired": {
+          "attempts": 59,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            80,
+            87
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                55,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXXaxaXaXaxaXaXaXaXaXaXXXaXaXaXaXaXaxaXaXaxaXXaxaxax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                39,
+                3,
+                60,
+                41
+              ],
+              "labels": "xaXaXaxa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 5,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              96
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  3,
+                  0,
+                  1
+                ],
+                "labels": "xxaxaxaXaxaxaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  5,
+                  27,
+                  21,
+                  3
+                ],
+                "labels": "xaxaxaxaXXaXaxaXaXaXaXaXaxxaxaXaxa"
+              },
+              {
+                "length": 12,
+                "word_matrix": [
+                  12,
+                  20,
+                  19,
+                  27
+                ],
+                "labels": "xaxaxaXaXaXa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  27,
+                  18,
+                  1,
+                  29
+                ],
+                "labels": "xa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  27,
+                  18,
+                  1,
+                  29
+                ],
+                "labels": "xa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 30,
+        "c": 10,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxax"
+        },
+        "repaired": {
+          "attempts": 59,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            80,
+            87
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                41,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXXaxaXaXaxaXaXaXaXaXaXXXaXaXaXaXaXaxaXaXaxaXXaxaxax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                37,
+                5,
+                47,
+                50
+              ],
+              "labels": "xaXaXaxa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 5,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              96
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  5,
+                  0,
+                  1
+                ],
+                "labels": "xxaxaxaXaxaxaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  17,
+                  10,
+                  29,
+                  5
+                ],
+                "labels": "xaxaxaxaXXaXaxaXaXaXaXaXaxxaxaXaxa"
+              },
+              {
+                "length": 12,
+                "word_matrix": [
+                  19,
+                  28,
+                  9,
+                  10
+                ],
+                "labels": "xaxaxaXaXaXa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  10,
+                  8,
+                  1,
+                  30
+                ],
+                "labels": "xa"
+              },
+              {
+                "length": 2,
+                "word_matrix": [
+                  10,
+                  8,
+                  1,
+                  30
+                ],
+                "labels": "xa"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "q": 64,
+        "t": 30,
+        "c": 20,
+        "canonical_odd": {
+          "length": 49,
+          "word_matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "labels": "xaXaXaxaXaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaXax"
+        },
+        "repaired": {
+          "attempts": 62,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49,
+            51,
+            53,
+            55,
+            57,
+            59,
+            61,
+            63,
+            79,
+            90
+          ],
+          "profile": [
+            {
+              "length": 57,
+              "word_matrix": [
+                1,
+                41,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxxaxaxaXaXaXaxaXaxaXaxxxaXaxaXaxaXaXaXaxaxaxxaxaXax"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                37,
+                5,
+                47,
+                50
+              ],
+              "labels": "xaxaXaXa"
+            }
+          ]
+        },
+        "two_chord_repairs": {
+          "tested": 6,
+          "good": 6,
+          "witness": {
+            "matching": [
+              2,
+              4,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31,
+              33,
+              35,
+              37,
+              39,
+              41,
+              43,
+              45,
+              47,
+              49,
+              51,
+              53,
+              55,
+              57,
+              60,
+              62,
+              65,
+              70
+            ],
+            "profile": [
+              {
+                "length": 15,
+                "word_matrix": [
+                  1,
+                  5,
+                  0,
+                  1
+                ],
+                "labels": "xxaXaxaxaxaXaxx"
+              },
+              {
+                "length": 34,
+                "word_matrix": [
+                  17,
+                  10,
+                  29,
+                  5
+                ],
+                "labels": "xaXaxaXaXXaxaxaxaXaxaXaxaxxaXaXaXa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  58,
+                  44,
+                  29,
+                  45
+                ],
+                "labels": "xaXaxa"
+              },
+              {
+                "length": 6,
+                "word_matrix": [
+                  49,
+                  32,
+                  15,
+                  38
+                ],
+                "labels": "xaXaXa"
+              },
+              {
+                "length": 4,
+                "word_matrix": [
+                  15,
+                  38,
+                  20,
+                  19
+                ],
+                "labels": "xaXa"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

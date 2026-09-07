@@ -1,0 +1,2707 @@
+{
+  "small_controls": {
+    "canonical_diagrams": 48,
+    "cut_diagrams": 251
+  },
+  "fields": [
+    {
+      "q": 2048,
+      "modulus": 2053,
+      "maximum": 5,
+      "status": "COMPLETE",
+      "scope": "double-inverse-trace-one class, modulo Frobenius and c <-> c+t",
+      "counts": {
+        "folded_parameters": 15869,
+        "canonical_failures": 10,
+        "bounded_repairs": 10
+      },
+      "traces": [
+        {
+          "t": 3,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 257
+          }
+        },
+        {
+          "t": 6,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 251
+          }
+        },
+        {
+          "t": 7,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 253
+          }
+        },
+        {
+          "t": 19,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 262
+          }
+        },
+        {
+          "t": 22,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 263
+          }
+        },
+        {
+          "t": 24,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 253
+          }
+        },
+        {
+          "t": 28,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 262
+          }
+        },
+        {
+          "t": 31,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 250
+          }
+        },
+        {
+          "t": 33,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 247
+          }
+        },
+        {
+          "t": 34,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 260
+          }
+        },
+        {
+          "t": 41,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 248
+          }
+        },
+        {
+          "t": 48,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 265
+          }
+        },
+        {
+          "t": 49,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 250
+          }
+        },
+        {
+          "t": 57,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 259
+          }
+        },
+        {
+          "t": 60,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 262
+          }
+        },
+        {
+          "t": 61,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 262
+          }
+        },
+        {
+          "t": 62,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 258
+          }
+        },
+        {
+          "t": 63,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 257
+          }
+        },
+        {
+          "t": 83,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 251
+          }
+        },
+        {
+          "t": 88,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 260
+          }
+        },
+        {
+          "t": 89,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 248
+          }
+        },
+        {
+          "t": 96,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 265
+          }
+        },
+        {
+          "t": 100,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 258
+          }
+        },
+        {
+          "t": 102,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 254,
+            "canonical_failures": 2,
+            "bounded_repairs": 2
+          }
+        },
+        {
+          "t": 104,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 246
+          }
+        },
+        {
+          "t": 114,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 251
+          }
+        },
+        {
+          "t": 115,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 258
+          }
+        },
+        {
+          "t": 120,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 257
+          }
+        },
+        {
+          "t": 121,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 257
+          }
+        },
+        {
+          "t": 123,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 247
+          }
+        },
+        {
+          "t": 124,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 258
+          }
+        },
+        {
+          "t": 153,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 262
+          }
+        },
+        {
+          "t": 168,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 250
+          }
+        },
+        {
+          "t": 174,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 255,
+            "canonical_failures": 1,
+            "bounded_repairs": 1
+          }
+        },
+        {
+          "t": 180,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 261
+          }
+        },
+        {
+          "t": 209,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 263
+          }
+        },
+        {
+          "t": 213,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 253
+          }
+        },
+        {
+          "t": 215,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 256
+          }
+        },
+        {
+          "t": 217,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 259
+          }
+        },
+        {
+          "t": 220,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 253,
+            "canonical_failures": 1,
+            "bounded_repairs": 1
+          }
+        },
+        {
+          "t": 221,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 266
+          }
+        },
+        {
+          "t": 230,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 258
+          }
+        },
+        {
+          "t": 231,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 259
+          }
+        },
+        {
+          "t": 242,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 256
+          }
+        },
+        {
+          "t": 243,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 255
+          }
+        },
+        {
+          "t": 253,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 250
+          }
+        },
+        {
+          "t": 278,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 250,
+            "canonical_failures": 1,
+            "bounded_repairs": 1
+          }
+        },
+        {
+          "t": 284,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 252
+          }
+        },
+        {
+          "t": 288,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 248
+          }
+        },
+        {
+          "t": 289,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 253,
+            "canonical_failures": 1,
+            "bounded_repairs": 1
+          }
+        },
+        {
+          "t": 298,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 264,
+            "canonical_failures": 2,
+            "bounded_repairs": 2
+          }
+        },
+        {
+          "t": 339,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 247
+          }
+        },
+        {
+          "t": 343,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 249,
+            "canonical_failures": 1,
+            "bounded_repairs": 1
+          }
+        },
+        {
+          "t": 367,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 261
+          }
+        },
+        {
+          "t": 428,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 259
+          }
+        },
+        {
+          "t": 439,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 255
+          }
+        },
+        {
+          "t": 444,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 253
+          }
+        },
+        {
+          "t": 521,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 262
+          }
+        },
+        {
+          "t": 578,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 256
+          }
+        },
+        {
+          "t": 607,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 256,
+            "canonical_failures": 1,
+            "bounded_repairs": 1
+          }
+        },
+        {
+          "t": 647,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 257
+          }
+        },
+        {
+          "t": 806,
+          "orbit_weight": 11,
+          "counts": {
+            "folded_parameters": 262
+          }
+        }
+      ],
+      "cases": [
+        {
+          "t": 102,
+          "c": 61,
+          "delta": 1338,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 1085,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaXaxaXaXaXaXaxaxaXaXaxaxaXaxaxaXaxaXaxaXaXaxaXaxaxaxaXaXaXaXaxaXaXaxaXaxaxaxaXaxaXaxaxaxaXaXaXaxaXaXaXaxaxaXaXaXaxaXaxaXaxaxaXaxaxaxaXaXaXaxaXaxaxaXaXaxaXaxaxaXaXaXaXaXaxaXaxaxaxaXaxaxaXaXaxaXaXaXaxaxaxaxaXaXaxaXaxaXaxaxaxaXaXaXaXaxaXaxaxaxaxaxaxaXaxaXaxaxaxaxaxaxaXaxaxaXaxaxaxaXaxaXaXaxaXaxaXaXaXaxaxaXaxaXaxaXaXaxaXaxaXaXaXaxaXaxaXaxaXaxaxaxaXaxaXaxaxaxaxaxaxaXaXaXaXaxaxaXaXaXaxaxaXaXaXaXaXaXaxaxaXaxaxaXaxaxaXaXaXaxaXaxaxaXaxaxaxaxaxaXaxaxaxaxaXaxaXaxaXaXaxaXaXaxaxaXaXaXaxaXaxaxaXaXaxaXaXaxaxaXaxaxaxaxaXaXaxaXaxaXaXaXaXaxaxaxaXaxaXaxaXaxaXaxaxaxaXaXaXaXaxaXaxaXaXaxaxaxaxaXaxaxaXaXaxaXaXaxaxaXaxaXaXaXaxaxaXaXaxaXaXaxaXaxaXaxaxaxaxaXaxaxaxaxaxaXaxaxaXaxaXaXaXaxaxaXaxaxaXaxaxaXaXaXaXaXaXaxaxaXaXaXaxaxaXaXaXaXaxaxaxaxaxaxaXaxaXaxaxaxaXaxaXaxaXaxaXaXaXaxaXaxaXaXaxaXaxaXaxaxaXaXaXaxaXaxaXaXaxaXaxaxaxaXaxaxaXaxaxaxaxaxaxaXaxaXaxaxaxaxaxaxaXaxaXaXaXaXaxaxaxaXaxaXaxaXaXaxaxaxaxaXaXaXaxaXaXaxaxaXaxaxaxaXaxaXaXaXaXaXaxaxaXaxaXaXaxaxaXaxaXaXaXaxaxaxaXaxaxaXaxaXaxaXaXaXaxaxaXaXaXaxaXaXaXaxaxaxaXaxaXaxaxaxaXaxaXaXaxaXaXaXaXaxaxaxaXaxaXaXaxaXaxaXaxaxaXaxaxaXaXaxaxaXaXaXaXaxaXaXax"
+            },
+            {
+              "length": 764,
+              "word_matrix": [
+                1559,
+                1580,
+                861,
+                658
+              ],
+              "labels": "xaxaxaxaxaXaxaXaXaXaXaXaXaxaxaXaxaxaXaxaxaxaXaxaxaXaxaxaXaXaXaxaXaxaXaXaxaxaXaxaxaXaXaXaxaxaxaXaXaXaxaXaXaXaxaxaXaxaXaXaXaXaxaxaXaXaXaxaXaXaXaxaxaxaXaXaxaXaxaxaXaxaxaxaxaxaxaxaxaXaxaXaxaxaxaXaxaxaxaxaxaxaxaxaxaXaxaXaXaXaXaXaxaXaxaxaxaxaXaxaXaXaxaXaXaXaxaxaXaxaXaXaXaxaxaXaXaXaxaxaXaXaxaxaXaXaXaXaXaXaXaxaxaXaxaxaxaXaxaxaxaxaXaXaxaxaXaXaXaxaxaXaxaXaxaXaxaxaxaXaxaXaXaXaxaXaxaxaXaxaxaXaXaXaXaXaxaXaxaxaxaxaxaxaXaXaxaXaXaxaXaXaXaxaXaXaxaXaXaxaxaxaXaxaXaxaxaXaXaxaXaXaxaxaxaXaXaXaxaxaxaXaxaxaxaXaXaxaXaxaxaxaxaXaXaxaxaxaXaxaxaxaXaXaXaxaxaXaxaXaXaxaXaXaXaXaXaXaXaXaxaXaxaXaXaXaxaXaXaXaXaXaXaXaXaXaxaXaxaxaxaxaxaXaxaXaXaXaXaxaXaxaxaXaxaxaxaXaXaxaXaxaxaxaXaXaxaxaxaXaXaxaxaXaXaxaxaxaxaxaxaxaXaXaxaXaXaXaxaXaXaXaXaxaxaXaXaxaxaxaXaXaxaXaxaXaxaXaXaXaxaXaxaxaxaXaxaXaXaxaXaXa"
+            },
+            {
+              "length": 34,
+              "word_matrix": [
+                586,
+                2007,
+                1335,
+                277
+              ],
+              "labels": "xaXaXaxaxaxaxaXaxaxaXaxaxaxaxaxaxa"
+            },
+            {
+              "length": 132,
+              "word_matrix": [
+                579,
+                1016,
+                1848,
+                540
+              ],
+              "labels": "xaXaxaXaxaXaxaxaXaxaxaXaxaXaxaXaxaxaxaXaXaXaXaXaxaXaXaXaxaxaXaxaXaXaxaXaxaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxaxaxaxaxaXaxaxaxaXaXaxaXaxa"
+            },
+            {
+              "length": 34,
+              "word_matrix": [
+                511,
+                205,
+                1335,
+                672
+              ],
+              "labels": "xaxaxaxaxaxaXaxaxaXaxaxaxaxaXaXaxa"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 2,
+            "4_nonspanning": 2,
+            "5_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 2005,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              4,
+              3,
+              1,
+              2,
+              5
+            ],
+            "oriented_chords": [
+              [
+                90,
+                728
+              ],
+              [
+                213,
+                128
+              ],
+              [
+                212,
+                102
+              ],
+              [
+                91,
+                127
+              ],
+              [
+                103,
+                729
+              ]
+            ],
+            "chords": 5,
+            "cuts": [
+              91,
+              103,
+              128,
+              213,
+              729
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  2007,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                1796,
+                1136,
+                1562,
+                482
+              ],
+              "center_label": "x",
+              "denominator": 1562,
+              "beta": 2007
+            }
+          }
+        },
+        {
+          "t": 102,
+          "c": 806,
+          "delta": 484,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 537,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaXaxaxaXaxaXaXaXaxaXaXaXaXaXaxaxaXaxaXaxaXaxaXaXaXaxaXaxaXaxaXaXaXaxaxaXaxaxaxaXaxaXaXaxaXaxaxaXaxaxaXaXaxaxaXaXaXaXaXaXaXaxaXaXaXaXaxaXaXaxaXaXaXaxaxaXaXaXaxaXaXaxaXaxaxaxaXaxaxaXaxaXaXaxaXaXaxaXaxaxaXaxaXaxaXaXaxaxaXaXaXaxaXaxaxaXaxaXaxaXaxaXaXaxaxaxaxaxaXaxaXaxaXaxaXaxaXaxaxaxaxaxaXaXaxaXaxaXaxaXaxaxaXaxaXaXaXaxaxaXaXaxaXaxaXaxaxaXaxaXaXaxaXaXaxaXaxaxaXaxaxaxaXaxaXaXaxaXaXaXaxaxaXaXaXaxaXaXaxaXaXaXaXaxaXaXaXaXaXaXaXaxaxaXaXaxaxaXaxaxaXaxaXaXaxaXaxaxaxaXaxaxaXaXaXaxaXaxaXaxaXaXaXaxaXaxaXaxaXaxaxaXaXaXaXaXaxaXaXaXaxaXaxaxaXaxax"
+            },
+            {
+              "length": 576,
+              "word_matrix": [
+                1596,
+                478,
+                1664,
+                154
+              ],
+              "labels": "xaxaXaXaXaXaxaXaXaxaXaxaXaXaxaxaXaXaXaXaxaxaXaXaXaXaxaXaxaxaxaxaxaxaXaxaXaXaXaxaxaxaxaXaXaxaxaXaXaXaxaXaXaxaxaxaXaxaxaxaxaxaXaxaxaXaXaXaXaxaxaXaXaxaxaxaxaxaXaxaxaxaxaXaXaxaXaxaXaXaXaXaXaxaXaxaXaxaxaXaxaxaXaXaXaXaxaxaxaxaXaXaXaxaXaxaxaXaxaxaxaxaXaXaxaXaXaxaxaXaXaxaxaXaXaXaxaxaxaXaxaXaxaXaXaXaxaxaxaxaXaxaxaXaxaXaxaxaXaXaxaxaxaxaXaXaxaxaxaxaXaxaXaXaXaXaXaXaxaXaxaxaxaXaXaXaXaxaxaXaXaxaxaxaXaxaxaXaXaXaxaXaXaXaXaXaxaXaXaxaxaxaxaXaXaxaxaXaXaXaXaXaxaXaXaXaXaxaxaXaxaXaxaxaxaxaxaXaxaXaxaXaXaxaXaXaxaxaxaxaXaXaXaXaxaxaxaXaxaXaXaxaXaXaXaXaxaxaXaxaxaXaXaxaxaXaXaxaxaxaXaXaXaxaXaxaXaxa"
+            },
+            {
+              "length": 784,
+              "word_matrix": [
+                601,
+                536,
+                1571,
+                1833
+              ],
+              "labels": "xaxaXaXaxaxaxaXaXaxaxaxaxaxaxaxaxaXaxaxaXaXaxaXaXaXaXaXaxaxaxaxaxaxaXaxaXaxaxaxaXaXaXaXaxaxaXaxaxaxaxaxaXaXaxaxaXaxaxaXaXaxaXaxaXaXaxaxaxaXaXaxaxaxaxaxaXaxaxaXaxaxaxaXaxaxaxaxaXaxaXaxaXaxaXaXaXaXaXaxaXaxaxaXaxaXaxaXaXaXaXaXaXaxaxaXaXaXaxaXaxaXaxaxaxaxaXaXaxaxaxaxaxaXaXaXaxaxaXaXaXaXaXaxaxaxaxaXaxaXaXaXaXaxaXaxaxaXaXaXaXaXaXaxaxaXaXaxaxaXaxaXaxaxaXaxaxaxaXaXaxaxaXaxaxaxaxaxaxaXaxaXaXaXaXaxaXaXaxaxaXaXaXaxaxaXaXaXaXaXaXaXaXaxaXaXaxaxaXaxaxaxaxaxaXaXaXaXaXaXaxaXaxaXaXaXaxaxaxaxaXaXaxaXaXaXaXaXaxaxaXaXaxaXaXaxaxaXaxaXaxaxaXaXaXaxaxaXaXaXaXaXaxaXaXaxaXaXaXaxaXaXaXaXaxaXaxaXaxaXaxaxaxaxaxaXaxaXaXaxaXaxaXaxaxaxaxaxaxaXaXaxaxaxaXaxaXaxaXaXaXaXaxaxaXaXaXaXaXaxaxaxaXaXaxaxaxaxaxaXaXaXaXaxaXaxaxaxaxaXaxaXaXaxaxaxaxaxaxaXaXaxaxaXaXaxaXaxaXaXaxaXaXaXaxaxaXaXaxaXaXaXaXaXaXaxaXaxaxaxaxaXa"
+            },
+            {
+              "length": 152,
+              "word_matrix": [
+                1260,
+                1215,
+                1140,
+                573
+              ],
+              "labels": "xaxaXaXaxaXaxaxaxaxaxaxaxaxaxaXaxaXaxaXaXaXaxaxaXaxaXaXaxaxaxaXaXaxaxaxaxaxaXaXaxaxaXaxaXaXaXaXaXaXaXaXaXaxaXaxaXaxaxaxaXaXaxaXaxaxaXaXaXaxaxaXaXaXaXaXa"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 3,
+            "4_good": 1,
+            "2_good": 1,
+            "4_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 1702,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              1,
+              2
+            ],
+            "oriented_chords": [
+              [
+                408,
+                486
+              ],
+              [
+                409,
+                487
+              ]
+            ],
+            "chords": 2,
+            "cuts": [
+              409,
+              487
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  619,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                166,
+                1768,
+                166,
+                1387
+              ],
+              "center_label": "X",
+              "denominator": 166,
+              "beta": 619
+            }
+          }
+        },
+        {
+          "t": 174,
+          "c": 1141,
+          "delta": 189,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 1965,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaxaxaXaxaxaxaxaxaxaXaxaxaXaXaXaXaXaxaxaxaXaXaxaXaXaXaXaXaXaxaxaXaXaxaxaxaXaXaXaxaxaxaXaxaxaxaXaXaXaxaXaXaXaxaXaxaxaxaXaXaxaxaXaxaxaXaXaXaXaXaxaXaxaxaXaxaxaXaxaXaxaXaxaXaXaXaxaXaxaxaxaxaXaxaXaXaXaxaxaXaXaXaxaxaXaXaXaxaxaxaXaxaXaXaXaXaXaxaXaxaxaXaXaxaXaxaxaxaXaxaXaXaxaXaXaxaxaxaXaXaXaXaXaxaXaxaxaXaxaxaXaXaXaxaxaxaxaXaXaxaxaXaXaxaXaXaXaXaXaxaxaXaxaxaxaXaxaXaXaxaxaXaxaxaXaXaxaXaxaxaxaxaxaxaxaxaXaXaXaXaxaxaXaxaXaXaXaXaxaXaxaXaxaxaxaXaXaxaXaXaXaxaXaxaxaXaxaxaxaXaXaxaXaXaxaXaxaxaxaXaXaXaXaXaXaxaXaxaXaXaXaXaxaxaxaxaXaXaxaxaXaXaXaXaxaxaXaXaxaXaxaXaXaXaXaXaxaxaxaXaxaXaxaXaXaxaxaXaXaXaxaXaXaXaXaxaXaXaXaXaXaXaXaXaxaxaxaXaxaxaxaXaXaXaXaXaXaXaXaXaxaXaxaXaXaxaXaxaxaXaXaxaxaxaXaxaXaXaXaxaxaxaXaxaxaXaxaXaxaXaXaxaXaxaXaXaxaXaxaxaxaxaXaxaXaXaXaXaXaXaXaXaXaXaXaxaxaXaXaXaXaxaXaxaxaxaXaxaxaxaXaXaxaxaXaxaXaXaXaxaXaxaXaxaXaXaxaXaxaXaxaXaxaXaxaxaXaxaxaXaXaxaXaxaxaxaxaxaxaxaxaxaxaXaXaxaxaXaxaxaXaXaxaxaXaXaXaXaXaXaXaXaXaxaxaXaXaXaXaxaXaxaxaXaXaXaXaxaXaXaXaxaxaxaxaXaXaxaXaxaxaXaXaxaxaXaxaxaXaXaXaxaxaXaxaxaXaXaxaxaXaxaXaXaxaxaxaxaXaXaXaxaXaXaXaXaxaxaXaxaXaXaXaXaxaxaXaXaXaXaXaXaXaXaXaxaxaXaXaxaxaXaxaxaXaXaxaxaxaxaxaxaxaxaxaxaXaxaXaXaxaxaXaxaxaXaxaXaxaXaxaXaxaXaXaxaXaxaXaxaXaXaXaxaXaxaxaXaXaxaxaxaXaxaxaxaXaxaXaXaXaXaxaxaXaXaXaXaXaXaXaXaXaXaXaxaXaxaxaxaxaXaxaXaXaxaXaxaXaXaxaXaxaXaxaxaXaxaxaxaXaXaXaxaXaxaxaxaXaXaxaxaXaxaXaXaxaXaxaXaXaXaXaXaXaXaXaXaxaxaxaXaxaxaxaXaXaXaXaXaXaXaXaxaXaXaXaXaxaXaXaXaxaxaXaXaxaXaxaXaxaxaxaXaXaXaXaXaxaXaxaXaXaxaxaXaXaXaXaxaxaXaXaxaxaxaxaXaXaXaXaxaXaxaXaXaXaXaXaXaxaxaxaXaxaXaXaxaXaXaxaxaxaXaxaxaXaxaXaXaXaxaXaXaxaxaxaXaxaXaxaXaXaXaXaxaXaxaxaXaXaXaXaxaxaxaxaxaxaxaxaXaxaXaXaxaxaXaxaxaXaXaxaXaxaxaxaXaxaxaXaXaXaXaXaxaXaXaxaxaXaXaxaxaxaxaXaXaXaxaxaXaxaxaXaxaXaXaXaXaXaxaxaxaXaXaxaXaXaxaXaxaxaxaXaxaXaXaxaxaXaxaXaXaXaXaXaxaXaxaxaxaXaXaXaxaxaXaXaXaxaxaXaXaXaxaXaxaxaxaxaXaxaXaXaXaxaXaxaXaxaXaxaxaXaxaxaXaxaXaXaXaXaXaxaxaXaxaxaXaXaxaxaxaXaxaXaXaXaxaXaXaXaxaxaxaXaxaxaxaXaXaXaxaxaxaXaXaxaxaXaXaXaXaXaXaxaXaXaxaxaxaXaXaXaXaXaxaxaXaxaxaxaxaxaxaXaxaxaxax"
+            },
+            {
+              "length": 52,
+              "word_matrix": [
+                1211,
+                50,
+                886,
+                188
+              ],
+              "labels": "xaxaxaXaXaXaXaXaXaXaxaXaXaXaXaXaxaxaxaxaxaxaxaXaxaxa"
+            },
+            {
+              "length": 32,
+              "word_matrix": [
+                717,
+                551,
+                515,
+                1099
+              ],
+              "labels": "xaxaXaxaXaxaXaXaXaXaxaXaxaXaxaxa"
+            }
+          ],
+          "histogram": {
+            "5_good": 3,
+            "2_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 1447,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              1,
+              2
+            ],
+            "oriented_chords": [
+              [
+                301,
+                946
+              ],
+              [
+                302,
+                947
+              ]
+            ],
+            "chords": 2,
+            "cuts": [
+              302,
+              947
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  1606,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                1869,
+                352,
+                1869,
+                968
+              ],
+              "center_label": "X",
+              "denominator": 1869,
+              "beta": 1606
+            }
+          }
+        },
+        {
+          "t": 220,
+          "c": 19,
+          "delta": 1444,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 977,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxaXaXaxaXaxaxaxaxaXaxaXaXaxaxaxaxaxaxaXaxaXaXaxaxaXaXaXaXaxaXaxaxaXaXaxaXaXaXaxaXaxaXaXaXaxaxaXaXaxaXaXaxaXaXaXaXaxaxaXaXaxaxaXaxaxaXaXaxaxaxaxaxaXaxaxaXaXaxaxaXaXaxaXaXaXaxaXaxaXaXaxaXaXaxaxaXaXaxaXaxaxaxaXaxaXaxaxaXaXaXaXaxaXaXaxaxaxaxaxaxaXaXaxaXaxaxaXaXaXaxaXaXaXaXaXaXaxaxaxaxaXaXaxaXaxaXaxaXaXaXaxaXaXaXaXaXaXaXaxaxaXaXaxaxaXaXaxaxaXaxaXaXaXaxaXaXaXaxaXaXaxaxaxaXaxaXaxaXaxaxaxaXaxaXaXaXaXaxaXaxaxaxaxaxaxaXaXaxaxaXaxaXaXaxaXaXaXaXaxaXaXaXaXaXaxaxaxaxaxaXaxaXaxaxaxaXaxaxaxaXaxaXaxaxaxaXaxaxaxaXaxaXaxaxaxaxaxaXaXaXaXaXaxaXaXaXaXaxaXaXaxaXaxaxaXaXaxaxaxaxaxaxaXaxaXaXaXaXaxaXaxaxaxaXaxaXaxaXaxaxaxaXaXaxaXaXaXaxaXaXaXaxaXaxaxaXaXaxaxaXaXaxaxaXaXaXaXaXaXaXaxaXaXaXaxaXaxaXaxaXaXaxaxaxaxaXaXaXaXaXaXaxaXaXaXaxaxaXaxaXaXaxaxaxaxaxaxaXaXaxaXaXaXaXaxaxaXaxaXaxaxaxaXaxaXaXaxaxaXaXaxaXaXaxaXaxaXaXaXaxaXaXaxaxaXaXaxaxaXaxaxaxaxaxaXaXaxaxaXaxaxaXaXaxaxaXaXaXaXaxaXaXaxaXaXaxaxaXaXaXaxaXaxaXaXaXaxaXaXaxaxaXaxaXaXaXaXaxaxaXaXaxaXaxaxaxaxaxaxaXaXaxaXaxaxaxaxaXaxaXaXaxaxaXax"
+            },
+            {
+              "length": 532,
+              "word_matrix": [
+                896,
+                1425,
+                1537,
+                581
+              ],
+              "labels": "xaxaxaXaxaxaXaxaxaxaxaxaXaxaXaXaXaXaxaXaXaxaXaXaXaXaXaxaxaxaXaXaXaXaXaxaxaXaXaxaxaxaxaXaXaxaxaXaXaXaXaxaXaXaxaxaXaXaXaXaxaxaxaxaxaxaxaxaXaXaXaXaXaXaxaxaXaxaXaxaxaxaxaXaxaXaXaxaXaxaXaXaXaXaXaXaXaXaXaxaxaXaxaXaXaxaXaXaxaXaxaxaxaxaXaXaXaXaXaxaXaXaXaxaXaxaxaXaxaXaxaXaXaxaXaxaxaxaxaXaxaXaxaXaxaXaxaXaXaXaXaxaXaXaXaXaXaxaxaxaXaXaXaXaxaXaxaxaXaxaXaxaXaXaXaXaxaxaxaXaxaxaXaXaXaXaXaXaxaXaxaXaXaxaxaXaXaXaXaXaXaXaxaxaxaxaXaxaxaxaXaXaxaXaXaxaxaxaXaxaXaxaXaXaxaXaXaxaxaxaxaxaXaXaXaxaxaXaXaXaxaXaxaxaXaXaXaXaxaXaXaXaXaxaXaxaXaxaXaXaxaXaXaXaXaxa"
+            },
+            {
+              "length": 532,
+              "word_matrix": [
+                1672,
+                1928,
+                210,
+                1869
+              ],
+              "labels": "xaXaXaXaXaxaXaxaXaxaXaxaXaxaxaxaxaXaxaxaxaxaxaXaXaXaxaxaxaxaXaxaXaXaxaXaxaXaxaxaxaxaXaXaXaxaXaXaxaxaxaxaxaxaXaxaXaxaxaXaXaxaxaxaxaxaxaxaXaXaXaXaxaXaXaXaxaxaXaxaxaXaXaXaxaXaxaXaxaxaXaxaxaXaXaXaXaXaxaxaxaXaXaxaxaxaXaxaXaXaxaxaxaxaXaxaxaxaxaXaxaXaxaXaxaxaXaxaxaxaxaXaXaXaXaxaXaXaxaXaXaXaXaXaxaXaxaxaxaxaXaxaxaXaxaxaxaxaxaXaXaXaxaxaxaxaxaXaXaxaxaXaXaXaXaxaxaXaXaxaxaxaxaXaxaxaXaXaxaxaxaxaXaXaXaXaXaXaXaXaxaxaxaxaxaxaXaXaxaXaxaXaXaXaXaxaXaxaxaXaxaXaxaxaxaxaxaxaxaxaxaXaXaxaXaxaxaXaxaxaXaxaXaXaXaXaxaxaxaxaxaXaxaxaxaXaxaXaXaxaXaxaXaxaxaXa"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                255,
+                1995,
+                1166,
+                1634
+              ],
+              "labels": "xaXaXaxa"
+            }
+          ],
+          "histogram": {
+            "5_good": 1,
+            "5_nonspanning": 3,
+            "4_unit": 1,
+            "2_nonspanning": 1,
+            "3_nonspanning": 1,
+            "4_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 241,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              3,
+              1,
+              4,
+              2,
+              5
+            ],
+            "oriented_chords": [
+              [
+                1,
+                422
+              ],
+              [
+                216,
+                2
+              ],
+              [
+                72,
+                628
+              ],
+              [
+                423,
+                73
+              ],
+              [
+                215,
+                629
+              ]
+            ],
+            "chords": 5,
+            "cuts": [
+              2,
+              73,
+              216,
+              423,
+              629
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  1901,
+                  0,
+                  1
+                ],
+                "labels": "xxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                1562,
+                417,
+                1562,
+                1175
+              ],
+              "center_label": "X",
+              "denominator": 1562,
+              "beta": 1901
+            }
+          }
+        },
+        {
+          "t": 278,
+          "c": 1567,
+          "delta": 155,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 361,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaXaXaXaXaXaXaXaXaXaXaxaxaXaxaXaXaxaxaxaxaxaxaXaXaXaxaxaxaXaXaXaxaxaXaxaxaxaXaXaxaxaxaXaXaxaXaxaXaxaxaXaxaXaXaxaxaXaXaxaxaXaXaxaxaxaXaxaXaxaXaXaxaXaXaxaxaXaXaXaXaXaXaXaxaXaXaxaxaXaxaxaXaXaxaXaXaXaXaXaXaXaxaxaXaXaxaXaXaxaXaxaXaxaxaxaXaXaxaxaXaXaxaxaXaXaxaXaxaxaXaxaXaxaXaXaxaxaxaXaXaxaxaxaXaxaxaXaXaXaxaxaxaXaXaXaxaxaxaxaxaxaXaXaxaXaxaxaXaXaXaXaXaXaXaXaXaXaXax"
+            },
+            {
+              "length": 1584,
+              "word_matrix": [
+                1841,
+                1631,
+                618,
+                1606
+              ],
+              "labels": "xaxaXaxaXaXaxaXaxaXaXaXaxaxaXaXaXaxaxaXaXaxaxaxaXaXaXaXaXaXaxaXaxaxaXaXaXaXaxaXaxaxaXaxaXaXaxaxaXaXaXaxaXaXaXaXaXaxaxaxaxaXaXaXaXaXaXaXaXaxaxaXaxaXaxaxaxaXaxaxaXaxaxaxaXaXaxaxaXaxaXaXaxaxaXaxaxaXaxaxaXaxaxaxaXaxaXaXaxaxaxaxaxaXaxaxaxaXaXaxaxaXaxaxaXaXaxaxaXaXaxaxaxaXaxaxaXaXaxaxaxaXaxaXaXaxaXaXaXaxaXaxaXaXaXaxaXaxaXaxaXaXaxaxaXaXaXaxaXaxaxaXaxaXaXaXaXaxaxaxaxaXaXaXaxaXaXaxaXaXaxaXaxaxaxaXaXaxaXaXaxaxaxaXaXaXaXaXaxaxaxaxaXaXaxaXaxaXaXaxaXaxaXaXaXaXaxaXaxaxaXaXaXaXaxaxaXaXaxaxaXaXaxaxaXaxaXaXaXaXaxaXaXaxaxaXaXaXaxaxaXaXaXaXaxaXaxaxaxaXaXaXaxaXaxaXaXaxaxaxaxaxaxaxaxaxaXaxaXaXaxaXaXaxaxaXaXaxaXaXaXaXaXaXaxaXaxaxaxaXaxaxaxaxaXaXaxaXaxaXaxaxaxaXaxaxaXaXaxaXaxaXaXaxaXaxaXaXaxaXaxaXaXaxaXaXaxaXaXaXaxaxaxaxaxaXaxaxaxaXaXaXaXaxaXaXaXaXaxaxaxaxaXaXaxaxaXaXaxaXaxaxaXaXaXaxaxaXaXaXaxaXaxaXaXaXaXaXaxaXaxaxaXaxaXaxaxaxaXaXaxaxaxaXaXaxaxaXaXaXaxaxaxaxaxaxaXaxaXaXaxaxaxaxaXaxaXaXaxaXaxaxaXaXaxaxaxaXaxaxaxaxaxaXaXaXaXaxaxaxaxaxaxaxaxaXaXaxaXaxaXaXaXaxaXaXaxaXaXaXaxaxaXaXaxaXaxaxaXaXaxaXaXaxaXaXaxaXaXaXaxaXaxaxaXaXaXaXaXaxaXaXaXaxaxaXaXaxaXaXaxaxaXaXaxaxaXaXaXaxaXaXaxaxaXaXaXaxaXaxaxaXaxaxaxaXaxaXaxaxaxaXaxaXaxaXaxaxaXaXaxaxaxaXaxaXaXaxaXaxaxaxaxaXaXaXaXaxaxaxaXaxaxaXaxaxaXaxaXaXaXaxaxaXaxaxaXaXaXaxaxaxaxaxaXaXaXaXaxaxaXaxaXaxaxaXaxaXaxaxaxaxaXaxaXaXaxaxaxaxaXaXaxaxaXaXaxaxaXaXaxaXaxaxaxaxaXaxaxaXaXaxaxaxaXaXaxaxaxaxaXaxaXaXaXaxaxaxaXaxaXaxaxaXaXaXaXaXaXaXaXaXaxaXaxaxaXaxaxaXaXaxaxaXaxaxaxaxaxaxaXaxaXaXaXaxaXaXaXaXaxaxaXaxaXaxaXaXaXaxaXaXaxaxaXaxaXaxaxaXaxaXaxaxaXaxaXaxaxaXaxaxaXaxaxaxaXaXaXaXaXaxaXaXaXaxaxaxaxaXaxaxaxaxaXaXaXaXaxaxaXaXaxaxaXaxaXaXaxaxaxaXaXaxaxaxaXaxaXaxaxaxa"
+            },
+            {
+              "length": 24,
+              "word_matrix": [
+                999,
+                1473,
+                1127,
+                1582
+              ],
+              "labels": "xaxaxaxaxaxaXaXaXaXaXaXa"
+            },
+            {
+              "length": 40,
+              "word_matrix": [
+                1741,
+                1354,
+                1227,
+                721
+              ],
+              "labels": "xaXaxaxaxaxaxaXaXaxaXaxaxaxaXaxaXaxaXaxa"
+            },
+            {
+              "length": 40,
+              "word_matrix": [
+                465,
+                60,
+                25,
+                1485
+              ],
+              "labels": "xaXaXaxaxaxaxaxaXaxaxaXaxaXaxaXaxaxaxaXa"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 1,
+            "5_good": 3,
+            "3_nonspanning": 2,
+            "2_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 1375,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              2,
+              3,
+              4,
+              1,
+              5
+            ],
+            "oriented_chords": [
+              [
+                62,
+                213
+              ],
+              [
+                272,
+                431
+              ],
+              [
+                273,
+                1018
+              ],
+              [
+                432,
+                212
+              ],
+              [
+                63,
+                1019
+              ]
+            ],
+            "chords": 5,
+            "cuts": [
+              63,
+              213,
+              273,
+              432,
+              1019
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  1550,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                1815,
+                18,
+                264,
+                220
+              ],
+              "center_label": "x",
+              "denominator": 264,
+              "beta": 1550
+            }
+          }
+        },
+        {
+          "t": 289,
+          "c": 1104,
+          "delta": 1960,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 1773,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaXaxaXaXaxaxaXaxaxaxaXaXaXaxaxaXaxaXaxaXaXaxaXaxaxaxaxaxaxaXaXaXaXaXaXaxaxaxaxaXaxaxaxaxaxaxaXaXaXaxaxaXaxaXaxaxaXaXaxaXaxaxaxaXaXaxaxaxaXaxaXaxaxaXaxaXaXaxaXaxaxaxaXaxaXaXaXaXaXaXaXaXaXaXaXaXaxaXaxaxaxaxaxaXaxaxaXaxaXaXaXaxaxaXaXaxaXaXaXaxaxaXaxaxaxaXaXaxaxaXaxaXaXaXaxaXaXaxaXaXaxaXaXaxaxaxaxaxaxaxaXaxaXaXaXaXaXaxaxaXaXaXaxaXaxaXaXaxaxaxaxaxaxaXaXaXaxaxaxaXaXaxaXaxaxaxaxaXaXaXaXaxaXaXaxaXaxaXaxaxaxaxaxaXaxaxaXaXaxaxaXaxaxaxaxaxaxaxaxaxaXaxaXaXaxaxaXaxaXaxaXaXaXaXaXaXaXaxaxaXaXaxaXaxaxaxaXaXaxaXaxaXaXaXaXaXaxaXaXaxaxaxaxaXaXaxaxaXaXaXaXaxaxaXaxaXaxaxaxaXaxaxaxaxaXaxaxaxaxaxaxaxaxaxaxaXaxaxaXaxaXaXaXaxaxaxaXaXaxaxaxaXaxaXaXaxaxaXaXaxaxaXaXaXaxaxaxaXaxaxaXaXaxaxaXaXaxaXaxaXaXaXaXaXaXaXaXaxaxaXaxaXaxaxaxaXaxaxaxaXaXaXaXaXaXaXaxaXaxaXaXaxaXaxaXaXaxaxaxaXaXaxaxaXaxaxaxaXaXaXaXaXaxaxaxaxaxaXaxaxaxaXaxaxaxaxaxaXaXaXaXaXaxaXaXaxaXaXaxaxaxaxaXaXaxaxaxaxaxaxaXaXaXaxaXaxaXaXaxaXaXaxaXaXaxaXaXaxaXaxaXaXaXaxaxaxaxaxaxaXaXaxaxaxaxaXaXaxaXaXaxaXaXaXaXaXaxaxaxaxaxaXaxaxaxaXaxaxaxaxaxaXaXaXaXaXaxaxaxaXaxaxaXaXaxaxaxaXaXaxaXaxaXaXaxaXaxaXaXaXaXaXaXaXaxaxaxaXaxaxaxaXaxaXaxaxaXaXaXaXaXaXaXaXaxaXaxaXaXaxaxaXaXaxaxaXaxaxaxaXaXaXaxaxaXaXaxaxaXaXaxaXaxaxaxaXaXaxaxaxaXaXaXaxaXaxaxaXaxaxaxaxaxaxaxaxaxaxaXaxaxaxaxaXaxaxaxaXaxaXaxaxaXaXaXaXaxaxaXaXaxaxaxaxaXaXaxaXaXaXaXaXaxaXaxaXaXaxaxaxaXaxaXaXaxaxaXaXaXaXaXaXaXaxaXaxaXaxaxaXaXaxaXaxaxaxaxaxaxaxaxaxaXaxaxaXaXaxaxaXaxaxaxaxaxaXaxaXaxaXaXaxaXaXaXaXaxaxaxaxaXaxaXaXaxaxaxaXaXaXaxaxaxaxaxaxaXaXaxaXaxaXaXaXaxaxaXaXaXaXaXaxaXaxaxaxaxaxaxaxaXaXaxaXaXaxaXaXaxaXaXaXaxaXaxaxaXaXaxaxaxaXaxaxaXaXaXaxaXaXaxaxaXaXaXaxaXaxaxaXaxaxaxaxaxaXaxaXaXaXaXaXaXaXaXaXaXaXaXaxaXaxaxaxaXaxaXaXaxaXaxaxaXaxaXaxaxaxaXaXaxaxaxaXaxaXaXaxaxaXaxaXaxaxaXaXaXaxaxaxaxaxaxaXaxaxaxaxaXaXaXaXaXaXaxaxaxaxaxaxaXaxaXaXaxaXaxaXaxaxaXaXaXaxaxaxaXaxaxaXaXaxaXaXax"
+            },
+            {
+              "length": 276,
+              "word_matrix": [
+                1267,
+                1610,
+                1374,
+                1431
+              ],
+              "labels": "xaxaxaXaxaXaxaxaxaXaxaxaXaxaXaxaXaXaxaxaXaXaXaxaxaXaXaxaXaXaXaXaxaxaxaxaXaXaXaxaxaXaxaxaXaxaXaxaxaxaXaxaXaXaXaxaXaxaXaxaxaXaXaxaxaxaXaxaXaXaXaXaxaXaxaXaXaXaxaXaXaxaXaxaXaxaxaXaXaxaxaxaXaXaxaxaXaxaxaxaxaXaXaXaXaxaxaxaXaXaxaXaXaxaXaxaXaXaXaxaXaxaxaxaXaxaXaxaXaXaxaxaXaXaXaxaXaxa"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 4,
+            "5_good": 1,
+            "2_good": 1,
+            "4_good": 1,
+            "3_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 918,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              1,
+              2
+            ],
+            "oriented_chords": [
+              [
+                162,
+                327
+              ],
+              [
+                163,
+                328
+              ]
+            ],
+            "chords": 2,
+            "cuts": [
+              163,
+              328
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  2043,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                1724,
+                1839,
+                1724,
+                1347
+              ],
+              "center_label": "X",
+              "denominator": 1724,
+              "beta": 2043
+            }
+          }
+        },
+        {
+          "t": 298,
+          "c": 764,
+          "delta": 1892,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 1921,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaXaxaXaXaXaxaXaXaxaXaxaXaxaXaXaXaxaxaXaxaxaxaXaxaXaxaxaXaXaxaxaxaXaxaxaXaxaxaXaxaXaXaXaxaxaXaxaXaxaxaxaxaXaxaXaXaxaxaxaXaxaxaXaxaXaxaXaXaXaxaxaXaXaxaXaxaXaxaxaXaxaXaXaxaxaxaxaXaxaxaxaxaxaXaXaxaxaXaxaXaxaXaxaxaXaXaxaxaXaXaxaXaxaxaxaXaxaXaXaXaXaXaxaXaXaXaXaxaxaxaxaXaxaxaXaxaXaxaxaXaxaXaxaXaxaxaxaXaxaXaxaXaxaxaxaxaxaxaxaxaxaxaXaxaXaXaxaXaXaXaXaXaxaxaXaxaXaXaXaXaXaxaxaXaxaxaxaXaXaxaxaxaXaxaxaxaXaxaxaxaXaXaxaxaxaXaXaXaxaXaXaxaxaXaxaXaxaXaxaXaxaXaXaxaXaXaXaxaXaxaxaXaXaxaxaxaXaXaxaXaxaXaxaXaXaxaXaxaxaXaXaxaxaXaxaxaxaXaXaxaXaXaXaXaxaxaXaXaXaXaXaxaXaXaxaXaXaxaxaxaXaXaxaXaXaxaXaXaxaxaxaxaXaXaXaxaXaxaxaXaXaXaXaxaxaxaxaxaXaXaXaXaxaxaXaxaxaxaXaXaxaxaxaXaxaXaXaXaxaXaXaXaxaxaXaxaXaXaXaxaxaxaxaxaXaXaxaxaxaXaxaxaXaxaxaXaxaxaxaxaxaxaxaXaxaXaXaXaXaxaxaXaXaXaXaxaXaXaxaxaXaXaXaxaXaXaXaXaxaxaxaxaxaXaxaXaXaXaxaxaxaxaXaxaxaXaxaxaxaXaXaxaXaXaXaxaxaXaXaXaXaxaXaXaxaXaxaXaxaXaxaxaXaXaXaXaxaXaXaxaxaxaXaxaxaxaxaXaXaxaXaxaxaxaXaXaXaXaxaXaxaxaxaXaxaxaXaxaxaXaXaxaXaXaXaXaxaXaxaXaxaXaXaXaXaxaXaXaxaxaXaxaxaXaxaxaxaXaxaXaXaXaXaxaxaxaXaxaXaXaxaxaxaxaXaxaxaxaXaXaxaXaXaXaXaxaxaXaxaXaxaXaxaXaXaxaXaXaXaXaxaxaXaXaXaxaXaXaxaxaxaXaxaxaXaxaxaxaxaXaXaXaxaXaxaxaxaxaxaXaXaXaXaxaXaXaXaxaxaXaXaxaXaXaXaXaxaxaXaXaXaXaxaXaxaxaxaxaxaxaxaXaxaxaXaxaxaXaxaxaxaXaXaxaxaxaxaxaXaXaXaxaXaxaxaXaXaXaxaXaXaXaxaXaxaxaxaXaXaxaxaxaXaxaxaXaXaXaXaxaxaxaxaxaXaXaXaXaxaxaXaxaXaXaXaxaxaxaxaXaXaxaXaXaxaXaXaxaxaxaXaXaxaXaXaxaXaXaXaXaXaxaxaXaXaXaXaxaXaXaxaxaxaXaxaxaXaXaxaxaXaxaXaXaxaXaxaXaxaXaXaxaxaxaXaXaxaxaXaxaXaXaXaxaXaXaxaXaxaXaxaXaxaXaxaxaXaXaxaXaXaXaxaxaxaXaXaxaxaxaXaxaxaxaXaxaxaxaXaXaxaxaxaXaxaxaXaXaXaXaXaxaXaxaxaXaXaXaXaXaxaXaXaxaXaxaxaxaxaxaxaxaxaxaxaXaxaXaxaXaxaxaxaXaxaXaxaXaxaxaXaxaXaxaxaXaxaxaxaxaXaXaXaXaxaXaXaXaXaXaxaXaxaxaxaXaxaXaXaxaxaXaXaxaxaXaxaXaxaXaxaxaXaXaxaxaxaxaxaXaxaxaxaxaXaXaxaXaxaxaXaxaXaxaXaXaxaxaXaXaXaxaXaxaXaxaxaXaxaxaxaXaXaxaXaxaxaxaxaXaxaXaxaxaXaXaXaxaXaxaxaXaxaxaXaxaxaxaXaXaxaxaXaxaXaxaxaxaXaxaxaXaXaXaxaXaxaXaxaXaXaxaXaXaXaxaXaxax"
+            },
+            {
+              "length": 104,
+              "word_matrix": [
+                1027,
+                1317,
+                101,
+                225
+              ],
+              "labels": "xaxaxaXaXaxaxaXaXaXaxaXaxaxaXaxaxaxaXaXaXaxaXaXaxaxaXaXaXaxaxaXaXaxaxaxaXaxaXaXaxaXaXaXaxaxaxaXaxaxaXaXa"
+            },
+            {
+              "length": 24,
+              "word_matrix": [
+                480,
+                1880,
+                1632,
+                1939
+              ],
+              "labels": "xaXaxaXaxaXaXaxaXaxaXaxa"
+            }
+          ],
+          "histogram": {
+            "3_good": 1,
+            "4_good": 2,
+            "5_nonspanning": 4,
+            "5_good": 1,
+            "3_nonspanning": 1,
+            "2_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 1221,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              1,
+              2
+            ],
+            "oriented_chords": [
+              [
+                576,
+                736
+              ],
+              [
+                577,
+                737
+              ]
+            ],
+            "chords": 2,
+            "cuts": [
+              577,
+              737
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  414,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                646,
+                1366,
+                646,
+                1104
+              ],
+              "center_label": "X",
+              "denominator": 646,
+              "beta": 414
+            }
+          }
+        },
+        {
+          "t": 298,
+          "c": 1279,
+          "delta": 825,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 1929,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXaxaxaxaXaXaXaXaXaxaxaXaXaxaXaXaXaXaxaXaXaxaxaxaxaXaXaxaxaXaXaXaxaxaxaxaxaXaXaXaXaXaXaxaxaXaxaXaXaxaXaXaxaXaxaXaXaXaXaxaXaxaxaxaXaXaXaXaXaxaxaxaxaXaXaXaXaXaxaXaxaXaXaxaXaxaxaXaXaxaxaXaxaxaxaXaXaxaXaxaXaxaxaxaXaxaxaXaXaXaXaXaxaXaxaxaxaXaxaXaxaXaxaxaXaxaXaXaxaxaxaxaxaXaxaXaxaxaxaXaXaXaXaXaXaXaxaxaxaxaxaxaxaXaxaxaXaxaxaXaxaxaxaXaXaxaXaxaxaxaxaxaxaxaXaxaXaXaxaXaxaXaXaxaXaXaxaxaXaxaxaxaXaxaxaxaXaxaXaXaXaxaXaxaXaxaxaXaxaXaxaXaXaXaxaxaXaXaXaxaxaXaxaxaXaXaXaXaxaXaxaxaxaXaXaXaxaXaXaXaxaXaxaXaXaxaXaxaxaxaxaxaXaxaxaxaXaxaXaxaXaxaxaxaXaXaXaXaXaXaxaXaxaXaxaxaxaXaxaxaXaxaXaxaXaxaXaXaxaxaXaxaXaxaXaxaxaxaxaxaXaXaxaxaXaxaXaXaXaxaxaxaxaxaXaXaxaxaxaXaXaXaXaXaxaxaxaxaxaxaxaXaxaxaXaxaXaXaXaxaxaxaxaXaxaXaXaXaXaxaxaXaXaXaxaXaxaXaxaXaXaXaxaXaxaXaxaXaxaXaXaXaXaXaxaxaxaxaxaxaXaxaxaxaxaxaxaxaXaxaXaXaxaxaXaXaxaxaxaxaxaxaXaXaxaXaxaXaxaXaXaXaXaxaXaXaXaxaXaXaxaXaXaXaxaXaXaXaxaXaXaXaxaxaXaXaXaXaXaXaXaxaxaXaXaXaXaxaXaxaXaxaxaxaxaXaXaXaxaXaXaXaXaxaxaxaXaxaxaxaXaXaxaXaxaXaxaxaxaxaxaxaxaXaxaXaxaXaXaxaxaxaXaxaxaxaXaXaXaXaxaXaXaXaxaxaxaxaXaxaXaxaXaXaXaXaxaxaXaXaXaXaXaXaXaxaxaXaXaXaxaXaXaXaxaXaXaXaxaXaXaxaXaXaXaxaXaXaXaXaxaXaxaXaxaXaXaxaxaxaxaxaxaXaXaxaxaXaXaxaXaxaxaxaxaxaxaxaXaxaxaxaxaxaxaXaXaXaXaXaxaXaxaXaxaXaxaXaXaXaxaXaxaXaxaXaXaXaxaxaXaXaXaXaxaXaxaxaxaxaXaXaXaxaXaxaxaXaxaxaxaxaxaxaxaXaXaXaXaXaxaxaxaXaXaxaxaxaxaxaXaXaXaxaXaxaxaXaXaxaxaxaxaxaXaxaXaxaXaxaxaXaXaxaXaxaXaxaXaxaxaXaxaxaxaXaxaXaxaXaXaXaXaXaXaxaxaxaXaxaXaxaXaxaxaxaXaxaxaxaxaxaXaxaXaXaxaXaxaXaXaXaxaXaXaXaxaxaxaXaxaXaXaXaXaxaxaXaxaxaXaXaXaxaxaXaXaXaxaXaxaXaxaxaXaxaXaxaXaXaXaxaXaxaxaxaXaxaxaxaXaxaxaXaXaxaXaXaxaXaxaXaXaxaXaxaxaxaxaxaxaxaXaxaXaXaxaxaxaXaxaxaXaxaxaXaxaxaxaxaxaxaxaXaXaXaXaXaXaXaxaxaxaXaxaXaxaxaxaxaxaXaXaxaXaxaxaXaxaXaxaXaxaxaxaXaxaXaXaXaXaXaxaxaXaxaxaxaXaxaXaxaXaXaxaxaxaXaxaxaXaXaxaxaXaxaXaXaxaXaxaXaXaXaXaXaxaxaxaxaXaXaXaXaXaxaxaxaXaxaXaXaXaXaxaXaxaXaXaxaXaXaxaXaxaxaXaXaXaXaXaXaxaxaxaxaxaXaXaXaxaxaXaXaxaxaxaxaXaXaxaXaXaXaXaxaXaXaxaxaXaXaXaXaXaxaxaxaXaxaxax"
+            },
+            {
+              "length": 76,
+              "word_matrix": [
+                23,
+                902,
+                1152,
+                1632
+              ],
+              "labels": "xaXaXaXaxaXaXaXaxaXaxaXaxaxaXaxaxaxaXaXaxaxaxaXaxaxaxaXaxaXaxaXaXaxaXaXaXaxa"
+            },
+            {
+              "length": 44,
+              "word_matrix": [
+                226,
+                1476,
+                465,
+                749
+              ],
+              "labels": "xaxaxaxaXaXaXaXaxaXaXaXaXaXaXaxaxaxaxaXaxaxa"
+            }
+          ],
+          "histogram": {
+            "4_nonspanning": 1,
+            "5_nonspanning": 1,
+            "5_good": 2,
+            "3_good": 1,
+            "4_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 533,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "oriented_chords": [
+              [
+                193,
+                669
+              ],
+              [
+                194,
+                760
+              ],
+              [
+                670,
+                761
+              ]
+            ],
+            "chords": 3,
+            "cuts": [
+              194,
+              670,
+              761
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  864,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                1506,
+                694,
+                1506,
+                1789
+              ],
+              "center_label": "X",
+              "denominator": 1506,
+              "beta": 864
+            }
+          }
+        },
+        {
+          "t": 343,
+          "c": 1766,
+          "delta": 1685,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 1105,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaXaxaXaXaXaXaxaxaXaXaXaXaxaXaxaXaxaXaxaXaxaXaxaXaxaxaxaxaxaxaxaXaxaXaXaXaxaXaxaxaXaXaxaxaxaXaxaxaXaxaXaXaxaxaXaXaXaXaXaxaXaxaxaxaxaXaxaXaxaXaXaXaxaxaxaXaXaxaxaXaXaxaXaXaXaXaxaxaXaxaxaXaxaXaXaxaXaXaxaXaxaxaxaXaXaxaxaXaXaxaXaxaXaXaXaXaxaXaxaxaXaXaxaXaXaXaxaxaXaxaXaxaxaXaXaXaXaxaXaXaXaXaxaxaXaXaxaxaXaXaxaXaxaXaxaxaxaxaXaXaXaxaxaxaXaXaxaxaxaXaXaxaXaxaXaXaxaxaXaXaXaxaxaXaXaXaxaxaXaxaXaxaXaXaxaxaxaxaxaxaXaxaxaxaxaXaxaxaXaxaxaXaxaxaXaxaxaxaxaXaxaXaxaXaXaxaXaXaXaxaxaXaxaxaxaXaxaxaxaxaxaXaXaxaxaXaxaXaxaXaXaXaXaXaXaXaxaxaXaxaXaXaxaxaxaXaxaXaxaxaxaxaxaXaxaXaxaxaxaxaxaXaxaXaxaxaxaXaXaxaXaxaxaXaXaXaXaXaXaXaxaXaxaXaxaxaXaXaxaxaxaxaxaXaxaxaxaXaxaxaXaXaXaxaXaXaxaXaxaXaxaxaxaxaXaxaxaXaxaxaXaxaxaXaxaxaxaxaXaxaxaxaxaxaxaXaXaxaXaxaXaxaxaXaXaXaxaxaXaXaXaxaxaXaXaxaXaxaXaXaxaxaxaXaXaxaxaxaXaXaXaxaxaxaxaXaxaXaxaXaXaxaxaXaXaxaxaXaXaXaXaxaXaXaXaXaxaxaXaxaXaxaxaXaXaXaxaXaXaxaxaXaxaXaXaXaXaxaXaxaXaXaxaxaXaXaxaxaxaXaxaXaXaxaXaXaxaXaxaxaXaxaxaXaXaXaXaxaXaXaxaxaXaXaxaxaxaXaXaXaxaXaxaXaxaxaxaxaXaxaXaXaXaXaXaxaxaXaXaxaXaxaxaXaxaxaxaXaXaxaxaXaxaXaXaXaxaXaxaxaxaxaxaxaxaXaxaXaxaXaxaXaxaXaxaXaxaXaXaXaXaxaxaXaXaXaXaxaXaxax"
+            },
+            {
+              "length": 402,
+              "word_matrix": [
+                1794,
+                1503,
+                1657,
+                1686
+              ],
+              "labels": "xaxaxaXaxaXaxaxaxaXaXaxaxaxaXaXaXaxaxaxaXaXaxaxaXaxaXaxaxaXaXaxaXaXaxaXaXaXaxaxaXaxaxaXaxaxaxaxaxaxaXaXaXaxaXaxaXaXaxaxaXaXaxaxaxaXaxaxaxaxaXaXaXaxaxaxaxaxaXaXaxaxaXaxaxaxaXaxaxaXaXaXaXaXaXaXaxaXaxaxaXaXaXaXaxaXaxaXaxaxaxaxaXaxaXaXaxaxaxaXaxaxaXaxaXaxaXaxaXaXaXaXaXaXaXaxaxaXaxaXaXaxaXaxaxaXaXaXaXaxaXaXaxaxaxaxaXaXaxaXaXaXaxaxaXaXaxaxaxaxaxaxaxaxaxaXaxaxaXaxaXaxaXaXaXaxaXaxaXaXaXaxaxaXaxaxaXaXaXaxaxa"
+            },
+            {
+              "length": 402,
+              "word_matrix": [
+                2013,
+                1731,
+                1223,
+                1609
+              ],
+              "labels": "xaXaxaXaxaxaXaXaxaxaxaXaXaXaxaxaxaXaXaxaxaxaXaxaXaxaxaxaxaxaXaXaXaxaxaXaxaxaXaXaXaxaXaxaXaXaXaxaXaxaXaxaxaXaxaxaxaxaxaxaxaxaxaXaXaxaxaXaXaXaxaXaXaxaxaxaxaXaXaxaXaXaXaXaxaxaXaxaXaXaxaXaxaxaXaXaXaXaXaXaXaxaXaxaXaxaXaxaxaXaxaxaxaXaXaxaXaxaxaxaxaXaxaXaxaXaXaXaXaxaxaXaxaXaXaXaXaXaXaXaxaxaXaxaxaxaXaxaxaXaXaxaxaxaxaxaXaXaXaxaxaxaxaXaxaxaxaXaXaxaxaXaXaxaXaxaXaXaXaxaxaxaxaxaxaXaxaxaXaxaxaXaXaXaxaXaXaxaXaXaxa"
+            },
+            {
+              "length": 140,
+              "word_matrix": [
+                1742,
+                1459,
+                1087,
+                631
+              ],
+              "labels": "xaxaXaxaXaXaxaxaXaXaXaxaxaxaXaxaXaXaXaXaxaXaxaxaxaXaxaXaXaxaxaXaXaxaxaXaXaxaXaxaxaXaXaxaxaxaXaXaXaxaXaxaxaxaxaXaxaXaXaXaxaXaxaxaXaXaxaxaXaXa"
+            }
+          ],
+          "histogram": {
+            "4_nonspanning": 2,
+            "5_nonspanning": 3,
+            "5_good": 2,
+            "3_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 776,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "oriented_chords": [
+              [
+                319,
+                390
+              ],
+              [
+                320,
+                975
+              ],
+              [
+                391,
+                976
+              ]
+            ],
+            "chords": 3,
+            "cuts": [
+              320,
+              391,
+              976
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  873,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                846,
+                842,
+                846,
+                12
+              ],
+              "center_label": "X",
+              "denominator": 846,
+              "beta": 873
+            }
+          }
+        },
+        {
+          "t": 607,
+          "c": 1535,
+          "delta": 974,
+          "orbit_weight": 22,
+          "canonical_profile": [
+            {
+              "length": 453,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxaxaxaXaXaxaXaxaXaxaxaXaxaxaXaXaXaXaXaXaxaxaXaxaxaXaxaxaxaxaXaXaXaxaXaxaXaxaxaxaXaXaxaXaxaXaXaXaxaxaxaXaXaXaXaXaxaxaxaXaXaXaXaxaXaXaxaXaxaXaxaXaxaXaXaxaXaXaXaXaxaxaXaxaxaXaxaxaxaxaxaxaXaxaXaxaXaxaxaxaxaxaxaxaxaXaXaXaxaxaxaxaxaXaXaXaxaxaxaxaxaxaxaxaXaxaXaxaXaxaxaxaxaxaxaXaxaxaXaxaxaXaXaXaXaxaXaXaxaXaxaXaxaXaxaXaXaxaXaXaXaXaxaxaxaXaXaXaXaXaxaxaxaXaXaXaxaXaxaXaXaxaxaxaXaxaXaxaXaXaXaxaxaxaxaXaxaxaXaxaxaXaXaXaXaXaXaxaxaXaxaxaXaxaXaxaXaXaxaxaxaxaXax"
+            },
+            {
+              "length": 1580,
+              "word_matrix": [
+                1288,
+                119,
+                716,
+                1206
+              ],
+              "labels": "xaXaXaXaxaXaxaXaxaxaxaxaxaXaXaXaXaXaxaXaxaXaXaXaXaXaXaXaxaxaXaxaXaxaxaXaXaxaxaXaXaxaxaXaxaXaXaXaxaxaXaXaXaXaXaxaxaxaXaXaxaxaxaxaXaxaXaXaxaxaxaxaXaXaxaxaxaxaXaXaXaxaxaxaXaXaXaXaxaxaxaXaXaXaXaxaxaxaXaxaxaXaXaXaxaxaxaxaXaxaXaXaxaXaxaxaxaxaxaXaXaxaxaXaxaxaxaXaxaxaXaXaxaxaxaxaxaXaxaXaXaXaXaxaXaxaxaxaXaxaXaXaxaXaXaXaXaxaXaXaXaXaxaXaXaXaXaxaxaXaxaxaXaXaxaXaxaXaXaxaxaXaxaXaXaxaxaXaxaXaXaxaXaXaxaXaxaXaXaXaxaxaxaXaXaxaxaXaXaxaxaXaXaxaxaXaxaxaxaXaXaXaxaXaXaxaxaxaXaxaxaXaXaxaxaXaXaXaxaXaXaxaXaxaXaxaxaXaXaxaXaXaXaXaXaxaXaxaXaxaXaXaXaXaxaxaxaXaXaXaXaxaxaxaxaXaxaXaxaxaXaxaxaxaxaXaxaXaXaXaXaXaxaxaxaXaxaXaXaXaXaXaxaXaxaxaXaXaXaXaxaXaXaXaxaxaxaxaXaxaXaxaXaXaxaxaXaXaxaxaxaXaXaxaXaxaXaXaXaxaxaXaXaXaxaXaxaxaxaXaxaxaxaXaXaXaxaXaxaxaxaXaxaXaxaxaXaXaXaxaxaXaXaXaxaxaxaXaXaxaxaxaxaxaXaxaxaxaxaxaXaXaxaxaXaXaxaxaxaXaxaXaxaXaXaXaXaXaxaxaxaxaxaXaxaXaxaxaxaxaxaxaxaXaXaxaXaxaXaXaxaxaXaXaxaxaXaXaxaXaxaxaxaXaXaxaxaxaxaxaXaXaXaxaxaXaXaXaXaxaXaxaxaXaXaXaXaxaxaXaXaXaXaxaxaxaXaXaXaxaxaxaxaXaXaXaxaxaxaxaXaXaXaxaXaXaxaxaxaXaXaXaXaxaXaxaxaXaxaXaXaXaXaXaxaxaXaXaxaXaXaXaxaXaXaxaxaXaXaXaXaXaxaXaxaxaxaxaXaxaXaXaXaxaXaxaxaXaxaxaxaxaXaxaxaxaxaXaxaxaxaxaXaXaxaXaXaxaxaXaxaXaxaxaXaXaxaXaxaxaXaXaxaXaxaxaXaxaxaXaxaXaxaxaxaXaXaXaxaxaXaXaxaxaXaXaxaxaXaXaxaXaXaXaxaxaxaXaxaxaXaXaXaxaXaXaxaxaXaXaxaxaxaXaxaxaXaxaXaxaXaXaxaxaXaxaxaxaxaxaXaxaXaxaXaxaxaxaxaXaXaXaxaxaxaxaXaXaXaXaxaXaxaXaXaxaXaXaXaXaxaXaxaxaxaxaxaXaXaXaxaXaxaxaxaxaxaXaxaXaXaxaxaxaxaXaxaxaxaXaXaXaXaxaXaxaXaxaxaXaXaxaxaXaXaXaxaxaXaxaXaxaxaxaXaXaxaxaxaXaxaXaXaXaxaXaXaXaxaxaxaXaxaXaXaXaxaXaxaXaXaxaxaxaXaXaxaxaxaXaXaXaxaxaXaXaXaXaXaxaXaXaXaXaXaxaxaXaXaxa"
+            },
+            {
+              "length": 16,
+              "word_matrix": [
+                492,
+                1624,
+                653,
+                116
+              ],
+              "labels": "xaxaXaxaXaXaxaXa"
+            }
+          ],
+          "histogram": {
+            "4_nonspanning": 3,
+            "5_nonspanning": 2,
+            "2_good": 1,
+            "5_good": 1,
+            "3_nonspanning": 2
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 891,
+            "root_vertices": 1024,
+            "root_segments": [
+              0,
+              1,
+              2
+            ],
+            "oriented_chords": [
+              [
+                11,
+                460
+              ],
+              [
+                12,
+                461
+              ]
+            ],
+            "chords": 2,
+            "cuts": [
+              12,
+              461
+            ],
+            "profile": [
+              {
+                "length": 2049,
+                "word_matrix": [
+                  1,
+                  1363,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 1024,
+              "half_word": [
+                940,
+                1499,
+                940,
+                1641
+              ],
+              "center_label": "X",
+              "denominator": 940,
+              "beta": 1363
+            }
+          }
+        }
+      ],
+      "seconds": 7.461910538986558
+    },
+    {
+      "q": 4096,
+      "modulus": 4105,
+      "maximum": 5,
+      "status": "SPANNING_BOUND_COUNTEREXAMPLE",
+      "scope": "partial field scan, stopped at the reported spanning-exchange obstruction",
+      "target": "one simple alternating-cycle exchange with at most maximum chords, spanning complement and non-unit gain",
+      "cases": [
+        {
+          "t": 3,
+          "c": 1332,
+          "delta": 988,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 3797,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaXaxaxaXaXaxaxaxaXaxaXaxaxaxaxaXaxaxaXaxaxaXaXaxaXaXaXaxaxaxaXaxaxaXaXaxaxaxaxaxaxaXaXaxaXaXaxaXaxaxaxaxaXaxaXaxaXaxaxaXaxaxaXaXaxaxaXaXaxaXaxaXaxaXaxaXaxaxaxaXaXaxaxaXaxaXaxaXaxaXaxaxaxaXaXaxaXaXaxaXaxaxaxaxaXaXaXaxaXaXaXaXaxaxaXaXaxaXaXaxaxaXaXaxaXaxaXaXaXaXaxaXaXaxaXaXaxaXaXaXaXaXaXaxaXaxaxaXaxaxaXaXaXaXaxaxaXaxaxaXaXaXaxaxaXaxaxaXaXaxaxaxaxaxaXaXaXaxaXaxaxaXaXaXaxaXaXaxaXaXaxaxaXaXaXaxaxaxaXaxaxaXaxaXaxaXaXaXaXaxaXaxaXaXaxaxaXaXaxaxaXaXaXaxaxaxaxaxaXaXaxaxaxaxaxaxaxaXaxaxaxaxaXaXaXaXaxaxaXaXaxaxaxaxaxaXaXaxaXaXaxaXaxaxaXaXaXaXaXaXaxaxaXaxaXaxaxaXaxaxaxaxaXaXaxaXaxaxaxaXaxaXaxaxaXaxaXaxaXaXaxaxaxaxaxaxaXaXaXaXaxaxaXaxaXaXaxaxaxaxaXaXaXaxaXaxaxaxaXaXaxaXaxaXaxaxaXaxaXaXaxaxaxaXaxaxaXaxaXaXaxaXaxaxaXaxaxaxaXaXaxaxaxaXaXaXaxaXaxaxaXaxaXaXaXaxaxaxaxaxaXaXaxaxaXaxaXaxaXaxaXaxaXaxaxaxaXaXaxaXaXaxaxaxaxaxaxaXaxaXaxaxaXaXaxaxaxaxaXaXaXaxaXaxaXaXaxaxaXaxaXaxaXaXaxaxaxaxaxaxaxaXaxaXaxaXaxaXaxaXaxaXaxaxaXaXaXaxaxaxaXaxaXaxaXaXaXaXaxaXaXaXaxaXaXaXaxaXaXaxaxaxaxaxaXaXaXaxaXaXaXaxaXaxaxaXaXaXaxaxaXaXaXaXaxaxaxaXaXaXaXaXaXaxaxaxaxaxaXaxaxaXaXaXaxaxaXaxaXaXaxaxaxaXaxaxaXaXaXaxaXaxaXaXaXaXaxaxaXaxaxaXaXaxaXaxaXaXaXaXaxaXaxaxaXaxaxaXaXaXaxaXaXaxaXaxaXaxaxaXaXaxaXaxaXaXaxaxaXaXaXaXaXaXaXaxaxaxaXaxaXaxaXaxaxaxaXaxaXaXaXaxaXaXaXaXaxaXaXaxaXaxaxaXaXaxaxaxaxaXaxaxaxaxaxaXaXaxaXaxaxaxaxaXaXaXaxaXaXaxaxaxaxaXaXaXaxaXaXaXaXaXaxaxaxaXaXaXaxaxaxaxaxaxaxaxaxaxaxaXaXaxaxaxaXaXaXaXaXaXaXaxaxaXaxaXaxaXaXaxaXaxaxaxaxaxaxaxaxaxaxaxaxaXaxaXaxaXaXaXaxaxaxaXaXaXaXaxaxaXaXaXaxaxaXaxaxaXaxaxaxaXaxaXaxaXaXaXaXaXaxaxaXaXaxaXaXaxaXaxaxaxaxaXaXaxaXaXaXaXaXaXaXaxaXaXaxaxaXaxaXaXaxaxaxaXaxaxaXaxaxaxaxaXaXaxaXaXaXaXaXaxaXaxaxaXaXaxaXaXaXaxaXaxaXaxaxaxaXaXaxaXaxaXaXaXaXaxaxaxaXaXaxaXaXaXaxaXaXaxaxaxaxaXaXaxaxaxaxaXaXaxaXaxaXaxaxaxaxaXaXaXaxaXaxaxaxaXaxaXaXaXaXaxaXaXaXaXaxaxaXaXaxaXaXaXaXaXaXaXaXaXaXaxaxaxaxaxaxaXaxaxaXaxaxaXaxaXaXaxaxaXaxaXaXaXaXaxaXaXaXaXaxaXaxaxaXaxaxaxaxaxaxaXaXaXaxaXaXaxaXaxaxaxaXaxaxaXaxaxaXaxaxaxaXaxaXaXaxaXaXaXaxaxaxaxaxaxaXaxaxaXaxaXaXaXaXaxaXaXaXaXaxaXaxaxaXaXaxaXaxaxaXaxaxaXaxaxaxaxaxaxaXaXaXaXaXaXaXaXaXaXaxaXaXaxaxaXaXaXaXaxaXaXaXaXaxaXaxaxaxaXaxaXaXaXaxaxaxaxaXaxaXaxaXaXaxaxaxaxaXaXaxaxaxaxaXaXaxaXaXaXaxaXaXaxaxaxaXaXaXaXaxaXaxaXaXaxaxaxaXaxaXaxaXaXaXaxaXaXaxaxaXaxaXaXaXaXaXaxaXaXaxaxaxaxaXaxaxaXaxaxaxaXaXaxaXaxaxaXaXaxaXaXaXaXaXaXaXaxaXaXaxaxaxaxaXaxaXaXaxaXaXaxaxaXaXaXaXaXaxaXaxaXaxaxaxaXaxaxaXaxaxaXaXaXaxaxaXaXaXaXaxaxaxaXaXaXaxaXaxaXaxaxaxaxaxaxaxaxaxaxaxaxaXaxaXaXaxaXaxaXaxaxaXaXaXaXaXaXaXaxaxaxaXaXaxaxaxaxaxaxaxaxaxaxaxaXaXaXaxaxaxaXaXaXaXaXaxaXaXaXaxaxaxaxaXaXaxaXaXaXaxaxaxaxaXaxaXaXaxaxaxaxaxaXaxaxaxaxaXaXaxaxaXaxaXaXaxaXaXaXaXaxaXaXaXaxaXaxaxaxaXaxaXaxaXaxaxaxaXaXaXaXaXaXaXaxaxaXaXaxaXaxaXaXaxaxaXaxaXaxaXaXaxaXaXaXaxaxaXaxaxaXaxaXaXaXaXaxaXaxaXaXaxaxaXaxaxaXaXaXaXaxaXaxaXaXaXaxaxaXaxaxaxaXaXaxaXaxaxaXaXaXaxaxaXaxaxaxaxaxaXaXaXaXaXaXaxaxaxaXaXaXaXaxaxaXaXaXaxaxaXaxaXaXaXaxaXaXaXaxaxaxaxaxaXaXaxaXaXaXaxaXaXaXaxaXaXaXaXaxaXaxaXaxaxaxaXaXaXaxaxaXaxaXaxaXaxaXaxaXaxaXaxaxaxaxaxaxaxaXaXaxaXaxaXaxaxaXaXaxaXaxaXaXaXaxaxaxaxaXaXaxaxaXaxaXaxaxaxaxaxaxaXaXaxaXaXaxaxaxaXaxaXaxaXaxaXaxaXaxaxaXaXaxaxaxaxaxaXaXaXaxaXaxaxaXaxaXaXaXaxaxaxaXaXaxaxaxaXaxaxaXaxaXaXaxaXaxaxaXaxaxaxaXaXaxaXaxaxaXaxaXaxaXaXaxaxaxaXaxaXaXaXaxaxaxaxaXaXaxaXaxaxaXaXaXaXaxaxaxaxaxaxaXaXaxaXaxaXaxaxaXaxaXaxaxaxaXaxaXaXaxaxaxaxaXaxaxaXaxaXaxaxaXaXaXaXaXaXaxaxaXaxaXaXaxaXaXaxaxaxaxaxaXaXaxaxaXaXaXaXaxaxaxaxaXaxaxaxaxaxaxaxaXaXaxaxaxaxaxaXaXaXaxaxaXaXaxaxaXaXaxaXaxaXaXaXaXaxaXaxaXaxaxaXaxaxaxaXaXaXaxaxaXaXaxaXaXaxaXaXaXaxaxaXaxaXaXaXaxaxaxaxaxaXaXaxaxaXaxaxaXaXaXaxaxaXaxaxaXaXaXaXaxaxaXaxaxaXaxaXaXaXaXaXaXaxaXaXaxaXaXaxaXaXaXaXaxaXaxaXaXaxaxaXaXaxaXaXaxaxaXaXaXaXaxaXaXaXaxaxaxaxaXaxaXaXaxaXaXaxaxaxaXaxaXaxaXaxaXaxaxaXaXaxaxaxaXaxaXaxaXaxaXaxaXaXaxaxaXaXaxaxaXaxaxaXaxaXaxaXaxaxaxaxaXaxaXaXaxaXaXaxaxaxaxaxaxaXaXaxaxaXaxaxaxaXaXaXaxaXaXaxaxaXaxaxaXaxaxaxaxaXaxaXaxaxaxaXaXaxaxaXaXax"
+            },
+            {
+              "length": 288,
+              "word_matrix": [
+                1611,
+                2367,
+                1150,
+                2581
+              ],
+              "labels": "xaXaxaxaXaXaXaXaxaXaxaXaXaxaXaxaxaxaxaXaxaXaxaxaXaxaxaxaXaxaXaxaXaxaxaXaxaxaXaXaXaxaXaXaxaXaxaxaxaXaXaxaXaxaXaXaxaXaxaxaxaXaXaxaxaxaXaXaxaxaXaXaXaxaXaXaxaxaxaxaXaxaXaxaxaXaxaXaXaXaXaxaXaxaXaXaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaxaxaXaxaxaXaxaXaXaXaxaxaXaxaXaxaxaXaxaXaXaXaxaxaXaXaXaxaxaXaXaxaxa"
+            },
+            {
+              "length": 6,
+              "word_matrix": [
+                2025,
+                1215,
+                989,
+                336
+              ],
+              "labels": "xaXaXa"
+            },
+            {
+              "length": 6,
+              "word_matrix": [
+                1543,
+                1672,
+                3201,
+                190
+              ],
+              "labels": "xaXaxa"
+            }
+          ],
+          "histogram": {
+            "3_nonspanning": 2,
+            "5_good": 2,
+            "5_nonspanning": 1,
+            "4_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 347,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              2,
+              3,
+              1,
+              4
+            ],
+            "oriented_chords": [
+              [
+                595,
+                1235
+              ],
+              [
+                1084,
+                1236
+              ],
+              [
+                1856,
+                1083
+              ],
+              [
+                596,
+                1857
+              ]
+            ],
+            "chords": 4,
+            "cuts": [
+              596,
+              1084,
+              1236,
+              1857
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  1006,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                431,
+                3173,
+                431,
+                4017
+              ],
+              "center_label": "X",
+              "denominator": 431,
+              "beta": 1006
+            }
+          }
+        },
+        {
+          "t": 7,
+          "c": 1338,
+          "delta": 1915,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 3397,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaxaXaXaXaxaXaXaXaxaxaXaxaxaXaxaXaxaxaXaxaXaxaXaXaXaxaXaXaXaxaxaXaxaXaXaxaXaxaXaxaxaXaXaxaxaxaXaXaxaXaxaXaxaXaxaxaXaxaXaXaXaXaxaxaxaXaXaxaXaXaxaxaxaxaxaXaXaxaxaxaxaxaXaxaXaXaxaXaxaxaXaXaXaXaXaXaXaxaXaxaXaxaxaxaXaXaXaxaxaXaXaXaXaXaxaxaxaxaXaxaXaXaxaXaxaXaxaXaXaxaXaXaxaxaXaxaxaXaxaxaxaXaXaXaxaxaxaXaxaXaxaxaxaxaXaxaxaXaXaXaxaxaXaXaXaxaxaxaXaxaxaxaXaXaxaxaXaXaxaxaxaxaXaxaxaxaxaxaXaxaxaXaxaxaxaxaXaXaxaXaxaXaXaXaXaXaxaxaxaXaxaxaXaxaxaxaxaXaxaxaXaXaXaXaXaXaXaxaxaXaXaxaXaxaxaxaXaxaXaxaXaxaXaxaxaXaxaxaXaXaxaxaXaXaxaXaXaxaXaXaXaxaXaxaxaXaXaXaXaxaxaXaxaXaXaxaxaxaXaxaxaxaXaxaxaXaxaxaXaxaxaxaxaXaxaXaXaXaxaxaxaXaXaxaxaxaXaXaxaXaXaXaXaxaxaXaXaXaXaXaxaxaxaXaXaXaxaxaxaxaXaxaxaXaXaxaxaxaXaXaxaxaXaXaxaXaXaXaXaXaxaXaXaxaXaxaXaXaXaxaxaxaxaXaxaxaxaXaXaxaxaxaxaxaxaXaXaxaXaxaXaXaxaXaXaXaxaxaxaXaxaxaxaxaxaXaxaxaxaxaXaXaxaXaXaXaxaXaXaxaXaXaxaxaXaxaxaxaxaxaXaxaxaxaxaxaxaxaxaxaxaxaxaXaXaxaxaXaXaXaxaxaxaXaxaxaXaXaXaxaXaXaXaxaxaxaXaXaxaxaXaXaXaxaXaXaXaXaXaxaXaxaXaXaXaXaxaxaxaxaXaxaxaXaxaXaxaXaxaXaxaXaxaxaXaXaXaXaxaXaXaxaxaxaxaXaxaXaxaXaxaxaxaxaxaxaxaXaxaXaXaxaxaXaXaxaXaxaxaxaxaxaxaXaXaXaxaxaXaXaXaxaXaXaXaxaXaxaXaxaXaxaXaxaxaxaXaXaxaxaxaxaXaxaxaXaxaXaXaXaXaxaXaxaXaxaXaXaXaXaxaxaXaxaxaXaXaXaXaXaxaXaXaxaxaXaxaxaxaXaXaXaxaXaXaXaXaXaXaXaXaXaXaxaxaXaxaXaxaxaxaXaxaxaXaXaxaxaxaxaxaXaXaxaxaxaxaxaXaxaXaxaxaXaXaXaXaXaXaXaXaXaxaXaxaXaxaXaxaxaxaxaXaXaxaxaXaxaXaXaXaxaxaXaxaxaXaXaxaxaxaxaxaxaXaXaxaXaxaXaxaxaxaXaxaXaxaxaXaXaxaXaXaxaxaxaxaxaxaXaXaXaXaxaXaxaXaxaxaxaXaXaxaxaXaXaxaXaxaXaxaXaxaXaxaXaXaXaxaxaxaxaXaXaXaxaXaxaxaXaxaXaXaxaXaXaXaxaxaXaxaXaxaXaxaxaxaXaXaxaxaxaXaXaXaxaxaXaXaXaxaXaxaxaXaXaXaXaXaxaxaxaxaxaxaXaxaxaXaxaXaxaxaXaxaXaxaXaXaxaxaxaxaXaxaxaXaxaXaxaXaxaxaXaxaXaXaXaxaXaxaXaxaxaxaxaXaxaxaxaXaXaxaXaXaXaXaXaXaXaXaXaxaXaXaxaxaxaXaxaxaxaxaXaxaXaxaXaXaXaxaXaxaxaXaxaXaxaXaxaxaXaxaxaxaxaXaXaxaXaxaXaxaxaXaxaXaxaxaXaxaxaxaxaxaxaXaXaXaXaXaxaxaXaxaXaXaXaxaxaXaXaXaxaxaxaXaXaxaxaxaXaxaXaxaXaxaxaXaXaXaxaXaXaxaXaxaxaXaxaXaXaXaxaxaxaxaXaXaXaxaXaxaXaxaXaxaXaxaXaXaxaxaXaXaxaxaxaXaxaXaxaXaXaXaXaxaxaxaxaxaxaXaXaxaXaXaxaxaXaxaXaxaxaxaXaxaXaxaXaXaxaxaxaxaxaxaXaXaxaxaXaxaxaXaXaXaxaXaxaxaXaXaxaxaxaxaXaxaXaxaXaxaXaXaXaXaXaXaXaXaXaxaxaXaxaXaxaxaxaxaxaXaXaxaxaxaxaxaXaXaxaxaXaxaxaxaXaxaXaxaxaXaXaXaXaXaXaXaXaXaXaxaXaXaXaxaxaxaXaxaxaXaXaxaXaXaXaXaXaxaxaXaxaxaXaXaXaXaxaXaxaXaxaXaXaXaXaxaXaxaxaXaxaxaxaxaXaXaxaxaxaXaxaXaxaXaxaXaxaXaXaXaxaXaXaXaxaxaXaXaXaxaxaxaxaxaxaXaxaXaXaxaxaXaXaxaXaxaxaxaxaxaxaxaXaxaXaxaXaxaxaxaxaXaXaxaXaXaXaXaxaxaXaxaXaxaXaxaXaxaXaxaxaXaxaxaxaxaXaXaXaXaxaXaxaXaXaXaXaXaxaXaXaXaxaxaXaXaxaxaxaXaXaXaxaXaXaXaxaxaXaxaxaxaXaXaXaxaxaXaXaxaxaxaxaxaxaxaxaxaxaxaxaXaxaxaxaxaxaXaxaxaXaXaxaXaXaxaXaXaXaxaXaXaxaxaxaxaXaxaxaxaxaxaXaxaxaxaXaXaXaxaXaXaxaXaxaXaXaxaxaxaxaxaxaXaXaxaxaxaXaxaxaxaxaXaXaXaxaXaxaXaXaxaXaXaXaXaXaxaXaXaxaxaXaXaxaxaxaXaXaxaxaXaxaxaxaxaXaXaXaxaxaxaXaXaXaXaXaxaxaXaXaXaXaxaXaXaxaxaxaXaXaxaxaxaXaXaXaxaXaxaxaxaxaXaxaxaXaxaxaXaxaxaxaXaxaxaxaXaXaxaXaxaxaXaXaXaXaxaxaXaxaXaXaXaxaXaXaxaXaXaxaxaXaXaxaxaXaxaxaXaxaXaxaXaxaXaxaxaxaXaxaXaXaxaxaXaXaXaXaXaXaXaxaxaXaxaxaxaxaXaxaxaXaxaxaxaXaXaXaXaXaxaXaxaXaXaxaxaxaxaXaxaxaXaxaxaxaxaxaXaxaxaxaxaXaXaxaxaXaXaxaxaxaXaxaxaxaXaXaXaxaxaXaXaXaxaxaXaxaxaxaxaXaxaXaxaxaxaXaXaXaxaxaxaXaxaxaXaxaxaXaXaxaXaXaxaXaxaXaxaXaXaxaXaxaxaxaxaXaXaXaXaXaxaxaXaXaXaxaxaxaXaxaXaxaXaXaXaXaXaXaXaxaxaXaxaXaXaxaXaxaxaxaxaxaXaXaxaxaxaxaxaXaXaxaXaXaxaxaxaXaXaXaXaxaXaxaxaXaxaXaxaXaxaXaXaxaxaxaXaXaxaxaXaxaXaxaXaXaxaXaxaxaXaXaXaxaXaXaXaxaXaxaXaxaxaXaxaXaxaxaXaxaxaXaXaXaxaXaXaXaxaxax"
+            },
+            {
+              "length": 584,
+              "word_matrix": [
+                806,
+                3309,
+                3368,
+                1939
+              ],
+              "labels": "xaxaXaXaxaxaXaxaXaxaxaxaxaxaxaxaXaXaxaxaXaXaxaxaxaxaxaxaXaXaxaXaxaxaxaXaxaXaXaXaxaXaxaxaxaXaxaXaxaXaXaXaxaxaxaxaXaXaXaxaxaxaXaXaxaXaxaXaXaXaxaxaxaxaXaxaxaxaxaxaXaxaXaXaXaXaxaxaxaxaxaxaxaxaxaXaxaxaxaxaxaxaxaXaXaxaXaXaxaXaXaxaXaxaXaxaXaxaXaxaXaXaxaxaxaxaxaxaxaXaXaXaxaXaxaXaxaXaXaXaxaXaxaxaxaXaXaXaxaxaXaXaxaXaxaXaXaXaXaXaXaXaxaxaXaXaxaxaXaXaXaXaXaXaxaxaXaxaXaXaXaxaXaxaxaxaXaxaXaXaXaxaXaxaXaxaxaxaXaXaXaXaxaxaxaXaXaXaxaxaXaxaXaxaxaxaXaXaXaXaxaXaXaXaXaXaxaXaxaxaxaxaXaXaXaXaXaXaXaXaXaxaXaXaXaXaXaXaXaxaxaXaxaxaXaxaxaXaxaXaxaXaxaXaxaXaxaxaXaXaXaXaXaXaXaxaxaxaXaxaXaxaXaxaxaxaXaxaXaXaXaxa"
+            },
+            {
+              "length": 58,
+              "word_matrix": [
+                2719,
+                2622,
+                667,
+                904
+              ],
+              "labels": "xaxaXaxaXaXaxaXaXaxaXaXaxaxaxaxaxaxaXaXaXaXaxaxaXaXaXaxaxa"
+            },
+            {
+              "length": 58,
+              "word_matrix": [
+                2292,
+                2989,
+                1708,
+                483
+              ],
+              "labels": "xaXaxaxaXaXaXaXaXaXaxaxaxaxaXaXaxaxaxaXaXaXaXaxaXaxaxaXaxa"
+            }
+          ],
+          "histogram": {
+            "3_good": 1,
+            "5_good": 1,
+            "4_good": 2,
+            "5_nonspanning": 1,
+            "2_nonspanning": 1,
+            "3_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 662,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "oriented_chords": [
+              [
+                1,
+                678
+              ],
+              [
+                1252,
+                2
+              ],
+              [
+                677,
+                1253
+              ]
+            ],
+            "chords": 3,
+            "cuts": [
+              2,
+              678,
+              1253
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  3557,
+                  0,
+                  1
+                ],
+                "labels": "xxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                1109,
+                2864,
+                1109,
+                1722
+              ],
+              "center_label": "X",
+              "denominator": 1109,
+              "beta": 3557
+            }
+          }
+        },
+        {
+          "t": 52,
+          "c": 3537,
+          "delta": 3175,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 4017,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaxaxaxaXaxaXaxaXaXaXaxaXaxaxaXaxaxaXaXaxaXaxaxaXaxaxaxaXaXaxaxaxaXaXaxaxaXaXaxaXaxaxaXaxaxaXaXaXaXaxaXaxaXaXaxaxaXaXaXaXaXaXaXaxaxaXaxaXaXaxaxaXaXaxaxaXaxaxaXaxaXaXaxaXaxaXaxaxaxaXaXaxaxaxaXaxaXaxaxaxaxaxaXaXaxaXaxaxaXaxaxaxaxaXaxaxaxaXaxaXaXaXaxaXaxaXaxaxaXaxaXaXaXaXaXaXaxaXaXaxaxaxaXaXaxaxaxaxaXaXaxaxaxaxaxaxaXaxaXaXaXaxaXaXaXaXaXaxaXaXaxaxaXaXaxaXaxaXaXaXaXaxaxaxaxaxaxaxaXaxaXaXaxaXaXaxaxaXaxaxaXaxaxaXaxaXaXaxaXaXaxaXaXaxaxaXaXaxaxaxaxaxaXaXaxaxaxaxaXaxaxaXaxaXaxaxaxaXaXaxaxaXaxaXaxaxaXaxaxaXaXaXaxaxaxaxaXaXaxaxaxaxaXaxaxaXaXaxaXaXaXaxaxaXaxaxaxaxaxaXaxaXaXaXaxaXaXaxaxaxaxaxaxaxaXaxaXaxaxaxaxaXaxaXaXaXaXaxaXaxaXaXaxaXaXaxaxaxaXaxaXaXaXaXaxaxaxaxaxaxaXaxaXaXaXaxaxaxaxaXaxaXaxaxaXaXaXaXaXaxaXaxaxaXaXaXaxaxaXaxaxaXaxaXaXaxaXaxaxaxaxaxaXaxaXaXaXaXaXaxaXaxaxaXaxaxaXaXaxaXaxaxaxaXaXaxaXaxaxaXaXaxaXaxaxaXaxaxaxaXaXaXaxaxaxaXaxaxaXaXaXaXaXaxaXaxaxaXaXaXaXaxaXaXaxaXaXaXaxaxaXaXaxaxaXaxaXaXaXaxaxaxaXaXaXaxaxaxaXaxaxaXaXaXaxaxaxaxaxaxaxaxaXaxaxaXaXaXaXaxaXaxaxaXaxaXaxaXaXaxaxaXaXaXaxaxaXaXaXaxaxaXaXaxaxaXaXaXaxaXaxaXaxaXaXaxaxaXaXaXaxaxaXaXaXaXaXaxaXaxaxaxaxaxaXaxaxaXaXaXaXaxaxaXaxaxaXaxaxaxaxaxaxaXaxaxaXaxaxaxaXaxaXaXaXaxaxaXaxaXaXaxaXaXaXaxaXaxaxaxaXaXaxaXaXaXaXaXaXaxaXaXaxaxaXaXaXaxaxaXaXaXaXaxaxaXaxaxaXaxaXaXaXaxaxaxaXaxaxaxaXaXaxaxaxaxaxaXaxaXaXaxaXaXaXaXaXaXaXaxaxaXaXaXaxaxaxaXaXaxaxaxaxaXaXaxaXaxaxaxaXaxaxaXaxaxaxaXaxaXaxaXaXaXaXaxaxaxaxaXaXaXaXaxaxaxaXaXaxaxaxaXaxaxaxaXaxaxaXaXaXaxaXaXaXaXaXaXaXaXaxaxaxaxaxaXaxaXaXaXaXaXaXaxaxaXaXaxaxaxaXaXaXaxaxaXaXaXaxaXaxaxaxaxaxaXaxaxaxaxaxaXaXaXaXaXaXaxaXaxaXaXaXaxaxaxaxaXaxaxaxaXaXaXaxaxaXaXaXaxaxaXaXaXaxaXaXaxaXaxaXaxaxaxaXaXaxaxaxaXaXaXaXaXaxaxaxaxaXaxaXaXaXaxaXaXaxaXaXaXaxaxaXaXaxaxaxaXaxaXaXaXaXaXaXaXaXaXaXaXaxaxaxaXaXaXaxaXaXaxaxaxaXaxaXaXaXaxaXaXaxaXaXaXaxaXaXaxaxaXaxaxaXaXaXaxaXaxaxaxaxaxaxaxaXaXaXaXaxaXaxaxaXaXaXaXaXaXaXaxaXaxaXaxaxaxaxaxaXaxaxaXaxaxaxaXaxaxaXaXaxaXaXaxaXaXaXaxaxaXaxaxaxaXaXaxaxaxaxaXaxaXaxaXaXaxaxaXaxaXaXaXaXaXaXaXaXaxaXaxaXaxaXaXaxaXaxaxaxaxaXaxaxaXaXaxaxaXaXaXaxaXaxaXaxaxaxaXaXaxaxaxaxaXaxaxaxaXaxaxaXaxaXaxaXaxaxaXaxaxaxaXaxaxaxaxaXaXaxaxaxaXaxaXaxaXaXaXaxaxaXaXaxaxaXaxaxaxaxaXaxaXaXaxaXaxaXaxaXaXaXaXaXaXaXaXaxaXaxaxaXaXaxaXaxaXaxaxaxaxaXaXaxaxaxaXaxaxaXaXaXaxaXaXaxaXaXaxaxaXaxaxaxaXaxaxaXaxaxaxaxaxaXaxaXaxaXaXaXaXaXaXaXaxaxaXaxaXaXaXaXaxaxaxaxaxaxaxaXaxaXaXaXaxaxaXaxaxaXaXaxaXaXaXaxaXaXaxaXaXaXaxaXaxaxaxaXaXaxaXaXaXaxaxaxaXaXaXaXaXaXaXaXaXaXaXaxaXaxaxaxaXaXaxaxaXaXaXaxaXaXaxaXaXaXaxaXaxaxaxaxaXaXaXaXaXaxaxaxaXaXaxaxaxaXaxaXaxaXaXaxaXaXaXaxaxaXaXaXaxaxaXaXaXaxaxaxaXaxaxaxaxaXaXaXaxaXaxaXaXaXaXaXaXaxaxaxaxaxaXaxaxaxaxaxaXaxaXaXaXaxaxaXaXaXaxaxaxaXaXaxaxaXaXaXaXaXaXaxaXaxaxaxaxaxaXaXaXaXaXaXaXaXaxaXaXaXaxaxaXaxaxaxaXaxaxaxaXaXaxaxaxaXaXaXaXaxaxaxaxaXaXaXaXaxaXaxaXaxaxaxaXaxaxaXaxaxaxaXaxaXaXaxaxaxaxaXaXaxaxaxaXaXaXaxaxaXaXaXaXaXaXaXaxaXaXaxaXaxaxaxaxaxaXaXaxaxaxaXaxaxaxaXaXaXaxaXaxaxaXaxaxaXaXaXaXaxaxaXaXaXaxaxaXaXaxaXaXaXaXaXaXaxaXaXaxaxaxaXaxaXaXaXaxaXaXaxaXaxaxaXaXaXaxaXaxaxaxaXaxaxaXaxaxaxaxaxaxaXaxaxaXaxaxaXaXaXaXaxaxaXaxaxaxaxaxaXaxaXaXaXaXaXaxaxaXaXaXaxaxaXaXaxaXaxaXaxaXaXaXaxaxaXaXaxaxaXaXaXaxaxaXaXaXaxaxaXaXaxaXaxaXaxaxaXaxaXaXaXaXaxaxaXaxaxaxaxaxaxaxaxaXaXaXaxaxaXaxaxaxaXaXaXaxaxaxaXaXaXaxaXaxaxaXaXaxaxaXaXaXaxaXaXaxaXaXaXaXaxaxaXaxaXaXaXaXaXaxaxaXaxaxaxaXaXaXaxaxaxaXaxaxaXaxaXaXaxaxaXaxaXaXaxaxaxaXaxaXaXaxaxaXaxaxaXaxaXaXaXaXaXaxaXaxaxaxaxaxaXaxaXaXaxaXaxaxaXaxaxaXaXaXaxaxaXaxaXaXaXaXaXaxaxaXaxaXaxaxaxaxaXaXaXaxaXaxaxaxaxaxaxaXaXaXaXaxaXaxaxaxaXaXaxaXaXaxaXaxaXaXaXaXaxaXaxaxaxaxaXaxaXaxaxaxaxaxaxaxaXaXaxaXaXaXaxaXaxaxaxaxaxaXaxaxaXaXaXaxaXaXaxaxaXaxaxaxaxaXaXaxaxaxaxaXaXaXaxaxaXaxaxaXaxaXaxaxaXaXaxaxaxaXaxaXaxaxaXaxaxaxaxaXaXaxaxaxaxaxaXaXaxaxaXaXaxaXaXaxaXaXaxaXaxaxaXaxaxaXaxaxaXaXaxaXaXaxaXaxaxaxaxaxaxaxaXaXaXaXaxaXaxaXaXaxaxaXaXaxaXaXaXaXaXaxaXaXaXaxaXaxaxaxaxaxaxaXaXaxaxaxaxaXaXaxaxaxaXaXaxaXaXaXaXaXaXaxaXaxaxaXaxaXaxaXaXaXaxaXaxaxaxaXaxaxaxaxaXaxaxaXaxaXaXaxaxaxaxaxaXaxaXaxaxaxaXaXaxaxaxaXaxaXaxaXaXaxaXaxaxaXaxaxaXaXaxaxaXaXaxaXaxaxaXaXaXaXaXaXaXaxaxaXaXaxaXaxaXaXaXaXaxaxaXaxaxaXaxaXaXaxaxaXaXaxaxaxaXaXaxaxaxaXaxaxaXaxaXaXaxaxaXaxaxaXaxaXaXaXaxaXaxaXaxaxaxaxax"
+            },
+            {
+              "length": 80,
+              "word_matrix": [
+                1352,
+                449,
+                2347,
+                3281
+              ],
+              "labels": "xaXaXaXaxaXaxaxaXaxaXaxaXaxaxaXaxaXaXaXaXaxaxaxaXaxaXaXaxaXaxaXaxaXaXaxaXaxaxaxa"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 2,
+            "3_nonspanning": 1,
+            "5_good": 1,
+            "2_good": 1,
+            "4_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 1775,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              1,
+              2
+            ],
+            "oriented_chords": [
+              [
+                712,
+                1501
+              ],
+              [
+                713,
+                1502
+              ]
+            ],
+            "chords": 2,
+            "cuts": [
+              713,
+              1502
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  2242,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                2907,
+                2525,
+                2907,
+                1121
+              ],
+              "center_label": "X",
+              "denominator": 2907,
+              "beta": 2242
+            }
+          }
+        },
+        {
+          "t": 191,
+          "c": 1060,
+          "delta": 1362,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 2285,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaXaxaxaxaxaXaxaXaXaXaXaXaxaXaxaXaXaXaxaXaxaxaXaXaXaXaXaxaXaXaxaxaXaxaxaxaxaXaXaXaXaXaXaxaxaXaxaXaxaXaxaXaxaXaXaXaXaXaxaxaXaXaXaxaxaXaXaxaxaxaXaXaxaXaxaxaxaxaxaxaXaxaxaXaXaXaxaxaXaxaXaXaxaXaXaxaXaxaXaXaXaxaxaxaXaxaXaXaxaxaxaXaXaXaxaxaXaxaXaxaXaxaxaxaxaxaXaXaxaXaXaxaxaxaxaXaxaxaxaxaxaXaXaXaxaXaXaXaXaXaXaxaxaxaXaxaXaxaXaXaxaxaxaxaxaXaXaxaxaxaXaXaxaxaxaxaxaXaxaxaxaxaXaxaxaxaXaxaXaXaXaxaXaxaxaxaXaxaXaXaxaxaxaxaxaxaxaxaxaxaXaXaXaXaXaxaxaxaxaxaXaxaxaXaxaXaxaXaxaxaXaXaXaXaxaxaxaXaxaxaXaxaxaxaXaXaXaXaXaXaXaXaxaXaxaXaxaXaxaxaXaXaxaXaXaxaXaXaxaXaxaXaXaxaxaXaXaxaxaxaXaxaXaXaxaxaXaxaxaxaxaxaXaxaXaXaXaxaxaXaXaXaxaxaxaxaxaxaxaXaXaxaxaxaXaXaxaXaxaxaXaxaXaXaXaXaXaxaXaxaxaxaXaxaxaxaXaXaxaxaXaxaxaxaxaxaXaxaXaxaxaxaXaXaxaXaXaXaxaXaxaxaXaXaxaxaxaxaXaxaxaXaxaXaXaXaxaxaxaXaXaXaXaXaxaxaXaXaxaxaxaxaXaXaxaxaxaXaxaXaxaxaXaXaxaXaXaXaxaxaxaxaxaXaxaXaXaxaXaXaXaXaxaXaxaXaxaXaXaXaxaXaxaxaXaXaXaxaxaxaxaxaxaxaxaxaxaXaxaxaXaxaXaxaXaXaxaXaxaXaXaxaxaXaxaXaXaxaxaxaXaXaXaXaxaxaxaxaXaXaxaxaxaXaxaXaxaxaXaxaXaXaxaXaxaXaxaXaxaxaXaxaxaxaxaXaXaxaXaXaXaXaxaXaxaxaxaxaXaxaxaxaxaXaxaXaXaXaXaXaXaXaxaXaxaXaXaXaXaxaXaXaxaxaxaXaXaXaXaxaxaxaxaxaxaXaXaXaxaxaxaxaXaXaXaxaxaXaxaxaxaXaxaxaXaXaXaxaxaxaxaXaXaXaxaxaxaxaxaxaXaXaXaXaxaxaxaXaXaxaXaXaXaXaxaXaxaXaXaXaXaXaXaXaxaXaxaxaxaxaXaxaxaxaxaXaxaXaXaXaXaxaXaXaxaxaxaxaXaxaxaXaxaXaxaXaxaXaXaxaXaxaxaXaxaXaxaxaxaXaXaxaxaxaxaXaXaXaXaxaxaxaXaXaxaXaxaxaXaXaxaXaxaXaXaxaXaxaXaxaxaXaxaxaxaxaxaxaxaxaxaxaXaXaXaxaxaXaxaXaXaXaxaXaxaXaxaXaXaXaXaxaXaXaxaXaxaxaxaxaxaXaXaXaxaXaXaxaxaXaxaXaxaxaxaXaXaxaxaxaxaXaXaxaxaXaXaXaXaXaxaxaxaXaXaXaxaXaxaxaXaxaxaxaxaXaXaxaxaXaxaXaXaXaxaXaXaxaxaxaXaxaXaxaxaxaxaxaXaxaxaXaXaxaxaxaXaxaxaxaXaxaXaXaXaXaXaxaXaxaxaXaxaXaXaxaxaxaXaXaxaxaxaxaxaxaxaXaXaXaxaxaXaXaXaxaXaxaxaxaxaxaXaxaxaXaXaxaXaxaxaxaXaXaxaxaXaXaxaXaxaXaXaxaXaXaxaXaXaxaxaXaxaXaxaXaxaXaXaXaXaXaXaXaXaxaxaxaXaxaxaXaxaxaxaXaXaXaXaxaxaXaxaXaxaXaxaxaXaxaxaxaxaxaXaXaXaXaXaxaxaxaxaxaxaxaxaxaxaXaXaxaXaxaxaxaXaxaXaXaXaxaXaxaxaxaXaxaxaxaxaXaxaxaxaxaxaXaXaxaxaxaXaXaxaxaxaxaxaXaXaxaXaxaXaxaxaxaXaXaXaXaXaXaxaXaXaXaxaxaxaxaxaXaxaxaxaxaXaXaxaXaXaxaxaxaxaxaXaxaXaxaXaxaxaXaXaXaxaxaxaXaXaxaXaxaxaxaXaXaXaxaXaxaXaXaxaXaXaxaXaxaxaXaXaXaxaxaXaxaxaxaxaxaxaXaxaXaXaxaxaxaXaXaxaxaXaXaXaxaxaXaXaXaXaXaxaXaxaXaxaXaxaXaxaxaXaXaXaXaXaXaxaxaxaxaXaxaxaXaXaxaXaXaXaXaXaxaxaXaxaXaXaXaxaXaxaXaXaXaXaXaxaXaxaxaxaxaXaxax"
+            },
+            {
+              "length": 454,
+              "word_matrix": [
+                2129,
+                2848,
+                1625,
+                371
+              ],
+              "labels": "xaXaXaXaXaxaXaxaxaxaXaXaXaxaXaxaXaxaxaxaXaxaXaXaxaxaxaxaXaXaxaXaXaxaxaXaxaxaxaXaXaXaXaxaxaXaXaXaXaXaxaxaXaxaXaxaXaXaXaxaXaXaXaxaXaxaXaxaxaXaxaxaXaxaXaXaXaXaXaxaxaxaXaXaxaXaXaXaXaxaxaxaXaxaxaXaXaxaXaxaXaXaxaxaXaxaxaxaXaXaXaxaxaxaxaxaxaXaXaxaXaXaXaxaxaXaxaxaxaxaXaxaXaxaXaXaXaXaXaxaxaxaxaxaxaxaXaXaxaxaxaxaxaxaXaxaXaXaxaxaxaxaxaxaxaxaXaxaxaxaXaxaxaxaXaxaXaXaxaxaXaXaXaxaxaXaXaxaXaXaxaXaXaXaXaxaXaxaxaxaXaxaxaxaxaxaxaXaXaXaxaxaXaxaXaXaXaxaxaXaxaxaxaXaXaxaxa"
+            },
+            {
+              "length": 444,
+              "word_matrix": [
+                3838,
+                1157,
+                3815,
+                2403
+              ],
+              "labels": "xaxaxaXaxaxaxaXaXaXaXaXaXaxaXaxaXaXaxaxaXaXaxaxaXaXaXaxaXaXaxaxaxaxaXaxaXaxaXaxaXaXaxaxaXaXaxaxaxaXaXaXaXaXaXaxaxaxaxaxaxaXaXaXaxaxaXaXaxaxaXaxaXaxaXaXaxaXaxaxaXaxaxaXaxaxaxaxaXaxaXaXaxaXaxaXaXaxaxaXaxaXaXaXaxaxaxaXaXaXaxaxaxaxaxaxaxaXaxaxaxaXaxaxaxaXaXaxaxaXaxaXaXaXaXaxaxaXaXaxaXaxaXaxaxaXaXaxaXaXaXaXaxaXaXaXaxaXaxaXaXaXaXaxaXaxaXaxaXaXaXaxaxaXaXaxaXaxaxaxaxaXaXaxaXaxaXaxaxaXaxaXaxaXaXaxaXaXaxaXaXaxaXaxaXaxaxaxaXaXaxaxaxaxaxaxaXaxaXaxaxaxa"
+            },
+            {
+              "length": 454,
+              "word_matrix": [
+                3122,
+                750,
+                3246,
+                1296
+              ],
+              "labels": "xaXaxaxaxaxaXaXaXaxaXaXaxaxaXaxaXaxaxaXaXaxaXaXaXaxaxaxaXaXaXaXaXaXaxaxaXaxaxaxaXaXaxaXaXaXaXaxaXaxaXaxaxaxaxaxaXaXaXaXaXaXaXaxaxaXaXaXaXaXaXaxaXaxaxaXaXaXaXaXaXaXaXaxaXaXaXaxaXaXaXaxaXaxaxaXaXaxaxaxaXaXaxaxaXaxaxaXaxaxaxaxaXaxaXaXaXaxaXaXaXaXaXaXaxaxaxaXaXaxaXaxaxaxaXaXaxaXaXaXaxaxaXaXaXaxaxaxaxaXaxaXaXaXaxaxaxaXaxaXaxaXaXaXaxaXaxaxaXaXaXaXaxaxaXaxaxaXaXaxaXaXaXaxaxaxaxaXaXaxaxaxaxaxaXaXaxaXaxaXaxaxaxaXaxaxaxaXaxaXaxaXaXaxaXaXaxaXaxaxaxaxaxaXaXaXaxa"
+            },
+            {
+              "length": 444,
+              "word_matrix": [
+                1684,
+                2102,
+                1241,
+                265
+              ],
+              "labels": "xaXaxaxaXaXaxaxaXaXaxaxaxaXaxaxaXaXaXaXaxaXaxaXaxaXaxaxaXaXaxaxaXaXaXaxaxaxaxaxaxaXaXaXaXaXaXaxaxaxaXaXaxaxaXaXaxaXaxaXaxaxaXaxaXaXaxaXaXaxaXaXaXaXaxaXaxaxaXaxaXaxaxaXaXaxaXaxaxaxaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaXaXaxaXaXaXaxaxaXaXaxaXaxaxaxaxaXaXaxaxaXaxaXaxaXaXaxaxaXaxaxaxaxaXaxaxaxaXaxaXaxaxaxaxaXaxaXaxaXaxaxaxaXaXaxaxaXaxaXaXaXaXaxaxaXaxaXaxaXaXaxaXaxaXaxaxaXaxaxaXaxaxaXaxaXaxaXaXaXaxaxaXaXaXaXaXaXaxaXaxaXaXaXaXaXaXaxaXaXaXaxaxaxaxaxaxaXa"
+            },
+            {
+              "length": 16,
+              "word_matrix": [
+                3351,
+                3912,
+                1669,
+                368
+              ],
+              "labels": "xaxaXaXaXaXaxaxa"
+            }
+          ],
+          "histogram": {
+            "5_good": 2,
+            "2_nonspanning": 1,
+            "4_good": 2,
+            "3_nonspanning": 1,
+            "4_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 3827,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              3,
+              1,
+              2,
+              4
+            ],
+            "oriented_chords": [
+              [
+                190,
+                1451
+              ],
+              [
+                1667,
+                191
+              ],
+              [
+                1167,
+                1450
+              ],
+              [
+                1168,
+                1668
+              ]
+            ],
+            "chords": 4,
+            "cuts": [
+              191,
+              1168,
+              1451,
+              1668
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  1095,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                443,
+                546,
+                680,
+                1424
+              ],
+              "center_label": "x",
+              "denominator": 680,
+              "beta": 1095
+            }
+          }
+        },
+        {
+          "t": 518,
+          "c": 3323,
+          "delta": 2325,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 2693,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaXaxaXaxaxaXaxaXaXaxaXaXaxaxaXaxaXaxaXaXaxaxaXaXaXaXaxaXaxaxaxaXaXaxaxaXaXaXaxaXaXaxaXaXaXaXaXaxaxaXaXaxaXaxaxaxaxaxaXaXaxaXaXaxaxaXaxaXaXaXaxaxaxaxaXaxaxaXaxaxaXaxaxaxaXaxaxaXaxaXaxaxaXaxaxaXaxaXaxaxaxaxaxaxaxaXaxaxaXaxaXaXaxaXaXaxaxaxaXaxaxaXaXaxaxaXaXaxaXaxaxaXaXaXaxaXaxaxaxaXaXaxaxaXaxaxaXaXaxaxaXaxaxaxaxaxaxaxaXaxaxaxaxaXaxaxaxaXaxaxaXaxaXaXaxaxaXaXaxaXaXaXaXaXaxaXaxaxaxaxaXaxaxaXaXaXaxaxaXaxaXaxaXaXaxaXaXaXaxaXaXaXaXaxaXaxaXaxaxaxaXaXaxaxaxaXaXaxaXaxaXaXaxaXaxaxaXaXaxaxaXaxaXaxaXaXaxaxaXaXaXaxaXaXaXaXaXaxaXaxaXaXaxaXaxaxaXaXaXaxaXaxaxaXaXaXaXaXaxaxaxaxaXaxaXaxaXaXaxaxaxaXaxaxaxaxaxaXaxaxaXaxaXaxaXaXaXaxaxaxaxaxaxaXaXaXaxaxaXaxaxaxaXaxaxaxaxaXaXaXaxaxaxaXaxaXaXaxaxaXaXaXaXaXaXaxaxaXaXaXaXaXaXaXaxaXaxaxaXaXaXaXaXaxaXaXaxaxaXaxaXaxaXaxaxaXaXaxaXaXaxaXaXaXaXaXaxaxaXaxaXaxaxaXaxaXaxaxaXaxaXaxaxaXaXaxaxaXaXaXaxaxaxaxaxaXaXaXaxaxaxaxaxaXaXaxaxaxaXaXaxaxaxaxaxaXaxaXaxaxaXaxaXaxaXaXaxaXaxaxaXaxaXaXaXaXaXaxaXaxaxaXaXaXaXaXaxaXaxaxaxaXaXaxaxaxaXaxaxaxaxaxaXaXaXaxaXaxaxaxaXaXaXaxaXaXaXaxaxaXaXaXaxaXaxaxaxaxaXaxaXaXaXaXaXaxaXaXaxaXaxaXaXaxaXaXaXaxaXaXaXaXaXaXaxaXaxaxaXaxaxaxaXaXaxaxaXaxaXaxaXaXaXaxaxaXaXaXaxaXaXaxaXaXaXaxaxaxaXaxaXaxaxaXaXaxaxaxaxaxaxaxaXaXaxaxaXaXaxaxaXaXaXaxaxaxaXaXaxaXaxaXaXaXaxaxaxaxaxaXaxaXaXaxaXaxaxaxaxaXaxaXaXaXaxaXaXaxaXaXaxaXaXaXaXaXaXaxaXaXaXaXaXaxaxaXaxaxaXaXaxaXaXaXaxaXaxaxaxaxaxaxaxaxaXaXaXaxaxaxaxaxaxaxaxaxaXaXaXaxaxaxaxaxaxaxaxaXaxaXaXaXaxaXaXaxaxaXaxaxaXaXaXaXaXaxaXaXaXaXaXaXaxaXaXaxaXaXaxaXaXaXaxaXaxaxaxaxaXaxaXaXaxaXaxaxaxaxaxaXaXaXaxaXaxaXaXaxaxaxaXaXaXaxaxaXaXaxaxaXaXaxaxaxaxaxaxaxaXaXaxaxaXaxaXaxaxaxaXaXaXaxaXaXaxaXaXaXaxaxaXaXaXaxaXaxaXaxaxaXaXaxaxaxaXaxaxaXaxaXaXaXaXaXaXaxaXaXaXaxaXaXaxaXaxaXaXaxaXaXaXaXaXaxaXaxaxaxaxaXaxaXaXaXaxaxaXaXaXaxaXaXaXaxaxaxaXaxaXaXaXaxaxaxaxaxaXaxaxaxaXaXaxaxaxaXaxaXaXaXaXaXaxaxaXaxaXaXaXaXaXaxaXaxaxaXaxaXaXaxaXaxaXaxaxaXaxaXaxaxaxaxaxaXaXaxaxaxaXaXaxaxaxaxaxaXaXaXaxaxaxaxaxaXaXaXaxaxaXaXaxaxaXaxaXaxaxaXaxaXaxaxaXaxaXaxaxaXaXaXaXaXaxaXaXaxaXaXaxaxaXaxaXaxaXaxaxaXaXaxaXaXaXaXaXaxaxaXaxaXaXaXaXaXaXaXaxaxaXaXaXaXaXaXaxaxaXaXaxaXaxaxaxaXaXaXaxaxaxaxaXaxaxaxaXaxaxaXaXaXaxaxaxaxaxaxaXaXaXaxaXaxaXaxaxaXaxaxaxaxaxaXaxaxaxaXaXaxaXaxaXaxaxaxaxaXaXaXaXaXaxaxaXaxaXaXaXaxaxaXaxaXaXaxaXaxaXaXaXaXaXaxaXaXaXaxaxaXaXaxaXaxaXaxaxaXaXaxaxaXaxaXaXaxaXaxaXaXaxaxaxaXaXaxaxaxaXaxaXaxaXaXaXaXaxaXaXaXaxaXaXaxaXaxaXaxaxaXaXaXaxaxaXaxaxaxaxaXaxaXaXaXaXaXaxaXaXaxaxaXaXaxaXaxaxaXaxaxaxaXaxaxaxaxaXaxaxaxaxaxaxaxaXaxaxaXaXaxaxaXaxaxaXaXaxaxaxaXaxaXaXaXaxaxaXaxaXaXaxaxaXaXaxaxaXaxaxaxaXaXaxaXaXaxaXaxaxaXaxaxaxaxaxaxaxaXaxaXaxaxaXaxaxaXaxaXaxaxaXaxaxaxaXaxaxaXaxaxaXaxaxaxaxaXaXaXaxaXaxaxaXaXaxaXaXaxaxaxaxaxaXaxaXaXaxaxaXaXaXaXaXaxaXaXaxaXaXaXaxaxaXaXaxaxaxaXaxaXaXaXaXaxaxaXaXaxaXaxaXaxaxaXaXaxaXaXaxaXaxaxaXaxaXaXax"
+            },
+            {
+              "length": 712,
+              "word_matrix": [
+                1642,
+                4089,
+                3745,
+                415
+              ],
+              "labels": "xaXaxaxaXaXaXaxaXaxaxaxaXaXaXaxaXaXaXaxaXaXaxaXaXaxaXaXaxaxaXaXaxaxaxaxaxaxaxaXaXaXaXaxaxaXaXaxaxaXaxaxaxaXaxaXaxaxaxaxaXaXaXaXaxaXaXaXaXaXaXaXaXaXaXaXaxaXaXaxaxaxaXaxaXaXaXaxaxaXaXaXaXaxaXaxaXaXaxaxaXaXaXaxaXaXaxaxaxaXaXaxaXaXaxaxaXaxaXaXaXaxaxaxaxaxaxaxaXaxaXaXaXaxaxaXaxaXaxaxaXaXaxaXaxaXaXaxaxaXaXaxaxaxaxaXaXaxaXaxaXaxaXaXaxaxaXaXaxaxaXaxaxaxaxaXaXaxaXaxaXaXaxaxaxaXaxaXaXaXaxaxaxaXaxaxaxaXaxaxaXaxaxaXaxaxaXaXaxaxaXaXaXaXaXaXaXaxaxaxaxaXaXaxaxaXaXaxaXaXaXaxaXaxaXaXaXaXaxaxaxaxaXaxaxaxaxaxaxaxaxaxaxaxaXaxaxaXaXaXaxaXaxaxaxaXaXaxaxaxaxaXaxaXaxaxaXaXaxaxaxaXaxaxaXaXaXaxaxaXaxaxaXaXaxaXaxaxaxaXaXaXaXaXaXaXaxaXaxaxaxaXaXaxaXaxaXaXaxaxaXaxaXaxaxaXaXaxaxaXaXaXaXaxaxaXaxaXaxaXaxaxaXaXaxaxaXaXaxaXaXaXaXaxaxaXa"
+            },
+            {
+              "length": 36,
+              "word_matrix": [
+                3357,
+                652,
+                20,
+                493
+              ],
+              "labels": "xaxaxaxaXaXaxaxaXaxaXaxaxaxaxaXaXaxa"
+            },
+            {
+              "length": 348,
+              "word_matrix": [
+                931,
+                3652,
+                2122,
+                969
+              ],
+              "labels": "xaxaXaXaxaXaxaxaXaxaxaXaXaXaXaxaXaxaxaxaXaXaxaxaxaXaXaXaxaXaXaxaxaxaxaxaxaXaXaxaxaxaxaxaXaXaXaxaxaxaxaxaXaXaxaxaxaXaXaXaxaxaXaXaxaxaXaxaxaxaXaxaXaxaxaXaxaXaXaxaXaXaxaxaXaxaxaXaXaxaxaXaxaXaXaxaXaXaxaxaxaxaXaxaXaXaXaxaxaXaXaXaxaxaxaXaxaxaXaXaXaXaXaXaxaxaXaXaXaXaXaxaxaxaXaXaXaXaXaxaxaXaXaXaxaxaxaXaXaxaxaXaXaxaXaXaXaxaXaxaXaXaxaXaxaxaXaxaxaXaXaxaXaXa"
+            },
+            {
+              "length": 36,
+              "word_matrix": [
+                1603,
+                806,
+                3174,
+                2739
+              ],
+              "labels": "xaxaXaXaXaXaXaxaxaXaXaxaXaxaXaXaXaXa"
+            },
+            {
+              "length": 128,
+              "word_matrix": [
+                2796,
+                127,
+                3555,
+                3371
+              ],
+              "labels": "xaXaXaxaXaxaXaxaXaXaXaXaXaXaXaxaxaXaXaxaXaXaXaxaxaXaXaxaxaXaXaxaxaxaxaXaxaxaxaxaXaXaxaXaXaXaxaXaXaxaxaXaxaxaxaxaXaxaXaxaXaxaXaxa"
+            },
+            {
+              "length": 128,
+              "word_matrix": [
+                1560,
+                512,
+                2660,
+                479
+              ],
+              "labels": "xaXaxaXaxaXaxaxaxaxaXaxaxaXaXaxaXaXaXaxaXaXaxaxaxaxaXaxaxaxaxaXaXaxaxaXaXaxaxaXaXaXaxaXaXaxaxaXaXaXaXaXaXaXaxaXaxaXaxaXaXaxaxaXa"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                3102,
+                1761,
+                1720,
+                3033
+              ],
+              "labels": "xaXaXaXa"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                3076,
+                3427,
+                751,
+                3011
+              ],
+              "labels": "xaXaxaxa"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 1,
+            "5_good": 1,
+            "4_good": 2,
+            "3_good": 1,
+            "2_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 1631,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "oriented_chords": [
+              [
+                545,
+                1201
+              ],
+              [
+                1636,
+                1200
+              ],
+              [
+                546,
+                1637
+              ]
+            ],
+            "chords": 3,
+            "cuts": [
+              546,
+              1201,
+              1637
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  3934,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                1880,
+                2633,
+                2830,
+                15
+              ],
+              "center_label": "x",
+              "denominator": 2830,
+              "beta": 3934
+            }
+          }
+        },
+        {
+          "t": 570,
+          "c": 316,
+          "delta": 796,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 2813,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaXaXaXaXaXaxaXaXaxaXaXaXaXaxaxaXaXaXaXaXaXaxaXaxaxaxaxaxaXaXaxaxaxaXaXaXaxaxaXaXaXaxaXaxaxaxaXaxaxaxaxaXaxaXaxaXaXaXaxaXaxaxaxaxaXaxaxaxaXaXaxaxaXaxaxaxaxaXaXaXaxaXaXaxaXaxaXaXaXaXaXaxaxaxaxaxaxaXaXaXaXaXaXaxaxaXaxaxaXaXaxaxaxaXaxaxaXaxaxaXaXaxaXaxaXaXaxaxaXaXaXaxaXaxaxaXaXaxaXaXaxaxaxaXaxaxaXaxaXaXaxaxaXaXaXaxaXaXaxaXaxaXaXaXaxaXaxaxaxaxaxaXaXaxaxaxaxaXaXaxaXaxaxaxaXaXaXaxaxaxaxaxaXaXaXaxaXaXaXaXaXaxaxaxaXaXaXaXaXaXaXaxaXaxaXaxaxaxaXaxaxaxaXaxaxaXaXaXaXaXaXaxaXaxaXaxaXaxaxaxaxaXaxaxaxaXaXaxaXaxaxaxaxaXaXaXaxaxaxaXaXaxaXaxaxaXaXaXaxaxaxaXaXaxaXaXaxaXaXaXaxaXaXaxaxaxaXaXaxaxaxaxaxaXaxaxaxaxaXaxaXaXaxaxaXaXaXaXaxaXaxaXaXaxaXaxaxaxaxaXaxaXaXaxaXaxaxaXaXaXaxaxaxaXaXaxaXaXaXaXaXaxaXaxaxaXaXaXaxaXaxaXaxaXaxaxaxaxaXaXaxaXaXaxaxaxaxaXaXaxaxaXaxaxaXaxaxaXaXaXaXaxaXaxaxaxaXaxaXaXaxaxaXaxaXaxaXaxaxaXaXaXaXaXaxaXaXaxaXaxaXaXaxaxaXaXaXaxaXaXaXaXaXaxaxaXaXaXaXaxaxaxaxaXaXaxaXaXaXaXaxaXaXaxaxaXaXaXaxaXaXaXaxaxaxaXaXaXaxaxaxaxaXaxaXaXaxaxaXaXaXaXaXaxaxaxaXaxaxaxaxaXaXaXaXaXaxaXaxaxaxaxaxaxaxaxaxaxaXaxaxaXaxaxaXaxaXaxaxaXaXaxaxaXaXaXaxaXaxaxaxaXaxaXaxaXaXaxaXaxaxaXaxaXaxaxaxaXaXaxaXaXaxaXaxaXaXaxaXaXaxaXaxaXaXaXaXaXaxaxaxaxaXaXaxaxaXaxaxaxaXaXaXaXaxaXaxaxaxaXaXaXaXaxaXaXaXaXaxaxaXaXaxaxaxaXaXaXaxaXaXaxaXaxaxaxaxaxaxaXaXaxaXaxaxaXaXaXaXaXaxaxaxaxaxaXaxaxaXaXaxaXaXaxaxaXaxaXaXaxaxaxaXaXaxaxaXaxaxaxaxaxaxaXaxaXaxaxaXaXaxaxaxaXaXaxaXaxaxaXaxaxaXaxaxaxaXaxaxaXaXaXaxaXaXaXaxaXaXaXaXaXaxaxaXaXaxaxaXaxaXaXaXaxaXaxaxaXaXaxaxaXaXaXaXaXaxaXaXaXaxaXaXaXaxaxaXaxaxaxaXaxaxaXaxaxaXaxaXaXaxaxaxaXaXaxaxaXaxaXaxaxaxaxaxaxaXaxaxaXaXaxaxaxaXaXaxaXaxaxaXaXaxaXaXaxaxaXaxaxaxaxaxaXaXaXaXaXaxaxaXaxaXaXaxaxaxaxaxaxaXaxaXaXaxaXaXaXaxaxaxaXaXaxaxaXaXaXaXaxaXaXaXaXaxaxaxaXaxaXaXaXaXaxaxaxaXaxaxaXaXaxaxaxaxaXaXaXaXaXaxaXaxaXaXaxaXaXaxaXaxaXaXaxaXaXaxaxaxaXaxaXaxaxaXaxaXaXaxaXaxaXaxaxaxaXaxaXaXaXaxaxaXaXaxaxaXaxaXaxaxaXaxaxaXaxaxaxaxaxaxaxaxaxaxaXaxaXaXaXaXaXaxaxaxaxaXaxaxaxaXaXaXaXaXaxaxaXaXaxaXaxaxaxaxaXaXaXaxaxaxaXaXaXaxaXaXaXaxaxaXaXaxaXaXaXaXaxaXaXaxaxaxaxaXaXaXaXaxaxaXaXaXaXaXaxaXaXaXaxaxaXaXaxaXaxaXaXaxaXaXaXaXaXaxaxaXaxaXaxaXaxaxaXaXaxaXaxaxaxaXaxaXaXaXaXaxaxaXaxaxaXaxaxaXaXaxaxaxaxaXaXaxaXaXaxaxaxaxaXaxaXaxaXaxaXaXaXaxaxaXaxaXaXaXaXaXaxaXaXaxaxaxaXaXaXaxaxaXaxaXaXaxaXaxaxaxaxaXaxaXaXaxaXaxaXaXaXaXaxaxaXaXaxaXaxaxaxaxaXaxaxaxaxaxaXaXaxaxaxaXaXaxaXaXaXaxaXaXaxaXaXaxaxaxaXaXaXaxaxaXaxaXaXaxaxaxaXaXaXaxaxaxaxaXaxaXaXaxaxaxaXaxaxaxaxaXaxaXaxaXaxaXaXaXaXaXaXaxaxaXaxaxaxaXaxaxaxaXaxaXaxaXaXaXaXaXaXaXaxaxaxaXaXaXaXaXaxaXaXaXaxaxaxaxaxaXaXaXaxaxaxaXaxaXaXaxaxaxaxaXaXaxaxaxaxaxaXaxaXaXaXaxaXaxaXaXaxaXaXaXaxaxaXaXaxaXaxaxaXaxaxaxaXaXaxaXaXaxaxaXaxaXaXaXaxaxaXaXaxaXaxaXaXaxaxaXaxaxaXaxaxaxaXaXaxaxaXaxaxaXaXaXaXaXaXaxaxaxaxaxaxaXaXaXaXaXaxaXaxaXaXaxaXaXaXaxaxaxaxaXaxaxaXaXaxaxaxaXaxaxaxaxaXaxaXaXaXaxaXaxaXaxaxaxaxaXaxaxaxaXaxaXaXaXaxaxaXaXaXaxaxaxaXaXaxaxaxaxaxaXaxaXaXaXaXaXaXaxaxaXaXaXaXaxaXaXaxaXaXaXaXaXaxax"
+            },
+            {
+              "length": 536,
+              "word_matrix": [
+                2857,
+                1826,
+                3264,
+                1919
+              ],
+              "labels": "xaXaXaXaXaxaxaxaxaXaXaxaxaxaXaXaXaxaXaXaXaxaxaxaXaXaxaXaxaxaxaXaxaXaXaXaxaxaXaXaxaxaxaXaxaXaXaxaXaXaXaXaxaXaXaxaXaXaxaxaxaXaxaXaXaXaXaXaxaxaxaxaxaxaXaxaxaXaxaXaXaxaXaXaxaXaxaXaxaxaXaxaXaxaxaxaXaxaXaXaXaXaXaXaXaXaxaXaxaXaXaxaXaxaxaxaxaXaXaxaXaxaxaXaxaXaXaxaxaxaXaxaXaxaXaxaxaxaxaXaXaXaXaxaxaXaXaXaxaxaxaXaxaxaxaXaXaXaxaxaXaxaXaXaXaxaXaxaxaxaXaXaxaxaXaXaXaxaXaxaxaXaxaxaxaxaXaxaxaXaxaxaXaXaXaxaXaxaxaxaxaxaXaXaXaXaXaXaxaXaXaxaXaxaxaXaxaxaXaxaXaxaXaXaxaXaxaXaXaXaxaXaxaxaxaxaxaxaxaxaXaxaXaxaxaXaxaXaXaXaXaxaxaXaxaXaXaxaXaxaxaXaXaXaxaXaxaXa"
+            },
+            {
+              "length": 160,
+              "word_matrix": [
+                1870,
+                4081,
+                2723,
+                4069
+              ],
+              "labels": "xaxaXaxaxaXaXaXaXaXaXaXaXaxaXaxaXaXaxaXaXaxaxaXaXaxaXaXaXaxaXaXaXaXaxaxaXaXaxaXaXaxaXaXaXaXaXaXaXaXaXaXaXaxaXaXaXaXaXaxaXaXaxaxaxaXaXaXaXaxaxaxaXaxaXaxaxaXaXaxa"
+            },
+            {
+              "length": 160,
+              "word_matrix": [
+                2542,
+                1340,
+                955,
+                325
+              ],
+              "labels": "xaxaXaXaxaxaXaxaxaXaxaxaxaxaxaxaxaxaxaxaxaXaxaxaxaxaxaXaxaxaXaXaXaxaxaxaxaXaXaXaxaXaxaXaXaxaxaXaXaXaxaXaXaxaxaxaxaxaxaxaxaXaxaXaxaxaXaxaxaXaXaxaxaXaxaxaxaXaxaxa"
+            },
+            {
+              "length": 112,
+              "word_matrix": [
+                2073,
+                1873,
+                2890,
+                1812
+              ],
+              "labels": "xaxaXaxaXaXaxaXaXaxaxaxaXaXaXaxaxaxaxaXaxaXaXaXaxaXaxaXaXaXaxaXaxaxaXaxaxaXaXaXaxaxaxaXaXaXaXaxaXaxaxaxaXaxaXaxa"
+            },
+            {
+              "length": 260,
+              "word_matrix": [
+                2377,
+                2039,
+                961,
+                1350
+              ],
+              "labels": "xaxaXaxaXaXaXaxaxaXaXaxaXaxaxaXaXaXaXaXaxaxaxaxaxaXaxaXaxaXaXaxaxaXaXaXaxaxaXaXaxaXaxaXaXaxaXaXaXaXaxaXaxaxaxaxaxaXaxaxaxaXaxaxaxaXaXaxaXaxaxaxaXaXaxaxaXaxaXaXaxaxaxaxaxaXaXaXaXaXaxaXaxaXaxaxaXaXaxaxaxaXaXaxaxaXaxaXaxaxaXaxaxaxaxaXaxaXaXaXaXaXaxaXaXaXaxaXaXaXa"
+            },
+            {
+              "length": 36,
+              "word_matrix": [
+                818,
+                1623,
+                3829,
+                3884
+              ],
+              "labels": "xaXaXaxaxaXaXaXaxaXaxaxaXaXaxaxaxaXa"
+            },
+            {
+              "length": 10,
+              "word_matrix": [
+                2944,
+                3761,
+                1601,
+                2243
+              ],
+              "labels": "xaXaXaXaxa"
+            },
+            {
+              "length": 10,
+              "word_matrix": [
+                3374,
+                1534,
+                157,
+                3693
+              ],
+              "labels": "xaxaXaXaxa"
+            }
+          ],
+          "histogram": {
+            "5_good": 2,
+            "4_good": 1,
+            "5_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 1940,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              1,
+              3,
+              2,
+              4
+            ],
+            "oriented_chords": [
+              [
+                132,
+                267
+              ],
+              [
+                133,
+                880
+              ],
+              [
+                1920,
+                879
+              ],
+              [
+                268,
+                1921
+              ]
+            ],
+            "chords": 4,
+            "cuts": [
+              133,
+              268,
+              880,
+              1921
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  1347,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                3713,
+                595,
+                3713,
+                165
+              ],
+              "center_label": "X",
+              "denominator": 3713,
+              "beta": 1347
+            }
+          }
+        },
+        {
+          "t": 618,
+          "c": 1465,
+          "delta": 1223,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 3609,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaxaXaXaxaxaxaxaxaXaXaXaxaxaXaXaxaxaxaXaxaXaXaxaXaXaXaxaxaXaxaXaxaxaxaxaxaxaXaXaxaxaxaXaxaXaXaXaxaXaxaXaXaXaxaXaxaxaXaXaXaxaxaXaxaXaxaxaXaXaXaxaxaxaXaxaXaXaxaxaxaXaxaxaXaxaXaxaxaxaxaxaxaXaxaxaXaxaxaxaXaxaXaxaXaxaxaXaxaXaxaxaXaXaxaxaXaxaXaxaxaxaxaXaXaXaxaxaXaXaXaxaXaxaXaXaXaXaxaxaXaxaXaXaxaXaXaxaxaxaXaxaXaXaXaxaXaxaXaxaXaxaxaXaXaxaXaXaXaXaxaXaxaXaxaxaXaXaxaxaXaXaxaxaxaxaxaXaxaXaXaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaXaXaxaxaxaXaxaXaXaxaxaXaXaxaXaxaxaxaxaXaxaxaxaxaxaXaXaxaxaxaxaxaXaxaXaxaxaxaXaXaXaXaXaxaXaxaxaXaXaXaXaXaxaXaxaxaxaXaxaXaxaXaXaxaxaXaXaXaXaXaxaxaxaxaXaXaxaxaXaxaxaXaXaXaXaXaxaxaxaXaXaxaxaxaXaxaXaXaXaxaXaXaXaXaXaxaXaXaXaXaxaxaXaXaxaXaXaxaxaxaXaxaXaXaXaXaxaxaXaXaxaxaxaXaXaxaXaXaXaXaxaXaXaxaXaxaxaXaXaxaXaXaxaxaXaXaXaXaxaXaxaXaxaXaXaXaxaxaxaxaxaXaXaxaXaXaXaXaxaxaxaxaXaXaxaXaXaxaXaXaXaXaxaXaXaxaXaXaXaXaXaXaxaXaxaXaxaxaXaXaXaxaXaxaXaxaXaXaxaXaXaxaXaXaxaXaxaXaXaXaXaxaXaxaXaXaXaXaxaxaxaXaXaxaXaxaxaXaxaXaXaXaXaXaXaXaxaXaXaXaXaXaxaXaXaxaxaXaXaxaXaXaXaXaxaxaXaxaxaXaXaXaXaxaXaxaxaXaXaXaXaXaxaxaxaXaxaXaxaXaXaxaXaxaXaxaXaxaxaXaXaXaxaxaxaxaxaxaxaXaXaxaXaXaxaXaxaxaxaxaxaxaxaxaXaXaxaXaxaXaXaXaxaxaXaxaxaxaXaxaXaXaxaXaXaxaxaXaXaXaXaXaXaxaxaxaXaxaXaxaXaxaXaxaXaxaxaxaxaxaXaxaXaxaxaxaXaxaXaXaxaXaXaxaXaXaXaxaxaXaXaxaXaxaXaXaXaXaXaxaXaxaXaXaxaXaXaXaxaxaxaXaXaXaxaxaxaxaXaXaXaXaXaXaxaXaXaxaXaXaxaXaXaxaxaxaXaXaxaxaXaxaxaXaXaxaxaxaXaXaXaXaxaxaXaxaxaXaxaXaXaxaXaXaXaxaXaXaXaxaXaxaxaXaXaxaXaxaxaxaxaxaXaxaXaxaXaXaXaXaxaXaxaxaXaxaXaXaXaXaxaxaxaxaXaXaxaxaXaXaXaxaXaxaxaxaXaXaXaxaXaXaxaxaxaXaXaxaxaXaxaxaXaxaXaxaXaXaXaXaXaXaxaxaxaXaxaxaXaxaxaxaxaXaXaxaxaxaxaXaXaXaxaXaXaxaxaxaXaXaXaxaXaXaXaxaXaxaxaXaXaxaXaxaxaXaXaXaXaXaxaxaXaXaXaXaXaXaXaxaxaXaxaxaxaxaXaXaXaxaXaXaxaXaxaXaXaXaXaXaxaXaxaxaXaxaXaxaxaxaxaXaXaxaxaXaXaxaXaXaxaxaxaXaXaxaXaxaxaXaXaxaxaXaxaXaXaxaxaXaXaxaXaxaxaxaXaXaXaxaxaxaxaxaxaxaxaxaxaXaXaXaXaxaxaXaxaxaXaXaXaXaxaxaxaxaxaxaxaxaxaxaXaXaXaxaxaxaXaxaXaXaxaxaXaXaxaXaxaxaXaXaxaxaXaxaXaXaxaxaxaXaXaxaXaXaxaxaXaXaxaxaxaxaXaxaXaxaxaXaxaXaXaXaXaXaxaXaxaXaXaxaXaXaXaxaxaxaxaXaxaxaXaXaXaXaXaXaXaxaxaXaXaXaXaXaxaxaXaxaXaXaxaxaXaxaXaXaXaxaXaXaXaxaxaxaXaXaxaXaXaXaxaxaxaxaXaXaxaxaxaxaXaxaxaXaxaxaxaXaXaXaXaXaXaxaXaxaXaxaxaXaxaxaXaXaxaxaxaXaXaxaXaXaXaxaxaxaXaxaXaXaXaxaxaXaXaxaxaxaxaXaXaXaXaxaXaxaxaXaxaXaXaXaXaxaXaxaXaxaxaxaxaxaXaxaXaXaxaxaXaxaXaXaXaxaXaXaXaxaXaXaxaXaxaxaXaxaxaXaXaXaXaxaxaxaXaXaxaxaXaxaxaXaXaxaxaxaXaXaxaXaXaxaXaXaxaXaXaXaXaXaXaxaxaxaxaXaXaXaxaxaxaXaXaXaxaXaXaxaXaxaXaXaXaXaXaxaXaxaXaXaxaxaXaXaXaxaXaXaxaXaXaxaXaxaxaxaXaxaXaxaxaxaxaxaXaxaXaxaXaxaXaxaXaxaxaxaXaXaXaXaXaXaxaxaXaXaxaXaXaxaXaxaxaxaXaxaxaXaXaXaxaXaxaXaXaxaxaxaxaxaxaxaxaXaxaXaXaxaXaXaxaxaxaxaxaxaxaXaXaXaxaxaXaxaXaxaXaxaXaXaxaXaxaXaxaxaxaXaXaXaXaXaxaxaXaxaXaXaXaXaxaxaXaxaxaXaXaXaXaxaXaXaxaxaXaXaxaXaXaXaXaXaxaXaXaXaXaXaXaXaxaXaxaxaXaxaXaXaxaxaxaXaXaXaXaxaXaxaXaXaXaXaxaXaxaXaXaxaXaXaxaXaXaxaXaxaXaxaXaXaXaxaxaXaxaXaxaXaXaXaXaXaXaxaXaXaxaXaXaXaXaxaXaXaxaXaXaxaxaxaxaXaXaXaXaxaXaXaxaxaxaxaxaXaXaXaxaXaxaXaxaXaXaXaXaxaxaXaXaxaXaXaxaxaXaxaXaXaxaXaXaXaXaxaXaXaxaxaxaXaXaxaxaXaXaXaXaxaXaxaxaxaXaXaxaXaXaxaxaXaXaXaXaxaXaXaXaXaXaxaXaXaXaxaXaxaxaxaXaXaxaxaxaXaXaXaXaXaxaxaXaxaxaXaXaxaxaxaxaXaXaXaXaXaxaxaXaXaxaXaxaXaxaxaxaXaxaXaXaXaXaXaxaxaXaxaXaXaXaXaXaxaxaxaXaxaXaxaxaxaxaxaXaXaxaxaxaxaxaXaxaxaxaxaXaxaXaXaxaxaXaXaxaXaxaxaxaXaXaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaXaXaxaXaxaxaxaxaxaXaXaxaxaXaXaxaxaXaxaXaxaXaXaXaXaxaXaXaxaxaXaxaXaxaXaxaXaXaXaxaXaxaxaxaXaXaxaXaXaxaXaxaxaXaXaXaXaxaXaxaXaXaXaxaxaXaXaXaxaxaxaxaXaxaXaxaxaXaXaxaxaXaxaXaxaxaXaxaXaxaXaxaxaxaXaxaxaXaxaxaxaxaxaxaXaxaXaxaxaXaxaxaxaXaXaxaXaxaxaxaXaXaXaxaxaXaxaXaxaxaXaXaXaxaxaXaxaXaXaXaxaXaxaXaXaXaxaXaxaxaxaXaXaxaxaxaxaxaxaXaxaXaxaxaXaXaXaxaXaXaxaXaxaxaxaXaXaxaxaXaXaXaxaxaxaxaxaXaXaxaXax"
+            },
+            {
+              "length": 432,
+              "word_matrix": [
+                1034,
+                471,
+                2105,
+                3085
+              ],
+              "labels": "xaxaxaxaXaxaxaXaxaXaxaxaxaXaXaXaxaXaxaxaXaxaXaxaxaXaXaxaxaxaxaXaxaXaxaxaxaXaXaxaxaxaxaxaXaxaXaXaXaXaxaxaXaXaXaxaxaxaxaxaxaXaXaXaXaxaxaXaxaXaxaXaXaxaXaXaxaXaXaXaxaXaxaXaxaXaxaXaxaxaXaxaXaXaXaxaXaXaXaXaxaXaXaxaxaxaXaxaXaXaXaXaxaXaXaxaXaxaXaXaXaxaxaxaXaxaXaXaxaXaxaXaXaxaxaXaXaXaXaxaXaxaXaXaXaxaxaXaXaXaXaXaxaXaxaxaxaxaXaXaxaxaxaXaXaXaXaXaXaxaxaxaxaXaXaxaXaxaXaxaxaXaxaxaXaxaxaxaXaxaXaxaXaxaXaxaXaXaxaXaxaxaxaXaxaxaxaxaXaxaxaXaXaXaxaXa"
+            },
+            {
+              "length": 40,
+              "word_matrix": [
+                1298,
+                3308,
+                3437,
+                4063
+              ],
+              "labels": "xaxaXaxaxaXaxaxaxaxaXaXaxaXaXaxaXaXaXaXa"
+            },
+            {
+              "length": 16,
+              "word_matrix": [
+                3573,
+                678,
+                863,
+                3061
+              ],
+              "labels": "xaxaxaXaXaXaXaxa"
+            }
+          ],
+          "histogram": {
+            "4_good": 2,
+            "5_good": 2
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 3595,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              2,
+              3,
+              1,
+              4
+            ],
+            "oriented_chords": [
+              [
+                101,
+                190
+              ],
+              [
+                597,
+                1707
+              ],
+              [
+                598,
+                189
+              ],
+              [
+                102,
+                1708
+              ]
+            ],
+            "chords": 4,
+            "cuts": [
+              102,
+              190,
+              598,
+              1708
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  1407,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                2511,
+                197,
+                2511,
+                762
+              ],
+              "center_label": "X",
+              "denominator": 2511,
+              "beta": 1407
+            }
+          }
+        },
+        {
+          "t": 671,
+          "c": 480,
+          "delta": 447,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 4097,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaxaXaxaXaXaXaXaXaxaxaXaXaxaxaxaXaXaXaXaXaXaXaXaXaXaxaXaxaXaXaxaxaXaxaxaxaXaxaXaXaxaxaXaXaXaXaxaxaXaxaXaXaXaxaXaxaXaxaxaxaxaxaXaXaxaXaXaxaXaxaXaxaxaXaXaXaxaXaxaXaxaXaXaxaxaxaxaXaxaXaxaXaxaXaxaxaxaxaxaxaXaxaxaXaxaXaxaxaXaxaxaXaxaXaxaXaXaxaXaxaXaXaxaXaXaxaxaXaxaXaxaXaXaxaXaxaXaXaxaxaXaXaXaXaxaXaxaXaXaXaXaxaXaXaxaxaXaxaxaxaXaxaxaxaXaxaxaXaxaxaxaxaXaxaXaxaXaxaXaXaxaxaxaXaXaxaXaXaXaxaXaxaXaXaXaXaxaxaXaXaXaxaxaXaXaxaXaXaxaxaXaXaXaXaXaxaxaXaXaxaxaxaxaXaXaXaXaXaxaxaXaxaXaXaXaxaxaxaxaXaxaXaxaXaxaXaXaxaxaxaXaxaxaxaxaXaXaxaXaXaXaxaXaXaXaxaxaXaXaxaxaXaxaXaxaXaXaxaxaXaxaXaxaxaxaXaXaxaXaxaxaxaXaxaxaxaxaXaxaXaxaXaxaXaxaXaXaxaxaXaXaXaXaXaXaxaxaxaXaXaxaXaxaxaXaxaXaXaXaxaXaXaxaXaxaXaxaxaxaXaxaxaxaxaxaXaxaxaxaxaxaXaxaxaXaxaXaxaXaXaxaXaXaxaxaxaXaXaXaxaXaxaXaxaxaxaXaxaxaxaxaxaXaxaxaxaXaXaxaxaXaXaXaXaXaxaxaXaxaxaxaXaXaxaXaxaXaxaxaXaXaxaXaxaxaxaXaXaxaXaXaXaxaxaxaxaxaxaxaxaXaxaXaXaxaxaXaxaxaXaxaxaxaXaxaxaXaxaxaXaXaXaXaXaxaxaxaxaxaxaxaxaXaxaxaXaxaxaxaXaXaXaxaxaXaxaXaXaxaxaxaXaxaXaxaxaxaXaXaxaxaXaXaxaxaxaxaXaxaXaXaxaxaXaxaxaxaXaxaxaXaXaXaxaxaXaXaXaXaxaxaxaXaXaXaXaXaXaxaxaXaxaXaxaXaXaXaxaXaxaxaXaXaXaxaxaxaxaXaxaxaXaxaxaXaXaxaXaXaxaxaXaxaxaXaXaxaXaxaXaxaXaXaXaxaXaxaXaXaxaxaXaXaXaXaxaxaXaxaxaXaxaxaXaXaxaXaxaXaXaxaXaXaxaxaxaXaxaxaxaxaXaXaXaXaXaXaxaXaXaxaXaxaXaxaxaxaxaxaXaXaxaxaXaXaxaxaxaXaxaxaXaxaXaXaXaXaxaXaXaXaxaxaXaXaXaXaXaXaxaxaxaxaXaXaxaxaXaxaxaXaxaXaxaxaXaXaxaxaXaxaxaxaxaxaXaxaxaXaXaxaxaxaxaXaXaxaXaXaxaxaxaxaXaxaxaxaxaXaxaXaXaxaXaXaXaxaxaxaXaXaxaxaxaXaxaxaxaXaXaxaxaxaXaXaxaxaXaxaxaXaxaxaxaxaXaXaXaXaXaxaXaxaxaxaxaXaxaxaxaXaXaxaXaXaXaxaxaxaxaXaXaXaxaxaxaxaXaXaxaxaxaXaxaxaxaxaXaxaXaXaXaxaxaXaxaxaXaXaxaxaxaxaXaxaxaxaxaxaxaXaXaxaXaXaXaXaxaXaXaXaxaxaXaXaXaxaxaXaXaXaXaXaXaXaxaXaxaXaXaXaxaxaXaxaXaXaxaxaxaXaxaXaXaXaxaxaXaXaXaXaxaXaxaxaxaxaXaxaxaxaXaXaXaXaxaXaxaxaxaXaxaXaxaXaXaxaXaXaxaxaXaxaXaxaxaXaXaxaXaXaXaXaxaXaXaXaxaxaxaXaxaXaXaXaXaXaXaxaXaxaXaXaXaxaXaXaxaXaXaXaXaXaXaxaXaxaXaXaXaXaxaxaxaXaxaxaXaxaxaxaXaxaxaxaxaxaxaXaxaXaxaxaXaXaxaxaXaXaXaXaXaXaxaXaxaXaxaXaXaxaxaXaXaXaXaxaxaxaxaXaXaxaXaxaxaXaxaXaxaxaxaxaxaXaXaxaXaXaxaxaXaXaXaXaXaxaXaXaXaxaxaxaXaxaxaxaXaXaXaxaXaXaXaXaXaxaxaXaXaxaXaXaxaxaxaxaxaXaxaXaxaxaXaxaXaXaxaxaxaxaXaXaXaXaxaxaXaXaxaXaxaXaxaXaXaXaXaXaXaxaxaXaXaxaxaXaxaXaxaxaxaxaxaxaXaxaxaxaXaxaxaXaxaxaxaXaXaXaXaxaXaxaXaXaXaXaXaXaxaXaXaxaXaXaXaxaXaxaXaXaXaXaXaXaxaXaxaxaxaXaXaXaxaXaXaXaXaxaXaXaxaxaXaxaXaxaxaXaXaxaXaXaxaXaxaXaxaxaxaXaxaXaXaXaXaxaxaxaXaxaxaxaxaXaxaXaXaXaXaxaxaXaXaXaxaXaxaxaxaXaXaxaXaxaxaXaXaXaxaXaxaXaXaXaXaXaXaXaxaxaXaXaXaxaxaXaXaXaxaXaXaXaXaxaXaXaxaxaxaxaxaxaXaxaxaxaxaXaXaxaxaXaxaxaXaXaXaxaXaxaxaxaxaXaxaxaxaXaXaxaxaxaxaXaXaXaxaxaxaxaXaXaXaxaXaXaxaxaxaXaxaxaxaxaXaxaXaXaXaXaXaxaxaxaxaXaxaxaXaxaxaXaXaxaxaxaXaXaxaxaxaXaxaxaxaXaXaxaxaxaXaXaXaxaXaXaxaXaxaxaxaxaXaxaxaxaxaXaXaxaXaXaxaxaxaxaXaXaxaxaXaxaxaxaxaxaXaxaxaXaXaxaxaXaxaXaxaxaXaxaxaXaXaxaxaxaxaXaXaXaXaXaXaxaxaXaXaXaxaXaXaXaXaxaXaxaxaXaxaxaxaXaXaxaxaXaXaxaxaxaxaxaXaxaXaxaXaXaxaXaXaXaXaXaXaxaxaxaxaXaxaxaxaXaXaxaXaXaxaXaxaXaXaxaxaXaxaxaXaxaxaXaXaXaXaxaxaXaXaxaXaxaXaXaXaxaXaxaXaxaXaXaxaxaXaxaxaXaXaxaXaXaxaxaXaxaxaXaxaxaxaxaXaXaXaxaxaXaxaXaXaXaxaXaxaXaxaxaXaXaXaXaXaXaxaxaxaXaXaXaXaxaxaXaXaXaxaxaXaxaxaxaXaxaxaXaXaxaXaxaxaxaxaXaXaxaxaXaXaxaxaxaXaxaXaxaxaxaXaXaxaXaxaxaXaXaXaxaxaxaXaxaxaXaxaxaxaxaxaxaxaxaXaXaXaXaXaxaxaXaxaxaXaxaxaxaXaxaxaXaxaxaXaXaxaXaxaxaxaxaxaxaxaxaXaXaXaxaXaXaxaxaxaXaxaXaXaxaxaXaxaXaxaXaXaxaxaxaXaxaxaXaXaXaXaXaxaxaXaXaxaxaxaXaxaxaxaxaxaXaxaxaxaXaxaXaxaXaXaXaxaxaxaXaXaxaXaXaxaXaxaXaxaxaXaxaxaxaxaxaXaxaxaxaxaxaXaxaxaxaXaxaXaxaXaXaxaXaXaXaxaXaxaxaXaxaXaXaxaxaxaXaXaXaXaXaXaxaxaXaXaxaXaxaXaxaXaxaXaxaxaxaxaXaxaxaxaXaxaXaXaxaxaxaXaxaXaxaxaXaXaxaXaxaXaxaxaXaXaxaxaXaXaXaxaXaXaXaxaXaXaxaxaxaxaXaxaxaxaXaXaxaXaxaXaxaXaxaxaxaxaXaXaXaxaXaxaxaXaXaXaXaXaxaxaxaxaXaXaxaxaXaXaXaXaXaxaxaXaXaxaXaXaxaxaXaXaXaxaxaXaXaXaXaxaXaxaXaXaXaxaXaXaxaxaxaXaXaxaXaxaXaxaXaxaxaxaxaXaxaxaXaxaxaxaXaxaxaxaXaxaxaXaXaxaXaXaXaXaxaXaxaXaXaXaXaxaxaXaXaxaXaxaXaXaxaXaxaXaxaxaXaXaxaXaXaxaXaxaXaXaxaXaxaXaxaxaXaxaxaXaxaXaxaxaXaxaxaxaxaxaxaXaxaXaxaXaxaXaxaxaxaxaXaXaxaXaxaXaxaXaXaXaxaxaXaxaXaxaXaXaxaXaXaxaxaxaxaxaXaxaXaxaXaXaXaxaXaxaxaXaXaXaXaxaxaXaXaxaXaxaxaxaXaxaxaXaXaxaXaxaXaXaXaXaXaXaXaXaXaXaxaxaxaXaXaxaxaXaXaXaXaXaxaXaxax"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 2,
+            "4_good": 2,
+            "5_good": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 2057,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              2,
+              1,
+              3,
+              4
+            ],
+            "oriented_chords": [
+              [
+                170,
+                1060
+              ],
+              [
+                1416,
+                1059
+              ],
+              [
+                171,
+                1789
+              ],
+              [
+                1417,
+                1790
+              ]
+            ],
+            "chords": 4,
+            "cuts": [
+              171,
+              1060,
+              1417,
+              1790
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  1990,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                2439,
+                670,
+                3731,
+                477
+              ],
+              "center_label": "x",
+              "denominator": 3731,
+              "beta": 1990
+            }
+          }
+        },
+        {
+          "t": 675,
+          "c": 3341,
+          "delta": 2214,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 757,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaXaxaXaXaXaXaXaxaXaxaxaxaxaXaXaxaxaxaxaxaxaXaxaXaXaxaxaXaxaxaxaxaXaxaxaxaXaXaXaXaXaXaXaXaxaXaxaxaxaxaxaxaxaXaxaxaXaxaxaxaXaxaxaXaXaXaXaXaxaxaXaXaXaXaxaXaxaXaXaxaxaxaXaXaXaXaXaXaXaxaXaxaxaXaxaxaXaXaXaXaxaXaxaxaxaxaXaxaXaXaXaXaxaxaXaxaxaXaXaXaXaXaXaXaXaxaXaXaxaxaxaxaXaXaXaXaxaxaxaxaxaxaXaXaXaxaXaxaXaxaXaxaxaXaXaxaXaXaxaxaXaXaxaXaXaXaxaXaXaxaxaXaXaXaXaxaXaXaxaXaxaxaxaxaXaxaXaxaXaxaXaxaxaxaxaXaxaXaXaxaXaXaXaXaxaxaXaXaxaXaXaXaxaXaXaxaxaXaXaxaXaXaxaxaXaxaXaxaXaxaXaXaXaxaxaxaxaxaxaXaXaXaXaxaxaxaxaXaXaxaXaXaXaXaXaXaXaXaxaxaXaxaxaXaXaXaXaxaXaxaxaxaxaXaxaXaXaXaXaxaxaXaxaxaXaxaXaXaXaXaXaXaXaxaxaxaXaXaxaXaxaXaXaXaXaxaxaXaXaXaXaXaxaxaXaxaxaxaXaxaxaXaxaxaxaxaxaxaxaXaxaXaXaXaXaXaXaXaXaxaxaxaXaxaxaxaxaXaxaxaXaXaxaXaxaxaxaxaxaxaXaXaxaxaxaxaXaxaXaXaXaXaXaxaXaXax"
+            },
+            {
+              "length": 1276,
+              "word_matrix": [
+                1369,
+                1409,
+                913,
+                2858
+              ],
+              "labels": "xaXaXaxaXaXaxaxaxaXaXaXaxaxaxaXaxaxaXaxaxaxaxaxaXaxaXaXaxaxaxaxaXaxaXaXaXaxaXaxaxaXaXaxaXaxaxaxaXaxaxaxaxaXaxaxaXaXaxaxaxaxaXaxaxaxaXaxaXaXaxaxaxaxaXaxaxaxaXaXaXaXaxaxaxaxaXaxaxaxaxaxaXaXaxaxaxaxaxaXaXaXaXaXaXaxaXaxaxaxaxaXaXaXaxaXaxaxaXaXaXaXaXaXaxaXaXaxaxaxaxaXaXaxaXaXaxaXaXaxaxaxaXaxaXaxaxaxaxaXaxaXaxaXaXaXaXaxaXaXaxaXaxaxaXaXaXaXaxaXaXaxaXaXaXaXaxaxaXaXaXaXaxaXaxaxaXaxaXaxaxaXaxaxaXaxaxaXaxaXaXaXaxaXaXaxaxaXaxaXaXaXaXaXaXaxaXaxaxaXaXaxaxaxaXaXaxaXaXaXaXaxaXaXaXaxaxaxaxaXaXaxaxaXaXaxaxaxaXaXaxaXaxaxaxaxaxaXaxaXaXaxaxaXaxaXaxaxaxaXaXaXaxaXaXaxaXaXaXaxaXaxaXaxaXaxaXaXaxaxaXaXaxaXaxaXaXaxaXaXaxaxaXaXaxaxaxaXaXaxaxaxaxaxaxaxaXaXaxaxaxaxaxaxaxaxaXaxaxaXaxaxaxaXaxaXaXaxaxaxaxaXaXaXaxaxaXaXaXaxaxaxaxaxaXaxaxaXaxaxaxaXaxaXaxaXaXaXaxaXaXaxaxaxaxaXaxaxaXaxaxaxaXaxaxaxaxaXaxaxaXaxaxaXaxaXaxaxaxaxaxaxaxaxaXaXaxaxaXaxaxaXaXaXaxaxaXaxaxaxaxaxaxaXaxaXaXaxaxaxaxaXaxaxaXaXaXaXaXaxaxaXaxaxaxaXaxaXaXaxaxaxaxaxaXaxaXaxaxaXaXaXaxaXaXaxaxaxaxaxaxaxaXaXaxaxaxaxaxaxaXaxaxaxaxaXaxaXaxaxaXaXaXaXaXaxaxaxaXaXaxaXaxaxaXaXaXaxaXaXaXaXaXaXaxaxaXaxaXaxaXaxaXaXaXaxaXaxaxaXaXaXaXaxaxaXaXaXaxaxaXaxaXaxaxaxaxaxaXaXaxaxaXaxaxaxaXaxaxaxaxaXaXaXaxaxaxaXaxaXaxaXaXaXaXaxaxaXaxaxaXaXaxaXaXaXaxaxaxaXaxaXaXaXaxaXaxaxaXaxaXaxaxaXaXaXaXaXaXaXaxaxaXaXaxaxaXaxaxaxaxaXaXaxaxaxaxaxaXaXaxaXaxaXaXaxaXaXa"
+            },
+            {
+              "length": 388,
+              "word_matrix": [
+                298,
+                2131,
+                2901,
+                4034
+              ],
+              "labels": "xaxaxaXaxaxaxaXaxaxaXaxaxaxaXaXaXaXaxaxaXaxaXaxaXaXaXaXaxaXaxaXaxaXaxaxaxaxaxaxaXaXaXaXaxaXaxaXaXaXaXaxaXaXaXaxaxaXaXaXaXaXaxaXaXaXaxaxaxaXaxaXaXaxaxaxaXaxaxaXaxaXaXaxaXaxaxaXaXaxaxaxaXaXaxaXaxaXaXaXaXaxaXaXaxaXaxaXaxaXaxaXaxaxaXaxaXaXaxaXaxaXaxaXaXaxaXaxaxaxaxaXaxaxaxaxaxaxaxaXaxaXaxaXaxaXaXaXaXaXaxaxaxaXaXaXaXaXaxaXaXaXaxaXaXaxaXaxaXaXaXaxaxaxaXaxaxaXaXaxaxaxaXaXaXaxaXaxaXaXaXaxaXaXa"
+            },
+            {
+              "length": 388,
+              "word_matrix": [
+                1020,
+                1965,
+                1640,
+                3348
+              ],
+              "labels": "xaXaXaXaxaXaXaXaXaxaXaxaXaXaXaXaxaxaxaxaxaxaXaxaXaxaXaxaXaXaXaXaxaXaxaXaxaxaXaXaXaXaxaxaxaXaxaxaXaxaxaxaXaxaxaxaXaXaxaXaXaXaxaXaxaXaXaXaxaxaxaXaXaxaxaXaxaxaxaXaXaXaxaXaxaXaXaxaXaXaXaxaXaXaXaXaXaxaxaxaXaXaXaXaXaxaXaxaXaxaXaxaxaxaxaxaxaxaXaxaxaxaxaXaxaXaXaxaXaxaXaxaXaXaxaXaxaxaXaxaXaxaXaxaXaxaXaXaxaXaXaXaXaxaXaxaXaXaxaxaxaXaXaxaxaXaxaXaXaxaXaxaxaXaxaxaxaXaXaxaXaxaxaxaXaXaXaxaXaXaXaXaXaxa"
+            },
+            {
+              "length": 1276,
+              "word_matrix": [
+                2763,
+                2068,
+                1236,
+                1208
+              ],
+              "labels": "xaXaxaxaxaxaxaXaXaXaxaxaXaXaXaxaxaxaxaXaXaxaXaxaxaxaXaxaxaXaxaxaxaxaxaxaxaxaXaXaxaxaxaxaxaxaxaXaXaxaxaxaXaXaxaxaXaXaxaXaXaxaXaxaXaXaxaxaXaXaxaXaxaXaxaXaxaXaXaXaxaXaXaxaXaXaXaxaxaxaXaxaXaxaxaXaXaxaXaxaxaxaxaxaXaxaXaXaxaxaxaXaXaxaxaXaXaxaxaxaxaXaXaXaxaXaXaXaXaxaXaXaxaxaxaXaXaxaxaXaxaXaXaXaXaXaXaxaXaxaxaXaXaxaXaXaXaxaXaxaxaXaxaxaXaxaxaXaxaXaxaxaXaxaXaXaXaXaxaxaXaXaXaXaxaXaXaxaXaXaXaXaxaxaXaxaXaXaxaXaXaXaXaxaXaxaXaxaxaxaxaXaxaXaxaxaxaXaXaxaXaXaxaXaXaxaxaxaxaXaXaxaXaXaXaXaXaXaxaxaXaxaXaXaXaxaxaxaxaXaxaXaXaXaXaXaXaxaxaxaxaxaXaXaxaxaxaxaxaXaxaxaxaxaXaXaXaXaxaxaxaXaxaxaxaxaXaXaxaXaxaxaxaXaxaxaxaxaXaXaxaxaXaxaxaxaxaXaxaxaxaXaxaXaXaxaxaXaxaXaXaXaxaXaxaxaxaxaXaXaxaXaxaxaxaxaxaXaxaxaXaxaxaxaXaXaXaxaxaxaXaXaxaXaXaxaXaXaxaXaXaxaXaxaXaXaxaxaxaxaxaXaXaxaxaxaxaXaxaxaXaXaxaxaXaXaXaXaXaXaXaxaxaXaxaXaxaxaXaxaXaXaXaxaXaxaxaxaXaXaXaxaXaXaxaxaXaxaxaXaXaXaXaxaXaxaXaxaxaxaXaXaXaxaxaxaxaXaxaxaxaXaxaxaXaXaxaxaxaxaxaXaxaXaxaxaXaXaXaxaxaXaXaXaXaxaxaXaxaXaXaXaxaXaxaXaxaXaxaxaXaXaXaXaXaXaxaXaXaXaxaxaXaxaXaXaxaxaxaXaXaXaXaXaxaxaXaxaXaxaxaxaxaXaxaxaxaxaxaxaXaXaxaxaxaxaxaxaxaXaXaxaXaXaXaxaxaXaxaXaxaxaxaxaxaXaXaxaXaxaxaxaXaxaxaXaXaXaXaXaxaxaXaxaxaxaxaXaXaxaXaxaxaxaxaxaxaXaxaxaXaXaXaxaxaXaxaxaXaXaxaxaxaxaxaxaxaxaXaxaXaxaxaXaxaxaXaxaxaxaxaXaxaxaxaXaxaxaXaxaxaxaxaXaXaxaXaXaXaxaXaxaXaxaxaxaXaxa"
+            },
+            {
+              "length": 12,
+              "word_matrix": [
+                1090,
+                2662,
+                3313,
+                2067
+              ],
+              "labels": "xaxaxaXaXaXa"
+            }
+          ],
+          "histogram": {
+            "5_nonspanning": 3,
+            "4_unit": 1,
+            "3_good": 2,
+            "4_nonspanning": 1,
+            "2_nonspanning": 1
+          },
+          "witness": {
+            "spanning": true,
+            "gain": 2231,
+            "root_vertices": 2048,
+            "root_segments": [
+              0,
+              2,
+              1,
+              3
+            ],
+            "oriented_chords": [
+              [
+                167,
+                1533
+              ],
+              [
+                1002,
+                168
+              ],
+              [
+                1001,
+                1534
+              ]
+            ],
+            "chords": 3,
+            "cuts": [
+              168,
+              1002,
+              1534
+            ],
+            "profile": [
+              {
+                "length": 4097,
+                "word_matrix": [
+                  1,
+                  833,
+                  0,
+                  1
+                ],
+                "labels": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              }
+            ],
+            "half_word": {
+              "half_length": 2048,
+              "half_word": [
+                711,
+                1282,
+                711,
+                3256
+              ],
+              "center_label": "X",
+              "denominator": 711,
+              "beta": 833
+            }
+          }
+        },
+        {
+          "t": 681,
+          "c": 1207,
+          "delta": 2854,
+          "orbit_weight": 24,
+          "canonical_profile": [
+            {
+              "length": 1929,
+              "word_matrix": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "labels": "xaXaxaxaXaXaXaXaxaxaXaXaxaxaXaxaXaXaXaxaxaxaXaxaXaXaxaXaXaxaXaXaXaXaXaxaxaXaxaXaXaxaxaXaXaXaXaXaXaXaxaxaXaXaXaxaXaXaxaxaXaxaXaXaXaXaxaXaXaxaxaxaxaxaXaxaXaxaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaxaxaXaXaXaxaXaxaxaXaxaXaXaxaxaXaxaXaxaXaXaXaXaXaXaxaxaxaXaXaxaxaxaXaxaXaxaxaxaXaxaXaXaXaxaXaxaxaxaXaxaXaXaXaxaxaxaXaXaxaXaxaXaxaXaXaxaXaxaxaxaxaxaxaxaXaxaXaxaxaXaXaXaxaXaXaXaXaxaXaXaxaXaxaxaxaxaxaXaXaXaXaxaxaxaxaxaXaXaxaXaXaxaxaxaxaxaxaXaxaxaXaxaXaXaxaXaXaXaxaXaXaXaXaxaXaXaxaXaXaxaXaxaxaxaxaxaxaXaxaXaxaxaxaxaxaxaxaXaXaXaxaxaxaxaXaxaXaXaXaxaXaXaXaxaXaXaxaXaxaxaxaxaXaxaXaxaxaxaXaxaXaXaXaXaxaxaxaxaxaxaxaXaxaXaxaxaxaXaxaXaxaxaxaxaxaxaXaxaxaXaxaXaxaXaXaxaxaXaXaXaxaXaxaxaxaxaxaXaXaXaXaxaxaxaxaxaXaxaXaxaXaXaxaxaxaxaXaXaXaXaxaxaxaxaXaXaXaXaxaxaxaXaxaxaxaxaxaxaXaXaxaxaxaXaXaXaXaXaxaxaxaXaXaXaXaXaxaXaXaXaxaXaXaxaXaxaxaXaxaXaxaxaxaXaxaxaxaXaXaxaXaxaXaxaxaXaXaXaxaXaxaXaxaxaxaxaxaXaXaxaXaxaxaXaxaXaXaxaXaxaXaxaXaxaxaXaxaxaxaxaXaxaxaXaXaxaXaxaXaxaxaXaxaxaxaXaXaxaXaXaxaxaxaXaxaXaxaXaxaXaxaXaxaXaxaxaxaXaXaxaXaXaxaxaxaXaxaxaXaxaXaxaXaXaxaxaXaxaxaxaxaXaxaxaXaxaXaxaXaxaXaXaxaXaxaxaXaxaXaXaxaxaxaxaxaXaxaXaxaXaXaXaxaxaXaxaXaxaXaXaxaxaxaXaxaxaxaXaxaXaxaxaXaxaXaXaxaXaXaXaxaXaXaXaXaXaxaxaxaXaXaXaXaXaxaxaxaXaXaxaxaxaxaxaxaXaxaxaxaXaXaXaXaxaxaxaxaXaXaXaXaxaxaxaxaXaXaxaXaxaXaxaxaxaxaxaXaXaXaXaxaxaxaxaxaXaxaXaXaXaxaxaXaXaxaXaxaXaxaxaXaxaxaxaxaxaxaXaxaXaxaxaxaXaxaXaxaxaxaxaxaxaxaXaXaXaXaxaXaxaxaxaXaxaXaxaxaxaxaXaxaXaXaxaXaXaXaxaXaXaXaxaXaxaxaxaxaXaXaXaxaxaxaxaxaxaxaXaxaXaxaxaxaxaxaxaXaxaXaXaxaXaXaxaXaXaXaXaxaXaXaXaxaXaXaxaXaxaxaXaxaxaxaxaxaxaXaXaxaXaXaxaxaxaxaxaXaXaXaXaxaxaxaxaxaXaxaXaXaxaXaXaXaXaxaXaXaXaxaxaXaxaXaxaxaxaxaxaxaxaXaxaXaXaxaXaxaXaxaXaXaxaxaxaXaXaXaxaXaxaxaxaXaxaXaXaXaxaXaxaxaxaXaxaXaxaxaxaXaXaxaxaxaXaXaXaXaXaXaxaXaxaXaxaxaXaXaxaXaxaxaXaxaXaXaXaxaxaXaXaXaXaXaXaxaxaxaXaXaXaXaXaXaxaXaxaXaxaxaxaxaxaXaXaxaXaXaXaXaxaXaxaxaXaXaxaXaXaXaxaxaXaXaXaXaXaXaXaxaxaXaXaxaXaxaxaXaXaXaXaXaxaXaXaxaXaXaxaXaxaxaxaXaXaXaxaXaxaxaXaXaxaxaXaXaXaXaxaxaXax"
+            },
+            {
+              "length": 1012,
+              "word_matrix": [
+                41,
+                2917,
+                1703,
+                1821
+              ],
+              "labels": "xaxaXaXaxaXaXaXaxaxaXaxaxaXaXaxaXaxaxaXaXaXaXaxaxaXaXaXaXaXaXaXaXaXaXaxaXaxaxaXaXaxaxaXaXaXaXaxaXaXaxaXaxaxaXaxaXaxaxaXaXaxaXaXaxaXaXaXaXaxaXaxaxaxaXaXaXaxaxaXaxaxaxaxaxaxaXaXaXaxaXaXaXaXaXaXaXaXaXaxaxaXaXaxaxaxaXaxaxaxaXaXaxaXaxaxaxaXaxaxaxaXaXaXaxaxaXaXaxaxaXaxaXaxaXaxaxaXaxaxaXaxaxaxaxaxaXaXaxaxaXaxaXaXaXaxaxaxaxaxaxaXaXaXaXaxaxaxaxaxaXaXaxaXaXaxaXaXaXaxaxaxaXaXaXaXaXaxaxaXaxaXaxaxaxaxaXaxaXaXaXaXaxaxaxaxaXaxaxaXaXaxaxaXaXaxaXaxaxaxaXaxaXaxaXaXaxaXaXaXaXaXaXaXaxaxaxaxaXaXaxaXaXaXaXaXaXaxaxaxaXaXaxaXaXaxaxaXaxaxaxaXaXaxaXaXaxaxaXaxaXaXaxaxaxaxaXaXaxaxaxaxaxaxaxaxaxaxaXaxaXaXaxaxaXaXaxaxaxaxaXaxaxaXaxaXaXaxaXaxaXaXaxaxaXaxaxaXaxaxaxaxaXaxaXaXaXaxaxaxaXaXaxaXaXaXaXaXaXaxaxaxaXaxaxaxaxaxaxaxaxaxaXaXaxaxaXaXaXaxaXaXaXaxaxaXaxaXaXaXaxaXaXaXaxaxaxaXaXaxaxaXaXaxaXaxaXaxaXaXaxaXaXaxaXaXaXaXaXaxaxaXaXaxaXaxaxaxaXaXaXaXaXaXaxaxaxaxaXaXaXaXaXaxaxaXaxaxaXaxaxaxaXaXaXaxaxaxaxaxaXaXaxaXaxaXaXaXaXaxaXaxaxaxaxaXaXaXaXaxaXaXaxaxaXaXaxaxaXaxaXaXaXaxaXaxaXaxaxaXaxaxaxaxaxaxaxaXaXaXaXaxaxaXaxaxaxaxaxaxaXaXaXaxaxaXa"
+            },
+            {
+              "length": 1140,
+              "word_matrix": [
+                3854,
+                2733,
+                3548,
+                456
+              ],
+              "labels": "xaXaXaxaxaxaXaxaXaXaXaxaXaxaxaXaxaXaXaxaXaXaxaxaXaxaXaxaXaxaxaxaxaXaxaXaXaXaxaxaxaxaxaxaxaxaXaXaXaXaxaxaxaXaXaxaXaxaXaXaXaXaXaXaxaXaXaXaxaXaxaxaXaxaxaxaxaxaXaXaXaXaxaXaXaXaxaxaxaxaxaxaxaXaxaxaXaxaXaxaxaXaxaxaXaXaXaXaxaxaxaxaxaXaxaXaxaXaXaXaxaxaxaxaXaXaxaxaXaXaXaXaXaxaxaxaXaxaxaxaXaXaxaXaXaxaxaXaXaxaXaXaxaxaXaXaXaXaxaXaxaxaxaxaxaXaxaxaXaXaxaXaXaxaxaXaxaxaxaxaXaXaXaXaXaxaXaXaXaxaXaxaXaxaxaxaXaxaXaxaxaXaxaxaxaXaXaXaxaXaXaxaXaxaXaxaxaxaxaXaXaXaxaXaXaxaXaxaXaxaXaxaxaXaxaxaXaXaXaxaXaXaxaxaxaXaXaXaXaXaxaXaxaxaXaxaXaxaxaXaXaXaxaXaXaxaXaxaxaXaxaxaxaxaXaxaXaXaXaXaxaXaXaxaXaXaxaxaXaXaXaxaXaxaxaxaXaxaXaXaxaXaxaxaXaxaxaXaXaxaXaxaXaxaXaXaXaXaxaXaxaxaxaXaXaXaXaXaXaXaXaxaxaxaxaXaXaXaxaxaXaxaXaxaxaxaxaxaxaXaxaxaxaXaxaXaXaxaXaXaXaXaXaxaxaxaxaXaxaxaxaXaXaXaXaXaXaXaxaXaXaxaXaxaXaXaxaXaXaxaxaxaxaXaXaXaXaXaxaXaxaXaxaxaxaXaXaXaXaxaxaXaXaxaxaxaxaxaXaXaXaxaXaXaXaxaxaXaxaxaXaXaxaxaXaxaxaXaXaxaxaxaxaXaxaXaXaXaXaXaxaXaXaxaxaXaxaxaXaXaxaXaXaXaXaxaxaxaxaxaXaxaxaxaXaxaXaxaXaXaXaxaXaxaXaXaxaXaXaXaxaxaxaXaxaxaXaxaXaxaXaXaXaXaxaxaxaXaxaxaXaxaXaxaXaxaXaXaxaXaXaxaxaxaXaxaxaXaXaXaxaxaxaxaxaXaxaXaXaxaXaxaXaXaxaxaxaXaxaxaXaxaXaXaxaXaXaXaXaxaXaxaxaxaxaXaxaxaXaxa"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                965,
+                1032,
+                2060,
+                1846
+              ],
+              "labels": "xaXaxaxa"
+            },
+            {
+              "length": 8,
+              "word_matrix": [
+                3057,
+                112,
+                2436,
+                3842
+              ],
+              "labels": "xaXaXaXa"
+            }
+          ],
+          "histogram": {
+            "4_nonspanning": 3,
+            "5_nonspanning": 2,
+            "3_nonspanning": 1
+          },
+          "witness": null
+        }
+      ],
+      "seconds": 47.619809546973556
+    }
+  ]
+}
