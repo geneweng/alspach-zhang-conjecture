@@ -2110,3 +2110,92 @@ missing statement is K_(M,N)=1 uniformly for the relevant realizable
 diagrams. This would settle the corresponding full-cycle family, still
 not all simple groups or the full Alspach–Zhang conjecture. The conjecture
 remains open; all coverage and counterexample-size bounds are unchanged.
+
+## Strategy diagnostic: gain distribution over all three-colourings (6 September 2026, late)
+
+Before choosing between a counting proof and a growing-size construction
+for the residual class, this experiment measures how the eligible root
+gains are distributed over **every** proper three-edge-colouring of the
+closed folded graph H, not just those reached by a move rule. It is a
+diagnostic, not a theorem, and it adds no coverage.
+
+Each colouring has two eligible matchings (the classes avoiding the
+closing edge), and each eligible matching has a root path from folded
+vertex 1 to h whose signed chord row determines the gain. Many colourings
+share one root path: they differ only in the even off-path circuits. So
+the statistics are taken at two levels, per eligible matching and per
+distinct root path.
+
+```sh
+python3 code/borel_gain_distribution.py --fields 64 128 --controls 64 --workers 6 --json-output code/borel_gain_distribution_results.json
+```
+
+Scope: the stored canonical-failure diagrams (one at q=64, four at q=128,
+each covering the partner pair c, c+t), plus every folded diagram for the
+first stored trace as controls (t=7 at q=64, t=8 at q=128). The
+enumeration is the independent edge-domain backtracker of the closure
+audit; four matchings per diagram are additionally lifted and checked
+by matrices and full projective permutations (396 checks). Runtime was
+three minutes for 99 diagrams.
+
+| q | Diagrams | Colourings (mod names) | Distinct root paths | Unit-gain root paths | Unit fraction times (q-1) | chi-square per class, root paths |
+|---|---|---:|---:|---:|---|---|
+| 64 | failure (7,26) | 170 | 141 | 4 | 1.79 | 1.0 |
+| 64 | 30 controls, non-pentagon | 21 to 148 each | 37 to 148 each | 68 total | 0.59 to 4.50, median 1.56 | median 1.0, max 1.4 |
+| 128 | 4 failures | 6,862 to 20,212 each | 5,331 to 12,938 each | 42 to 97 each | 0.95 to 1.17 | 0.9 to 1.0 |
+| 128 | 62 controls, non-pentagon | 3,068 to 20,164 each | 3,134 to 13,884 each | 3,371 total | 0.64 to 1.34, median 0.99 | median 1.0, max 1.3 |
+
+The chi-square column is the chi-square statistic of the gain histogram
+against the uniform distribution on GF(q)^*, divided by q-1; a uniformly
+random sample gives 1.0. Over distinct root paths the gains are
+statistically indistinguishable from uniform in every non-pentagon diagram,
+including all five canonical failures. In particular the unit value is
+not privileged: about one root path in q-1 has gain one, and no diagram
+has zero unit-gain root paths. The pentagon diagram c=1 is the one genuine
+outlier (127,816 colourings at q=128, all sharing one root path in one
+class), and it is already covered by the pentagon theorem.
+
+Per eligible matching the histograms are far from uniform (chi-square per
+class up to 59 at q=128), but only because of hub root paths shared by up
+to 3,008 colourings. That multiplicity is combinatorial (the number of
+completions of the off-path structure) and carries no arithmetic
+information; it disappears at the root-path level.
+
+Two further facts. First, in every failure diagram the natural colouring
+is the only colouring known a priori, and both of its root paths have
+unit gain; there are just one (q=64) or two (q=128, two of the four
+diagrams) other both-unit colourings among thousands. Second, the number
+of root paths grows roughly by a factor 90 when h doubles from 32 to 64,
+so at q=128 more than 99% of eligible matchings colour the Cayley graph.
+
+**Conclusion for strategy.** The supply of good matchings is not scarce;
+it is overwhelming, and the gains look like independent uniform values on
+the multiplicative group. The obstruction to a proof is therefore not
+existence of a good matching but our inability to *exhibit* one without
+computing in the field. This favours a counting formulation over further
+move rules: the sufficient statement is a nontrivial cancellation bound
+for the character sums
+
+```
+S(chi) = sum over root paths P of chi(gamma(P)),   chi a nontrivial character of GF(q)^*,
+```
+
+since the number of unit-gain root paths is (1/(q-1)) sum over all chi of
+S(chi), and S(1) is the total. The observed chi-square of 1.0 means the
+average of |S(chi)|^2 over nontrivial chi equals the number of root paths:
+square-root cancellation on average. Even a much weaker bound,
+|S(chi)| < S(1) for every nontrivial chi, would prove the residual class,
+and bounds of that type are what the recurrence and translation structure
+should be aimed at. Growing-size constructions such as the seven-change
+rule remain valid search tools, but the data give no reason to expect
+that any specific rule is forced to succeed; the two-buffer successes are
+consistent with picking essentially random root paths from a set in which
+99% succeed.
+
+Limitations: exhaustive enumeration is limited to q<=128 by the colouring
+count (an attempted q=256 run was stopped because storing the colouring
+set would have exhausted memory; a streaming counter or sampler would be
+needed there). The controls cover a single trace per field. No estimate
+for S(chi) has been proved; the conclusion is that this is the right
+target, not that it is within reach. The full conjecture and all bounds
+are unchanged.

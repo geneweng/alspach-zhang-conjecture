@@ -34,6 +34,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/borel_gain_closure.py`, `code/borel_gain_closure_results.json` | Removes three recorded rank deficiencies by allowing every temporary ordinary colour. Certifies minimum support three in the restricted q=2048 rational root span, an explicit three-chord successful root path, and rank-neutral ordinary neighbours. |
 | `code/borel_kempe_closure.py`, `code/borel_kempe_closure_results.json` | Exhaustive recolouring closures on 96 normalized parameters through q=32, independently compared with all 570 three-colourings up to global colour names. Includes 1140 matrix/permutation lift checks and an abstract reordered-label negative control. No general connectivity or rank-completion claim. |
 | `code/borel_gain_polynomial.py`, `code/borel_gain_polynomial_results.json` | Exact joint polynomial test for projective realizability and unit root gains; independent trace-polynomial constructions and Bezout audits. A single three-chord row certifies the fixed q=2048 diagram without full rank. Proves a forbidden anchored chord pattern over every characteristic-two field, and shows why the recurrence alone is insufficient. |
+| `code/borel_gain_distribution.py`, `code/borel_gain_distribution_results.json` | Strategy diagnostic: gains over all three-edge-colourings of 99 folded diagrams at q=64,128. Over distinct root paths the gains are statistically uniform on GF(q)^* (chi-square 1.0), so about 1/(q-1) of root paths have unit gain in every diagram, including the canonical failures; the proof target becomes a character-sum bound, not a move rule. |
 | `docs/` | GitHub Pages site: project page (`index.html`), the survey as HTML and PDF. |
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
 | `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
@@ -78,7 +79,18 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (6 September 2026)
 
-**Latest result: a joint arithmetic criterion and a forbidden chord pattern.**
+**Latest finding: the good matchings are not scarce.** Enumerating every
+three-edge-colouring of the closed folded graph for 99 diagrams at q=64 and
+q=128 (including all five stored canonical-failure diagrams) shows that the
+root gains over distinct root paths are statistically uniform on GF(q)^*:
+about one root path in q-1 has unit gain, never zero, and more than 99% of
+eligible matchings colour the Cayley graph at q=128. The obstruction is
+exhibiting a good matching without field computation, not existence. The
+recommended proof target is a cancellation bound for the character sums of
+the gain over root paths; see the last section of [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md).
+No coverage or bound has changed.
+
+**Previous result: a joint arithmetic criterion and a forbidden chord pattern.**
 The recurrence D_(i+1)=t D_i+D_(i-1) converts unit root gain into a
 polynomial equation. Requiring every chord to have the same additive
 label difference supplies a second set of equations. A proved joint-gcd
