@@ -2199,3 +2199,108 @@ needed there). The controls cover a single trace per field. No estimate
 for S(chi) has been proved; the conclusion is that this is the right
 target, not that it is within reach. The full conjecture and all bounds
 are unchanged.
+
+## Attempt at the character-sum bound (6 September 2026, late)
+
+This section records an attempt to prove the bound proposed above and
+where it stops. Nothing in it proves the residual class. The one new
+experiment tests the only algebraic family of unbounded exchanges that
+the analysis identifies, and finds that it usually collapses to the
+known short exchanges.
+
+### Clean coordinates
+
+Put u_i = 1/D_i, so that the folded labels are k_i = u_i^2. With
+lambda + lambda^-1 = t and lambda of order q+1,
+
+```
+u_i = t / (lambda^i + lambda^-i),      1 <= i <= h = q/2.
+```
+
+The set of these values is exactly the affine hyperplane
+W = {u : Tr(u/t) = 1}: the traces lambda^i + lambda^-i of the norm-one
+elements other than 1 are precisely the s with Tr(1/s) = 1. Chords pair
+u with u + delta where delta^2 = Delta = c(c+t), and Tr(delta/t) = 0.
+Since squaring is injective, a root path has unit gain exactly when the
+product of u/(u+delta) over its traversed chords, oriented, is one. So the
+object is: the affine hyperplane W ordered by the torus exponent i,
+chords given by one translation delta, and the multiplicative character
+sum of u/(u+delta) over root paths.
+
+### A two-chord distinctness lemma, and why it does not help
+
+If two eligible root rows differ in at most two chord coordinates, their
+gains differ. For one coordinate the ratio is u/(u+delta), never one. For
+two, the ratio is u/(u+delta) times v/(v+delta) or its inverse; unit
+ratio forces delta(u+v) = 0 or u + v = delta, and in both cases the two
+chords coincide. Three coordinates give the quartic criterion already
+proved. Thus in any diagram where two valid colourings are at row
+distance at most two, some eligible matching colours.
+
+Two colourings at row distance k differ by alternating cycles of the
+folded graph with k chords in total, so this is a short-cycle condition
+on F, not on the colouring. Four-cycles of F are exactly the crossing
+squares (Tr(1/Delta)=0) and six-cycles the three-chord circuits; the
+residual class of the 1/32 theorem has neither. The lemma therefore only
+restates the bounded-exchange results and cannot reach the large-girth
+parameters.
+
+### The only algebraic unbounded family, tested
+
+Every algebraically parametrised root path found so far is a fixed point
+of a short Moebius word W = x^{eps_p} a ... x^{eps_1} a, hence of bounded
+size and subject to the positive-density existence obstruction. The one
+algebraic family of unbounded size is the full orbit of such a word: the
+alternating walk z, az, x^{eps_1}az, ... closes after ell periods, where
+ell is the orbit length of W at z, and gives an alternating cycle of the
+point quotient with p*ell chords whenever the 2*p*ell visited points are
+distinct. The new script exchanges the all-chord matching along one such
+cycle, or along the cycle and its reversal image, and tests the lift by
+the exact circuit-word criterion.
+
+```sh
+python3 code/borel_orbit_exchange.py --json-output code/borel_orbit_exchange_results.json
+```
+
+Over all 51 stored canonical-failure diagrams through q=1024, with the
+fifteen patterns of period at most four, every diagram is repaired, but
+the repairs are essentially the known ones. All 816 orbits of length one
+are the earlier short exchanges. Of the 3,119 orbits of length above one,
+only 502 give simple walks, and those occur in just nine diagrams; in every
+one of them the word has order at most 41, dividing q-1 or q+1. Whether a
+period-four word has small order is a property of the field size, not of
+the parameters: q+1 = 257 is prime, for instance, and there long orbits
+never close simply. Where they do exist they colour at ordinary rates
+(for example 37 of 52 single exchanges at q=1024, t=122, c=178 with
+orbit length five), which is consistent with the uniform-gain picture and
+gives no uniform theorem.
+
+The rigid q=256 example (t=15, c=151) is repaired here by the symmetrised
+fixed points of the period-four patterns +--- and +++-: an ordinary
+short exchange, but one that the earlier single-alternating-cycle audits
+of the folded graph did not list because it is a mirror pair of point
+cycles.
+
+### Where the proof stops
+
+The uniform-gain data say the good root paths are plentiful and have
+unbounded length; the two-chord lemma and the orbit experiment say that
+every algebraically parametrised family is bounded in size or exists only
+for special field sizes. A proof of the character-sum bound would need
+cancellation over root paths that are neither bounded nor algebraic, that
+is, an equidistribution statement for products of u/(u+delta) along long
+walks in a graph whose chord structure is a single additive translation
+and whose path order is the torus exponent. No such tool is available
+here; the nearest analogues are spectral-gap results for walks with
+algebraic generators, which are far outside the present scope.
+
+What can be stated precisely is the conjecture, in the form the data
+support. For each full-cycle t and each admissible delta, let R be the
+set of root paths of proper three-edge-colourings of H. Then for every
+nontrivial character chi of GF(q)^*, the sum of chi over the gains of R
+is smaller in absolute value than |R|. The exhaustive q=64 and q=128
+distributions satisfy this with the square-root cancellation of
+independent uniform values. Proving any version of it, even with a loss
+of a constant factor, would settle the residual class of the full-cycle
+family in characteristic two. The full conjecture, the 13/16 asymptotic
+guarantee and the 352,440-vertex bound are unchanged.

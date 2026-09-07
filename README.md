@@ -35,6 +35,7 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 | `code/borel_kempe_closure.py`, `code/borel_kempe_closure_results.json` | Exhaustive recolouring closures on 96 normalized parameters through q=32, independently compared with all 570 three-colourings up to global colour names. Includes 1140 matrix/permutation lift checks and an abstract reordered-label negative control. No general connectivity or rank-completion claim. |
 | `code/borel_gain_polynomial.py`, `code/borel_gain_polynomial_results.json` | Exact joint polynomial test for projective realizability and unit root gains; independent trace-polynomial constructions and Bezout audits. A single three-chord row certifies the fixed q=2048 diagram without full rank. Proves a forbidden anchored chord pattern over every characteristic-two field, and shows why the recurrence alone is insufficient. |
 | `code/borel_gain_distribution.py`, `code/borel_gain_distribution_results.json` | Strategy diagnostic: gains over all three-edge-colourings of 99 folded diagrams at q=64,128. Over distinct root paths the gains are statistically uniform on GF(q)^* (chi-square 1.0), so about 1/(q-1) of root paths have unit gain in every diagram, including the canonical failures; the proof target becomes a character-sum bound, not a move rule. |
+| `code/borel_orbit_exchange.py`, `code/borel_orbit_exchange_results.json` | Exchanges along full orbits of short Moebius words (periods up to four) in the point quotient, the only algebraic family of unbounded alternating cycles. All 51 stored failures are repaired, but long orbits close simply only in nine diagrams where the word has order at most 41; the family otherwise collapses to the known short exchanges. |
 | `docs/` | GitHub Pages site: project page (`index.html`), the survey as HTML and PDF. |
 | `results_table.tex` | Table of computational results, generated from the JSON files below. |
 | `code/cayley_snark_check2.py` | **Current checker.** Exhaustive 3-edge-colourability check for all cubic Cayley graphs on a catalogue of non-solvable permutation groups (simple groups and their index-2 extensions up to order about 260 000: PSL/PGL(2,q), A_n, S_n, PSL(3,4) and its three index-2 extensions, PSU(4,2) = PSp(4,3) and PSU(4,2).2, Sz(8), PSU(3,4), PSU(3,4).2, PSU(3,5), M11, M12, M12.2, J1, PSL(2,7) ≀ Z2, A6 ≀ Z2, ...). Reduces each Cayley graph to a quotient pregraph by a large subgroup avoiding the conjugacy class of x (semi-edges allowed), solves the quotient with CaDiCaL, lifts and verifies the colouring on the full graph. |
@@ -79,7 +80,18 @@ The project's aim is to settle the conjecture: prove it, or construct a Cayley s
 
 ## Status and next steps (6 September 2026)
 
-**Latest finding: the good matchings are not scarce.** Enumerating every
+**Latest: an attempt at the character-sum bound, and where it stops.**
+In clean coordinates the folded vertex set is the affine hyperplane
+Tr(u/t)=1 ordered by the torus exponent, chords are one additive
+translation, and unit gain is a product of u/(u+delta) over the root path.
+Two root rows differing in at most two chords always have distinct gains,
+but that only restates the short-cycle results. The one algebraic family of
+unbounded exchanges, full orbits of short Moebius words, closes simply only
+when the word has small order, which depends on the field size rather than
+on the parameters. The bound therefore remains a conjecture, stated
+precisely in [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md); nothing is proved for the residual class.
+
+**Previous finding: the good matchings are not scarce.** Enumerating every
 three-edge-colouring of the closed folded graph for 99 diagrams at q=64 and
 q=128 (including all five stored canonical-failure diagrams) shows that the
 root gains over distinct root paths are statistically uniform on GF(q)^*:
